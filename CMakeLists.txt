@@ -10,3 +10,4 @@ link_directories(~/ /usr/local/ /usr/lib/)
 #ADD_LIBRARY(c_onvif SHARED ${SRC_LIST} client.c)
 ADD_LIBRARY(c_onvif_static STATIC ${SRC_LIST} client.c client.h ./soap/custom)
 
+

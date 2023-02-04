@@ -1,14 +1,13 @@
-cgo+gSoap+onvif学习总结：6、进行PTZ控制
+go+gSoap+onvif学习总结：7、进行镜头调焦、聚焦和预置点的增删改查
 
 cd ./soap/
-//注意这里的typemap.dat是我们修改过的，不然还会出现duration.c编译报错
-wsdl2h -c -t ./typemap.dat -o onvif.h http://www.onvif.org/onvif/ver10/network/wsdl/remotediscovery.wsdl https://www.onvif.org/ver10/device/wsdl/devicemgmt.wsdl https://www.onvif.org/ver10/events/wsdl/event.wsdl https://www.onvif.org/ver10/media/wsdl/media.wsdl https://www.onvif.org/ver20/ptz/wsdl/ptz.wsdl
+//注意这里的typemap.dat是上节我们修改过的，不然还会出现duration.c编译报错
+wsdl2h -c -t ./typemap.dat -o onvif.h http://www.onvif.org/onvif/ver10/network/wsdl/remotediscovery.wsdl https://www.onvif.org/ver10/device/wsdl/devicemgmt.wsdl https://www.onvif.org/ver10/events/wsdl/event.wsdl https://www.onvif.org/ver10/media/wsdl/media.wsdl https://www.onvif.org/ver20/ptz/wsdl/ptz.wsdl https://www.onvif.org/ver20/imaging/wsdl/imaging.wsdl
 
 vim onvif.h
 添加 #import "wsse.h"
 
-//需要依赖如下文件，从gSoap源码拷贝到我们的工程中
-//拷贝一次后续就可以一直用了
+//需要依赖如下文件，从gSoap源码拷贝到我们的工程中（拷贝一次后续就可以一直用了）
 dom.c、dom.h、wsseapi.c、wsseapi.h、smdevp.c、smdevp.h、mecevp.c、mecevp.h、threads.c、threads.h、wsaapi.c、wsaapi.h
 //注意下面的文件需要custom文件夹，否则路径不对
 struct_timeval.h、struct_timeval.c

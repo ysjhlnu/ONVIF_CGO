@@ -32,4 +32,12 @@ extern int
 ptz(struct soap *soap, const char *username, const char *password, int direction, float speed, char *profileToken,
     char *xAddr);
 
+extern int focus(struct soap *soap, const char *username, const char *password, int direction, float speed, char *videoSourceToken,
+             char *xAddr);
+
+extern int get_video_source(struct soap *soap, const char *username, const char *password, char *videoSource, char *xAddr);
+
+
+extern int preset(struct soap *soap, const char *username, const char *password, int presetAction, char *presetToken,
+                  char *presetName, char *profileToken, char *xAddr);
 #endif //ONVIF_CGO_CLIENT_H

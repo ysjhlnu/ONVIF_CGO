@@ -3,7 +3,6 @@
 //
 
 #include <string.h>
-#include <unistd.h>
 #include "soap/soapStub.h"
 #include "soap/wsdd.nsmap"
 #include "soap/soapH.h"
@@ -19,7 +18,7 @@ struct soap *new_soap(struct soap *soap) {
     }
 
     soap_set_namespaces(soap, namespaces);
-    soap->recv_timeout = 5;
+    soap->recv_timeout = 3;
     printf("func:%s,line:%d.new soap success!\n", __FUNCTION__, __LINE__);
     return soap;
 }
@@ -149,6 +148,8 @@ int get_device_info(struct soap *soap, const char *username, const char *passwor
         printf("FirmwareVersion:%s\n", deviceInformationResponse.FirmwareVersion);
         printf("SerialNumber:%s\n", deviceInformationResponse.SerialNumber);
         printf("HardwareId:%s\n", deviceInformationResponse.HardwareId);
+        soap_default__tds__GetDeviceInformation(soap, &deviceInformation);
+        soap_default__tds__GetDeviceInformationResponse(soap, &deviceInformationResponse);
     }
     return res;
 }
@@ -246,18 +247,48 @@ int get_snapshot(struct soap *soap, const char *username, const char *password, 
     return res;
 }
 
+int get_video_source(struct soap *soap, const char *username, const char *password, char *videoSource, char *xAddr) {
+    struct _trt__GetVideoSources getVideoSources;
+    struct _trt__GetVideoSourcesResponse getVideoSourcesResponse;
+
+    set_auth_info(soap, username, password);
+
+    int res = soap_call___trt__GetVideoSources(soap, xAddr, NULL, &getVideoSources, &getVideoSourcesResponse);
+    if (soap->error) {
+        printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error, *soap_faultcode(soap),
+               *soap_faultstring(soap));
+        return soap->error;
+    }
+    if (getVideoSourcesResponse.__sizeVideoSources <= 0) {
+        printf("func:%s,line:%d.get video sources failed.\n", __FUNCTION__, __LINE__);
+        return res;
+    } else {
+        for (int i = 0; i < getVideoSourcesResponse.__sizeVideoSources; i++) {
+            printf("func:%s,line:%d.get video source token:%s\n", __FUNCTION__, __LINE__,
+                   getVideoSourcesResponse.VideoSources[i].token);
+
+            //我们暂时只获取第一个videoSourceToken
+            if (i == 0) {
+                strcpy(videoSource, getVideoSourcesResponse.VideoSources[i].token);
+            }
+        }
+    }
+    return res;
+}
+
 int ptz(struct soap *soap, const char *username, const char *password, int direction, float speed, char *profileToken,
         char *xAddr) {
     struct _tptz__ContinuousMove continuousMove;
     struct _tptz__ContinuousMoveResponse continuousMoveResponse;
-    struct _tptz__Stop tptzStop;
+    struct _tptz__Stop stop;
     struct _tptz__StopResponse stopResponse;
     int res;
 
     set_auth_info(soap, username, password);
     continuousMove.ProfileToken = profileToken;
-    continuousMove.Velocity = (struct tt__PTZSpeed *)soap_malloc(soap, sizeof(struct tt__PTZSpeed));
-    continuousMove.Velocity->PanTilt = (struct tt__Vector2D *)soap_malloc(soap, sizeof(struct tt__Vector2D));
+    continuousMove.Velocity = (struct tt__PTZSpeed *) soap_malloc(soap, sizeof(struct tt__PTZSpeed));
+    continuousMove.Velocity->PanTilt = (struct tt__Vector2D *) soap_malloc(soap, sizeof(struct tt__Vector2D));
+
     switch (direction) {
         case 1:
             continuousMove.Velocity->PanTilt->x = 0;
@@ -292,14 +323,29 @@ int ptz(struct soap *soap, const char *username, const char *password, int direc
             continuousMove.Velocity->PanTilt->y = -speed;
             break;
         case 9:
-            tptzStop.ProfileToken = profileToken;
-            res = soap_call___tptz__Stop(soap, xAddr, NULL, &tptzStop, &stopResponse);
+            stop.ProfileToken = profileToken;
+            stop.Zoom = NULL;
+            stop.PanTilt = NULL;
+            res = soap_call___tptz__Stop(soap, xAddr, NULL, &stop, &stopResponse);
             if (soap->error) {
-                printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error, *soap_faultcode(soap),
+                printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error,
+                       *soap_faultcode(soap),
                        *soap_faultstring(soap));
                 return soap->error;
             }
             return res;
+        case 10:
+            continuousMove.Velocity->PanTilt->x = 0;
+            continuousMove.Velocity->PanTilt->y = 0;
+            continuousMove.Velocity->Zoom = (struct tt__Vector1D *) soap_malloc(soap, sizeof(struct tt__Vector1D));
+            continuousMove.Velocity->Zoom->x = speed;
+            break;
+        case 11:
+            continuousMove.Velocity->PanTilt->x = 0;
+            continuousMove.Velocity->PanTilt->y = 0;
+            continuousMove.Velocity->Zoom = (struct tt__Vector1D *) soap_malloc(soap, sizeof(struct tt__Vector1D));
+            continuousMove.Velocity->Zoom->x = -speed;
+            break;
         default:
             printf("func:%s,line:%d.Ptz direction unknown.\n", __FUNCTION__, __LINE__);
             return -1;
@@ -310,38 +356,177 @@ int ptz(struct soap *soap, const char *username, const char *password, int direc
                *soap_faultstring(soap));
         return soap->error;
     }
+
     return res;
 }
 
-/*
-int main() {
-    struct soap *soap = NULL;
-    soap = new_soap(soap);
-    const char username[] = "admin";
-    const char password[] = "admin";
-    char serviceAddr[] = "http://40.40.40.101:80/onvif/device_service";
+int
+focus(struct soap *soap, const char *username, const char *password, int direction, float speed, char *videoSourceToken,
+      char *xAddr) {
+    struct _timg__Move timgMove;
+    struct _timg__MoveResponse timgMoveResponse;
+    struct _timg__Stop timgStop;
+    struct _timg__StopResponse timgStopResponse;
+    int res;
 
-    discovery(soap);
+    set_auth_info(soap, username, password);
+    timgMove.Focus = (struct tt__FocusMove *) soap_malloc(soap, sizeof(struct tt__FocusMove));
+    timgMove.Focus->Continuous = (struct tt__ContinuousFocus *) soap_malloc(soap, sizeof(struct tt__ContinuousFocus));
+    timgMove.VideoSourceToken = videoSourceToken;
+    switch (direction) {
+        case 12:
+            timgMove.Focus->Continuous->Speed = speed;
+            break;
+        case 13:
+            timgMove.Focus->Continuous->Speed = -speed;
+            break;
+        case 14:
+            timgStop.VideoSourceToken = videoSourceToken;
+            res = soap_call___timg__Stop(soap, xAddr, NULL, &timgStop, &timgStopResponse);
+            if (soap->error) {
+                printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error,
+                       *soap_faultcode(soap), *soap_faultstring(soap));
+                return soap->error;
+            }
+            return res;
+        default:
+            printf("unknown direction");
+            return -1;
+    }
+    res = soap_call___timg__Move(soap, xAddr, NULL, &timgMove, &timgMoveResponse);
+    if (soap->error) {
+        printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error,
+               *soap_faultcode(soap), *soap_faultstring(soap));
+        return soap->error;
+    }
+    return res;
+}
 
-    get_device_info(soap, username, password, serviceAddr);
-
-    char mediaAddr[200] = {'\0'};
-    get_capabilities(soap, username, password, serviceAddr, mediaAddr);
-
-    char profileToken[200] = {'\0'};
-    get_profiles(soap, username, password, profileToken, mediaAddr);
-
-    get_rtsp_uri(soap, username, password, profileToken, mediaAddr);
-
-    get_snapshot(soap, username, password, profileToken, mediaAddr);
-
-    int res = -1;
-    while(res != 0) {
-        printf("请输入数字进行ptz,1-9分别代表上、下、左、右、左上、左下、右上、右下、停止;退出请输入0：");
-        scanf("%d",&res);
-        ptz(soap, username, password, res, 0.5f, profileToken, mediaAddr);
+int preset(struct soap *soap, const char *username, const char *password, int presetAction, char *presetToken,
+           char *presetName, char *profileToken, char *xAddr) {
+    int res;
+    set_auth_info(soap, username, password);
+    switch (presetAction) {
+        case 1: {
+            struct _tptz__GetPresets getPresets;
+            struct _tptz__GetPresetsResponse getPresetsResponse;
+            getPresets.ProfileToken = profileToken;
+            res = soap_call___tptz__GetPresets(soap, xAddr, NULL, &getPresets, &getPresetsResponse);
+            if (soap->error) {
+                printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error,
+                       *soap_faultcode(soap), *soap_faultstring(soap));
+                return soap->error;
+            }
+            if (getPresetsResponse.__sizePreset <= 0) {
+                printf("func:%s,line:%d.get presets failed.\n", __FUNCTION__, __LINE__);
+                return res;
+            }
+            for (int i = 0; i < getPresetsResponse.__sizePreset; i++) {
+                printf("func:%s,line:%d.preset token:%s,preset name:%s\n", __FUNCTION__, __LINE__,
+                       getPresetsResponse.Preset[i].token, getPresetsResponse.Preset[i].Name);
+            }
+            return res;
+        }
+        case 2: {
+            struct _tptz__SetPreset setPreset;
+            struct _tptz__SetPresetResponse setPresetResponse;
+            setPreset.ProfileToken = profileToken;
+            setPreset.PresetName = presetName;
+            setPreset.PresetToken = presetToken;
+            res = soap_call___tptz__SetPreset(soap, xAddr, NULL, &setPreset, &setPresetResponse);
+            break;
+        }
+        case 3: {
+            struct _tptz__GotoPreset gotoPreset;
+            struct _tptz__GotoPresetResponse gotoPresetsResponse;
+            gotoPreset.ProfileToken = profileToken;
+            gotoPreset.PresetToken = presetToken;
+            gotoPreset.Speed = NULL;
+            res = soap_call___tptz__GotoPreset(soap, xAddr, NULL, &gotoPreset, &gotoPresetsResponse);
+            break;
+        }
+        case 4: {
+            struct _tptz__RemovePreset removePreset;
+            struct _tptz__RemovePresetResponse removePresetResponse;
+            removePreset.PresetToken = presetToken;
+            removePreset.ProfileToken = profileToken;
+            res = soap_call___tptz__RemovePreset(soap, xAddr, NULL, &removePreset, &removePresetResponse);
+            break;
+        }
+        default:
+            printf("func:%s,line:%d.Unknown preset action.\n", __FUNCTION__, __LINE__);
     }
 
-    del_soap(soap);
+    if (soap->error) {
+        printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error,
+               *soap_faultcode(soap), *soap_faultstring(soap));
+        return soap->error;
+    }
+
+    return res;
 }
-*/
+
+//int main() {
+//    struct soap *soap = NULL;
+//    soap = new_soap(soap);
+//    const char username[] = "ts";
+//    const char password[] = "ts";
+//    char serviceAddr[] = "http://192.168.2.19:80/onvif/device_service";
+//
+//    discovery(soap);
+//
+//    get_device_info(soap, username, password, serviceAddr);
+//
+//    char mediaAddr[200] = {'\0'};
+//    get_capabilities(soap, username, password, serviceAddr, mediaAddr);
+//
+//    char profileToken[200] = {'\0'};
+//    get_profiles(soap, username, password, profileToken, mediaAddr);
+//
+//    get_rtsp_uri(soap, username, password, profileToken, mediaAddr);
+//
+//    get_snapshot(soap, username, password, profileToken, mediaAddr);
+//
+//    char videoSourceToken[200] = {'\0'};
+//    get_video_source(soap, username, password, videoSourceToken, mediaAddr);
+//
+//    int direction = -1;
+//    while (direction != 0) {
+//        printf("请输入数字进行ptz,1-14分别代表上、下、左、右、左上、左下、右上、右下、停止、缩、放、调焦加、调焦减、调焦停止;退出请输入0：");
+//        scanf("%d", &direction);
+//        if ((direction >= 1) && (direction <= 11)) {
+//            ptz(soap, username, password, direction, 0.5f, profileToken, mediaAddr);
+//        } else if (direction >= 12 && direction <= 14) {
+//            focus(soap, username, password, direction, 0.5f, videoSourceToken, mediaAddr);
+//        }
+//    }
+//
+//    int presetAction = -1;
+//    while (presetAction != 0) {
+//        printf("请输入数字进行preset,1-4分别代表查询、设置、跳转、删除预置点；退出输入0:\n");
+//        scanf("%d", &presetAction);
+//        if (1 == presetAction) {
+//            preset(soap, username, password, presetAction, NULL, NULL, profileToken, mediaAddr);
+//        } else if (2 == presetAction) {
+//            printf("请输入要设置的预置点token信息：\n");
+//            char presentToken[10];
+//            scanf("%s", presentToken);
+//            printf("请输入要设置的预置点name信息()长度不超过200：\n");
+//            char presentName[201];
+//            scanf("%s", presentName);
+//            preset(soap, username, password, presetAction, presentToken, presentName, profileToken, mediaAddr);
+//        } else if (3 == presetAction) {
+//            printf("请输入要跳转的预置点token信息：\n");
+//            char presentToken[10];
+//            scanf("%s", presentToken);
+//            preset(soap, username, password, presetAction, presentToken, NULL, profileToken, mediaAddr);
+//        } else if (4 == presetAction) {
+//            printf("请输入要删除的预置点token信息：\n");
+//            char presentToken[10];
+//            scanf("%s", presentToken);
+//            preset(soap, username, password, presetAction, presentToken, NULL, profileToken, mediaAddr);
+//        }
+//    }
+//
+//    del_soap(soap);
+//}
