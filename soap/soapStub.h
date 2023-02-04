@@ -34,6 +34,7 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 #define SOAP_NAMESPACE_OF_wsrfrw	"http://docs.oasis-open.org/wsrf/rw-2"
 #define SOAP_NAMESPACE_OF_wsrfr	"http://docs.oasis-open.org/wsrf/r-2"
 #define SOAP_NAMESPACE_OF_trt	"http://www.onvif.org/ver10/media/wsdl"
+#define SOAP_NAMESPACE_OF_tptz	"http://www.onvif.org/ver20/ptz/wsdl"
 
 #ifndef soapStub_H
 #define soapStub_H
@@ -178,7 +179,7 @@ typedef enum saml2__DecisionType {
 } saml2__DecisionType;
 #endif
 
-/* onvif.h:211 */
+/* onvif.h:217 */
 #ifndef SOAP_TYPE_xsd__boolean
 #define SOAP_TYPE_xsd__boolean (403)
 /* xsd:boolean */
@@ -188,7 +189,7 @@ enum xsd__boolean {
 };
 #endif
 
-/* onvif.h:367 */
+/* onvif.h:381 */
 #ifndef SOAP_TYPE_tds__AutoGeoModes
 #define SOAP_TYPE_tds__AutoGeoModes (421)
 /* tds:AutoGeoModes */
@@ -199,7 +200,7 @@ enum tds__AutoGeoModes {
 };
 #endif
 
-/* onvif.h:389 */
+/* onvif.h:403 */
 #ifndef SOAP_TYPE_tds__StorageType
 #define SOAP_TYPE_tds__StorageType (422)
 /* tds:StorageType */
@@ -211,7 +212,7 @@ enum tds__StorageType {
 };
 #endif
 
-/* onvif.h:433 */
+/* onvif.h:447 */
 #ifndef SOAP_TYPE_tt__RotateMode
 #define SOAP_TYPE_tt__RotateMode (424)
 /* tt:RotateMode */
@@ -222,7 +223,7 @@ enum tt__RotateMode {
 };
 #endif
 
-/* onvif.h:455 */
+/* onvif.h:469 */
 #ifndef SOAP_TYPE_tt__SceneOrientationMode
 #define SOAP_TYPE_tt__SceneOrientationMode (425)
 /* tt:SceneOrientationMode */
@@ -232,7 +233,7 @@ enum tt__SceneOrientationMode {
 };
 #endif
 
-/* onvif.h:468 */
+/* onvif.h:482 */
 #ifndef SOAP_TYPE_tt__SceneOrientationOption
 #define SOAP_TYPE_tt__SceneOrientationOption (426)
 /* tt:SceneOrientationOption */
@@ -243,7 +244,7 @@ enum tt__SceneOrientationOption {
 };
 #endif
 
-/* onvif.h:482 */
+/* onvif.h:496 */
 #ifndef SOAP_TYPE_tt__ViewModes
 #define SOAP_TYPE_tt__ViewModes (427)
 /* tt:ViewModes */
@@ -259,7 +260,7 @@ enum tt__ViewModes {
 };
 #endif
 
-/* onvif.h:529 */
+/* onvif.h:543 */
 #ifndef SOAP_TYPE_tt__VideoEncoding
 #define SOAP_TYPE_tt__VideoEncoding (428)
 /* tt:VideoEncoding */
@@ -270,7 +271,7 @@ enum tt__VideoEncoding {
 };
 #endif
 
-/* onvif.h:539 */
+/* onvif.h:553 */
 #ifndef SOAP_TYPE_tt__Mpeg4Profile
 #define SOAP_TYPE_tt__Mpeg4Profile (429)
 /* tt:Mpeg4Profile */
@@ -280,7 +281,7 @@ enum tt__Mpeg4Profile {
 };
 #endif
 
-/* onvif.h:548 */
+/* onvif.h:562 */
 #ifndef SOAP_TYPE_tt__H264Profile
 #define SOAP_TYPE_tt__H264Profile (430)
 /* tt:H264Profile */
@@ -292,7 +293,7 @@ enum tt__H264Profile {
 };
 #endif
 
-/* onvif.h:563 */
+/* onvif.h:577 */
 #ifndef SOAP_TYPE_tt__VideoEncodingMimeNames
 #define SOAP_TYPE_tt__VideoEncodingMimeNames (431)
 /* tt:VideoEncodingMimeNames */
@@ -304,7 +305,7 @@ enum tt__VideoEncodingMimeNames {
 };
 #endif
 
-/* onvif.h:574 */
+/* onvif.h:588 */
 #ifndef SOAP_TYPE_tt__VideoEncodingProfiles
 #define SOAP_TYPE_tt__VideoEncodingProfiles (432)
 /* tt:VideoEncodingProfiles */
@@ -319,7 +320,7 @@ enum tt__VideoEncodingProfiles {
 };
 #endif
 
-/* onvif.h:588 */
+/* onvif.h:602 */
 #ifndef SOAP_TYPE_tt__AudioEncoding
 #define SOAP_TYPE_tt__AudioEncoding (433)
 /* tt:AudioEncoding */
@@ -330,7 +331,7 @@ enum tt__AudioEncoding {
 };
 #endif
 
-/* onvif.h:602 */
+/* onvif.h:616 */
 #ifndef SOAP_TYPE_tt__AudioEncodingMimeNames
 #define SOAP_TYPE_tt__AudioEncodingMimeNames (434)
 /* tt:AudioEncodingMimeNames */
@@ -342,7 +343,7 @@ enum tt__AudioEncodingMimeNames {
 };
 #endif
 
-/* onvif.h:617 */
+/* onvif.h:631 */
 #ifndef SOAP_TYPE_tt__MetadataCompressionType
 #define SOAP_TYPE_tt__MetadataCompressionType (435)
 /* tt:MetadataCompressionType */
@@ -353,7 +354,7 @@ enum tt__MetadataCompressionType {
 };
 #endif
 
-/* onvif.h:627 */
+/* onvif.h:641 */
 #ifndef SOAP_TYPE_tt__StreamType
 #define SOAP_TYPE_tt__StreamType (436)
 /* tt:StreamType */
@@ -363,7 +364,7 @@ enum tt__StreamType {
 };
 #endif
 
-/* onvif.h:636 */
+/* onvif.h:650 */
 #ifndef SOAP_TYPE_tt__TransportProtocol
 #define SOAP_TYPE_tt__TransportProtocol (437)
 /* tt:TransportProtocol */
@@ -375,7 +376,7 @@ enum tt__TransportProtocol {
 };
 #endif
 
-/* onvif.h:651 */
+/* onvif.h:665 */
 #ifndef SOAP_TYPE_tt__ScopeDefinition
 #define SOAP_TYPE_tt__ScopeDefinition (438)
 /* tt:ScopeDefinition */
@@ -385,7 +386,7 @@ enum tt__ScopeDefinition {
 };
 #endif
 
-/* onvif.h:660 */
+/* onvif.h:674 */
 #ifndef SOAP_TYPE_tt__DiscoveryMode
 #define SOAP_TYPE_tt__DiscoveryMode (439)
 /* tt:DiscoveryMode */
@@ -395,7 +396,7 @@ enum tt__DiscoveryMode {
 };
 #endif
 
-/* onvif.h:674 */
+/* onvif.h:688 */
 #ifndef SOAP_TYPE_tt__Duplex
 #define SOAP_TYPE_tt__Duplex (441)
 /* tt:Duplex */
@@ -405,7 +406,7 @@ enum tt__Duplex {
 };
 #endif
 
-/* onvif.h:691 */
+/* onvif.h:705 */
 #ifndef SOAP_TYPE_tt__IPv6DHCPConfiguration
 #define SOAP_TYPE_tt__IPv6DHCPConfiguration (443)
 /* tt:IPv6DHCPConfiguration */
@@ -417,7 +418,7 @@ enum tt__IPv6DHCPConfiguration {
 };
 #endif
 
-/* onvif.h:702 */
+/* onvif.h:716 */
 #ifndef SOAP_TYPE_tt__NetworkProtocolType
 #define SOAP_TYPE_tt__NetworkProtocolType (444)
 /* tt:NetworkProtocolType */
@@ -428,7 +429,7 @@ enum tt__NetworkProtocolType {
 };
 #endif
 
-/* onvif.h:712 */
+/* onvif.h:726 */
 #ifndef SOAP_TYPE_tt__NetworkHostType
 #define SOAP_TYPE_tt__NetworkHostType (445)
 /* tt:NetworkHostType */
@@ -439,7 +440,7 @@ enum tt__NetworkHostType {
 };
 #endif
 
-/* onvif.h:734 */
+/* onvif.h:748 */
 #ifndef SOAP_TYPE_tt__IPType
 #define SOAP_TYPE_tt__IPType (449)
 /* tt:IPType */
@@ -449,7 +450,7 @@ enum tt__IPType {
 };
 #endif
 
-/* onvif.h:751 */
+/* onvif.h:765 */
 #ifndef SOAP_TYPE_tt__IPAddressFilterType
 #define SOAP_TYPE_tt__IPAddressFilterType (452)
 /* tt:IPAddressFilterType */
@@ -459,7 +460,7 @@ enum tt__IPAddressFilterType {
 };
 #endif
 
-/* onvif.h:760 */
+/* onvif.h:774 */
 #ifndef SOAP_TYPE_tt__DynamicDNSType
 #define SOAP_TYPE_tt__DynamicDNSType (453)
 /* tt:DynamicDNSType */
@@ -470,7 +471,7 @@ enum tt__DynamicDNSType {
 };
 #endif
 
-/* onvif.h:775 */
+/* onvif.h:789 */
 #ifndef SOAP_TYPE_tt__Dot11StationMode
 #define SOAP_TYPE_tt__Dot11StationMode (455)
 /* tt:Dot11StationMode */
@@ -481,7 +482,7 @@ enum tt__Dot11StationMode {
 };
 #endif
 
-/* onvif.h:785 */
+/* onvif.h:799 */
 #ifndef SOAP_TYPE_tt__Dot11SecurityMode
 #define SOAP_TYPE_tt__Dot11SecurityMode (456)
 /* tt:Dot11SecurityMode */
@@ -494,7 +495,7 @@ enum tt__Dot11SecurityMode {
 };
 #endif
 
-/* onvif.h:797 */
+/* onvif.h:811 */
 #ifndef SOAP_TYPE_tt__Dot11Cipher
 #define SOAP_TYPE_tt__Dot11Cipher (457)
 /* tt:Dot11Cipher */
@@ -506,7 +507,7 @@ enum tt__Dot11Cipher {
 };
 #endif
 
-/* onvif.h:818 */
+/* onvif.h:832 */
 #ifndef SOAP_TYPE_tt__Dot11SignalStrength
 #define SOAP_TYPE_tt__Dot11SignalStrength (460)
 /* tt:Dot11SignalStrength */
@@ -520,7 +521,7 @@ enum tt__Dot11SignalStrength {
 };
 #endif
 
-/* onvif.h:831 */
+/* onvif.h:845 */
 #ifndef SOAP_TYPE_tt__Dot11AuthAndMangementSuite
 #define SOAP_TYPE_tt__Dot11AuthAndMangementSuite (461)
 /* tt:Dot11AuthAndMangementSuite */
@@ -532,7 +533,7 @@ enum tt__Dot11AuthAndMangementSuite {
 };
 #endif
 
-/* onvif.h:842 */
+/* onvif.h:856 */
 #ifndef SOAP_TYPE_tt__CapabilityCategory
 #define SOAP_TYPE_tt__CapabilityCategory (462)
 /* tt:CapabilityCategory */
@@ -547,7 +548,7 @@ enum tt__CapabilityCategory {
 };
 #endif
 
-/* onvif.h:860 */
+/* onvif.h:874 */
 #ifndef SOAP_TYPE_tt__SystemLogType
 #define SOAP_TYPE_tt__SystemLogType (463)
 /* tt:SystemLogType */
@@ -557,7 +558,7 @@ enum tt__SystemLogType {
 };
 #endif
 
-/* onvif.h:881 */
+/* onvif.h:895 */
 #ifndef SOAP_TYPE_tt__FactoryDefaultType
 #define SOAP_TYPE_tt__FactoryDefaultType (464)
 /* tt:FactoryDefaultType */
@@ -567,7 +568,7 @@ enum tt__FactoryDefaultType {
 };
 #endif
 
-/* onvif.h:898 */
+/* onvif.h:912 */
 #ifndef SOAP_TYPE_tt__SetDateTimeType
 #define SOAP_TYPE_tt__SetDateTimeType (465)
 /* tt:SetDateTimeType */
@@ -577,7 +578,7 @@ enum tt__SetDateTimeType {
 };
 #endif
 
-/* onvif.h:915 */
+/* onvif.h:929 */
 #ifndef SOAP_TYPE_tt__UserLevel
 #define SOAP_TYPE_tt__UserLevel (466)
 /* tt:UserLevel */
@@ -590,7 +591,7 @@ enum tt__UserLevel {
 };
 #endif
 
-/* onvif.h:927 */
+/* onvif.h:941 */
 #ifndef SOAP_TYPE_tt__RelayLogicalState
 #define SOAP_TYPE_tt__RelayLogicalState (467)
 /* tt:RelayLogicalState */
@@ -600,7 +601,7 @@ enum tt__RelayLogicalState {
 };
 #endif
 
-/* onvif.h:936 */
+/* onvif.h:950 */
 #ifndef SOAP_TYPE_tt__RelayIdleState
 #define SOAP_TYPE_tt__RelayIdleState (468)
 /* tt:RelayIdleState */
@@ -610,7 +611,7 @@ enum tt__RelayIdleState {
 };
 #endif
 
-/* onvif.h:945 */
+/* onvif.h:959 */
 #ifndef SOAP_TYPE_tt__RelayMode
 #define SOAP_TYPE_tt__RelayMode (469)
 /* tt:RelayMode */
@@ -620,7 +621,7 @@ enum tt__RelayMode {
 };
 #endif
 
-/* onvif.h:954 */
+/* onvif.h:968 */
 #ifndef SOAP_TYPE_tt__DigitalIdleState
 #define SOAP_TYPE_tt__DigitalIdleState (470)
 /* tt:DigitalIdleState */
@@ -630,7 +631,7 @@ enum tt__DigitalIdleState {
 };
 #endif
 
-/* onvif.h:963 */
+/* onvif.h:977 */
 #ifndef SOAP_TYPE_tt__EFlipMode
 #define SOAP_TYPE_tt__EFlipMode (471)
 /* tt:EFlipMode */
@@ -641,7 +642,7 @@ enum tt__EFlipMode {
 };
 #endif
 
-/* onvif.h:973 */
+/* onvif.h:987 */
 #ifndef SOAP_TYPE_tt__ReverseMode
 #define SOAP_TYPE_tt__ReverseMode (472)
 /* tt:ReverseMode */
@@ -653,7 +654,7 @@ enum tt__ReverseMode {
 };
 #endif
 
-/* onvif.h:989 */
+/* onvif.h:1003 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourState
 #define SOAP_TYPE_tt__PTZPresetTourState (474)
 /* tt:PTZPresetTourState */
@@ -665,7 +666,7 @@ enum tt__PTZPresetTourState {
 };
 #endif
 
-/* onvif.h:1000 */
+/* onvif.h:1014 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourDirection
 #define SOAP_TYPE_tt__PTZPresetTourDirection (475)
 /* tt:PTZPresetTourDirection */
@@ -676,7 +677,7 @@ enum tt__PTZPresetTourDirection {
 };
 #endif
 
-/* onvif.h:1010 */
+/* onvif.h:1024 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourOperation
 #define SOAP_TYPE_tt__PTZPresetTourOperation (476)
 /* tt:PTZPresetTourOperation */
@@ -688,7 +689,7 @@ enum tt__PTZPresetTourOperation {
 };
 #endif
 
-/* onvif.h:1021 */
+/* onvif.h:1035 */
 #ifndef SOAP_TYPE_tt__MoveAndTrackMethod
 #define SOAP_TYPE_tt__MoveAndTrackMethod (477)
 /* tt:MoveAndTrackMethod */
@@ -700,7 +701,7 @@ enum tt__MoveAndTrackMethod {
 };
 #endif
 
-/* onvif.h:1032 */
+/* onvif.h:1046 */
 #ifndef SOAP_TYPE_tt__AutoFocusMode
 #define SOAP_TYPE_tt__AutoFocusMode (478)
 /* tt:AutoFocusMode */
@@ -710,7 +711,7 @@ enum tt__AutoFocusMode {
 };
 #endif
 
-/* onvif.h:1041 */
+/* onvif.h:1055 */
 #ifndef SOAP_TYPE_tt__AFModes
 #define SOAP_TYPE_tt__AFModes (479)
 /* tt:AFModes */
@@ -719,7 +720,7 @@ enum tt__AFModes {
 };
 #endif
 
-/* onvif.h:1053 */
+/* onvif.h:1067 */
 #ifndef SOAP_TYPE_tt__WideDynamicMode
 #define SOAP_TYPE_tt__WideDynamicMode (480)
 /* tt:WideDynamicMode */
@@ -729,7 +730,7 @@ enum tt__WideDynamicMode {
 };
 #endif
 
-/* onvif.h:1066 */
+/* onvif.h:1080 */
 #ifndef SOAP_TYPE_tt__BacklightCompensationMode
 #define SOAP_TYPE_tt__BacklightCompensationMode (481)
 /* tt:BacklightCompensationMode */
@@ -739,7 +740,7 @@ enum tt__BacklightCompensationMode {
 };
 #endif
 
-/* onvif.h:1083 */
+/* onvif.h:1097 */
 #ifndef SOAP_TYPE_tt__ExposurePriority
 #define SOAP_TYPE_tt__ExposurePriority (482)
 /* tt:ExposurePriority */
@@ -749,7 +750,7 @@ enum tt__ExposurePriority {
 };
 #endif
 
-/* onvif.h:1092 */
+/* onvif.h:1106 */
 #ifndef SOAP_TYPE_tt__ExposureMode
 #define SOAP_TYPE_tt__ExposureMode (483)
 /* tt:ExposureMode */
@@ -759,7 +760,7 @@ enum tt__ExposureMode {
 };
 #endif
 
-/* onvif.h:1101 */
+/* onvif.h:1115 */
 #ifndef SOAP_TYPE_tt__Enabled
 #define SOAP_TYPE_tt__Enabled (484)
 /* tt:Enabled */
@@ -769,7 +770,7 @@ enum tt__Enabled {
 };
 #endif
 
-/* onvif.h:1110 */
+/* onvif.h:1124 */
 #ifndef SOAP_TYPE_tt__WhiteBalanceMode
 #define SOAP_TYPE_tt__WhiteBalanceMode (485)
 /* tt:WhiteBalanceMode */
@@ -779,7 +780,7 @@ enum tt__WhiteBalanceMode {
 };
 #endif
 
-/* onvif.h:1119 */
+/* onvif.h:1133 */
 #ifndef SOAP_TYPE_tt__IrCutFilterMode
 #define SOAP_TYPE_tt__IrCutFilterMode (486)
 /* tt:IrCutFilterMode */
@@ -790,7 +791,7 @@ enum tt__IrCutFilterMode {
 };
 #endif
 
-/* onvif.h:1129 */
+/* onvif.h:1143 */
 #ifndef SOAP_TYPE_tt__ImageStabilizationMode
 #define SOAP_TYPE_tt__ImageStabilizationMode (487)
 /* tt:ImageStabilizationMode */
@@ -802,7 +803,7 @@ enum tt__ImageStabilizationMode {
 };
 #endif
 
-/* onvif.h:1140 */
+/* onvif.h:1154 */
 #ifndef SOAP_TYPE_tt__IrCutFilterAutoBoundaryType
 #define SOAP_TYPE_tt__IrCutFilterAutoBoundaryType (488)
 /* tt:IrCutFilterAutoBoundaryType */
@@ -814,7 +815,7 @@ enum tt__IrCutFilterAutoBoundaryType {
 };
 #endif
 
-/* onvif.h:1151 */
+/* onvif.h:1165 */
 #ifndef SOAP_TYPE_tt__ToneCompensationMode
 #define SOAP_TYPE_tt__ToneCompensationMode (489)
 /* tt:ToneCompensationMode */
@@ -825,7 +826,7 @@ enum tt__ToneCompensationMode {
 };
 #endif
 
-/* onvif.h:1161 */
+/* onvif.h:1175 */
 #ifndef SOAP_TYPE_tt__DefoggingMode
 #define SOAP_TYPE_tt__DefoggingMode (490)
 /* tt:DefoggingMode */
@@ -836,7 +837,7 @@ enum tt__DefoggingMode {
 };
 #endif
 
-/* onvif.h:1171 */
+/* onvif.h:1185 */
 #ifndef SOAP_TYPE_tt__ImageSendingType
 #define SOAP_TYPE_tt__ImageSendingType (491)
 /* tt:ImageSendingType */
@@ -847,7 +848,7 @@ enum tt__ImageSendingType {
 };
 #endif
 
-/* onvif.h:1181 */
+/* onvif.h:1195 */
 #ifndef SOAP_TYPE_tt__PropertyOperation
 #define SOAP_TYPE_tt__PropertyOperation (492)
 /* tt:PropertyOperation */
@@ -858,7 +859,7 @@ enum tt__PropertyOperation {
 };
 #endif
 
-/* onvif.h:1191 */
+/* onvif.h:1205 */
 #ifndef SOAP_TYPE_tt__Direction
 #define SOAP_TYPE_tt__Direction (493)
 /* tt:Direction */
@@ -869,7 +870,7 @@ enum tt__Direction {
 };
 #endif
 
-/* onvif.h:1205 */
+/* onvif.h:1219 */
 #ifndef SOAP_TYPE_tt__ReceiverMode
 #define SOAP_TYPE_tt__ReceiverMode (494)
 /* tt:ReceiverMode */
@@ -881,7 +882,7 @@ enum tt__ReceiverMode {
 };
 #endif
 
-/* onvif.h:1236 */
+/* onvif.h:1250 */
 #ifndef SOAP_TYPE_tt__ReceiverState
 #define SOAP_TYPE_tt__ReceiverState (495)
 /* tt:ReceiverState */
@@ -893,7 +894,7 @@ enum tt__ReceiverState {
 };
 #endif
 
-/* onvif.h:1271 */
+/* onvif.h:1285 */
 #ifndef SOAP_TYPE_tt__SearchState
 #define SOAP_TYPE_tt__SearchState (498)
 /* tt:SearchState */
@@ -905,7 +906,7 @@ enum tt__SearchState {
 };
 #endif
 
-/* onvif.h:1298 */
+/* onvif.h:1312 */
 #ifndef SOAP_TYPE_tt__RecordingStatus
 #define SOAP_TYPE_tt__RecordingStatus (499)
 /* tt:RecordingStatus */
@@ -919,7 +920,7 @@ enum tt__RecordingStatus {
 };
 #endif
 
-/* onvif.h:1315 */
+/* onvif.h:1329 */
 #ifndef SOAP_TYPE_tt__TrackType
 #define SOAP_TYPE_tt__TrackType (500)
 /* tt:TrackType */
@@ -931,7 +932,7 @@ enum tt__TrackType {
 };
 #endif
 
-/* onvif.h:1338 */
+/* onvif.h:1352 */
 #ifndef SOAP_TYPE_tt__ModeOfOperation
 #define SOAP_TYPE_tt__ModeOfOperation (503)
 /* tt:ModeOfOperation */
@@ -942,7 +943,7 @@ enum tt__ModeOfOperation {
 };
 #endif
 
-/* onvif.h:1357 */
+/* onvif.h:1371 */
 #ifndef SOAP_TYPE_tt__AudioClassType
 #define SOAP_TYPE_tt__AudioClassType (504)
 /* tt:AudioClassType */
@@ -954,7 +955,7 @@ enum tt__AudioClassType {
 };
 #endif
 
-/* onvif.h:1368 */
+/* onvif.h:1382 */
 #ifndef SOAP_TYPE_tt__OSDType
 #define SOAP_TYPE_tt__OSDType (505)
 /* tt:OSDType */
@@ -965,7 +966,7 @@ enum tt__OSDType {
 };
 #endif
 
-/* onvif.h:1390 */
+/* onvif.h:1404 */
 #ifndef SOAP_TYPE_tt__MoveStatus
 #define SOAP_TYPE_tt__MoveStatus (507)
 /* tt:MoveStatus */
@@ -976,7 +977,7 @@ enum tt__MoveStatus {
 };
 #endif
 
-/* onvif.h:1400 */
+/* onvif.h:1414 */
 #ifndef SOAP_TYPE_tt__Entity
 #define SOAP_TYPE_tt__Entity (508)
 /* tt:Entity */
@@ -987,7 +988,7 @@ enum tt__Entity {
 };
 #endif
 
-/* onvif.h:1470 */
+/* onvif.h:1484 */
 #ifndef SOAP_TYPE_tev__EventBrokerProtocol
 #define SOAP_TYPE_tev__EventBrokerProtocol (512)
 /* tev:EventBrokerProtocol */
@@ -999,7 +1000,7 @@ enum tev__EventBrokerProtocol {
 };
 #endif
 
-/* onvif.h:1481 */
+/* onvif.h:1495 */
 #ifndef SOAP_TYPE_tev__ConnectionStatus
 #define SOAP_TYPE_tev__ConnectionStatus (513)
 /* tev:ConnectionStatus */
@@ -1162,1212 +1163,1301 @@ typedef struct saml2__AttributeStatementType saml2__AttributeStatementType;	/* s
 typedef struct saml2__KeyInfoConfirmationDataType saml2__KeyInfoConfirmationDataType;	/* saml2.h:96 */
 typedef struct _wsse__Security _wsse__Security;	/* wsse.h:212 */
 typedef struct _wsse__Password _wsse__Password;	/* wsse.h:146 */
-struct SOAP_ENV__Envelope;	/* onvif.h:200 */
-struct xsd__base64Binary;	/* onvif.h:204 */
-struct xsd__hexBinary;	/* onvif.h:218 */
-struct _tds__Service_Capabilities;	/* onvif.h:1650 */
-struct tds__Service;	/* onvif.h:1629 */
-struct tds__DeviceServiceCapabilities;	/* onvif.h:1692 */
-struct tds__NetworkCapabilities;	/* onvif.h:1698 */
-struct tds__SecurityCapabilities;	/* onvif.h:1704 */
-struct tds__SystemCapabilities;	/* onvif.h:1710 */
-struct tds__MiscCapabilities;	/* onvif.h:1716 */
-struct _tds__UserCredential_Extension;	/* onvif.h:2126 */
-struct tds__UserCredential;	/* onvif.h:2105 */
-struct _tds__StorageConfigurationData_Extension;	/* onvif.h:2176 */
-struct tds__StorageConfigurationData;	/* onvif.h:2149 */
-struct _tds__GetServices;	/* onvif.h:2212 */
-struct _tds__GetServicesResponse;	/* onvif.h:2232 */
-struct _tds__GetServiceCapabilities;	/* onvif.h:2254 */
-struct _tds__GetServiceCapabilitiesResponse;	/* onvif.h:2268 */
-struct _tds__GetDeviceInformation;	/* onvif.h:2288 */
-struct _tds__GetDeviceInformationResponse;	/* onvif.h:2302 */
-struct _tds__SetSystemDateAndTime;	/* onvif.h:2346 */
-struct _tds__SetSystemDateAndTimeResponse;	/* onvif.h:2384 */
-struct _tds__GetSystemDateAndTime;	/* onvif.h:2398 */
-struct _tds__GetSystemDateAndTimeResponse;	/* onvif.h:2412 */
-struct _tds__SetSystemFactoryDefault;	/* onvif.h:2432 */
-struct _tds__SetSystemFactoryDefaultResponse;	/* onvif.h:2452 */
-struct _tds__UpgradeSystemFirmware;	/* onvif.h:2466 */
-struct _tds__UpgradeSystemFirmwareResponse;	/* onvif.h:2482 */
-struct _tds__SystemReboot;	/* onvif.h:2498 */
-struct _tds__SystemRebootResponse;	/* onvif.h:2512 */
-struct _tds__RestoreSystem;	/* onvif.h:2532 */
-struct _tds__RestoreSystemResponse;	/* onvif.h:2550 */
-struct _tds__GetSystemBackup;	/* onvif.h:2564 */
-struct _tds__GetSystemBackupResponse;	/* onvif.h:2578 */
-struct _tds__GetSystemSupportInformation;	/* onvif.h:2596 */
-struct _tds__GetSystemSupportInformationResponse;	/* onvif.h:2610 */
-struct _tds__GetSystemLog;	/* onvif.h:2630 */
-struct _tds__GetSystemLogResponse;	/* onvif.h:2650 */
-struct _tds__GetScopes;	/* onvif.h:2670 */
-struct _tds__GetScopesResponse;	/* onvif.h:2684 */
-struct _tds__SetScopes;	/* onvif.h:2706 */
-struct _tds__SetScopesResponse;	/* onvif.h:2728 */
-struct _tds__AddScopes;	/* onvif.h:2742 */
-struct _tds__AddScopesResponse;	/* onvif.h:2764 */
-struct _tds__RemoveScopes;	/* onvif.h:2778 */
-struct _tds__RemoveScopesResponse;	/* onvif.h:2801 */
-struct _tds__GetDiscoveryMode;	/* onvif.h:2823 */
-struct _tds__GetDiscoveryModeResponse;	/* onvif.h:2837 */
-struct _tds__SetDiscoveryMode;	/* onvif.h:2857 */
-struct _tds__SetDiscoveryModeResponse;	/* onvif.h:2877 */
-struct _tds__GetRemoteDiscoveryMode;	/* onvif.h:2891 */
-struct _tds__GetRemoteDiscoveryModeResponse;	/* onvif.h:2905 */
-struct _tds__SetRemoteDiscoveryMode;	/* onvif.h:2925 */
-struct _tds__SetRemoteDiscoveryModeResponse;	/* onvif.h:2945 */
-struct _tds__GetDPAddresses;	/* onvif.h:2959 */
-struct _tds__GetDPAddressesResponse;	/* onvif.h:2973 */
-struct _tds__SetDPAddresses;	/* onvif.h:2991 */
-struct _tds__SetDPAddressesResponse;	/* onvif.h:3009 */
-struct _tds__GetEndpointReference;	/* onvif.h:3023 */
-struct _tds__GetEndpointReferenceResponse;	/* onvif.h:3037 */
-struct _tds__GetRemoteUser;	/* onvif.h:3062 */
-struct _tds__GetRemoteUserResponse;	/* onvif.h:3076 */
-struct _tds__SetRemoteUser;	/* onvif.h:3092 */
-struct _tds__SetRemoteUserResponse;	/* onvif.h:3108 */
-struct _tds__GetUsers;	/* onvif.h:3122 */
-struct _tds__GetUsersResponse;	/* onvif.h:3136 */
-struct _tds__CreateUsers;	/* onvif.h:3158 */
-struct _tds__CreateUsersResponse;	/* onvif.h:3180 */
-struct _tds__DeleteUsers;	/* onvif.h:3194 */
-struct _tds__DeleteUsersResponse;	/* onvif.h:3216 */
-struct _tds__SetUser;	/* onvif.h:3230 */
-struct _tds__SetUserResponse;	/* onvif.h:3252 */
-struct _tds__GetWsdlUrl;	/* onvif.h:3266 */
-struct _tds__GetWsdlUrlResponse;	/* onvif.h:3280 */
-struct _tds__GetPasswordComplexityOptions;	/* onvif.h:3296 */
-struct _tds__GetPasswordComplexityOptionsResponse;	/* onvif.h:3310 */
-struct _tds__GetPasswordComplexityConfiguration;	/* onvif.h:3336 */
-struct _tds__GetPasswordComplexityConfigurationResponse;	/* onvif.h:3350 */
-struct _tds__SetPasswordComplexityConfiguration;	/* onvif.h:3376 */
-struct _tds__SetPasswordComplexityConfigurationResponse;	/* onvif.h:3402 */
-struct _tds__GetPasswordHistoryConfiguration;	/* onvif.h:3416 */
-struct _tds__GetPasswordHistoryConfigurationResponse;	/* onvif.h:3430 */
-struct _tds__SetPasswordHistoryConfiguration;	/* onvif.h:3448 */
-struct _tds__SetPasswordHistoryConfigurationResponse;	/* onvif.h:3466 */
-struct _tds__GetAuthFailureWarningOptions;	/* onvif.h:3480 */
-struct _tds__GetAuthFailureWarningOptionsResponse;	/* onvif.h:3494 */
-struct _tds__GetAuthFailureWarningConfiguration;	/* onvif.h:3512 */
-struct _tds__GetAuthFailureWarningConfigurationResponse;	/* onvif.h:3526 */
-struct _tds__SetAuthFailureWarningConfiguration;	/* onvif.h:3546 */
-struct _tds__SetAuthFailureWarningConfigurationResponse;	/* onvif.h:3566 */
-struct _tds__GetCapabilities;	/* onvif.h:3580 */
-struct _tds__GetCapabilitiesResponse;	/* onvif.h:3602 */
-struct _tds__GetHostname;	/* onvif.h:3622 */
-struct _tds__GetHostnameResponse;	/* onvif.h:3636 */
-struct _tds__SetHostname;	/* onvif.h:3656 */
-struct _tds__SetHostnameResponse;	/* onvif.h:3676 */
-struct _tds__SetHostnameFromDHCP;	/* onvif.h:3690 */
-struct _tds__SetHostnameFromDHCPResponse;	/* onvif.h:3710 */
-struct _tds__GetDNS;	/* onvif.h:3730 */
-struct _tds__GetDNSResponse;	/* onvif.h:3744 */
-struct _tds__SetDNS;	/* onvif.h:3764 */
-struct _tds__SetDNSResponse;	/* onvif.h:3800 */
-struct _tds__GetNTP;	/* onvif.h:3814 */
-struct _tds__GetNTPResponse;	/* onvif.h:3828 */
-struct _tds__SetNTP;	/* onvif.h:3848 */
-struct _tds__SetNTPResponse;	/* onvif.h:3876 */
-struct _tds__GetDynamicDNS;	/* onvif.h:3890 */
-struct _tds__GetDynamicDNSResponse;	/* onvif.h:3904 */
-struct _tds__SetDynamicDNS;	/* onvif.h:3924 */
-struct _tds__SetDynamicDNSResponse;	/* onvif.h:3956 */
-struct _tds__GetNetworkInterfaces;	/* onvif.h:3970 */
-struct _tds__GetNetworkInterfacesResponse;	/* onvif.h:3984 */
-struct _tds__SetNetworkInterfaces;	/* onvif.h:4006 */
-struct _tds__SetNetworkInterfacesResponse;	/* onvif.h:4032 */
-struct _tds__GetNetworkProtocols;	/* onvif.h:4059 */
-struct _tds__GetNetworkProtocolsResponse;	/* onvif.h:4073 */
-struct _tds__SetNetworkProtocols;	/* onvif.h:4095 */
-struct _tds__SetNetworkProtocolsResponse;	/* onvif.h:4117 */
-struct _tds__GetNetworkDefaultGateway;	/* onvif.h:4131 */
-struct _tds__GetNetworkDefaultGatewayResponse;	/* onvif.h:4145 */
-struct _tds__SetNetworkDefaultGateway;	/* onvif.h:4165 */
-struct _tds__SetNetworkDefaultGatewayResponse;	/* onvif.h:4195 */
-struct _tds__GetZeroConfiguration;	/* onvif.h:4209 */
-struct _tds__GetZeroConfigurationResponse;	/* onvif.h:4223 */
-struct _tds__SetZeroConfiguration;	/* onvif.h:4243 */
-struct _tds__SetZeroConfigurationResponse;	/* onvif.h:4269 */
-struct _tds__GetIPAddressFilter;	/* onvif.h:4283 */
-struct _tds__GetIPAddressFilterResponse;	/* onvif.h:4297 */
-struct _tds__SetIPAddressFilter;	/* onvif.h:4313 */
-struct _tds__SetIPAddressFilterResponse;	/* onvif.h:4329 */
-struct _tds__AddIPAddressFilter;	/* onvif.h:4343 */
-struct _tds__AddIPAddressFilterResponse;	/* onvif.h:4359 */
-struct _tds__RemoveIPAddressFilter;	/* onvif.h:4373 */
-struct _tds__RemoveIPAddressFilterResponse;	/* onvif.h:4389 */
-struct _tds__GetAccessPolicy;	/* onvif.h:4403 */
-struct _tds__GetAccessPolicyResponse;	/* onvif.h:4417 */
-struct _tds__SetAccessPolicy;	/* onvif.h:4433 */
-struct _tds__SetAccessPolicyResponse;	/* onvif.h:4449 */
-struct _tds__CreateCertificate;	/* onvif.h:4463 */
-struct _tds__CreateCertificateResponse;	/* onvif.h:4501 */
-struct _tds__GetCertificates;	/* onvif.h:4521 */
-struct _tds__GetCertificatesResponse;	/* onvif.h:4535 */
-struct _tds__GetCertificatesStatus;	/* onvif.h:4557 */
-struct _tds__GetCertificatesStatusResponse;	/* onvif.h:4571 */
-struct _tds__SetCertificatesStatus;	/* onvif.h:4593 */
-struct _tds__SetCertificatesStatusResponse;	/* onvif.h:4615 */
-struct _tds__DeleteCertificates;	/* onvif.h:4629 */
-struct _tds__DeleteCertificatesResponse;	/* onvif.h:4651 */
-struct _tds__GetPkcs10Request;	/* onvif.h:4665 */
-struct _tds__GetPkcs10RequestResponse;	/* onvif.h:4697 */
-struct _tds__LoadCertificates;	/* onvif.h:4717 */
-struct _tds__LoadCertificatesResponse;	/* onvif.h:4739 */
-struct _tds__GetClientCertificateMode;	/* onvif.h:4753 */
-struct _tds__GetClientCertificateModeResponse;	/* onvif.h:4767 */
-struct _tds__SetClientCertificateMode;	/* onvif.h:4787 */
-struct _tds__SetClientCertificateModeResponse;	/* onvif.h:4807 */
-struct _tds__GetCACertificates;	/* onvif.h:4821 */
-struct _tds__GetCACertificatesResponse;	/* onvif.h:4835 */
-struct _tds__LoadCertificateWithPrivateKey;	/* onvif.h:4853 */
-struct _tds__LoadCertificateWithPrivateKeyResponse;	/* onvif.h:4871 */
-struct _tds__GetCertificateInformation;	/* onvif.h:4885 */
-struct _tds__GetCertificateInformationResponse;	/* onvif.h:4901 */
-struct _tds__LoadCACertificates;	/* onvif.h:4917 */
-struct _tds__LoadCACertificatesResponse;	/* onvif.h:4935 */
-struct _tds__CreateDot1XConfiguration;	/* onvif.h:4949 */
-struct _tds__CreateDot1XConfigurationResponse;	/* onvif.h:4965 */
-struct _tds__SetDot1XConfiguration;	/* onvif.h:4979 */
-struct _tds__SetDot1XConfigurationResponse;	/* onvif.h:4995 */
-struct _tds__GetDot1XConfiguration;	/* onvif.h:5009 */
-struct _tds__GetDot1XConfigurationResponse;	/* onvif.h:5025 */
-struct _tds__GetDot1XConfigurations;	/* onvif.h:5041 */
-struct _tds__GetDot1XConfigurationsResponse;	/* onvif.h:5055 */
-struct _tds__DeleteDot1XConfiguration;	/* onvif.h:5073 */
-struct _tds__DeleteDot1XConfigurationResponse;	/* onvif.h:5091 */
-struct _tds__GetRelayOutputs;	/* onvif.h:5105 */
-struct _tds__GetRelayOutputsResponse;	/* onvif.h:5119 */
-struct _tds__SetRelayOutputSettings;	/* onvif.h:5137 */
-struct _tds__SetRelayOutputSettingsResponse;	/* onvif.h:5155 */
-struct _tds__SetRelayOutputState;	/* onvif.h:5169 */
-struct _tds__SetRelayOutputStateResponse;	/* onvif.h:5187 */
-struct _tds__SendAuxiliaryCommand;	/* onvif.h:5201 */
-struct _tds__SendAuxiliaryCommandResponse;	/* onvif.h:5217 */
-struct _tds__GetDot11Capabilities;	/* onvif.h:5233 */
-struct _tds__GetDot11CapabilitiesResponse;	/* onvif.h:5256 */
-struct _tds__GetDot11Status;	/* onvif.h:5272 */
-struct _tds__GetDot11StatusResponse;	/* onvif.h:5288 */
-struct _tds__ScanAvailableDot11Networks;	/* onvif.h:5304 */
-struct _tds__ScanAvailableDot11NetworksResponse;	/* onvif.h:5320 */
-struct _tds__GetSystemUris;	/* onvif.h:5338 */
-struct _tds__GetSystemUrisResponse_Extension;	/* onvif.h:5367 */
-struct _tds__GetSystemUrisResponse;	/* onvif.h:5352 */
-struct _tds__StartFirmwareUpgrade;	/* onvif.h:5391 */
-struct _tds__StartFirmwareUpgradeResponse;	/* onvif.h:5405 */
-struct _tds__StartSystemRestore;	/* onvif.h:5425 */
-struct _tds__StartSystemRestoreResponse;	/* onvif.h:5439 */
-struct _tds__SetHashingAlgorithm;	/* onvif.h:5457 */
-struct _tds__SetHashingAlgorithmResponse;	/* onvif.h:5477 */
-struct _tds__GetStorageConfigurations;	/* onvif.h:5491 */
-struct _tds__GetStorageConfigurationsResponse;	/* onvif.h:5505 */
-struct _tds__CreateStorageConfiguration;	/* onvif.h:5523 */
-struct _tds__CreateStorageConfigurationResponse;	/* onvif.h:5539 */
-struct _tds__GetStorageConfiguration;	/* onvif.h:5555 */
-struct _tds__GetStorageConfigurationResponse;	/* onvif.h:5571 */
-struct _tds__SetStorageConfiguration;	/* onvif.h:5587 */
-struct _tds__SetStorageConfigurationResponse;	/* onvif.h:5603 */
-struct _tds__DeleteStorageConfiguration;	/* onvif.h:5617 */
-struct _tds__DeleteStorageConfigurationResponse;	/* onvif.h:5633 */
-struct _tds__GetGeoLocation;	/* onvif.h:5647 */
-struct _tds__GetGeoLocationResponse;	/* onvif.h:5661 */
-struct _tds__SetGeoLocation;	/* onvif.h:5679 */
-struct _tds__SetGeoLocationResponse;	/* onvif.h:5697 */
-struct _tds__DeleteGeoLocation;	/* onvif.h:5711 */
-struct _tds__DeleteGeoLocationResponse;	/* onvif.h:5729 */
-struct tt__DeviceEntity;	/* onvif.h:5766 */
-struct tt__IntRectangle;	/* onvif.h:5789 */
-struct tt__IntRectangleRange;	/* onvif.h:5814 */
-struct tt__FloatRange;	/* onvif.h:5855 */
-struct tt__DurationRange;	/* onvif.h:5876 */
-struct tt__IntItems;	/* onvif.h:5897 */
-struct tt__FloatItems;	/* onvif.h:5914 */
-struct tt__AnyHolder;	/* onvif.h:5931 */
-struct tt__VideoSourceExtension;	/* onvif.h:5959 */
-struct tt__VideoSourceExtension2;	/* onvif.h:5976 */
-struct tt__Profile;	/* onvif.h:6022 */
-struct tt__ProfileExtension;	/* onvif.h:6076 */
-struct tt__ProfileExtension2;	/* onvif.h:6130 */
-struct tt__ConfigurationEntity;	/* onvif.h:6192 */
-struct tt__VideoSourceConfigurationExtension;	/* onvif.h:6223 */
-struct tt__VideoSourceConfigurationExtension2;	/* onvif.h:6234 */
-struct tt__Rotate;	/* onvif.h:6232 */
-struct tt__RotateExtension;	/* onvif.h:6297 */
-struct tt__LensProjection;	/* onvif.h:6338 */
-struct tt__LensOffset;	/* onvif.h:6384 */
-struct tt__LensDescription;	/* onvif.h:6255 */
-struct tt__VideoSourceConfigurationOptions;	/* onvif.h:6469 */
-struct tt__VideoSourceConfigurationOptionsExtension;	/* onvif.h:6487 */
-struct tt__VideoSourceConfigurationOptionsExtension2;	/* onvif.h:6529 */
-struct tt__RotateOptions;	/* onvif.h:6527 */
-struct tt__RotateOptionsExtension;	/* onvif.h:6588 */
-struct tt__SceneOrientation;	/* onvif.h:6261 */
-struct tt__VideoResolution;	/* onvif.h:6661 */
-struct tt__VideoRateControl;	/* onvif.h:6686 */
-struct tt__Mpeg4Configuration;	/* onvif.h:6717 */
-struct tt__H264Configuration;	/* onvif.h:6742 */
-struct tt__VideoEncoderConfigurationOptions;	/* onvif.h:6767 */
-struct tt__VideoEncoderOptionsExtension;	/* onvif.h:6793 */
-struct tt__VideoEncoderOptionsExtension2;	/* onvif.h:6847 */
-struct tt__JpegOptions;	/* onvif.h:6779 */
-struct tt__Mpeg4Options;	/* onvif.h:6785 */
-struct tt__H264Options;	/* onvif.h:6791 */
-struct tt__VideoResolution2;	/* onvif.h:7018 */
-struct tt__VideoRateControl2;	/* onvif.h:7058 */
-struct tt__VideoEncoder2ConfigurationOptions;	/* onvif.h:7104 */
-struct tt__AudioSourceConfigurationOptions;	/* onvif.h:7188 */
-struct tt__AudioSourceOptionsExtension;	/* onvif.h:7198 */
-struct tt__AudioEncoderConfigurationOptions;	/* onvif.h:7239 */
-struct tt__AudioEncoderConfigurationOption;	/* onvif.h:7247 */
-struct tt__AudioEncoder2ConfigurationOptions;	/* onvif.h:7312 */
-struct tt__MetadataConfigurationExtension;	/* onvif.h:7358 */
-struct tt__PTZFilter;	/* onvif.h:7380 */
-struct _tt__EventSubscription_SubscriptionPolicy;	/* onvif.h:7426 */
-struct tt__EventSubscription;	/* onvif.h:7415 */
-struct tt__MetadataConfigurationOptions;	/* onvif.h:7464 */
-struct tt__MetadataConfigurationOptionsExtension;	/* onvif.h:7477 */
-struct tt__MetadataConfigurationOptionsExtension2;	/* onvif.h:7518 */
-struct tt__PTZStatusFilterOptions;	/* onvif.h:7466 */
-struct tt__PTZStatusFilterOptionsExtension;	/* onvif.h:7588 */
-struct tt__VideoOutputExtension;	/* onvif.h:7629 */
-struct tt__VideoOutputConfigurationOptions;	/* onvif.h:7651 */
-struct tt__VideoDecoderConfigurationOptions;	/* onvif.h:7679 */
-struct tt__H264DecOptions;	/* onvif.h:7691 */
-struct tt__JpegDecOptions;	/* onvif.h:7685 */
-struct tt__Mpeg4DecOptions;	/* onvif.h:7697 */
-struct tt__VideoDecoderConfigurationOptionsExtension;	/* onvif.h:7699 */
-struct tt__AudioOutputConfigurationOptions;	/* onvif.h:7900 */
-struct tt__AudioDecoderConfigurationOptions;	/* onvif.h:7966 */
-struct tt__G711DecOptions;	/* onvif.h:7978 */
-struct tt__AACDecOptions;	/* onvif.h:7972 */
-struct tt__G726DecOptions;	/* onvif.h:7984 */
-struct tt__AudioDecoderConfigurationOptionsExtension;	/* onvif.h:7986 */
-struct tt__MulticastConfiguration;	/* onvif.h:8147 */
-struct tt__StreamSetup;	/* onvif.h:8199 */
-struct tt__Transport;	/* onvif.h:8207 */
-struct tt__MediaUri;	/* onvif.h:8260 */
-struct tt__Scope;	/* onvif.h:2692 */
-struct tt__NetworkInterfaceExtension;	/* onvif.h:8337 */
-struct tt__Dot3Configuration;	/* onvif.h:8356 */
-struct tt__NetworkInterfaceExtension2;	/* onvif.h:8362 */
-struct tt__NetworkInterfaceLink;	/* onvif.h:8425 */
-struct tt__NetworkInterfaceConnectionSetting;	/* onvif.h:8431 */
-struct tt__NetworkInterfaceInfo;	/* onvif.h:8487 */
-struct tt__IPv6NetworkInterface;	/* onvif.h:8518 */
-struct tt__IPv4NetworkInterface;	/* onvif.h:8543 */
-struct tt__IPv4Configuration;	/* onvif.h:8555 */
-struct tt__IPv6Configuration;	/* onvif.h:8530 */
-struct tt__IPv6ConfigurationExtension;	/* onvif.h:8668 */
-struct tt__NetworkProtocol;	/* onvif.h:4081 */
-struct tt__NetworkProtocolExtension;	/* onvif.h:8731 */
-struct tt__NetworkHost;	/* onvif.h:2977 */
-struct tt__NetworkHostExtension;	/* onvif.h:8798 */
-struct tt__IPAddress;	/* onvif.h:3786 */
-struct tt__PrefixedIPv4Address;	/* onvif.h:8576 */
-struct tt__PrefixedIPv6Address;	/* onvif.h:8642 */
-struct tt__HostnameInformation;	/* onvif.h:3642 */
-struct tt__HostnameInformationExtension;	/* onvif.h:8934 */
-struct tt__DNSInformation;	/* onvif.h:3750 */
-struct tt__DNSInformationExtension;	/* onvif.h:9007 */
-struct tt__NTPInformation;	/* onvif.h:3834 */
-struct tt__NTPInformationExtension;	/* onvif.h:9072 */
-struct tt__DynamicDNSInformation;	/* onvif.h:3910 */
-struct tt__DynamicDNSInformationExtension;	/* onvif.h:9133 */
-struct tt__NetworkInterfaceSetConfiguration;	/* onvif.h:4018 */
-struct tt__NetworkInterfaceSetConfigurationExtension;	/* onvif.h:9206 */
-struct tt__IPv6NetworkInterfaceSetConfiguration;	/* onvif.h:9204 */
-struct tt__IPv4NetworkInterfaceSetConfiguration;	/* onvif.h:9198 */
-struct tt__NetworkGateway;	/* onvif.h:4151 */
-struct tt__NetworkZeroConfiguration;	/* onvif.h:4229 */
-struct tt__NetworkZeroConfigurationExtension;	/* onvif.h:9380 */
-struct tt__NetworkZeroConfigurationExtension2;	/* onvif.h:9418 */
-struct tt__IPAddressFilter;	/* onvif.h:4299 */
-struct tt__IPAddressFilterExtension;	/* onvif.h:9465 */
-struct tt__Dot11Configuration;	/* onvif.h:8360 */
-struct tt__Dot11SecurityConfiguration;	/* onvif.h:9516 */
-struct tt__Dot11SecurityConfigurationExtension;	/* onvif.h:9554 */
-struct tt__Dot11PSKSet;	/* onvif.h:9550 */
-struct tt__Dot11PSKSetExtension;	/* onvif.h:9618 */
-struct tt__NetworkInterfaceSetConfigurationExtension2;	/* onvif.h:9244 */
-struct tt__Dot11Capabilities;	/* onvif.h:5258 */
-struct tt__Dot11Status;	/* onvif.h:5290 */
-struct tt__Dot11AvailableNetworks;	/* onvif.h:5324 */
-struct tt__Dot11AvailableNetworksExtension;	/* onvif.h:9783 */
-struct tt__Capabilities;	/* onvif.h:3608 */
-struct tt__CapabilitiesExtension;	/* onvif.h:9862 */
-struct tt__CapabilitiesExtension2;	/* onvif.h:9906 */
-struct tt__AnalyticsCapabilities;	/* onvif.h:9830 */
-struct tt__DeviceCapabilities;	/* onvif.h:9836 */
-struct tt__DeviceCapabilitiesExtension;	/* onvif.h:10019 */
-struct tt__EventCapabilities;	/* onvif.h:9842 */
-struct tt__IOCapabilities;	/* onvif.h:10011 */
-struct tt__IOCapabilitiesExtension;	/* onvif.h:10126 */
-struct tt__IOCapabilitiesExtension2;	/* onvif.h:10162 */
-struct tt__MediaCapabilities;	/* onvif.h:9854 */
-struct tt__MediaCapabilitiesExtension;	/* onvif.h:10226 */
-struct tt__RealTimeStreamingCapabilities;	/* onvif.h:10215 */
-struct tt__RealTimeStreamingCapabilitiesExtension;	/* onvif.h:10295 */
-struct tt__ProfileCapabilities;	/* onvif.h:10247 */
-struct tt__NetworkCapabilities;	/* onvif.h:9999 */
-struct tt__NetworkCapabilitiesExtension;	/* onvif.h:10396 */
-struct tt__NetworkCapabilitiesExtension2;	/* onvif.h:10428 */
-struct tt__SecurityCapabilities;	/* onvif.h:10017 */
-struct tt__SecurityCapabilitiesExtension;	/* onvif.h:10522 */
-struct tt__SecurityCapabilitiesExtension2;	/* onvif.h:10545 */
-struct tt__SystemCapabilities;	/* onvif.h:10005 */
-struct tt__SystemCapabilitiesExtension;	/* onvif.h:10638 */
-struct tt__SystemCapabilitiesExtension2;	/* onvif.h:10676 */
-struct tt__OnvifVersion;	/* onvif.h:1664 */
-struct tt__ImagingCapabilities;	/* onvif.h:9848 */
-struct tt__PTZCapabilities;	/* onvif.h:9860 */
-struct tt__DeviceIOCapabilities;	/* onvif.h:9892 */
-struct tt__DisplayCapabilities;	/* onvif.h:9894 */
-struct tt__RecordingCapabilities;	/* onvif.h:9896 */
-struct tt__SearchCapabilities;	/* onvif.h:9898 */
-struct tt__ReplayCapabilities;	/* onvif.h:9900 */
-struct tt__ReceiverCapabilities;	/* onvif.h:9902 */
-struct tt__AnalyticsDeviceCapabilities;	/* onvif.h:9904 */
-struct tt__AnalyticsDeviceExtension;	/* onvif.h:11053 */
-struct tt__SystemLog;	/* onvif.h:2656 */
-struct tt__SupportInformation;	/* onvif.h:2616 */
-struct tt__BinaryData;	/* onvif.h:4419 */
-struct tt__AttachmentData;	/* onvif.h:2468 */
-struct tt__BackupFile;	/* onvif.h:2536 */
-struct tt__SystemLogUriList;	/* onvif.h:5354 */
-struct tt__SystemLogUri;	/* onvif.h:11203 */
-struct tt__SystemDateTime;	/* onvif.h:2418 */
-struct tt__SystemDateTimeExtension;	/* onvif.h:11284 */
-struct tt__DateTime;	/* onvif.h:2370 */
-struct tt__Date;	/* onvif.h:11329 */
-struct tt__Time;	/* onvif.h:11327 */
-struct tt__TimeZone;	/* onvif.h:2364 */
-struct tt__RemoteUser;	/* onvif.h:3078 */
-struct tt__User;	/* onvif.h:3144 */
-struct tt__UserExtension;	/* onvif.h:11486 */
-struct tt__CertificateGenerationParameters;	/* onvif.h:11527 */
-struct tt__CertificateGenerationParametersExtension;	/* onvif.h:11537 */
-struct tt__Certificate;	/* onvif.h:4507 */
-struct tt__CertificateStatus;	/* onvif.h:4579 */
-struct tt__CertificateWithPrivateKey;	/* onvif.h:4857 */
-struct tt__CertificateInformation;	/* onvif.h:4903 */
-struct tt__CertificateInformationExtension;	/* onvif.h:11703 */
-struct tt__Dot1XConfiguration;	/* onvif.h:4951 */
-struct tt__Dot1XConfigurationExtension;	/* onvif.h:11764 */
-struct tt__EAPMethodConfiguration;	/* onvif.h:11762 */
-struct tt__EapMethodExtension;	/* onvif.h:11819 */
-struct tt__TLSConfiguration;	/* onvif.h:11811 */
-struct tt__GenericEapPwdConfigurationExtension;	/* onvif.h:11890 */
-struct tt__RelayOutputSettings;	/* onvif.h:5141 */
-struct tt__PTZNodeExtension;	/* onvif.h:11951 */
-struct tt__PTZNodeExtension2;	/* onvif.h:11968 */
-struct tt__PTZPresetTourSupported;	/* onvif.h:11966 */
-struct tt__PTZPresetTourSupportedExtension;	/* onvif.h:12019 */
-struct tt__PTZConfigurationExtension;	/* onvif.h:12060 */
-struct tt__PTZConfigurationExtension2;	/* onvif.h:12077 */
-struct tt__PTControlDirection;	/* onvif.h:12075 */
-struct tt__PTControlDirectionExtension;	/* onvif.h:12126 */
-struct tt__EFlip;	/* onvif.h:12118 */
-struct tt__Reverse;	/* onvif.h:12124 */
-struct tt__PTZConfigurationOptions;	/* onvif.h:12241 */
-struct tt__PTZConfigurationOptions2;	/* onvif.h:12270 */
-struct tt__PTControlDirectionOptions;	/* onvif.h:12268 */
-struct tt__PTControlDirectionOptionsExtension;	/* onvif.h:12333 */
-struct tt__EFlipOptions;	/* onvif.h:12325 */
-struct tt__EFlipOptionsExtension;	/* onvif.h:12384 */
-struct tt__ReverseOptions;	/* onvif.h:12331 */
-struct tt__ReverseOptionsExtension;	/* onvif.h:12435 */
-struct tt__PanTiltLimits;	/* onvif.h:12476 */
-struct tt__ZoomLimits;	/* onvif.h:12495 */
-struct tt__PTZSpaces;	/* onvif.h:12247 */
-struct tt__PTZSpacesExtension;	/* onvif.h:12580 */
-struct tt__Space2DDescription;	/* onvif.h:12482 */
-struct tt__Space1DDescription;	/* onvif.h:12501 */
-struct tt__PTZSpeed;	/* onvif.h:12677 */
-struct tt__PTZPreset;	/* onvif.h:12702 */
-struct tt__PresetTour;	/* onvif.h:12738 */
-struct tt__PTZPresetTourExtension;	/* onvif.h:12772 */
-struct tt__PTZPresetTourSpot;	/* onvif.h:12770 */
-struct tt__PTZPresetTourSpotExtension;	/* onvif.h:12839 */
-union _tt__union_PTZPresetTourPresetDetail;	/* onvif.h:12884 */
-struct tt__PTZPresetTourPresetDetail;	/* onvif.h:12825 */
-struct tt__PTZPresetTourTypeExtension;	/* onvif.h:12904 */
-struct tt__PTZPresetTourStatus;	/* onvif.h:12750 */
-struct tt__PTZPresetTourStatusExtension;	/* onvif.h:12970 */
-struct tt__PTZPresetTourStartingCondition;	/* onvif.h:12762 */
-struct tt__PTZPresetTourStartingConditionExtension;	/* onvif.h:13031 */
-struct tt__PTZPresetTourOptions;	/* onvif.h:13078 */
-struct tt__PTZPresetTourSpotOptions;	/* onvif.h:13096 */
-struct tt__PTZPresetTourPresetDetailOptions;	/* onvif.h:13130 */
-struct tt__PTZPresetTourPresetDetailOptionsExtension;	/* onvif.h:13192 */
-struct tt__PTZPresetTourStartingConditionOptions;	/* onvif.h:13090 */
-struct tt__PTZPresetTourStartingConditionOptionsExtension;	/* onvif.h:13255 */
-struct tt__ImagingStatus;	/* onvif.h:13296 */
-struct tt__FocusStatus;	/* onvif.h:13298 */
-struct tt__FocusConfiguration;	/* onvif.h:13372 */
-struct tt__ImagingSettings;	/* onvif.h:13417 */
-struct tt__ImagingSettingsExtension;	/* onvif.h:13479 */
-struct tt__Exposure;	/* onvif.h:13447 */
-struct tt__WideDynamicRange;	/* onvif.h:13471 */
-struct tt__BacklightCompensation;	/* onvif.h:13423 */
-struct tt__ImagingOptions;	/* onvif.h:13659 */
-struct tt__WideDynamicRangeOptions;	/* onvif.h:13679 */
-struct tt__BacklightCompensationOptions;	/* onvif.h:13661 */
-struct tt__FocusOptions;	/* onvif.h:13671 */
-struct tt__ExposureOptions;	/* onvif.h:13669 */
-struct tt__WhiteBalanceOptions;	/* onvif.h:13681 */
-struct tt__FocusMove;	/* onvif.h:13830 */
-struct tt__AbsoluteFocus;	/* onvif.h:13836 */
-struct tt__RelativeFocus;	/* onvif.h:13842 */
-struct tt__ContinuousFocus;	/* onvif.h:13848 */
-struct tt__MoveOptions;	/* onvif.h:13930 */
-struct tt__AbsoluteFocusOptions;	/* onvif.h:13932 */
-struct tt__RelativeFocusOptions;	/* onvif.h:13934 */
-struct tt__ContinuousFocusOptions;	/* onvif.h:13936 */
-struct tt__WhiteBalance;	/* onvif.h:13477 */
-struct tt__ImagingStatus20;	/* onvif.h:14064 */
-struct tt__ImagingStatus20Extension;	/* onvif.h:14072 */
-struct tt__FocusStatus20;	/* onvif.h:14070 */
-struct tt__FocusStatus20Extension;	/* onvif.h:14133 */
-struct tt__ImagingSettings20;	/* onvif.h:5974 */
-struct tt__ImagingSettingsExtension20;	/* onvif.h:14240 */
-struct tt__ImagingSettingsExtension202;	/* onvif.h:14276 */
-struct tt__ImagingSettingsExtension203;	/* onvif.h:14299 */
-struct tt__ImagingSettingsExtension204;	/* onvif.h:14332 */
-struct tt__ImageStabilization;	/* onvif.h:14274 */
-struct tt__ImageStabilizationExtension;	/* onvif.h:14381 */
-struct tt__IrCutFilterAutoAdjustment;	/* onvif.h:14297 */
-struct tt__IrCutFilterAutoAdjustmentExtension;	/* onvif.h:14442 */
-struct tt__WideDynamicRange20;	/* onvif.h:14232 */
-struct tt__BacklightCompensation20;	/* onvif.h:14184 */
-struct tt__Exposure20;	/* onvif.h:14208 */
-struct tt__ToneCompensation;	/* onvif.h:14318 */
-struct tt__ToneCompensationExtension;	/* onvif.h:14648 */
-struct tt__Defogging;	/* onvif.h:14324 */
-struct tt__DefoggingExtension;	/* onvif.h:14703 */
-struct tt__NoiseReduction;	/* onvif.h:14330 */
-struct tt__ImagingOptions20;	/* onvif.h:14778 */
-struct tt__ImagingOptions20Extension;	/* onvif.h:14842 */
-struct tt__ImagingOptions20Extension2;	/* onvif.h:14878 */
-struct tt__ImagingOptions20Extension3;	/* onvif.h:14899 */
-struct tt__ImagingOptions20Extension4;	/* onvif.h:14932 */
-struct tt__ImageStabilizationOptions;	/* onvif.h:14876 */
-struct tt__ImageStabilizationOptionsExtension;	/* onvif.h:14983 */
-struct tt__IrCutFilterAutoAdjustmentOptions;	/* onvif.h:14897 */
-struct tt__IrCutFilterAutoAdjustmentOptionsExtension;	/* onvif.h:15046 */
-struct tt__WideDynamicRangeOptions20;	/* onvif.h:14834 */
-struct tt__BacklightCompensationOptions20;	/* onvif.h:14784 */
-struct tt__ExposureOptions20;	/* onvif.h:14808 */
-struct tt__MoveOptions20;	/* onvif.h:15220 */
-struct tt__RelativeFocusOptions20;	/* onvif.h:15232 */
-struct tt__WhiteBalance20;	/* onvif.h:14238 */
-struct tt__WhiteBalance20Extension;	/* onvif.h:15296 */
-struct tt__FocusConfiguration20;	/* onvif.h:14214 */
-struct tt__FocusConfiguration20Extension;	/* onvif.h:15364 */
-struct tt__WhiteBalanceOptions20;	/* onvif.h:14840 */
-struct tt__WhiteBalanceOptions20Extension;	/* onvif.h:15429 */
-struct tt__FocusOptions20;	/* onvif.h:14814 */
-struct tt__FocusOptions20Extension;	/* onvif.h:15496 */
-struct tt__ToneCompensationOptions;	/* onvif.h:14918 */
-struct tt__DefoggingOptions;	/* onvif.h:14924 */
-struct tt__NoiseReductionOptions;	/* onvif.h:14930 */
-struct tt__MessageExtension;	/* onvif.h:15655 */
-struct _tt__ItemList_SimpleItem;	/* onvif.h:15692 */
-struct _tt__ItemList_ElementItem;	/* onvif.h:15720 */
-struct tt__ItemList;	/* onvif.h:15677 */
-struct tt__ItemListExtension;	/* onvif.h:15736 */
-struct tt__MessageDescription;	/* onvif.h:15777 */
-struct tt__MessageDescriptionExtension;	/* onvif.h:15800 */
-struct _tt__ItemListDescription_SimpleItemDescription;	/* onvif.h:15868 */
-struct _tt__ItemListDescription_ElementItemDescription;	/* onvif.h:15892 */
-struct tt__ItemListDescription;	/* onvif.h:15786 */
-struct tt__ItemListDescriptionExtension;	/* onvif.h:15907 */
-struct tt__Polyline;	/* onvif.h:15948 */
-struct tt__AnalyticsEngineConfiguration;	/* onvif.h:15965 */
-struct tt__AnalyticsEngineConfigurationExtension;	/* onvif.h:15971 */
-struct tt__RuleEngineConfiguration;	/* onvif.h:16012 */
-struct tt__RuleEngineConfigurationExtension;	/* onvif.h:16018 */
-struct tt__Config;	/* onvif.h:15969 */
-struct _tt__ConfigDescription_Messages;	/* onvif.h:16116 */
-struct tt__ConfigDescription;	/* onvif.h:16090 */
-struct tt__ConfigDescriptionExtension;	/* onvif.h:16162 */
-struct tt__SupportedRules;	/* onvif.h:16221 */
-struct tt__SupportedRulesExtension;	/* onvif.h:16239 */
-struct tt__SupportedAnalyticsModules;	/* onvif.h:16286 */
-struct tt__SupportedAnalyticsModulesExtension;	/* onvif.h:16303 */
-struct tt__PolylineArray;	/* onvif.h:16350 */
-struct tt__PolylineArrayExtension;	/* onvif.h:16360 */
-struct tt__PolylineArrayConfiguration;	/* onvif.h:16401 */
-struct tt__MotionExpression;	/* onvif.h:16435 */
-struct tt__MotionExpressionConfiguration;	/* onvif.h:16471 */
-struct tt__CellLayout;	/* onvif.h:16505 */
-struct tt__PaneConfiguration;	/* onvif.h:16555 */
-struct tt__PaneLayout;	/* onvif.h:16629 */
-struct tt__Layout;	/* onvif.h:16673 */
-struct tt__LayoutExtension;	/* onvif.h:16683 */
-struct tt__CodingCapabilities;	/* onvif.h:16728 */
-struct tt__LayoutOptions;	/* onvif.h:16778 */
-struct tt__LayoutOptionsExtension;	/* onvif.h:16788 */
-struct tt__PaneLayoutOptions;	/* onvif.h:16786 */
-struct tt__PaneOptionExtension;	/* onvif.h:16843 */
-struct tt__Receiver;	/* onvif.h:16888 */
-struct tt__ReceiverConfiguration;	/* onvif.h:16900 */
-struct tt__ReceiverStateInformation;	/* onvif.h:16982 */
-struct tt__SourceReference;	/* onvif.h:17022 */
-struct tt__DateTimeRange;	/* onvif.h:11701 */
-struct tt__RecordingSummary;	/* onvif.h:17086 */
-struct tt__SearchScope;	/* onvif.h:17136 */
-struct tt__SearchScopeExtension;	/* onvif.h:17164 */
-struct tt__PTZPositionFilter;	/* onvif.h:17205 */
-struct tt__MetadataFilter;	/* onvif.h:17251 */
-struct tt__FindRecordingResultList;	/* onvif.h:17281 */
-struct tt__FindEventResultList;	/* onvif.h:17308 */
-struct tt__FindEventResult;	/* onvif.h:17322 */
-struct tt__FindPTZPositionResultList;	/* onvif.h:17393 */
-struct tt__FindPTZPositionResult;	/* onvif.h:17407 */
-struct tt__FindMetadataResultList;	/* onvif.h:17472 */
-struct tt__FindMetadataResult;	/* onvif.h:17486 */
-struct tt__RecordingInformation;	/* onvif.h:17295 */
-struct tt__RecordingSourceInformation;	/* onvif.h:17555 */
-struct tt__TrackInformation;	/* onvif.h:17569 */
-struct tt__MediaAttributes;	/* onvif.h:17721 */
-struct tt__TrackAttributes;	/* onvif.h:17735 */
-struct tt__TrackAttributesExtension;	/* onvif.h:17804 */
-struct tt__VideoAttributes;	/* onvif.h:17787 */
-struct tt__AudioAttributes;	/* onvif.h:17793 */
-struct tt__MetadataAttributes;	/* onvif.h:17799 */
-struct tt__RecordingConfiguration;	/* onvif.h:18001 */
-struct tt__TrackConfiguration;	/* onvif.h:18052 */
-struct tt__GetRecordingsResponseItem;	/* onvif.h:18093 */
-struct tt__GetTracksResponseList;	/* onvif.h:18111 */
-struct tt__GetTracksResponseItem;	/* onvif.h:18147 */
-struct tt__RecordingJobConfiguration;	/* onvif.h:18206 */
-struct _tt__RecordingEventFilter_Filter;	/* onvif.h:18291 */
-struct tt__RecordingEventFilter;	/* onvif.h:18246 */
-struct tt__RecordingJobConfigurationExtension;	/* onvif.h:18240 */
-struct tt__RecordingJobSource;	/* onvif.h:18238 */
-struct tt__RecordingJobSourceExtension;	/* onvif.h:18411 */
-struct tt__RecordingJobTrack;	/* onvif.h:18409 */
-struct tt__RecordingJobStateInformation;	/* onvif.h:18494 */
-struct tt__RecordingJobStateInformationExtension;	/* onvif.h:18516 */
-struct tt__RecordingJobStateSource;	/* onvif.h:18514 */
-struct tt__RecordingJobStateTracks;	/* onvif.h:18575 */
-struct tt__RecordingJobStateTrack;	/* onvif.h:18607 */
-struct tt__GetRecordingJobsResponseItem;	/* onvif.h:18680 */
-struct tt__ReplayConfiguration;	/* onvif.h:18716 */
-struct tt__AnalyticsDeviceEngineConfiguration;	/* onvif.h:18750 */
-struct tt__AnalyticsDeviceEngineConfigurationExtension;	/* onvif.h:18756 */
-struct tt__EngineConfiguration;	/* onvif.h:18754 */
-struct tt__AnalyticsEngineInputInfo;	/* onvif.h:18801 */
-struct tt__AnalyticsEngineInputInfoExtension;	/* onvif.h:18833 */
-struct tt__SourceIdentification;	/* onvif.h:18874 */
-struct tt__SourceIdentificationExtension;	/* onvif.h:18882 */
-struct tt__MetadataInput;	/* onvif.h:18923 */
-struct tt__MetadataInputExtension;	/* onvif.h:18929 */
-struct tt__AnalyticsStateInformation;	/* onvif.h:18970 */
-struct tt__AnalyticsState;	/* onvif.h:18978 */
-struct tt__ActionEngineEventPayload;	/* onvif.h:19042 */
-struct tt__ActionEngineEventPayloadExtension;	/* onvif.h:19062 */
-struct tt__AudioClassCandidate;	/* onvif.h:19109 */
-struct tt__AudioClassDescriptor;	/* onvif.h:19149 */
-struct tt__AudioClassDescriptorExtension;	/* onvif.h:19159 */
-struct tt__ActiveConnection;	/* onvif.h:19206 */
-struct tt__ProfileStatus;	/* onvif.h:19238 */
-struct tt__ProfileStatusExtension;	/* onvif.h:19244 */
-struct tt__OSDPosConfiguration;	/* onvif.h:19285 */
-struct tt__OSDPosConfigurationExtension;	/* onvif.h:19299 */
-struct tt__OSDColor;	/* onvif.h:19350 */
-struct tt__OSDTextConfiguration;	/* onvif.h:19373 */
-struct tt__OSDTextConfigurationExtension;	/* onvif.h:19436 */
-struct tt__OSDImgConfiguration;	/* onvif.h:19489 */
-struct tt__OSDImgConfigurationExtension;	/* onvif.h:19497 */
-struct tt__ColorspaceRange;	/* onvif.h:19544 */
-struct tt__ColorOptions;	/* onvif.h:19579 */
-struct tt__OSDColorOptions;	/* onvif.h:19621 */
-struct tt__OSDColorOptionsExtension;	/* onvif.h:19635 */
-struct tt__OSDTextOptions;	/* onvif.h:19682 */
-struct tt__OSDTextOptionsExtension;	/* onvif.h:19726 */
-struct tt__OSDImgOptions;	/* onvif.h:19773 */
-struct tt__OSDImgOptionsExtension;	/* onvif.h:19783 */
-struct tt__OSDConfigurationExtension;	/* onvif.h:19854 */
-struct tt__MaximumNumberOfOSDs;	/* onvif.h:19882 */
-struct tt__OSDConfigurationOptions;	/* onvif.h:19913 */
-struct tt__OSDConfigurationOptionsExtension;	/* onvif.h:19953 */
-struct tt__FileProgress;	/* onvif.h:20000 */
-struct tt__ArrayOfFileProgress;	/* onvif.h:20040 */
-struct tt__ArrayOfFileProgressExtension;	/* onvif.h:20050 */
-struct tt__StorageReferencePath;	/* onvif.h:20097 */
-struct tt__StorageReferencePathExtension;	/* onvif.h:20111 */
-struct tt__PolygonOptions;	/* onvif.h:20158 */
-struct tt__IntRange;	/* onvif.h:3312 */
-struct tt__Vector2D;	/* onvif.h:12683 */
-struct tt__Vector1D;	/* onvif.h:12689 */
-struct tt__PTZVector;	/* onvif.h:12714 */
-struct tt__PTZStatus;	/* onvif.h:20300 */
-struct tt__PTZMoveStatus;	/* onvif.h:20312 */
-struct tt__Vector;	/* onvif.h:15952 */
-struct tt__Rectangle;	/* onvif.h:13542 */
-struct tt__Polygon;	/* onvif.h:20413 */
-struct tt__Color;	/* onvif.h:19352 */
-struct tt__ColorCovariance;	/* onvif.h:20486 */
-struct _tt__ColorDescriptor_ColorCluster;	/* onvif.h:20534 */
-struct tt__ColorDescriptor;	/* onvif.h:20523 */
-struct tt__Transformation;	/* onvif.h:16511 */
-struct tt__TransformationExtension;	/* onvif.h:20592 */
-struct tt__GeoLocation;	/* onvif.h:20633 */
-struct tt__GeoOrientation;	/* onvif.h:20679 */
-struct tt__LocalLocation;	/* onvif.h:20725 */
-struct tt__LocalOrientation;	/* onvif.h:20771 */
-struct tt__LocationEntity;	/* onvif.h:5665 */
-struct _tt__StringItems;	/* onvif.h:20885 */
-struct _tt__Message;	/* onvif.h:20903 */
-struct wsnt__QueryExpressionType;	/* onvif.h:20946 */
-struct wsnt__TopicExpressionType;	/* onvif.h:20973 */
-struct wsnt__FilterType;	/* onvif.h:7417 */
-struct wsnt__SubscriptionPolicyType;	/* onvif.h:21031 */
-struct _wsnt__NotificationMessageHolderType_Message;	/* onvif.h:21068 */
-struct wsnt__NotificationMessageHolderType;	/* onvif.h:17359 */
-struct _wsnt__NotificationProducerRP;	/* onvif.h:21090 */
-struct _wsnt__SubscriptionManagerRP;	/* onvif.h:21116 */
-struct _wsnt__Notify;	/* onvif.h:21138 */
-struct _wsnt__UseRaw;	/* onvif.h:21165 */
-struct _wsnt__Subscribe_SubscriptionPolicy;	/* onvif.h:21194 */
-struct _wsnt__Subscribe;	/* onvif.h:21179 */
-struct _wsnt__SubscribeResponse;	/* onvif.h:21227 */
-struct _wsnt__GetCurrentMessage;	/* onvif.h:21256 */
-struct _wsnt__GetCurrentMessageResponse;	/* onvif.h:21281 */
-struct _wsnt__GetMessages;	/* onvif.h:21304 */
-struct _wsnt__GetMessagesResponse;	/* onvif.h:21335 */
-struct _wsnt__DestroyPullPoint;	/* onvif.h:21368 */
-struct _wsnt__DestroyPullPointResponse;	/* onvif.h:21397 */
-struct _wsnt__CreatePullPoint;	/* onvif.h:21426 */
-struct _wsnt__CreatePullPointResponse;	/* onvif.h:21455 */
-struct _wsnt__Renew;	/* onvif.h:21486 */
-struct _wsnt__RenewResponse;	/* onvif.h:21511 */
-struct _wsnt__Unsubscribe;	/* onvif.h:21538 */
-struct _wsnt__UnsubscribeResponse;	/* onvif.h:21561 */
-struct _wsnt__PauseSubscription;	/* onvif.h:21584 */
-struct _wsnt__PauseSubscriptionResponse;	/* onvif.h:21607 */
-struct _wsnt__ResumeSubscription;	/* onvif.h:21630 */
-struct _wsnt__ResumeSubscriptionResponse;	/* onvif.h:21653 */
-struct _wsrfbf__BaseFaultType_ErrorCode;	/* onvif.h:21729 */
-struct _wsrfbf__BaseFaultType_Description;	/* onvif.h:21748 */
-struct _wsrfbf__BaseFaultType_FaultCause;	/* onvif.h:21762 */
-struct wsrfbf__BaseFaultType;	/* onvif.h:21707 */
-struct wstop__Documentation;	/* onvif.h:21797 */
-struct wstop__ExtensibleDocumented;	/* onvif.h:21829 */
-struct wstop__QueryExpressionType;	/* onvif.h:21850 */
-struct tev__Capabilities;	/* onvif.h:21885 */
-struct tev__EventBrokerConfig;	/* onvif.h:21967 */
-struct _tev__GetServiceCapabilities;	/* onvif.h:22056 */
-struct _tev__GetServiceCapabilitiesResponse;	/* onvif.h:22070 */
-struct _tev__CreatePullPointSubscription_SubscriptionPolicy;	/* onvif.h:22115 */
-struct _tev__CreatePullPointSubscription;	/* onvif.h:22090 */
-struct _tev__CreatePullPointSubscriptionResponse;	/* onvif.h:22148 */
-struct _tev__PullMessages;	/* onvif.h:22189 */
-struct _tev__PullMessagesResponse;	/* onvif.h:22224 */
-struct _tev__PullMessagesFaultResponse;	/* onvif.h:22258 */
-struct _tev__Seek;	/* onvif.h:22293 */
-struct _tev__SeekResponse;	/* onvif.h:22328 */
-struct _tev__SetSynchronizationPoint;	/* onvif.h:22342 */
-struct _tev__SetSynchronizationPointResponse;	/* onvif.h:22356 */
-struct _tev__GetEventProperties;	/* onvif.h:22370 */
-struct _tev__GetEventPropertiesResponse;	/* onvif.h:22384 */
-struct _tev__AddEventBroker;	/* onvif.h:22471 */
-struct _tev__AddEventBrokerResponse;	/* onvif.h:22487 */
-struct _tev__DeleteEventBroker;	/* onvif.h:22501 */
-struct _tev__DeleteEventBrokerResponse;	/* onvif.h:22517 */
-struct _tev__GetEventBrokers;	/* onvif.h:22531 */
-struct _tev__GetEventBrokersResponse;	/* onvif.h:22547 */
-struct trt__Capabilities;	/* onvif.h:22596 */
-struct trt__ProfileCapabilities;	/* onvif.h:22602 */
-struct trt__StreamingCapabilities;	/* onvif.h:22608 */
-struct trt__VideoSourceMode;	/* onvif.h:22764 */
-struct trt__VideoSourceModeExtension;	/* onvif.h:22796 */
-struct _trt__GetServiceCapabilities;	/* onvif.h:22850 */
-struct _trt__GetServiceCapabilitiesResponse;	/* onvif.h:22864 */
-struct _trt__GetVideoSources;	/* onvif.h:22884 */
-struct _trt__GetVideoSourcesResponse;	/* onvif.h:22898 */
-struct _trt__GetAudioSources;	/* onvif.h:22920 */
-struct _trt__GetAudioSourcesResponse;	/* onvif.h:22934 */
-struct _trt__GetAudioOutputs;	/* onvif.h:22956 */
-struct _trt__GetAudioOutputsResponse;	/* onvif.h:22970 */
-struct _trt__CreateProfile;	/* onvif.h:22992 */
-struct _trt__CreateProfileResponse;	/* onvif.h:23018 */
-struct _trt__GetProfile;	/* onvif.h:23038 */
-struct _trt__GetProfileResponse;	/* onvif.h:23058 */
-struct _trt__GetProfiles;	/* onvif.h:23078 */
-struct _trt__GetProfilesResponse;	/* onvif.h:23092 */
-struct _trt__AddVideoEncoderConfiguration;	/* onvif.h:23114 */
-struct _trt__AddVideoEncoderConfigurationResponse;	/* onvif.h:23140 */
-struct _trt__RemoveVideoEncoderConfiguration;	/* onvif.h:23154 */
-struct _trt__RemoveVideoEncoderConfigurationResponse;	/* onvif.h:23175 */
-struct _trt__AddVideoSourceConfiguration;	/* onvif.h:23189 */
-struct _trt__AddVideoSourceConfigurationResponse;	/* onvif.h:23215 */
-struct _trt__RemoveVideoSourceConfiguration;	/* onvif.h:23229 */
-struct _trt__RemoveVideoSourceConfigurationResponse;	/* onvif.h:23250 */
-struct _trt__AddAudioEncoderConfiguration;	/* onvif.h:23264 */
-struct _trt__AddAudioEncoderConfigurationResponse;	/* onvif.h:23290 */
-struct _trt__RemoveAudioEncoderConfiguration;	/* onvif.h:23304 */
-struct _trt__RemoveAudioEncoderConfigurationResponse;	/* onvif.h:23325 */
-struct _trt__AddAudioSourceConfiguration;	/* onvif.h:23339 */
-struct _trt__AddAudioSourceConfigurationResponse;	/* onvif.h:23365 */
-struct _trt__RemoveAudioSourceConfiguration;	/* onvif.h:23379 */
-struct _trt__RemoveAudioSourceConfigurationResponse;	/* onvif.h:23400 */
-struct _trt__AddPTZConfiguration;	/* onvif.h:23414 */
-struct _trt__AddPTZConfigurationResponse;	/* onvif.h:23440 */
-struct _trt__RemovePTZConfiguration;	/* onvif.h:23454 */
-struct _trt__RemovePTZConfigurationResponse;	/* onvif.h:23475 */
-struct _trt__AddVideoAnalyticsConfiguration;	/* onvif.h:23489 */
-struct _trt__AddVideoAnalyticsConfigurationResponse;	/* onvif.h:23515 */
-struct _trt__RemoveVideoAnalyticsConfiguration;	/* onvif.h:23529 */
-struct _trt__RemoveVideoAnalyticsConfigurationResponse;	/* onvif.h:23550 */
-struct _trt__AddMetadataConfiguration;	/* onvif.h:23564 */
-struct _trt__AddMetadataConfigurationResponse;	/* onvif.h:23590 */
-struct _trt__RemoveMetadataConfiguration;	/* onvif.h:23604 */
-struct _trt__RemoveMetadataConfigurationResponse;	/* onvif.h:23625 */
-struct _trt__AddAudioOutputConfiguration;	/* onvif.h:23639 */
-struct _trt__AddAudioOutputConfigurationResponse;	/* onvif.h:23665 */
-struct _trt__RemoveAudioOutputConfiguration;	/* onvif.h:23679 */
-struct _trt__RemoveAudioOutputConfigurationResponse;	/* onvif.h:23700 */
-struct _trt__AddAudioDecoderConfiguration;	/* onvif.h:23714 */
-struct _trt__AddAudioDecoderConfigurationResponse;	/* onvif.h:23740 */
-struct _trt__RemoveAudioDecoderConfiguration;	/* onvif.h:23754 */
-struct _trt__RemoveAudioDecoderConfigurationResponse;	/* onvif.h:23774 */
-struct _trt__DeleteProfile;	/* onvif.h:23788 */
-struct _trt__DeleteProfileResponse;	/* onvif.h:23808 */
-struct _trt__GetVideoEncoderConfigurations;	/* onvif.h:23822 */
-struct _trt__GetVideoEncoderConfigurationsResponse;	/* onvif.h:23836 */
-struct _trt__GetVideoSourceConfigurations;	/* onvif.h:23858 */
-struct _trt__GetVideoSourceConfigurationsResponse;	/* onvif.h:23872 */
-struct _trt__GetAudioEncoderConfigurations;	/* onvif.h:23894 */
-struct _trt__GetAudioEncoderConfigurationsResponse;	/* onvif.h:23908 */
-struct _trt__GetAudioSourceConfigurations;	/* onvif.h:23930 */
-struct _trt__GetAudioSourceConfigurationsResponse;	/* onvif.h:23944 */
-struct _trt__GetVideoAnalyticsConfigurations;	/* onvif.h:23966 */
-struct _trt__GetVideoAnalyticsConfigurationsResponse;	/* onvif.h:23980 */
-struct _trt__GetMetadataConfigurations;	/* onvif.h:24002 */
-struct _trt__GetMetadataConfigurationsResponse;	/* onvif.h:24016 */
-struct _trt__GetAudioOutputConfigurations;	/* onvif.h:24038 */
-struct _trt__GetAudioOutputConfigurationsResponse;	/* onvif.h:24052 */
-struct _trt__GetAudioDecoderConfigurations;	/* onvif.h:24074 */
-struct _trt__GetAudioDecoderConfigurationsResponse;	/* onvif.h:24088 */
-struct _trt__GetVideoSourceConfiguration;	/* onvif.h:24110 */
-struct _trt__GetVideoSourceConfigurationResponse;	/* onvif.h:24130 */
-struct _trt__GetVideoEncoderConfiguration;	/* onvif.h:24150 */
-struct _trt__GetVideoEncoderConfigurationResponse;	/* onvif.h:24170 */
-struct _trt__GetAudioSourceConfiguration;	/* onvif.h:24190 */
-struct _trt__GetAudioSourceConfigurationResponse;	/* onvif.h:24210 */
-struct _trt__GetAudioEncoderConfiguration;	/* onvif.h:24230 */
-struct _trt__GetAudioEncoderConfigurationResponse;	/* onvif.h:24250 */
-struct _trt__GetVideoAnalyticsConfiguration;	/* onvif.h:24270 */
-struct _trt__GetVideoAnalyticsConfigurationResponse;	/* onvif.h:24290 */
-struct _trt__GetMetadataConfiguration;	/* onvif.h:24310 */
-struct _trt__GetMetadataConfigurationResponse;	/* onvif.h:24330 */
-struct _trt__GetAudioOutputConfiguration;	/* onvif.h:24350 */
-struct _trt__GetAudioOutputConfigurationResponse;	/* onvif.h:24370 */
-struct _trt__GetAudioDecoderConfiguration;	/* onvif.h:24390 */
-struct _trt__GetAudioDecoderConfigurationResponse;	/* onvif.h:24410 */
-struct _trt__GetCompatibleVideoEncoderConfigurations;	/* onvif.h:24430 */
-struct _trt__GetCompatibleVideoEncoderConfigurationsResponse;	/* onvif.h:24450 */
-struct _trt__GetCompatibleVideoSourceConfigurations;	/* onvif.h:24472 */
-struct _trt__GetCompatibleVideoSourceConfigurationsResponse;	/* onvif.h:24492 */
-struct _trt__GetCompatibleAudioEncoderConfigurations;	/* onvif.h:24514 */
-struct _trt__GetCompatibleAudioEncoderConfigurationsResponse;	/* onvif.h:24534 */
-struct _trt__GetCompatibleAudioSourceConfigurations;	/* onvif.h:24556 */
-struct _trt__GetCompatibleAudioSourceConfigurationsResponse;	/* onvif.h:24576 */
-struct _trt__GetCompatibleVideoAnalyticsConfigurations;	/* onvif.h:24598 */
-struct _trt__GetCompatibleVideoAnalyticsConfigurationsResponse;	/* onvif.h:24618 */
-struct _trt__GetCompatibleMetadataConfigurations;	/* onvif.h:24640 */
-struct _trt__GetCompatibleMetadataConfigurationsResponse;	/* onvif.h:24660 */
-struct _trt__GetCompatibleAudioOutputConfigurations;	/* onvif.h:24682 */
-struct _trt__GetCompatibleAudioOutputConfigurationsResponse;	/* onvif.h:24702 */
-struct _trt__GetCompatibleAudioDecoderConfigurations;	/* onvif.h:24724 */
-struct _trt__GetCompatibleAudioDecoderConfigurationsResponse;	/* onvif.h:24744 */
-struct _trt__SetVideoEncoderConfiguration;	/* onvif.h:24766 */
-struct _trt__SetVideoEncoderConfigurationResponse;	/* onvif.h:24792 */
-struct _trt__SetVideoSourceConfiguration;	/* onvif.h:24806 */
-struct _trt__SetVideoSourceConfigurationResponse;	/* onvif.h:24832 */
-struct _trt__SetAudioEncoderConfiguration;	/* onvif.h:24846 */
-struct _trt__SetAudioEncoderConfigurationResponse;	/* onvif.h:24872 */
-struct _trt__SetAudioSourceConfiguration;	/* onvif.h:24886 */
-struct _trt__SetAudioSourceConfigurationResponse;	/* onvif.h:24912 */
-struct _trt__SetVideoAnalyticsConfiguration;	/* onvif.h:24926 */
-struct _trt__SetVideoAnalyticsConfigurationResponse;	/* onvif.h:24952 */
-struct _trt__SetMetadataConfiguration;	/* onvif.h:24966 */
-struct _trt__SetMetadataConfigurationResponse;	/* onvif.h:24992 */
-struct _trt__SetAudioOutputConfiguration;	/* onvif.h:25006 */
-struct _trt__SetAudioOutputConfigurationResponse;	/* onvif.h:25032 */
-struct _trt__SetAudioDecoderConfiguration;	/* onvif.h:25046 */
-struct _trt__SetAudioDecoderConfigurationResponse;	/* onvif.h:25072 */
-struct _trt__GetVideoSourceConfigurationOptions;	/* onvif.h:25086 */
-struct _trt__GetVideoSourceConfigurationOptionsResponse;	/* onvif.h:25112 */
-struct _trt__GetVideoEncoderConfigurationOptions;	/* onvif.h:25132 */
-struct _trt__GetVideoEncoderConfigurationOptionsResponse;	/* onvif.h:25158 */
-struct _trt__GetAudioSourceConfigurationOptions;	/* onvif.h:25174 */
-struct _trt__GetAudioSourceConfigurationOptionsResponse;	/* onvif.h:25200 */
-struct _trt__GetAudioEncoderConfigurationOptions;	/* onvif.h:25220 */
-struct _trt__GetAudioEncoderConfigurationOptionsResponse;	/* onvif.h:25246 */
-struct _trt__GetMetadataConfigurationOptions;	/* onvif.h:25266 */
-struct _trt__GetMetadataConfigurationOptionsResponse;	/* onvif.h:25292 */
-struct _trt__GetAudioOutputConfigurationOptions;	/* onvif.h:25312 */
-struct _trt__GetAudioOutputConfigurationOptionsResponse;	/* onvif.h:25338 */
-struct _trt__GetAudioDecoderConfigurationOptions;	/* onvif.h:25358 */
-struct _trt__GetAudioDecoderConfigurationOptionsResponse;	/* onvif.h:25384 */
-struct _trt__GetGuaranteedNumberOfVideoEncoderInstances;	/* onvif.h:25404 */
-struct _trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse;	/* onvif.h:25424 */
-struct _trt__GetStreamUri;	/* onvif.h:25462 */
-struct _trt__GetStreamUriResponse;	/* onvif.h:25488 */
-struct _trt__StartMulticastStreaming;	/* onvif.h:25507 */
-struct _trt__StartMulticastStreamingResponse;	/* onvif.h:25527 */
-struct _trt__StopMulticastStreaming;	/* onvif.h:25541 */
-struct _trt__StopMulticastStreamingResponse;	/* onvif.h:25561 */
-struct _trt__SetSynchronizationPoint;	/* onvif.h:25575 */
-struct _trt__SetSynchronizationPointResponse;	/* onvif.h:25595 */
-struct _trt__GetSnapshotUri;	/* onvif.h:25609 */
-struct _trt__GetSnapshotUriResponse;	/* onvif.h:25629 */
-struct _trt__GetVideoSourceModes;	/* onvif.h:25648 */
-struct _trt__GetVideoSourceModesResponse;	/* onvif.h:25668 */
-struct _trt__SetVideoSourceMode;	/* onvif.h:25690 */
-struct _trt__SetVideoSourceModeResponse;	/* onvif.h:25716 */
-struct _trt__GetOSDs;	/* onvif.h:25736 */
-struct _trt__GetOSDsResponse;	/* onvif.h:25756 */
-struct _trt__GetOSD;	/* onvif.h:25778 */
-struct _trt__GetOSDResponse;	/* onvif.h:25807 */
-struct _trt__SetOSD;	/* onvif.h:25836 */
-struct _trt__SetOSDResponse;	/* onvif.h:25865 */
-struct _trt__GetOSDOptions;	/* onvif.h:25888 */
-struct _trt__GetOSDOptionsResponse;	/* onvif.h:25917 */
-struct _trt__CreateOSD;	/* onvif.h:25945 */
-struct _trt__CreateOSDResponse;	/* onvif.h:25974 */
-struct _trt__DeleteOSD;	/* onvif.h:26003 */
-struct _trt__DeleteOSDResponse;	/* onvif.h:26032 */
-struct tds__StorageConfiguration;	/* onvif.h:5509 */
-struct tt__VideoSource;	/* onvif.h:22906 */
-struct tt__AudioSource;	/* onvif.h:22942 */
-struct tt__VideoSourceConfiguration;	/* onvif.h:6034 */
-struct tt__VideoEncoderConfiguration;	/* onvif.h:6046 */
-struct tt__JpegOptions2;	/* onvif.h:6833 */
-struct tt__Mpeg4Options2;	/* onvif.h:6839 */
-struct tt__H264Options2;	/* onvif.h:6845 */
-struct tt__VideoEncoder2Configuration;	/* onvif.h:26542 */
-struct tt__AudioSourceConfiguration;	/* onvif.h:6040 */
-struct tt__AudioEncoderConfiguration;	/* onvif.h:6052 */
-struct tt__AudioEncoder2Configuration;	/* onvif.h:26772 */
-struct tt__VideoAnalyticsConfiguration;	/* onvif.h:6058 */
-struct tt__MetadataConfiguration;	/* onvif.h:6070 */
-struct tt__VideoOutput;	/* onvif.h:27009 */
-struct tt__VideoOutputConfiguration;	/* onvif.h:27058 */
-struct tt__AudioOutput;	/* onvif.h:22978 */
-struct tt__AudioOutputConfiguration;	/* onvif.h:6122 */
-struct tt__AudioDecoderConfiguration;	/* onvif.h:6128 */
-struct tt__NetworkInterface;	/* onvif.h:3992 */
-struct tt__CertificateUsage;	/* onvif.h:11685 */
-struct tt__RelayOutput;	/* onvif.h:5123 */
-struct tt__DigitalInput;	/* onvif.h:27403 */
-struct tt__PTZNode;	/* onvif.h:27445 */
-struct tt__PTZConfiguration;	/* onvif.h:6064 */
-struct tt__EventFilter;	/* onvif.h:27646 */
-struct tt__AnalyticsEngine;	/* onvif.h:27676 */
-struct tt__AnalyticsEngineInput;	/* onvif.h:27726 */
-struct tt__AnalyticsEngineControl;	/* onvif.h:27780 */
-struct tt__OSDConfiguration;	/* onvif.h:25764 */
-struct _wsnt__SubscribeCreationFailedFaultType_ErrorCode;	/* onvif.h:27944 */
-struct _wsnt__SubscribeCreationFailedFaultType_Description;	/* onvif.h:27963 */
-struct _wsnt__SubscribeCreationFailedFaultType_FaultCause;	/* onvif.h:27977 */
-struct wsnt__SubscribeCreationFailedFaultType;	/* onvif.h:27921 */
-struct _wsnt__InvalidFilterFaultType_ErrorCode;	/* onvif.h:28028 */
-struct _wsnt__InvalidFilterFaultType_Description;	/* onvif.h:28047 */
-struct _wsnt__InvalidFilterFaultType_FaultCause;	/* onvif.h:28061 */
-struct wsnt__InvalidFilterFaultType;	/* onvif.h:28005 */
-struct _wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode;	/* onvif.h:28116 */
-struct _wsnt__TopicExpressionDialectUnknownFaultType_Description;	/* onvif.h:28135 */
-struct _wsnt__TopicExpressionDialectUnknownFaultType_FaultCause;	/* onvif.h:28149 */
-struct wsnt__TopicExpressionDialectUnknownFaultType;	/* onvif.h:28093 */
-struct _wsnt__InvalidTopicExpressionFaultType_ErrorCode;	/* onvif.h:28200 */
-struct _wsnt__InvalidTopicExpressionFaultType_Description;	/* onvif.h:28219 */
-struct _wsnt__InvalidTopicExpressionFaultType_FaultCause;	/* onvif.h:28233 */
-struct wsnt__InvalidTopicExpressionFaultType;	/* onvif.h:28177 */
-struct _wsnt__TopicNotSupportedFaultType_ErrorCode;	/* onvif.h:28284 */
-struct _wsnt__TopicNotSupportedFaultType_Description;	/* onvif.h:28303 */
-struct _wsnt__TopicNotSupportedFaultType_FaultCause;	/* onvif.h:28317 */
-struct wsnt__TopicNotSupportedFaultType;	/* onvif.h:28261 */
-struct _wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode;	/* onvif.h:28368 */
-struct _wsnt__MultipleTopicsSpecifiedFaultType_Description;	/* onvif.h:28387 */
-struct _wsnt__MultipleTopicsSpecifiedFaultType_FaultCause;	/* onvif.h:28401 */
-struct wsnt__MultipleTopicsSpecifiedFaultType;	/* onvif.h:28345 */
-struct _wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode;	/* onvif.h:28452 */
-struct _wsnt__InvalidProducerPropertiesExpressionFaultType_Description;	/* onvif.h:28471 */
-struct _wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause;	/* onvif.h:28485 */
-struct wsnt__InvalidProducerPropertiesExpressionFaultType;	/* onvif.h:28429 */
-struct _wsnt__InvalidMessageContentExpressionFaultType_ErrorCode;	/* onvif.h:28536 */
-struct _wsnt__InvalidMessageContentExpressionFaultType_Description;	/* onvif.h:28555 */
-struct _wsnt__InvalidMessageContentExpressionFaultType_FaultCause;	/* onvif.h:28569 */
-struct wsnt__InvalidMessageContentExpressionFaultType;	/* onvif.h:28513 */
-struct _wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode;	/* onvif.h:28620 */
-struct _wsnt__UnrecognizedPolicyRequestFaultType_Description;	/* onvif.h:28639 */
-struct _wsnt__UnrecognizedPolicyRequestFaultType_FaultCause;	/* onvif.h:28653 */
-struct wsnt__UnrecognizedPolicyRequestFaultType;	/* onvif.h:28597 */
-struct _wsnt__UnsupportedPolicyRequestFaultType_ErrorCode;	/* onvif.h:28708 */
-struct _wsnt__UnsupportedPolicyRequestFaultType_Description;	/* onvif.h:28727 */
-struct _wsnt__UnsupportedPolicyRequestFaultType_FaultCause;	/* onvif.h:28741 */
-struct wsnt__UnsupportedPolicyRequestFaultType;	/* onvif.h:28685 */
-struct _wsnt__NotifyMessageNotSupportedFaultType_ErrorCode;	/* onvif.h:28796 */
-struct _wsnt__NotifyMessageNotSupportedFaultType_Description;	/* onvif.h:28815 */
-struct _wsnt__NotifyMessageNotSupportedFaultType_FaultCause;	/* onvif.h:28829 */
-struct wsnt__NotifyMessageNotSupportedFaultType;	/* onvif.h:28773 */
-struct _wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode;	/* onvif.h:28880 */
-struct _wsnt__UnacceptableInitialTerminationTimeFaultType_Description;	/* onvif.h:28899 */
-struct _wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause;	/* onvif.h:28913 */
-struct wsnt__UnacceptableInitialTerminationTimeFaultType;	/* onvif.h:28857 */
-struct _wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode;	/* onvif.h:28968 */
-struct _wsnt__NoCurrentMessageOnTopicFaultType_Description;	/* onvif.h:28987 */
-struct _wsnt__NoCurrentMessageOnTopicFaultType_FaultCause;	/* onvif.h:29001 */
-struct wsnt__NoCurrentMessageOnTopicFaultType;	/* onvif.h:28945 */
-struct _wsnt__UnableToGetMessagesFaultType_ErrorCode;	/* onvif.h:29052 */
-struct _wsnt__UnableToGetMessagesFaultType_Description;	/* onvif.h:29071 */
-struct _wsnt__UnableToGetMessagesFaultType_FaultCause;	/* onvif.h:29085 */
-struct wsnt__UnableToGetMessagesFaultType;	/* onvif.h:29029 */
-struct _wsnt__UnableToDestroyPullPointFaultType_ErrorCode;	/* onvif.h:29136 */
-struct _wsnt__UnableToDestroyPullPointFaultType_Description;	/* onvif.h:29155 */
-struct _wsnt__UnableToDestroyPullPointFaultType_FaultCause;	/* onvif.h:29169 */
-struct wsnt__UnableToDestroyPullPointFaultType;	/* onvif.h:29113 */
-struct _wsnt__UnableToCreatePullPointFaultType_ErrorCode;	/* onvif.h:29220 */
-struct _wsnt__UnableToCreatePullPointFaultType_Description;	/* onvif.h:29239 */
-struct _wsnt__UnableToCreatePullPointFaultType_FaultCause;	/* onvif.h:29253 */
-struct wsnt__UnableToCreatePullPointFaultType;	/* onvif.h:29197 */
-struct _wsnt__UnacceptableTerminationTimeFaultType_ErrorCode;	/* onvif.h:29304 */
-struct _wsnt__UnacceptableTerminationTimeFaultType_Description;	/* onvif.h:29323 */
-struct _wsnt__UnacceptableTerminationTimeFaultType_FaultCause;	/* onvif.h:29337 */
-struct wsnt__UnacceptableTerminationTimeFaultType;	/* onvif.h:29281 */
-struct _wsnt__UnableToDestroySubscriptionFaultType_ErrorCode;	/* onvif.h:29392 */
-struct _wsnt__UnableToDestroySubscriptionFaultType_Description;	/* onvif.h:29411 */
-struct _wsnt__UnableToDestroySubscriptionFaultType_FaultCause;	/* onvif.h:29425 */
-struct wsnt__UnableToDestroySubscriptionFaultType;	/* onvif.h:29369 */
-struct _wsnt__PauseFailedFaultType_ErrorCode;	/* onvif.h:29476 */
-struct _wsnt__PauseFailedFaultType_Description;	/* onvif.h:29495 */
-struct _wsnt__PauseFailedFaultType_FaultCause;	/* onvif.h:29509 */
-struct wsnt__PauseFailedFaultType;	/* onvif.h:29453 */
-struct _wsnt__ResumeFailedFaultType_ErrorCode;	/* onvif.h:29560 */
-struct _wsnt__ResumeFailedFaultType_Description;	/* onvif.h:29579 */
-struct _wsnt__ResumeFailedFaultType_FaultCause;	/* onvif.h:29593 */
-struct wsnt__ResumeFailedFaultType;	/* onvif.h:29537 */
-struct _wstop__TopicNamespaceType_Topic;	/* onvif.h:29642 */
-struct wstop__TopicNamespaceType;	/* onvif.h:29621 */
-struct wstop__TopicType;	/* onvif.h:29659 */
-struct wstop__TopicSetType;	/* onvif.h:21102 */
-struct _wsrfr__ResourceUnknownFaultType_ErrorCode;	/* onvif.h:29807 */
-struct _wsrfr__ResourceUnknownFaultType_Description;	/* onvif.h:29826 */
-struct _wsrfr__ResourceUnknownFaultType_FaultCause;	/* onvif.h:29840 */
-struct wsrfr__ResourceUnknownFaultType;	/* onvif.h:29784 */
-struct _wsrfr__ResourceUnavailableFaultType_ErrorCode;	/* onvif.h:29891 */
-struct _wsrfr__ResourceUnavailableFaultType_Description;	/* onvif.h:29910 */
-struct _wsrfr__ResourceUnavailableFaultType_FaultCause;	/* onvif.h:29924 */
-struct wsrfr__ResourceUnavailableFaultType;	/* onvif.h:29868 */
-struct tt__OSDReference;	/* onvif.h:27876 */
-struct __tdn__Hello;	/* onvif.h:30986 */
-struct __tdn__Bye;	/* onvif.h:31041 */
-struct __tdn__Probe;	/* onvif.h:31096 */
-struct __tds__GetServices;	/* onvif.h:31168 */
-struct __tds__GetServiceCapabilities;	/* onvif.h:31225 */
-struct __tds__GetDeviceInformation;	/* onvif.h:31281 */
-struct __tds__SetSystemDateAndTime;	/* onvif.h:31351 */
-struct __tds__GetSystemDateAndTime;	/* onvif.h:31413 */
-struct __tds__SetSystemFactoryDefault;	/* onvif.h:31469 */
-struct __tds__UpgradeSystemFirmware;	/* onvif.h:31531 */
-struct __tds__SystemReboot;	/* onvif.h:31587 */
-struct __tds__RestoreSystem;	/* onvif.h:31651 */
-struct __tds__GetSystemBackup;	/* onvif.h:31714 */
-struct __tds__GetSystemLog;	/* onvif.h:31771 */
-struct __tds__GetSystemSupportInformation;	/* onvif.h:31827 */
-struct __tds__GetScopes;	/* onvif.h:31898 */
-struct __tds__SetScopes;	/* onvif.h:31962 */
-struct __tds__AddScopes;	/* onvif.h:32022 */
-struct __tds__RemoveScopes;	/* onvif.h:32084 */
-struct __tds__GetDiscoveryMode;	/* onvif.h:32144 */
-struct __tds__SetDiscoveryMode;	/* onvif.h:32205 */
-struct __tds__GetRemoteDiscoveryMode;	/* onvif.h:32267 */
-struct __tds__SetRemoteDiscoveryMode;	/* onvif.h:32329 */
-struct __tds__GetDPAddresses;	/* onvif.h:32389 */
-struct __tds__GetEndpointReference;	/* onvif.h:32451 */
-struct __tds__GetRemoteUser;	/* onvif.h:32513 */
-struct __tds__SetRemoteUser;	/* onvif.h:32580 */
-struct __tds__GetUsers;	/* onvif.h:32640 */
-struct __tds__CreateUsers;	/* onvif.h:32708 */
-struct __tds__DeleteUsers;	/* onvif.h:32771 */
-struct __tds__SetUser;	/* onvif.h:32832 */
-struct __tds__GetWsdlUrl;	/* onvif.h:32889 */
-struct __tds__GetPasswordComplexityOptions;	/* onvif.h:32946 */
-struct __tds__GetPasswordComplexityConfiguration;	/* onvif.h:33002 */
-struct __tds__SetPasswordComplexityConfiguration;	/* onvif.h:33058 */
-struct __tds__GetPasswordHistoryConfiguration;	/* onvif.h:33114 */
-struct __tds__SetPasswordHistoryConfiguration;	/* onvif.h:33170 */
-struct __tds__GetAuthFailureWarningOptions;	/* onvif.h:33227 */
-struct __tds__GetAuthFailureWarningConfiguration;	/* onvif.h:33284 */
-struct __tds__SetAuthFailureWarningConfiguration;	/* onvif.h:33340 */
-struct __tds__GetCapabilities;	/* onvif.h:33398 */
-struct __tds__SetDPAddresses;	/* onvif.h:33459 */
-struct __tds__GetHostname;	/* onvif.h:33518 */
-struct __tds__SetHostname;	/* onvif.h:33581 */
-struct __tds__SetHostnameFromDHCP;	/* onvif.h:33637 */
-struct __tds__GetDNS;	/* onvif.h:33695 */
-struct __tds__SetDNS;	/* onvif.h:33753 */
-struct __tds__GetNTP;	/* onvif.h:33812 */
-struct __tds__SetNTP;	/* onvif.h:33878 */
-struct __tds__GetDynamicDNS;	/* onvif.h:33938 */
-struct __tds__SetDynamicDNS;	/* onvif.h:33998 */
-struct __tds__GetNetworkInterfaces;	/* onvif.h:34058 */
-struct __tds__SetNetworkInterfaces;	/* onvif.h:34123 */
-struct __tds__GetNetworkProtocols;	/* onvif.h:34182 */
-struct __tds__SetNetworkProtocols;	/* onvif.h:34241 */
-struct __tds__GetNetworkDefaultGateway;	/* onvif.h:34300 */
-struct __tds__SetNetworkDefaultGateway;	/* onvif.h:34358 */
-struct __tds__GetZeroConfiguration;	/* onvif.h:34421 */
-struct __tds__SetZeroConfiguration;	/* onvif.h:34478 */
-struct __tds__GetIPAddressFilter;	/* onvif.h:34538 */
-struct __tds__SetIPAddressFilter;	/* onvif.h:34600 */
-struct __tds__AddIPAddressFilter;	/* onvif.h:34661 */
-struct __tds__RemoveIPAddressFilter;	/* onvif.h:34722 */
-struct __tds__GetAccessPolicy;	/* onvif.h:34792 */
-struct __tds__SetAccessPolicy;	/* onvif.h:34853 */
-struct __tds__CreateCertificate;	/* onvif.h:34908 */
-struct __tds__GetCertificates;	/* onvif.h:34963 */
-struct __tds__GetCertificatesStatus;	/* onvif.h:35018 */
-struct __tds__SetCertificatesStatus;	/* onvif.h:35073 */
-struct __tds__DeleteCertificates;	/* onvif.h:35128 */
-struct __tds__GetPkcs10Request;	/* onvif.h:35183 */
-struct __tds__LoadCertificates;	/* onvif.h:35238 */
-struct __tds__GetClientCertificateMode;	/* onvif.h:35293 */
-struct __tds__SetClientCertificateMode;	/* onvif.h:35348 */
-struct __tds__GetRelayOutputs;	/* onvif.h:35406 */
-struct __tds__SetRelayOutputSettings;	/* onvif.h:35464 */
-struct __tds__SetRelayOutputState;	/* onvif.h:35522 */
-struct __tds__SendAuxiliaryCommand;	/* onvif.h:35609 */
-struct __tds__GetCACertificates;	/* onvif.h:35664 */
-struct __tds__LoadCertificateWithPrivateKey;	/* onvif.h:35719 */
-struct __tds__GetCertificateInformation;	/* onvif.h:35774 */
-struct __tds__LoadCACertificates;	/* onvif.h:35829 */
-struct __tds__CreateDot1XConfiguration;	/* onvif.h:35884 */
-struct __tds__SetDot1XConfiguration;	/* onvif.h:35939 */
-struct __tds__GetDot1XConfiguration;	/* onvif.h:35994 */
-struct __tds__GetDot1XConfigurations;	/* onvif.h:36049 */
-struct __tds__DeleteDot1XConfiguration;	/* onvif.h:36104 */
-struct __tds__GetDot11Capabilities;	/* onvif.h:36161 */
-struct __tds__GetDot11Status;	/* onvif.h:36219 */
-struct __tds__ScanAvailableDot11Networks;	/* onvif.h:36277 */
-struct __tds__GetSystemUris;	/* onvif.h:36352 */
-struct __tds__StartFirmwareUpgrade;	/* onvif.h:36436 */
-struct __tds__StartSystemRestore;	/* onvif.h:36519 */
-struct __tds__GetStorageConfigurations;	/* onvif.h:36577 */
-struct __tds__CreateStorageConfiguration;	/* onvif.h:36636 */
-struct __tds__GetStorageConfiguration;	/* onvif.h:36694 */
-struct __tds__SetStorageConfiguration;	/* onvif.h:36751 */
-struct __tds__DeleteStorageConfiguration;	/* onvif.h:36809 */
-struct __tds__GetGeoLocation;	/* onvif.h:36867 */
-struct __tds__SetGeoLocation;	/* onvif.h:36925 */
-struct __tds__DeleteGeoLocation;	/* onvif.h:36982 */
-struct __tds__SetHashingAlgorithm;	/* onvif.h:37040 */
-struct __tev__PullMessages;	/* onvif.h:37127 */
-struct __tev__Seek;	/* onvif.h:37196 */
-struct __tev__SetSynchronizationPoint;	/* onvif.h:37267 */
-struct __tev__Unsubscribe;	/* onvif.h:37333 */
-struct __tev__GetServiceCapabilities;	/* onvif.h:37390 */
-struct __tev__CreatePullPointSubscription;	/* onvif.h:37488 */
-struct __tev__GetEventProperties;	/* onvif.h:37551 */
-struct __tev__AddEventBroker;	/* onvif.h:37610 */
-struct __tev__DeleteEventBroker;	/* onvif.h:37667 */
-struct __tev__GetEventBrokers;	/* onvif.h:37724 */
-struct __tev__Renew;	/* onvif.h:37785 */
-struct __tev__Unsubscribe_;	/* onvif.h:37846 */
-struct __tev__Subscribe;	/* onvif.h:37937 */
-struct __tev__GetCurrentMessage;	/* onvif.h:38010 */
-struct __tev__Notify;	/* onvif.h:38061 */
-struct __tev__GetMessages;	/* onvif.h:38122 */
-struct __tev__DestroyPullPoint;	/* onvif.h:38183 */
-struct __tev__Notify_;	/* onvif.h:38234 */
-struct __tev__CreatePullPoint;	/* onvif.h:38292 */
-struct __tev__Renew_;	/* onvif.h:38353 */
-struct __tev__Unsubscribe__;	/* onvif.h:38414 */
-struct __tev__PauseSubscription;	/* onvif.h:38475 */
-struct __tev__ResumeSubscription;	/* onvif.h:38536 */
-struct __trt__GetServiceCapabilities;	/* onvif.h:38609 */
-struct __trt__GetVideoSources;	/* onvif.h:38665 */
-struct __trt__GetAudioSources;	/* onvif.h:38721 */
-struct __trt__GetAudioOutputs;	/* onvif.h:38777 */
-struct __trt__CreateProfile;	/* onvif.h:38837 */
-struct __trt__GetProfile;	/* onvif.h:38894 */
-struct __trt__GetProfiles;	/* onvif.h:38955 */
-struct __trt__AddVideoEncoderConfiguration;	/* onvif.h:39018 */
-struct __trt__AddVideoSourceConfiguration;	/* onvif.h:39077 */
-struct __trt__AddAudioEncoderConfiguration;	/* onvif.h:39140 */
-struct __trt__AddAudioSourceConfiguration;	/* onvif.h:39199 */
-struct __trt__AddPTZConfiguration;	/* onvif.h:39262 */
-struct __trt__AddVideoAnalyticsConfiguration;	/* onvif.h:39328 */
-struct __trt__AddMetadataConfiguration;	/* onvif.h:39388 */
-struct __trt__AddAudioOutputConfiguration;	/* onvif.h:39446 */
-struct __trt__AddAudioDecoderConfiguration;	/* onvif.h:39504 */
-struct __trt__RemoveVideoEncoderConfiguration;	/* onvif.h:39563 */
-struct __trt__RemoveVideoSourceConfiguration;	/* onvif.h:39624 */
-struct __trt__RemoveAudioEncoderConfiguration;	/* onvif.h:39684 */
-struct __trt__RemoveAudioSourceConfiguration;	/* onvif.h:39746 */
-struct __trt__RemovePTZConfiguration;	/* onvif.h:39805 */
-struct __trt__RemoveVideoAnalyticsConfiguration;	/* onvif.h:39864 */
-struct __trt__RemoveMetadataConfiguration;	/* onvif.h:39922 */
-struct __trt__RemoveAudioOutputConfiguration;	/* onvif.h:39980 */
-struct __trt__RemoveAudioDecoderConfiguration;	/* onvif.h:40038 */
-struct __trt__DeleteProfile;	/* onvif.h:40095 */
-struct __trt__GetVideoSourceConfigurations;	/* onvif.h:40153 */
-struct __trt__GetVideoEncoderConfigurations;	/* onvif.h:40212 */
-struct __trt__GetAudioSourceConfigurations;	/* onvif.h:40271 */
-struct __trt__GetAudioEncoderConfigurations;	/* onvif.h:40329 */
-struct __trt__GetVideoAnalyticsConfigurations;	/* onvif.h:40387 */
-struct __trt__GetMetadataConfigurations;	/* onvif.h:40444 */
-struct __trt__GetAudioOutputConfigurations;	/* onvif.h:40501 */
-struct __trt__GetAudioDecoderConfigurations;	/* onvif.h:40560 */
-struct __trt__GetVideoSourceConfiguration;	/* onvif.h:40617 */
-struct __trt__GetVideoEncoderConfiguration;	/* onvif.h:40674 */
-struct __trt__GetAudioSourceConfiguration;	/* onvif.h:40731 */
-struct __trt__GetAudioEncoderConfiguration;	/* onvif.h:40788 */
-struct __trt__GetVideoAnalyticsConfiguration;	/* onvif.h:40845 */
-struct __trt__GetMetadataConfiguration;	/* onvif.h:40902 */
-struct __trt__GetAudioOutputConfiguration;	/* onvif.h:40959 */
-struct __trt__GetAudioDecoderConfiguration;	/* onvif.h:41016 */
-struct __trt__GetCompatibleVideoEncoderConfigurations;	/* onvif.h:41076 */
-struct __trt__GetCompatibleVideoSourceConfigurations;	/* onvif.h:41138 */
-struct __trt__GetCompatibleAudioEncoderConfigurations;	/* onvif.h:41198 */
-struct __trt__GetCompatibleAudioSourceConfigurations;	/* onvif.h:41258 */
-struct __trt__GetCompatibleVideoAnalyticsConfigurations;	/* onvif.h:41318 */
-struct __trt__GetCompatibleMetadataConfigurations;	/* onvif.h:41378 */
-struct __trt__GetCompatibleAudioOutputConfigurations;	/* onvif.h:41437 */
-struct __trt__GetCompatibleAudioDecoderConfigurations;	/* onvif.h:41496 */
-struct __trt__SetVideoSourceConfiguration;	/* onvif.h:41557 */
-struct __trt__SetVideoEncoderConfiguration;	/* onvif.h:41622 */
-struct __trt__SetAudioSourceConfiguration;	/* onvif.h:41685 */
-struct __trt__SetAudioEncoderConfiguration;	/* onvif.h:41749 */
-struct __trt__SetVideoAnalyticsConfiguration;	/* onvif.h:41815 */
-struct __trt__SetMetadataConfiguration;	/* onvif.h:41880 */
-struct __trt__SetAudioOutputConfiguration;	/* onvif.h:41938 */
-struct __trt__SetAudioDecoderConfiguration;	/* onvif.h:41996 */
-struct __trt__GetVideoSourceConfigurationOptions;	/* onvif.h:42058 */
-struct __trt__GetVideoEncoderConfigurationOptions;	/* onvif.h:42128 */
-struct __trt__GetAudioSourceConfigurationOptions;	/* onvif.h:42190 */
-struct __trt__GetAudioEncoderConfigurationOptions;	/* onvif.h:42248 */
-struct __trt__GetMetadataConfigurationOptions;	/* onvif.h:42305 */
-struct __trt__GetAudioOutputConfigurationOptions;	/* onvif.h:42362 */
-struct __trt__GetAudioDecoderConfigurationOptions;	/* onvif.h:42420 */
-struct __trt__GetGuaranteedNumberOfVideoEncoderInstances;	/* onvif.h:42478 */
-struct __trt__GetStreamUri;	/* onvif.h:42557 */
-struct __trt__StartMulticastStreaming;	/* onvif.h:42620 */
-struct __trt__StopMulticastStreaming;	/* onvif.h:42676 */
-struct __trt__SetSynchronizationPoint;	/* onvif.h:42749 */
-struct __trt__GetSnapshotUri;	/* onvif.h:42815 */
-struct __trt__GetVideoSourceModes;	/* onvif.h:42873 */
-struct __trt__SetVideoSourceMode;	/* onvif.h:42932 */
-struct __trt__GetOSDs;	/* onvif.h:42988 */
-struct __trt__GetOSD;	/* onvif.h:43044 */
-struct __trt__GetOSDOptions;	/* onvif.h:43100 */
-struct __trt__SetOSD;	/* onvif.h:43156 */
-struct __trt__CreateOSD;	/* onvif.h:43212 */
-struct __trt__DeleteOSD;	/* onvif.h:43268 */
+struct SOAP_ENV__Envelope;	/* onvif.h:206 */
+struct xsd__base64Binary;	/* onvif.h:210 */
+struct xsd__hexBinary;	/* onvif.h:224 */
+struct _tds__Service_Capabilities;	/* onvif.h:1680 */
+struct tds__Service;	/* onvif.h:1659 */
+struct tds__DeviceServiceCapabilities;	/* onvif.h:1722 */
+struct tds__NetworkCapabilities;	/* onvif.h:1728 */
+struct tds__SecurityCapabilities;	/* onvif.h:1734 */
+struct tds__SystemCapabilities;	/* onvif.h:1740 */
+struct tds__MiscCapabilities;	/* onvif.h:1746 */
+struct _tds__UserCredential_Extension;	/* onvif.h:2156 */
+struct tds__UserCredential;	/* onvif.h:2135 */
+struct _tds__StorageConfigurationData_Extension;	/* onvif.h:2206 */
+struct tds__StorageConfigurationData;	/* onvif.h:2179 */
+struct _tds__GetServices;	/* onvif.h:2242 */
+struct _tds__GetServicesResponse;	/* onvif.h:2262 */
+struct _tds__GetServiceCapabilities;	/* onvif.h:2284 */
+struct _tds__GetServiceCapabilitiesResponse;	/* onvif.h:2298 */
+struct _tds__GetDeviceInformation;	/* onvif.h:2318 */
+struct _tds__GetDeviceInformationResponse;	/* onvif.h:2332 */
+struct _tds__SetSystemDateAndTime;	/* onvif.h:2376 */
+struct _tds__SetSystemDateAndTimeResponse;	/* onvif.h:2414 */
+struct _tds__GetSystemDateAndTime;	/* onvif.h:2428 */
+struct _tds__GetSystemDateAndTimeResponse;	/* onvif.h:2442 */
+struct _tds__SetSystemFactoryDefault;	/* onvif.h:2462 */
+struct _tds__SetSystemFactoryDefaultResponse;	/* onvif.h:2482 */
+struct _tds__UpgradeSystemFirmware;	/* onvif.h:2496 */
+struct _tds__UpgradeSystemFirmwareResponse;	/* onvif.h:2512 */
+struct _tds__SystemReboot;	/* onvif.h:2528 */
+struct _tds__SystemRebootResponse;	/* onvif.h:2542 */
+struct _tds__RestoreSystem;	/* onvif.h:2562 */
+struct _tds__RestoreSystemResponse;	/* onvif.h:2580 */
+struct _tds__GetSystemBackup;	/* onvif.h:2594 */
+struct _tds__GetSystemBackupResponse;	/* onvif.h:2608 */
+struct _tds__GetSystemSupportInformation;	/* onvif.h:2626 */
+struct _tds__GetSystemSupportInformationResponse;	/* onvif.h:2640 */
+struct _tds__GetSystemLog;	/* onvif.h:2660 */
+struct _tds__GetSystemLogResponse;	/* onvif.h:2680 */
+struct _tds__GetScopes;	/* onvif.h:2700 */
+struct _tds__GetScopesResponse;	/* onvif.h:2714 */
+struct _tds__SetScopes;	/* onvif.h:2736 */
+struct _tds__SetScopesResponse;	/* onvif.h:2758 */
+struct _tds__AddScopes;	/* onvif.h:2772 */
+struct _tds__AddScopesResponse;	/* onvif.h:2794 */
+struct _tds__RemoveScopes;	/* onvif.h:2808 */
+struct _tds__RemoveScopesResponse;	/* onvif.h:2831 */
+struct _tds__GetDiscoveryMode;	/* onvif.h:2853 */
+struct _tds__GetDiscoveryModeResponse;	/* onvif.h:2867 */
+struct _tds__SetDiscoveryMode;	/* onvif.h:2887 */
+struct _tds__SetDiscoveryModeResponse;	/* onvif.h:2907 */
+struct _tds__GetRemoteDiscoveryMode;	/* onvif.h:2921 */
+struct _tds__GetRemoteDiscoveryModeResponse;	/* onvif.h:2935 */
+struct _tds__SetRemoteDiscoveryMode;	/* onvif.h:2955 */
+struct _tds__SetRemoteDiscoveryModeResponse;	/* onvif.h:2975 */
+struct _tds__GetDPAddresses;	/* onvif.h:2989 */
+struct _tds__GetDPAddressesResponse;	/* onvif.h:3003 */
+struct _tds__SetDPAddresses;	/* onvif.h:3021 */
+struct _tds__SetDPAddressesResponse;	/* onvif.h:3039 */
+struct _tds__GetEndpointReference;	/* onvif.h:3053 */
+struct _tds__GetEndpointReferenceResponse;	/* onvif.h:3067 */
+struct _tds__GetRemoteUser;	/* onvif.h:3092 */
+struct _tds__GetRemoteUserResponse;	/* onvif.h:3106 */
+struct _tds__SetRemoteUser;	/* onvif.h:3122 */
+struct _tds__SetRemoteUserResponse;	/* onvif.h:3138 */
+struct _tds__GetUsers;	/* onvif.h:3152 */
+struct _tds__GetUsersResponse;	/* onvif.h:3166 */
+struct _tds__CreateUsers;	/* onvif.h:3188 */
+struct _tds__CreateUsersResponse;	/* onvif.h:3210 */
+struct _tds__DeleteUsers;	/* onvif.h:3224 */
+struct _tds__DeleteUsersResponse;	/* onvif.h:3246 */
+struct _tds__SetUser;	/* onvif.h:3260 */
+struct _tds__SetUserResponse;	/* onvif.h:3282 */
+struct _tds__GetWsdlUrl;	/* onvif.h:3296 */
+struct _tds__GetWsdlUrlResponse;	/* onvif.h:3310 */
+struct _tds__GetPasswordComplexityOptions;	/* onvif.h:3326 */
+struct _tds__GetPasswordComplexityOptionsResponse;	/* onvif.h:3340 */
+struct _tds__GetPasswordComplexityConfiguration;	/* onvif.h:3366 */
+struct _tds__GetPasswordComplexityConfigurationResponse;	/* onvif.h:3380 */
+struct _tds__SetPasswordComplexityConfiguration;	/* onvif.h:3406 */
+struct _tds__SetPasswordComplexityConfigurationResponse;	/* onvif.h:3432 */
+struct _tds__GetPasswordHistoryConfiguration;	/* onvif.h:3446 */
+struct _tds__GetPasswordHistoryConfigurationResponse;	/* onvif.h:3460 */
+struct _tds__SetPasswordHistoryConfiguration;	/* onvif.h:3478 */
+struct _tds__SetPasswordHistoryConfigurationResponse;	/* onvif.h:3496 */
+struct _tds__GetAuthFailureWarningOptions;	/* onvif.h:3510 */
+struct _tds__GetAuthFailureWarningOptionsResponse;	/* onvif.h:3524 */
+struct _tds__GetAuthFailureWarningConfiguration;	/* onvif.h:3542 */
+struct _tds__GetAuthFailureWarningConfigurationResponse;	/* onvif.h:3556 */
+struct _tds__SetAuthFailureWarningConfiguration;	/* onvif.h:3576 */
+struct _tds__SetAuthFailureWarningConfigurationResponse;	/* onvif.h:3596 */
+struct _tds__GetCapabilities;	/* onvif.h:3610 */
+struct _tds__GetCapabilitiesResponse;	/* onvif.h:3632 */
+struct _tds__GetHostname;	/* onvif.h:3652 */
+struct _tds__GetHostnameResponse;	/* onvif.h:3666 */
+struct _tds__SetHostname;	/* onvif.h:3686 */
+struct _tds__SetHostnameResponse;	/* onvif.h:3706 */
+struct _tds__SetHostnameFromDHCP;	/* onvif.h:3720 */
+struct _tds__SetHostnameFromDHCPResponse;	/* onvif.h:3740 */
+struct _tds__GetDNS;	/* onvif.h:3760 */
+struct _tds__GetDNSResponse;	/* onvif.h:3774 */
+struct _tds__SetDNS;	/* onvif.h:3794 */
+struct _tds__SetDNSResponse;	/* onvif.h:3830 */
+struct _tds__GetNTP;	/* onvif.h:3844 */
+struct _tds__GetNTPResponse;	/* onvif.h:3858 */
+struct _tds__SetNTP;	/* onvif.h:3878 */
+struct _tds__SetNTPResponse;	/* onvif.h:3906 */
+struct _tds__GetDynamicDNS;	/* onvif.h:3920 */
+struct _tds__GetDynamicDNSResponse;	/* onvif.h:3934 */
+struct _tds__SetDynamicDNS;	/* onvif.h:3954 */
+struct _tds__SetDynamicDNSResponse;	/* onvif.h:3986 */
+struct _tds__GetNetworkInterfaces;	/* onvif.h:4000 */
+struct _tds__GetNetworkInterfacesResponse;	/* onvif.h:4014 */
+struct _tds__SetNetworkInterfaces;	/* onvif.h:4036 */
+struct _tds__SetNetworkInterfacesResponse;	/* onvif.h:4062 */
+struct _tds__GetNetworkProtocols;	/* onvif.h:4089 */
+struct _tds__GetNetworkProtocolsResponse;	/* onvif.h:4103 */
+struct _tds__SetNetworkProtocols;	/* onvif.h:4125 */
+struct _tds__SetNetworkProtocolsResponse;	/* onvif.h:4147 */
+struct _tds__GetNetworkDefaultGateway;	/* onvif.h:4161 */
+struct _tds__GetNetworkDefaultGatewayResponse;	/* onvif.h:4175 */
+struct _tds__SetNetworkDefaultGateway;	/* onvif.h:4195 */
+struct _tds__SetNetworkDefaultGatewayResponse;	/* onvif.h:4225 */
+struct _tds__GetZeroConfiguration;	/* onvif.h:4239 */
+struct _tds__GetZeroConfigurationResponse;	/* onvif.h:4253 */
+struct _tds__SetZeroConfiguration;	/* onvif.h:4273 */
+struct _tds__SetZeroConfigurationResponse;	/* onvif.h:4299 */
+struct _tds__GetIPAddressFilter;	/* onvif.h:4313 */
+struct _tds__GetIPAddressFilterResponse;	/* onvif.h:4327 */
+struct _tds__SetIPAddressFilter;	/* onvif.h:4343 */
+struct _tds__SetIPAddressFilterResponse;	/* onvif.h:4359 */
+struct _tds__AddIPAddressFilter;	/* onvif.h:4373 */
+struct _tds__AddIPAddressFilterResponse;	/* onvif.h:4389 */
+struct _tds__RemoveIPAddressFilter;	/* onvif.h:4403 */
+struct _tds__RemoveIPAddressFilterResponse;	/* onvif.h:4419 */
+struct _tds__GetAccessPolicy;	/* onvif.h:4433 */
+struct _tds__GetAccessPolicyResponse;	/* onvif.h:4447 */
+struct _tds__SetAccessPolicy;	/* onvif.h:4463 */
+struct _tds__SetAccessPolicyResponse;	/* onvif.h:4479 */
+struct _tds__CreateCertificate;	/* onvif.h:4493 */
+struct _tds__CreateCertificateResponse;	/* onvif.h:4531 */
+struct _tds__GetCertificates;	/* onvif.h:4551 */
+struct _tds__GetCertificatesResponse;	/* onvif.h:4565 */
+struct _tds__GetCertificatesStatus;	/* onvif.h:4587 */
+struct _tds__GetCertificatesStatusResponse;	/* onvif.h:4601 */
+struct _tds__SetCertificatesStatus;	/* onvif.h:4623 */
+struct _tds__SetCertificatesStatusResponse;	/* onvif.h:4645 */
+struct _tds__DeleteCertificates;	/* onvif.h:4659 */
+struct _tds__DeleteCertificatesResponse;	/* onvif.h:4681 */
+struct _tds__GetPkcs10Request;	/* onvif.h:4695 */
+struct _tds__GetPkcs10RequestResponse;	/* onvif.h:4727 */
+struct _tds__LoadCertificates;	/* onvif.h:4747 */
+struct _tds__LoadCertificatesResponse;	/* onvif.h:4769 */
+struct _tds__GetClientCertificateMode;	/* onvif.h:4783 */
+struct _tds__GetClientCertificateModeResponse;	/* onvif.h:4797 */
+struct _tds__SetClientCertificateMode;	/* onvif.h:4817 */
+struct _tds__SetClientCertificateModeResponse;	/* onvif.h:4837 */
+struct _tds__GetCACertificates;	/* onvif.h:4851 */
+struct _tds__GetCACertificatesResponse;	/* onvif.h:4865 */
+struct _tds__LoadCertificateWithPrivateKey;	/* onvif.h:4883 */
+struct _tds__LoadCertificateWithPrivateKeyResponse;	/* onvif.h:4901 */
+struct _tds__GetCertificateInformation;	/* onvif.h:4915 */
+struct _tds__GetCertificateInformationResponse;	/* onvif.h:4931 */
+struct _tds__LoadCACertificates;	/* onvif.h:4947 */
+struct _tds__LoadCACertificatesResponse;	/* onvif.h:4965 */
+struct _tds__CreateDot1XConfiguration;	/* onvif.h:4979 */
+struct _tds__CreateDot1XConfigurationResponse;	/* onvif.h:4995 */
+struct _tds__SetDot1XConfiguration;	/* onvif.h:5009 */
+struct _tds__SetDot1XConfigurationResponse;	/* onvif.h:5025 */
+struct _tds__GetDot1XConfiguration;	/* onvif.h:5039 */
+struct _tds__GetDot1XConfigurationResponse;	/* onvif.h:5055 */
+struct _tds__GetDot1XConfigurations;	/* onvif.h:5071 */
+struct _tds__GetDot1XConfigurationsResponse;	/* onvif.h:5085 */
+struct _tds__DeleteDot1XConfiguration;	/* onvif.h:5103 */
+struct _tds__DeleteDot1XConfigurationResponse;	/* onvif.h:5121 */
+struct _tds__GetRelayOutputs;	/* onvif.h:5135 */
+struct _tds__GetRelayOutputsResponse;	/* onvif.h:5149 */
+struct _tds__SetRelayOutputSettings;	/* onvif.h:5167 */
+struct _tds__SetRelayOutputSettingsResponse;	/* onvif.h:5185 */
+struct _tds__SetRelayOutputState;	/* onvif.h:5199 */
+struct _tds__SetRelayOutputStateResponse;	/* onvif.h:5217 */
+struct _tds__SendAuxiliaryCommand;	/* onvif.h:5231 */
+struct _tds__SendAuxiliaryCommandResponse;	/* onvif.h:5247 */
+struct _tds__GetDot11Capabilities;	/* onvif.h:5263 */
+struct _tds__GetDot11CapabilitiesResponse;	/* onvif.h:5286 */
+struct _tds__GetDot11Status;	/* onvif.h:5302 */
+struct _tds__GetDot11StatusResponse;	/* onvif.h:5318 */
+struct _tds__ScanAvailableDot11Networks;	/* onvif.h:5334 */
+struct _tds__ScanAvailableDot11NetworksResponse;	/* onvif.h:5350 */
+struct _tds__GetSystemUris;	/* onvif.h:5368 */
+struct _tds__GetSystemUrisResponse_Extension;	/* onvif.h:5397 */
+struct _tds__GetSystemUrisResponse;	/* onvif.h:5382 */
+struct _tds__StartFirmwareUpgrade;	/* onvif.h:5421 */
+struct _tds__StartFirmwareUpgradeResponse;	/* onvif.h:5435 */
+struct _tds__StartSystemRestore;	/* onvif.h:5455 */
+struct _tds__StartSystemRestoreResponse;	/* onvif.h:5469 */
+struct _tds__SetHashingAlgorithm;	/* onvif.h:5487 */
+struct _tds__SetHashingAlgorithmResponse;	/* onvif.h:5507 */
+struct _tds__GetStorageConfigurations;	/* onvif.h:5521 */
+struct _tds__GetStorageConfigurationsResponse;	/* onvif.h:5535 */
+struct _tds__CreateStorageConfiguration;	/* onvif.h:5553 */
+struct _tds__CreateStorageConfigurationResponse;	/* onvif.h:5569 */
+struct _tds__GetStorageConfiguration;	/* onvif.h:5585 */
+struct _tds__GetStorageConfigurationResponse;	/* onvif.h:5601 */
+struct _tds__SetStorageConfiguration;	/* onvif.h:5617 */
+struct _tds__SetStorageConfigurationResponse;	/* onvif.h:5633 */
+struct _tds__DeleteStorageConfiguration;	/* onvif.h:5647 */
+struct _tds__DeleteStorageConfigurationResponse;	/* onvif.h:5663 */
+struct _tds__GetGeoLocation;	/* onvif.h:5677 */
+struct _tds__GetGeoLocationResponse;	/* onvif.h:5691 */
+struct _tds__SetGeoLocation;	/* onvif.h:5709 */
+struct _tds__SetGeoLocationResponse;	/* onvif.h:5727 */
+struct _tds__DeleteGeoLocation;	/* onvif.h:5741 */
+struct _tds__DeleteGeoLocationResponse;	/* onvif.h:5759 */
+struct tt__DeviceEntity;	/* onvif.h:5796 */
+struct tt__IntRectangle;	/* onvif.h:5819 */
+struct tt__IntRectangleRange;	/* onvif.h:5844 */
+struct tt__FloatRange;	/* onvif.h:5885 */
+struct tt__DurationRange;	/* onvif.h:5906 */
+struct tt__IntItems;	/* onvif.h:5927 */
+struct tt__FloatItems;	/* onvif.h:5944 */
+struct tt__AnyHolder;	/* onvif.h:5961 */
+struct tt__VideoSourceExtension;	/* onvif.h:5989 */
+struct tt__VideoSourceExtension2;	/* onvif.h:6006 */
+struct tt__Profile;	/* onvif.h:6052 */
+struct tt__ProfileExtension;	/* onvif.h:6106 */
+struct tt__ProfileExtension2;	/* onvif.h:6160 */
+struct tt__ConfigurationEntity;	/* onvif.h:6222 */
+struct tt__VideoSourceConfigurationExtension;	/* onvif.h:6253 */
+struct tt__VideoSourceConfigurationExtension2;	/* onvif.h:6264 */
+struct tt__Rotate;	/* onvif.h:6262 */
+struct tt__RotateExtension;	/* onvif.h:6327 */
+struct tt__LensProjection;	/* onvif.h:6368 */
+struct tt__LensOffset;	/* onvif.h:6414 */
+struct tt__LensDescription;	/* onvif.h:6285 */
+struct tt__VideoSourceConfigurationOptions;	/* onvif.h:6499 */
+struct tt__VideoSourceConfigurationOptionsExtension;	/* onvif.h:6517 */
+struct tt__VideoSourceConfigurationOptionsExtension2;	/* onvif.h:6559 */
+struct tt__RotateOptions;	/* onvif.h:6557 */
+struct tt__RotateOptionsExtension;	/* onvif.h:6618 */
+struct tt__SceneOrientation;	/* onvif.h:6291 */
+struct tt__VideoResolution;	/* onvif.h:6691 */
+struct tt__VideoRateControl;	/* onvif.h:6716 */
+struct tt__Mpeg4Configuration;	/* onvif.h:6747 */
+struct tt__H264Configuration;	/* onvif.h:6772 */
+struct tt__VideoEncoderConfigurationOptions;	/* onvif.h:6797 */
+struct tt__VideoEncoderOptionsExtension;	/* onvif.h:6823 */
+struct tt__VideoEncoderOptionsExtension2;	/* onvif.h:6877 */
+struct tt__JpegOptions;	/* onvif.h:6809 */
+struct tt__Mpeg4Options;	/* onvif.h:6815 */
+struct tt__H264Options;	/* onvif.h:6821 */
+struct tt__VideoResolution2;	/* onvif.h:7048 */
+struct tt__VideoRateControl2;	/* onvif.h:7088 */
+struct tt__VideoEncoder2ConfigurationOptions;	/* onvif.h:7134 */
+struct tt__AudioSourceConfigurationOptions;	/* onvif.h:7218 */
+struct tt__AudioSourceOptionsExtension;	/* onvif.h:7228 */
+struct tt__AudioEncoderConfigurationOptions;	/* onvif.h:7269 */
+struct tt__AudioEncoderConfigurationOption;	/* onvif.h:7277 */
+struct tt__AudioEncoder2ConfigurationOptions;	/* onvif.h:7342 */
+struct tt__MetadataConfigurationExtension;	/* onvif.h:7388 */
+struct tt__PTZFilter;	/* onvif.h:7410 */
+struct _tt__EventSubscription_SubscriptionPolicy;	/* onvif.h:7456 */
+struct tt__EventSubscription;	/* onvif.h:7445 */
+struct tt__MetadataConfigurationOptions;	/* onvif.h:7494 */
+struct tt__MetadataConfigurationOptionsExtension;	/* onvif.h:7507 */
+struct tt__MetadataConfigurationOptionsExtension2;	/* onvif.h:7548 */
+struct tt__PTZStatusFilterOptions;	/* onvif.h:7496 */
+struct tt__PTZStatusFilterOptionsExtension;	/* onvif.h:7618 */
+struct tt__VideoOutputExtension;	/* onvif.h:7659 */
+struct tt__VideoOutputConfigurationOptions;	/* onvif.h:7681 */
+struct tt__VideoDecoderConfigurationOptions;	/* onvif.h:7709 */
+struct tt__H264DecOptions;	/* onvif.h:7721 */
+struct tt__JpegDecOptions;	/* onvif.h:7715 */
+struct tt__Mpeg4DecOptions;	/* onvif.h:7727 */
+struct tt__VideoDecoderConfigurationOptionsExtension;	/* onvif.h:7729 */
+struct tt__AudioOutputConfigurationOptions;	/* onvif.h:7930 */
+struct tt__AudioDecoderConfigurationOptions;	/* onvif.h:7996 */
+struct tt__G711DecOptions;	/* onvif.h:8008 */
+struct tt__AACDecOptions;	/* onvif.h:8002 */
+struct tt__G726DecOptions;	/* onvif.h:8014 */
+struct tt__AudioDecoderConfigurationOptionsExtension;	/* onvif.h:8016 */
+struct tt__MulticastConfiguration;	/* onvif.h:8177 */
+struct tt__StreamSetup;	/* onvif.h:8229 */
+struct tt__Transport;	/* onvif.h:8237 */
+struct tt__MediaUri;	/* onvif.h:8290 */
+struct tt__Scope;	/* onvif.h:2722 */
+struct tt__NetworkInterfaceExtension;	/* onvif.h:8367 */
+struct tt__Dot3Configuration;	/* onvif.h:8386 */
+struct tt__NetworkInterfaceExtension2;	/* onvif.h:8392 */
+struct tt__NetworkInterfaceLink;	/* onvif.h:8455 */
+struct tt__NetworkInterfaceConnectionSetting;	/* onvif.h:8461 */
+struct tt__NetworkInterfaceInfo;	/* onvif.h:8517 */
+struct tt__IPv6NetworkInterface;	/* onvif.h:8548 */
+struct tt__IPv4NetworkInterface;	/* onvif.h:8573 */
+struct tt__IPv4Configuration;	/* onvif.h:8585 */
+struct tt__IPv6Configuration;	/* onvif.h:8560 */
+struct tt__IPv6ConfigurationExtension;	/* onvif.h:8698 */
+struct tt__NetworkProtocol;	/* onvif.h:4111 */
+struct tt__NetworkProtocolExtension;	/* onvif.h:8761 */
+struct tt__NetworkHost;	/* onvif.h:3007 */
+struct tt__NetworkHostExtension;	/* onvif.h:8828 */
+struct tt__IPAddress;	/* onvif.h:3816 */
+struct tt__PrefixedIPv4Address;	/* onvif.h:8606 */
+struct tt__PrefixedIPv6Address;	/* onvif.h:8672 */
+struct tt__HostnameInformation;	/* onvif.h:3672 */
+struct tt__HostnameInformationExtension;	/* onvif.h:8964 */
+struct tt__DNSInformation;	/* onvif.h:3780 */
+struct tt__DNSInformationExtension;	/* onvif.h:9037 */
+struct tt__NTPInformation;	/* onvif.h:3864 */
+struct tt__NTPInformationExtension;	/* onvif.h:9102 */
+struct tt__DynamicDNSInformation;	/* onvif.h:3940 */
+struct tt__DynamicDNSInformationExtension;	/* onvif.h:9163 */
+struct tt__NetworkInterfaceSetConfiguration;	/* onvif.h:4048 */
+struct tt__NetworkInterfaceSetConfigurationExtension;	/* onvif.h:9236 */
+struct tt__IPv6NetworkInterfaceSetConfiguration;	/* onvif.h:9234 */
+struct tt__IPv4NetworkInterfaceSetConfiguration;	/* onvif.h:9228 */
+struct tt__NetworkGateway;	/* onvif.h:4181 */
+struct tt__NetworkZeroConfiguration;	/* onvif.h:4259 */
+struct tt__NetworkZeroConfigurationExtension;	/* onvif.h:9410 */
+struct tt__NetworkZeroConfigurationExtension2;	/* onvif.h:9448 */
+struct tt__IPAddressFilter;	/* onvif.h:4329 */
+struct tt__IPAddressFilterExtension;	/* onvif.h:9495 */
+struct tt__Dot11Configuration;	/* onvif.h:8390 */
+struct tt__Dot11SecurityConfiguration;	/* onvif.h:9546 */
+struct tt__Dot11SecurityConfigurationExtension;	/* onvif.h:9584 */
+struct tt__Dot11PSKSet;	/* onvif.h:9580 */
+struct tt__Dot11PSKSetExtension;	/* onvif.h:9648 */
+struct tt__NetworkInterfaceSetConfigurationExtension2;	/* onvif.h:9274 */
+struct tt__Dot11Capabilities;	/* onvif.h:5288 */
+struct tt__Dot11Status;	/* onvif.h:5320 */
+struct tt__Dot11AvailableNetworks;	/* onvif.h:5354 */
+struct tt__Dot11AvailableNetworksExtension;	/* onvif.h:9813 */
+struct tt__Capabilities;	/* onvif.h:3638 */
+struct tt__CapabilitiesExtension;	/* onvif.h:9892 */
+struct tt__CapabilitiesExtension2;	/* onvif.h:9936 */
+struct tt__AnalyticsCapabilities;	/* onvif.h:9860 */
+struct tt__DeviceCapabilities;	/* onvif.h:9866 */
+struct tt__DeviceCapabilitiesExtension;	/* onvif.h:10049 */
+struct tt__EventCapabilities;	/* onvif.h:9872 */
+struct tt__IOCapabilities;	/* onvif.h:10041 */
+struct tt__IOCapabilitiesExtension;	/* onvif.h:10156 */
+struct tt__IOCapabilitiesExtension2;	/* onvif.h:10192 */
+struct tt__MediaCapabilities;	/* onvif.h:9884 */
+struct tt__MediaCapabilitiesExtension;	/* onvif.h:10256 */
+struct tt__RealTimeStreamingCapabilities;	/* onvif.h:10245 */
+struct tt__RealTimeStreamingCapabilitiesExtension;	/* onvif.h:10325 */
+struct tt__ProfileCapabilities;	/* onvif.h:10277 */
+struct tt__NetworkCapabilities;	/* onvif.h:10029 */
+struct tt__NetworkCapabilitiesExtension;	/* onvif.h:10426 */
+struct tt__NetworkCapabilitiesExtension2;	/* onvif.h:10458 */
+struct tt__SecurityCapabilities;	/* onvif.h:10047 */
+struct tt__SecurityCapabilitiesExtension;	/* onvif.h:10552 */
+struct tt__SecurityCapabilitiesExtension2;	/* onvif.h:10575 */
+struct tt__SystemCapabilities;	/* onvif.h:10035 */
+struct tt__SystemCapabilitiesExtension;	/* onvif.h:10668 */
+struct tt__SystemCapabilitiesExtension2;	/* onvif.h:10706 */
+struct tt__OnvifVersion;	/* onvif.h:1694 */
+struct tt__ImagingCapabilities;	/* onvif.h:9878 */
+struct tt__PTZCapabilities;	/* onvif.h:9890 */
+struct tt__DeviceIOCapabilities;	/* onvif.h:9922 */
+struct tt__DisplayCapabilities;	/* onvif.h:9924 */
+struct tt__RecordingCapabilities;	/* onvif.h:9926 */
+struct tt__SearchCapabilities;	/* onvif.h:9928 */
+struct tt__ReplayCapabilities;	/* onvif.h:9930 */
+struct tt__ReceiverCapabilities;	/* onvif.h:9932 */
+struct tt__AnalyticsDeviceCapabilities;	/* onvif.h:9934 */
+struct tt__AnalyticsDeviceExtension;	/* onvif.h:11083 */
+struct tt__SystemLog;	/* onvif.h:2686 */
+struct tt__SupportInformation;	/* onvif.h:2646 */
+struct tt__BinaryData;	/* onvif.h:4449 */
+struct tt__AttachmentData;	/* onvif.h:2498 */
+struct tt__BackupFile;	/* onvif.h:2566 */
+struct tt__SystemLogUriList;	/* onvif.h:5384 */
+struct tt__SystemLogUri;	/* onvif.h:11233 */
+struct tt__SystemDateTime;	/* onvif.h:2448 */
+struct tt__SystemDateTimeExtension;	/* onvif.h:11314 */
+struct tt__DateTime;	/* onvif.h:2400 */
+struct tt__Date;	/* onvif.h:11359 */
+struct tt__Time;	/* onvif.h:11357 */
+struct tt__TimeZone;	/* onvif.h:2394 */
+struct tt__RemoteUser;	/* onvif.h:3108 */
+struct tt__User;	/* onvif.h:3174 */
+struct tt__UserExtension;	/* onvif.h:11516 */
+struct tt__CertificateGenerationParameters;	/* onvif.h:11557 */
+struct tt__CertificateGenerationParametersExtension;	/* onvif.h:11567 */
+struct tt__Certificate;	/* onvif.h:4537 */
+struct tt__CertificateStatus;	/* onvif.h:4609 */
+struct tt__CertificateWithPrivateKey;	/* onvif.h:4887 */
+struct tt__CertificateInformation;	/* onvif.h:4933 */
+struct tt__CertificateInformationExtension;	/* onvif.h:11733 */
+struct tt__Dot1XConfiguration;	/* onvif.h:4981 */
+struct tt__Dot1XConfigurationExtension;	/* onvif.h:11794 */
+struct tt__EAPMethodConfiguration;	/* onvif.h:11792 */
+struct tt__EapMethodExtension;	/* onvif.h:11849 */
+struct tt__TLSConfiguration;	/* onvif.h:11841 */
+struct tt__GenericEapPwdConfigurationExtension;	/* onvif.h:11920 */
+struct tt__RelayOutputSettings;	/* onvif.h:5171 */
+struct tt__PTZNodeExtension;	/* onvif.h:11981 */
+struct tt__PTZNodeExtension2;	/* onvif.h:11998 */
+struct tt__PTZPresetTourSupported;	/* onvif.h:11996 */
+struct tt__PTZPresetTourSupportedExtension;	/* onvif.h:12049 */
+struct tt__PTZConfigurationExtension;	/* onvif.h:12090 */
+struct tt__PTZConfigurationExtension2;	/* onvif.h:12107 */
+struct tt__PTControlDirection;	/* onvif.h:12105 */
+struct tt__PTControlDirectionExtension;	/* onvif.h:12156 */
+struct tt__EFlip;	/* onvif.h:12148 */
+struct tt__Reverse;	/* onvif.h:12154 */
+struct tt__PTZConfigurationOptions;	/* onvif.h:12271 */
+struct tt__PTZConfigurationOptions2;	/* onvif.h:12300 */
+struct tt__PTControlDirectionOptions;	/* onvif.h:12298 */
+struct tt__PTControlDirectionOptionsExtension;	/* onvif.h:12363 */
+struct tt__EFlipOptions;	/* onvif.h:12355 */
+struct tt__EFlipOptionsExtension;	/* onvif.h:12414 */
+struct tt__ReverseOptions;	/* onvif.h:12361 */
+struct tt__ReverseOptionsExtension;	/* onvif.h:12465 */
+struct tt__PanTiltLimits;	/* onvif.h:12506 */
+struct tt__ZoomLimits;	/* onvif.h:12525 */
+struct tt__PTZSpaces;	/* onvif.h:12277 */
+struct tt__PTZSpacesExtension;	/* onvif.h:12610 */
+struct tt__Space2DDescription;	/* onvif.h:12512 */
+struct tt__Space1DDescription;	/* onvif.h:12531 */
+struct tt__PTZSpeed;	/* onvif.h:12707 */
+struct tt__PTZPreset;	/* onvif.h:12732 */
+struct tt__PresetTour;	/* onvif.h:12768 */
+struct tt__PTZPresetTourExtension;	/* onvif.h:12802 */
+struct tt__PTZPresetTourSpot;	/* onvif.h:12800 */
+struct tt__PTZPresetTourSpotExtension;	/* onvif.h:12869 */
+union _tt__union_PTZPresetTourPresetDetail;	/* onvif.h:12914 */
+struct tt__PTZPresetTourPresetDetail;	/* onvif.h:12855 */
+struct tt__PTZPresetTourTypeExtension;	/* onvif.h:12934 */
+struct tt__PTZPresetTourStatus;	/* onvif.h:12780 */
+struct tt__PTZPresetTourStatusExtension;	/* onvif.h:13000 */
+struct tt__PTZPresetTourStartingCondition;	/* onvif.h:12792 */
+struct tt__PTZPresetTourStartingConditionExtension;	/* onvif.h:13061 */
+struct tt__PTZPresetTourOptions;	/* onvif.h:13108 */
+struct tt__PTZPresetTourSpotOptions;	/* onvif.h:13126 */
+struct tt__PTZPresetTourPresetDetailOptions;	/* onvif.h:13160 */
+struct tt__PTZPresetTourPresetDetailOptionsExtension;	/* onvif.h:13222 */
+struct tt__PTZPresetTourStartingConditionOptions;	/* onvif.h:13120 */
+struct tt__PTZPresetTourStartingConditionOptionsExtension;	/* onvif.h:13285 */
+struct tt__ImagingStatus;	/* onvif.h:13326 */
+struct tt__FocusStatus;	/* onvif.h:13328 */
+struct tt__FocusConfiguration;	/* onvif.h:13402 */
+struct tt__ImagingSettings;	/* onvif.h:13447 */
+struct tt__ImagingSettingsExtension;	/* onvif.h:13509 */
+struct tt__Exposure;	/* onvif.h:13477 */
+struct tt__WideDynamicRange;	/* onvif.h:13501 */
+struct tt__BacklightCompensation;	/* onvif.h:13453 */
+struct tt__ImagingOptions;	/* onvif.h:13689 */
+struct tt__WideDynamicRangeOptions;	/* onvif.h:13709 */
+struct tt__BacklightCompensationOptions;	/* onvif.h:13691 */
+struct tt__FocusOptions;	/* onvif.h:13701 */
+struct tt__ExposureOptions;	/* onvif.h:13699 */
+struct tt__WhiteBalanceOptions;	/* onvif.h:13711 */
+struct tt__FocusMove;	/* onvif.h:13860 */
+struct tt__AbsoluteFocus;	/* onvif.h:13866 */
+struct tt__RelativeFocus;	/* onvif.h:13872 */
+struct tt__ContinuousFocus;	/* onvif.h:13878 */
+struct tt__MoveOptions;	/* onvif.h:13960 */
+struct tt__AbsoluteFocusOptions;	/* onvif.h:13962 */
+struct tt__RelativeFocusOptions;	/* onvif.h:13964 */
+struct tt__ContinuousFocusOptions;	/* onvif.h:13966 */
+struct tt__WhiteBalance;	/* onvif.h:13507 */
+struct tt__ImagingStatus20;	/* onvif.h:14094 */
+struct tt__ImagingStatus20Extension;	/* onvif.h:14102 */
+struct tt__FocusStatus20;	/* onvif.h:14100 */
+struct tt__FocusStatus20Extension;	/* onvif.h:14163 */
+struct tt__ImagingSettings20;	/* onvif.h:6004 */
+struct tt__ImagingSettingsExtension20;	/* onvif.h:14270 */
+struct tt__ImagingSettingsExtension202;	/* onvif.h:14306 */
+struct tt__ImagingSettingsExtension203;	/* onvif.h:14329 */
+struct tt__ImagingSettingsExtension204;	/* onvif.h:14362 */
+struct tt__ImageStabilization;	/* onvif.h:14304 */
+struct tt__ImageStabilizationExtension;	/* onvif.h:14411 */
+struct tt__IrCutFilterAutoAdjustment;	/* onvif.h:14327 */
+struct tt__IrCutFilterAutoAdjustmentExtension;	/* onvif.h:14472 */
+struct tt__WideDynamicRange20;	/* onvif.h:14262 */
+struct tt__BacklightCompensation20;	/* onvif.h:14214 */
+struct tt__Exposure20;	/* onvif.h:14238 */
+struct tt__ToneCompensation;	/* onvif.h:14348 */
+struct tt__ToneCompensationExtension;	/* onvif.h:14678 */
+struct tt__Defogging;	/* onvif.h:14354 */
+struct tt__DefoggingExtension;	/* onvif.h:14733 */
+struct tt__NoiseReduction;	/* onvif.h:14360 */
+struct tt__ImagingOptions20;	/* onvif.h:14808 */
+struct tt__ImagingOptions20Extension;	/* onvif.h:14872 */
+struct tt__ImagingOptions20Extension2;	/* onvif.h:14908 */
+struct tt__ImagingOptions20Extension3;	/* onvif.h:14929 */
+struct tt__ImagingOptions20Extension4;	/* onvif.h:14962 */
+struct tt__ImageStabilizationOptions;	/* onvif.h:14906 */
+struct tt__ImageStabilizationOptionsExtension;	/* onvif.h:15013 */
+struct tt__IrCutFilterAutoAdjustmentOptions;	/* onvif.h:14927 */
+struct tt__IrCutFilterAutoAdjustmentOptionsExtension;	/* onvif.h:15076 */
+struct tt__WideDynamicRangeOptions20;	/* onvif.h:14864 */
+struct tt__BacklightCompensationOptions20;	/* onvif.h:14814 */
+struct tt__ExposureOptions20;	/* onvif.h:14838 */
+struct tt__MoveOptions20;	/* onvif.h:15250 */
+struct tt__RelativeFocusOptions20;	/* onvif.h:15262 */
+struct tt__WhiteBalance20;	/* onvif.h:14268 */
+struct tt__WhiteBalance20Extension;	/* onvif.h:15326 */
+struct tt__FocusConfiguration20;	/* onvif.h:14244 */
+struct tt__FocusConfiguration20Extension;	/* onvif.h:15394 */
+struct tt__WhiteBalanceOptions20;	/* onvif.h:14870 */
+struct tt__WhiteBalanceOptions20Extension;	/* onvif.h:15459 */
+struct tt__FocusOptions20;	/* onvif.h:14844 */
+struct tt__FocusOptions20Extension;	/* onvif.h:15526 */
+struct tt__ToneCompensationOptions;	/* onvif.h:14948 */
+struct tt__DefoggingOptions;	/* onvif.h:14954 */
+struct tt__NoiseReductionOptions;	/* onvif.h:14960 */
+struct tt__MessageExtension;	/* onvif.h:15685 */
+struct _tt__ItemList_SimpleItem;	/* onvif.h:15722 */
+struct _tt__ItemList_ElementItem;	/* onvif.h:15750 */
+struct tt__ItemList;	/* onvif.h:15707 */
+struct tt__ItemListExtension;	/* onvif.h:15766 */
+struct tt__MessageDescription;	/* onvif.h:15807 */
+struct tt__MessageDescriptionExtension;	/* onvif.h:15830 */
+struct _tt__ItemListDescription_SimpleItemDescription;	/* onvif.h:15898 */
+struct _tt__ItemListDescription_ElementItemDescription;	/* onvif.h:15922 */
+struct tt__ItemListDescription;	/* onvif.h:15816 */
+struct tt__ItemListDescriptionExtension;	/* onvif.h:15937 */
+struct tt__Polyline;	/* onvif.h:15978 */
+struct tt__AnalyticsEngineConfiguration;	/* onvif.h:15995 */
+struct tt__AnalyticsEngineConfigurationExtension;	/* onvif.h:16001 */
+struct tt__RuleEngineConfiguration;	/* onvif.h:16042 */
+struct tt__RuleEngineConfigurationExtension;	/* onvif.h:16048 */
+struct tt__Config;	/* onvif.h:15999 */
+struct _tt__ConfigDescription_Messages;	/* onvif.h:16146 */
+struct tt__ConfigDescription;	/* onvif.h:16120 */
+struct tt__ConfigDescriptionExtension;	/* onvif.h:16192 */
+struct tt__SupportedRules;	/* onvif.h:16251 */
+struct tt__SupportedRulesExtension;	/* onvif.h:16269 */
+struct tt__SupportedAnalyticsModules;	/* onvif.h:16316 */
+struct tt__SupportedAnalyticsModulesExtension;	/* onvif.h:16333 */
+struct tt__PolylineArray;	/* onvif.h:16380 */
+struct tt__PolylineArrayExtension;	/* onvif.h:16390 */
+struct tt__PolylineArrayConfiguration;	/* onvif.h:16431 */
+struct tt__MotionExpression;	/* onvif.h:16465 */
+struct tt__MotionExpressionConfiguration;	/* onvif.h:16501 */
+struct tt__CellLayout;	/* onvif.h:16535 */
+struct tt__PaneConfiguration;	/* onvif.h:16585 */
+struct tt__PaneLayout;	/* onvif.h:16659 */
+struct tt__Layout;	/* onvif.h:16703 */
+struct tt__LayoutExtension;	/* onvif.h:16713 */
+struct tt__CodingCapabilities;	/* onvif.h:16758 */
+struct tt__LayoutOptions;	/* onvif.h:16808 */
+struct tt__LayoutOptionsExtension;	/* onvif.h:16818 */
+struct tt__PaneLayoutOptions;	/* onvif.h:16816 */
+struct tt__PaneOptionExtension;	/* onvif.h:16873 */
+struct tt__Receiver;	/* onvif.h:16918 */
+struct tt__ReceiverConfiguration;	/* onvif.h:16930 */
+struct tt__ReceiverStateInformation;	/* onvif.h:17012 */
+struct tt__SourceReference;	/* onvif.h:17052 */
+struct tt__DateTimeRange;	/* onvif.h:11731 */
+struct tt__RecordingSummary;	/* onvif.h:17116 */
+struct tt__SearchScope;	/* onvif.h:17166 */
+struct tt__SearchScopeExtension;	/* onvif.h:17194 */
+struct tt__PTZPositionFilter;	/* onvif.h:17235 */
+struct tt__MetadataFilter;	/* onvif.h:17281 */
+struct tt__FindRecordingResultList;	/* onvif.h:17311 */
+struct tt__FindEventResultList;	/* onvif.h:17338 */
+struct tt__FindEventResult;	/* onvif.h:17352 */
+struct tt__FindPTZPositionResultList;	/* onvif.h:17423 */
+struct tt__FindPTZPositionResult;	/* onvif.h:17437 */
+struct tt__FindMetadataResultList;	/* onvif.h:17502 */
+struct tt__FindMetadataResult;	/* onvif.h:17516 */
+struct tt__RecordingInformation;	/* onvif.h:17325 */
+struct tt__RecordingSourceInformation;	/* onvif.h:17585 */
+struct tt__TrackInformation;	/* onvif.h:17599 */
+struct tt__MediaAttributes;	/* onvif.h:17751 */
+struct tt__TrackAttributes;	/* onvif.h:17765 */
+struct tt__TrackAttributesExtension;	/* onvif.h:17834 */
+struct tt__VideoAttributes;	/* onvif.h:17817 */
+struct tt__AudioAttributes;	/* onvif.h:17823 */
+struct tt__MetadataAttributes;	/* onvif.h:17829 */
+struct tt__RecordingConfiguration;	/* onvif.h:18031 */
+struct tt__TrackConfiguration;	/* onvif.h:18082 */
+struct tt__GetRecordingsResponseItem;	/* onvif.h:18123 */
+struct tt__GetTracksResponseList;	/* onvif.h:18141 */
+struct tt__GetTracksResponseItem;	/* onvif.h:18177 */
+struct tt__RecordingJobConfiguration;	/* onvif.h:18236 */
+struct _tt__RecordingEventFilter_Filter;	/* onvif.h:18321 */
+struct tt__RecordingEventFilter;	/* onvif.h:18276 */
+struct tt__RecordingJobConfigurationExtension;	/* onvif.h:18270 */
+struct tt__RecordingJobSource;	/* onvif.h:18268 */
+struct tt__RecordingJobSourceExtension;	/* onvif.h:18441 */
+struct tt__RecordingJobTrack;	/* onvif.h:18439 */
+struct tt__RecordingJobStateInformation;	/* onvif.h:18524 */
+struct tt__RecordingJobStateInformationExtension;	/* onvif.h:18546 */
+struct tt__RecordingJobStateSource;	/* onvif.h:18544 */
+struct tt__RecordingJobStateTracks;	/* onvif.h:18605 */
+struct tt__RecordingJobStateTrack;	/* onvif.h:18637 */
+struct tt__GetRecordingJobsResponseItem;	/* onvif.h:18710 */
+struct tt__ReplayConfiguration;	/* onvif.h:18746 */
+struct tt__AnalyticsDeviceEngineConfiguration;	/* onvif.h:18780 */
+struct tt__AnalyticsDeviceEngineConfigurationExtension;	/* onvif.h:18786 */
+struct tt__EngineConfiguration;	/* onvif.h:18784 */
+struct tt__AnalyticsEngineInputInfo;	/* onvif.h:18831 */
+struct tt__AnalyticsEngineInputInfoExtension;	/* onvif.h:18863 */
+struct tt__SourceIdentification;	/* onvif.h:18904 */
+struct tt__SourceIdentificationExtension;	/* onvif.h:18912 */
+struct tt__MetadataInput;	/* onvif.h:18953 */
+struct tt__MetadataInputExtension;	/* onvif.h:18959 */
+struct tt__AnalyticsStateInformation;	/* onvif.h:19000 */
+struct tt__AnalyticsState;	/* onvif.h:19008 */
+struct tt__ActionEngineEventPayload;	/* onvif.h:19072 */
+struct tt__ActionEngineEventPayloadExtension;	/* onvif.h:19092 */
+struct tt__AudioClassCandidate;	/* onvif.h:19139 */
+struct tt__AudioClassDescriptor;	/* onvif.h:19179 */
+struct tt__AudioClassDescriptorExtension;	/* onvif.h:19189 */
+struct tt__ActiveConnection;	/* onvif.h:19236 */
+struct tt__ProfileStatus;	/* onvif.h:19268 */
+struct tt__ProfileStatusExtension;	/* onvif.h:19274 */
+struct tt__OSDPosConfiguration;	/* onvif.h:19315 */
+struct tt__OSDPosConfigurationExtension;	/* onvif.h:19329 */
+struct tt__OSDColor;	/* onvif.h:19380 */
+struct tt__OSDTextConfiguration;	/* onvif.h:19403 */
+struct tt__OSDTextConfigurationExtension;	/* onvif.h:19466 */
+struct tt__OSDImgConfiguration;	/* onvif.h:19519 */
+struct tt__OSDImgConfigurationExtension;	/* onvif.h:19527 */
+struct tt__ColorspaceRange;	/* onvif.h:19574 */
+struct tt__ColorOptions;	/* onvif.h:19609 */
+struct tt__OSDColorOptions;	/* onvif.h:19651 */
+struct tt__OSDColorOptionsExtension;	/* onvif.h:19665 */
+struct tt__OSDTextOptions;	/* onvif.h:19712 */
+struct tt__OSDTextOptionsExtension;	/* onvif.h:19756 */
+struct tt__OSDImgOptions;	/* onvif.h:19803 */
+struct tt__OSDImgOptionsExtension;	/* onvif.h:19813 */
+struct tt__OSDConfigurationExtension;	/* onvif.h:19884 */
+struct tt__MaximumNumberOfOSDs;	/* onvif.h:19912 */
+struct tt__OSDConfigurationOptions;	/* onvif.h:19943 */
+struct tt__OSDConfigurationOptionsExtension;	/* onvif.h:19983 */
+struct tt__FileProgress;	/* onvif.h:20030 */
+struct tt__ArrayOfFileProgress;	/* onvif.h:20070 */
+struct tt__ArrayOfFileProgressExtension;	/* onvif.h:20080 */
+struct tt__StorageReferencePath;	/* onvif.h:20127 */
+struct tt__StorageReferencePathExtension;	/* onvif.h:20141 */
+struct tt__PolygonOptions;	/* onvif.h:20188 */
+struct tt__IntRange;	/* onvif.h:3342 */
+struct tt__Vector2D;	/* onvif.h:12713 */
+struct tt__Vector1D;	/* onvif.h:12719 */
+struct tt__PTZVector;	/* onvif.h:12744 */
+struct tt__PTZStatus;	/* onvif.h:20330 */
+struct tt__PTZMoveStatus;	/* onvif.h:20342 */
+struct tt__Vector;	/* onvif.h:15982 */
+struct tt__Rectangle;	/* onvif.h:13572 */
+struct tt__Polygon;	/* onvif.h:20443 */
+struct tt__Color;	/* onvif.h:19382 */
+struct tt__ColorCovariance;	/* onvif.h:20516 */
+struct _tt__ColorDescriptor_ColorCluster;	/* onvif.h:20564 */
+struct tt__ColorDescriptor;	/* onvif.h:20553 */
+struct tt__Transformation;	/* onvif.h:16541 */
+struct tt__TransformationExtension;	/* onvif.h:20622 */
+struct tt__GeoLocation;	/* onvif.h:20663 */
+struct tt__GeoOrientation;	/* onvif.h:20709 */
+struct tt__LocalLocation;	/* onvif.h:20755 */
+struct tt__LocalOrientation;	/* onvif.h:20801 */
+struct tt__LocationEntity;	/* onvif.h:5695 */
+struct _tt__StringItems;	/* onvif.h:20915 */
+struct _tt__Message;	/* onvif.h:20933 */
+struct wsnt__QueryExpressionType;	/* onvif.h:20976 */
+struct wsnt__TopicExpressionType;	/* onvif.h:21003 */
+struct wsnt__FilterType;	/* onvif.h:7447 */
+struct wsnt__SubscriptionPolicyType;	/* onvif.h:21061 */
+struct _wsnt__NotificationMessageHolderType_Message;	/* onvif.h:21098 */
+struct wsnt__NotificationMessageHolderType;	/* onvif.h:17389 */
+struct _wsnt__NotificationProducerRP;	/* onvif.h:21120 */
+struct _wsnt__SubscriptionManagerRP;	/* onvif.h:21146 */
+struct _wsnt__Notify;	/* onvif.h:21168 */
+struct _wsnt__UseRaw;	/* onvif.h:21195 */
+struct _wsnt__Subscribe_SubscriptionPolicy;	/* onvif.h:21224 */
+struct _wsnt__Subscribe;	/* onvif.h:21209 */
+struct _wsnt__SubscribeResponse;	/* onvif.h:21257 */
+struct _wsnt__GetCurrentMessage;	/* onvif.h:21286 */
+struct _wsnt__GetCurrentMessageResponse;	/* onvif.h:21311 */
+struct _wsnt__GetMessages;	/* onvif.h:21334 */
+struct _wsnt__GetMessagesResponse;	/* onvif.h:21365 */
+struct _wsnt__DestroyPullPoint;	/* onvif.h:21398 */
+struct _wsnt__DestroyPullPointResponse;	/* onvif.h:21427 */
+struct _wsnt__CreatePullPoint;	/* onvif.h:21456 */
+struct _wsnt__CreatePullPointResponse;	/* onvif.h:21485 */
+struct _wsnt__Renew;	/* onvif.h:21516 */
+struct _wsnt__RenewResponse;	/* onvif.h:21541 */
+struct _wsnt__Unsubscribe;	/* onvif.h:21568 */
+struct _wsnt__UnsubscribeResponse;	/* onvif.h:21591 */
+struct _wsnt__PauseSubscription;	/* onvif.h:21614 */
+struct _wsnt__PauseSubscriptionResponse;	/* onvif.h:21637 */
+struct _wsnt__ResumeSubscription;	/* onvif.h:21660 */
+struct _wsnt__ResumeSubscriptionResponse;	/* onvif.h:21683 */
+struct _wsrfbf__BaseFaultType_ErrorCode;	/* onvif.h:21759 */
+struct _wsrfbf__BaseFaultType_Description;	/* onvif.h:21778 */
+struct _wsrfbf__BaseFaultType_FaultCause;	/* onvif.h:21792 */
+struct wsrfbf__BaseFaultType;	/* onvif.h:21737 */
+struct wstop__Documentation;	/* onvif.h:21827 */
+struct wstop__ExtensibleDocumented;	/* onvif.h:21859 */
+struct wstop__QueryExpressionType;	/* onvif.h:21880 */
+struct tev__Capabilities;	/* onvif.h:21915 */
+struct tev__EventBrokerConfig;	/* onvif.h:21997 */
+struct _tev__GetServiceCapabilities;	/* onvif.h:22086 */
+struct _tev__GetServiceCapabilitiesResponse;	/* onvif.h:22100 */
+struct _tev__CreatePullPointSubscription_SubscriptionPolicy;	/* onvif.h:22145 */
+struct _tev__CreatePullPointSubscription;	/* onvif.h:22120 */
+struct _tev__CreatePullPointSubscriptionResponse;	/* onvif.h:22178 */
+struct _tev__PullMessages;	/* onvif.h:22219 */
+struct _tev__PullMessagesResponse;	/* onvif.h:22254 */
+struct _tev__PullMessagesFaultResponse;	/* onvif.h:22288 */
+struct _tev__Seek;	/* onvif.h:22323 */
+struct _tev__SeekResponse;	/* onvif.h:22358 */
+struct _tev__SetSynchronizationPoint;	/* onvif.h:22372 */
+struct _tev__SetSynchronizationPointResponse;	/* onvif.h:22386 */
+struct _tev__GetEventProperties;	/* onvif.h:22400 */
+struct _tev__GetEventPropertiesResponse;	/* onvif.h:22414 */
+struct _tev__AddEventBroker;	/* onvif.h:22501 */
+struct _tev__AddEventBrokerResponse;	/* onvif.h:22517 */
+struct _tev__DeleteEventBroker;	/* onvif.h:22531 */
+struct _tev__DeleteEventBrokerResponse;	/* onvif.h:22547 */
+struct _tev__GetEventBrokers;	/* onvif.h:22561 */
+struct _tev__GetEventBrokersResponse;	/* onvif.h:22577 */
+struct trt__Capabilities;	/* onvif.h:22626 */
+struct trt__ProfileCapabilities;	/* onvif.h:22632 */
+struct trt__StreamingCapabilities;	/* onvif.h:22638 */
+struct trt__VideoSourceMode;	/* onvif.h:22794 */
+struct trt__VideoSourceModeExtension;	/* onvif.h:22826 */
+struct _trt__GetServiceCapabilities;	/* onvif.h:22880 */
+struct _trt__GetServiceCapabilitiesResponse;	/* onvif.h:22894 */
+struct _trt__GetVideoSources;	/* onvif.h:22914 */
+struct _trt__GetVideoSourcesResponse;	/* onvif.h:22928 */
+struct _trt__GetAudioSources;	/* onvif.h:22950 */
+struct _trt__GetAudioSourcesResponse;	/* onvif.h:22964 */
+struct _trt__GetAudioOutputs;	/* onvif.h:22986 */
+struct _trt__GetAudioOutputsResponse;	/* onvif.h:23000 */
+struct _trt__CreateProfile;	/* onvif.h:23022 */
+struct _trt__CreateProfileResponse;	/* onvif.h:23048 */
+struct _trt__GetProfile;	/* onvif.h:23068 */
+struct _trt__GetProfileResponse;	/* onvif.h:23088 */
+struct _trt__GetProfiles;	/* onvif.h:23108 */
+struct _trt__GetProfilesResponse;	/* onvif.h:23122 */
+struct _trt__AddVideoEncoderConfiguration;	/* onvif.h:23144 */
+struct _trt__AddVideoEncoderConfigurationResponse;	/* onvif.h:23170 */
+struct _trt__RemoveVideoEncoderConfiguration;	/* onvif.h:23184 */
+struct _trt__RemoveVideoEncoderConfigurationResponse;	/* onvif.h:23205 */
+struct _trt__AddVideoSourceConfiguration;	/* onvif.h:23219 */
+struct _trt__AddVideoSourceConfigurationResponse;	/* onvif.h:23245 */
+struct _trt__RemoveVideoSourceConfiguration;	/* onvif.h:23259 */
+struct _trt__RemoveVideoSourceConfigurationResponse;	/* onvif.h:23280 */
+struct _trt__AddAudioEncoderConfiguration;	/* onvif.h:23294 */
+struct _trt__AddAudioEncoderConfigurationResponse;	/* onvif.h:23320 */
+struct _trt__RemoveAudioEncoderConfiguration;	/* onvif.h:23334 */
+struct _trt__RemoveAudioEncoderConfigurationResponse;	/* onvif.h:23355 */
+struct _trt__AddAudioSourceConfiguration;	/* onvif.h:23369 */
+struct _trt__AddAudioSourceConfigurationResponse;	/* onvif.h:23395 */
+struct _trt__RemoveAudioSourceConfiguration;	/* onvif.h:23409 */
+struct _trt__RemoveAudioSourceConfigurationResponse;	/* onvif.h:23430 */
+struct _trt__AddPTZConfiguration;	/* onvif.h:23444 */
+struct _trt__AddPTZConfigurationResponse;	/* onvif.h:23470 */
+struct _trt__RemovePTZConfiguration;	/* onvif.h:23484 */
+struct _trt__RemovePTZConfigurationResponse;	/* onvif.h:23505 */
+struct _trt__AddVideoAnalyticsConfiguration;	/* onvif.h:23519 */
+struct _trt__AddVideoAnalyticsConfigurationResponse;	/* onvif.h:23545 */
+struct _trt__RemoveVideoAnalyticsConfiguration;	/* onvif.h:23559 */
+struct _trt__RemoveVideoAnalyticsConfigurationResponse;	/* onvif.h:23580 */
+struct _trt__AddMetadataConfiguration;	/* onvif.h:23594 */
+struct _trt__AddMetadataConfigurationResponse;	/* onvif.h:23620 */
+struct _trt__RemoveMetadataConfiguration;	/* onvif.h:23634 */
+struct _trt__RemoveMetadataConfigurationResponse;	/* onvif.h:23655 */
+struct _trt__AddAudioOutputConfiguration;	/* onvif.h:23669 */
+struct _trt__AddAudioOutputConfigurationResponse;	/* onvif.h:23695 */
+struct _trt__RemoveAudioOutputConfiguration;	/* onvif.h:23709 */
+struct _trt__RemoveAudioOutputConfigurationResponse;	/* onvif.h:23730 */
+struct _trt__AddAudioDecoderConfiguration;	/* onvif.h:23744 */
+struct _trt__AddAudioDecoderConfigurationResponse;	/* onvif.h:23770 */
+struct _trt__RemoveAudioDecoderConfiguration;	/* onvif.h:23784 */
+struct _trt__RemoveAudioDecoderConfigurationResponse;	/* onvif.h:23804 */
+struct _trt__DeleteProfile;	/* onvif.h:23818 */
+struct _trt__DeleteProfileResponse;	/* onvif.h:23838 */
+struct _trt__GetVideoEncoderConfigurations;	/* onvif.h:23852 */
+struct _trt__GetVideoEncoderConfigurationsResponse;	/* onvif.h:23866 */
+struct _trt__GetVideoSourceConfigurations;	/* onvif.h:23888 */
+struct _trt__GetVideoSourceConfigurationsResponse;	/* onvif.h:23902 */
+struct _trt__GetAudioEncoderConfigurations;	/* onvif.h:23924 */
+struct _trt__GetAudioEncoderConfigurationsResponse;	/* onvif.h:23938 */
+struct _trt__GetAudioSourceConfigurations;	/* onvif.h:23960 */
+struct _trt__GetAudioSourceConfigurationsResponse;	/* onvif.h:23974 */
+struct _trt__GetVideoAnalyticsConfigurations;	/* onvif.h:23996 */
+struct _trt__GetVideoAnalyticsConfigurationsResponse;	/* onvif.h:24010 */
+struct _trt__GetMetadataConfigurations;	/* onvif.h:24032 */
+struct _trt__GetMetadataConfigurationsResponse;	/* onvif.h:24046 */
+struct _trt__GetAudioOutputConfigurations;	/* onvif.h:24068 */
+struct _trt__GetAudioOutputConfigurationsResponse;	/* onvif.h:24082 */
+struct _trt__GetAudioDecoderConfigurations;	/* onvif.h:24104 */
+struct _trt__GetAudioDecoderConfigurationsResponse;	/* onvif.h:24118 */
+struct _trt__GetVideoSourceConfiguration;	/* onvif.h:24140 */
+struct _trt__GetVideoSourceConfigurationResponse;	/* onvif.h:24160 */
+struct _trt__GetVideoEncoderConfiguration;	/* onvif.h:24180 */
+struct _trt__GetVideoEncoderConfigurationResponse;	/* onvif.h:24200 */
+struct _trt__GetAudioSourceConfiguration;	/* onvif.h:24220 */
+struct _trt__GetAudioSourceConfigurationResponse;	/* onvif.h:24240 */
+struct _trt__GetAudioEncoderConfiguration;	/* onvif.h:24260 */
+struct _trt__GetAudioEncoderConfigurationResponse;	/* onvif.h:24280 */
+struct _trt__GetVideoAnalyticsConfiguration;	/* onvif.h:24300 */
+struct _trt__GetVideoAnalyticsConfigurationResponse;	/* onvif.h:24320 */
+struct _trt__GetMetadataConfiguration;	/* onvif.h:24340 */
+struct _trt__GetMetadataConfigurationResponse;	/* onvif.h:24360 */
+struct _trt__GetAudioOutputConfiguration;	/* onvif.h:24380 */
+struct _trt__GetAudioOutputConfigurationResponse;	/* onvif.h:24400 */
+struct _trt__GetAudioDecoderConfiguration;	/* onvif.h:24420 */
+struct _trt__GetAudioDecoderConfigurationResponse;	/* onvif.h:24440 */
+struct _trt__GetCompatibleVideoEncoderConfigurations;	/* onvif.h:24460 */
+struct _trt__GetCompatibleVideoEncoderConfigurationsResponse;	/* onvif.h:24480 */
+struct _trt__GetCompatibleVideoSourceConfigurations;	/* onvif.h:24502 */
+struct _trt__GetCompatibleVideoSourceConfigurationsResponse;	/* onvif.h:24522 */
+struct _trt__GetCompatibleAudioEncoderConfigurations;	/* onvif.h:24544 */
+struct _trt__GetCompatibleAudioEncoderConfigurationsResponse;	/* onvif.h:24564 */
+struct _trt__GetCompatibleAudioSourceConfigurations;	/* onvif.h:24586 */
+struct _trt__GetCompatibleAudioSourceConfigurationsResponse;	/* onvif.h:24606 */
+struct _trt__GetCompatibleVideoAnalyticsConfigurations;	/* onvif.h:24628 */
+struct _trt__GetCompatibleVideoAnalyticsConfigurationsResponse;	/* onvif.h:24648 */
+struct _trt__GetCompatibleMetadataConfigurations;	/* onvif.h:24670 */
+struct _trt__GetCompatibleMetadataConfigurationsResponse;	/* onvif.h:24690 */
+struct _trt__GetCompatibleAudioOutputConfigurations;	/* onvif.h:24712 */
+struct _trt__GetCompatibleAudioOutputConfigurationsResponse;	/* onvif.h:24732 */
+struct _trt__GetCompatibleAudioDecoderConfigurations;	/* onvif.h:24754 */
+struct _trt__GetCompatibleAudioDecoderConfigurationsResponse;	/* onvif.h:24774 */
+struct _trt__SetVideoEncoderConfiguration;	/* onvif.h:24796 */
+struct _trt__SetVideoEncoderConfigurationResponse;	/* onvif.h:24822 */
+struct _trt__SetVideoSourceConfiguration;	/* onvif.h:24836 */
+struct _trt__SetVideoSourceConfigurationResponse;	/* onvif.h:24862 */
+struct _trt__SetAudioEncoderConfiguration;	/* onvif.h:24876 */
+struct _trt__SetAudioEncoderConfigurationResponse;	/* onvif.h:24902 */
+struct _trt__SetAudioSourceConfiguration;	/* onvif.h:24916 */
+struct _trt__SetAudioSourceConfigurationResponse;	/* onvif.h:24942 */
+struct _trt__SetVideoAnalyticsConfiguration;	/* onvif.h:24956 */
+struct _trt__SetVideoAnalyticsConfigurationResponse;	/* onvif.h:24982 */
+struct _trt__SetMetadataConfiguration;	/* onvif.h:24996 */
+struct _trt__SetMetadataConfigurationResponse;	/* onvif.h:25022 */
+struct _trt__SetAudioOutputConfiguration;	/* onvif.h:25036 */
+struct _trt__SetAudioOutputConfigurationResponse;	/* onvif.h:25062 */
+struct _trt__SetAudioDecoderConfiguration;	/* onvif.h:25076 */
+struct _trt__SetAudioDecoderConfigurationResponse;	/* onvif.h:25102 */
+struct _trt__GetVideoSourceConfigurationOptions;	/* onvif.h:25116 */
+struct _trt__GetVideoSourceConfigurationOptionsResponse;	/* onvif.h:25142 */
+struct _trt__GetVideoEncoderConfigurationOptions;	/* onvif.h:25162 */
+struct _trt__GetVideoEncoderConfigurationOptionsResponse;	/* onvif.h:25188 */
+struct _trt__GetAudioSourceConfigurationOptions;	/* onvif.h:25204 */
+struct _trt__GetAudioSourceConfigurationOptionsResponse;	/* onvif.h:25230 */
+struct _trt__GetAudioEncoderConfigurationOptions;	/* onvif.h:25250 */
+struct _trt__GetAudioEncoderConfigurationOptionsResponse;	/* onvif.h:25276 */
+struct _trt__GetMetadataConfigurationOptions;	/* onvif.h:25296 */
+struct _trt__GetMetadataConfigurationOptionsResponse;	/* onvif.h:25322 */
+struct _trt__GetAudioOutputConfigurationOptions;	/* onvif.h:25342 */
+struct _trt__GetAudioOutputConfigurationOptionsResponse;	/* onvif.h:25368 */
+struct _trt__GetAudioDecoderConfigurationOptions;	/* onvif.h:25388 */
+struct _trt__GetAudioDecoderConfigurationOptionsResponse;	/* onvif.h:25414 */
+struct _trt__GetGuaranteedNumberOfVideoEncoderInstances;	/* onvif.h:25434 */
+struct _trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse;	/* onvif.h:25454 */
+struct _trt__GetStreamUri;	/* onvif.h:25492 */
+struct _trt__GetStreamUriResponse;	/* onvif.h:25518 */
+struct _trt__StartMulticastStreaming;	/* onvif.h:25537 */
+struct _trt__StartMulticastStreamingResponse;	/* onvif.h:25557 */
+struct _trt__StopMulticastStreaming;	/* onvif.h:25571 */
+struct _trt__StopMulticastStreamingResponse;	/* onvif.h:25591 */
+struct _trt__SetSynchronizationPoint;	/* onvif.h:25605 */
+struct _trt__SetSynchronizationPointResponse;	/* onvif.h:25625 */
+struct _trt__GetSnapshotUri;	/* onvif.h:25639 */
+struct _trt__GetSnapshotUriResponse;	/* onvif.h:25659 */
+struct _trt__GetVideoSourceModes;	/* onvif.h:25678 */
+struct _trt__GetVideoSourceModesResponse;	/* onvif.h:25698 */
+struct _trt__SetVideoSourceMode;	/* onvif.h:25720 */
+struct _trt__SetVideoSourceModeResponse;	/* onvif.h:25746 */
+struct _trt__GetOSDs;	/* onvif.h:25766 */
+struct _trt__GetOSDsResponse;	/* onvif.h:25786 */
+struct _trt__GetOSD;	/* onvif.h:25808 */
+struct _trt__GetOSDResponse;	/* onvif.h:25837 */
+struct _trt__SetOSD;	/* onvif.h:25866 */
+struct _trt__SetOSDResponse;	/* onvif.h:25895 */
+struct _trt__GetOSDOptions;	/* onvif.h:25918 */
+struct _trt__GetOSDOptionsResponse;	/* onvif.h:25947 */
+struct _trt__CreateOSD;	/* onvif.h:25975 */
+struct _trt__CreateOSDResponse;	/* onvif.h:26004 */
+struct _trt__DeleteOSD;	/* onvif.h:26033 */
+struct _trt__DeleteOSDResponse;	/* onvif.h:26062 */
+struct tptz__Capabilities;	/* onvif.h:26092 */
+struct _tptz__GetServiceCapabilities;	/* onvif.h:26157 */
+struct _tptz__GetServiceCapabilitiesResponse;	/* onvif.h:26171 */
+struct _tptz__GetNodes;	/* onvif.h:26191 */
+struct _tptz__GetNodesResponse;	/* onvif.h:26205 */
+struct _tptz__GetNode;	/* onvif.h:26227 */
+struct _tptz__GetNodeResponse;	/* onvif.h:26247 */
+struct _tptz__GetConfigurations;	/* onvif.h:26267 */
+struct _tptz__GetConfigurationsResponse;	/* onvif.h:26281 */
+struct _tptz__GetConfiguration;	/* onvif.h:26303 */
+struct _tptz__GetConfigurationResponse;	/* onvif.h:26323 */
+struct _tptz__SetConfiguration;	/* onvif.h:26343 */
+struct __tptz__SetConfigurationResponse_sequence;	/* onvif.h:26371 */
+struct _tptz__SetConfigurationResponse;	/* onvif.h:26368 */
+struct _tptz__GetConfigurationOptions;	/* onvif.h:26387 */
+struct _tptz__GetConfigurationOptionsResponse;	/* onvif.h:26407 */
+struct _tptz__SendAuxiliaryCommand;	/* onvif.h:26427 */
+struct _tptz__SendAuxiliaryCommandResponse;	/* onvif.h:26453 */
+struct _tptz__GetPresets;	/* onvif.h:26473 */
+struct _tptz__GetPresetsResponse;	/* onvif.h:26493 */
+struct _tptz__SetPreset;	/* onvif.h:26515 */
+struct _tptz__SetPresetResponse;	/* onvif.h:26547 */
+struct _tptz__RemovePreset;	/* onvif.h:26567 */
+struct _tptz__RemovePresetResponse;	/* onvif.h:26593 */
+struct _tptz__GotoPreset;	/* onvif.h:26607 */
+struct _tptz__GotoPresetResponse;	/* onvif.h:26639 */
+struct _tptz__GetStatus;	/* onvif.h:26653 */
+struct _tptz__GetStatusResponse;	/* onvif.h:26673 */
+struct _tptz__GotoHomePosition;	/* onvif.h:26693 */
+struct _tptz__GotoHomePositionResponse;	/* onvif.h:26719 */
+struct _tptz__SetHomePosition;	/* onvif.h:26733 */
+struct _tptz__SetHomePositionResponse;	/* onvif.h:26753 */
+struct _tptz__ContinuousMove;	/* onvif.h:26767 */
+struct _tptz__ContinuousMoveResponse;	/* onvif.h:26799 */
+struct _tptz__RelativeMove;	/* onvif.h:26813 */
+struct _tptz__RelativeMoveResponse;	/* onvif.h:26845 */
+struct _tptz__AbsoluteMove;	/* onvif.h:26859 */
+struct _tptz__AbsoluteMoveResponse;	/* onvif.h:26891 */
+struct _tptz__GeoMove;	/* onvif.h:26905 */
+struct _tptz__GeoMoveResponse;	/* onvif.h:26949 */
+struct _tptz__Stop;	/* onvif.h:26963 */
+struct _tptz__StopResponse;	/* onvif.h:26995 */
+struct _tptz__GetPresetTours;	/* onvif.h:27009 */
+struct _tptz__GetPresetToursResponse;	/* onvif.h:27025 */
+struct _tptz__GetPresetTour;	/* onvif.h:27043 */
+struct _tptz__GetPresetTourResponse;	/* onvif.h:27061 */
+struct _tptz__GetPresetTourOptions;	/* onvif.h:27077 */
+struct _tptz__GetPresetTourOptionsResponse;	/* onvif.h:27095 */
+struct _tptz__CreatePresetTour;	/* onvif.h:27111 */
+struct _tptz__CreatePresetTourResponse;	/* onvif.h:27127 */
+struct _tptz__ModifyPresetTour;	/* onvif.h:27143 */
+struct _tptz__ModifyPresetTourResponse;	/* onvif.h:27161 */
+struct _tptz__OperatePresetTour;	/* onvif.h:27175 */
+struct _tptz__OperatePresetTourResponse;	/* onvif.h:27195 */
+struct _tptz__RemovePresetTour;	/* onvif.h:27209 */
+struct _tptz__RemovePresetTourResponse;	/* onvif.h:27227 */
+struct _tptz__GetCompatibleConfigurations;	/* onvif.h:27241 */
+struct _tptz__GetCompatibleConfigurationsResponse;	/* onvif.h:27261 */
+struct _tptz__MoveAndStartTracking;	/* onvif.h:27283 */
+struct _tptz__MoveAndStartTrackingResponse;	/* onvif.h:27342 */
+struct tds__StorageConfiguration;	/* onvif.h:5539 */
+struct tt__VideoSource;	/* onvif.h:22936 */
+struct tt__AudioSource;	/* onvif.h:22972 */
+struct tt__VideoSourceConfiguration;	/* onvif.h:6064 */
+struct tt__VideoEncoderConfiguration;	/* onvif.h:6076 */
+struct tt__JpegOptions2;	/* onvif.h:6863 */
+struct tt__Mpeg4Options2;	/* onvif.h:6869 */
+struct tt__H264Options2;	/* onvif.h:6875 */
+struct tt__VideoEncoder2Configuration;	/* onvif.h:27843 */
+struct tt__AudioSourceConfiguration;	/* onvif.h:6070 */
+struct tt__AudioEncoderConfiguration;	/* onvif.h:6082 */
+struct tt__AudioEncoder2Configuration;	/* onvif.h:28073 */
+struct tt__VideoAnalyticsConfiguration;	/* onvif.h:6088 */
+struct tt__MetadataConfiguration;	/* onvif.h:6100 */
+struct tt__VideoOutput;	/* onvif.h:28310 */
+struct tt__VideoOutputConfiguration;	/* onvif.h:28359 */
+struct tt__AudioOutput;	/* onvif.h:23008 */
+struct tt__AudioOutputConfiguration;	/* onvif.h:6152 */
+struct tt__AudioDecoderConfiguration;	/* onvif.h:6158 */
+struct tt__NetworkInterface;	/* onvif.h:4022 */
+struct tt__CertificateUsage;	/* onvif.h:11715 */
+struct tt__RelayOutput;	/* onvif.h:5153 */
+struct tt__DigitalInput;	/* onvif.h:28704 */
+struct tt__PTZNode;	/* onvif.h:26213 */
+struct tt__PTZConfiguration;	/* onvif.h:6094 */
+struct tt__EventFilter;	/* onvif.h:28947 */
+struct tt__AnalyticsEngine;	/* onvif.h:28977 */
+struct tt__AnalyticsEngineInput;	/* onvif.h:29027 */
+struct tt__AnalyticsEngineControl;	/* onvif.h:29081 */
+struct tt__OSDConfiguration;	/* onvif.h:25794 */
+struct _wsnt__SubscribeCreationFailedFaultType_ErrorCode;	/* onvif.h:29245 */
+struct _wsnt__SubscribeCreationFailedFaultType_Description;	/* onvif.h:29264 */
+struct _wsnt__SubscribeCreationFailedFaultType_FaultCause;	/* onvif.h:29278 */
+struct wsnt__SubscribeCreationFailedFaultType;	/* onvif.h:29222 */
+struct _wsnt__InvalidFilterFaultType_ErrorCode;	/* onvif.h:29329 */
+struct _wsnt__InvalidFilterFaultType_Description;	/* onvif.h:29348 */
+struct _wsnt__InvalidFilterFaultType_FaultCause;	/* onvif.h:29362 */
+struct wsnt__InvalidFilterFaultType;	/* onvif.h:29306 */
+struct _wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode;	/* onvif.h:29417 */
+struct _wsnt__TopicExpressionDialectUnknownFaultType_Description;	/* onvif.h:29436 */
+struct _wsnt__TopicExpressionDialectUnknownFaultType_FaultCause;	/* onvif.h:29450 */
+struct wsnt__TopicExpressionDialectUnknownFaultType;	/* onvif.h:29394 */
+struct _wsnt__InvalidTopicExpressionFaultType_ErrorCode;	/* onvif.h:29501 */
+struct _wsnt__InvalidTopicExpressionFaultType_Description;	/* onvif.h:29520 */
+struct _wsnt__InvalidTopicExpressionFaultType_FaultCause;	/* onvif.h:29534 */
+struct wsnt__InvalidTopicExpressionFaultType;	/* onvif.h:29478 */
+struct _wsnt__TopicNotSupportedFaultType_ErrorCode;	/* onvif.h:29585 */
+struct _wsnt__TopicNotSupportedFaultType_Description;	/* onvif.h:29604 */
+struct _wsnt__TopicNotSupportedFaultType_FaultCause;	/* onvif.h:29618 */
+struct wsnt__TopicNotSupportedFaultType;	/* onvif.h:29562 */
+struct _wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode;	/* onvif.h:29669 */
+struct _wsnt__MultipleTopicsSpecifiedFaultType_Description;	/* onvif.h:29688 */
+struct _wsnt__MultipleTopicsSpecifiedFaultType_FaultCause;	/* onvif.h:29702 */
+struct wsnt__MultipleTopicsSpecifiedFaultType;	/* onvif.h:29646 */
+struct _wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode;	/* onvif.h:29753 */
+struct _wsnt__InvalidProducerPropertiesExpressionFaultType_Description;	/* onvif.h:29772 */
+struct _wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause;	/* onvif.h:29786 */
+struct wsnt__InvalidProducerPropertiesExpressionFaultType;	/* onvif.h:29730 */
+struct _wsnt__InvalidMessageContentExpressionFaultType_ErrorCode;	/* onvif.h:29837 */
+struct _wsnt__InvalidMessageContentExpressionFaultType_Description;	/* onvif.h:29856 */
+struct _wsnt__InvalidMessageContentExpressionFaultType_FaultCause;	/* onvif.h:29870 */
+struct wsnt__InvalidMessageContentExpressionFaultType;	/* onvif.h:29814 */
+struct _wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode;	/* onvif.h:29921 */
+struct _wsnt__UnrecognizedPolicyRequestFaultType_Description;	/* onvif.h:29940 */
+struct _wsnt__UnrecognizedPolicyRequestFaultType_FaultCause;	/* onvif.h:29954 */
+struct wsnt__UnrecognizedPolicyRequestFaultType;	/* onvif.h:29898 */
+struct _wsnt__UnsupportedPolicyRequestFaultType_ErrorCode;	/* onvif.h:30009 */
+struct _wsnt__UnsupportedPolicyRequestFaultType_Description;	/* onvif.h:30028 */
+struct _wsnt__UnsupportedPolicyRequestFaultType_FaultCause;	/* onvif.h:30042 */
+struct wsnt__UnsupportedPolicyRequestFaultType;	/* onvif.h:29986 */
+struct _wsnt__NotifyMessageNotSupportedFaultType_ErrorCode;	/* onvif.h:30097 */
+struct _wsnt__NotifyMessageNotSupportedFaultType_Description;	/* onvif.h:30116 */
+struct _wsnt__NotifyMessageNotSupportedFaultType_FaultCause;	/* onvif.h:30130 */
+struct wsnt__NotifyMessageNotSupportedFaultType;	/* onvif.h:30074 */
+struct _wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode;	/* onvif.h:30181 */
+struct _wsnt__UnacceptableInitialTerminationTimeFaultType_Description;	/* onvif.h:30200 */
+struct _wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause;	/* onvif.h:30214 */
+struct wsnt__UnacceptableInitialTerminationTimeFaultType;	/* onvif.h:30158 */
+struct _wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode;	/* onvif.h:30269 */
+struct _wsnt__NoCurrentMessageOnTopicFaultType_Description;	/* onvif.h:30288 */
+struct _wsnt__NoCurrentMessageOnTopicFaultType_FaultCause;	/* onvif.h:30302 */
+struct wsnt__NoCurrentMessageOnTopicFaultType;	/* onvif.h:30246 */
+struct _wsnt__UnableToGetMessagesFaultType_ErrorCode;	/* onvif.h:30353 */
+struct _wsnt__UnableToGetMessagesFaultType_Description;	/* onvif.h:30372 */
+struct _wsnt__UnableToGetMessagesFaultType_FaultCause;	/* onvif.h:30386 */
+struct wsnt__UnableToGetMessagesFaultType;	/* onvif.h:30330 */
+struct _wsnt__UnableToDestroyPullPointFaultType_ErrorCode;	/* onvif.h:30437 */
+struct _wsnt__UnableToDestroyPullPointFaultType_Description;	/* onvif.h:30456 */
+struct _wsnt__UnableToDestroyPullPointFaultType_FaultCause;	/* onvif.h:30470 */
+struct wsnt__UnableToDestroyPullPointFaultType;	/* onvif.h:30414 */
+struct _wsnt__UnableToCreatePullPointFaultType_ErrorCode;	/* onvif.h:30521 */
+struct _wsnt__UnableToCreatePullPointFaultType_Description;	/* onvif.h:30540 */
+struct _wsnt__UnableToCreatePullPointFaultType_FaultCause;	/* onvif.h:30554 */
+struct wsnt__UnableToCreatePullPointFaultType;	/* onvif.h:30498 */
+struct _wsnt__UnacceptableTerminationTimeFaultType_ErrorCode;	/* onvif.h:30605 */
+struct _wsnt__UnacceptableTerminationTimeFaultType_Description;	/* onvif.h:30624 */
+struct _wsnt__UnacceptableTerminationTimeFaultType_FaultCause;	/* onvif.h:30638 */
+struct wsnt__UnacceptableTerminationTimeFaultType;	/* onvif.h:30582 */
+struct _wsnt__UnableToDestroySubscriptionFaultType_ErrorCode;	/* onvif.h:30693 */
+struct _wsnt__UnableToDestroySubscriptionFaultType_Description;	/* onvif.h:30712 */
+struct _wsnt__UnableToDestroySubscriptionFaultType_FaultCause;	/* onvif.h:30726 */
+struct wsnt__UnableToDestroySubscriptionFaultType;	/* onvif.h:30670 */
+struct _wsnt__PauseFailedFaultType_ErrorCode;	/* onvif.h:30777 */
+struct _wsnt__PauseFailedFaultType_Description;	/* onvif.h:30796 */
+struct _wsnt__PauseFailedFaultType_FaultCause;	/* onvif.h:30810 */
+struct wsnt__PauseFailedFaultType;	/* onvif.h:30754 */
+struct _wsnt__ResumeFailedFaultType_ErrorCode;	/* onvif.h:30861 */
+struct _wsnt__ResumeFailedFaultType_Description;	/* onvif.h:30880 */
+struct _wsnt__ResumeFailedFaultType_FaultCause;	/* onvif.h:30894 */
+struct wsnt__ResumeFailedFaultType;	/* onvif.h:30838 */
+struct _wstop__TopicNamespaceType_Topic;	/* onvif.h:30943 */
+struct wstop__TopicNamespaceType;	/* onvif.h:30922 */
+struct wstop__TopicType;	/* onvif.h:30960 */
+struct wstop__TopicSetType;	/* onvif.h:21132 */
+struct _wsrfr__ResourceUnknownFaultType_ErrorCode;	/* onvif.h:31108 */
+struct _wsrfr__ResourceUnknownFaultType_Description;	/* onvif.h:31127 */
+struct _wsrfr__ResourceUnknownFaultType_FaultCause;	/* onvif.h:31141 */
+struct wsrfr__ResourceUnknownFaultType;	/* onvif.h:31085 */
+struct _wsrfr__ResourceUnavailableFaultType_ErrorCode;	/* onvif.h:31192 */
+struct _wsrfr__ResourceUnavailableFaultType_Description;	/* onvif.h:31211 */
+struct _wsrfr__ResourceUnavailableFaultType_FaultCause;	/* onvif.h:31225 */
+struct wsrfr__ResourceUnavailableFaultType;	/* onvif.h:31169 */
+struct tt__OSDReference;	/* onvif.h:29177 */
+struct __tdn__Hello;	/* onvif.h:32382 */
+struct __tdn__Bye;	/* onvif.h:32437 */
+struct __tdn__Probe;	/* onvif.h:32492 */
+struct __tds__GetServices;	/* onvif.h:32564 */
+struct __tds__GetServiceCapabilities;	/* onvif.h:32621 */
+struct __tds__GetDeviceInformation;	/* onvif.h:32677 */
+struct __tds__SetSystemDateAndTime;	/* onvif.h:32747 */
+struct __tds__GetSystemDateAndTime;	/* onvif.h:32809 */
+struct __tds__SetSystemFactoryDefault;	/* onvif.h:32865 */
+struct __tds__UpgradeSystemFirmware;	/* onvif.h:32927 */
+struct __tds__SystemReboot;	/* onvif.h:32983 */
+struct __tds__RestoreSystem;	/* onvif.h:33047 */
+struct __tds__GetSystemBackup;	/* onvif.h:33110 */
+struct __tds__GetSystemLog;	/* onvif.h:33167 */
+struct __tds__GetSystemSupportInformation;	/* onvif.h:33223 */
+struct __tds__GetScopes;	/* onvif.h:33294 */
+struct __tds__SetScopes;	/* onvif.h:33358 */
+struct __tds__AddScopes;	/* onvif.h:33418 */
+struct __tds__RemoveScopes;	/* onvif.h:33480 */
+struct __tds__GetDiscoveryMode;	/* onvif.h:33540 */
+struct __tds__SetDiscoveryMode;	/* onvif.h:33601 */
+struct __tds__GetRemoteDiscoveryMode;	/* onvif.h:33663 */
+struct __tds__SetRemoteDiscoveryMode;	/* onvif.h:33725 */
+struct __tds__GetDPAddresses;	/* onvif.h:33785 */
+struct __tds__GetEndpointReference;	/* onvif.h:33847 */
+struct __tds__GetRemoteUser;	/* onvif.h:33909 */
+struct __tds__SetRemoteUser;	/* onvif.h:33976 */
+struct __tds__GetUsers;	/* onvif.h:34036 */
+struct __tds__CreateUsers;	/* onvif.h:34104 */
+struct __tds__DeleteUsers;	/* onvif.h:34167 */
+struct __tds__SetUser;	/* onvif.h:34228 */
+struct __tds__GetWsdlUrl;	/* onvif.h:34285 */
+struct __tds__GetPasswordComplexityOptions;	/* onvif.h:34342 */
+struct __tds__GetPasswordComplexityConfiguration;	/* onvif.h:34398 */
+struct __tds__SetPasswordComplexityConfiguration;	/* onvif.h:34454 */
+struct __tds__GetPasswordHistoryConfiguration;	/* onvif.h:34510 */
+struct __tds__SetPasswordHistoryConfiguration;	/* onvif.h:34566 */
+struct __tds__GetAuthFailureWarningOptions;	/* onvif.h:34623 */
+struct __tds__GetAuthFailureWarningConfiguration;	/* onvif.h:34680 */
+struct __tds__SetAuthFailureWarningConfiguration;	/* onvif.h:34736 */
+struct __tds__GetCapabilities;	/* onvif.h:34794 */
+struct __tds__SetDPAddresses;	/* onvif.h:34855 */
+struct __tds__GetHostname;	/* onvif.h:34914 */
+struct __tds__SetHostname;	/* onvif.h:34977 */
+struct __tds__SetHostnameFromDHCP;	/* onvif.h:35033 */
+struct __tds__GetDNS;	/* onvif.h:35091 */
+struct __tds__SetDNS;	/* onvif.h:35149 */
+struct __tds__GetNTP;	/* onvif.h:35208 */
+struct __tds__SetNTP;	/* onvif.h:35274 */
+struct __tds__GetDynamicDNS;	/* onvif.h:35334 */
+struct __tds__SetDynamicDNS;	/* onvif.h:35394 */
+struct __tds__GetNetworkInterfaces;	/* onvif.h:35454 */
+struct __tds__SetNetworkInterfaces;	/* onvif.h:35519 */
+struct __tds__GetNetworkProtocols;	/* onvif.h:35578 */
+struct __tds__SetNetworkProtocols;	/* onvif.h:35637 */
+struct __tds__GetNetworkDefaultGateway;	/* onvif.h:35696 */
+struct __tds__SetNetworkDefaultGateway;	/* onvif.h:35754 */
+struct __tds__GetZeroConfiguration;	/* onvif.h:35817 */
+struct __tds__SetZeroConfiguration;	/* onvif.h:35874 */
+struct __tds__GetIPAddressFilter;	/* onvif.h:35934 */
+struct __tds__SetIPAddressFilter;	/* onvif.h:35996 */
+struct __tds__AddIPAddressFilter;	/* onvif.h:36057 */
+struct __tds__RemoveIPAddressFilter;	/* onvif.h:36118 */
+struct __tds__GetAccessPolicy;	/* onvif.h:36188 */
+struct __tds__SetAccessPolicy;	/* onvif.h:36249 */
+struct __tds__CreateCertificate;	/* onvif.h:36304 */
+struct __tds__GetCertificates;	/* onvif.h:36359 */
+struct __tds__GetCertificatesStatus;	/* onvif.h:36414 */
+struct __tds__SetCertificatesStatus;	/* onvif.h:36469 */
+struct __tds__DeleteCertificates;	/* onvif.h:36524 */
+struct __tds__GetPkcs10Request;	/* onvif.h:36579 */
+struct __tds__LoadCertificates;	/* onvif.h:36634 */
+struct __tds__GetClientCertificateMode;	/* onvif.h:36689 */
+struct __tds__SetClientCertificateMode;	/* onvif.h:36744 */
+struct __tds__GetRelayOutputs;	/* onvif.h:36802 */
+struct __tds__SetRelayOutputSettings;	/* onvif.h:36860 */
+struct __tds__SetRelayOutputState;	/* onvif.h:36918 */
+struct __tds__SendAuxiliaryCommand;	/* onvif.h:37005 */
+struct __tds__GetCACertificates;	/* onvif.h:37060 */
+struct __tds__LoadCertificateWithPrivateKey;	/* onvif.h:37115 */
+struct __tds__GetCertificateInformation;	/* onvif.h:37170 */
+struct __tds__LoadCACertificates;	/* onvif.h:37225 */
+struct __tds__CreateDot1XConfiguration;	/* onvif.h:37280 */
+struct __tds__SetDot1XConfiguration;	/* onvif.h:37335 */
+struct __tds__GetDot1XConfiguration;	/* onvif.h:37390 */
+struct __tds__GetDot1XConfigurations;	/* onvif.h:37445 */
+struct __tds__DeleteDot1XConfiguration;	/* onvif.h:37500 */
+struct __tds__GetDot11Capabilities;	/* onvif.h:37557 */
+struct __tds__GetDot11Status;	/* onvif.h:37615 */
+struct __tds__ScanAvailableDot11Networks;	/* onvif.h:37673 */
+struct __tds__GetSystemUris;	/* onvif.h:37748 */
+struct __tds__StartFirmwareUpgrade;	/* onvif.h:37832 */
+struct __tds__StartSystemRestore;	/* onvif.h:37915 */
+struct __tds__GetStorageConfigurations;	/* onvif.h:37973 */
+struct __tds__CreateStorageConfiguration;	/* onvif.h:38032 */
+struct __tds__GetStorageConfiguration;	/* onvif.h:38090 */
+struct __tds__SetStorageConfiguration;	/* onvif.h:38147 */
+struct __tds__DeleteStorageConfiguration;	/* onvif.h:38205 */
+struct __tds__GetGeoLocation;	/* onvif.h:38263 */
+struct __tds__SetGeoLocation;	/* onvif.h:38321 */
+struct __tds__DeleteGeoLocation;	/* onvif.h:38378 */
+struct __tds__SetHashingAlgorithm;	/* onvif.h:38436 */
+struct __tev__PullMessages;	/* onvif.h:38523 */
+struct __tev__Seek;	/* onvif.h:38592 */
+struct __tev__SetSynchronizationPoint;	/* onvif.h:38663 */
+struct __tev__Unsubscribe;	/* onvif.h:38729 */
+struct __tev__GetServiceCapabilities;	/* onvif.h:38786 */
+struct __tev__CreatePullPointSubscription;	/* onvif.h:38884 */
+struct __tev__GetEventProperties;	/* onvif.h:38947 */
+struct __tev__AddEventBroker;	/* onvif.h:39006 */
+struct __tev__DeleteEventBroker;	/* onvif.h:39063 */
+struct __tev__GetEventBrokers;	/* onvif.h:39120 */
+struct __tev__Renew;	/* onvif.h:39181 */
+struct __tev__Unsubscribe_;	/* onvif.h:39242 */
+struct __tev__Subscribe;	/* onvif.h:39333 */
+struct __tev__GetCurrentMessage;	/* onvif.h:39406 */
+struct __tev__Notify;	/* onvif.h:39457 */
+struct __tev__GetMessages;	/* onvif.h:39518 */
+struct __tev__DestroyPullPoint;	/* onvif.h:39579 */
+struct __tev__Notify_;	/* onvif.h:39630 */
+struct __tev__CreatePullPoint;	/* onvif.h:39688 */
+struct __tev__Renew_;	/* onvif.h:39749 */
+struct __tev__Unsubscribe__;	/* onvif.h:39810 */
+struct __tev__PauseSubscription;	/* onvif.h:39871 */
+struct __tev__ResumeSubscription;	/* onvif.h:39932 */
+struct __tptz__GetServiceCapabilities;	/* onvif.h:40004 */
+struct __tptz__GetConfigurations;	/* onvif.h:40088 */
+struct __tptz__GetPresets;	/* onvif.h:40146 */
+struct __tptz__SetPreset;	/* onvif.h:40219 */
+struct __tptz__RemovePreset;	/* onvif.h:40281 */
+struct __tptz__GotoPreset;	/* onvif.h:40339 */
+struct __tptz__GetStatus;	/* onvif.h:40397 */
+struct __tptz__GetConfiguration;	/* onvif.h:40482 */
+struct __tptz__GetNodes;	/* onvif.h:40548 */
+struct __tptz__GetNode;	/* onvif.h:40606 */
+struct __tptz__SetConfiguration;	/* onvif.h:40663 */
+struct __tptz__GetConfigurationOptions;	/* onvif.h:40730 */
+struct __tptz__GotoHomePosition;	/* onvif.h:40787 */
+struct __tptz__SetHomePosition;	/* onvif.h:40848 */
+struct __tptz__ContinuousMove;	/* onvif.h:40907 */
+struct __tptz__RelativeMove;	/* onvif.h:40971 */
+struct __tptz__SendAuxiliaryCommand;	/* onvif.h:41031 */
+struct __tptz__AbsoluteMove;	/* onvif.h:41094 */
+struct __tptz__GeoMove;	/* onvif.h:41162 */
+struct __tptz__Stop;	/* onvif.h:41221 */
+struct __tptz__GetPresetTours;	/* onvif.h:41277 */
+struct __tptz__GetPresetTour;	/* onvif.h:41333 */
+struct __tptz__GetPresetTourOptions;	/* onvif.h:41389 */
+struct __tptz__CreatePresetTour;	/* onvif.h:41445 */
+struct __tptz__ModifyPresetTour;	/* onvif.h:41501 */
+struct __tptz__OperatePresetTour;	/* onvif.h:41557 */
+struct __tptz__RemovePresetTour;	/* onvif.h:41613 */
+struct __tptz__GetCompatibleConfigurations;	/* onvif.h:41677 */
+struct __tptz__MoveAndStartTracking;	/* onvif.h:41744 */
+struct __trt__GetServiceCapabilities;	/* onvif.h:41817 */
+struct __trt__GetVideoSources;	/* onvif.h:41873 */
+struct __trt__GetAudioSources;	/* onvif.h:41929 */
+struct __trt__GetAudioOutputs;	/* onvif.h:41985 */
+struct __trt__CreateProfile;	/* onvif.h:42045 */
+struct __trt__GetProfile;	/* onvif.h:42102 */
+struct __trt__GetProfiles;	/* onvif.h:42163 */
+struct __trt__AddVideoEncoderConfiguration;	/* onvif.h:42226 */
+struct __trt__AddVideoSourceConfiguration;	/* onvif.h:42285 */
+struct __trt__AddAudioEncoderConfiguration;	/* onvif.h:42348 */
+struct __trt__AddAudioSourceConfiguration;	/* onvif.h:42407 */
+struct __trt__AddPTZConfiguration;	/* onvif.h:42470 */
+struct __trt__AddVideoAnalyticsConfiguration;	/* onvif.h:42536 */
+struct __trt__AddMetadataConfiguration;	/* onvif.h:42596 */
+struct __trt__AddAudioOutputConfiguration;	/* onvif.h:42654 */
+struct __trt__AddAudioDecoderConfiguration;	/* onvif.h:42712 */
+struct __trt__RemoveVideoEncoderConfiguration;	/* onvif.h:42771 */
+struct __trt__RemoveVideoSourceConfiguration;	/* onvif.h:42832 */
+struct __trt__RemoveAudioEncoderConfiguration;	/* onvif.h:42892 */
+struct __trt__RemoveAudioSourceConfiguration;	/* onvif.h:42954 */
+struct __trt__RemovePTZConfiguration;	/* onvif.h:43013 */
+struct __trt__RemoveVideoAnalyticsConfiguration;	/* onvif.h:43072 */
+struct __trt__RemoveMetadataConfiguration;	/* onvif.h:43130 */
+struct __trt__RemoveAudioOutputConfiguration;	/* onvif.h:43188 */
+struct __trt__RemoveAudioDecoderConfiguration;	/* onvif.h:43246 */
+struct __trt__DeleteProfile;	/* onvif.h:43303 */
+struct __trt__GetVideoSourceConfigurations;	/* onvif.h:43361 */
+struct __trt__GetVideoEncoderConfigurations;	/* onvif.h:43420 */
+struct __trt__GetAudioSourceConfigurations;	/* onvif.h:43479 */
+struct __trt__GetAudioEncoderConfigurations;	/* onvif.h:43537 */
+struct __trt__GetVideoAnalyticsConfigurations;	/* onvif.h:43595 */
+struct __trt__GetMetadataConfigurations;	/* onvif.h:43652 */
+struct __trt__GetAudioOutputConfigurations;	/* onvif.h:43709 */
+struct __trt__GetAudioDecoderConfigurations;	/* onvif.h:43768 */
+struct __trt__GetVideoSourceConfiguration;	/* onvif.h:43825 */
+struct __trt__GetVideoEncoderConfiguration;	/* onvif.h:43882 */
+struct __trt__GetAudioSourceConfiguration;	/* onvif.h:43939 */
+struct __trt__GetAudioEncoderConfiguration;	/* onvif.h:43996 */
+struct __trt__GetVideoAnalyticsConfiguration;	/* onvif.h:44053 */
+struct __trt__GetMetadataConfiguration;	/* onvif.h:44110 */
+struct __trt__GetAudioOutputConfiguration;	/* onvif.h:44167 */
+struct __trt__GetAudioDecoderConfiguration;	/* onvif.h:44224 */
+struct __trt__GetCompatibleVideoEncoderConfigurations;	/* onvif.h:44284 */
+struct __trt__GetCompatibleVideoSourceConfigurations;	/* onvif.h:44346 */
+struct __trt__GetCompatibleAudioEncoderConfigurations;	/* onvif.h:44406 */
+struct __trt__GetCompatibleAudioSourceConfigurations;	/* onvif.h:44466 */
+struct __trt__GetCompatibleVideoAnalyticsConfigurations;	/* onvif.h:44526 */
+struct __trt__GetCompatibleMetadataConfigurations;	/* onvif.h:44586 */
+struct __trt__GetCompatibleAudioOutputConfigurations;	/* onvif.h:44645 */
+struct __trt__GetCompatibleAudioDecoderConfigurations;	/* onvif.h:44704 */
+struct __trt__SetVideoSourceConfiguration;	/* onvif.h:44765 */
+struct __trt__SetVideoEncoderConfiguration;	/* onvif.h:44830 */
+struct __trt__SetAudioSourceConfiguration;	/* onvif.h:44893 */
+struct __trt__SetAudioEncoderConfiguration;	/* onvif.h:44957 */
+struct __trt__SetVideoAnalyticsConfiguration;	/* onvif.h:45023 */
+struct __trt__SetMetadataConfiguration;	/* onvif.h:45088 */
+struct __trt__SetAudioOutputConfiguration;	/* onvif.h:45146 */
+struct __trt__SetAudioDecoderConfiguration;	/* onvif.h:45204 */
+struct __trt__GetVideoSourceConfigurationOptions;	/* onvif.h:45266 */
+struct __trt__GetVideoEncoderConfigurationOptions;	/* onvif.h:45336 */
+struct __trt__GetAudioSourceConfigurationOptions;	/* onvif.h:45398 */
+struct __trt__GetAudioEncoderConfigurationOptions;	/* onvif.h:45456 */
+struct __trt__GetMetadataConfigurationOptions;	/* onvif.h:45513 */
+struct __trt__GetAudioOutputConfigurationOptions;	/* onvif.h:45570 */
+struct __trt__GetAudioDecoderConfigurationOptions;	/* onvif.h:45628 */
+struct __trt__GetGuaranteedNumberOfVideoEncoderInstances;	/* onvif.h:45686 */
+struct __trt__GetStreamUri;	/* onvif.h:45765 */
+struct __trt__StartMulticastStreaming;	/* onvif.h:45828 */
+struct __trt__StopMulticastStreaming;	/* onvif.h:45884 */
+struct __trt__SetSynchronizationPoint;	/* onvif.h:45957 */
+struct __trt__GetSnapshotUri;	/* onvif.h:46023 */
+struct __trt__GetVideoSourceModes;	/* onvif.h:46081 */
+struct __trt__SetVideoSourceMode;	/* onvif.h:46140 */
+struct __trt__GetOSDs;	/* onvif.h:46196 */
+struct __trt__GetOSD;	/* onvif.h:46252 */
+struct __trt__GetOSDOptions;	/* onvif.h:46308 */
+struct __trt__SetOSD;	/* onvif.h:46364 */
+struct __trt__CreateOSD;	/* onvif.h:46420 */
+struct __trt__DeleteOSD;	/* onvif.h:46476 */
 
 /* wsa.h:99 */
 #ifndef SOAP_TYPE_wsa__EndpointReferenceType
@@ -4332,7 +4422,7 @@ struct _wsse__Password {
 };
 #endif
 
-/* onvif.h:200 */
+/* onvif.h:206 */
 #ifndef SOAP_TYPE_SOAP_ENV__Envelope
 #define SOAP_TYPE_SOAP_ENV__Envelope (400)
 /* complex XML schema type 'SOAP-ENV:Envelope': */
@@ -4344,7 +4434,7 @@ struct SOAP_ENV__Envelope {
 };
 #endif
 
-/* onvif.h:204 */
+/* onvif.h:210 */
 #ifndef SOAP_TYPE_xsd__base64Binary
 #define SOAP_TYPE_xsd__base64Binary (402)
 /* binary data attached as MTOM/MIME/DIME attachment or included as *`xsd:base64Binary`* base64: */
@@ -4360,7 +4450,7 @@ struct xsd__base64Binary {
 };
 #endif
 
-/* onvif.h:218 */
+/* onvif.h:224 */
 #ifndef SOAP_TYPE_xsd__hexBinary
 #define SOAP_TYPE_xsd__hexBinary (407)
 /* hexBinary XML schema type: */
@@ -4370,7 +4460,7 @@ struct xsd__hexBinary {
 };
 #endif
 
-/* onvif.h:1650 */
+/* onvif.h:1680 */
 #ifndef SOAP_TYPE__tds__Service_Capabilities
 #define SOAP_TYPE__tds__Service_Capabilities (520)
 /* complex XML schema type 'tds:Service-Capabilities': */
@@ -4379,7 +4469,7 @@ struct _tds__Service_Capabilities {
 };
 #endif
 
-/* onvif.h:1629 */
+/* onvif.h:1659 */
 #ifndef SOAP_TYPE_tds__Service
 #define SOAP_TYPE_tds__Service (519)
 /* complex XML schema type 'tds:Service': */
@@ -4400,7 +4490,7 @@ struct tds__Service {
 };
 #endif
 
-/* onvif.h:1692 */
+/* onvif.h:1722 */
 #ifndef SOAP_TYPE_tds__DeviceServiceCapabilities
 #define SOAP_TYPE_tds__DeviceServiceCapabilities (524)
 /* complex XML schema type 'tds:DeviceServiceCapabilities': */
@@ -4416,7 +4506,7 @@ struct tds__DeviceServiceCapabilities {
 };
 #endif
 
-/* onvif.h:1698 */
+/* onvif.h:1728 */
 #ifndef SOAP_TYPE_tds__NetworkCapabilities
 #define SOAP_TYPE_tds__NetworkCapabilities (525)
 /* complex XML schema type 'tds:NetworkCapabilities': */
@@ -4444,7 +4534,7 @@ struct tds__NetworkCapabilities {
 };
 #endif
 
-/* onvif.h:1704 */
+/* onvif.h:1734 */
 #ifndef SOAP_TYPE_tds__SecurityCapabilities
 #define SOAP_TYPE_tds__SecurityCapabilities (527)
 /* complex XML schema type 'tds:SecurityCapabilities': */
@@ -4496,7 +4586,7 @@ struct tds__SecurityCapabilities {
 };
 #endif
 
-/* onvif.h:1710 */
+/* onvif.h:1740 */
 #ifndef SOAP_TYPE_tds__SystemCapabilities
 #define SOAP_TYPE_tds__SystemCapabilities (529)
 /* complex XML schema type 'tds:SystemCapabilities': */
@@ -4544,7 +4634,7 @@ struct tds__SystemCapabilities {
 };
 #endif
 
-/* onvif.h:1716 */
+/* onvif.h:1746 */
 #ifndef SOAP_TYPE_tds__MiscCapabilities
 #define SOAP_TYPE_tds__MiscCapabilities (531)
 /* complex XML schema type 'tds:MiscCapabilities': */
@@ -4556,7 +4646,7 @@ struct tds__MiscCapabilities {
 };
 #endif
 
-/* onvif.h:2126 */
+/* onvif.h:2156 */
 #ifndef SOAP_TYPE__tds__UserCredential_Extension
 #define SOAP_TYPE__tds__UserCredential_Extension (535)
 /* complex XML schema type 'tds:UserCredential-Extension': */
@@ -4567,7 +4657,7 @@ struct _tds__UserCredential_Extension {
 };
 #endif
 
-/* onvif.h:2105 */
+/* onvif.h:2135 */
 #ifndef SOAP_TYPE_tds__UserCredential
 #define SOAP_TYPE_tds__UserCredential (534)
 /* complex XML schema type 'tds:UserCredential': */
@@ -4581,7 +4671,7 @@ struct tds__UserCredential {
 };
 #endif
 
-/* onvif.h:2176 */
+/* onvif.h:2206 */
 #ifndef SOAP_TYPE__tds__StorageConfigurationData_Extension
 #define SOAP_TYPE__tds__StorageConfigurationData_Extension (539)
 /* complex XML schema type 'tds:StorageConfigurationData-Extension': */
@@ -4592,7 +4682,7 @@ struct _tds__StorageConfigurationData_Extension {
 };
 #endif
 
-/* onvif.h:2149 */
+/* onvif.h:2179 */
 #ifndef SOAP_TYPE_tds__StorageConfigurationData
 #define SOAP_TYPE_tds__StorageConfigurationData (537)
 /* complex XML schema type 'tds:StorageConfigurationData': */
@@ -4612,7 +4702,7 @@ struct tds__StorageConfigurationData {
 };
 #endif
 
-/* onvif.h:2212 */
+/* onvif.h:2242 */
 #ifndef SOAP_TYPE__tds__GetServices
 #define SOAP_TYPE__tds__GetServices (541)
 /* complex XML schema type 'tds:GetServices': */
@@ -4622,7 +4712,7 @@ struct _tds__GetServices {
 };
 #endif
 
-/* onvif.h:2232 */
+/* onvif.h:2262 */
 #ifndef SOAP_TYPE__tds__GetServicesResponse
 #define SOAP_TYPE__tds__GetServicesResponse (542)
 /* complex XML schema type 'tds:GetServicesResponse': */
@@ -4633,7 +4723,7 @@ struct _tds__GetServicesResponse {
 };
 #endif
 
-/* onvif.h:2254 */
+/* onvif.h:2284 */
 #ifndef SOAP_TYPE__tds__GetServiceCapabilities
 #define SOAP_TYPE__tds__GetServiceCapabilities (544)
 /* complex XML schema type 'tds:GetServiceCapabilities': */
@@ -4644,7 +4734,7 @@ struct _tds__GetServiceCapabilities {
 };
 #endif
 
-/* onvif.h:2268 */
+/* onvif.h:2298 */
 #ifndef SOAP_TYPE__tds__GetServiceCapabilitiesResponse
 #define SOAP_TYPE__tds__GetServiceCapabilitiesResponse (545)
 /* complex XML schema type 'tds:GetServiceCapabilitiesResponse': */
@@ -4654,7 +4744,7 @@ struct _tds__GetServiceCapabilitiesResponse {
 };
 #endif
 
-/* onvif.h:2288 */
+/* onvif.h:2318 */
 #ifndef SOAP_TYPE__tds__GetDeviceInformation
 #define SOAP_TYPE__tds__GetDeviceInformation (547)
 /* complex XML schema type 'tds:GetDeviceInformation': */
@@ -4665,7 +4755,7 @@ struct _tds__GetDeviceInformation {
 };
 #endif
 
-/* onvif.h:2302 */
+/* onvif.h:2332 */
 #ifndef SOAP_TYPE__tds__GetDeviceInformationResponse
 #define SOAP_TYPE__tds__GetDeviceInformationResponse (548)
 /* complex XML schema type 'tds:GetDeviceInformationResponse': */
@@ -4683,7 +4773,7 @@ struct _tds__GetDeviceInformationResponse {
 };
 #endif
 
-/* onvif.h:2346 */
+/* onvif.h:2376 */
 #ifndef SOAP_TYPE__tds__SetSystemDateAndTime
 #define SOAP_TYPE__tds__SetSystemDateAndTime (549)
 /* complex XML schema type 'tds:SetSystemDateAndTime': */
@@ -4699,7 +4789,7 @@ struct _tds__SetSystemDateAndTime {
 };
 #endif
 
-/* onvif.h:2384 */
+/* onvif.h:2414 */
 #ifndef SOAP_TYPE__tds__SetSystemDateAndTimeResponse
 #define SOAP_TYPE__tds__SetSystemDateAndTimeResponse (554)
 /* complex XML schema type 'tds:SetSystemDateAndTimeResponse': */
@@ -4710,7 +4800,7 @@ struct _tds__SetSystemDateAndTimeResponse {
 };
 #endif
 
-/* onvif.h:2398 */
+/* onvif.h:2428 */
 #ifndef SOAP_TYPE__tds__GetSystemDateAndTime
 #define SOAP_TYPE__tds__GetSystemDateAndTime (555)
 /* complex XML schema type 'tds:GetSystemDateAndTime': */
@@ -4721,7 +4811,7 @@ struct _tds__GetSystemDateAndTime {
 };
 #endif
 
-/* onvif.h:2412 */
+/* onvif.h:2442 */
 #ifndef SOAP_TYPE__tds__GetSystemDateAndTimeResponse
 #define SOAP_TYPE__tds__GetSystemDateAndTimeResponse (556)
 /* complex XML schema type 'tds:GetSystemDateAndTimeResponse': */
@@ -4731,7 +4821,7 @@ struct _tds__GetSystemDateAndTimeResponse {
 };
 #endif
 
-/* onvif.h:2432 */
+/* onvif.h:2462 */
 #ifndef SOAP_TYPE__tds__SetSystemFactoryDefault
 #define SOAP_TYPE__tds__SetSystemFactoryDefault (559)
 /* complex XML schema type 'tds:SetSystemFactoryDefault': */
@@ -4741,7 +4831,7 @@ struct _tds__SetSystemFactoryDefault {
 };
 #endif
 
-/* onvif.h:2452 */
+/* onvif.h:2482 */
 #ifndef SOAP_TYPE__tds__SetSystemFactoryDefaultResponse
 #define SOAP_TYPE__tds__SetSystemFactoryDefaultResponse (560)
 /* complex XML schema type 'tds:SetSystemFactoryDefaultResponse': */
@@ -4752,7 +4842,7 @@ struct _tds__SetSystemFactoryDefaultResponse {
 };
 #endif
 
-/* onvif.h:2466 */
+/* onvif.h:2496 */
 #ifndef SOAP_TYPE__tds__UpgradeSystemFirmware
 #define SOAP_TYPE__tds__UpgradeSystemFirmware (561)
 /* complex XML schema type 'tds:UpgradeSystemFirmware': */
@@ -4762,7 +4852,7 @@ struct _tds__UpgradeSystemFirmware {
 };
 #endif
 
-/* onvif.h:2482 */
+/* onvif.h:2512 */
 #ifndef SOAP_TYPE__tds__UpgradeSystemFirmwareResponse
 #define SOAP_TYPE__tds__UpgradeSystemFirmwareResponse (564)
 /* complex XML schema type 'tds:UpgradeSystemFirmwareResponse': */
@@ -4772,7 +4862,7 @@ struct _tds__UpgradeSystemFirmwareResponse {
 };
 #endif
 
-/* onvif.h:2498 */
+/* onvif.h:2528 */
 #ifndef SOAP_TYPE__tds__SystemReboot
 #define SOAP_TYPE__tds__SystemReboot (565)
 /* complex XML schema type 'tds:SystemReboot': */
@@ -4783,7 +4873,7 @@ struct _tds__SystemReboot {
 };
 #endif
 
-/* onvif.h:2512 */
+/* onvif.h:2542 */
 #ifndef SOAP_TYPE__tds__SystemRebootResponse
 #define SOAP_TYPE__tds__SystemRebootResponse (566)
 /* complex XML schema type 'tds:SystemRebootResponse': */
@@ -4793,7 +4883,7 @@ struct _tds__SystemRebootResponse {
 };
 #endif
 
-/* onvif.h:2532 */
+/* onvif.h:2562 */
 #ifndef SOAP_TYPE__tds__RestoreSystem
 #define SOAP_TYPE__tds__RestoreSystem (567)
 /* complex XML schema type 'tds:RestoreSystem': */
@@ -4804,7 +4894,7 @@ struct _tds__RestoreSystem {
 };
 #endif
 
-/* onvif.h:2550 */
+/* onvif.h:2580 */
 #ifndef SOAP_TYPE__tds__RestoreSystemResponse
 #define SOAP_TYPE__tds__RestoreSystemResponse (570)
 /* complex XML schema type 'tds:RestoreSystemResponse': */
@@ -4815,7 +4905,7 @@ struct _tds__RestoreSystemResponse {
 };
 #endif
 
-/* onvif.h:2564 */
+/* onvif.h:2594 */
 #ifndef SOAP_TYPE__tds__GetSystemBackup
 #define SOAP_TYPE__tds__GetSystemBackup (571)
 /* complex XML schema type 'tds:GetSystemBackup': */
@@ -4826,7 +4916,7 @@ struct _tds__GetSystemBackup {
 };
 #endif
 
-/* onvif.h:2578 */
+/* onvif.h:2608 */
 #ifndef SOAP_TYPE__tds__GetSystemBackupResponse
 #define SOAP_TYPE__tds__GetSystemBackupResponse (572)
 /* complex XML schema type 'tds:GetSystemBackupResponse': */
@@ -4837,7 +4927,7 @@ struct _tds__GetSystemBackupResponse {
 };
 #endif
 
-/* onvif.h:2596 */
+/* onvif.h:2626 */
 #ifndef SOAP_TYPE__tds__GetSystemSupportInformation
 #define SOAP_TYPE__tds__GetSystemSupportInformation (573)
 /* complex XML schema type 'tds:GetSystemSupportInformation': */
@@ -4848,7 +4938,7 @@ struct _tds__GetSystemSupportInformation {
 };
 #endif
 
-/* onvif.h:2610 */
+/* onvif.h:2640 */
 #ifndef SOAP_TYPE__tds__GetSystemSupportInformationResponse
 #define SOAP_TYPE__tds__GetSystemSupportInformationResponse (574)
 /* complex XML schema type 'tds:GetSystemSupportInformationResponse': */
@@ -4858,7 +4948,7 @@ struct _tds__GetSystemSupportInformationResponse {
 };
 #endif
 
-/* onvif.h:2630 */
+/* onvif.h:2660 */
 #ifndef SOAP_TYPE__tds__GetSystemLog
 #define SOAP_TYPE__tds__GetSystemLog (577)
 /* complex XML schema type 'tds:GetSystemLog': */
@@ -4868,7 +4958,7 @@ struct _tds__GetSystemLog {
 };
 #endif
 
-/* onvif.h:2650 */
+/* onvif.h:2680 */
 #ifndef SOAP_TYPE__tds__GetSystemLogResponse
 #define SOAP_TYPE__tds__GetSystemLogResponse (578)
 /* complex XML schema type 'tds:GetSystemLogResponse': */
@@ -4878,7 +4968,7 @@ struct _tds__GetSystemLogResponse {
 };
 #endif
 
-/* onvif.h:2670 */
+/* onvif.h:2700 */
 #ifndef SOAP_TYPE__tds__GetScopes
 #define SOAP_TYPE__tds__GetScopes (581)
 /* complex XML schema type 'tds:GetScopes': */
@@ -4889,7 +4979,7 @@ struct _tds__GetScopes {
 };
 #endif
 
-/* onvif.h:2684 */
+/* onvif.h:2714 */
 #ifndef SOAP_TYPE__tds__GetScopesResponse
 #define SOAP_TYPE__tds__GetScopesResponse (582)
 /* complex XML schema type 'tds:GetScopesResponse': */
@@ -4900,7 +4990,7 @@ struct _tds__GetScopesResponse {
 };
 #endif
 
-/* onvif.h:2706 */
+/* onvif.h:2736 */
 #ifndef SOAP_TYPE__tds__SetScopes
 #define SOAP_TYPE__tds__SetScopes (585)
 /* complex XML schema type 'tds:SetScopes': */
@@ -4911,7 +5001,7 @@ struct _tds__SetScopes {
 };
 #endif
 
-/* onvif.h:2728 */
+/* onvif.h:2758 */
 #ifndef SOAP_TYPE__tds__SetScopesResponse
 #define SOAP_TYPE__tds__SetScopesResponse (587)
 /* complex XML schema type 'tds:SetScopesResponse': */
@@ -4922,7 +5012,7 @@ struct _tds__SetScopesResponse {
 };
 #endif
 
-/* onvif.h:2742 */
+/* onvif.h:2772 */
 #ifndef SOAP_TYPE__tds__AddScopes
 #define SOAP_TYPE__tds__AddScopes (588)
 /* complex XML schema type 'tds:AddScopes': */
@@ -4933,7 +5023,7 @@ struct _tds__AddScopes {
 };
 #endif
 
-/* onvif.h:2764 */
+/* onvif.h:2794 */
 #ifndef SOAP_TYPE__tds__AddScopesResponse
 #define SOAP_TYPE__tds__AddScopesResponse (589)
 /* complex XML schema type 'tds:AddScopesResponse': */
@@ -4944,7 +5034,7 @@ struct _tds__AddScopesResponse {
 };
 #endif
 
-/* onvif.h:2778 */
+/* onvif.h:2808 */
 #ifndef SOAP_TYPE__tds__RemoveScopes
 #define SOAP_TYPE__tds__RemoveScopes (590)
 /* complex XML schema type 'tds:RemoveScopes': */
@@ -4955,7 +5045,7 @@ struct _tds__RemoveScopes {
 };
 #endif
 
-/* onvif.h:2801 */
+/* onvif.h:2831 */
 #ifndef SOAP_TYPE__tds__RemoveScopesResponse
 #define SOAP_TYPE__tds__RemoveScopesResponse (591)
 /* complex XML schema type 'tds:RemoveScopesResponse': */
@@ -4966,7 +5056,7 @@ struct _tds__RemoveScopesResponse {
 };
 #endif
 
-/* onvif.h:2823 */
+/* onvif.h:2853 */
 #ifndef SOAP_TYPE__tds__GetDiscoveryMode
 #define SOAP_TYPE__tds__GetDiscoveryMode (592)
 /* complex XML schema type 'tds:GetDiscoveryMode': */
@@ -4977,7 +5067,7 @@ struct _tds__GetDiscoveryMode {
 };
 #endif
 
-/* onvif.h:2837 */
+/* onvif.h:2867 */
 #ifndef SOAP_TYPE__tds__GetDiscoveryModeResponse
 #define SOAP_TYPE__tds__GetDiscoveryModeResponse (593)
 /* complex XML schema type 'tds:GetDiscoveryModeResponse': */
@@ -4987,7 +5077,7 @@ struct _tds__GetDiscoveryModeResponse {
 };
 #endif
 
-/* onvif.h:2857 */
+/* onvif.h:2887 */
 #ifndef SOAP_TYPE__tds__SetDiscoveryMode
 #define SOAP_TYPE__tds__SetDiscoveryMode (594)
 /* complex XML schema type 'tds:SetDiscoveryMode': */
@@ -4997,7 +5087,7 @@ struct _tds__SetDiscoveryMode {
 };
 #endif
 
-/* onvif.h:2877 */
+/* onvif.h:2907 */
 #ifndef SOAP_TYPE__tds__SetDiscoveryModeResponse
 #define SOAP_TYPE__tds__SetDiscoveryModeResponse (595)
 /* complex XML schema type 'tds:SetDiscoveryModeResponse': */
@@ -5008,7 +5098,7 @@ struct _tds__SetDiscoveryModeResponse {
 };
 #endif
 
-/* onvif.h:2891 */
+/* onvif.h:2921 */
 #ifndef SOAP_TYPE__tds__GetRemoteDiscoveryMode
 #define SOAP_TYPE__tds__GetRemoteDiscoveryMode (596)
 /* complex XML schema type 'tds:GetRemoteDiscoveryMode': */
@@ -5019,7 +5109,7 @@ struct _tds__GetRemoteDiscoveryMode {
 };
 #endif
 
-/* onvif.h:2905 */
+/* onvif.h:2935 */
 #ifndef SOAP_TYPE__tds__GetRemoteDiscoveryModeResponse
 #define SOAP_TYPE__tds__GetRemoteDiscoveryModeResponse (597)
 /* complex XML schema type 'tds:GetRemoteDiscoveryModeResponse': */
@@ -5029,7 +5119,7 @@ struct _tds__GetRemoteDiscoveryModeResponse {
 };
 #endif
 
-/* onvif.h:2925 */
+/* onvif.h:2955 */
 #ifndef SOAP_TYPE__tds__SetRemoteDiscoveryMode
 #define SOAP_TYPE__tds__SetRemoteDiscoveryMode (598)
 /* complex XML schema type 'tds:SetRemoteDiscoveryMode': */
@@ -5039,7 +5129,7 @@ struct _tds__SetRemoteDiscoveryMode {
 };
 #endif
 
-/* onvif.h:2945 */
+/* onvif.h:2975 */
 #ifndef SOAP_TYPE__tds__SetRemoteDiscoveryModeResponse
 #define SOAP_TYPE__tds__SetRemoteDiscoveryModeResponse (599)
 /* complex XML schema type 'tds:SetRemoteDiscoveryModeResponse': */
@@ -5050,7 +5140,7 @@ struct _tds__SetRemoteDiscoveryModeResponse {
 };
 #endif
 
-/* onvif.h:2959 */
+/* onvif.h:2989 */
 #ifndef SOAP_TYPE__tds__GetDPAddresses
 #define SOAP_TYPE__tds__GetDPAddresses (600)
 /* complex XML schema type 'tds:GetDPAddresses': */
@@ -5061,7 +5151,7 @@ struct _tds__GetDPAddresses {
 };
 #endif
 
-/* onvif.h:2973 */
+/* onvif.h:3003 */
 #ifndef SOAP_TYPE__tds__GetDPAddressesResponse
 #define SOAP_TYPE__tds__GetDPAddressesResponse (601)
 /* complex XML schema type 'tds:GetDPAddressesResponse': */
@@ -5072,7 +5162,7 @@ struct _tds__GetDPAddressesResponse {
 };
 #endif
 
-/* onvif.h:2991 */
+/* onvif.h:3021 */
 #ifndef SOAP_TYPE__tds__SetDPAddresses
 #define SOAP_TYPE__tds__SetDPAddresses (604)
 /* complex XML schema type 'tds:SetDPAddresses': */
@@ -5083,7 +5173,7 @@ struct _tds__SetDPAddresses {
 };
 #endif
 
-/* onvif.h:3009 */
+/* onvif.h:3039 */
 #ifndef SOAP_TYPE__tds__SetDPAddressesResponse
 #define SOAP_TYPE__tds__SetDPAddressesResponse (605)
 /* complex XML schema type 'tds:SetDPAddressesResponse': */
@@ -5094,7 +5184,7 @@ struct _tds__SetDPAddressesResponse {
 };
 #endif
 
-/* onvif.h:3023 */
+/* onvif.h:3053 */
 #ifndef SOAP_TYPE__tds__GetEndpointReference
 #define SOAP_TYPE__tds__GetEndpointReference (606)
 /* complex XML schema type 'tds:GetEndpointReference': */
@@ -5105,7 +5195,7 @@ struct _tds__GetEndpointReference {
 };
 #endif
 
-/* onvif.h:3037 */
+/* onvif.h:3067 */
 #ifndef SOAP_TYPE__tds__GetEndpointReferenceResponse
 #define SOAP_TYPE__tds__GetEndpointReferenceResponse (607)
 /* complex XML schema type 'tds:GetEndpointReferenceResponse': */
@@ -5118,7 +5208,7 @@ struct _tds__GetEndpointReferenceResponse {
 };
 #endif
 
-/* onvif.h:3062 */
+/* onvif.h:3092 */
 #ifndef SOAP_TYPE__tds__GetRemoteUser
 #define SOAP_TYPE__tds__GetRemoteUser (608)
 /* complex XML schema type 'tds:GetRemoteUser': */
@@ -5129,7 +5219,7 @@ struct _tds__GetRemoteUser {
 };
 #endif
 
-/* onvif.h:3076 */
+/* onvif.h:3106 */
 #ifndef SOAP_TYPE__tds__GetRemoteUserResponse
 #define SOAP_TYPE__tds__GetRemoteUserResponse (609)
 /* complex XML schema type 'tds:GetRemoteUserResponse': */
@@ -5139,7 +5229,7 @@ struct _tds__GetRemoteUserResponse {
 };
 #endif
 
-/* onvif.h:3092 */
+/* onvif.h:3122 */
 #ifndef SOAP_TYPE__tds__SetRemoteUser
 #define SOAP_TYPE__tds__SetRemoteUser (612)
 /* complex XML schema type 'tds:SetRemoteUser': */
@@ -5149,7 +5239,7 @@ struct _tds__SetRemoteUser {
 };
 #endif
 
-/* onvif.h:3108 */
+/* onvif.h:3138 */
 #ifndef SOAP_TYPE__tds__SetRemoteUserResponse
 #define SOAP_TYPE__tds__SetRemoteUserResponse (613)
 /* complex XML schema type 'tds:SetRemoteUserResponse': */
@@ -5160,7 +5250,7 @@ struct _tds__SetRemoteUserResponse {
 };
 #endif
 
-/* onvif.h:3122 */
+/* onvif.h:3152 */
 #ifndef SOAP_TYPE__tds__GetUsers
 #define SOAP_TYPE__tds__GetUsers (614)
 /* complex XML schema type 'tds:GetUsers': */
@@ -5171,7 +5261,7 @@ struct _tds__GetUsers {
 };
 #endif
 
-/* onvif.h:3136 */
+/* onvif.h:3166 */
 #ifndef SOAP_TYPE__tds__GetUsersResponse
 #define SOAP_TYPE__tds__GetUsersResponse (615)
 /* complex XML schema type 'tds:GetUsersResponse': */
@@ -5182,7 +5272,7 @@ struct _tds__GetUsersResponse {
 };
 #endif
 
-/* onvif.h:3158 */
+/* onvif.h:3188 */
 #ifndef SOAP_TYPE__tds__CreateUsers
 #define SOAP_TYPE__tds__CreateUsers (618)
 /* complex XML schema type 'tds:CreateUsers': */
@@ -5193,7 +5283,7 @@ struct _tds__CreateUsers {
 };
 #endif
 
-/* onvif.h:3180 */
+/* onvif.h:3210 */
 #ifndef SOAP_TYPE__tds__CreateUsersResponse
 #define SOAP_TYPE__tds__CreateUsersResponse (619)
 /* complex XML schema type 'tds:CreateUsersResponse': */
@@ -5204,7 +5294,7 @@ struct _tds__CreateUsersResponse {
 };
 #endif
 
-/* onvif.h:3194 */
+/* onvif.h:3224 */
 #ifndef SOAP_TYPE__tds__DeleteUsers
 #define SOAP_TYPE__tds__DeleteUsers (620)
 /* complex XML schema type 'tds:DeleteUsers': */
@@ -5215,7 +5305,7 @@ struct _tds__DeleteUsers {
 };
 #endif
 
-/* onvif.h:3216 */
+/* onvif.h:3246 */
 #ifndef SOAP_TYPE__tds__DeleteUsersResponse
 #define SOAP_TYPE__tds__DeleteUsersResponse (621)
 /* complex XML schema type 'tds:DeleteUsersResponse': */
@@ -5226,7 +5316,7 @@ struct _tds__DeleteUsersResponse {
 };
 #endif
 
-/* onvif.h:3230 */
+/* onvif.h:3260 */
 #ifndef SOAP_TYPE__tds__SetUser
 #define SOAP_TYPE__tds__SetUser (622)
 /* complex XML schema type 'tds:SetUser': */
@@ -5237,7 +5327,7 @@ struct _tds__SetUser {
 };
 #endif
 
-/* onvif.h:3252 */
+/* onvif.h:3282 */
 #ifndef SOAP_TYPE__tds__SetUserResponse
 #define SOAP_TYPE__tds__SetUserResponse (623)
 /* complex XML schema type 'tds:SetUserResponse': */
@@ -5248,7 +5338,7 @@ struct _tds__SetUserResponse {
 };
 #endif
 
-/* onvif.h:3266 */
+/* onvif.h:3296 */
 #ifndef SOAP_TYPE__tds__GetWsdlUrl
 #define SOAP_TYPE__tds__GetWsdlUrl (624)
 /* complex XML schema type 'tds:GetWsdlUrl': */
@@ -5259,7 +5349,7 @@ struct _tds__GetWsdlUrl {
 };
 #endif
 
-/* onvif.h:3280 */
+/* onvif.h:3310 */
 #ifndef SOAP_TYPE__tds__GetWsdlUrlResponse
 #define SOAP_TYPE__tds__GetWsdlUrlResponse (625)
 /* complex XML schema type 'tds:GetWsdlUrlResponse': */
@@ -5269,7 +5359,7 @@ struct _tds__GetWsdlUrlResponse {
 };
 #endif
 
-/* onvif.h:3296 */
+/* onvif.h:3326 */
 #ifndef SOAP_TYPE__tds__GetPasswordComplexityOptions
 #define SOAP_TYPE__tds__GetPasswordComplexityOptions (626)
 /* complex XML schema type 'tds:GetPasswordComplexityOptions': */
@@ -5280,7 +5370,7 @@ struct _tds__GetPasswordComplexityOptions {
 };
 #endif
 
-/* onvif.h:3310 */
+/* onvif.h:3340 */
 #ifndef SOAP_TYPE__tds__GetPasswordComplexityOptionsResponse
 #define SOAP_TYPE__tds__GetPasswordComplexityOptionsResponse (627)
 /* complex XML schema type 'tds:GetPasswordComplexityOptionsResponse': */
@@ -5300,7 +5390,7 @@ struct _tds__GetPasswordComplexityOptionsResponse {
 };
 #endif
 
-/* onvif.h:3336 */
+/* onvif.h:3366 */
 #ifndef SOAP_TYPE__tds__GetPasswordComplexityConfiguration
 #define SOAP_TYPE__tds__GetPasswordComplexityConfiguration (630)
 /* complex XML schema type 'tds:GetPasswordComplexityConfiguration': */
@@ -5311,7 +5401,7 @@ struct _tds__GetPasswordComplexityConfiguration {
 };
 #endif
 
-/* onvif.h:3350 */
+/* onvif.h:3380 */
 #ifndef SOAP_TYPE__tds__GetPasswordComplexityConfigurationResponse
 #define SOAP_TYPE__tds__GetPasswordComplexityConfigurationResponse (631)
 /* complex XML schema type 'tds:GetPasswordComplexityConfigurationResponse': */
@@ -5331,7 +5421,7 @@ struct _tds__GetPasswordComplexityConfigurationResponse {
 };
 #endif
 
-/* onvif.h:3376 */
+/* onvif.h:3406 */
 #ifndef SOAP_TYPE__tds__SetPasswordComplexityConfiguration
 #define SOAP_TYPE__tds__SetPasswordComplexityConfiguration (632)
 /* complex XML schema type 'tds:SetPasswordComplexityConfiguration': */
@@ -5351,7 +5441,7 @@ struct _tds__SetPasswordComplexityConfiguration {
 };
 #endif
 
-/* onvif.h:3402 */
+/* onvif.h:3432 */
 #ifndef SOAP_TYPE__tds__SetPasswordComplexityConfigurationResponse
 #define SOAP_TYPE__tds__SetPasswordComplexityConfigurationResponse (633)
 /* complex XML schema type 'tds:SetPasswordComplexityConfigurationResponse': */
@@ -5362,7 +5452,7 @@ struct _tds__SetPasswordComplexityConfigurationResponse {
 };
 #endif
 
-/* onvif.h:3416 */
+/* onvif.h:3446 */
 #ifndef SOAP_TYPE__tds__GetPasswordHistoryConfiguration
 #define SOAP_TYPE__tds__GetPasswordHistoryConfiguration (634)
 /* complex XML schema type 'tds:GetPasswordHistoryConfiguration': */
@@ -5373,7 +5463,7 @@ struct _tds__GetPasswordHistoryConfiguration {
 };
 #endif
 
-/* onvif.h:3430 */
+/* onvif.h:3460 */
 #ifndef SOAP_TYPE__tds__GetPasswordHistoryConfigurationResponse
 #define SOAP_TYPE__tds__GetPasswordHistoryConfigurationResponse (635)
 /* complex XML schema type 'tds:GetPasswordHistoryConfigurationResponse': */
@@ -5385,7 +5475,7 @@ struct _tds__GetPasswordHistoryConfigurationResponse {
 };
 #endif
 
-/* onvif.h:3448 */
+/* onvif.h:3478 */
 #ifndef SOAP_TYPE__tds__SetPasswordHistoryConfiguration
 #define SOAP_TYPE__tds__SetPasswordHistoryConfiguration (636)
 /* complex XML schema type 'tds:SetPasswordHistoryConfiguration': */
@@ -5397,7 +5487,7 @@ struct _tds__SetPasswordHistoryConfiguration {
 };
 #endif
 
-/* onvif.h:3466 */
+/* onvif.h:3496 */
 #ifndef SOAP_TYPE__tds__SetPasswordHistoryConfigurationResponse
 #define SOAP_TYPE__tds__SetPasswordHistoryConfigurationResponse (637)
 /* complex XML schema type 'tds:SetPasswordHistoryConfigurationResponse': */
@@ -5408,7 +5498,7 @@ struct _tds__SetPasswordHistoryConfigurationResponse {
 };
 #endif
 
-/* onvif.h:3480 */
+/* onvif.h:3510 */
 #ifndef SOAP_TYPE__tds__GetAuthFailureWarningOptions
 #define SOAP_TYPE__tds__GetAuthFailureWarningOptions (638)
 /* complex XML schema type 'tds:GetAuthFailureWarningOptions': */
@@ -5419,7 +5509,7 @@ struct _tds__GetAuthFailureWarningOptions {
 };
 #endif
 
-/* onvif.h:3494 */
+/* onvif.h:3524 */
 #ifndef SOAP_TYPE__tds__GetAuthFailureWarningOptionsResponse
 #define SOAP_TYPE__tds__GetAuthFailureWarningOptionsResponse (639)
 /* complex XML schema type 'tds:GetAuthFailureWarningOptionsResponse': */
@@ -5431,7 +5521,7 @@ struct _tds__GetAuthFailureWarningOptionsResponse {
 };
 #endif
 
-/* onvif.h:3512 */
+/* onvif.h:3542 */
 #ifndef SOAP_TYPE__tds__GetAuthFailureWarningConfiguration
 #define SOAP_TYPE__tds__GetAuthFailureWarningConfiguration (640)
 /* complex XML schema type 'tds:GetAuthFailureWarningConfiguration': */
@@ -5442,7 +5532,7 @@ struct _tds__GetAuthFailureWarningConfiguration {
 };
 #endif
 
-/* onvif.h:3526 */
+/* onvif.h:3556 */
 #ifndef SOAP_TYPE__tds__GetAuthFailureWarningConfigurationResponse
 #define SOAP_TYPE__tds__GetAuthFailureWarningConfigurationResponse (641)
 /* complex XML schema type 'tds:GetAuthFailureWarningConfigurationResponse': */
@@ -5456,7 +5546,7 @@ struct _tds__GetAuthFailureWarningConfigurationResponse {
 };
 #endif
 
-/* onvif.h:3546 */
+/* onvif.h:3576 */
 #ifndef SOAP_TYPE__tds__SetAuthFailureWarningConfiguration
 #define SOAP_TYPE__tds__SetAuthFailureWarningConfiguration (642)
 /* complex XML schema type 'tds:SetAuthFailureWarningConfiguration': */
@@ -5470,7 +5560,7 @@ struct _tds__SetAuthFailureWarningConfiguration {
 };
 #endif
 
-/* onvif.h:3566 */
+/* onvif.h:3596 */
 #ifndef SOAP_TYPE__tds__SetAuthFailureWarningConfigurationResponse
 #define SOAP_TYPE__tds__SetAuthFailureWarningConfigurationResponse (643)
 /* complex XML schema type 'tds:SetAuthFailureWarningConfigurationResponse': */
@@ -5481,7 +5571,7 @@ struct _tds__SetAuthFailureWarningConfigurationResponse {
 };
 #endif
 
-/* onvif.h:3580 */
+/* onvif.h:3610 */
 #ifndef SOAP_TYPE__tds__GetCapabilities
 #define SOAP_TYPE__tds__GetCapabilities (644)
 /* complex XML schema type 'tds:GetCapabilities': */
@@ -5492,7 +5582,7 @@ struct _tds__GetCapabilities {
 };
 #endif
 
-/* onvif.h:3602 */
+/* onvif.h:3632 */
 #ifndef SOAP_TYPE__tds__GetCapabilitiesResponse
 #define SOAP_TYPE__tds__GetCapabilitiesResponse (646)
 /* complex XML schema type 'tds:GetCapabilitiesResponse': */
@@ -5502,7 +5592,7 @@ struct _tds__GetCapabilitiesResponse {
 };
 #endif
 
-/* onvif.h:3622 */
+/* onvif.h:3652 */
 #ifndef SOAP_TYPE__tds__GetHostname
 #define SOAP_TYPE__tds__GetHostname (649)
 /* complex XML schema type 'tds:GetHostname': */
@@ -5513,7 +5603,7 @@ struct _tds__GetHostname {
 };
 #endif
 
-/* onvif.h:3636 */
+/* onvif.h:3666 */
 #ifndef SOAP_TYPE__tds__GetHostnameResponse
 #define SOAP_TYPE__tds__GetHostnameResponse (650)
 /* complex XML schema type 'tds:GetHostnameResponse': */
@@ -5523,7 +5613,7 @@ struct _tds__GetHostnameResponse {
 };
 #endif
 
-/* onvif.h:3656 */
+/* onvif.h:3686 */
 #ifndef SOAP_TYPE__tds__SetHostname
 #define SOAP_TYPE__tds__SetHostname (653)
 /* complex XML schema type 'tds:SetHostname': */
@@ -5533,7 +5623,7 @@ struct _tds__SetHostname {
 };
 #endif
 
-/* onvif.h:3676 */
+/* onvif.h:3706 */
 #ifndef SOAP_TYPE__tds__SetHostnameResponse
 #define SOAP_TYPE__tds__SetHostnameResponse (654)
 /* complex XML schema type 'tds:SetHostnameResponse': */
@@ -5544,7 +5634,7 @@ struct _tds__SetHostnameResponse {
 };
 #endif
 
-/* onvif.h:3690 */
+/* onvif.h:3720 */
 #ifndef SOAP_TYPE__tds__SetHostnameFromDHCP
 #define SOAP_TYPE__tds__SetHostnameFromDHCP (655)
 /* complex XML schema type 'tds:SetHostnameFromDHCP': */
@@ -5554,7 +5644,7 @@ struct _tds__SetHostnameFromDHCP {
 };
 #endif
 
-/* onvif.h:3710 */
+/* onvif.h:3740 */
 #ifndef SOAP_TYPE__tds__SetHostnameFromDHCPResponse
 #define SOAP_TYPE__tds__SetHostnameFromDHCPResponse (656)
 /* complex XML schema type 'tds:SetHostnameFromDHCPResponse': */
@@ -5564,7 +5654,7 @@ struct _tds__SetHostnameFromDHCPResponse {
 };
 #endif
 
-/* onvif.h:3730 */
+/* onvif.h:3760 */
 #ifndef SOAP_TYPE__tds__GetDNS
 #define SOAP_TYPE__tds__GetDNS (657)
 /* complex XML schema type 'tds:GetDNS': */
@@ -5575,7 +5665,7 @@ struct _tds__GetDNS {
 };
 #endif
 
-/* onvif.h:3744 */
+/* onvif.h:3774 */
 #ifndef SOAP_TYPE__tds__GetDNSResponse
 #define SOAP_TYPE__tds__GetDNSResponse (658)
 /* complex XML schema type 'tds:GetDNSResponse': */
@@ -5585,7 +5675,7 @@ struct _tds__GetDNSResponse {
 };
 #endif
 
-/* onvif.h:3764 */
+/* onvif.h:3794 */
 #ifndef SOAP_TYPE__tds__SetDNS
 #define SOAP_TYPE__tds__SetDNS (661)
 /* complex XML schema type 'tds:SetDNS': */
@@ -5601,7 +5691,7 @@ struct _tds__SetDNS {
 };
 #endif
 
-/* onvif.h:3800 */
+/* onvif.h:3830 */
 #ifndef SOAP_TYPE__tds__SetDNSResponse
 #define SOAP_TYPE__tds__SetDNSResponse (665)
 /* complex XML schema type 'tds:SetDNSResponse': */
@@ -5612,7 +5702,7 @@ struct _tds__SetDNSResponse {
 };
 #endif
 
-/* onvif.h:3814 */
+/* onvif.h:3844 */
 #ifndef SOAP_TYPE__tds__GetNTP
 #define SOAP_TYPE__tds__GetNTP (666)
 /* complex XML schema type 'tds:GetNTP': */
@@ -5623,7 +5713,7 @@ struct _tds__GetNTP {
 };
 #endif
 
-/* onvif.h:3828 */
+/* onvif.h:3858 */
 #ifndef SOAP_TYPE__tds__GetNTPResponse
 #define SOAP_TYPE__tds__GetNTPResponse (667)
 /* complex XML schema type 'tds:GetNTPResponse': */
@@ -5633,7 +5723,7 @@ struct _tds__GetNTPResponse {
 };
 #endif
 
-/* onvif.h:3848 */
+/* onvif.h:3878 */
 #ifndef SOAP_TYPE__tds__SetNTP
 #define SOAP_TYPE__tds__SetNTP (670)
 /* complex XML schema type 'tds:SetNTP': */
@@ -5646,7 +5736,7 @@ struct _tds__SetNTP {
 };
 #endif
 
-/* onvif.h:3876 */
+/* onvif.h:3906 */
 #ifndef SOAP_TYPE__tds__SetNTPResponse
 #define SOAP_TYPE__tds__SetNTPResponse (671)
 /* complex XML schema type 'tds:SetNTPResponse': */
@@ -5657,7 +5747,7 @@ struct _tds__SetNTPResponse {
 };
 #endif
 
-/* onvif.h:3890 */
+/* onvif.h:3920 */
 #ifndef SOAP_TYPE__tds__GetDynamicDNS
 #define SOAP_TYPE__tds__GetDynamicDNS (672)
 /* complex XML schema type 'tds:GetDynamicDNS': */
@@ -5668,7 +5758,7 @@ struct _tds__GetDynamicDNS {
 };
 #endif
 
-/* onvif.h:3904 */
+/* onvif.h:3934 */
 #ifndef SOAP_TYPE__tds__GetDynamicDNSResponse
 #define SOAP_TYPE__tds__GetDynamicDNSResponse (673)
 /* complex XML schema type 'tds:GetDynamicDNSResponse': */
@@ -5678,7 +5768,7 @@ struct _tds__GetDynamicDNSResponse {
 };
 #endif
 
-/* onvif.h:3924 */
+/* onvif.h:3954 */
 #ifndef SOAP_TYPE__tds__SetDynamicDNS
 #define SOAP_TYPE__tds__SetDynamicDNS (676)
 /* complex XML schema type 'tds:SetDynamicDNS': */
@@ -5692,7 +5782,7 @@ struct _tds__SetDynamicDNS {
 };
 #endif
 
-/* onvif.h:3956 */
+/* onvif.h:3986 */
 #ifndef SOAP_TYPE__tds__SetDynamicDNSResponse
 #define SOAP_TYPE__tds__SetDynamicDNSResponse (678)
 /* complex XML schema type 'tds:SetDynamicDNSResponse': */
@@ -5703,7 +5793,7 @@ struct _tds__SetDynamicDNSResponse {
 };
 #endif
 
-/* onvif.h:3970 */
+/* onvif.h:4000 */
 #ifndef SOAP_TYPE__tds__GetNetworkInterfaces
 #define SOAP_TYPE__tds__GetNetworkInterfaces (679)
 /* complex XML schema type 'tds:GetNetworkInterfaces': */
@@ -5714,7 +5804,7 @@ struct _tds__GetNetworkInterfaces {
 };
 #endif
 
-/* onvif.h:3984 */
+/* onvif.h:4014 */
 #ifndef SOAP_TYPE__tds__GetNetworkInterfacesResponse
 #define SOAP_TYPE__tds__GetNetworkInterfacesResponse (680)
 /* complex XML schema type 'tds:GetNetworkInterfacesResponse': */
@@ -5725,7 +5815,7 @@ struct _tds__GetNetworkInterfacesResponse {
 };
 #endif
 
-/* onvif.h:4006 */
+/* onvif.h:4036 */
 #ifndef SOAP_TYPE__tds__SetNetworkInterfaces
 #define SOAP_TYPE__tds__SetNetworkInterfaces (683)
 /* complex XML schema type 'tds:SetNetworkInterfaces': */
@@ -5737,7 +5827,7 @@ struct _tds__SetNetworkInterfaces {
 };
 #endif
 
-/* onvif.h:4032 */
+/* onvif.h:4062 */
 #ifndef SOAP_TYPE__tds__SetNetworkInterfacesResponse
 #define SOAP_TYPE__tds__SetNetworkInterfacesResponse (686)
 /* complex XML schema type 'tds:SetNetworkInterfacesResponse': */
@@ -5747,7 +5837,7 @@ struct _tds__SetNetworkInterfacesResponse {
 };
 #endif
 
-/* onvif.h:4059 */
+/* onvif.h:4089 */
 #ifndef SOAP_TYPE__tds__GetNetworkProtocols
 #define SOAP_TYPE__tds__GetNetworkProtocols (687)
 /* complex XML schema type 'tds:GetNetworkProtocols': */
@@ -5758,7 +5848,7 @@ struct _tds__GetNetworkProtocols {
 };
 #endif
 
-/* onvif.h:4073 */
+/* onvif.h:4103 */
 #ifndef SOAP_TYPE__tds__GetNetworkProtocolsResponse
 #define SOAP_TYPE__tds__GetNetworkProtocolsResponse (688)
 /* complex XML schema type 'tds:GetNetworkProtocolsResponse': */
@@ -5769,7 +5859,7 @@ struct _tds__GetNetworkProtocolsResponse {
 };
 #endif
 
-/* onvif.h:4095 */
+/* onvif.h:4125 */
 #ifndef SOAP_TYPE__tds__SetNetworkProtocols
 #define SOAP_TYPE__tds__SetNetworkProtocols (691)
 /* complex XML schema type 'tds:SetNetworkProtocols': */
@@ -5780,7 +5870,7 @@ struct _tds__SetNetworkProtocols {
 };
 #endif
 
-/* onvif.h:4117 */
+/* onvif.h:4147 */
 #ifndef SOAP_TYPE__tds__SetNetworkProtocolsResponse
 #define SOAP_TYPE__tds__SetNetworkProtocolsResponse (692)
 /* complex XML schema type 'tds:SetNetworkProtocolsResponse': */
@@ -5791,7 +5881,7 @@ struct _tds__SetNetworkProtocolsResponse {
 };
 #endif
 
-/* onvif.h:4131 */
+/* onvif.h:4161 */
 #ifndef SOAP_TYPE__tds__GetNetworkDefaultGateway
 #define SOAP_TYPE__tds__GetNetworkDefaultGateway (693)
 /* complex XML schema type 'tds:GetNetworkDefaultGateway': */
@@ -5802,7 +5892,7 @@ struct _tds__GetNetworkDefaultGateway {
 };
 #endif
 
-/* onvif.h:4145 */
+/* onvif.h:4175 */
 #ifndef SOAP_TYPE__tds__GetNetworkDefaultGatewayResponse
 #define SOAP_TYPE__tds__GetNetworkDefaultGatewayResponse (694)
 /* complex XML schema type 'tds:GetNetworkDefaultGatewayResponse': */
@@ -5812,7 +5902,7 @@ struct _tds__GetNetworkDefaultGatewayResponse {
 };
 #endif
 
-/* onvif.h:4165 */
+/* onvif.h:4195 */
 #ifndef SOAP_TYPE__tds__SetNetworkDefaultGateway
 #define SOAP_TYPE__tds__SetNetworkDefaultGateway (697)
 /* complex XML schema type 'tds:SetNetworkDefaultGateway': */
@@ -5826,7 +5916,7 @@ struct _tds__SetNetworkDefaultGateway {
 };
 #endif
 
-/* onvif.h:4195 */
+/* onvif.h:4225 */
 #ifndef SOAP_TYPE__tds__SetNetworkDefaultGatewayResponse
 #define SOAP_TYPE__tds__SetNetworkDefaultGatewayResponse (700)
 /* complex XML schema type 'tds:SetNetworkDefaultGatewayResponse': */
@@ -5837,7 +5927,7 @@ struct _tds__SetNetworkDefaultGatewayResponse {
 };
 #endif
 
-/* onvif.h:4209 */
+/* onvif.h:4239 */
 #ifndef SOAP_TYPE__tds__GetZeroConfiguration
 #define SOAP_TYPE__tds__GetZeroConfiguration (701)
 /* complex XML schema type 'tds:GetZeroConfiguration': */
@@ -5848,7 +5938,7 @@ struct _tds__GetZeroConfiguration {
 };
 #endif
 
-/* onvif.h:4223 */
+/* onvif.h:4253 */
 #ifndef SOAP_TYPE__tds__GetZeroConfigurationResponse
 #define SOAP_TYPE__tds__GetZeroConfigurationResponse (702)
 /* complex XML schema type 'tds:GetZeroConfigurationResponse': */
@@ -5858,7 +5948,7 @@ struct _tds__GetZeroConfigurationResponse {
 };
 #endif
 
-/* onvif.h:4243 */
+/* onvif.h:4273 */
 #ifndef SOAP_TYPE__tds__SetZeroConfiguration
 #define SOAP_TYPE__tds__SetZeroConfiguration (705)
 /* complex XML schema type 'tds:SetZeroConfiguration': */
@@ -5870,7 +5960,7 @@ struct _tds__SetZeroConfiguration {
 };
 #endif
 
-/* onvif.h:4269 */
+/* onvif.h:4299 */
 #ifndef SOAP_TYPE__tds__SetZeroConfigurationResponse
 #define SOAP_TYPE__tds__SetZeroConfigurationResponse (706)
 /* complex XML schema type 'tds:SetZeroConfigurationResponse': */
@@ -5881,7 +5971,7 @@ struct _tds__SetZeroConfigurationResponse {
 };
 #endif
 
-/* onvif.h:4283 */
+/* onvif.h:4313 */
 #ifndef SOAP_TYPE__tds__GetIPAddressFilter
 #define SOAP_TYPE__tds__GetIPAddressFilter (707)
 /* complex XML schema type 'tds:GetIPAddressFilter': */
@@ -5892,7 +5982,7 @@ struct _tds__GetIPAddressFilter {
 };
 #endif
 
-/* onvif.h:4297 */
+/* onvif.h:4327 */
 #ifndef SOAP_TYPE__tds__GetIPAddressFilterResponse
 #define SOAP_TYPE__tds__GetIPAddressFilterResponse (708)
 /* complex XML schema type 'tds:GetIPAddressFilterResponse': */
@@ -5902,7 +5992,7 @@ struct _tds__GetIPAddressFilterResponse {
 };
 #endif
 
-/* onvif.h:4313 */
+/* onvif.h:4343 */
 #ifndef SOAP_TYPE__tds__SetIPAddressFilter
 #define SOAP_TYPE__tds__SetIPAddressFilter (711)
 /* complex XML schema type 'tds:SetIPAddressFilter': */
@@ -5912,7 +6002,7 @@ struct _tds__SetIPAddressFilter {
 };
 #endif
 
-/* onvif.h:4329 */
+/* onvif.h:4359 */
 #ifndef SOAP_TYPE__tds__SetIPAddressFilterResponse
 #define SOAP_TYPE__tds__SetIPAddressFilterResponse (712)
 /* complex XML schema type 'tds:SetIPAddressFilterResponse': */
@@ -5923,7 +6013,7 @@ struct _tds__SetIPAddressFilterResponse {
 };
 #endif
 
-/* onvif.h:4343 */
+/* onvif.h:4373 */
 #ifndef SOAP_TYPE__tds__AddIPAddressFilter
 #define SOAP_TYPE__tds__AddIPAddressFilter (713)
 /* complex XML schema type 'tds:AddIPAddressFilter': */
@@ -5933,7 +6023,7 @@ struct _tds__AddIPAddressFilter {
 };
 #endif
 
-/* onvif.h:4359 */
+/* onvif.h:4389 */
 #ifndef SOAP_TYPE__tds__AddIPAddressFilterResponse
 #define SOAP_TYPE__tds__AddIPAddressFilterResponse (714)
 /* complex XML schema type 'tds:AddIPAddressFilterResponse': */
@@ -5944,7 +6034,7 @@ struct _tds__AddIPAddressFilterResponse {
 };
 #endif
 
-/* onvif.h:4373 */
+/* onvif.h:4403 */
 #ifndef SOAP_TYPE__tds__RemoveIPAddressFilter
 #define SOAP_TYPE__tds__RemoveIPAddressFilter (715)
 /* complex XML schema type 'tds:RemoveIPAddressFilter': */
@@ -5954,7 +6044,7 @@ struct _tds__RemoveIPAddressFilter {
 };
 #endif
 
-/* onvif.h:4389 */
+/* onvif.h:4419 */
 #ifndef SOAP_TYPE__tds__RemoveIPAddressFilterResponse
 #define SOAP_TYPE__tds__RemoveIPAddressFilterResponse (716)
 /* complex XML schema type 'tds:RemoveIPAddressFilterResponse': */
@@ -5965,7 +6055,7 @@ struct _tds__RemoveIPAddressFilterResponse {
 };
 #endif
 
-/* onvif.h:4403 */
+/* onvif.h:4433 */
 #ifndef SOAP_TYPE__tds__GetAccessPolicy
 #define SOAP_TYPE__tds__GetAccessPolicy (717)
 /* complex XML schema type 'tds:GetAccessPolicy': */
@@ -5976,7 +6066,7 @@ struct _tds__GetAccessPolicy {
 };
 #endif
 
-/* onvif.h:4417 */
+/* onvif.h:4447 */
 #ifndef SOAP_TYPE__tds__GetAccessPolicyResponse
 #define SOAP_TYPE__tds__GetAccessPolicyResponse (718)
 /* complex XML schema type 'tds:GetAccessPolicyResponse': */
@@ -5986,7 +6076,7 @@ struct _tds__GetAccessPolicyResponse {
 };
 #endif
 
-/* onvif.h:4433 */
+/* onvif.h:4463 */
 #ifndef SOAP_TYPE__tds__SetAccessPolicy
 #define SOAP_TYPE__tds__SetAccessPolicy (721)
 /* complex XML schema type 'tds:SetAccessPolicy': */
@@ -5996,7 +6086,7 @@ struct _tds__SetAccessPolicy {
 };
 #endif
 
-/* onvif.h:4449 */
+/* onvif.h:4479 */
 #ifndef SOAP_TYPE__tds__SetAccessPolicyResponse
 #define SOAP_TYPE__tds__SetAccessPolicyResponse (722)
 /* complex XML schema type 'tds:SetAccessPolicyResponse': */
@@ -6007,7 +6097,7 @@ struct _tds__SetAccessPolicyResponse {
 };
 #endif
 
-/* onvif.h:4463 */
+/* onvif.h:4493 */
 #ifndef SOAP_TYPE__tds__CreateCertificate
 #define SOAP_TYPE__tds__CreateCertificate (723)
 /* complex XML schema type 'tds:CreateCertificate': */
@@ -6023,7 +6113,7 @@ struct _tds__CreateCertificate {
 };
 #endif
 
-/* onvif.h:4501 */
+/* onvif.h:4531 */
 #ifndef SOAP_TYPE__tds__CreateCertificateResponse
 #define SOAP_TYPE__tds__CreateCertificateResponse (726)
 /* complex XML schema type 'tds:CreateCertificateResponse': */
@@ -6033,7 +6123,7 @@ struct _tds__CreateCertificateResponse {
 };
 #endif
 
-/* onvif.h:4521 */
+/* onvif.h:4551 */
 #ifndef SOAP_TYPE__tds__GetCertificates
 #define SOAP_TYPE__tds__GetCertificates (729)
 /* complex XML schema type 'tds:GetCertificates': */
@@ -6044,7 +6134,7 @@ struct _tds__GetCertificates {
 };
 #endif
 
-/* onvif.h:4535 */
+/* onvif.h:4565 */
 #ifndef SOAP_TYPE__tds__GetCertificatesResponse
 #define SOAP_TYPE__tds__GetCertificatesResponse (730)
 /* complex XML schema type 'tds:GetCertificatesResponse': */
@@ -6055,7 +6145,7 @@ struct _tds__GetCertificatesResponse {
 };
 #endif
 
-/* onvif.h:4557 */
+/* onvif.h:4587 */
 #ifndef SOAP_TYPE__tds__GetCertificatesStatus
 #define SOAP_TYPE__tds__GetCertificatesStatus (731)
 /* complex XML schema type 'tds:GetCertificatesStatus': */
@@ -6066,7 +6156,7 @@ struct _tds__GetCertificatesStatus {
 };
 #endif
 
-/* onvif.h:4571 */
+/* onvif.h:4601 */
 #ifndef SOAP_TYPE__tds__GetCertificatesStatusResponse
 #define SOAP_TYPE__tds__GetCertificatesStatusResponse (732)
 /* complex XML schema type 'tds:GetCertificatesStatusResponse': */
@@ -6077,7 +6167,7 @@ struct _tds__GetCertificatesStatusResponse {
 };
 #endif
 
-/* onvif.h:4593 */
+/* onvif.h:4623 */
 #ifndef SOAP_TYPE__tds__SetCertificatesStatus
 #define SOAP_TYPE__tds__SetCertificatesStatus (735)
 /* complex XML schema type 'tds:SetCertificatesStatus': */
@@ -6088,7 +6178,7 @@ struct _tds__SetCertificatesStatus {
 };
 #endif
 
-/* onvif.h:4615 */
+/* onvif.h:4645 */
 #ifndef SOAP_TYPE__tds__SetCertificatesStatusResponse
 #define SOAP_TYPE__tds__SetCertificatesStatusResponse (736)
 /* complex XML schema type 'tds:SetCertificatesStatusResponse': */
@@ -6099,7 +6189,7 @@ struct _tds__SetCertificatesStatusResponse {
 };
 #endif
 
-/* onvif.h:4629 */
+/* onvif.h:4659 */
 #ifndef SOAP_TYPE__tds__DeleteCertificates
 #define SOAP_TYPE__tds__DeleteCertificates (737)
 /* complex XML schema type 'tds:DeleteCertificates': */
@@ -6110,7 +6200,7 @@ struct _tds__DeleteCertificates {
 };
 #endif
 
-/* onvif.h:4651 */
+/* onvif.h:4681 */
 #ifndef SOAP_TYPE__tds__DeleteCertificatesResponse
 #define SOAP_TYPE__tds__DeleteCertificatesResponse (738)
 /* complex XML schema type 'tds:DeleteCertificatesResponse': */
@@ -6121,7 +6211,7 @@ struct _tds__DeleteCertificatesResponse {
 };
 #endif
 
-/* onvif.h:4665 */
+/* onvif.h:4695 */
 #ifndef SOAP_TYPE__tds__GetPkcs10Request
 #define SOAP_TYPE__tds__GetPkcs10Request (739)
 /* complex XML schema type 'tds:GetPkcs10Request': */
@@ -6135,7 +6225,7 @@ struct _tds__GetPkcs10Request {
 };
 #endif
 
-/* onvif.h:4697 */
+/* onvif.h:4727 */
 #ifndef SOAP_TYPE__tds__GetPkcs10RequestResponse
 #define SOAP_TYPE__tds__GetPkcs10RequestResponse (740)
 /* complex XML schema type 'tds:GetPkcs10RequestResponse': */
@@ -6145,7 +6235,7 @@ struct _tds__GetPkcs10RequestResponse {
 };
 #endif
 
-/* onvif.h:4717 */
+/* onvif.h:4747 */
 #ifndef SOAP_TYPE__tds__LoadCertificates
 #define SOAP_TYPE__tds__LoadCertificates (741)
 /* complex XML schema type 'tds:LoadCertificates': */
@@ -6156,7 +6246,7 @@ struct _tds__LoadCertificates {
 };
 #endif
 
-/* onvif.h:4739 */
+/* onvif.h:4769 */
 #ifndef SOAP_TYPE__tds__LoadCertificatesResponse
 #define SOAP_TYPE__tds__LoadCertificatesResponse (742)
 /* complex XML schema type 'tds:LoadCertificatesResponse': */
@@ -6167,7 +6257,7 @@ struct _tds__LoadCertificatesResponse {
 };
 #endif
 
-/* onvif.h:4753 */
+/* onvif.h:4783 */
 #ifndef SOAP_TYPE__tds__GetClientCertificateMode
 #define SOAP_TYPE__tds__GetClientCertificateMode (743)
 /* complex XML schema type 'tds:GetClientCertificateMode': */
@@ -6178,7 +6268,7 @@ struct _tds__GetClientCertificateMode {
 };
 #endif
 
-/* onvif.h:4767 */
+/* onvif.h:4797 */
 #ifndef SOAP_TYPE__tds__GetClientCertificateModeResponse
 #define SOAP_TYPE__tds__GetClientCertificateModeResponse (744)
 /* complex XML schema type 'tds:GetClientCertificateModeResponse': */
@@ -6188,7 +6278,7 @@ struct _tds__GetClientCertificateModeResponse {
 };
 #endif
 
-/* onvif.h:4787 */
+/* onvif.h:4817 */
 #ifndef SOAP_TYPE__tds__SetClientCertificateMode
 #define SOAP_TYPE__tds__SetClientCertificateMode (745)
 /* complex XML schema type 'tds:SetClientCertificateMode': */
@@ -6198,7 +6288,7 @@ struct _tds__SetClientCertificateMode {
 };
 #endif
 
-/* onvif.h:4807 */
+/* onvif.h:4837 */
 #ifndef SOAP_TYPE__tds__SetClientCertificateModeResponse
 #define SOAP_TYPE__tds__SetClientCertificateModeResponse (746)
 /* complex XML schema type 'tds:SetClientCertificateModeResponse': */
@@ -6209,7 +6299,7 @@ struct _tds__SetClientCertificateModeResponse {
 };
 #endif
 
-/* onvif.h:4821 */
+/* onvif.h:4851 */
 #ifndef SOAP_TYPE__tds__GetCACertificates
 #define SOAP_TYPE__tds__GetCACertificates (747)
 /* complex XML schema type 'tds:GetCACertificates': */
@@ -6220,7 +6310,7 @@ struct _tds__GetCACertificates {
 };
 #endif
 
-/* onvif.h:4835 */
+/* onvif.h:4865 */
 #ifndef SOAP_TYPE__tds__GetCACertificatesResponse
 #define SOAP_TYPE__tds__GetCACertificatesResponse (748)
 /* complex XML schema type 'tds:GetCACertificatesResponse': */
@@ -6231,7 +6321,7 @@ struct _tds__GetCACertificatesResponse {
 };
 #endif
 
-/* onvif.h:4853 */
+/* onvif.h:4883 */
 #ifndef SOAP_TYPE__tds__LoadCertificateWithPrivateKey
 #define SOAP_TYPE__tds__LoadCertificateWithPrivateKey (749)
 /* complex XML schema type 'tds:LoadCertificateWithPrivateKey': */
@@ -6242,7 +6332,7 @@ struct _tds__LoadCertificateWithPrivateKey {
 };
 #endif
 
-/* onvif.h:4871 */
+/* onvif.h:4901 */
 #ifndef SOAP_TYPE__tds__LoadCertificateWithPrivateKeyResponse
 #define SOAP_TYPE__tds__LoadCertificateWithPrivateKeyResponse (752)
 /* complex XML schema type 'tds:LoadCertificateWithPrivateKeyResponse': */
@@ -6253,7 +6343,7 @@ struct _tds__LoadCertificateWithPrivateKeyResponse {
 };
 #endif
 
-/* onvif.h:4885 */
+/* onvif.h:4915 */
 #ifndef SOAP_TYPE__tds__GetCertificateInformation
 #define SOAP_TYPE__tds__GetCertificateInformation (753)
 /* complex XML schema type 'tds:GetCertificateInformation': */
@@ -6263,7 +6353,7 @@ struct _tds__GetCertificateInformation {
 };
 #endif
 
-/* onvif.h:4901 */
+/* onvif.h:4931 */
 #ifndef SOAP_TYPE__tds__GetCertificateInformationResponse
 #define SOAP_TYPE__tds__GetCertificateInformationResponse (754)
 /* complex XML schema type 'tds:GetCertificateInformationResponse': */
@@ -6273,7 +6363,7 @@ struct _tds__GetCertificateInformationResponse {
 };
 #endif
 
-/* onvif.h:4917 */
+/* onvif.h:4947 */
 #ifndef SOAP_TYPE__tds__LoadCACertificates
 #define SOAP_TYPE__tds__LoadCACertificates (757)
 /* complex XML schema type 'tds:LoadCACertificates': */
@@ -6284,7 +6374,7 @@ struct _tds__LoadCACertificates {
 };
 #endif
 
-/* onvif.h:4935 */
+/* onvif.h:4965 */
 #ifndef SOAP_TYPE__tds__LoadCACertificatesResponse
 #define SOAP_TYPE__tds__LoadCACertificatesResponse (758)
 /* complex XML schema type 'tds:LoadCACertificatesResponse': */
@@ -6295,7 +6385,7 @@ struct _tds__LoadCACertificatesResponse {
 };
 #endif
 
-/* onvif.h:4949 */
+/* onvif.h:4979 */
 #ifndef SOAP_TYPE__tds__CreateDot1XConfiguration
 #define SOAP_TYPE__tds__CreateDot1XConfiguration (759)
 /* complex XML schema type 'tds:CreateDot1XConfiguration': */
@@ -6305,7 +6395,7 @@ struct _tds__CreateDot1XConfiguration {
 };
 #endif
 
-/* onvif.h:4965 */
+/* onvif.h:4995 */
 #ifndef SOAP_TYPE__tds__CreateDot1XConfigurationResponse
 #define SOAP_TYPE__tds__CreateDot1XConfigurationResponse (762)
 /* complex XML schema type 'tds:CreateDot1XConfigurationResponse': */
@@ -6316,7 +6406,7 @@ struct _tds__CreateDot1XConfigurationResponse {
 };
 #endif
 
-/* onvif.h:4979 */
+/* onvif.h:5009 */
 #ifndef SOAP_TYPE__tds__SetDot1XConfiguration
 #define SOAP_TYPE__tds__SetDot1XConfiguration (763)
 /* complex XML schema type 'tds:SetDot1XConfiguration': */
@@ -6326,7 +6416,7 @@ struct _tds__SetDot1XConfiguration {
 };
 #endif
 
-/* onvif.h:4995 */
+/* onvif.h:5025 */
 #ifndef SOAP_TYPE__tds__SetDot1XConfigurationResponse
 #define SOAP_TYPE__tds__SetDot1XConfigurationResponse (764)
 /* complex XML schema type 'tds:SetDot1XConfigurationResponse': */
@@ -6337,7 +6427,7 @@ struct _tds__SetDot1XConfigurationResponse {
 };
 #endif
 
-/* onvif.h:5009 */
+/* onvif.h:5039 */
 #ifndef SOAP_TYPE__tds__GetDot1XConfiguration
 #define SOAP_TYPE__tds__GetDot1XConfiguration (765)
 /* complex XML schema type 'tds:GetDot1XConfiguration': */
@@ -6347,7 +6437,7 @@ struct _tds__GetDot1XConfiguration {
 };
 #endif
 
-/* onvif.h:5025 */
+/* onvif.h:5055 */
 #ifndef SOAP_TYPE__tds__GetDot1XConfigurationResponse
 #define SOAP_TYPE__tds__GetDot1XConfigurationResponse (766)
 /* complex XML schema type 'tds:GetDot1XConfigurationResponse': */
@@ -6357,7 +6447,7 @@ struct _tds__GetDot1XConfigurationResponse {
 };
 #endif
 
-/* onvif.h:5041 */
+/* onvif.h:5071 */
 #ifndef SOAP_TYPE__tds__GetDot1XConfigurations
 #define SOAP_TYPE__tds__GetDot1XConfigurations (767)
 /* complex XML schema type 'tds:GetDot1XConfigurations': */
@@ -6368,7 +6458,7 @@ struct _tds__GetDot1XConfigurations {
 };
 #endif
 
-/* onvif.h:5055 */
+/* onvif.h:5085 */
 #ifndef SOAP_TYPE__tds__GetDot1XConfigurationsResponse
 #define SOAP_TYPE__tds__GetDot1XConfigurationsResponse (768)
 /* complex XML schema type 'tds:GetDot1XConfigurationsResponse': */
@@ -6379,7 +6469,7 @@ struct _tds__GetDot1XConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:5073 */
+/* onvif.h:5103 */
 #ifndef SOAP_TYPE__tds__DeleteDot1XConfiguration
 #define SOAP_TYPE__tds__DeleteDot1XConfiguration (769)
 /* complex XML schema type 'tds:DeleteDot1XConfiguration': */
@@ -6390,7 +6480,7 @@ struct _tds__DeleteDot1XConfiguration {
 };
 #endif
 
-/* onvif.h:5091 */
+/* onvif.h:5121 */
 #ifndef SOAP_TYPE__tds__DeleteDot1XConfigurationResponse
 #define SOAP_TYPE__tds__DeleteDot1XConfigurationResponse (771)
 /* complex XML schema type 'tds:DeleteDot1XConfigurationResponse': */
@@ -6401,7 +6491,7 @@ struct _tds__DeleteDot1XConfigurationResponse {
 };
 #endif
 
-/* onvif.h:5105 */
+/* onvif.h:5135 */
 #ifndef SOAP_TYPE__tds__GetRelayOutputs
 #define SOAP_TYPE__tds__GetRelayOutputs (772)
 /* complex XML schema type 'tds:GetRelayOutputs': */
@@ -6412,7 +6502,7 @@ struct _tds__GetRelayOutputs {
 };
 #endif
 
-/* onvif.h:5119 */
+/* onvif.h:5149 */
 #ifndef SOAP_TYPE__tds__GetRelayOutputsResponse
 #define SOAP_TYPE__tds__GetRelayOutputsResponse (773)
 /* complex XML schema type 'tds:GetRelayOutputsResponse': */
@@ -6423,7 +6513,7 @@ struct _tds__GetRelayOutputsResponse {
 };
 #endif
 
-/* onvif.h:5137 */
+/* onvif.h:5167 */
 #ifndef SOAP_TYPE__tds__SetRelayOutputSettings
 #define SOAP_TYPE__tds__SetRelayOutputSettings (776)
 /* complex XML schema type 'tds:SetRelayOutputSettings': */
@@ -6435,7 +6525,7 @@ struct _tds__SetRelayOutputSettings {
 };
 #endif
 
-/* onvif.h:5155 */
+/* onvif.h:5185 */
 #ifndef SOAP_TYPE__tds__SetRelayOutputSettingsResponse
 #define SOAP_TYPE__tds__SetRelayOutputSettingsResponse (779)
 /* complex XML schema type 'tds:SetRelayOutputSettingsResponse': */
@@ -6446,7 +6536,7 @@ struct _tds__SetRelayOutputSettingsResponse {
 };
 #endif
 
-/* onvif.h:5169 */
+/* onvif.h:5199 */
 #ifndef SOAP_TYPE__tds__SetRelayOutputState
 #define SOAP_TYPE__tds__SetRelayOutputState (780)
 /* complex XML schema type 'tds:SetRelayOutputState': */
@@ -6458,7 +6548,7 @@ struct _tds__SetRelayOutputState {
 };
 #endif
 
-/* onvif.h:5187 */
+/* onvif.h:5217 */
 #ifndef SOAP_TYPE__tds__SetRelayOutputStateResponse
 #define SOAP_TYPE__tds__SetRelayOutputStateResponse (781)
 /* complex XML schema type 'tds:SetRelayOutputStateResponse': */
@@ -6469,7 +6559,7 @@ struct _tds__SetRelayOutputStateResponse {
 };
 #endif
 
-/* onvif.h:5201 */
+/* onvif.h:5231 */
 #ifndef SOAP_TYPE__tds__SendAuxiliaryCommand
 #define SOAP_TYPE__tds__SendAuxiliaryCommand (782)
 /* complex XML schema type 'tds:SendAuxiliaryCommand': */
@@ -6479,7 +6569,7 @@ struct _tds__SendAuxiliaryCommand {
 };
 #endif
 
-/* onvif.h:5217 */
+/* onvif.h:5247 */
 #ifndef SOAP_TYPE__tds__SendAuxiliaryCommandResponse
 #define SOAP_TYPE__tds__SendAuxiliaryCommandResponse (783)
 /* complex XML schema type 'tds:SendAuxiliaryCommandResponse': */
@@ -6489,7 +6579,7 @@ struct _tds__SendAuxiliaryCommandResponse {
 };
 #endif
 
-/* onvif.h:5233 */
+/* onvif.h:5263 */
 #ifndef SOAP_TYPE__tds__GetDot11Capabilities
 #define SOAP_TYPE__tds__GetDot11Capabilities (784)
 /* complex XML schema type 'tds:GetDot11Capabilities': */
@@ -6500,7 +6590,7 @@ struct _tds__GetDot11Capabilities {
 };
 #endif
 
-/* onvif.h:5256 */
+/* onvif.h:5286 */
 #ifndef SOAP_TYPE__tds__GetDot11CapabilitiesResponse
 #define SOAP_TYPE__tds__GetDot11CapabilitiesResponse (785)
 /* complex XML schema type 'tds:GetDot11CapabilitiesResponse': */
@@ -6510,7 +6600,7 @@ struct _tds__GetDot11CapabilitiesResponse {
 };
 #endif
 
-/* onvif.h:5272 */
+/* onvif.h:5302 */
 #ifndef SOAP_TYPE__tds__GetDot11Status
 #define SOAP_TYPE__tds__GetDot11Status (788)
 /* complex XML schema type 'tds:GetDot11Status': */
@@ -6520,7 +6610,7 @@ struct _tds__GetDot11Status {
 };
 #endif
 
-/* onvif.h:5288 */
+/* onvif.h:5318 */
 #ifndef SOAP_TYPE__tds__GetDot11StatusResponse
 #define SOAP_TYPE__tds__GetDot11StatusResponse (789)
 /* complex XML schema type 'tds:GetDot11StatusResponse': */
@@ -6530,7 +6620,7 @@ struct _tds__GetDot11StatusResponse {
 };
 #endif
 
-/* onvif.h:5304 */
+/* onvif.h:5334 */
 #ifndef SOAP_TYPE__tds__ScanAvailableDot11Networks
 #define SOAP_TYPE__tds__ScanAvailableDot11Networks (792)
 /* complex XML schema type 'tds:ScanAvailableDot11Networks': */
@@ -6540,7 +6630,7 @@ struct _tds__ScanAvailableDot11Networks {
 };
 #endif
 
-/* onvif.h:5320 */
+/* onvif.h:5350 */
 #ifndef SOAP_TYPE__tds__ScanAvailableDot11NetworksResponse
 #define SOAP_TYPE__tds__ScanAvailableDot11NetworksResponse (793)
 /* complex XML schema type 'tds:ScanAvailableDot11NetworksResponse': */
@@ -6551,7 +6641,7 @@ struct _tds__ScanAvailableDot11NetworksResponse {
 };
 #endif
 
-/* onvif.h:5338 */
+/* onvif.h:5368 */
 #ifndef SOAP_TYPE__tds__GetSystemUris
 #define SOAP_TYPE__tds__GetSystemUris (796)
 /* complex XML schema type 'tds:GetSystemUris': */
@@ -6562,7 +6652,7 @@ struct _tds__GetSystemUris {
 };
 #endif
 
-/* onvif.h:5367 */
+/* onvif.h:5397 */
 #ifndef SOAP_TYPE__tds__GetSystemUrisResponse_Extension
 #define SOAP_TYPE__tds__GetSystemUrisResponse_Extension (800)
 /* complex XML schema type 'tds:GetSystemUrisResponse-Extension': */
@@ -6573,7 +6663,7 @@ struct _tds__GetSystemUrisResponse_Extension {
 };
 #endif
 
-/* onvif.h:5352 */
+/* onvif.h:5382 */
 #ifndef SOAP_TYPE__tds__GetSystemUrisResponse
 #define SOAP_TYPE__tds__GetSystemUrisResponse (797)
 /* complex XML schema type 'tds:GetSystemUrisResponse': */
@@ -6589,7 +6679,7 @@ struct _tds__GetSystemUrisResponse {
 };
 #endif
 
-/* onvif.h:5391 */
+/* onvif.h:5421 */
 #ifndef SOAP_TYPE__tds__StartFirmwareUpgrade
 #define SOAP_TYPE__tds__StartFirmwareUpgrade (802)
 /* complex XML schema type 'tds:StartFirmwareUpgrade': */
@@ -6600,7 +6690,7 @@ struct _tds__StartFirmwareUpgrade {
 };
 #endif
 
-/* onvif.h:5405 */
+/* onvif.h:5435 */
 #ifndef SOAP_TYPE__tds__StartFirmwareUpgradeResponse
 #define SOAP_TYPE__tds__StartFirmwareUpgradeResponse (803)
 /* complex XML schema type 'tds:StartFirmwareUpgradeResponse': */
@@ -6614,7 +6704,7 @@ struct _tds__StartFirmwareUpgradeResponse {
 };
 #endif
 
-/* onvif.h:5425 */
+/* onvif.h:5455 */
 #ifndef SOAP_TYPE__tds__StartSystemRestore
 #define SOAP_TYPE__tds__StartSystemRestore (804)
 /* complex XML schema type 'tds:StartSystemRestore': */
@@ -6625,7 +6715,7 @@ struct _tds__StartSystemRestore {
 };
 #endif
 
-/* onvif.h:5439 */
+/* onvif.h:5469 */
 #ifndef SOAP_TYPE__tds__StartSystemRestoreResponse
 #define SOAP_TYPE__tds__StartSystemRestoreResponse (805)
 /* complex XML schema type 'tds:StartSystemRestoreResponse': */
@@ -6637,7 +6727,7 @@ struct _tds__StartSystemRestoreResponse {
 };
 #endif
 
-/* onvif.h:5457 */
+/* onvif.h:5487 */
 #ifndef SOAP_TYPE__tds__SetHashingAlgorithm
 #define SOAP_TYPE__tds__SetHashingAlgorithm (806)
 /* complex XML schema type 'tds:SetHashingAlgorithm': */
@@ -6647,7 +6737,7 @@ struct _tds__SetHashingAlgorithm {
 };
 #endif
 
-/* onvif.h:5477 */
+/* onvif.h:5507 */
 #ifndef SOAP_TYPE__tds__SetHashingAlgorithmResponse
 #define SOAP_TYPE__tds__SetHashingAlgorithmResponse (807)
 /* complex XML schema type 'tds:SetHashingAlgorithmResponse': */
@@ -6658,7 +6748,7 @@ struct _tds__SetHashingAlgorithmResponse {
 };
 #endif
 
-/* onvif.h:5491 */
+/* onvif.h:5521 */
 #ifndef SOAP_TYPE__tds__GetStorageConfigurations
 #define SOAP_TYPE__tds__GetStorageConfigurations (808)
 /* complex XML schema type 'tds:GetStorageConfigurations': */
@@ -6669,7 +6759,7 @@ struct _tds__GetStorageConfigurations {
 };
 #endif
 
-/* onvif.h:5505 */
+/* onvif.h:5535 */
 #ifndef SOAP_TYPE__tds__GetStorageConfigurationsResponse
 #define SOAP_TYPE__tds__GetStorageConfigurationsResponse (809)
 /* complex XML schema type 'tds:GetStorageConfigurationsResponse': */
@@ -6680,7 +6770,7 @@ struct _tds__GetStorageConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:5523 */
+/* onvif.h:5553 */
 #ifndef SOAP_TYPE__tds__CreateStorageConfiguration
 #define SOAP_TYPE__tds__CreateStorageConfiguration (812)
 /* complex XML schema type 'tds:CreateStorageConfiguration': */
@@ -6690,7 +6780,7 @@ struct _tds__CreateStorageConfiguration {
 };
 #endif
 
-/* onvif.h:5539 */
+/* onvif.h:5569 */
 #ifndef SOAP_TYPE__tds__CreateStorageConfigurationResponse
 #define SOAP_TYPE__tds__CreateStorageConfigurationResponse (814)
 /* complex XML schema type 'tds:CreateStorageConfigurationResponse': */
@@ -6700,7 +6790,7 @@ struct _tds__CreateStorageConfigurationResponse {
 };
 #endif
 
-/* onvif.h:5555 */
+/* onvif.h:5585 */
 #ifndef SOAP_TYPE__tds__GetStorageConfiguration
 #define SOAP_TYPE__tds__GetStorageConfiguration (815)
 /* complex XML schema type 'tds:GetStorageConfiguration': */
@@ -6710,7 +6800,7 @@ struct _tds__GetStorageConfiguration {
 };
 #endif
 
-/* onvif.h:5571 */
+/* onvif.h:5601 */
 #ifndef SOAP_TYPE__tds__GetStorageConfigurationResponse
 #define SOAP_TYPE__tds__GetStorageConfigurationResponse (816)
 /* complex XML schema type 'tds:GetStorageConfigurationResponse': */
@@ -6720,7 +6810,7 @@ struct _tds__GetStorageConfigurationResponse {
 };
 #endif
 
-/* onvif.h:5587 */
+/* onvif.h:5617 */
 #ifndef SOAP_TYPE__tds__SetStorageConfiguration
 #define SOAP_TYPE__tds__SetStorageConfiguration (817)
 /* complex XML schema type 'tds:SetStorageConfiguration': */
@@ -6730,7 +6820,7 @@ struct _tds__SetStorageConfiguration {
 };
 #endif
 
-/* onvif.h:5603 */
+/* onvif.h:5633 */
 #ifndef SOAP_TYPE__tds__SetStorageConfigurationResponse
 #define SOAP_TYPE__tds__SetStorageConfigurationResponse (818)
 /* complex XML schema type 'tds:SetStorageConfigurationResponse': */
@@ -6741,7 +6831,7 @@ struct _tds__SetStorageConfigurationResponse {
 };
 #endif
 
-/* onvif.h:5617 */
+/* onvif.h:5647 */
 #ifndef SOAP_TYPE__tds__DeleteStorageConfiguration
 #define SOAP_TYPE__tds__DeleteStorageConfiguration (819)
 /* complex XML schema type 'tds:DeleteStorageConfiguration': */
@@ -6751,7 +6841,7 @@ struct _tds__DeleteStorageConfiguration {
 };
 #endif
 
-/* onvif.h:5633 */
+/* onvif.h:5663 */
 #ifndef SOAP_TYPE__tds__DeleteStorageConfigurationResponse
 #define SOAP_TYPE__tds__DeleteStorageConfigurationResponse (820)
 /* complex XML schema type 'tds:DeleteStorageConfigurationResponse': */
@@ -6762,7 +6852,7 @@ struct _tds__DeleteStorageConfigurationResponse {
 };
 #endif
 
-/* onvif.h:5647 */
+/* onvif.h:5677 */
 #ifndef SOAP_TYPE__tds__GetGeoLocation
 #define SOAP_TYPE__tds__GetGeoLocation (821)
 /* complex XML schema type 'tds:GetGeoLocation': */
@@ -6773,7 +6863,7 @@ struct _tds__GetGeoLocation {
 };
 #endif
 
-/* onvif.h:5661 */
+/* onvif.h:5691 */
 #ifndef SOAP_TYPE__tds__GetGeoLocationResponse
 #define SOAP_TYPE__tds__GetGeoLocationResponse (822)
 /* complex XML schema type 'tds:GetGeoLocationResponse': */
@@ -6784,7 +6874,7 @@ struct _tds__GetGeoLocationResponse {
 };
 #endif
 
-/* onvif.h:5679 */
+/* onvif.h:5709 */
 #ifndef SOAP_TYPE__tds__SetGeoLocation
 #define SOAP_TYPE__tds__SetGeoLocation (825)
 /* complex XML schema type 'tds:SetGeoLocation': */
@@ -6795,7 +6885,7 @@ struct _tds__SetGeoLocation {
 };
 #endif
 
-/* onvif.h:5697 */
+/* onvif.h:5727 */
 #ifndef SOAP_TYPE__tds__SetGeoLocationResponse
 #define SOAP_TYPE__tds__SetGeoLocationResponse (826)
 /* complex XML schema type 'tds:SetGeoLocationResponse': */
@@ -6806,7 +6896,7 @@ struct _tds__SetGeoLocationResponse {
 };
 #endif
 
-/* onvif.h:5711 */
+/* onvif.h:5741 */
 #ifndef SOAP_TYPE__tds__DeleteGeoLocation
 #define SOAP_TYPE__tds__DeleteGeoLocation (827)
 /* complex XML schema type 'tds:DeleteGeoLocation': */
@@ -6817,7 +6907,7 @@ struct _tds__DeleteGeoLocation {
 };
 #endif
 
-/* onvif.h:5729 */
+/* onvif.h:5759 */
 #ifndef SOAP_TYPE__tds__DeleteGeoLocationResponse
 #define SOAP_TYPE__tds__DeleteGeoLocationResponse (828)
 /* complex XML schema type 'tds:DeleteGeoLocationResponse': */
@@ -6828,7 +6918,7 @@ struct _tds__DeleteGeoLocationResponse {
 };
 #endif
 
-/* onvif.h:5766 */
+/* onvif.h:5796 */
 #ifndef SOAP_TYPE_tt__DeviceEntity
 #define SOAP_TYPE_tt__DeviceEntity (829)
 /* complex XML schema type 'tt:DeviceEntity': */
@@ -6838,7 +6928,7 @@ struct tt__DeviceEntity {
 };
 #endif
 
-/* onvif.h:5789 */
+/* onvif.h:5819 */
 #ifndef SOAP_TYPE_tt__IntRectangle
 #define SOAP_TYPE_tt__IntRectangle (830)
 /* complex XML schema type 'tt:IntRectangle': */
@@ -6854,7 +6944,7 @@ struct tt__IntRectangle {
 };
 #endif
 
-/* onvif.h:5814 */
+/* onvif.h:5844 */
 #ifndef SOAP_TYPE_tt__IntRectangleRange
 #define SOAP_TYPE_tt__IntRectangleRange (831)
 /* complex XML schema type 'tt:IntRectangleRange': */
@@ -6870,7 +6960,7 @@ struct tt__IntRectangleRange {
 };
 #endif
 
-/* onvif.h:5855 */
+/* onvif.h:5885 */
 #ifndef SOAP_TYPE_tt__FloatRange
 #define SOAP_TYPE_tt__FloatRange (832)
 /* complex XML schema type 'tt:FloatRange': */
@@ -6882,7 +6972,7 @@ struct tt__FloatRange {
 };
 #endif
 
-/* onvif.h:5876 */
+/* onvif.h:5906 */
 #ifndef SOAP_TYPE_tt__DurationRange
 #define SOAP_TYPE_tt__DurationRange (834)
 /* complex XML schema type 'tt:DurationRange': */
@@ -6894,7 +6984,7 @@ struct tt__DurationRange {
 };
 #endif
 
-/* onvif.h:5897 */
+/* onvif.h:5927 */
 #ifndef SOAP_TYPE_tt__IntItems
 #define SOAP_TYPE_tt__IntItems (835)
 /* complex XML schema type 'tt:IntItems': */
@@ -6905,7 +6995,7 @@ struct tt__IntItems {
 };
 #endif
 
-/* onvif.h:5914 */
+/* onvif.h:5944 */
 #ifndef SOAP_TYPE_tt__FloatItems
 #define SOAP_TYPE_tt__FloatItems (836)
 /* complex XML schema type 'tt:FloatItems': */
@@ -6916,7 +7006,7 @@ struct tt__FloatItems {
 };
 #endif
 
-/* onvif.h:5931 */
+/* onvif.h:5961 */
 #ifndef SOAP_TYPE_tt__AnyHolder
 #define SOAP_TYPE_tt__AnyHolder (838)
 /* complex XML schema type 'tt:AnyHolder': */
@@ -6929,7 +7019,7 @@ struct tt__AnyHolder {
 };
 #endif
 
-/* onvif.h:5959 */
+/* onvif.h:5989 */
 #ifndef SOAP_TYPE_tt__VideoSourceExtension
 #define SOAP_TYPE_tt__VideoSourceExtension (839)
 /* complex XML schema type 'tt:VideoSourceExtension': */
@@ -6944,7 +7034,7 @@ struct tt__VideoSourceExtension {
 };
 #endif
 
-/* onvif.h:5976 */
+/* onvif.h:6006 */
 #ifndef SOAP_TYPE_tt__VideoSourceExtension2
 #define SOAP_TYPE_tt__VideoSourceExtension2 (842)
 /* complex XML schema type 'tt:VideoSourceExtension2': */
@@ -6955,7 +7045,7 @@ struct tt__VideoSourceExtension2 {
 };
 #endif
 
-/* onvif.h:6022 */
+/* onvif.h:6052 */
 #ifndef SOAP_TYPE_tt__Profile
 #define SOAP_TYPE_tt__Profile (844)
 /* complex XML schema type 'tt:Profile': */
@@ -6987,7 +7077,7 @@ struct tt__Profile {
 };
 #endif
 
-/* onvif.h:6076 */
+/* onvif.h:6106 */
 #ifndef SOAP_TYPE_tt__ProfileExtension
 #define SOAP_TYPE_tt__ProfileExtension (859)
 /* complex XML schema type 'tt:ProfileExtension': */
@@ -7006,7 +7096,7 @@ struct tt__ProfileExtension {
 };
 #endif
 
-/* onvif.h:6130 */
+/* onvif.h:6160 */
 #ifndef SOAP_TYPE_tt__ProfileExtension2
 #define SOAP_TYPE_tt__ProfileExtension2 (865)
 /* complex XML schema type 'tt:ProfileExtension2': */
@@ -7017,7 +7107,7 @@ struct tt__ProfileExtension2 {
 };
 #endif
 
-/* onvif.h:6192 */
+/* onvif.h:6222 */
 #ifndef SOAP_TYPE_tt__ConfigurationEntity
 #define SOAP_TYPE_tt__ConfigurationEntity (867)
 /* complex XML schema type 'tt:ConfigurationEntity': */
@@ -7031,7 +7121,7 @@ struct tt__ConfigurationEntity {
 };
 #endif
 
-/* onvif.h:6223 */
+/* onvif.h:6253 */
 #ifndef SOAP_TYPE_tt__VideoSourceConfigurationExtension
 #define SOAP_TYPE_tt__VideoSourceConfigurationExtension (868)
 /* complex XML schema type 'tt:VideoSourceConfigurationExtension': */
@@ -7043,7 +7133,7 @@ struct tt__VideoSourceConfigurationExtension {
 };
 #endif
 
-/* onvif.h:6234 */
+/* onvif.h:6264 */
 #ifndef SOAP_TYPE_tt__VideoSourceConfigurationExtension2
 #define SOAP_TYPE_tt__VideoSourceConfigurationExtension2 (871)
 /* complex XML schema type 'tt:VideoSourceConfigurationExtension2': */
@@ -7059,7 +7149,7 @@ struct tt__VideoSourceConfigurationExtension2 {
 };
 #endif
 
-/* onvif.h:6232 */
+/* onvif.h:6262 */
 #ifndef SOAP_TYPE_tt__Rotate
 #define SOAP_TYPE_tt__Rotate (869)
 /* complex XML schema type 'tt:Rotate': */
@@ -7075,7 +7165,7 @@ struct tt__Rotate {
 };
 #endif
 
-/* onvif.h:6297 */
+/* onvif.h:6327 */
 #ifndef SOAP_TYPE_tt__RotateExtension
 #define SOAP_TYPE_tt__RotateExtension (877)
 /* complex XML schema type 'tt:RotateExtension': */
@@ -7086,7 +7176,7 @@ struct tt__RotateExtension {
 };
 #endif
 
-/* onvif.h:6338 */
+/* onvif.h:6368 */
 #ifndef SOAP_TYPE_tt__LensProjection
 #define SOAP_TYPE_tt__LensProjection (879)
 /* complex XML schema type 'tt:LensProjection': */
@@ -7105,7 +7195,7 @@ struct tt__LensProjection {
 };
 #endif
 
-/* onvif.h:6384 */
+/* onvif.h:6414 */
 #ifndef SOAP_TYPE_tt__LensOffset
 #define SOAP_TYPE_tt__LensOffset (880)
 /* complex XML schema type 'tt:LensOffset': */
@@ -7119,7 +7209,7 @@ struct tt__LensOffset {
 };
 #endif
 
-/* onvif.h:6255 */
+/* onvif.h:6285 */
 #ifndef SOAP_TYPE_tt__LensDescription
 #define SOAP_TYPE_tt__LensDescription (873)
 /* complex XML schema type 'tt:LensDescription': */
@@ -7141,7 +7231,7 @@ struct tt__LensDescription {
 };
 #endif
 
-/* onvif.h:6469 */
+/* onvif.h:6499 */
 #ifndef SOAP_TYPE_tt__VideoSourceConfigurationOptions
 #define SOAP_TYPE_tt__VideoSourceConfigurationOptions (883)
 /* complex XML schema type 'tt:VideoSourceConfigurationOptions': */
@@ -7160,7 +7250,7 @@ struct tt__VideoSourceConfigurationOptions {
 };
 #endif
 
-/* onvif.h:6487 */
+/* onvif.h:6517 */
 #ifndef SOAP_TYPE_tt__VideoSourceConfigurationOptionsExtension
 #define SOAP_TYPE_tt__VideoSourceConfigurationOptionsExtension (885)
 /* complex XML schema type 'tt:VideoSourceConfigurationOptionsExtension': */
@@ -7175,7 +7265,7 @@ struct tt__VideoSourceConfigurationOptionsExtension {
 };
 #endif
 
-/* onvif.h:6529 */
+/* onvif.h:6559 */
 #ifndef SOAP_TYPE_tt__VideoSourceConfigurationOptionsExtension2
 #define SOAP_TYPE_tt__VideoSourceConfigurationOptionsExtension2 (889)
 /* complex XML schema type 'tt:VideoSourceConfigurationOptionsExtension2': */
@@ -7189,7 +7279,7 @@ struct tt__VideoSourceConfigurationOptionsExtension2 {
 };
 #endif
 
-/* onvif.h:6527 */
+/* onvif.h:6557 */
 #ifndef SOAP_TYPE_tt__RotateOptions
 #define SOAP_TYPE_tt__RotateOptions (887)
 /* complex XML schema type 'tt:RotateOptions': */
@@ -7208,7 +7298,7 @@ struct tt__RotateOptions {
 };
 #endif
 
-/* onvif.h:6588 */
+/* onvif.h:6618 */
 #ifndef SOAP_TYPE_tt__RotateOptionsExtension
 #define SOAP_TYPE_tt__RotateOptionsExtension (894)
 /* complex XML schema type 'tt:RotateOptionsExtension': */
@@ -7219,7 +7309,7 @@ struct tt__RotateOptionsExtension {
 };
 #endif
 
-/* onvif.h:6261 */
+/* onvif.h:6291 */
 #ifndef SOAP_TYPE_tt__SceneOrientation
 #define SOAP_TYPE_tt__SceneOrientation (875)
 /* complex XML schema type 'tt:SceneOrientation': */
@@ -7231,7 +7321,7 @@ struct tt__SceneOrientation {
 };
 #endif
 
-/* onvif.h:6661 */
+/* onvif.h:6691 */
 #ifndef SOAP_TYPE_tt__VideoResolution
 #define SOAP_TYPE_tt__VideoResolution (896)
 /* complex XML schema type 'tt:VideoResolution': */
@@ -7243,7 +7333,7 @@ struct tt__VideoResolution {
 };
 #endif
 
-/* onvif.h:6686 */
+/* onvif.h:6716 */
 #ifndef SOAP_TYPE_tt__VideoRateControl
 #define SOAP_TYPE_tt__VideoRateControl (897)
 /* complex XML schema type 'tt:VideoRateControl': */
@@ -7257,7 +7347,7 @@ struct tt__VideoRateControl {
 };
 #endif
 
-/* onvif.h:6717 */
+/* onvif.h:6747 */
 #ifndef SOAP_TYPE_tt__Mpeg4Configuration
 #define SOAP_TYPE_tt__Mpeg4Configuration (898)
 /* complex XML schema type 'tt:Mpeg4Configuration': */
@@ -7269,7 +7359,7 @@ struct tt__Mpeg4Configuration {
 };
 #endif
 
-/* onvif.h:6742 */
+/* onvif.h:6772 */
 #ifndef SOAP_TYPE_tt__H264Configuration
 #define SOAP_TYPE_tt__H264Configuration (899)
 /* complex XML schema type 'tt:H264Configuration': */
@@ -7281,7 +7371,7 @@ struct tt__H264Configuration {
 };
 #endif
 
-/* onvif.h:6767 */
+/* onvif.h:6797 */
 #ifndef SOAP_TYPE_tt__VideoEncoderConfigurationOptions
 #define SOAP_TYPE_tt__VideoEncoderConfigurationOptions (900)
 /* complex XML schema type 'tt:VideoEncoderConfigurationOptions': */
@@ -7303,7 +7393,7 @@ struct tt__VideoEncoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:6793 */
+/* onvif.h:6823 */
 #ifndef SOAP_TYPE_tt__VideoEncoderOptionsExtension
 #define SOAP_TYPE_tt__VideoEncoderOptionsExtension (907)
 /* complex XML schema type 'tt:VideoEncoderOptionsExtension': */
@@ -7322,7 +7412,7 @@ struct tt__VideoEncoderOptionsExtension {
 };
 #endif
 
-/* onvif.h:6847 */
+/* onvif.h:6877 */
 #ifndef SOAP_TYPE_tt__VideoEncoderOptionsExtension2
 #define SOAP_TYPE_tt__VideoEncoderOptionsExtension2 (915)
 /* complex XML schema type 'tt:VideoEncoderOptionsExtension2': */
@@ -7333,7 +7423,7 @@ struct tt__VideoEncoderOptionsExtension2 {
 };
 #endif
 
-/* onvif.h:6779 */
+/* onvif.h:6809 */
 #ifndef SOAP_TYPE_tt__JpegOptions
 #define SOAP_TYPE_tt__JpegOptions (901)
 /* complex XML schema type 'tt:JpegOptions': */
@@ -7348,7 +7438,7 @@ struct tt__JpegOptions {
 };
 #endif
 
-/* onvif.h:6785 */
+/* onvif.h:6815 */
 #ifndef SOAP_TYPE_tt__Mpeg4Options
 #define SOAP_TYPE_tt__Mpeg4Options (903)
 /* complex XML schema type 'tt:Mpeg4Options': */
@@ -7368,7 +7458,7 @@ struct tt__Mpeg4Options {
 };
 #endif
 
-/* onvif.h:6791 */
+/* onvif.h:6821 */
 #ifndef SOAP_TYPE_tt__H264Options
 #define SOAP_TYPE_tt__H264Options (905)
 /* complex XML schema type 'tt:H264Options': */
@@ -7388,7 +7478,7 @@ struct tt__H264Options {
 };
 #endif
 
-/* onvif.h:7018 */
+/* onvif.h:7048 */
 #ifndef SOAP_TYPE_tt__VideoResolution2
 #define SOAP_TYPE_tt__VideoResolution2 (920)
 /* complex XML schema type 'tt:VideoResolution2': */
@@ -7405,7 +7495,7 @@ struct tt__VideoResolution2 {
 };
 #endif
 
-/* onvif.h:7058 */
+/* onvif.h:7088 */
 #ifndef SOAP_TYPE_tt__VideoRateControl2
 #define SOAP_TYPE_tt__VideoRateControl2 (921)
 /* complex XML schema type 'tt:VideoRateControl2': */
@@ -7424,7 +7514,7 @@ struct tt__VideoRateControl2 {
 };
 #endif
 
-/* onvif.h:7104 */
+/* onvif.h:7134 */
 #ifndef SOAP_TYPE_tt__VideoEncoder2ConfigurationOptions
 #define SOAP_TYPE_tt__VideoEncoder2ConfigurationOptions (922)
 /* complex XML schema type 'tt:VideoEncoder2ConfigurationOptions': */
@@ -7456,7 +7546,7 @@ struct tt__VideoEncoder2ConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7188 */
+/* onvif.h:7218 */
 #ifndef SOAP_TYPE_tt__AudioSourceConfigurationOptions
 #define SOAP_TYPE_tt__AudioSourceConfigurationOptions (925)
 /* complex XML schema type 'tt:AudioSourceConfigurationOptions': */
@@ -7471,7 +7561,7 @@ struct tt__AudioSourceConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7198 */
+/* onvif.h:7228 */
 #ifndef SOAP_TYPE_tt__AudioSourceOptionsExtension
 #define SOAP_TYPE_tt__AudioSourceOptionsExtension (926)
 /* complex XML schema type 'tt:AudioSourceOptionsExtension': */
@@ -7482,7 +7572,7 @@ struct tt__AudioSourceOptionsExtension {
 };
 #endif
 
-/* onvif.h:7239 */
+/* onvif.h:7269 */
 #ifndef SOAP_TYPE_tt__AudioEncoderConfigurationOptions
 #define SOAP_TYPE_tt__AudioEncoderConfigurationOptions (928)
 /* complex XML schema type 'tt:AudioEncoderConfigurationOptions': */
@@ -7495,7 +7585,7 @@ struct tt__AudioEncoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7247 */
+/* onvif.h:7277 */
 #ifndef SOAP_TYPE_tt__AudioEncoderConfigurationOption
 #define SOAP_TYPE_tt__AudioEncoderConfigurationOption (929)
 /* complex XML schema type 'tt:AudioEncoderConfigurationOption': */
@@ -7514,7 +7604,7 @@ struct tt__AudioEncoderConfigurationOption {
 };
 #endif
 
-/* onvif.h:7312 */
+/* onvif.h:7342 */
 #ifndef SOAP_TYPE_tt__AudioEncoder2ConfigurationOptions
 #define SOAP_TYPE_tt__AudioEncoder2ConfigurationOptions (931)
 /* complex XML schema type 'tt:AudioEncoder2ConfigurationOptions': */
@@ -7533,7 +7623,7 @@ struct tt__AudioEncoder2ConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7358 */
+/* onvif.h:7388 */
 #ifndef SOAP_TYPE_tt__MetadataConfigurationExtension
 #define SOAP_TYPE_tt__MetadataConfigurationExtension (932)
 /* complex XML schema type 'tt:MetadataConfigurationExtension': */
@@ -7544,7 +7634,7 @@ struct tt__MetadataConfigurationExtension {
 };
 #endif
 
-/* onvif.h:7380 */
+/* onvif.h:7410 */
 #ifndef SOAP_TYPE_tt__PTZFilter
 #define SOAP_TYPE_tt__PTZFilter (933)
 /* complex XML schema type 'tt:PTZFilter': */
@@ -7558,7 +7648,7 @@ struct tt__PTZFilter {
 };
 #endif
 
-/* onvif.h:7426 */
+/* onvif.h:7456 */
 #ifndef SOAP_TYPE__tt__EventSubscription_SubscriptionPolicy
 #define SOAP_TYPE__tt__EventSubscription_SubscriptionPolicy (937)
 /* complex XML schema type 'tt:EventSubscription-SubscriptionPolicy': */
@@ -7569,7 +7659,7 @@ struct _tt__EventSubscription_SubscriptionPolicy {
 };
 #endif
 
-/* onvif.h:7415 */
+/* onvif.h:7445 */
 #ifndef SOAP_TYPE_tt__EventSubscription
 #define SOAP_TYPE_tt__EventSubscription (934)
 /* complex XML schema type 'tt:EventSubscription': */
@@ -7586,7 +7676,7 @@ struct tt__EventSubscription {
 };
 #endif
 
-/* onvif.h:7464 */
+/* onvif.h:7494 */
 #ifndef SOAP_TYPE_tt__MetadataConfigurationOptions
 #define SOAP_TYPE_tt__MetadataConfigurationOptions (939)
 /* complex XML schema type 'tt:MetadataConfigurationOptions': */
@@ -7607,7 +7697,7 @@ struct tt__MetadataConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7477 */
+/* onvif.h:7507 */
 #ifndef SOAP_TYPE_tt__MetadataConfigurationOptionsExtension
 #define SOAP_TYPE_tt__MetadataConfigurationOptionsExtension (942)
 /* complex XML schema type 'tt:MetadataConfigurationOptionsExtension': */
@@ -7620,7 +7710,7 @@ struct tt__MetadataConfigurationOptionsExtension {
 };
 #endif
 
-/* onvif.h:7518 */
+/* onvif.h:7548 */
 #ifndef SOAP_TYPE_tt__MetadataConfigurationOptionsExtension2
 #define SOAP_TYPE_tt__MetadataConfigurationOptionsExtension2 (944)
 /* complex XML schema type 'tt:MetadataConfigurationOptionsExtension2': */
@@ -7631,7 +7721,7 @@ struct tt__MetadataConfigurationOptionsExtension2 {
 };
 #endif
 
-/* onvif.h:7466 */
+/* onvif.h:7496 */
 #ifndef SOAP_TYPE_tt__PTZStatusFilterOptions
 #define SOAP_TYPE_tt__PTZStatusFilterOptions (940)
 /* complex XML schema type 'tt:PTZStatusFilterOptions': */
@@ -7654,7 +7744,7 @@ struct tt__PTZStatusFilterOptions {
 };
 #endif
 
-/* onvif.h:7588 */
+/* onvif.h:7618 */
 #ifndef SOAP_TYPE_tt__PTZStatusFilterOptionsExtension
 #define SOAP_TYPE_tt__PTZStatusFilterOptionsExtension (946)
 /* complex XML schema type 'tt:PTZStatusFilterOptionsExtension': */
@@ -7665,7 +7755,7 @@ struct tt__PTZStatusFilterOptionsExtension {
 };
 #endif
 
-/* onvif.h:7629 */
+/* onvif.h:7659 */
 #ifndef SOAP_TYPE_tt__VideoOutputExtension
 #define SOAP_TYPE_tt__VideoOutputExtension (948)
 /* complex XML schema type 'tt:VideoOutputExtension': */
@@ -7676,7 +7766,7 @@ struct tt__VideoOutputExtension {
 };
 #endif
 
-/* onvif.h:7651 */
+/* onvif.h:7681 */
 #ifndef SOAP_TYPE_tt__VideoOutputConfigurationOptions
 #define SOAP_TYPE_tt__VideoOutputConfigurationOptions (949)
 /* complex XML schema type 'tt:VideoOutputConfigurationOptions': */
@@ -7689,7 +7779,7 @@ struct tt__VideoOutputConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7679 */
+/* onvif.h:7709 */
 #ifndef SOAP_TYPE_tt__VideoDecoderConfigurationOptions
 #define SOAP_TYPE_tt__VideoDecoderConfigurationOptions (950)
 /* complex XML schema type 'tt:VideoDecoderConfigurationOptions': */
@@ -7707,7 +7797,7 @@ struct tt__VideoDecoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7691 */
+/* onvif.h:7721 */
 #ifndef SOAP_TYPE_tt__H264DecOptions
 #define SOAP_TYPE_tt__H264DecOptions (953)
 /* complex XML schema type 'tt:H264DecOptions': */
@@ -7730,7 +7820,7 @@ struct tt__H264DecOptions {
 };
 #endif
 
-/* onvif.h:7685 */
+/* onvif.h:7715 */
 #ifndef SOAP_TYPE_tt__JpegDecOptions
 #define SOAP_TYPE_tt__JpegDecOptions (951)
 /* complex XML schema type 'tt:JpegDecOptions': */
@@ -7750,7 +7840,7 @@ struct tt__JpegDecOptions {
 };
 #endif
 
-/* onvif.h:7697 */
+/* onvif.h:7727 */
 #ifndef SOAP_TYPE_tt__Mpeg4DecOptions
 #define SOAP_TYPE_tt__Mpeg4DecOptions (955)
 /* complex XML schema type 'tt:Mpeg4DecOptions': */
@@ -7773,7 +7863,7 @@ struct tt__Mpeg4DecOptions {
 };
 #endif
 
-/* onvif.h:7699 */
+/* onvif.h:7729 */
 #ifndef SOAP_TYPE_tt__VideoDecoderConfigurationOptionsExtension
 #define SOAP_TYPE_tt__VideoDecoderConfigurationOptionsExtension (957)
 /* complex XML schema type 'tt:VideoDecoderConfigurationOptionsExtension': */
@@ -7784,7 +7874,7 @@ struct tt__VideoDecoderConfigurationOptionsExtension {
 };
 #endif
 
-/* onvif.h:7900 */
+/* onvif.h:7930 */
 #ifndef SOAP_TYPE_tt__AudioOutputConfigurationOptions
 #define SOAP_TYPE_tt__AudioOutputConfigurationOptions (959)
 /* complex XML schema type 'tt:AudioOutputConfigurationOptions': */
@@ -7805,7 +7895,7 @@ struct tt__AudioOutputConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7966 */
+/* onvif.h:7996 */
 #ifndef SOAP_TYPE_tt__AudioDecoderConfigurationOptions
 #define SOAP_TYPE_tt__AudioDecoderConfigurationOptions (960)
 /* complex XML schema type 'tt:AudioDecoderConfigurationOptions': */
@@ -7823,7 +7913,7 @@ struct tt__AudioDecoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:7978 */
+/* onvif.h:8008 */
 #ifndef SOAP_TYPE_tt__G711DecOptions
 #define SOAP_TYPE_tt__G711DecOptions (963)
 /* complex XML schema type 'tt:G711DecOptions': */
@@ -7840,7 +7930,7 @@ struct tt__G711DecOptions {
 };
 #endif
 
-/* onvif.h:7972 */
+/* onvif.h:8002 */
 #ifndef SOAP_TYPE_tt__AACDecOptions
 #define SOAP_TYPE_tt__AACDecOptions (961)
 /* complex XML schema type 'tt:AACDecOptions': */
@@ -7857,7 +7947,7 @@ struct tt__AACDecOptions {
 };
 #endif
 
-/* onvif.h:7984 */
+/* onvif.h:8014 */
 #ifndef SOAP_TYPE_tt__G726DecOptions
 #define SOAP_TYPE_tt__G726DecOptions (965)
 /* complex XML schema type 'tt:G726DecOptions': */
@@ -7874,7 +7964,7 @@ struct tt__G726DecOptions {
 };
 #endif
 
-/* onvif.h:7986 */
+/* onvif.h:8016 */
 #ifndef SOAP_TYPE_tt__AudioDecoderConfigurationOptionsExtension
 #define SOAP_TYPE_tt__AudioDecoderConfigurationOptionsExtension (967)
 /* complex XML schema type 'tt:AudioDecoderConfigurationOptionsExtension': */
@@ -7885,7 +7975,7 @@ struct tt__AudioDecoderConfigurationOptionsExtension {
 };
 #endif
 
-/* onvif.h:8147 */
+/* onvif.h:8177 */
 #ifndef SOAP_TYPE_tt__MulticastConfiguration
 #define SOAP_TYPE_tt__MulticastConfiguration (969)
 /* complex XML schema type 'tt:MulticastConfiguration': */
@@ -7906,7 +7996,7 @@ struct tt__MulticastConfiguration {
 };
 #endif
 
-/* onvif.h:8199 */
+/* onvif.h:8229 */
 #ifndef SOAP_TYPE_tt__StreamSetup
 #define SOAP_TYPE_tt__StreamSetup (970)
 /* complex XML schema type 'tt:StreamSetup': */
@@ -7923,7 +8013,7 @@ struct tt__StreamSetup {
 };
 #endif
 
-/* onvif.h:8207 */
+/* onvif.h:8237 */
 #ifndef SOAP_TYPE_tt__Transport
 #define SOAP_TYPE_tt__Transport (971)
 /* Type tt__Transport is a recursive data type, (in)directly referencing itself through its (base or derived class) members */
@@ -7936,7 +8026,7 @@ struct tt__Transport {
 };
 #endif
 
-/* onvif.h:8260 */
+/* onvif.h:8290 */
 #ifndef SOAP_TYPE_tt__MediaUri
 #define SOAP_TYPE_tt__MediaUri (973)
 /* complex XML schema type 'tt:MediaUri': */
@@ -7957,7 +8047,7 @@ struct tt__MediaUri {
 };
 #endif
 
-/* onvif.h:2692 */
+/* onvif.h:2722 */
 #ifndef SOAP_TYPE_tt__Scope
 #define SOAP_TYPE_tt__Scope (583)
 /* complex XML schema type 'tt:Scope': */
@@ -7969,7 +8059,7 @@ struct tt__Scope {
 };
 #endif
 
-/* onvif.h:8337 */
+/* onvif.h:8367 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceExtension
 #define SOAP_TYPE_tt__NetworkInterfaceExtension (974)
 /* complex XML schema type 'tt:NetworkInterfaceExtension': */
@@ -7990,7 +8080,7 @@ struct tt__NetworkInterfaceExtension {
 };
 #endif
 
-/* onvif.h:8356 */
+/* onvif.h:8386 */
 #ifndef SOAP_TYPE_tt__Dot3Configuration
 #define SOAP_TYPE_tt__Dot3Configuration (975)
 /* complex XML schema type 'tt:Dot3Configuration': */
@@ -8003,7 +8093,7 @@ struct tt__Dot3Configuration {
 };
 #endif
 
-/* onvif.h:8362 */
+/* onvif.h:8392 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceExtension2
 #define SOAP_TYPE_tt__NetworkInterfaceExtension2 (979)
 /* complex XML schema type 'tt:NetworkInterfaceExtension2': */
@@ -8014,7 +8104,7 @@ struct tt__NetworkInterfaceExtension2 {
 };
 #endif
 
-/* onvif.h:8425 */
+/* onvif.h:8455 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceLink
 #define SOAP_TYPE_tt__NetworkInterfaceLink (981)
 /* complex XML schema type 'tt:NetworkInterfaceLink': */
@@ -8028,7 +8118,7 @@ struct tt__NetworkInterfaceLink {
 };
 #endif
 
-/* onvif.h:8431 */
+/* onvif.h:8461 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceConnectionSetting
 #define SOAP_TYPE_tt__NetworkInterfaceConnectionSetting (982)
 /* complex XML schema type 'tt:NetworkInterfaceConnectionSetting': */
@@ -8042,7 +8132,7 @@ struct tt__NetworkInterfaceConnectionSetting {
 };
 #endif
 
-/* onvif.h:8487 */
+/* onvif.h:8517 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceInfo
 #define SOAP_TYPE_tt__NetworkInterfaceInfo (984)
 /* complex XML schema type 'tt:NetworkInterfaceInfo': */
@@ -8056,7 +8146,7 @@ struct tt__NetworkInterfaceInfo {
 };
 #endif
 
-/* onvif.h:8518 */
+/* onvif.h:8548 */
 #ifndef SOAP_TYPE_tt__IPv6NetworkInterface
 #define SOAP_TYPE_tt__IPv6NetworkInterface (985)
 /* complex XML schema type 'tt:IPv6NetworkInterface': */
@@ -8068,7 +8158,7 @@ struct tt__IPv6NetworkInterface {
 };
 #endif
 
-/* onvif.h:8543 */
+/* onvif.h:8573 */
 #ifndef SOAP_TYPE_tt__IPv4NetworkInterface
 #define SOAP_TYPE_tt__IPv4NetworkInterface (988)
 /* complex XML schema type 'tt:IPv4NetworkInterface': */
@@ -8080,7 +8170,7 @@ struct tt__IPv4NetworkInterface {
 };
 #endif
 
-/* onvif.h:8555 */
+/* onvif.h:8585 */
 #ifndef SOAP_TYPE_tt__IPv4Configuration
 #define SOAP_TYPE_tt__IPv4Configuration (989)
 /* complex XML schema type 'tt:IPv4Configuration': */
@@ -8102,7 +8192,7 @@ struct tt__IPv4Configuration {
 };
 #endif
 
-/* onvif.h:8530 */
+/* onvif.h:8560 */
 #ifndef SOAP_TYPE_tt__IPv6Configuration
 #define SOAP_TYPE_tt__IPv6Configuration (986)
 /* complex XML schema type 'tt:IPv6Configuration': */
@@ -8130,7 +8220,7 @@ struct tt__IPv6Configuration {
 };
 #endif
 
-/* onvif.h:8668 */
+/* onvif.h:8698 */
 #ifndef SOAP_TYPE_tt__IPv6ConfigurationExtension
 #define SOAP_TYPE_tt__IPv6ConfigurationExtension (995)
 /* complex XML schema type 'tt:IPv6ConfigurationExtension': */
@@ -8141,7 +8231,7 @@ struct tt__IPv6ConfigurationExtension {
 };
 #endif
 
-/* onvif.h:4081 */
+/* onvif.h:4111 */
 #ifndef SOAP_TYPE_tt__NetworkProtocol
 #define SOAP_TYPE_tt__NetworkProtocol (689)
 /* complex XML schema type 'tt:NetworkProtocol': */
@@ -8160,7 +8250,7 @@ struct tt__NetworkProtocol {
 };
 #endif
 
-/* onvif.h:8731 */
+/* onvif.h:8761 */
 #ifndef SOAP_TYPE_tt__NetworkProtocolExtension
 #define SOAP_TYPE_tt__NetworkProtocolExtension (997)
 /* complex XML schema type 'tt:NetworkProtocolExtension': */
@@ -8171,7 +8261,7 @@ struct tt__NetworkProtocolExtension {
 };
 #endif
 
-/* onvif.h:2977 */
+/* onvif.h:3007 */
 #ifndef SOAP_TYPE_tt__NetworkHost
 #define SOAP_TYPE_tt__NetworkHost (602)
 /* complex XML schema type 'tt:NetworkHost': */
@@ -8191,7 +8281,7 @@ struct tt__NetworkHost {
 };
 #endif
 
-/* onvif.h:8798 */
+/* onvif.h:8828 */
 #ifndef SOAP_TYPE_tt__NetworkHostExtension
 #define SOAP_TYPE_tt__NetworkHostExtension (999)
 /* complex XML schema type 'tt:NetworkHostExtension': */
@@ -8202,7 +8292,7 @@ struct tt__NetworkHostExtension {
 };
 #endif
 
-/* onvif.h:3786 */
+/* onvif.h:3816 */
 #ifndef SOAP_TYPE_tt__IPAddress
 #define SOAP_TYPE_tt__IPAddress (663)
 /* complex XML schema type 'tt:IPAddress': */
@@ -8216,7 +8306,7 @@ struct tt__IPAddress {
 };
 #endif
 
-/* onvif.h:8576 */
+/* onvif.h:8606 */
 #ifndef SOAP_TYPE_tt__PrefixedIPv4Address
 #define SOAP_TYPE_tt__PrefixedIPv4Address (991)
 /* complex XML schema type 'tt:PrefixedIPv4Address': */
@@ -8228,7 +8318,7 @@ struct tt__PrefixedIPv4Address {
 };
 #endif
 
-/* onvif.h:8642 */
+/* onvif.h:8672 */
 #ifndef SOAP_TYPE_tt__PrefixedIPv6Address
 #define SOAP_TYPE_tt__PrefixedIPv6Address (993)
 /* complex XML schema type 'tt:PrefixedIPv6Address': */
@@ -8240,7 +8330,7 @@ struct tt__PrefixedIPv6Address {
 };
 #endif
 
-/* onvif.h:3642 */
+/* onvif.h:3672 */
 #ifndef SOAP_TYPE_tt__HostnameInformation
 #define SOAP_TYPE_tt__HostnameInformation (651)
 /* complex XML schema type 'tt:HostnameInformation': */
@@ -8256,7 +8346,7 @@ struct tt__HostnameInformation {
 };
 #endif
 
-/* onvif.h:8934 */
+/* onvif.h:8964 */
 #ifndef SOAP_TYPE_tt__HostnameInformationExtension
 #define SOAP_TYPE_tt__HostnameInformationExtension (1001)
 /* complex XML schema type 'tt:HostnameInformationExtension': */
@@ -8267,7 +8357,7 @@ struct tt__HostnameInformationExtension {
 };
 #endif
 
-/* onvif.h:3750 */
+/* onvif.h:3780 */
 #ifndef SOAP_TYPE_tt__DNSInformation
 #define SOAP_TYPE_tt__DNSInformation (659)
 /* complex XML schema type 'tt:DNSInformation': */
@@ -8290,7 +8380,7 @@ struct tt__DNSInformation {
 };
 #endif
 
-/* onvif.h:9007 */
+/* onvif.h:9037 */
 #ifndef SOAP_TYPE_tt__DNSInformationExtension
 #define SOAP_TYPE_tt__DNSInformationExtension (1003)
 /* complex XML schema type 'tt:DNSInformationExtension': */
@@ -8301,7 +8391,7 @@ struct tt__DNSInformationExtension {
 };
 #endif
 
-/* onvif.h:3834 */
+/* onvif.h:3864 */
 #ifndef SOAP_TYPE_tt__NTPInformation
 #define SOAP_TYPE_tt__NTPInformation (668)
 /* complex XML schema type 'tt:NTPInformation': */
@@ -8321,7 +8411,7 @@ struct tt__NTPInformation {
 };
 #endif
 
-/* onvif.h:9072 */
+/* onvif.h:9102 */
 #ifndef SOAP_TYPE_tt__NTPInformationExtension
 #define SOAP_TYPE_tt__NTPInformationExtension (1005)
 /* complex XML schema type 'tt:NTPInformationExtension': */
@@ -8332,7 +8422,7 @@ struct tt__NTPInformationExtension {
 };
 #endif
 
-/* onvif.h:3910 */
+/* onvif.h:3940 */
 #ifndef SOAP_TYPE_tt__DynamicDNSInformation
 #define SOAP_TYPE_tt__DynamicDNSInformation (674)
 /* complex XML schema type 'tt:DynamicDNSInformation': */
@@ -8350,7 +8440,7 @@ struct tt__DynamicDNSInformation {
 };
 #endif
 
-/* onvif.h:9133 */
+/* onvif.h:9163 */
 #ifndef SOAP_TYPE_tt__DynamicDNSInformationExtension
 #define SOAP_TYPE_tt__DynamicDNSInformationExtension (1007)
 /* complex XML schema type 'tt:DynamicDNSInformationExtension': */
@@ -8361,7 +8451,7 @@ struct tt__DynamicDNSInformationExtension {
 };
 #endif
 
-/* onvif.h:4018 */
+/* onvif.h:4048 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceSetConfiguration
 #define SOAP_TYPE_tt__NetworkInterfaceSetConfiguration (684)
 /* complex XML schema type 'tt:NetworkInterfaceSetConfiguration': */
@@ -8383,7 +8473,7 @@ struct tt__NetworkInterfaceSetConfiguration {
 };
 #endif
 
-/* onvif.h:9206 */
+/* onvif.h:9236 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceSetConfigurationExtension
 #define SOAP_TYPE_tt__NetworkInterfaceSetConfigurationExtension (1013)
 /* complex XML schema type 'tt:NetworkInterfaceSetConfigurationExtension': */
@@ -8402,7 +8492,7 @@ struct tt__NetworkInterfaceSetConfigurationExtension {
 };
 #endif
 
-/* onvif.h:9204 */
+/* onvif.h:9234 */
 #ifndef SOAP_TYPE_tt__IPv6NetworkInterfaceSetConfiguration
 #define SOAP_TYPE_tt__IPv6NetworkInterfaceSetConfiguration (1011)
 /* complex XML schema type 'tt:IPv6NetworkInterfaceSetConfiguration': */
@@ -8419,7 +8509,7 @@ struct tt__IPv6NetworkInterfaceSetConfiguration {
 };
 #endif
 
-/* onvif.h:9198 */
+/* onvif.h:9228 */
 #ifndef SOAP_TYPE_tt__IPv4NetworkInterfaceSetConfiguration
 #define SOAP_TYPE_tt__IPv4NetworkInterfaceSetConfiguration (1009)
 /* complex XML schema type 'tt:IPv4NetworkInterfaceSetConfiguration': */
@@ -8434,7 +8524,7 @@ struct tt__IPv4NetworkInterfaceSetConfiguration {
 };
 #endif
 
-/* onvif.h:4151 */
+/* onvif.h:4181 */
 #ifndef SOAP_TYPE_tt__NetworkGateway
 #define SOAP_TYPE_tt__NetworkGateway (695)
 /* complex XML schema type 'tt:NetworkGateway': */
@@ -8448,7 +8538,7 @@ struct tt__NetworkGateway {
 };
 #endif
 
-/* onvif.h:4229 */
+/* onvif.h:4259 */
 #ifndef SOAP_TYPE_tt__NetworkZeroConfiguration
 #define SOAP_TYPE_tt__NetworkZeroConfiguration (703)
 /* complex XML schema type 'tt:NetworkZeroConfiguration': */
@@ -8467,7 +8557,7 @@ struct tt__NetworkZeroConfiguration {
 };
 #endif
 
-/* onvif.h:9380 */
+/* onvif.h:9410 */
 #ifndef SOAP_TYPE_tt__NetworkZeroConfigurationExtension
 #define SOAP_TYPE_tt__NetworkZeroConfigurationExtension (1018)
 /* Type tt__NetworkZeroConfigurationExtension is a recursive data type, (in)directly referencing itself through its (base or derived class) members */
@@ -8484,7 +8574,7 @@ struct tt__NetworkZeroConfigurationExtension {
 };
 #endif
 
-/* onvif.h:9418 */
+/* onvif.h:9448 */
 #ifndef SOAP_TYPE_tt__NetworkZeroConfigurationExtension2
 #define SOAP_TYPE_tt__NetworkZeroConfigurationExtension2 (1020)
 /* complex XML schema type 'tt:NetworkZeroConfigurationExtension2': */
@@ -8495,7 +8585,7 @@ struct tt__NetworkZeroConfigurationExtension2 {
 };
 #endif
 
-/* onvif.h:4299 */
+/* onvif.h:4329 */
 #ifndef SOAP_TYPE_tt__IPAddressFilter
 #define SOAP_TYPE_tt__IPAddressFilter (709)
 /* complex XML schema type 'tt:IPAddressFilter': */
@@ -8515,7 +8605,7 @@ struct tt__IPAddressFilter {
 };
 #endif
 
-/* onvif.h:9465 */
+/* onvif.h:9495 */
 #ifndef SOAP_TYPE_tt__IPAddressFilterExtension
 #define SOAP_TYPE_tt__IPAddressFilterExtension (1022)
 /* complex XML schema type 'tt:IPAddressFilterExtension': */
@@ -8526,7 +8616,7 @@ struct tt__IPAddressFilterExtension {
 };
 #endif
 
-/* onvif.h:8360 */
+/* onvif.h:8390 */
 #ifndef SOAP_TYPE_tt__Dot11Configuration
 #define SOAP_TYPE_tt__Dot11Configuration (977)
 /* complex XML schema type 'tt:Dot11Configuration': */
@@ -8549,7 +8639,7 @@ struct tt__Dot11Configuration {
 };
 #endif
 
-/* onvif.h:9516 */
+/* onvif.h:9546 */
 #ifndef SOAP_TYPE_tt__Dot11SecurityConfiguration
 #define SOAP_TYPE_tt__Dot11SecurityConfiguration (1024)
 /* complex XML schema type 'tt:Dot11SecurityConfiguration': */
@@ -8569,7 +8659,7 @@ struct tt__Dot11SecurityConfiguration {
 };
 #endif
 
-/* onvif.h:9554 */
+/* onvif.h:9584 */
 #ifndef SOAP_TYPE_tt__Dot11SecurityConfigurationExtension
 #define SOAP_TYPE_tt__Dot11SecurityConfigurationExtension (1029)
 /* complex XML schema type 'tt:Dot11SecurityConfigurationExtension': */
@@ -8582,7 +8672,7 @@ struct tt__Dot11SecurityConfigurationExtension {
 };
 #endif
 
-/* onvif.h:9550 */
+/* onvif.h:9580 */
 #ifndef SOAP_TYPE_tt__Dot11PSKSet
 #define SOAP_TYPE_tt__Dot11PSKSet (1027)
 /* complex XML schema type 'tt:Dot11PSKSet': */
@@ -8598,7 +8688,7 @@ struct tt__Dot11PSKSet {
 };
 #endif
 
-/* onvif.h:9618 */
+/* onvif.h:9648 */
 #ifndef SOAP_TYPE_tt__Dot11PSKSetExtension
 #define SOAP_TYPE_tt__Dot11PSKSetExtension (1031)
 /* complex XML schema type 'tt:Dot11PSKSetExtension': */
@@ -8609,7 +8699,7 @@ struct tt__Dot11PSKSetExtension {
 };
 #endif
 
-/* onvif.h:9244 */
+/* onvif.h:9274 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceSetConfigurationExtension2
 #define SOAP_TYPE_tt__NetworkInterfaceSetConfigurationExtension2 (1015)
 /* complex XML schema type 'tt:NetworkInterfaceSetConfigurationExtension2': */
@@ -8620,7 +8710,7 @@ struct tt__NetworkInterfaceSetConfigurationExtension2 {
 };
 #endif
 
-/* onvif.h:5258 */
+/* onvif.h:5288 */
 #ifndef SOAP_TYPE_tt__Dot11Capabilities
 #define SOAP_TYPE_tt__Dot11Capabilities (786)
 /* complex XML schema type 'tt:Dot11Capabilities': */
@@ -8643,7 +8733,7 @@ struct tt__Dot11Capabilities {
 };
 #endif
 
-/* onvif.h:5290 */
+/* onvif.h:5320 */
 #ifndef SOAP_TYPE_tt__Dot11Status
 #define SOAP_TYPE_tt__Dot11Status (790)
 /* complex XML schema type 'tt:Dot11Status': */
@@ -8668,7 +8758,7 @@ struct tt__Dot11Status {
 };
 #endif
 
-/* onvif.h:5324 */
+/* onvif.h:5354 */
 #ifndef SOAP_TYPE_tt__Dot11AvailableNetworks
 #define SOAP_TYPE_tt__Dot11AvailableNetworks (794)
 /* complex XML schema type 'tt:Dot11AvailableNetworks': */
@@ -8695,7 +8785,7 @@ struct tt__Dot11AvailableNetworks {
 };
 #endif
 
-/* onvif.h:9783 */
+/* onvif.h:9813 */
 #ifndef SOAP_TYPE_tt__Dot11AvailableNetworksExtension
 #define SOAP_TYPE_tt__Dot11AvailableNetworksExtension (1035)
 /* complex XML schema type 'tt:Dot11AvailableNetworksExtension': */
@@ -8706,7 +8796,7 @@ struct tt__Dot11AvailableNetworksExtension {
 };
 #endif
 
-/* onvif.h:3608 */
+/* onvif.h:3638 */
 #ifndef SOAP_TYPE_tt__Capabilities
 #define SOAP_TYPE_tt__Capabilities (647)
 /* complex XML schema type 'tt:Capabilities': */
@@ -8730,7 +8820,7 @@ struct tt__Capabilities {
 };
 #endif
 
-/* onvif.h:9862 */
+/* onvif.h:9892 */
 #ifndef SOAP_TYPE_tt__CapabilitiesExtension
 #define SOAP_TYPE_tt__CapabilitiesExtension (1049)
 /* complex XML schema type 'tt:CapabilitiesExtension': */
@@ -8757,7 +8847,7 @@ struct tt__CapabilitiesExtension {
 };
 #endif
 
-/* onvif.h:9906 */
+/* onvif.h:9936 */
 #ifndef SOAP_TYPE_tt__CapabilitiesExtension2
 #define SOAP_TYPE_tt__CapabilitiesExtension2 (1065)
 /* complex XML schema type 'tt:CapabilitiesExtension2': */
@@ -8768,7 +8858,7 @@ struct tt__CapabilitiesExtension2 {
 };
 #endif
 
-/* onvif.h:9830 */
+/* onvif.h:9860 */
 #ifndef SOAP_TYPE_tt__AnalyticsCapabilities
 #define SOAP_TYPE_tt__AnalyticsCapabilities (1037)
 /* complex XML schema type 'tt:AnalyticsCapabilities': */
@@ -8787,7 +8877,7 @@ struct tt__AnalyticsCapabilities {
 };
 #endif
 
-/* onvif.h:9836 */
+/* onvif.h:9866 */
 #ifndef SOAP_TYPE_tt__DeviceCapabilities
 #define SOAP_TYPE_tt__DeviceCapabilities (1039)
 /* complex XML schema type 'tt:DeviceCapabilities': */
@@ -8809,7 +8899,7 @@ struct tt__DeviceCapabilities {
 };
 #endif
 
-/* onvif.h:10019 */
+/* onvif.h:10049 */
 #ifndef SOAP_TYPE_tt__DeviceCapabilitiesExtension
 #define SOAP_TYPE_tt__DeviceCapabilitiesExtension (1075)
 /* complex XML schema type 'tt:DeviceCapabilitiesExtension': */
@@ -8820,7 +8910,7 @@ struct tt__DeviceCapabilitiesExtension {
 };
 #endif
 
-/* onvif.h:9842 */
+/* onvif.h:9872 */
 #ifndef SOAP_TYPE_tt__EventCapabilities
 #define SOAP_TYPE_tt__EventCapabilities (1041)
 /* complex XML schema type 'tt:EventCapabilities': */
@@ -8841,7 +8931,7 @@ struct tt__EventCapabilities {
 };
 #endif
 
-/* onvif.h:10011 */
+/* onvif.h:10041 */
 #ifndef SOAP_TYPE_tt__IOCapabilities
 #define SOAP_TYPE_tt__IOCapabilities (1071)
 /* complex XML schema type 'tt:IOCapabilities': */
@@ -8857,7 +8947,7 @@ struct tt__IOCapabilities {
 };
 #endif
 
-/* onvif.h:10126 */
+/* onvif.h:10156 */
 #ifndef SOAP_TYPE_tt__IOCapabilitiesExtension
 #define SOAP_TYPE_tt__IOCapabilitiesExtension (1077)
 /* complex XML schema type 'tt:IOCapabilitiesExtension': */
@@ -8877,7 +8967,7 @@ struct tt__IOCapabilitiesExtension {
 };
 #endif
 
-/* onvif.h:10162 */
+/* onvif.h:10192 */
 #ifndef SOAP_TYPE_tt__IOCapabilitiesExtension2
 #define SOAP_TYPE_tt__IOCapabilitiesExtension2 (1080)
 /* complex XML schema type 'tt:IOCapabilitiesExtension2': */
@@ -8888,7 +8978,7 @@ struct tt__IOCapabilitiesExtension2 {
 };
 #endif
 
-/* onvif.h:9854 */
+/* onvif.h:9884 */
 #ifndef SOAP_TYPE_tt__MediaCapabilities
 #define SOAP_TYPE_tt__MediaCapabilities (1045)
 /* complex XML schema type 'tt:MediaCapabilities': */
@@ -8907,7 +8997,7 @@ struct tt__MediaCapabilities {
 };
 #endif
 
-/* onvif.h:10226 */
+/* onvif.h:10256 */
 #ifndef SOAP_TYPE_tt__MediaCapabilitiesExtension
 #define SOAP_TYPE_tt__MediaCapabilitiesExtension (1084)
 /* complex XML schema type 'tt:MediaCapabilitiesExtension': */
@@ -8922,7 +9012,7 @@ struct tt__MediaCapabilitiesExtension {
 };
 #endif
 
-/* onvif.h:10215 */
+/* onvif.h:10245 */
 #ifndef SOAP_TYPE_tt__RealTimeStreamingCapabilities
 #define SOAP_TYPE_tt__RealTimeStreamingCapabilities (1082)
 /* complex XML schema type 'tt:RealTimeStreamingCapabilities': */
@@ -8940,7 +9030,7 @@ struct tt__RealTimeStreamingCapabilities {
 };
 #endif
 
-/* onvif.h:10295 */
+/* onvif.h:10325 */
 #ifndef SOAP_TYPE_tt__RealTimeStreamingCapabilitiesExtension
 #define SOAP_TYPE_tt__RealTimeStreamingCapabilitiesExtension (1088)
 /* complex XML schema type 'tt:RealTimeStreamingCapabilitiesExtension': */
@@ -8951,7 +9041,7 @@ struct tt__RealTimeStreamingCapabilitiesExtension {
 };
 #endif
 
-/* onvif.h:10247 */
+/* onvif.h:10277 */
 #ifndef SOAP_TYPE_tt__ProfileCapabilities
 #define SOAP_TYPE_tt__ProfileCapabilities (1086)
 /* complex XML schema type 'tt:ProfileCapabilities': */
@@ -8966,7 +9056,7 @@ struct tt__ProfileCapabilities {
 };
 #endif
 
-/* onvif.h:9999 */
+/* onvif.h:10029 */
 #ifndef SOAP_TYPE_tt__NetworkCapabilities
 #define SOAP_TYPE_tt__NetworkCapabilities (1067)
 /* complex XML schema type 'tt:NetworkCapabilities': */
@@ -8986,7 +9076,7 @@ struct tt__NetworkCapabilities {
 };
 #endif
 
-/* onvif.h:10396 */
+/* onvif.h:10426 */
 #ifndef SOAP_TYPE_tt__NetworkCapabilitiesExtension
 #define SOAP_TYPE_tt__NetworkCapabilitiesExtension (1090)
 /* complex XML schema type 'tt:NetworkCapabilitiesExtension': */
@@ -9001,7 +9091,7 @@ struct tt__NetworkCapabilitiesExtension {
 };
 #endif
 
-/* onvif.h:10428 */
+/* onvif.h:10458 */
 #ifndef SOAP_TYPE_tt__NetworkCapabilitiesExtension2
 #define SOAP_TYPE_tt__NetworkCapabilitiesExtension2 (1092)
 /* complex XML schema type 'tt:NetworkCapabilitiesExtension2': */
@@ -9012,7 +9102,7 @@ struct tt__NetworkCapabilitiesExtension2 {
 };
 #endif
 
-/* onvif.h:10017 */
+/* onvif.h:10047 */
 #ifndef SOAP_TYPE_tt__SecurityCapabilities
 #define SOAP_TYPE_tt__SecurityCapabilities (1073)
 /* complex XML schema type 'tt:SecurityCapabilities': */
@@ -9043,7 +9133,7 @@ struct tt__SecurityCapabilities {
 };
 #endif
 
-/* onvif.h:10522 */
+/* onvif.h:10552 */
 #ifndef SOAP_TYPE_tt__SecurityCapabilitiesExtension
 #define SOAP_TYPE_tt__SecurityCapabilitiesExtension (1094)
 /* complex XML schema type 'tt:SecurityCapabilitiesExtension': */
@@ -9055,7 +9145,7 @@ struct tt__SecurityCapabilitiesExtension {
 };
 #endif
 
-/* onvif.h:10545 */
+/* onvif.h:10575 */
 #ifndef SOAP_TYPE_tt__SecurityCapabilitiesExtension2
 #define SOAP_TYPE_tt__SecurityCapabilitiesExtension2 (1096)
 /* complex XML schema type 'tt:SecurityCapabilitiesExtension2': */
@@ -9073,7 +9163,7 @@ struct tt__SecurityCapabilitiesExtension2 {
 };
 #endif
 
-/* onvif.h:10005 */
+/* onvif.h:10035 */
 #ifndef SOAP_TYPE_tt__SystemCapabilities
 #define SOAP_TYPE_tt__SystemCapabilities (1069)
 /* complex XML schema type 'tt:SystemCapabilities': */
@@ -9100,7 +9190,7 @@ struct tt__SystemCapabilities {
 };
 #endif
 
-/* onvif.h:10638 */
+/* onvif.h:10668 */
 #ifndef SOAP_TYPE_tt__SystemCapabilitiesExtension
 #define SOAP_TYPE_tt__SystemCapabilitiesExtension (1098)
 /* complex XML schema type 'tt:SystemCapabilitiesExtension': */
@@ -9121,7 +9211,7 @@ struct tt__SystemCapabilitiesExtension {
 };
 #endif
 
-/* onvif.h:10676 */
+/* onvif.h:10706 */
 #ifndef SOAP_TYPE_tt__SystemCapabilitiesExtension2
 #define SOAP_TYPE_tt__SystemCapabilitiesExtension2 (1100)
 /* complex XML schema type 'tt:SystemCapabilitiesExtension2': */
@@ -9132,7 +9222,7 @@ struct tt__SystemCapabilitiesExtension2 {
 };
 #endif
 
-/* onvif.h:1664 */
+/* onvif.h:1694 */
 #ifndef SOAP_TYPE_tt__OnvifVersion
 #define SOAP_TYPE_tt__OnvifVersion (522)
 /* complex XML schema type 'tt:OnvifVersion': */
@@ -9144,7 +9234,7 @@ struct tt__OnvifVersion {
 };
 #endif
 
-/* onvif.h:9848 */
+/* onvif.h:9878 */
 #ifndef SOAP_TYPE_tt__ImagingCapabilities
 #define SOAP_TYPE_tt__ImagingCapabilities (1043)
 /* complex XML schema type 'tt:ImagingCapabilities': */
@@ -9156,7 +9246,7 @@ struct tt__ImagingCapabilities {
 };
 #endif
 
-/* onvif.h:9860 */
+/* onvif.h:9890 */
 #ifndef SOAP_TYPE_tt__PTZCapabilities
 #define SOAP_TYPE_tt__PTZCapabilities (1047)
 /* complex XML schema type 'tt:PTZCapabilities': */
@@ -9171,7 +9261,7 @@ struct tt__PTZCapabilities {
 };
 #endif
 
-/* onvif.h:9892 */
+/* onvif.h:9922 */
 #ifndef SOAP_TYPE_tt__DeviceIOCapabilities
 #define SOAP_TYPE_tt__DeviceIOCapabilities (1051)
 /* complex XML schema type 'tt:DeviceIOCapabilities': */
@@ -9196,7 +9286,7 @@ struct tt__DeviceIOCapabilities {
 };
 #endif
 
-/* onvif.h:9894 */
+/* onvif.h:9924 */
 #ifndef SOAP_TYPE_tt__DisplayCapabilities
 #define SOAP_TYPE_tt__DisplayCapabilities (1053)
 /* complex XML schema type 'tt:DisplayCapabilities': */
@@ -9213,7 +9303,7 @@ struct tt__DisplayCapabilities {
 };
 #endif
 
-/* onvif.h:9896 */
+/* onvif.h:9926 */
 #ifndef SOAP_TYPE_tt__RecordingCapabilities
 #define SOAP_TYPE_tt__RecordingCapabilities (1055)
 /* complex XML schema type 'tt:RecordingCapabilities': */
@@ -9238,7 +9328,7 @@ struct tt__RecordingCapabilities {
 };
 #endif
 
-/* onvif.h:9898 */
+/* onvif.h:9928 */
 #ifndef SOAP_TYPE_tt__SearchCapabilities
 #define SOAP_TYPE_tt__SearchCapabilities (1057)
 /* complex XML schema type 'tt:SearchCapabilities': */
@@ -9255,7 +9345,7 @@ struct tt__SearchCapabilities {
 };
 #endif
 
-/* onvif.h:9900 */
+/* onvif.h:9930 */
 #ifndef SOAP_TYPE_tt__ReplayCapabilities
 #define SOAP_TYPE_tt__ReplayCapabilities (1059)
 /* complex XML schema type 'tt:ReplayCapabilities': */
@@ -9270,7 +9360,7 @@ struct tt__ReplayCapabilities {
 };
 #endif
 
-/* onvif.h:9902 */
+/* onvif.h:9932 */
 #ifndef SOAP_TYPE_tt__ReceiverCapabilities
 #define SOAP_TYPE_tt__ReceiverCapabilities (1061)
 /* complex XML schema type 'tt:ReceiverCapabilities': */
@@ -9295,7 +9385,7 @@ struct tt__ReceiverCapabilities {
 };
 #endif
 
-/* onvif.h:9904 */
+/* onvif.h:9934 */
 #ifndef SOAP_TYPE_tt__AnalyticsDeviceCapabilities
 #define SOAP_TYPE_tt__AnalyticsDeviceCapabilities (1063)
 /* complex XML schema type 'tt:AnalyticsDeviceCapabilities': */
@@ -9311,7 +9401,7 @@ struct tt__AnalyticsDeviceCapabilities {
 };
 #endif
 
-/* onvif.h:11053 */
+/* onvif.h:11083 */
 #ifndef SOAP_TYPE_tt__AnalyticsDeviceExtension
 #define SOAP_TYPE_tt__AnalyticsDeviceExtension (1102)
 /* complex XML schema type 'tt:AnalyticsDeviceExtension': */
@@ -9322,7 +9412,7 @@ struct tt__AnalyticsDeviceExtension {
 };
 #endif
 
-/* onvif.h:2656 */
+/* onvif.h:2686 */
 #ifndef SOAP_TYPE_tt__SystemLog
 #define SOAP_TYPE_tt__SystemLog (579)
 /* complex XML schema type 'tt:SystemLog': */
@@ -9334,7 +9424,7 @@ struct tt__SystemLog {
 };
 #endif
 
-/* onvif.h:2616 */
+/* onvif.h:2646 */
 #ifndef SOAP_TYPE_tt__SupportInformation
 #define SOAP_TYPE_tt__SupportInformation (575)
 /* complex XML schema type 'tt:SupportInformation': */
@@ -9346,7 +9436,7 @@ struct tt__SupportInformation {
 };
 #endif
 
-/* onvif.h:4419 */
+/* onvif.h:4449 */
 #ifndef SOAP_TYPE_tt__BinaryData
 #define SOAP_TYPE_tt__BinaryData (719)
 /* complex XML schema type 'tt:BinaryData': */
@@ -9358,7 +9448,7 @@ struct tt__BinaryData {
 };
 #endif
 
-/* onvif.h:2468 */
+/* onvif.h:2498 */
 #ifndef SOAP_TYPE_tt__AttachmentData
 #define SOAP_TYPE_tt__AttachmentData (562)
 /* complex XML schema type 'tt:AttachmentData': */
@@ -9370,7 +9460,7 @@ struct tt__AttachmentData {
 };
 #endif
 
-/* onvif.h:2536 */
+/* onvif.h:2566 */
 #ifndef SOAP_TYPE_tt__BackupFile
 #define SOAP_TYPE_tt__BackupFile (568)
 /* complex XML schema type 'tt:BackupFile': */
@@ -9382,7 +9472,7 @@ struct tt__BackupFile {
 };
 #endif
 
-/* onvif.h:5354 */
+/* onvif.h:5384 */
 #ifndef SOAP_TYPE_tt__SystemLogUriList
 #define SOAP_TYPE_tt__SystemLogUriList (798)
 /* complex XML schema type 'tt:SystemLogUriList': */
@@ -9393,7 +9483,7 @@ struct tt__SystemLogUriList {
 };
 #endif
 
-/* onvif.h:11203 */
+/* onvif.h:11233 */
 #ifndef SOAP_TYPE_tt__SystemLogUri
 #define SOAP_TYPE_tt__SystemLogUri (1104)
 /* complex XML schema type 'tt:SystemLogUri': */
@@ -9410,7 +9500,7 @@ struct tt__SystemLogUri {
 };
 #endif
 
-/* onvif.h:2418 */
+/* onvif.h:2448 */
 #ifndef SOAP_TYPE_tt__SystemDateTime
 #define SOAP_TYPE_tt__SystemDateTime (557)
 /* complex XML schema type 'tt:SystemDateTime': */
@@ -9432,7 +9522,7 @@ struct tt__SystemDateTime {
 };
 #endif
 
-/* onvif.h:11284 */
+/* onvif.h:11314 */
 #ifndef SOAP_TYPE_tt__SystemDateTimeExtension
 #define SOAP_TYPE_tt__SystemDateTimeExtension (1106)
 /* complex XML schema type 'tt:SystemDateTimeExtension': */
@@ -9443,7 +9533,7 @@ struct tt__SystemDateTimeExtension {
 };
 #endif
 
-/* onvif.h:2370 */
+/* onvif.h:2400 */
 #ifndef SOAP_TYPE_tt__DateTime
 #define SOAP_TYPE_tt__DateTime (552)
 /* complex XML schema type 'tt:DateTime': */
@@ -9455,7 +9545,7 @@ struct tt__DateTime {
 };
 #endif
 
-/* onvif.h:11329 */
+/* onvif.h:11359 */
 #ifndef SOAP_TYPE_tt__Date
 #define SOAP_TYPE_tt__Date (1110)
 /* complex XML schema type 'tt:Date': */
@@ -9469,7 +9559,7 @@ struct tt__Date {
 };
 #endif
 
-/* onvif.h:11327 */
+/* onvif.h:11357 */
 #ifndef SOAP_TYPE_tt__Time
 #define SOAP_TYPE_tt__Time (1108)
 /* complex XML schema type 'tt:Time': */
@@ -9483,7 +9573,7 @@ struct tt__Time {
 };
 #endif
 
-/* onvif.h:2364 */
+/* onvif.h:2394 */
 #ifndef SOAP_TYPE_tt__TimeZone
 #define SOAP_TYPE_tt__TimeZone (550)
 /* complex XML schema type 'tt:TimeZone': */
@@ -9493,7 +9583,7 @@ struct tt__TimeZone {
 };
 #endif
 
-/* onvif.h:3078 */
+/* onvif.h:3108 */
 #ifndef SOAP_TYPE_tt__RemoteUser
 #define SOAP_TYPE_tt__RemoteUser (610)
 /* complex XML schema type 'tt:RemoteUser': */
@@ -9512,7 +9602,7 @@ struct tt__RemoteUser {
 };
 #endif
 
-/* onvif.h:3144 */
+/* onvif.h:3174 */
 #ifndef SOAP_TYPE_tt__User
 #define SOAP_TYPE_tt__User (616)
 /* complex XML schema type 'tt:User': */
@@ -9530,7 +9620,7 @@ struct tt__User {
 };
 #endif
 
-/* onvif.h:11486 */
+/* onvif.h:11516 */
 #ifndef SOAP_TYPE_tt__UserExtension
 #define SOAP_TYPE_tt__UserExtension (1112)
 /* complex XML schema type 'tt:UserExtension': */
@@ -9541,7 +9631,7 @@ struct tt__UserExtension {
 };
 #endif
 
-/* onvif.h:11527 */
+/* onvif.h:11557 */
 #ifndef SOAP_TYPE_tt__CertificateGenerationParameters
 #define SOAP_TYPE_tt__CertificateGenerationParameters (1114)
 /* complex XML schema type 'tt:CertificateGenerationParameters': */
@@ -9561,7 +9651,7 @@ struct tt__CertificateGenerationParameters {
 };
 #endif
 
-/* onvif.h:11537 */
+/* onvif.h:11567 */
 #ifndef SOAP_TYPE_tt__CertificateGenerationParametersExtension
 #define SOAP_TYPE_tt__CertificateGenerationParametersExtension (1115)
 /* complex XML schema type 'tt:CertificateGenerationParametersExtension': */
@@ -9572,7 +9662,7 @@ struct tt__CertificateGenerationParametersExtension {
 };
 #endif
 
-/* onvif.h:4507 */
+/* onvif.h:4537 */
 #ifndef SOAP_TYPE_tt__Certificate
 #define SOAP_TYPE_tt__Certificate (727)
 /* complex XML schema type 'tt:Certificate': */
@@ -9584,7 +9674,7 @@ struct tt__Certificate {
 };
 #endif
 
-/* onvif.h:4579 */
+/* onvif.h:4609 */
 #ifndef SOAP_TYPE_tt__CertificateStatus
 #define SOAP_TYPE_tt__CertificateStatus (733)
 /* complex XML schema type 'tt:CertificateStatus': */
@@ -9601,7 +9691,7 @@ struct tt__CertificateStatus {
 };
 #endif
 
-/* onvif.h:4857 */
+/* onvif.h:4887 */
 #ifndef SOAP_TYPE_tt__CertificateWithPrivateKey
 #define SOAP_TYPE_tt__CertificateWithPrivateKey (750)
 /* complex XML schema type 'tt:CertificateWithPrivateKey': */
@@ -9620,7 +9710,7 @@ struct tt__CertificateWithPrivateKey {
 };
 #endif
 
-/* onvif.h:4903 */
+/* onvif.h:4933 */
 #ifndef SOAP_TYPE_tt__CertificateInformation
 #define SOAP_TYPE_tt__CertificateInformation (755)
 /* complex XML schema type 'tt:CertificateInformation': */
@@ -9652,7 +9742,7 @@ struct tt__CertificateInformation {
 };
 #endif
 
-/* onvif.h:11703 */
+/* onvif.h:11733 */
 #ifndef SOAP_TYPE_tt__CertificateInformationExtension
 #define SOAP_TYPE_tt__CertificateInformationExtension (1121)
 /* complex XML schema type 'tt:CertificateInformationExtension': */
@@ -9663,7 +9753,7 @@ struct tt__CertificateInformationExtension {
 };
 #endif
 
-/* onvif.h:4951 */
+/* onvif.h:4981 */
 #ifndef SOAP_TYPE_tt__Dot1XConfiguration
 #define SOAP_TYPE_tt__Dot1XConfiguration (760)
 /* complex XML schema type 'tt:Dot1XConfiguration': */
@@ -9688,7 +9778,7 @@ struct tt__Dot1XConfiguration {
 };
 #endif
 
-/* onvif.h:11764 */
+/* onvif.h:11794 */
 #ifndef SOAP_TYPE_tt__Dot1XConfigurationExtension
 #define SOAP_TYPE_tt__Dot1XConfigurationExtension (1125)
 /* complex XML schema type 'tt:Dot1XConfigurationExtension': */
@@ -9699,7 +9789,7 @@ struct tt__Dot1XConfigurationExtension {
 };
 #endif
 
-/* onvif.h:11762 */
+/* onvif.h:11792 */
 #ifndef SOAP_TYPE_tt__EAPMethodConfiguration
 #define SOAP_TYPE_tt__EAPMethodConfiguration (1123)
 /* complex XML schema type 'tt:EAPMethodConfiguration': */
@@ -9715,7 +9805,7 @@ struct tt__EAPMethodConfiguration {
 };
 #endif
 
-/* onvif.h:11819 */
+/* onvif.h:11849 */
 #ifndef SOAP_TYPE_tt__EapMethodExtension
 #define SOAP_TYPE_tt__EapMethodExtension (1129)
 /* complex XML schema type 'tt:EapMethodExtension': */
@@ -9726,7 +9816,7 @@ struct tt__EapMethodExtension {
 };
 #endif
 
-/* onvif.h:11811 */
+/* onvif.h:11841 */
 #ifndef SOAP_TYPE_tt__TLSConfiguration
 #define SOAP_TYPE_tt__TLSConfiguration (1127)
 /* complex XML schema type 'tt:TLSConfiguration': */
@@ -9741,7 +9831,7 @@ struct tt__TLSConfiguration {
 };
 #endif
 
-/* onvif.h:11890 */
+/* onvif.h:11920 */
 #ifndef SOAP_TYPE_tt__GenericEapPwdConfigurationExtension
 #define SOAP_TYPE_tt__GenericEapPwdConfigurationExtension (1131)
 /* complex XML schema type 'tt:GenericEapPwdConfigurationExtension': */
@@ -9752,7 +9842,7 @@ struct tt__GenericEapPwdConfigurationExtension {
 };
 #endif
 
-/* onvif.h:5141 */
+/* onvif.h:5171 */
 #ifndef SOAP_TYPE_tt__RelayOutputSettings
 #define SOAP_TYPE_tt__RelayOutputSettings (777)
 /* complex XML schema type 'tt:RelayOutputSettings': */
@@ -9766,7 +9856,7 @@ struct tt__RelayOutputSettings {
 };
 #endif
 
-/* onvif.h:11951 */
+/* onvif.h:11981 */
 #ifndef SOAP_TYPE_tt__PTZNodeExtension
 #define SOAP_TYPE_tt__PTZNodeExtension (1132)
 /* complex XML schema type 'tt:PTZNodeExtension': */
@@ -9781,7 +9871,7 @@ struct tt__PTZNodeExtension {
 };
 #endif
 
-/* onvif.h:11968 */
+/* onvif.h:11998 */
 #ifndef SOAP_TYPE_tt__PTZNodeExtension2
 #define SOAP_TYPE_tt__PTZNodeExtension2 (1135)
 /* complex XML schema type 'tt:PTZNodeExtension2': */
@@ -9792,7 +9882,7 @@ struct tt__PTZNodeExtension2 {
 };
 #endif
 
-/* onvif.h:11966 */
+/* onvif.h:11996 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourSupported
 #define SOAP_TYPE_tt__PTZPresetTourSupported (1133)
 /* complex XML schema type 'tt:PTZPresetTourSupported': */
@@ -9809,7 +9899,7 @@ struct tt__PTZPresetTourSupported {
 };
 #endif
 
-/* onvif.h:12019 */
+/* onvif.h:12049 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourSupportedExtension
 #define SOAP_TYPE_tt__PTZPresetTourSupportedExtension (1138)
 /* complex XML schema type 'tt:PTZPresetTourSupportedExtension': */
@@ -9820,7 +9910,7 @@ struct tt__PTZPresetTourSupportedExtension {
 };
 #endif
 
-/* onvif.h:12060 */
+/* onvif.h:12090 */
 #ifndef SOAP_TYPE_tt__PTZConfigurationExtension
 #define SOAP_TYPE_tt__PTZConfigurationExtension (1140)
 /* complex XML schema type 'tt:PTZConfigurationExtension': */
@@ -9835,7 +9925,7 @@ struct tt__PTZConfigurationExtension {
 };
 #endif
 
-/* onvif.h:12077 */
+/* onvif.h:12107 */
 #ifndef SOAP_TYPE_tt__PTZConfigurationExtension2
 #define SOAP_TYPE_tt__PTZConfigurationExtension2 (1143)
 /* complex XML schema type 'tt:PTZConfigurationExtension2': */
@@ -9846,7 +9936,7 @@ struct tt__PTZConfigurationExtension2 {
 };
 #endif
 
-/* onvif.h:12075 */
+/* onvif.h:12105 */
 #ifndef SOAP_TYPE_tt__PTControlDirection
 #define SOAP_TYPE_tt__PTControlDirection (1141)
 /* complex XML schema type 'tt:PTControlDirection': */
@@ -9862,7 +9952,7 @@ struct tt__PTControlDirection {
 };
 #endif
 
-/* onvif.h:12126 */
+/* onvif.h:12156 */
 #ifndef SOAP_TYPE_tt__PTControlDirectionExtension
 #define SOAP_TYPE_tt__PTControlDirectionExtension (1149)
 /* complex XML schema type 'tt:PTControlDirectionExtension': */
@@ -9875,7 +9965,7 @@ struct tt__PTControlDirectionExtension {
 };
 #endif
 
-/* onvif.h:12118 */
+/* onvif.h:12148 */
 #ifndef SOAP_TYPE_tt__EFlip
 #define SOAP_TYPE_tt__EFlip (1145)
 /* complex XML schema type 'tt:EFlip': */
@@ -9890,7 +9980,7 @@ struct tt__EFlip {
 };
 #endif
 
-/* onvif.h:12124 */
+/* onvif.h:12154 */
 #ifndef SOAP_TYPE_tt__Reverse
 #define SOAP_TYPE_tt__Reverse (1147)
 /* complex XML schema type 'tt:Reverse': */
@@ -9905,7 +9995,7 @@ struct tt__Reverse {
 };
 #endif
 
-/* onvif.h:12241 */
+/* onvif.h:12271 */
 #ifndef SOAP_TYPE_tt__PTZConfigurationOptions
 #define SOAP_TYPE_tt__PTZConfigurationOptions (1151)
 /* complex XML schema type 'tt:PTZConfigurationOptions': */
@@ -9928,7 +10018,7 @@ struct tt__PTZConfigurationOptions {
 };
 #endif
 
-/* onvif.h:12270 */
+/* onvif.h:12300 */
 #ifndef SOAP_TYPE_tt__PTZConfigurationOptions2
 #define SOAP_TYPE_tt__PTZConfigurationOptions2 (1157)
 /* complex XML schema type 'tt:PTZConfigurationOptions2': */
@@ -9939,7 +10029,7 @@ struct tt__PTZConfigurationOptions2 {
 };
 #endif
 
-/* onvif.h:12268 */
+/* onvif.h:12298 */
 #ifndef SOAP_TYPE_tt__PTControlDirectionOptions
 #define SOAP_TYPE_tt__PTControlDirectionOptions (1155)
 /* complex XML schema type 'tt:PTControlDirectionOptions': */
@@ -9955,7 +10045,7 @@ struct tt__PTControlDirectionOptions {
 };
 #endif
 
-/* onvif.h:12333 */
+/* onvif.h:12363 */
 #ifndef SOAP_TYPE_tt__PTControlDirectionOptionsExtension
 #define SOAP_TYPE_tt__PTControlDirectionOptionsExtension (1163)
 /* complex XML schema type 'tt:PTControlDirectionOptionsExtension': */
@@ -9966,7 +10056,7 @@ struct tt__PTControlDirectionOptionsExtension {
 };
 #endif
 
-/* onvif.h:12325 */
+/* onvif.h:12355 */
 #ifndef SOAP_TYPE_tt__EFlipOptions
 #define SOAP_TYPE_tt__EFlipOptions (1159)
 /* complex XML schema type 'tt:EFlipOptions': */
@@ -9981,7 +10071,7 @@ struct tt__EFlipOptions {
 };
 #endif
 
-/* onvif.h:12384 */
+/* onvif.h:12414 */
 #ifndef SOAP_TYPE_tt__EFlipOptionsExtension
 #define SOAP_TYPE_tt__EFlipOptionsExtension (1166)
 /* complex XML schema type 'tt:EFlipOptionsExtension': */
@@ -9992,7 +10082,7 @@ struct tt__EFlipOptionsExtension {
 };
 #endif
 
-/* onvif.h:12331 */
+/* onvif.h:12361 */
 #ifndef SOAP_TYPE_tt__ReverseOptions
 #define SOAP_TYPE_tt__ReverseOptions (1161)
 /* complex XML schema type 'tt:ReverseOptions': */
@@ -10007,7 +10097,7 @@ struct tt__ReverseOptions {
 };
 #endif
 
-/* onvif.h:12435 */
+/* onvif.h:12465 */
 #ifndef SOAP_TYPE_tt__ReverseOptionsExtension
 #define SOAP_TYPE_tt__ReverseOptionsExtension (1169)
 /* complex XML schema type 'tt:ReverseOptionsExtension': */
@@ -10018,7 +10108,7 @@ struct tt__ReverseOptionsExtension {
 };
 #endif
 
-/* onvif.h:12476 */
+/* onvif.h:12506 */
 #ifndef SOAP_TYPE_tt__PanTiltLimits
 #define SOAP_TYPE_tt__PanTiltLimits (1171)
 /* complex XML schema type 'tt:PanTiltLimits': */
@@ -10028,7 +10118,7 @@ struct tt__PanTiltLimits {
 };
 #endif
 
-/* onvif.h:12495 */
+/* onvif.h:12525 */
 #ifndef SOAP_TYPE_tt__ZoomLimits
 #define SOAP_TYPE_tt__ZoomLimits (1174)
 /* complex XML schema type 'tt:ZoomLimits': */
@@ -10038,7 +10128,7 @@ struct tt__ZoomLimits {
 };
 #endif
 
-/* onvif.h:12247 */
+/* onvif.h:12277 */
 #ifndef SOAP_TYPE_tt__PTZSpaces
 #define SOAP_TYPE_tt__PTZSpaces (1152)
 /* complex XML schema type 'tt:PTZSpaces': */
@@ -10074,7 +10164,7 @@ struct tt__PTZSpaces {
 };
 #endif
 
-/* onvif.h:12580 */
+/* onvif.h:12610 */
 #ifndef SOAP_TYPE_tt__PTZSpacesExtension
 #define SOAP_TYPE_tt__PTZSpacesExtension (1177)
 /* complex XML schema type 'tt:PTZSpacesExtension': */
@@ -10085,7 +10175,7 @@ struct tt__PTZSpacesExtension {
 };
 #endif
 
-/* onvif.h:12482 */
+/* onvif.h:12512 */
 #ifndef SOAP_TYPE_tt__Space2DDescription
 #define SOAP_TYPE_tt__Space2DDescription (1172)
 /* complex XML schema type 'tt:Space2DDescription': */
@@ -10099,7 +10189,7 @@ struct tt__Space2DDescription {
 };
 #endif
 
-/* onvif.h:12501 */
+/* onvif.h:12531 */
 #ifndef SOAP_TYPE_tt__Space1DDescription
 #define SOAP_TYPE_tt__Space1DDescription (1175)
 /* complex XML schema type 'tt:Space1DDescription': */
@@ -10111,7 +10201,7 @@ struct tt__Space1DDescription {
 };
 #endif
 
-/* onvif.h:12677 */
+/* onvif.h:12707 */
 #ifndef SOAP_TYPE_tt__PTZSpeed
 #define SOAP_TYPE_tt__PTZSpeed (1179)
 /* complex XML schema type 'tt:PTZSpeed': */
@@ -10123,7 +10213,7 @@ struct tt__PTZSpeed {
 };
 #endif
 
-/* onvif.h:12702 */
+/* onvif.h:12732 */
 #ifndef SOAP_TYPE_tt__PTZPreset
 #define SOAP_TYPE_tt__PTZPreset (1184)
 /* complex XML schema type 'tt:PTZPreset': */
@@ -10139,7 +10229,7 @@ struct tt__PTZPreset {
 };
 #endif
 
-/* onvif.h:12738 */
+/* onvif.h:12768 */
 #ifndef SOAP_TYPE_tt__PresetTour
 #define SOAP_TYPE_tt__PresetTour (1187)
 /* complex XML schema type 'tt:PresetTour': */
@@ -10164,7 +10254,7 @@ struct tt__PresetTour {
 };
 #endif
 
-/* onvif.h:12772 */
+/* onvif.h:12802 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourExtension
 #define SOAP_TYPE_tt__PTZPresetTourExtension (1194)
 /* complex XML schema type 'tt:PTZPresetTourExtension': */
@@ -10175,7 +10265,7 @@ struct tt__PTZPresetTourExtension {
 };
 #endif
 
-/* onvif.h:12770 */
+/* onvif.h:12800 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourSpot
 #define SOAP_TYPE_tt__PTZPresetTourSpot (1192)
 /* complex XML schema type 'tt:PTZPresetTourSpot': */
@@ -10193,7 +10283,7 @@ struct tt__PTZPresetTourSpot {
 };
 #endif
 
-/* onvif.h:12839 */
+/* onvif.h:12869 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourSpotExtension
 #define SOAP_TYPE_tt__PTZPresetTourSpotExtension (1199)
 /* complex XML schema type 'tt:PTZPresetTourSpotExtension': */
@@ -10204,7 +10294,7 @@ struct tt__PTZPresetTourSpotExtension {
 };
 #endif
 
-/* onvif.h:12884 */
+/* onvif.h:12914 */
 #ifndef SOAP_TYPE__tt__union_PTZPresetTourPresetDetail
 #define SOAP_TYPE__tt__union_PTZPresetTourPresetDetail (1201)
 /* union serializable only when used as a member of a struct or class with a union variant selector */
@@ -10221,7 +10311,7 @@ union _tt__union_PTZPresetTourPresetDetail
 };
 #endif
 
-/* onvif.h:12825 */
+/* onvif.h:12855 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourPresetDetail
 #define SOAP_TYPE_tt__PTZPresetTourPresetDetail (1196)
 /* complex XML schema type 'tt:PTZPresetTourPresetDetail': */
@@ -10237,7 +10327,7 @@ struct tt__PTZPresetTourPresetDetail {
 };
 #endif
 
-/* onvif.h:12904 */
+/* onvif.h:12934 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourTypeExtension
 #define SOAP_TYPE_tt__PTZPresetTourTypeExtension (1202)
 /* complex XML schema type 'tt:PTZPresetTourTypeExtension': */
@@ -10248,7 +10338,7 @@ struct tt__PTZPresetTourTypeExtension {
 };
 #endif
 
-/* onvif.h:12750 */
+/* onvif.h:12780 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourStatus
 #define SOAP_TYPE_tt__PTZPresetTourStatus (1188)
 /* complex XML schema type 'tt:PTZPresetTourStatus': */
@@ -10264,7 +10354,7 @@ struct tt__PTZPresetTourStatus {
 };
 #endif
 
-/* onvif.h:12970 */
+/* onvif.h:13000 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourStatusExtension
 #define SOAP_TYPE_tt__PTZPresetTourStatusExtension (1204)
 /* complex XML schema type 'tt:PTZPresetTourStatusExtension': */
@@ -10275,7 +10365,7 @@ struct tt__PTZPresetTourStatusExtension {
 };
 #endif
 
-/* onvif.h:12762 */
+/* onvif.h:12792 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourStartingCondition
 #define SOAP_TYPE_tt__PTZPresetTourStartingCondition (1190)
 /* complex XML schema type 'tt:PTZPresetTourStartingCondition': */
@@ -10295,7 +10385,7 @@ struct tt__PTZPresetTourStartingCondition {
 };
 #endif
 
-/* onvif.h:13031 */
+/* onvif.h:13061 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourStartingConditionExtension
 #define SOAP_TYPE_tt__PTZPresetTourStartingConditionExtension (1207)
 /* complex XML schema type 'tt:PTZPresetTourStartingConditionExtension': */
@@ -10306,7 +10396,7 @@ struct tt__PTZPresetTourStartingConditionExtension {
 };
 #endif
 
-/* onvif.h:13078 */
+/* onvif.h:13108 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourOptions
 #define SOAP_TYPE_tt__PTZPresetTourOptions (1209)
 /* complex XML schema type 'tt:PTZPresetTourOptions': */
@@ -10325,7 +10415,7 @@ struct tt__PTZPresetTourOptions {
 };
 #endif
 
-/* onvif.h:13096 */
+/* onvif.h:13126 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourSpotOptions
 #define SOAP_TYPE_tt__PTZPresetTourSpotOptions (1212)
 /* complex XML schema type 'tt:PTZPresetTourSpotOptions': */
@@ -10342,7 +10432,7 @@ struct tt__PTZPresetTourSpotOptions {
 };
 #endif
 
-/* onvif.h:13130 */
+/* onvif.h:13160 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourPresetDetailOptions
 #define SOAP_TYPE_tt__PTZPresetTourPresetDetailOptions (1214)
 /* complex XML schema type 'tt:PTZPresetTourPresetDetailOptions': */
@@ -10363,7 +10453,7 @@ struct tt__PTZPresetTourPresetDetailOptions {
 };
 #endif
 
-/* onvif.h:13192 */
+/* onvif.h:13222 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourPresetDetailOptionsExtension
 #define SOAP_TYPE_tt__PTZPresetTourPresetDetailOptionsExtension (1216)
 /* complex XML schema type 'tt:PTZPresetTourPresetDetailOptionsExtension': */
@@ -10374,7 +10464,7 @@ struct tt__PTZPresetTourPresetDetailOptionsExtension {
 };
 #endif
 
-/* onvif.h:13090 */
+/* onvif.h:13120 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourStartingConditionOptions
 #define SOAP_TYPE_tt__PTZPresetTourStartingConditionOptions (1210)
 /* complex XML schema type 'tt:PTZPresetTourStartingConditionOptions': */
@@ -10393,7 +10483,7 @@ struct tt__PTZPresetTourStartingConditionOptions {
 };
 #endif
 
-/* onvif.h:13255 */
+/* onvif.h:13285 */
 #ifndef SOAP_TYPE_tt__PTZPresetTourStartingConditionOptionsExtension
 #define SOAP_TYPE_tt__PTZPresetTourStartingConditionOptionsExtension (1218)
 /* complex XML schema type 'tt:PTZPresetTourStartingConditionOptionsExtension': */
@@ -10404,7 +10494,7 @@ struct tt__PTZPresetTourStartingConditionOptionsExtension {
 };
 #endif
 
-/* onvif.h:13296 */
+/* onvif.h:13326 */
 #ifndef SOAP_TYPE_tt__ImagingStatus
 #define SOAP_TYPE_tt__ImagingStatus (1220)
 /* complex XML schema type 'tt:ImagingStatus': */
@@ -10419,7 +10509,7 @@ struct tt__ImagingStatus {
 };
 #endif
 
-/* onvif.h:13298 */
+/* onvif.h:13328 */
 #ifndef SOAP_TYPE_tt__FocusStatus
 #define SOAP_TYPE_tt__FocusStatus (1221)
 /* complex XML schema type 'tt:FocusStatus': */
@@ -10438,7 +10528,7 @@ struct tt__FocusStatus {
 };
 #endif
 
-/* onvif.h:13372 */
+/* onvif.h:13402 */
 #ifndef SOAP_TYPE_tt__FocusConfiguration
 #define SOAP_TYPE_tt__FocusConfiguration (1223)
 /* complex XML schema type 'tt:FocusConfiguration': */
@@ -10459,7 +10549,7 @@ struct tt__FocusConfiguration {
 };
 #endif
 
-/* onvif.h:13417 */
+/* onvif.h:13447 */
 #ifndef SOAP_TYPE_tt__ImagingSettings
 #define SOAP_TYPE_tt__ImagingSettings (1224)
 /* complex XML schema type 'tt:ImagingSettings': */
@@ -10491,7 +10581,7 @@ struct tt__ImagingSettings {
 };
 #endif
 
-/* onvif.h:13479 */
+/* onvif.h:13509 */
 #ifndef SOAP_TYPE_tt__ImagingSettingsExtension
 #define SOAP_TYPE_tt__ImagingSettingsExtension (1235)
 /* complex XML schema type 'tt:ImagingSettingsExtension': */
@@ -10502,7 +10592,7 @@ struct tt__ImagingSettingsExtension {
 };
 #endif
 
-/* onvif.h:13447 */
+/* onvif.h:13477 */
 #ifndef SOAP_TYPE_tt__Exposure
 #define SOAP_TYPE_tt__Exposure (1227)
 /* complex XML schema type 'tt:Exposure': */
@@ -10534,7 +10624,7 @@ struct tt__Exposure {
 };
 #endif
 
-/* onvif.h:13471 */
+/* onvif.h:13501 */
 #ifndef SOAP_TYPE_tt__WideDynamicRange
 #define SOAP_TYPE_tt__WideDynamicRange (1231)
 /* complex XML schema type 'tt:WideDynamicRange': */
@@ -10546,7 +10636,7 @@ struct tt__WideDynamicRange {
 };
 #endif
 
-/* onvif.h:13423 */
+/* onvif.h:13453 */
 #ifndef SOAP_TYPE_tt__BacklightCompensation
 #define SOAP_TYPE_tt__BacklightCompensation (1225)
 /* complex XML schema type 'tt:BacklightCompensation': */
@@ -10558,7 +10648,7 @@ struct tt__BacklightCompensation {
 };
 #endif
 
-/* onvif.h:13659 */
+/* onvif.h:13689 */
 #ifndef SOAP_TYPE_tt__ImagingOptions
 #define SOAP_TYPE_tt__ImagingOptions (1239)
 /* complex XML schema type 'tt:ImagingOptions': */
@@ -10592,7 +10682,7 @@ struct tt__ImagingOptions {
 };
 #endif
 
-/* onvif.h:13679 */
+/* onvif.h:13709 */
 #ifndef SOAP_TYPE_tt__WideDynamicRangeOptions
 #define SOAP_TYPE_tt__WideDynamicRangeOptions (1246)
 /* complex XML schema type 'tt:WideDynamicRangeOptions': */
@@ -10605,7 +10695,7 @@ struct tt__WideDynamicRangeOptions {
 };
 #endif
 
-/* onvif.h:13661 */
+/* onvif.h:13691 */
 #ifndef SOAP_TYPE_tt__BacklightCompensationOptions
 #define SOAP_TYPE_tt__BacklightCompensationOptions (1240)
 /* complex XML schema type 'tt:BacklightCompensationOptions': */
@@ -10618,7 +10708,7 @@ struct tt__BacklightCompensationOptions {
 };
 #endif
 
-/* onvif.h:13671 */
+/* onvif.h:13701 */
 #ifndef SOAP_TYPE_tt__FocusOptions
 #define SOAP_TYPE_tt__FocusOptions (1244)
 /* complex XML schema type 'tt:FocusOptions': */
@@ -10635,7 +10725,7 @@ struct tt__FocusOptions {
 };
 #endif
 
-/* onvif.h:13669 */
+/* onvif.h:13699 */
 #ifndef SOAP_TYPE_tt__ExposureOptions
 #define SOAP_TYPE_tt__ExposureOptions (1242)
 /* complex XML schema type 'tt:ExposureOptions': */
@@ -10667,7 +10757,7 @@ struct tt__ExposureOptions {
 };
 #endif
 
-/* onvif.h:13681 */
+/* onvif.h:13711 */
 #ifndef SOAP_TYPE_tt__WhiteBalanceOptions
 #define SOAP_TYPE_tt__WhiteBalanceOptions (1248)
 /* complex XML schema type 'tt:WhiteBalanceOptions': */
@@ -10682,7 +10772,7 @@ struct tt__WhiteBalanceOptions {
 };
 #endif
 
-/* onvif.h:13830 */
+/* onvif.h:13860 */
 #ifndef SOAP_TYPE_tt__FocusMove
 #define SOAP_TYPE_tt__FocusMove (1255)
 /* complex XML schema type 'tt:FocusMove': */
@@ -10696,7 +10786,7 @@ struct tt__FocusMove {
 };
 #endif
 
-/* onvif.h:13836 */
+/* onvif.h:13866 */
 #ifndef SOAP_TYPE_tt__AbsoluteFocus
 #define SOAP_TYPE_tt__AbsoluteFocus (1256)
 /* complex XML schema type 'tt:AbsoluteFocus': */
@@ -10708,7 +10798,7 @@ struct tt__AbsoluteFocus {
 };
 #endif
 
-/* onvif.h:13842 */
+/* onvif.h:13872 */
 #ifndef SOAP_TYPE_tt__RelativeFocus
 #define SOAP_TYPE_tt__RelativeFocus (1258)
 /* complex XML schema type 'tt:RelativeFocus': */
@@ -10720,7 +10810,7 @@ struct tt__RelativeFocus {
 };
 #endif
 
-/* onvif.h:13848 */
+/* onvif.h:13878 */
 #ifndef SOAP_TYPE_tt__ContinuousFocus
 #define SOAP_TYPE_tt__ContinuousFocus (1260)
 /* complex XML schema type 'tt:ContinuousFocus': */
@@ -10730,7 +10820,7 @@ struct tt__ContinuousFocus {
 };
 #endif
 
-/* onvif.h:13930 */
+/* onvif.h:13960 */
 #ifndef SOAP_TYPE_tt__MoveOptions
 #define SOAP_TYPE_tt__MoveOptions (1262)
 /* complex XML schema type 'tt:MoveOptions': */
@@ -10744,7 +10834,7 @@ struct tt__MoveOptions {
 };
 #endif
 
-/* onvif.h:13932 */
+/* onvif.h:13962 */
 #ifndef SOAP_TYPE_tt__AbsoluteFocusOptions
 #define SOAP_TYPE_tt__AbsoluteFocusOptions (1263)
 /* complex XML schema type 'tt:AbsoluteFocusOptions': */
@@ -10756,7 +10846,7 @@ struct tt__AbsoluteFocusOptions {
 };
 #endif
 
-/* onvif.h:13934 */
+/* onvif.h:13964 */
 #ifndef SOAP_TYPE_tt__RelativeFocusOptions
 #define SOAP_TYPE_tt__RelativeFocusOptions (1265)
 /* complex XML schema type 'tt:RelativeFocusOptions': */
@@ -10768,7 +10858,7 @@ struct tt__RelativeFocusOptions {
 };
 #endif
 
-/* onvif.h:13936 */
+/* onvif.h:13966 */
 #ifndef SOAP_TYPE_tt__ContinuousFocusOptions
 #define SOAP_TYPE_tt__ContinuousFocusOptions (1267)
 /* complex XML schema type 'tt:ContinuousFocusOptions': */
@@ -10778,7 +10868,7 @@ struct tt__ContinuousFocusOptions {
 };
 #endif
 
-/* onvif.h:13477 */
+/* onvif.h:13507 */
 #ifndef SOAP_TYPE_tt__WhiteBalance
 #define SOAP_TYPE_tt__WhiteBalance (1233)
 /* complex XML schema type 'tt:WhiteBalance': */
@@ -10797,7 +10887,7 @@ struct tt__WhiteBalance {
 };
 #endif
 
-/* onvif.h:14064 */
+/* onvif.h:14094 */
 #ifndef SOAP_TYPE_tt__ImagingStatus20
 #define SOAP_TYPE_tt__ImagingStatus20 (1269)
 /* complex XML schema type 'tt:ImagingStatus20': */
@@ -10811,7 +10901,7 @@ struct tt__ImagingStatus20 {
 };
 #endif
 
-/* onvif.h:14072 */
+/* onvif.h:14102 */
 #ifndef SOAP_TYPE_tt__ImagingStatus20Extension
 #define SOAP_TYPE_tt__ImagingStatus20Extension (1272)
 /* complex XML schema type 'tt:ImagingStatus20Extension': */
@@ -10822,7 +10912,7 @@ struct tt__ImagingStatus20Extension {
 };
 #endif
 
-/* onvif.h:14070 */
+/* onvif.h:14100 */
 #ifndef SOAP_TYPE_tt__FocusStatus20
 #define SOAP_TYPE_tt__FocusStatus20 (1270)
 /* complex XML schema type 'tt:FocusStatus20': */
@@ -10840,7 +10930,7 @@ struct tt__FocusStatus20 {
 };
 #endif
 
-/* onvif.h:14133 */
+/* onvif.h:14163 */
 #ifndef SOAP_TYPE_tt__FocusStatus20Extension
 #define SOAP_TYPE_tt__FocusStatus20Extension (1274)
 /* complex XML schema type 'tt:FocusStatus20Extension': */
@@ -10851,7 +10941,7 @@ struct tt__FocusStatus20Extension {
 };
 #endif
 
-/* onvif.h:5974 */
+/* onvif.h:6004 */
 #ifndef SOAP_TYPE_tt__ImagingSettings20
 #define SOAP_TYPE_tt__ImagingSettings20 (840)
 /* complex XML schema type 'tt:ImagingSettings20': */
@@ -10883,7 +10973,7 @@ struct tt__ImagingSettings20 {
 };
 #endif
 
-/* onvif.h:14240 */
+/* onvif.h:14270 */
 #ifndef SOAP_TYPE_tt__ImagingSettingsExtension20
 #define SOAP_TYPE_tt__ImagingSettingsExtension20 (1286)
 /* complex XML schema type 'tt:ImagingSettingsExtension20': */
@@ -10898,7 +10988,7 @@ struct tt__ImagingSettingsExtension20 {
 };
 #endif
 
-/* onvif.h:14276 */
+/* onvif.h:14306 */
 #ifndef SOAP_TYPE_tt__ImagingSettingsExtension202
 #define SOAP_TYPE_tt__ImagingSettingsExtension202 (1290)
 /* complex XML schema type 'tt:ImagingSettingsExtension202': */
@@ -10911,7 +11001,7 @@ struct tt__ImagingSettingsExtension202 {
 };
 #endif
 
-/* onvif.h:14299 */
+/* onvif.h:14329 */
 #ifndef SOAP_TYPE_tt__ImagingSettingsExtension203
 #define SOAP_TYPE_tt__ImagingSettingsExtension203 (1294)
 /* complex XML schema type 'tt:ImagingSettingsExtension203': */
@@ -10927,7 +11017,7 @@ struct tt__ImagingSettingsExtension203 {
 };
 #endif
 
-/* onvif.h:14332 */
+/* onvif.h:14362 */
 #ifndef SOAP_TYPE_tt__ImagingSettingsExtension204
 #define SOAP_TYPE_tt__ImagingSettingsExtension204 (1302)
 /* complex XML schema type 'tt:ImagingSettingsExtension204': */
@@ -10938,7 +11028,7 @@ struct tt__ImagingSettingsExtension204 {
 };
 #endif
 
-/* onvif.h:14274 */
+/* onvif.h:14304 */
 #ifndef SOAP_TYPE_tt__ImageStabilization
 #define SOAP_TYPE_tt__ImageStabilization (1288)
 /* complex XML schema type 'tt:ImageStabilization': */
@@ -10954,7 +11044,7 @@ struct tt__ImageStabilization {
 };
 #endif
 
-/* onvif.h:14381 */
+/* onvif.h:14411 */
 #ifndef SOAP_TYPE_tt__ImageStabilizationExtension
 #define SOAP_TYPE_tt__ImageStabilizationExtension (1304)
 /* complex XML schema type 'tt:ImageStabilizationExtension': */
@@ -10965,7 +11055,7 @@ struct tt__ImageStabilizationExtension {
 };
 #endif
 
-/* onvif.h:14297 */
+/* onvif.h:14327 */
 #ifndef SOAP_TYPE_tt__IrCutFilterAutoAdjustment
 #define SOAP_TYPE_tt__IrCutFilterAutoAdjustment (1292)
 /* complex XML schema type 'tt:IrCutFilterAutoAdjustment': */
@@ -10983,7 +11073,7 @@ struct tt__IrCutFilterAutoAdjustment {
 };
 #endif
 
-/* onvif.h:14442 */
+/* onvif.h:14472 */
 #ifndef SOAP_TYPE_tt__IrCutFilterAutoAdjustmentExtension
 #define SOAP_TYPE_tt__IrCutFilterAutoAdjustmentExtension (1306)
 /* complex XML schema type 'tt:IrCutFilterAutoAdjustmentExtension': */
@@ -10994,7 +11084,7 @@ struct tt__IrCutFilterAutoAdjustmentExtension {
 };
 #endif
 
-/* onvif.h:14232 */
+/* onvif.h:14262 */
 #ifndef SOAP_TYPE_tt__WideDynamicRange20
 #define SOAP_TYPE_tt__WideDynamicRange20 (1282)
 /* complex XML schema type 'tt:WideDynamicRange20': */
@@ -11006,7 +11096,7 @@ struct tt__WideDynamicRange20 {
 };
 #endif
 
-/* onvif.h:14184 */
+/* onvif.h:14214 */
 #ifndef SOAP_TYPE_tt__BacklightCompensation20
 #define SOAP_TYPE_tt__BacklightCompensation20 (1276)
 /* complex XML schema type 'tt:BacklightCompensation20': */
@@ -11018,7 +11108,7 @@ struct tt__BacklightCompensation20 {
 };
 #endif
 
-/* onvif.h:14208 */
+/* onvif.h:14238 */
 #ifndef SOAP_TYPE_tt__Exposure20
 #define SOAP_TYPE_tt__Exposure20 (1278)
 /* complex XML schema type 'tt:Exposure20': */
@@ -11050,7 +11140,7 @@ struct tt__Exposure20 {
 };
 #endif
 
-/* onvif.h:14318 */
+/* onvif.h:14348 */
 #ifndef SOAP_TYPE_tt__ToneCompensation
 #define SOAP_TYPE_tt__ToneCompensation (1296)
 /* complex XML schema type 'tt:ToneCompensation': */
@@ -11066,7 +11156,7 @@ struct tt__ToneCompensation {
 };
 #endif
 
-/* onvif.h:14648 */
+/* onvif.h:14678 */
 #ifndef SOAP_TYPE_tt__ToneCompensationExtension
 #define SOAP_TYPE_tt__ToneCompensationExtension (1308)
 /* complex XML schema type 'tt:ToneCompensationExtension': */
@@ -11077,7 +11167,7 @@ struct tt__ToneCompensationExtension {
 };
 #endif
 
-/* onvif.h:14324 */
+/* onvif.h:14354 */
 #ifndef SOAP_TYPE_tt__Defogging
 #define SOAP_TYPE_tt__Defogging (1298)
 /* complex XML schema type 'tt:Defogging': */
@@ -11093,7 +11183,7 @@ struct tt__Defogging {
 };
 #endif
 
-/* onvif.h:14703 */
+/* onvif.h:14733 */
 #ifndef SOAP_TYPE_tt__DefoggingExtension
 #define SOAP_TYPE_tt__DefoggingExtension (1310)
 /* complex XML schema type 'tt:DefoggingExtension': */
@@ -11104,7 +11194,7 @@ struct tt__DefoggingExtension {
 };
 #endif
 
-/* onvif.h:14330 */
+/* onvif.h:14360 */
 #ifndef SOAP_TYPE_tt__NoiseReduction
 #define SOAP_TYPE_tt__NoiseReduction (1300)
 /* complex XML schema type 'tt:NoiseReduction': */
@@ -11119,7 +11209,7 @@ struct tt__NoiseReduction {
 };
 #endif
 
-/* onvif.h:14778 */
+/* onvif.h:14808 */
 #ifndef SOAP_TYPE_tt__ImagingOptions20
 #define SOAP_TYPE_tt__ImagingOptions20 (1312)
 /* complex XML schema type 'tt:ImagingOptions20': */
@@ -11152,7 +11242,7 @@ struct tt__ImagingOptions20 {
 };
 #endif
 
-/* onvif.h:14842 */
+/* onvif.h:14872 */
 #ifndef SOAP_TYPE_tt__ImagingOptions20Extension
 #define SOAP_TYPE_tt__ImagingOptions20Extension (1323)
 /* complex XML schema type 'tt:ImagingOptions20Extension': */
@@ -11167,7 +11257,7 @@ struct tt__ImagingOptions20Extension {
 };
 #endif
 
-/* onvif.h:14878 */
+/* onvif.h:14908 */
 #ifndef SOAP_TYPE_tt__ImagingOptions20Extension2
 #define SOAP_TYPE_tt__ImagingOptions20Extension2 (1327)
 /* complex XML schema type 'tt:ImagingOptions20Extension2': */
@@ -11179,7 +11269,7 @@ struct tt__ImagingOptions20Extension2 {
 };
 #endif
 
-/* onvif.h:14899 */
+/* onvif.h:14929 */
 #ifndef SOAP_TYPE_tt__ImagingOptions20Extension3
 #define SOAP_TYPE_tt__ImagingOptions20Extension3 (1331)
 /* complex XML schema type 'tt:ImagingOptions20Extension3': */
@@ -11195,7 +11285,7 @@ struct tt__ImagingOptions20Extension3 {
 };
 #endif
 
-/* onvif.h:14932 */
+/* onvif.h:14962 */
 #ifndef SOAP_TYPE_tt__ImagingOptions20Extension4
 #define SOAP_TYPE_tt__ImagingOptions20Extension4 (1339)
 /* complex XML schema type 'tt:ImagingOptions20Extension4': */
@@ -11206,7 +11296,7 @@ struct tt__ImagingOptions20Extension4 {
 };
 #endif
 
-/* onvif.h:14876 */
+/* onvif.h:14906 */
 #ifndef SOAP_TYPE_tt__ImageStabilizationOptions
 #define SOAP_TYPE_tt__ImageStabilizationOptions (1325)
 /* complex XML schema type 'tt:ImageStabilizationOptions': */
@@ -11223,7 +11313,7 @@ struct tt__ImageStabilizationOptions {
 };
 #endif
 
-/* onvif.h:14983 */
+/* onvif.h:15013 */
 #ifndef SOAP_TYPE_tt__ImageStabilizationOptionsExtension
 #define SOAP_TYPE_tt__ImageStabilizationOptionsExtension (1342)
 /* complex XML schema type 'tt:ImageStabilizationOptionsExtension': */
@@ -11234,7 +11324,7 @@ struct tt__ImageStabilizationOptionsExtension {
 };
 #endif
 
-/* onvif.h:14897 */
+/* onvif.h:14927 */
 #ifndef SOAP_TYPE_tt__IrCutFilterAutoAdjustmentOptions
 #define SOAP_TYPE_tt__IrCutFilterAutoAdjustmentOptions (1329)
 /* complex XML schema type 'tt:IrCutFilterAutoAdjustmentOptions': */
@@ -11253,7 +11343,7 @@ struct tt__IrCutFilterAutoAdjustmentOptions {
 };
 #endif
 
-/* onvif.h:15046 */
+/* onvif.h:15076 */
 #ifndef SOAP_TYPE_tt__IrCutFilterAutoAdjustmentOptionsExtension
 #define SOAP_TYPE_tt__IrCutFilterAutoAdjustmentOptionsExtension (1344)
 /* complex XML schema type 'tt:IrCutFilterAutoAdjustmentOptionsExtension': */
@@ -11264,7 +11354,7 @@ struct tt__IrCutFilterAutoAdjustmentOptionsExtension {
 };
 #endif
 
-/* onvif.h:14834 */
+/* onvif.h:14864 */
 #ifndef SOAP_TYPE_tt__WideDynamicRangeOptions20
 #define SOAP_TYPE_tt__WideDynamicRangeOptions20 (1319)
 /* complex XML schema type 'tt:WideDynamicRangeOptions20': */
@@ -11277,7 +11367,7 @@ struct tt__WideDynamicRangeOptions20 {
 };
 #endif
 
-/* onvif.h:14784 */
+/* onvif.h:14814 */
 #ifndef SOAP_TYPE_tt__BacklightCompensationOptions20
 #define SOAP_TYPE_tt__BacklightCompensationOptions20 (1313)
 /* complex XML schema type 'tt:BacklightCompensationOptions20': */
@@ -11290,7 +11380,7 @@ struct tt__BacklightCompensationOptions20 {
 };
 #endif
 
-/* onvif.h:14808 */
+/* onvif.h:14838 */
 #ifndef SOAP_TYPE_tt__ExposureOptions20
 #define SOAP_TYPE_tt__ExposureOptions20 (1315)
 /* complex XML schema type 'tt:ExposureOptions20': */
@@ -11322,7 +11412,7 @@ struct tt__ExposureOptions20 {
 };
 #endif
 
-/* onvif.h:15220 */
+/* onvif.h:15250 */
 #ifndef SOAP_TYPE_tt__MoveOptions20
 #define SOAP_TYPE_tt__MoveOptions20 (1347)
 /* complex XML schema type 'tt:MoveOptions20': */
@@ -11336,7 +11426,7 @@ struct tt__MoveOptions20 {
 };
 #endif
 
-/* onvif.h:15232 */
+/* onvif.h:15262 */
 #ifndef SOAP_TYPE_tt__RelativeFocusOptions20
 #define SOAP_TYPE_tt__RelativeFocusOptions20 (1348)
 /* complex XML schema type 'tt:RelativeFocusOptions20': */
@@ -11348,7 +11438,7 @@ struct tt__RelativeFocusOptions20 {
 };
 #endif
 
-/* onvif.h:14238 */
+/* onvif.h:14268 */
 #ifndef SOAP_TYPE_tt__WhiteBalance20
 #define SOAP_TYPE_tt__WhiteBalance20 (1284)
 /* complex XML schema type 'tt:WhiteBalance20': */
@@ -11366,7 +11456,7 @@ struct tt__WhiteBalance20 {
 };
 #endif
 
-/* onvif.h:15296 */
+/* onvif.h:15326 */
 #ifndef SOAP_TYPE_tt__WhiteBalance20Extension
 #define SOAP_TYPE_tt__WhiteBalance20Extension (1350)
 /* complex XML schema type 'tt:WhiteBalance20Extension': */
@@ -11377,7 +11467,7 @@ struct tt__WhiteBalance20Extension {
 };
 #endif
 
-/* onvif.h:14214 */
+/* onvif.h:14244 */
 #ifndef SOAP_TYPE_tt__FocusConfiguration20
 #define SOAP_TYPE_tt__FocusConfiguration20 (1280)
 /* complex XML schema type 'tt:FocusConfiguration20': */
@@ -11399,7 +11489,7 @@ struct tt__FocusConfiguration20 {
 };
 #endif
 
-/* onvif.h:15364 */
+/* onvif.h:15394 */
 #ifndef SOAP_TYPE_tt__FocusConfiguration20Extension
 #define SOAP_TYPE_tt__FocusConfiguration20Extension (1352)
 /* complex XML schema type 'tt:FocusConfiguration20Extension': */
@@ -11410,7 +11500,7 @@ struct tt__FocusConfiguration20Extension {
 };
 #endif
 
-/* onvif.h:14840 */
+/* onvif.h:14870 */
 #ifndef SOAP_TYPE_tt__WhiteBalanceOptions20
 #define SOAP_TYPE_tt__WhiteBalanceOptions20 (1321)
 /* complex XML schema type 'tt:WhiteBalanceOptions20': */
@@ -11427,7 +11517,7 @@ struct tt__WhiteBalanceOptions20 {
 };
 #endif
 
-/* onvif.h:15429 */
+/* onvif.h:15459 */
 #ifndef SOAP_TYPE_tt__WhiteBalanceOptions20Extension
 #define SOAP_TYPE_tt__WhiteBalanceOptions20Extension (1354)
 /* complex XML schema type 'tt:WhiteBalanceOptions20Extension': */
@@ -11438,7 +11528,7 @@ struct tt__WhiteBalanceOptions20Extension {
 };
 #endif
 
-/* onvif.h:14814 */
+/* onvif.h:14844 */
 #ifndef SOAP_TYPE_tt__FocusOptions20
 #define SOAP_TYPE_tt__FocusOptions20 (1317)
 /* complex XML schema type 'tt:FocusOptions20': */
@@ -11457,7 +11547,7 @@ struct tt__FocusOptions20 {
 };
 #endif
 
-/* onvif.h:15496 */
+/* onvif.h:15526 */
 #ifndef SOAP_TYPE_tt__FocusOptions20Extension
 #define SOAP_TYPE_tt__FocusOptions20Extension (1356)
 /* complex XML schema type 'tt:FocusOptions20Extension': */
@@ -11470,7 +11560,7 @@ struct tt__FocusOptions20Extension {
 };
 #endif
 
-/* onvif.h:14918 */
+/* onvif.h:14948 */
 #ifndef SOAP_TYPE_tt__ToneCompensationOptions
 #define SOAP_TYPE_tt__ToneCompensationOptions (1333)
 /* complex XML schema type 'tt:ToneCompensationOptions': */
@@ -11488,7 +11578,7 @@ struct tt__ToneCompensationOptions {
 };
 #endif
 
-/* onvif.h:14924 */
+/* onvif.h:14954 */
 #ifndef SOAP_TYPE_tt__DefoggingOptions
 #define SOAP_TYPE_tt__DefoggingOptions (1335)
 /* complex XML schema type 'tt:DefoggingOptions': */
@@ -11506,7 +11596,7 @@ struct tt__DefoggingOptions {
 };
 #endif
 
-/* onvif.h:14930 */
+/* onvif.h:14960 */
 #ifndef SOAP_TYPE_tt__NoiseReductionOptions
 #define SOAP_TYPE_tt__NoiseReductionOptions (1337)
 /* complex XML schema type 'tt:NoiseReductionOptions': */
@@ -11521,7 +11611,7 @@ struct tt__NoiseReductionOptions {
 };
 #endif
 
-/* onvif.h:15655 */
+/* onvif.h:15685 */
 #ifndef SOAP_TYPE_tt__MessageExtension
 #define SOAP_TYPE_tt__MessageExtension (1358)
 /* complex XML schema type 'tt:MessageExtension': */
@@ -11532,7 +11622,7 @@ struct tt__MessageExtension {
 };
 #endif
 
-/* onvif.h:15692 */
+/* onvif.h:15722 */
 #ifndef SOAP_TYPE__tt__ItemList_SimpleItem
 #define SOAP_TYPE__tt__ItemList_SimpleItem (1360)
 /* complex XML schema type 'tt:ItemList-SimpleItem': */
@@ -11544,7 +11634,7 @@ struct _tt__ItemList_SimpleItem {
 };
 #endif
 
-/* onvif.h:15720 */
+/* onvif.h:15750 */
 #ifndef SOAP_TYPE__tt__ItemList_ElementItem
 #define SOAP_TYPE__tt__ItemList_ElementItem (1362)
 /* complex XML schema type 'tt:ItemList-ElementItem': */
@@ -11555,7 +11645,7 @@ struct _tt__ItemList_ElementItem {
 };
 #endif
 
-/* onvif.h:15677 */
+/* onvif.h:15707 */
 #ifndef SOAP_TYPE_tt__ItemList
 #define SOAP_TYPE_tt__ItemList (1359)
 /* complex XML schema type 'tt:ItemList': */
@@ -11573,7 +11663,7 @@ struct tt__ItemList {
 };
 #endif
 
-/* onvif.h:15736 */
+/* onvif.h:15766 */
 #ifndef SOAP_TYPE_tt__ItemListExtension
 #define SOAP_TYPE_tt__ItemListExtension (1364)
 /* complex XML schema type 'tt:ItemListExtension': */
@@ -11584,7 +11674,7 @@ struct tt__ItemListExtension {
 };
 #endif
 
-/* onvif.h:15777 */
+/* onvif.h:15807 */
 #ifndef SOAP_TYPE_tt__MessageDescription
 #define SOAP_TYPE_tt__MessageDescription (1366)
 /* complex XML schema type 'tt:MessageDescription': */
@@ -11604,7 +11694,7 @@ struct tt__MessageDescription {
 };
 #endif
 
-/* onvif.h:15800 */
+/* onvif.h:15830 */
 #ifndef SOAP_TYPE_tt__MessageDescriptionExtension
 #define SOAP_TYPE_tt__MessageDescriptionExtension (1369)
 /* complex XML schema type 'tt:MessageDescriptionExtension': */
@@ -11615,7 +11705,7 @@ struct tt__MessageDescriptionExtension {
 };
 #endif
 
-/* onvif.h:15868 */
+/* onvif.h:15898 */
 #ifndef SOAP_TYPE__tt__ItemListDescription_SimpleItemDescription
 #define SOAP_TYPE__tt__ItemListDescription_SimpleItemDescription (1371)
 /* complex XML schema type 'tt:ItemListDescription-SimpleItemDescription': */
@@ -11627,7 +11717,7 @@ struct _tt__ItemListDescription_SimpleItemDescription {
 };
 #endif
 
-/* onvif.h:15892 */
+/* onvif.h:15922 */
 #ifndef SOAP_TYPE__tt__ItemListDescription_ElementItemDescription
 #define SOAP_TYPE__tt__ItemListDescription_ElementItemDescription (1373)
 /* complex XML schema type 'tt:ItemListDescription-ElementItemDescription': */
@@ -11639,7 +11729,7 @@ struct _tt__ItemListDescription_ElementItemDescription {
 };
 #endif
 
-/* onvif.h:15786 */
+/* onvif.h:15816 */
 #ifndef SOAP_TYPE_tt__ItemListDescription
 #define SOAP_TYPE_tt__ItemListDescription (1367)
 /* complex XML schema type 'tt:ItemListDescription': */
@@ -11657,7 +11747,7 @@ struct tt__ItemListDescription {
 };
 #endif
 
-/* onvif.h:15907 */
+/* onvif.h:15937 */
 #ifndef SOAP_TYPE_tt__ItemListDescriptionExtension
 #define SOAP_TYPE_tt__ItemListDescriptionExtension (1375)
 /* complex XML schema type 'tt:ItemListDescriptionExtension': */
@@ -11668,7 +11758,7 @@ struct tt__ItemListDescriptionExtension {
 };
 #endif
 
-/* onvif.h:15948 */
+/* onvif.h:15978 */
 #ifndef SOAP_TYPE_tt__Polyline
 #define SOAP_TYPE_tt__Polyline (1377)
 /* complex XML schema type 'tt:Polyline': */
@@ -11679,7 +11769,7 @@ struct tt__Polyline {
 };
 #endif
 
-/* onvif.h:15965 */
+/* onvif.h:15995 */
 #ifndef SOAP_TYPE_tt__AnalyticsEngineConfiguration
 #define SOAP_TYPE_tt__AnalyticsEngineConfiguration (1380)
 /* complex XML schema type 'tt:AnalyticsEngineConfiguration': */
@@ -11694,7 +11784,7 @@ struct tt__AnalyticsEngineConfiguration {
 };
 #endif
 
-/* onvif.h:15971 */
+/* onvif.h:16001 */
 #ifndef SOAP_TYPE_tt__AnalyticsEngineConfigurationExtension
 #define SOAP_TYPE_tt__AnalyticsEngineConfigurationExtension (1383)
 /* complex XML schema type 'tt:AnalyticsEngineConfigurationExtension': */
@@ -11705,7 +11795,7 @@ struct tt__AnalyticsEngineConfigurationExtension {
 };
 #endif
 
-/* onvif.h:16012 */
+/* onvif.h:16042 */
 #ifndef SOAP_TYPE_tt__RuleEngineConfiguration
 #define SOAP_TYPE_tt__RuleEngineConfiguration (1385)
 /* complex XML schema type 'tt:RuleEngineConfiguration': */
@@ -11720,7 +11810,7 @@ struct tt__RuleEngineConfiguration {
 };
 #endif
 
-/* onvif.h:16018 */
+/* onvif.h:16048 */
 #ifndef SOAP_TYPE_tt__RuleEngineConfigurationExtension
 #define SOAP_TYPE_tt__RuleEngineConfigurationExtension (1386)
 /* complex XML schema type 'tt:RuleEngineConfigurationExtension': */
@@ -11731,7 +11821,7 @@ struct tt__RuleEngineConfigurationExtension {
 };
 #endif
 
-/* onvif.h:15969 */
+/* onvif.h:15999 */
 #ifndef SOAP_TYPE_tt__Config
 #define SOAP_TYPE_tt__Config (1381)
 /* complex XML schema type 'tt:Config': */
@@ -11745,7 +11835,7 @@ struct tt__Config {
 };
 #endif
 
-/* onvif.h:16116 */
+/* onvif.h:16146 */
 #ifndef SOAP_TYPE__tt__ConfigDescription_Messages
 #define SOAP_TYPE__tt__ConfigDescription_Messages (1390)
 /* complex XML schema type 'tt:ConfigDescription-Messages': */
@@ -11767,7 +11857,7 @@ struct _tt__ConfigDescription_Messages {
 };
 #endif
 
-/* onvif.h:16090 */
+/* onvif.h:16120 */
 #ifndef SOAP_TYPE_tt__ConfigDescription
 #define SOAP_TYPE_tt__ConfigDescription (1389)
 /* complex XML schema type 'tt:ConfigDescription': */
@@ -11790,7 +11880,7 @@ struct tt__ConfigDescription {
 };
 #endif
 
-/* onvif.h:16162 */
+/* onvif.h:16192 */
 #ifndef SOAP_TYPE_tt__ConfigDescriptionExtension
 #define SOAP_TYPE_tt__ConfigDescriptionExtension (1392)
 /* complex XML schema type 'tt:ConfigDescriptionExtension': */
@@ -11801,7 +11891,7 @@ struct tt__ConfigDescriptionExtension {
 };
 #endif
 
-/* onvif.h:16221 */
+/* onvif.h:16251 */
 #ifndef SOAP_TYPE_tt__SupportedRules
 #define SOAP_TYPE_tt__SupportedRules (1394)
 /* complex XML schema type 'tt:SupportedRules': */
@@ -11821,7 +11911,7 @@ struct tt__SupportedRules {
 };
 #endif
 
-/* onvif.h:16239 */
+/* onvif.h:16269 */
 #ifndef SOAP_TYPE_tt__SupportedRulesExtension
 #define SOAP_TYPE_tt__SupportedRulesExtension (1396)
 /* complex XML schema type 'tt:SupportedRulesExtension': */
@@ -11832,7 +11922,7 @@ struct tt__SupportedRulesExtension {
 };
 #endif
 
-/* onvif.h:16286 */
+/* onvif.h:16316 */
 #ifndef SOAP_TYPE_tt__SupportedAnalyticsModules
 #define SOAP_TYPE_tt__SupportedAnalyticsModules (1398)
 /* complex XML schema type 'tt:SupportedAnalyticsModules': */
@@ -11852,7 +11942,7 @@ struct tt__SupportedAnalyticsModules {
 };
 #endif
 
-/* onvif.h:16303 */
+/* onvif.h:16333 */
 #ifndef SOAP_TYPE_tt__SupportedAnalyticsModulesExtension
 #define SOAP_TYPE_tt__SupportedAnalyticsModulesExtension (1399)
 /* complex XML schema type 'tt:SupportedAnalyticsModulesExtension': */
@@ -11863,7 +11953,7 @@ struct tt__SupportedAnalyticsModulesExtension {
 };
 #endif
 
-/* onvif.h:16350 */
+/* onvif.h:16380 */
 #ifndef SOAP_TYPE_tt__PolylineArray
 #define SOAP_TYPE_tt__PolylineArray (1401)
 /* complex XML schema type 'tt:PolylineArray': */
@@ -11878,7 +11968,7 @@ struct tt__PolylineArray {
 };
 #endif
 
-/* onvif.h:16360 */
+/* onvif.h:16390 */
 #ifndef SOAP_TYPE_tt__PolylineArrayExtension
 #define SOAP_TYPE_tt__PolylineArrayExtension (1403)
 /* complex XML schema type 'tt:PolylineArrayExtension': */
@@ -11889,7 +11979,7 @@ struct tt__PolylineArrayExtension {
 };
 #endif
 
-/* onvif.h:16401 */
+/* onvif.h:16431 */
 #ifndef SOAP_TYPE_tt__PolylineArrayConfiguration
 #define SOAP_TYPE_tt__PolylineArrayConfiguration (1405)
 /* complex XML schema type 'tt:PolylineArrayConfiguration': */
@@ -11904,7 +11994,7 @@ struct tt__PolylineArrayConfiguration {
 };
 #endif
 
-/* onvif.h:16435 */
+/* onvif.h:16465 */
 #ifndef SOAP_TYPE_tt__MotionExpression
 #define SOAP_TYPE_tt__MotionExpression (1407)
 /* complex XML schema type 'tt:MotionExpression': */
@@ -11921,7 +12011,7 @@ struct tt__MotionExpression {
 };
 #endif
 
-/* onvif.h:16471 */
+/* onvif.h:16501 */
 #ifndef SOAP_TYPE_tt__MotionExpressionConfiguration
 #define SOAP_TYPE_tt__MotionExpressionConfiguration (1408)
 /* complex XML schema type 'tt:MotionExpressionConfiguration': */
@@ -11936,7 +12026,7 @@ struct tt__MotionExpressionConfiguration {
 };
 #endif
 
-/* onvif.h:16505 */
+/* onvif.h:16535 */
 #ifndef SOAP_TYPE_tt__CellLayout
 #define SOAP_TYPE_tt__CellLayout (1410)
 /* complex XML schema type 'tt:CellLayout': */
@@ -11955,7 +12045,7 @@ struct tt__CellLayout {
 };
 #endif
 
-/* onvif.h:16555 */
+/* onvif.h:16585 */
 #ifndef SOAP_TYPE_tt__PaneConfiguration
 #define SOAP_TYPE_tt__PaneConfiguration (1413)
 /* complex XML schema type 'tt:PaneConfiguration': */
@@ -11980,7 +12070,7 @@ struct tt__PaneConfiguration {
 };
 #endif
 
-/* onvif.h:16629 */
+/* onvif.h:16659 */
 #ifndef SOAP_TYPE_tt__PaneLayout
 #define SOAP_TYPE_tt__PaneLayout (1414)
 /* complex XML schema type 'tt:PaneLayout': */
@@ -11997,7 +12087,7 @@ struct tt__PaneLayout {
 };
 #endif
 
-/* onvif.h:16673 */
+/* onvif.h:16703 */
 #ifndef SOAP_TYPE_tt__Layout
 #define SOAP_TYPE_tt__Layout (1415)
 /* complex XML schema type 'tt:Layout': */
@@ -12012,7 +12102,7 @@ struct tt__Layout {
 };
 #endif
 
-/* onvif.h:16683 */
+/* onvif.h:16713 */
 #ifndef SOAP_TYPE_tt__LayoutExtension
 #define SOAP_TYPE_tt__LayoutExtension (1417)
 /* complex XML schema type 'tt:LayoutExtension': */
@@ -12023,7 +12113,7 @@ struct tt__LayoutExtension {
 };
 #endif
 
-/* onvif.h:16728 */
+/* onvif.h:16758 */
 #ifndef SOAP_TYPE_tt__CodingCapabilities
 #define SOAP_TYPE_tt__CodingCapabilities (1419)
 /* complex XML schema type 'tt:CodingCapabilities': */
@@ -12042,7 +12132,7 @@ struct tt__CodingCapabilities {
 };
 #endif
 
-/* onvif.h:16778 */
+/* onvif.h:16808 */
 #ifndef SOAP_TYPE_tt__LayoutOptions
 #define SOAP_TYPE_tt__LayoutOptions (1423)
 /* complex XML schema type 'tt:LayoutOptions': */
@@ -12057,7 +12147,7 @@ struct tt__LayoutOptions {
 };
 #endif
 
-/* onvif.h:16788 */
+/* onvif.h:16818 */
 #ifndef SOAP_TYPE_tt__LayoutOptionsExtension
 #define SOAP_TYPE_tt__LayoutOptionsExtension (1426)
 /* complex XML schema type 'tt:LayoutOptionsExtension': */
@@ -12068,7 +12158,7 @@ struct tt__LayoutOptionsExtension {
 };
 #endif
 
-/* onvif.h:16786 */
+/* onvif.h:16816 */
 #ifndef SOAP_TYPE_tt__PaneLayoutOptions
 #define SOAP_TYPE_tt__PaneLayoutOptions (1424)
 /* complex XML schema type 'tt:PaneLayoutOptions': */
@@ -12083,7 +12173,7 @@ struct tt__PaneLayoutOptions {
 };
 #endif
 
-/* onvif.h:16843 */
+/* onvif.h:16873 */
 #ifndef SOAP_TYPE_tt__PaneOptionExtension
 #define SOAP_TYPE_tt__PaneOptionExtension (1428)
 /* complex XML schema type 'tt:PaneOptionExtension': */
@@ -12094,7 +12184,7 @@ struct tt__PaneOptionExtension {
 };
 #endif
 
-/* onvif.h:16888 */
+/* onvif.h:16918 */
 #ifndef SOAP_TYPE_tt__Receiver
 #define SOAP_TYPE_tt__Receiver (1430)
 /* complex XML schema type 'tt:Receiver': */
@@ -12111,7 +12201,7 @@ struct tt__Receiver {
 };
 #endif
 
-/* onvif.h:16900 */
+/* onvif.h:16930 */
 #ifndef SOAP_TYPE_tt__ReceiverConfiguration
 #define SOAP_TYPE_tt__ReceiverConfiguration (1431)
 /* complex XML schema type 'tt:ReceiverConfiguration': */
@@ -12130,7 +12220,7 @@ struct tt__ReceiverConfiguration {
 };
 #endif
 
-/* onvif.h:16982 */
+/* onvif.h:17012 */
 #ifndef SOAP_TYPE_tt__ReceiverStateInformation
 #define SOAP_TYPE_tt__ReceiverStateInformation (1434)
 /* complex XML schema type 'tt:ReceiverStateInformation': */
@@ -12147,7 +12237,7 @@ struct tt__ReceiverStateInformation {
 };
 #endif
 
-/* onvif.h:17022 */
+/* onvif.h:17052 */
 #ifndef SOAP_TYPE_tt__SourceReference
 #define SOAP_TYPE_tt__SourceReference (1435)
 /* complex XML schema type 'tt:SourceReference': */
@@ -12164,7 +12254,7 @@ struct tt__SourceReference {
 };
 #endif
 
-/* onvif.h:11701 */
+/* onvif.h:11731 */
 #ifndef SOAP_TYPE_tt__DateTimeRange
 #define SOAP_TYPE_tt__DateTimeRange (1119)
 /* complex XML schema type 'tt:DateTimeRange': */
@@ -12181,7 +12271,7 @@ struct tt__DateTimeRange {
 };
 #endif
 
-/* onvif.h:17086 */
+/* onvif.h:17116 */
 #ifndef SOAP_TYPE_tt__RecordingSummary
 #define SOAP_TYPE_tt__RecordingSummary (1436)
 /* complex XML schema type 'tt:RecordingSummary': */
@@ -12200,7 +12290,7 @@ struct tt__RecordingSummary {
 };
 #endif
 
-/* onvif.h:17136 */
+/* onvif.h:17166 */
 #ifndef SOAP_TYPE_tt__SearchScope
 #define SOAP_TYPE_tt__SearchScope (1437)
 /* complex XML schema type 'tt:SearchScope': */
@@ -12220,7 +12310,7 @@ struct tt__SearchScope {
 };
 #endif
 
-/* onvif.h:17164 */
+/* onvif.h:17194 */
 #ifndef SOAP_TYPE_tt__SearchScopeExtension
 #define SOAP_TYPE_tt__SearchScopeExtension (1440)
 /* complex XML schema type 'tt:SearchScopeExtension': */
@@ -12231,7 +12321,7 @@ struct tt__SearchScopeExtension {
 };
 #endif
 
-/* onvif.h:17205 */
+/* onvif.h:17235 */
 #ifndef SOAP_TYPE_tt__PTZPositionFilter
 #define SOAP_TYPE_tt__PTZPositionFilter (1442)
 /* complex XML schema type 'tt:PTZPositionFilter': */
@@ -12250,7 +12340,7 @@ struct tt__PTZPositionFilter {
 };
 #endif
 
-/* onvif.h:17251 */
+/* onvif.h:17281 */
 #ifndef SOAP_TYPE_tt__MetadataFilter
 #define SOAP_TYPE_tt__MetadataFilter (1443)
 /* complex XML schema type 'tt:MetadataFilter': */
@@ -12265,7 +12355,7 @@ struct tt__MetadataFilter {
 };
 #endif
 
-/* onvif.h:17281 */
+/* onvif.h:17311 */
 #ifndef SOAP_TYPE_tt__FindRecordingResultList
 #define SOAP_TYPE_tt__FindRecordingResultList (1444)
 /* complex XML schema type 'tt:FindRecordingResultList': */
@@ -12278,7 +12368,7 @@ struct tt__FindRecordingResultList {
 };
 #endif
 
-/* onvif.h:17308 */
+/* onvif.h:17338 */
 #ifndef SOAP_TYPE_tt__FindEventResultList
 #define SOAP_TYPE_tt__FindEventResultList (1447)
 /* complex XML schema type 'tt:FindEventResultList': */
@@ -12291,7 +12381,7 @@ struct tt__FindEventResultList {
 };
 #endif
 
-/* onvif.h:17322 */
+/* onvif.h:17352 */
 #ifndef SOAP_TYPE_tt__FindEventResult
 #define SOAP_TYPE_tt__FindEventResult (1448)
 /* complex XML schema type 'tt:FindEventResult': */
@@ -12314,7 +12404,7 @@ struct tt__FindEventResult {
 };
 #endif
 
-/* onvif.h:17393 */
+/* onvif.h:17423 */
 #ifndef SOAP_TYPE_tt__FindPTZPositionResultList
 #define SOAP_TYPE_tt__FindPTZPositionResultList (1452)
 /* complex XML schema type 'tt:FindPTZPositionResultList': */
@@ -12327,7 +12417,7 @@ struct tt__FindPTZPositionResultList {
 };
 #endif
 
-/* onvif.h:17407 */
+/* onvif.h:17437 */
 #ifndef SOAP_TYPE_tt__FindPTZPositionResult
 #define SOAP_TYPE_tt__FindPTZPositionResult (1453)
 /* complex XML schema type 'tt:FindPTZPositionResult': */
@@ -12348,7 +12438,7 @@ struct tt__FindPTZPositionResult {
 };
 #endif
 
-/* onvif.h:17472 */
+/* onvif.h:17502 */
 #ifndef SOAP_TYPE_tt__FindMetadataResultList
 #define SOAP_TYPE_tt__FindMetadataResultList (1455)
 /* complex XML schema type 'tt:FindMetadataResultList': */
@@ -12361,7 +12451,7 @@ struct tt__FindMetadataResultList {
 };
 #endif
 
-/* onvif.h:17486 */
+/* onvif.h:17516 */
 #ifndef SOAP_TYPE_tt__FindMetadataResult
 #define SOAP_TYPE_tt__FindMetadataResult (1456)
 /* complex XML schema type 'tt:FindMetadataResult': */
@@ -12380,7 +12470,7 @@ struct tt__FindMetadataResult {
 };
 #endif
 
-/* onvif.h:17295 */
+/* onvif.h:17325 */
 #ifndef SOAP_TYPE_tt__RecordingInformation
 #define SOAP_TYPE_tt__RecordingInformation (1445)
 /* complex XML schema type 'tt:RecordingInformation': */
@@ -12408,7 +12498,7 @@ struct tt__RecordingInformation {
 };
 #endif
 
-/* onvif.h:17555 */
+/* onvif.h:17585 */
 #ifndef SOAP_TYPE_tt__RecordingSourceInformation
 #define SOAP_TYPE_tt__RecordingSourceInformation (1458)
 /* complex XML schema type 'tt:RecordingSourceInformation': */
@@ -12431,7 +12521,7 @@ struct tt__RecordingSourceInformation {
 };
 #endif
 
-/* onvif.h:17569 */
+/* onvif.h:17599 */
 #ifndef SOAP_TYPE_tt__TrackInformation
 #define SOAP_TYPE_tt__TrackInformation (1460)
 /* complex XML schema type 'tt:TrackInformation': */
@@ -12454,7 +12544,7 @@ struct tt__TrackInformation {
 };
 #endif
 
-/* onvif.h:17721 */
+/* onvif.h:17751 */
 #ifndef SOAP_TYPE_tt__MediaAttributes
 #define SOAP_TYPE_tt__MediaAttributes (1462)
 /* complex XML schema type 'tt:MediaAttributes': */
@@ -12476,7 +12566,7 @@ struct tt__MediaAttributes {
 };
 #endif
 
-/* onvif.h:17735 */
+/* onvif.h:17765 */
 #ifndef SOAP_TYPE_tt__TrackAttributes
 #define SOAP_TYPE_tt__TrackAttributes (1463)
 /* complex XML schema type 'tt:TrackAttributes': */
@@ -12496,7 +12586,7 @@ struct tt__TrackAttributes {
 };
 #endif
 
-/* onvif.h:17804 */
+/* onvif.h:17834 */
 #ifndef SOAP_TYPE_tt__TrackAttributesExtension
 #define SOAP_TYPE_tt__TrackAttributesExtension (1471)
 /* complex XML schema type 'tt:TrackAttributesExtension': */
@@ -12507,7 +12597,7 @@ struct tt__TrackAttributesExtension {
 };
 #endif
 
-/* onvif.h:17787 */
+/* onvif.h:17817 */
 #ifndef SOAP_TYPE_tt__VideoAttributes
 #define SOAP_TYPE_tt__VideoAttributes (1465)
 /* complex XML schema type 'tt:VideoAttributes': */
@@ -12530,7 +12620,7 @@ struct tt__VideoAttributes {
 };
 #endif
 
-/* onvif.h:17793 */
+/* onvif.h:17823 */
 #ifndef SOAP_TYPE_tt__AudioAttributes
 #define SOAP_TYPE_tt__AudioAttributes (1467)
 /* complex XML schema type 'tt:AudioAttributes': */
@@ -12549,7 +12639,7 @@ struct tt__AudioAttributes {
 };
 #endif
 
-/* onvif.h:17799 */
+/* onvif.h:17829 */
 #ifndef SOAP_TYPE_tt__MetadataAttributes
 #define SOAP_TYPE_tt__MetadataAttributes (1469)
 /* complex XML schema type 'tt:MetadataAttributes': */
@@ -12570,7 +12660,7 @@ struct tt__MetadataAttributes {
 };
 #endif
 
-/* onvif.h:18001 */
+/* onvif.h:18031 */
 #ifndef SOAP_TYPE_tt__RecordingConfiguration
 #define SOAP_TYPE_tt__RecordingConfiguration (1473)
 /* complex XML schema type 'tt:RecordingConfiguration': */
@@ -12589,7 +12679,7 @@ struct tt__RecordingConfiguration {
 };
 #endif
 
-/* onvif.h:18052 */
+/* onvif.h:18082 */
 #ifndef SOAP_TYPE_tt__TrackConfiguration
 #define SOAP_TYPE_tt__TrackConfiguration (1474)
 /* complex XML schema type 'tt:TrackConfiguration': */
@@ -12606,7 +12696,7 @@ struct tt__TrackConfiguration {
 };
 #endif
 
-/* onvif.h:18093 */
+/* onvif.h:18123 */
 #ifndef SOAP_TYPE_tt__GetRecordingsResponseItem
 #define SOAP_TYPE_tt__GetRecordingsResponseItem (1475)
 /* complex XML schema type 'tt:GetRecordingsResponseItem': */
@@ -12625,7 +12715,7 @@ struct tt__GetRecordingsResponseItem {
 };
 #endif
 
-/* onvif.h:18111 */
+/* onvif.h:18141 */
 #ifndef SOAP_TYPE_tt__GetTracksResponseList
 #define SOAP_TYPE_tt__GetTracksResponseList (1477)
 /* complex XML schema type 'tt:GetTracksResponseList': */
@@ -12638,7 +12728,7 @@ struct tt__GetTracksResponseList {
 };
 #endif
 
-/* onvif.h:18147 */
+/* onvif.h:18177 */
 #ifndef SOAP_TYPE_tt__GetTracksResponseItem
 #define SOAP_TYPE_tt__GetTracksResponseItem (1479)
 /* complex XML schema type 'tt:GetTracksResponseItem': */
@@ -12655,7 +12745,7 @@ struct tt__GetTracksResponseItem {
 };
 #endif
 
-/* onvif.h:18206 */
+/* onvif.h:18236 */
 #ifndef SOAP_TYPE_tt__RecordingJobConfiguration
 #define SOAP_TYPE_tt__RecordingJobConfiguration (1482)
 /* complex XML schema type 'tt:RecordingJobConfiguration': */
@@ -12683,7 +12773,7 @@ struct tt__RecordingJobConfiguration {
 };
 #endif
 
-/* onvif.h:18291 */
+/* onvif.h:18321 */
 #ifndef SOAP_TYPE__tt__RecordingEventFilter_Filter
 #define SOAP_TYPE__tt__RecordingEventFilter_Filter (1489)
 /* complex XML schema type 'tt:RecordingEventFilter-Filter': */
@@ -12700,7 +12790,7 @@ struct _tt__RecordingEventFilter_Filter {
 };
 #endif
 
-/* onvif.h:18246 */
+/* onvif.h:18276 */
 #ifndef SOAP_TYPE_tt__RecordingEventFilter
 #define SOAP_TYPE_tt__RecordingEventFilter (1487)
 /* complex XML schema type 'tt:RecordingEventFilter': */
@@ -12720,7 +12810,7 @@ struct tt__RecordingEventFilter {
 };
 #endif
 
-/* onvif.h:18240 */
+/* onvif.h:18270 */
 #ifndef SOAP_TYPE_tt__RecordingJobConfigurationExtension
 #define SOAP_TYPE_tt__RecordingJobConfigurationExtension (1485)
 /* complex XML schema type 'tt:RecordingJobConfigurationExtension': */
@@ -12731,7 +12821,7 @@ struct tt__RecordingJobConfigurationExtension {
 };
 #endif
 
-/* onvif.h:18238 */
+/* onvif.h:18268 */
 #ifndef SOAP_TYPE_tt__RecordingJobSource
 #define SOAP_TYPE_tt__RecordingJobSource (1483)
 /* complex XML schema type 'tt:RecordingJobSource': */
@@ -12750,7 +12840,7 @@ struct tt__RecordingJobSource {
 };
 #endif
 
-/* onvif.h:18411 */
+/* onvif.h:18441 */
 #ifndef SOAP_TYPE_tt__RecordingJobSourceExtension
 #define SOAP_TYPE_tt__RecordingJobSourceExtension (1493)
 /* complex XML schema type 'tt:RecordingJobSourceExtension': */
@@ -12761,7 +12851,7 @@ struct tt__RecordingJobSourceExtension {
 };
 #endif
 
-/* onvif.h:18409 */
+/* onvif.h:18439 */
 #ifndef SOAP_TYPE_tt__RecordingJobTrack
 #define SOAP_TYPE_tt__RecordingJobTrack (1491)
 /* complex XML schema type 'tt:RecordingJobTrack': */
@@ -12778,7 +12868,7 @@ struct tt__RecordingJobTrack {
 };
 #endif
 
-/* onvif.h:18494 */
+/* onvif.h:18524 */
 #ifndef SOAP_TYPE_tt__RecordingJobStateInformation
 #define SOAP_TYPE_tt__RecordingJobStateInformation (1495)
 /* complex XML schema type 'tt:RecordingJobStateInformation': */
@@ -12797,7 +12887,7 @@ struct tt__RecordingJobStateInformation {
 };
 #endif
 
-/* onvif.h:18516 */
+/* onvif.h:18546 */
 #ifndef SOAP_TYPE_tt__RecordingJobStateInformationExtension
 #define SOAP_TYPE_tt__RecordingJobStateInformationExtension (1498)
 /* complex XML schema type 'tt:RecordingJobStateInformationExtension': */
@@ -12808,7 +12898,7 @@ struct tt__RecordingJobStateInformationExtension {
 };
 #endif
 
-/* onvif.h:18514 */
+/* onvif.h:18544 */
 #ifndef SOAP_TYPE_tt__RecordingJobStateSource
 #define SOAP_TYPE_tt__RecordingJobStateSource (1496)
 /* complex XML schema type 'tt:RecordingJobStateSource': */
@@ -12827,7 +12917,7 @@ struct tt__RecordingJobStateSource {
 };
 #endif
 
-/* onvif.h:18575 */
+/* onvif.h:18605 */
 #ifndef SOAP_TYPE_tt__RecordingJobStateTracks
 #define SOAP_TYPE_tt__RecordingJobStateTracks (1500)
 /* complex XML schema type 'tt:RecordingJobStateTracks': */
@@ -12840,7 +12930,7 @@ struct tt__RecordingJobStateTracks {
 };
 #endif
 
-/* onvif.h:18607 */
+/* onvif.h:18637 */
 #ifndef SOAP_TYPE_tt__RecordingJobStateTrack
 #define SOAP_TYPE_tt__RecordingJobStateTrack (1502)
 /* complex XML schema type 'tt:RecordingJobStateTrack': */
@@ -12861,7 +12951,7 @@ struct tt__RecordingJobStateTrack {
 };
 #endif
 
-/* onvif.h:18680 */
+/* onvif.h:18710 */
 #ifndef SOAP_TYPE_tt__GetRecordingJobsResponseItem
 #define SOAP_TYPE_tt__GetRecordingJobsResponseItem (1504)
 /* complex XML schema type 'tt:GetRecordingJobsResponseItem': */
@@ -12878,7 +12968,7 @@ struct tt__GetRecordingJobsResponseItem {
 };
 #endif
 
-/* onvif.h:18716 */
+/* onvif.h:18746 */
 #ifndef SOAP_TYPE_tt__ReplayConfiguration
 #define SOAP_TYPE_tt__ReplayConfiguration (1506)
 /* complex XML schema type 'tt:ReplayConfiguration': */
@@ -12893,7 +12983,7 @@ struct tt__ReplayConfiguration {
 };
 #endif
 
-/* onvif.h:18750 */
+/* onvif.h:18780 */
 #ifndef SOAP_TYPE_tt__AnalyticsDeviceEngineConfiguration
 #define SOAP_TYPE_tt__AnalyticsDeviceEngineConfiguration (1507)
 /* complex XML schema type 'tt:AnalyticsDeviceEngineConfiguration': */
@@ -12908,7 +12998,7 @@ struct tt__AnalyticsDeviceEngineConfiguration {
 };
 #endif
 
-/* onvif.h:18756 */
+/* onvif.h:18786 */
 #ifndef SOAP_TYPE_tt__AnalyticsDeviceEngineConfigurationExtension
 #define SOAP_TYPE_tt__AnalyticsDeviceEngineConfigurationExtension (1510)
 /* complex XML schema type 'tt:AnalyticsDeviceEngineConfigurationExtension': */
@@ -12919,7 +13009,7 @@ struct tt__AnalyticsDeviceEngineConfigurationExtension {
 };
 #endif
 
-/* onvif.h:18754 */
+/* onvif.h:18784 */
 #ifndef SOAP_TYPE_tt__EngineConfiguration
 #define SOAP_TYPE_tt__EngineConfiguration (1508)
 /* complex XML schema type 'tt:EngineConfiguration': */
@@ -12936,7 +13026,7 @@ struct tt__EngineConfiguration {
 };
 #endif
 
-/* onvif.h:18801 */
+/* onvif.h:18831 */
 #ifndef SOAP_TYPE_tt__AnalyticsEngineInputInfo
 #define SOAP_TYPE_tt__AnalyticsEngineInputInfo (1512)
 /* complex XML schema type 'tt:AnalyticsEngineInputInfo': */
@@ -12950,7 +13040,7 @@ struct tt__AnalyticsEngineInputInfo {
 };
 #endif
 
-/* onvif.h:18833 */
+/* onvif.h:18863 */
 #ifndef SOAP_TYPE_tt__AnalyticsEngineInputInfoExtension
 #define SOAP_TYPE_tt__AnalyticsEngineInputInfoExtension (1514)
 /* complex XML schema type 'tt:AnalyticsEngineInputInfoExtension': */
@@ -12961,7 +13051,7 @@ struct tt__AnalyticsEngineInputInfoExtension {
 };
 #endif
 
-/* onvif.h:18874 */
+/* onvif.h:18904 */
 #ifndef SOAP_TYPE_tt__SourceIdentification
 #define SOAP_TYPE_tt__SourceIdentification (1516)
 /* complex XML schema type 'tt:SourceIdentification': */
@@ -12978,7 +13068,7 @@ struct tt__SourceIdentification {
 };
 #endif
 
-/* onvif.h:18882 */
+/* onvif.h:18912 */
 #ifndef SOAP_TYPE_tt__SourceIdentificationExtension
 #define SOAP_TYPE_tt__SourceIdentificationExtension (1517)
 /* complex XML schema type 'tt:SourceIdentificationExtension': */
@@ -12989,7 +13079,7 @@ struct tt__SourceIdentificationExtension {
 };
 #endif
 
-/* onvif.h:18923 */
+/* onvif.h:18953 */
 #ifndef SOAP_TYPE_tt__MetadataInput
 #define SOAP_TYPE_tt__MetadataInput (1519)
 /* complex XML schema type 'tt:MetadataInput': */
@@ -13004,7 +13094,7 @@ struct tt__MetadataInput {
 };
 #endif
 
-/* onvif.h:18929 */
+/* onvif.h:18959 */
 #ifndef SOAP_TYPE_tt__MetadataInputExtension
 #define SOAP_TYPE_tt__MetadataInputExtension (1520)
 /* complex XML schema type 'tt:MetadataInputExtension': */
@@ -13015,7 +13105,7 @@ struct tt__MetadataInputExtension {
 };
 #endif
 
-/* onvif.h:18970 */
+/* onvif.h:19000 */
 #ifndef SOAP_TYPE_tt__AnalyticsStateInformation
 #define SOAP_TYPE_tt__AnalyticsStateInformation (1522)
 /* complex XML schema type 'tt:AnalyticsStateInformation': */
@@ -13032,7 +13122,7 @@ struct tt__AnalyticsStateInformation {
 };
 #endif
 
-/* onvif.h:18978 */
+/* onvif.h:19008 */
 #ifndef SOAP_TYPE_tt__AnalyticsState
 #define SOAP_TYPE_tt__AnalyticsState (1523)
 /* complex XML schema type 'tt:AnalyticsState': */
@@ -13049,7 +13139,7 @@ struct tt__AnalyticsState {
 };
 #endif
 
-/* onvif.h:19042 */
+/* onvif.h:19072 */
 #ifndef SOAP_TYPE_tt__ActionEngineEventPayload
 #define SOAP_TYPE_tt__ActionEngineEventPayload (1525)
 /* complex XML schema type 'tt:ActionEngineEventPayload': */
@@ -13067,7 +13157,7 @@ struct tt__ActionEngineEventPayload {
 };
 #endif
 
-/* onvif.h:19062 */
+/* onvif.h:19092 */
 #ifndef SOAP_TYPE_tt__ActionEngineEventPayloadExtension
 #define SOAP_TYPE_tt__ActionEngineEventPayloadExtension (1528)
 /* complex XML schema type 'tt:ActionEngineEventPayloadExtension': */
@@ -13080,7 +13170,7 @@ struct tt__ActionEngineEventPayloadExtension {
 };
 #endif
 
-/* onvif.h:19109 */
+/* onvif.h:19139 */
 #ifndef SOAP_TYPE_tt__AudioClassCandidate
 #define SOAP_TYPE_tt__AudioClassCandidate (1530)
 /* complex XML schema type 'tt:AudioClassCandidate': */
@@ -13097,7 +13187,7 @@ struct tt__AudioClassCandidate {
 };
 #endif
 
-/* onvif.h:19149 */
+/* onvif.h:19179 */
 #ifndef SOAP_TYPE_tt__AudioClassDescriptor
 #define SOAP_TYPE_tt__AudioClassDescriptor (1531)
 /* complex XML schema type 'tt:AudioClassDescriptor': */
@@ -13112,7 +13202,7 @@ struct tt__AudioClassDescriptor {
 };
 #endif
 
-/* onvif.h:19159 */
+/* onvif.h:19189 */
 #ifndef SOAP_TYPE_tt__AudioClassDescriptorExtension
 #define SOAP_TYPE_tt__AudioClassDescriptorExtension (1533)
 /* complex XML schema type 'tt:AudioClassDescriptorExtension': */
@@ -13125,7 +13215,7 @@ struct tt__AudioClassDescriptorExtension {
 };
 #endif
 
-/* onvif.h:19206 */
+/* onvif.h:19236 */
 #ifndef SOAP_TYPE_tt__ActiveConnection
 #define SOAP_TYPE_tt__ActiveConnection (1535)
 /* complex XML schema type 'tt:ActiveConnection': */
@@ -13142,7 +13232,7 @@ struct tt__ActiveConnection {
 };
 #endif
 
-/* onvif.h:19238 */
+/* onvif.h:19268 */
 #ifndef SOAP_TYPE_tt__ProfileStatus
 #define SOAP_TYPE_tt__ProfileStatus (1536)
 /* complex XML schema type 'tt:ProfileStatus': */
@@ -13155,7 +13245,7 @@ struct tt__ProfileStatus {
 };
 #endif
 
-/* onvif.h:19244 */
+/* onvif.h:19274 */
 #ifndef SOAP_TYPE_tt__ProfileStatusExtension
 #define SOAP_TYPE_tt__ProfileStatusExtension (1538)
 /* complex XML schema type 'tt:ProfileStatusExtension': */
@@ -13168,7 +13258,7 @@ struct tt__ProfileStatusExtension {
 };
 #endif
 
-/* onvif.h:19285 */
+/* onvif.h:19315 */
 #ifndef SOAP_TYPE_tt__OSDPosConfiguration
 #define SOAP_TYPE_tt__OSDPosConfiguration (1540)
 /* complex XML schema type 'tt:OSDPosConfiguration': */
@@ -13184,7 +13274,7 @@ struct tt__OSDPosConfiguration {
 };
 #endif
 
-/* onvif.h:19299 */
+/* onvif.h:19329 */
 #ifndef SOAP_TYPE_tt__OSDPosConfigurationExtension
 #define SOAP_TYPE_tt__OSDPosConfigurationExtension (1541)
 /* complex XML schema type 'tt:OSDPosConfigurationExtension': */
@@ -13197,7 +13287,7 @@ struct tt__OSDPosConfigurationExtension {
 };
 #endif
 
-/* onvif.h:19350 */
+/* onvif.h:19380 */
 #ifndef SOAP_TYPE_tt__OSDColor
 #define SOAP_TYPE_tt__OSDColor (1543)
 /* complex XML schema type 'tt:OSDColor': */
@@ -13211,7 +13301,7 @@ struct tt__OSDColor {
 };
 #endif
 
-/* onvif.h:19373 */
+/* onvif.h:19403 */
 #ifndef SOAP_TYPE_tt__OSDTextConfiguration
 #define SOAP_TYPE_tt__OSDTextConfiguration (1546)
 /* complex XML schema type 'tt:OSDTextConfiguration': */
@@ -13239,7 +13329,7 @@ struct tt__OSDTextConfiguration {
 };
 #endif
 
-/* onvif.h:19436 */
+/* onvif.h:19466 */
 #ifndef SOAP_TYPE_tt__OSDTextConfigurationExtension
 #define SOAP_TYPE_tt__OSDTextConfigurationExtension (1548)
 /* complex XML schema type 'tt:OSDTextConfigurationExtension': */
@@ -13252,7 +13342,7 @@ struct tt__OSDTextConfigurationExtension {
 };
 #endif
 
-/* onvif.h:19489 */
+/* onvif.h:19519 */
 #ifndef SOAP_TYPE_tt__OSDImgConfiguration
 #define SOAP_TYPE_tt__OSDImgConfiguration (1550)
 /* complex XML schema type 'tt:OSDImgConfiguration': */
@@ -13266,7 +13356,7 @@ struct tt__OSDImgConfiguration {
 };
 #endif
 
-/* onvif.h:19497 */
+/* onvif.h:19527 */
 #ifndef SOAP_TYPE_tt__OSDImgConfigurationExtension
 #define SOAP_TYPE_tt__OSDImgConfigurationExtension (1551)
 /* complex XML schema type 'tt:OSDImgConfigurationExtension': */
@@ -13279,7 +13369,7 @@ struct tt__OSDImgConfigurationExtension {
 };
 #endif
 
-/* onvif.h:19544 */
+/* onvif.h:19574 */
 #ifndef SOAP_TYPE_tt__ColorspaceRange
 #define SOAP_TYPE_tt__ColorspaceRange (1553)
 /* complex XML schema type 'tt:ColorspaceRange': */
@@ -13297,7 +13387,7 @@ struct tt__ColorspaceRange {
 };
 #endif
 
-/* onvif.h:19579 */
+/* onvif.h:19609 */
 #ifndef SOAP_TYPE_tt__ColorOptions
 #define SOAP_TYPE_tt__ColorOptions (1554)
 /* complex XML schema type 'tt:ColorOptions': */
@@ -13313,7 +13403,7 @@ struct tt__ColorOptions {
 };
 #endif
 
-/* onvif.h:19621 */
+/* onvif.h:19651 */
 #ifndef SOAP_TYPE_tt__OSDColorOptions
 #define SOAP_TYPE_tt__OSDColorOptions (1556)
 /* complex XML schema type 'tt:OSDColorOptions': */
@@ -13329,7 +13419,7 @@ struct tt__OSDColorOptions {
 };
 #endif
 
-/* onvif.h:19635 */
+/* onvif.h:19665 */
 #ifndef SOAP_TYPE_tt__OSDColorOptionsExtension
 #define SOAP_TYPE_tt__OSDColorOptionsExtension (1558)
 /* complex XML schema type 'tt:OSDColorOptionsExtension': */
@@ -13342,7 +13432,7 @@ struct tt__OSDColorOptionsExtension {
 };
 #endif
 
-/* onvif.h:19682 */
+/* onvif.h:19712 */
 #ifndef SOAP_TYPE_tt__OSDTextOptions
 #define SOAP_TYPE_tt__OSDTextOptions (1560)
 /* complex XML schema type 'tt:OSDTextOptions': */
@@ -13369,7 +13459,7 @@ struct tt__OSDTextOptions {
 };
 #endif
 
-/* onvif.h:19726 */
+/* onvif.h:19756 */
 #ifndef SOAP_TYPE_tt__OSDTextOptionsExtension
 #define SOAP_TYPE_tt__OSDTextOptionsExtension (1562)
 /* complex XML schema type 'tt:OSDTextOptionsExtension': */
@@ -13382,7 +13472,7 @@ struct tt__OSDTextOptionsExtension {
 };
 #endif
 
-/* onvif.h:19773 */
+/* onvif.h:19803 */
 #ifndef SOAP_TYPE_tt__OSDImgOptions
 #define SOAP_TYPE_tt__OSDImgOptions (1564)
 /* complex XML schema type 'tt:OSDImgOptions': */
@@ -13405,7 +13495,7 @@ struct tt__OSDImgOptions {
 };
 #endif
 
-/* onvif.h:19783 */
+/* onvif.h:19813 */
 #ifndef SOAP_TYPE_tt__OSDImgOptionsExtension
 #define SOAP_TYPE_tt__OSDImgOptionsExtension (1565)
 /* complex XML schema type 'tt:OSDImgOptionsExtension': */
@@ -13418,7 +13508,7 @@ struct tt__OSDImgOptionsExtension {
 };
 #endif
 
-/* onvif.h:19854 */
+/* onvif.h:19884 */
 #ifndef SOAP_TYPE_tt__OSDConfigurationExtension
 #define SOAP_TYPE_tt__OSDConfigurationExtension (1567)
 /* complex XML schema type 'tt:OSDConfigurationExtension': */
@@ -13431,7 +13521,7 @@ struct tt__OSDConfigurationExtension {
 };
 #endif
 
-/* onvif.h:19882 */
+/* onvif.h:19912 */
 #ifndef SOAP_TYPE_tt__MaximumNumberOfOSDs
 #define SOAP_TYPE_tt__MaximumNumberOfOSDs (1568)
 /* complex XML schema type 'tt:MaximumNumberOfOSDs': */
@@ -13453,7 +13543,7 @@ struct tt__MaximumNumberOfOSDs {
 };
 #endif
 
-/* onvif.h:19913 */
+/* onvif.h:19943 */
 #ifndef SOAP_TYPE_tt__OSDConfigurationOptions
 #define SOAP_TYPE_tt__OSDConfigurationOptions (1569)
 /* complex XML schema type 'tt:OSDConfigurationOptions': */
@@ -13477,7 +13567,7 @@ struct tt__OSDConfigurationOptions {
 };
 #endif
 
-/* onvif.h:19953 */
+/* onvif.h:19983 */
 #ifndef SOAP_TYPE_tt__OSDConfigurationOptionsExtension
 #define SOAP_TYPE_tt__OSDConfigurationOptionsExtension (1574)
 /* complex XML schema type 'tt:OSDConfigurationOptionsExtension': */
@@ -13490,7 +13580,7 @@ struct tt__OSDConfigurationOptionsExtension {
 };
 #endif
 
-/* onvif.h:20000 */
+/* onvif.h:20030 */
 #ifndef SOAP_TYPE_tt__FileProgress
 #define SOAP_TYPE_tt__FileProgress (1576)
 /* complex XML schema type 'tt:FileProgress': */
@@ -13507,7 +13597,7 @@ struct tt__FileProgress {
 };
 #endif
 
-/* onvif.h:20040 */
+/* onvif.h:20070 */
 #ifndef SOAP_TYPE_tt__ArrayOfFileProgress
 #define SOAP_TYPE_tt__ArrayOfFileProgress (1577)
 /* complex XML schema type 'tt:ArrayOfFileProgress': */
@@ -13522,7 +13612,7 @@ struct tt__ArrayOfFileProgress {
 };
 #endif
 
-/* onvif.h:20050 */
+/* onvif.h:20080 */
 #ifndef SOAP_TYPE_tt__ArrayOfFileProgressExtension
 #define SOAP_TYPE_tt__ArrayOfFileProgressExtension (1579)
 /* complex XML schema type 'tt:ArrayOfFileProgressExtension': */
@@ -13535,7 +13625,7 @@ struct tt__ArrayOfFileProgressExtension {
 };
 #endif
 
-/* onvif.h:20097 */
+/* onvif.h:20127 */
 #ifndef SOAP_TYPE_tt__StorageReferencePath
 #define SOAP_TYPE_tt__StorageReferencePath (1581)
 /* complex XML schema type 'tt:StorageReferencePath': */
@@ -13551,7 +13641,7 @@ struct tt__StorageReferencePath {
 };
 #endif
 
-/* onvif.h:20111 */
+/* onvif.h:20141 */
 #ifndef SOAP_TYPE_tt__StorageReferencePathExtension
 #define SOAP_TYPE_tt__StorageReferencePathExtension (1582)
 /* complex XML schema type 'tt:StorageReferencePathExtension': */
@@ -13564,7 +13654,7 @@ struct tt__StorageReferencePathExtension {
 };
 #endif
 
-/* onvif.h:20158 */
+/* onvif.h:20188 */
 #ifndef SOAP_TYPE_tt__PolygonOptions
 #define SOAP_TYPE_tt__PolygonOptions (1584)
 /* complex XML schema type 'tt:PolygonOptions': */
@@ -13581,7 +13671,7 @@ struct tt__PolygonOptions {
 };
 #endif
 
-/* onvif.h:3312 */
+/* onvif.h:3342 */
 #ifndef SOAP_TYPE_tt__IntRange
 #define SOAP_TYPE_tt__IntRange (628)
 /* complex XML schema type 'tt:IntRange': */
@@ -13593,7 +13683,7 @@ struct tt__IntRange {
 };
 #endif
 
-/* onvif.h:12683 */
+/* onvif.h:12713 */
 #ifndef SOAP_TYPE_tt__Vector2D
 #define SOAP_TYPE_tt__Vector2D (1180)
 /* complex XML schema type 'tt:Vector2D': */
@@ -13607,7 +13697,7 @@ struct tt__Vector2D {
 };
 #endif
 
-/* onvif.h:12689 */
+/* onvif.h:12719 */
 #ifndef SOAP_TYPE_tt__Vector1D
 #define SOAP_TYPE_tt__Vector1D (1182)
 /* complex XML schema type 'tt:Vector1D': */
@@ -13619,7 +13709,7 @@ struct tt__Vector1D {
 };
 #endif
 
-/* onvif.h:12714 */
+/* onvif.h:12744 */
 #ifndef SOAP_TYPE_tt__PTZVector
 #define SOAP_TYPE_tt__PTZVector (1185)
 /* complex XML schema type 'tt:PTZVector': */
@@ -13631,7 +13721,7 @@ struct tt__PTZVector {
 };
 #endif
 
-/* onvif.h:20300 */
+/* onvif.h:20330 */
 #ifndef SOAP_TYPE_tt__PTZStatus
 #define SOAP_TYPE_tt__PTZStatus (1585)
 /* complex XML schema type 'tt:PTZStatus': */
@@ -13652,7 +13742,7 @@ struct tt__PTZStatus {
 };
 #endif
 
-/* onvif.h:20312 */
+/* onvif.h:20342 */
 #ifndef SOAP_TYPE_tt__PTZMoveStatus
 #define SOAP_TYPE_tt__PTZMoveStatus (1586)
 /* complex XML schema type 'tt:PTZMoveStatus': */
@@ -13664,7 +13754,7 @@ struct tt__PTZMoveStatus {
 };
 #endif
 
-/* onvif.h:15952 */
+/* onvif.h:15982 */
 #ifndef SOAP_TYPE_tt__Vector
 #define SOAP_TYPE_tt__Vector (1378)
 /* complex XML schema type 'tt:Vector': */
@@ -13676,7 +13766,7 @@ struct tt__Vector {
 };
 #endif
 
-/* onvif.h:13542 */
+/* onvif.h:13572 */
 #ifndef SOAP_TYPE_tt__Rectangle
 #define SOAP_TYPE_tt__Rectangle (1237)
 /* complex XML schema type 'tt:Rectangle': */
@@ -13692,7 +13782,7 @@ struct tt__Rectangle {
 };
 #endif
 
-/* onvif.h:20413 */
+/* onvif.h:20443 */
 #ifndef SOAP_TYPE_tt__Polygon
 #define SOAP_TYPE_tt__Polygon (1589)
 /* complex XML schema type 'tt:Polygon': */
@@ -13703,7 +13793,7 @@ struct tt__Polygon {
 };
 #endif
 
-/* onvif.h:19352 */
+/* onvif.h:19382 */
 #ifndef SOAP_TYPE_tt__Color
 #define SOAP_TYPE_tt__Color (1544)
 /* complex XML schema type 'tt:Color': */
@@ -13723,7 +13813,7 @@ struct tt__Color {
 };
 #endif
 
-/* onvif.h:20486 */
+/* onvif.h:20516 */
 #ifndef SOAP_TYPE_tt__ColorCovariance
 #define SOAP_TYPE_tt__ColorCovariance (1590)
 /* complex XML schema type 'tt:ColorCovariance': */
@@ -13747,7 +13837,7 @@ struct tt__ColorCovariance {
 };
 #endif
 
-/* onvif.h:20534 */
+/* onvif.h:20564 */
 #ifndef SOAP_TYPE__tt__ColorDescriptor_ColorCluster
 #define SOAP_TYPE__tt__ColorDescriptor_ColorCluster (1592)
 /* complex XML schema type 'tt:ColorDescriptor-ColorCluster': */
@@ -13766,7 +13856,7 @@ struct _tt__ColorDescriptor_ColorCluster {
 };
 #endif
 
-/* onvif.h:20523 */
+/* onvif.h:20553 */
 #ifndef SOAP_TYPE_tt__ColorDescriptor
 #define SOAP_TYPE_tt__ColorDescriptor (1591)
 /* complex XML schema type 'tt:ColorDescriptor': */
@@ -13784,7 +13874,7 @@ struct tt__ColorDescriptor {
 };
 #endif
 
-/* onvif.h:16511 */
+/* onvif.h:16541 */
 #ifndef SOAP_TYPE_tt__Transformation
 #define SOAP_TYPE_tt__Transformation (1411)
 /* complex XML schema type 'tt:Transformation': */
@@ -13800,7 +13890,7 @@ struct tt__Transformation {
 };
 #endif
 
-/* onvif.h:20592 */
+/* onvif.h:20622 */
 #ifndef SOAP_TYPE_tt__TransformationExtension
 #define SOAP_TYPE_tt__TransformationExtension (1595)
 /* complex XML schema type 'tt:TransformationExtension': */
@@ -13811,7 +13901,7 @@ struct tt__TransformationExtension {
 };
 #endif
 
-/* onvif.h:20633 */
+/* onvif.h:20663 */
 #ifndef SOAP_TYPE_tt__GeoLocation
 #define SOAP_TYPE_tt__GeoLocation (1597)
 /* complex XML schema type 'tt:GeoLocation': */
@@ -13830,7 +13920,7 @@ struct tt__GeoLocation {
 };
 #endif
 
-/* onvif.h:20679 */
+/* onvif.h:20709 */
 #ifndef SOAP_TYPE_tt__GeoOrientation
 #define SOAP_TYPE_tt__GeoOrientation (1600)
 /* complex XML schema type 'tt:GeoOrientation': */
@@ -13849,7 +13939,7 @@ struct tt__GeoOrientation {
 };
 #endif
 
-/* onvif.h:20725 */
+/* onvif.h:20755 */
 #ifndef SOAP_TYPE_tt__LocalLocation
 #define SOAP_TYPE_tt__LocalLocation (1601)
 /* complex XML schema type 'tt:LocalLocation': */
@@ -13868,7 +13958,7 @@ struct tt__LocalLocation {
 };
 #endif
 
-/* onvif.h:20771 */
+/* onvif.h:20801 */
 #ifndef SOAP_TYPE_tt__LocalOrientation
 #define SOAP_TYPE_tt__LocalOrientation (1602)
 /* complex XML schema type 'tt:LocalOrientation': */
@@ -13887,7 +13977,7 @@ struct tt__LocalOrientation {
 };
 #endif
 
-/* onvif.h:5665 */
+/* onvif.h:5695 */
 #ifndef SOAP_TYPE_tt__LocationEntity
 #define SOAP_TYPE_tt__LocationEntity (823)
 /* complex XML schema type 'tt:LocationEntity': */
@@ -13913,7 +14003,7 @@ struct tt__LocationEntity {
 };
 #endif
 
-/* onvif.h:20885 */
+/* onvif.h:20915 */
 #ifndef SOAP_TYPE__tt__StringItems
 #define SOAP_TYPE__tt__StringItems (1607)
 /* complex XML schema type 'tt:StringItems': */
@@ -13924,7 +14014,7 @@ struct _tt__StringItems {
 };
 #endif
 
-/* onvif.h:20903 */
+/* onvif.h:20933 */
 #ifndef SOAP_TYPE__tt__Message
 #define SOAP_TYPE__tt__Message (1608)
 /* complex XML schema type 'tt:Message': */
@@ -13946,7 +14036,7 @@ struct _tt__Message {
 };
 #endif
 
-/* onvif.h:20946 */
+/* onvif.h:20976 */
 #ifndef SOAP_TYPE_wsnt__QueryExpressionType
 #define SOAP_TYPE_wsnt__QueryExpressionType (1611)
 /* complex XML schema type 'wsnt:QueryExpressionType': */
@@ -13958,7 +14048,7 @@ struct wsnt__QueryExpressionType {
 };
 #endif
 
-/* onvif.h:20973 */
+/* onvif.h:21003 */
 #ifndef SOAP_TYPE_wsnt__TopicExpressionType
 #define SOAP_TYPE_wsnt__TopicExpressionType (1612)
 /* complex XML schema type 'wsnt:TopicExpressionType': */
@@ -13972,7 +14062,7 @@ struct wsnt__TopicExpressionType {
 };
 #endif
 
-/* onvif.h:7417 */
+/* onvif.h:7447 */
 #ifndef SOAP_TYPE_wsnt__FilterType
 #define SOAP_TYPE_wsnt__FilterType (935)
 /* complex XML schema type 'wsnt:FilterType': */
@@ -13983,7 +14073,7 @@ struct wsnt__FilterType {
 };
 #endif
 
-/* onvif.h:21031 */
+/* onvif.h:21061 */
 #ifndef SOAP_TYPE_wsnt__SubscriptionPolicyType
 #define SOAP_TYPE_wsnt__SubscriptionPolicyType (1613)
 /* complex XML schema type 'wsnt:SubscriptionPolicyType': */
@@ -13994,7 +14084,7 @@ struct wsnt__SubscriptionPolicyType {
 };
 #endif
 
-/* onvif.h:21068 */
+/* onvif.h:21098 */
 #ifndef SOAP_TYPE__wsnt__NotificationMessageHolderType_Message
 #define SOAP_TYPE__wsnt__NotificationMessageHolderType_Message (1616)
 /* complex XML schema type 'wsnt:NotificationMessageHolderType-Message': */
@@ -14003,7 +14093,7 @@ struct _wsnt__NotificationMessageHolderType_Message {
 };
 #endif
 
-/* onvif.h:17359 */
+/* onvif.h:17389 */
 #ifndef SOAP_TYPE_wsnt__NotificationMessageHolderType
 #define SOAP_TYPE_wsnt__NotificationMessageHolderType (1450)
 /* complex XML schema type 'wsnt:NotificationMessageHolderType': */
@@ -14019,7 +14109,7 @@ struct wsnt__NotificationMessageHolderType {
 };
 #endif
 
-/* onvif.h:21090 */
+/* onvif.h:21120 */
 #ifndef SOAP_TYPE__wsnt__NotificationProducerRP
 #define SOAP_TYPE__wsnt__NotificationProducerRP (1617)
 /* complex XML schema type 'wsnt:NotificationProducerRP': */
@@ -14037,7 +14127,7 @@ struct _wsnt__NotificationProducerRP {
 };
 #endif
 
-/* onvif.h:21116 */
+/* onvif.h:21146 */
 #ifndef SOAP_TYPE__wsnt__SubscriptionManagerRP
 #define SOAP_TYPE__wsnt__SubscriptionManagerRP (1620)
 /* complex XML schema type 'wsnt:SubscriptionManagerRP': */
@@ -14053,7 +14143,7 @@ struct _wsnt__SubscriptionManagerRP {
 };
 #endif
 
-/* onvif.h:21138 */
+/* onvif.h:21168 */
 #ifndef SOAP_TYPE__wsnt__Notify
 #define SOAP_TYPE__wsnt__Notify (1622)
 /* complex XML schema type 'wsnt:Notify': */
@@ -14067,7 +14157,7 @@ struct _wsnt__Notify {
 };
 #endif
 
-/* onvif.h:21165 */
+/* onvif.h:21195 */
 #ifndef SOAP_TYPE__wsnt__UseRaw
 #define SOAP_TYPE__wsnt__UseRaw (1623)
 /* complex XML schema type 'wsnt:UseRaw': */
@@ -14078,7 +14168,7 @@ struct _wsnt__UseRaw {
 };
 #endif
 
-/* onvif.h:21194 */
+/* onvif.h:21224 */
 #ifndef SOAP_TYPE__wsnt__Subscribe_SubscriptionPolicy
 #define SOAP_TYPE__wsnt__Subscribe_SubscriptionPolicy (1625)
 /* complex XML schema type 'wsnt:Subscribe-SubscriptionPolicy': */
@@ -14089,7 +14179,7 @@ struct _wsnt__Subscribe_SubscriptionPolicy {
 };
 #endif
 
-/* onvif.h:21179 */
+/* onvif.h:21209 */
 #ifndef SOAP_TYPE__wsnt__Subscribe
 #define SOAP_TYPE__wsnt__Subscribe (1624)
 /* complex XML schema type 'wsnt:Subscribe': */
@@ -14108,7 +14198,7 @@ struct _wsnt__Subscribe {
 };
 #endif
 
-/* onvif.h:21227 */
+/* onvif.h:21257 */
 #ifndef SOAP_TYPE__wsnt__SubscribeResponse
 #define SOAP_TYPE__wsnt__SubscribeResponse (1627)
 /* complex XML schema type 'wsnt:SubscribeResponse': */
@@ -14125,7 +14215,7 @@ struct _wsnt__SubscribeResponse {
 };
 #endif
 
-/* onvif.h:21256 */
+/* onvif.h:21286 */
 #ifndef SOAP_TYPE__wsnt__GetCurrentMessage
 #define SOAP_TYPE__wsnt__GetCurrentMessage (1628)
 /* complex XML schema type 'wsnt:GetCurrentMessage': */
@@ -14138,7 +14228,7 @@ struct _wsnt__GetCurrentMessage {
 };
 #endif
 
-/* onvif.h:21281 */
+/* onvif.h:21311 */
 #ifndef SOAP_TYPE__wsnt__GetCurrentMessageResponse
 #define SOAP_TYPE__wsnt__GetCurrentMessageResponse (1629)
 /* complex XML schema type 'wsnt:GetCurrentMessageResponse': */
@@ -14149,7 +14239,7 @@ struct _wsnt__GetCurrentMessageResponse {
 };
 #endif
 
-/* onvif.h:21304 */
+/* onvif.h:21334 */
 #ifndef SOAP_TYPE__wsnt__GetMessages
 #define SOAP_TYPE__wsnt__GetMessages (1630)
 /* complex XML schema type 'wsnt:GetMessages': */
@@ -14164,7 +14254,7 @@ struct _wsnt__GetMessages {
 };
 #endif
 
-/* onvif.h:21335 */
+/* onvif.h:21365 */
 #ifndef SOAP_TYPE__wsnt__GetMessagesResponse
 #define SOAP_TYPE__wsnt__GetMessagesResponse (1631)
 /* complex XML schema type 'wsnt:GetMessagesResponse': */
@@ -14180,7 +14270,7 @@ struct _wsnt__GetMessagesResponse {
 };
 #endif
 
-/* onvif.h:21368 */
+/* onvif.h:21398 */
 #ifndef SOAP_TYPE__wsnt__DestroyPullPoint
 #define SOAP_TYPE__wsnt__DestroyPullPoint (1632)
 /* complex XML schema type 'wsnt:DestroyPullPoint': */
@@ -14193,7 +14283,7 @@ struct _wsnt__DestroyPullPoint {
 };
 #endif
 
-/* onvif.h:21397 */
+/* onvif.h:21427 */
 #ifndef SOAP_TYPE__wsnt__DestroyPullPointResponse
 #define SOAP_TYPE__wsnt__DestroyPullPointResponse (1633)
 /* complex XML schema type 'wsnt:DestroyPullPointResponse': */
@@ -14206,7 +14296,7 @@ struct _wsnt__DestroyPullPointResponse {
 };
 #endif
 
-/* onvif.h:21426 */
+/* onvif.h:21456 */
 #ifndef SOAP_TYPE__wsnt__CreatePullPoint
 #define SOAP_TYPE__wsnt__CreatePullPoint (1634)
 /* complex XML schema type 'wsnt:CreatePullPoint': */
@@ -14219,7 +14309,7 @@ struct _wsnt__CreatePullPoint {
 };
 #endif
 
-/* onvif.h:21455 */
+/* onvif.h:21485 */
 #ifndef SOAP_TYPE__wsnt__CreatePullPointResponse
 #define SOAP_TYPE__wsnt__CreatePullPointResponse (1635)
 /* complex XML schema type 'wsnt:CreatePullPointResponse': */
@@ -14234,7 +14324,7 @@ struct _wsnt__CreatePullPointResponse {
 };
 #endif
 
-/* onvif.h:21486 */
+/* onvif.h:21516 */
 #ifndef SOAP_TYPE__wsnt__Renew
 #define SOAP_TYPE__wsnt__Renew (1636)
 /* complex XML schema type 'wsnt:Renew': */
@@ -14247,7 +14337,7 @@ struct _wsnt__Renew {
 };
 #endif
 
-/* onvif.h:21511 */
+/* onvif.h:21541 */
 #ifndef SOAP_TYPE__wsnt__RenewResponse
 #define SOAP_TYPE__wsnt__RenewResponse (1637)
 /* complex XML schema type 'wsnt:RenewResponse': */
@@ -14262,7 +14352,7 @@ struct _wsnt__RenewResponse {
 };
 #endif
 
-/* onvif.h:21538 */
+/* onvif.h:21568 */
 #ifndef SOAP_TYPE__wsnt__Unsubscribe
 #define SOAP_TYPE__wsnt__Unsubscribe (1638)
 /* complex XML schema type 'wsnt:Unsubscribe': */
@@ -14273,7 +14363,7 @@ struct _wsnt__Unsubscribe {
 };
 #endif
 
-/* onvif.h:21561 */
+/* onvif.h:21591 */
 #ifndef SOAP_TYPE__wsnt__UnsubscribeResponse
 #define SOAP_TYPE__wsnt__UnsubscribeResponse (1639)
 /* complex XML schema type 'wsnt:UnsubscribeResponse': */
@@ -14284,7 +14374,7 @@ struct _wsnt__UnsubscribeResponse {
 };
 #endif
 
-/* onvif.h:21584 */
+/* onvif.h:21614 */
 #ifndef SOAP_TYPE__wsnt__PauseSubscription
 #define SOAP_TYPE__wsnt__PauseSubscription (1640)
 /* complex XML schema type 'wsnt:PauseSubscription': */
@@ -14295,7 +14385,7 @@ struct _wsnt__PauseSubscription {
 };
 #endif
 
-/* onvif.h:21607 */
+/* onvif.h:21637 */
 #ifndef SOAP_TYPE__wsnt__PauseSubscriptionResponse
 #define SOAP_TYPE__wsnt__PauseSubscriptionResponse (1641)
 /* complex XML schema type 'wsnt:PauseSubscriptionResponse': */
@@ -14306,7 +14396,7 @@ struct _wsnt__PauseSubscriptionResponse {
 };
 #endif
 
-/* onvif.h:21630 */
+/* onvif.h:21660 */
 #ifndef SOAP_TYPE__wsnt__ResumeSubscription
 #define SOAP_TYPE__wsnt__ResumeSubscription (1642)
 /* complex XML schema type 'wsnt:ResumeSubscription': */
@@ -14317,7 +14407,7 @@ struct _wsnt__ResumeSubscription {
 };
 #endif
 
-/* onvif.h:21653 */
+/* onvif.h:21683 */
 #ifndef SOAP_TYPE__wsnt__ResumeSubscriptionResponse
 #define SOAP_TYPE__wsnt__ResumeSubscriptionResponse (1643)
 /* complex XML schema type 'wsnt:ResumeSubscriptionResponse': */
@@ -14328,7 +14418,7 @@ struct _wsnt__ResumeSubscriptionResponse {
 };
 #endif
 
-/* onvif.h:21729 */
+/* onvif.h:21759 */
 #ifndef SOAP_TYPE__wsrfbf__BaseFaultType_ErrorCode
 #define SOAP_TYPE__wsrfbf__BaseFaultType_ErrorCode (1645)
 /* complex XML schema type 'wsrfbf:BaseFaultType-ErrorCode': */
@@ -14339,7 +14429,7 @@ struct _wsrfbf__BaseFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:21748 */
+/* onvif.h:21778 */
 #ifndef SOAP_TYPE__wsrfbf__BaseFaultType_Description
 #define SOAP_TYPE__wsrfbf__BaseFaultType_Description (1647)
 /* simple XML schema type 'wsrfbf:BaseFaultType-Description': */
@@ -14351,7 +14441,7 @@ struct _wsrfbf__BaseFaultType_Description {
 };
 #endif
 
-/* onvif.h:21762 */
+/* onvif.h:21792 */
 #ifndef SOAP_TYPE__wsrfbf__BaseFaultType_FaultCause
 #define SOAP_TYPE__wsrfbf__BaseFaultType_FaultCause (1649)
 /* complex XML schema type 'wsrfbf:BaseFaultType-FaultCause': */
@@ -14360,7 +14450,7 @@ struct _wsrfbf__BaseFaultType_FaultCause {
 };
 #endif
 
-/* onvif.h:21707 */
+/* onvif.h:21737 */
 #ifndef SOAP_TYPE_wsrfbf__BaseFaultType
 #define SOAP_TYPE_wsrfbf__BaseFaultType (1644)
 /* complex XML schema type 'wsrfbf:BaseFaultType': */
@@ -14384,7 +14474,7 @@ struct wsrfbf__BaseFaultType {
 };
 #endif
 
-/* onvif.h:21797 */
+/* onvif.h:21827 */
 #ifndef SOAP_TYPE_wstop__Documentation
 #define SOAP_TYPE_wstop__Documentation (1651)
 /* complex XML schema type 'wstop:Documentation': */
@@ -14396,7 +14486,7 @@ struct wstop__Documentation {
 };
 #endif
 
-/* onvif.h:21829 */
+/* onvif.h:21859 */
 #ifndef SOAP_TYPE_wstop__ExtensibleDocumented
 #define SOAP_TYPE_wstop__ExtensibleDocumented (1652)
 /* complex XML schema type 'wstop:ExtensibleDocumented': */
@@ -14408,7 +14498,7 @@ struct wstop__ExtensibleDocumented {
 };
 #endif
 
-/* onvif.h:21850 */
+/* onvif.h:21880 */
 #ifndef SOAP_TYPE_wstop__QueryExpressionType
 #define SOAP_TYPE_wstop__QueryExpressionType (1654)
 /* complex XML schema type 'wstop:QueryExpressionType': */
@@ -14420,7 +14510,7 @@ struct wstop__QueryExpressionType {
 };
 #endif
 
-/* onvif.h:21885 */
+/* onvif.h:21915 */
 #ifndef SOAP_TYPE_tev__Capabilities
 #define SOAP_TYPE_tev__Capabilities (1655)
 /* complex XML schema type 'tev:Capabilities': */
@@ -14451,7 +14541,7 @@ struct tev__Capabilities {
 };
 #endif
 
-/* onvif.h:21967 */
+/* onvif.h:21997 */
 #ifndef SOAP_TYPE_tev__EventBrokerConfig
 #define SOAP_TYPE_tev__EventBrokerConfig (1656)
 /* complex XML schema type 'tev:EventBrokerConfig': */
@@ -14484,7 +14574,7 @@ struct tev__EventBrokerConfig {
 };
 #endif
 
-/* onvif.h:22056 */
+/* onvif.h:22086 */
 #ifndef SOAP_TYPE__tev__GetServiceCapabilities
 #define SOAP_TYPE__tev__GetServiceCapabilities (1657)
 /* complex XML schema type 'tev:GetServiceCapabilities': */
@@ -14495,7 +14585,7 @@ struct _tev__GetServiceCapabilities {
 };
 #endif
 
-/* onvif.h:22070 */
+/* onvif.h:22100 */
 #ifndef SOAP_TYPE__tev__GetServiceCapabilitiesResponse
 #define SOAP_TYPE__tev__GetServiceCapabilitiesResponse (1658)
 /* complex XML schema type 'tev:GetServiceCapabilitiesResponse': */
@@ -14505,7 +14595,7 @@ struct _tev__GetServiceCapabilitiesResponse {
 };
 #endif
 
-/* onvif.h:22115 */
+/* onvif.h:22145 */
 #ifndef SOAP_TYPE__tev__CreatePullPointSubscription_SubscriptionPolicy
 #define SOAP_TYPE__tev__CreatePullPointSubscription_SubscriptionPolicy (1661)
 /* complex XML schema type 'tev:CreatePullPointSubscription-SubscriptionPolicy': */
@@ -14516,7 +14606,7 @@ struct _tev__CreatePullPointSubscription_SubscriptionPolicy {
 };
 #endif
 
-/* onvif.h:22090 */
+/* onvif.h:22120 */
 #ifndef SOAP_TYPE__tev__CreatePullPointSubscription
 #define SOAP_TYPE__tev__CreatePullPointSubscription (1660)
 /* complex XML schema type 'tev:CreatePullPointSubscription': */
@@ -14533,7 +14623,7 @@ struct _tev__CreatePullPointSubscription {
 };
 #endif
 
-/* onvif.h:22148 */
+/* onvif.h:22178 */
 #ifndef SOAP_TYPE__tev__CreatePullPointSubscriptionResponse
 #define SOAP_TYPE__tev__CreatePullPointSubscriptionResponse (1663)
 /* complex XML schema type 'tev:CreatePullPointSubscriptionResponse': */
@@ -14550,7 +14640,7 @@ struct _tev__CreatePullPointSubscriptionResponse {
 };
 #endif
 
-/* onvif.h:22189 */
+/* onvif.h:22219 */
 #ifndef SOAP_TYPE__tev__PullMessages
 #define SOAP_TYPE__tev__PullMessages (1664)
 /* complex XML schema type 'tev:PullMessages': */
@@ -14565,7 +14655,7 @@ struct _tev__PullMessages {
 };
 #endif
 
-/* onvif.h:22224 */
+/* onvif.h:22254 */
 #ifndef SOAP_TYPE__tev__PullMessagesResponse
 #define SOAP_TYPE__tev__PullMessagesResponse (1665)
 /* complex XML schema type 'tev:PullMessagesResponse': */
@@ -14580,7 +14670,7 @@ struct _tev__PullMessagesResponse {
 };
 #endif
 
-/* onvif.h:22258 */
+/* onvif.h:22288 */
 #ifndef SOAP_TYPE__tev__PullMessagesFaultResponse
 #define SOAP_TYPE__tev__PullMessagesFaultResponse (1666)
 /* complex XML schema type 'tev:PullMessagesFaultResponse': */
@@ -14595,7 +14685,7 @@ struct _tev__PullMessagesFaultResponse {
 };
 #endif
 
-/* onvif.h:22293 */
+/* onvif.h:22323 */
 #ifndef SOAP_TYPE__tev__Seek
 #define SOAP_TYPE__tev__Seek (1667)
 /* complex XML schema type 'tev:Seek': */
@@ -14610,7 +14700,7 @@ struct _tev__Seek {
 };
 #endif
 
-/* onvif.h:22328 */
+/* onvif.h:22358 */
 #ifndef SOAP_TYPE__tev__SeekResponse
 #define SOAP_TYPE__tev__SeekResponse (1668)
 /* complex XML schema type 'tev:SeekResponse': */
@@ -14621,7 +14711,7 @@ struct _tev__SeekResponse {
 };
 #endif
 
-/* onvif.h:22342 */
+/* onvif.h:22372 */
 #ifndef SOAP_TYPE__tev__SetSynchronizationPoint
 #define SOAP_TYPE__tev__SetSynchronizationPoint (1669)
 /* complex XML schema type 'tev:SetSynchronizationPoint': */
@@ -14632,7 +14722,7 @@ struct _tev__SetSynchronizationPoint {
 };
 #endif
 
-/* onvif.h:22356 */
+/* onvif.h:22386 */
 #ifndef SOAP_TYPE__tev__SetSynchronizationPointResponse
 #define SOAP_TYPE__tev__SetSynchronizationPointResponse (1670)
 /* complex XML schema type 'tev:SetSynchronizationPointResponse': */
@@ -14643,7 +14733,7 @@ struct _tev__SetSynchronizationPointResponse {
 };
 #endif
 
-/* onvif.h:22370 */
+/* onvif.h:22400 */
 #ifndef SOAP_TYPE__tev__GetEventProperties
 #define SOAP_TYPE__tev__GetEventProperties (1671)
 /* complex XML schema type 'tev:GetEventProperties': */
@@ -14654,7 +14744,7 @@ struct _tev__GetEventProperties {
 };
 #endif
 
-/* onvif.h:22384 */
+/* onvif.h:22414 */
 #ifndef SOAP_TYPE__tev__GetEventPropertiesResponse
 #define SOAP_TYPE__tev__GetEventPropertiesResponse (1672)
 /* complex XML schema type 'tev:GetEventPropertiesResponse': */
@@ -14684,7 +14774,7 @@ struct _tev__GetEventPropertiesResponse {
 };
 #endif
 
-/* onvif.h:22471 */
+/* onvif.h:22501 */
 #ifndef SOAP_TYPE__tev__AddEventBroker
 #define SOAP_TYPE__tev__AddEventBroker (1673)
 /* complex XML schema type 'tev:AddEventBroker': */
@@ -14694,7 +14784,7 @@ struct _tev__AddEventBroker {
 };
 #endif
 
-/* onvif.h:22487 */
+/* onvif.h:22517 */
 #ifndef SOAP_TYPE__tev__AddEventBrokerResponse
 #define SOAP_TYPE__tev__AddEventBrokerResponse (1675)
 /* complex XML schema type 'tev:AddEventBrokerResponse': */
@@ -14705,7 +14795,7 @@ struct _tev__AddEventBrokerResponse {
 };
 #endif
 
-/* onvif.h:22501 */
+/* onvif.h:22531 */
 #ifndef SOAP_TYPE__tev__DeleteEventBroker
 #define SOAP_TYPE__tev__DeleteEventBroker (1676)
 /* complex XML schema type 'tev:DeleteEventBroker': */
@@ -14715,7 +14805,7 @@ struct _tev__DeleteEventBroker {
 };
 #endif
 
-/* onvif.h:22517 */
+/* onvif.h:22547 */
 #ifndef SOAP_TYPE__tev__DeleteEventBrokerResponse
 #define SOAP_TYPE__tev__DeleteEventBrokerResponse (1677)
 /* complex XML schema type 'tev:DeleteEventBrokerResponse': */
@@ -14726,7 +14816,7 @@ struct _tev__DeleteEventBrokerResponse {
 };
 #endif
 
-/* onvif.h:22531 */
+/* onvif.h:22561 */
 #ifndef SOAP_TYPE__tev__GetEventBrokers
 #define SOAP_TYPE__tev__GetEventBrokers (1678)
 /* complex XML schema type 'tev:GetEventBrokers': */
@@ -14736,7 +14826,7 @@ struct _tev__GetEventBrokers {
 };
 #endif
 
-/* onvif.h:22547 */
+/* onvif.h:22577 */
 #ifndef SOAP_TYPE__tev__GetEventBrokersResponse
 #define SOAP_TYPE__tev__GetEventBrokersResponse (1679)
 /* complex XML schema type 'tev:GetEventBrokersResponse': */
@@ -14747,7 +14837,7 @@ struct _tev__GetEventBrokersResponse {
 };
 #endif
 
-/* onvif.h:22596 */
+/* onvif.h:22626 */
 #ifndef SOAP_TYPE_trt__Capabilities
 #define SOAP_TYPE_trt__Capabilities (1680)
 /* complex XML schema type 'trt:Capabilities': */
@@ -14776,7 +14866,7 @@ struct trt__Capabilities {
 };
 #endif
 
-/* onvif.h:22602 */
+/* onvif.h:22632 */
 #ifndef SOAP_TYPE_trt__ProfileCapabilities
 #define SOAP_TYPE_trt__ProfileCapabilities (1681)
 /* complex XML schema type 'trt:ProfileCapabilities': */
@@ -14791,7 +14881,7 @@ struct trt__ProfileCapabilities {
 };
 #endif
 
-/* onvif.h:22608 */
+/* onvif.h:22638 */
 #ifndef SOAP_TYPE_trt__StreamingCapabilities
 #define SOAP_TYPE_trt__StreamingCapabilities (1683)
 /* complex XML schema type 'trt:StreamingCapabilities': */
@@ -14814,7 +14904,7 @@ struct trt__StreamingCapabilities {
 };
 #endif
 
-/* onvif.h:22764 */
+/* onvif.h:22794 */
 #ifndef SOAP_TYPE_trt__VideoSourceMode
 #define SOAP_TYPE_trt__VideoSourceMode (1685)
 /* complex XML schema type 'trt:VideoSourceMode': */
@@ -14840,7 +14930,7 @@ struct trt__VideoSourceMode {
 };
 #endif
 
-/* onvif.h:22796 */
+/* onvif.h:22826 */
 #ifndef SOAP_TYPE_trt__VideoSourceModeExtension
 #define SOAP_TYPE_trt__VideoSourceModeExtension (1686)
 /* complex XML schema type 'trt:VideoSourceModeExtension': */
@@ -14851,7 +14941,7 @@ struct trt__VideoSourceModeExtension {
 };
 #endif
 
-/* onvif.h:22850 */
+/* onvif.h:22880 */
 #ifndef SOAP_TYPE__trt__GetServiceCapabilities
 #define SOAP_TYPE__trt__GetServiceCapabilities (1688)
 /* complex XML schema type 'trt:GetServiceCapabilities': */
@@ -14862,7 +14952,7 @@ struct _trt__GetServiceCapabilities {
 };
 #endif
 
-/* onvif.h:22864 */
+/* onvif.h:22894 */
 #ifndef SOAP_TYPE__trt__GetServiceCapabilitiesResponse
 #define SOAP_TYPE__trt__GetServiceCapabilitiesResponse (1689)
 /* complex XML schema type 'trt:GetServiceCapabilitiesResponse': */
@@ -14872,7 +14962,7 @@ struct _trt__GetServiceCapabilitiesResponse {
 };
 #endif
 
-/* onvif.h:22884 */
+/* onvif.h:22914 */
 #ifndef SOAP_TYPE__trt__GetVideoSources
 #define SOAP_TYPE__trt__GetVideoSources (1691)
 /* complex XML schema type 'trt:GetVideoSources': */
@@ -14883,7 +14973,7 @@ struct _trt__GetVideoSources {
 };
 #endif
 
-/* onvif.h:22898 */
+/* onvif.h:22928 */
 #ifndef SOAP_TYPE__trt__GetVideoSourcesResponse
 #define SOAP_TYPE__trt__GetVideoSourcesResponse (1692)
 /* complex XML schema type 'trt:GetVideoSourcesResponse': */
@@ -14894,7 +14984,7 @@ struct _trt__GetVideoSourcesResponse {
 };
 #endif
 
-/* onvif.h:22920 */
+/* onvif.h:22950 */
 #ifndef SOAP_TYPE__trt__GetAudioSources
 #define SOAP_TYPE__trt__GetAudioSources (1695)
 /* complex XML schema type 'trt:GetAudioSources': */
@@ -14905,7 +14995,7 @@ struct _trt__GetAudioSources {
 };
 #endif
 
-/* onvif.h:22934 */
+/* onvif.h:22964 */
 #ifndef SOAP_TYPE__trt__GetAudioSourcesResponse
 #define SOAP_TYPE__trt__GetAudioSourcesResponse (1696)
 /* complex XML schema type 'trt:GetAudioSourcesResponse': */
@@ -14916,7 +15006,7 @@ struct _trt__GetAudioSourcesResponse {
 };
 #endif
 
-/* onvif.h:22956 */
+/* onvif.h:22986 */
 #ifndef SOAP_TYPE__trt__GetAudioOutputs
 #define SOAP_TYPE__trt__GetAudioOutputs (1699)
 /* complex XML schema type 'trt:GetAudioOutputs': */
@@ -14927,7 +15017,7 @@ struct _trt__GetAudioOutputs {
 };
 #endif
 
-/* onvif.h:22970 */
+/* onvif.h:23000 */
 #ifndef SOAP_TYPE__trt__GetAudioOutputsResponse
 #define SOAP_TYPE__trt__GetAudioOutputsResponse (1700)
 /* complex XML schema type 'trt:GetAudioOutputsResponse': */
@@ -14938,7 +15028,7 @@ struct _trt__GetAudioOutputsResponse {
 };
 #endif
 
-/* onvif.h:22992 */
+/* onvif.h:23022 */
 #ifndef SOAP_TYPE__trt__CreateProfile
 #define SOAP_TYPE__trt__CreateProfile (1703)
 /* complex XML schema type 'trt:CreateProfile': */
@@ -14950,7 +15040,7 @@ struct _trt__CreateProfile {
 };
 #endif
 
-/* onvif.h:23018 */
+/* onvif.h:23048 */
 #ifndef SOAP_TYPE__trt__CreateProfileResponse
 #define SOAP_TYPE__trt__CreateProfileResponse (1704)
 /* complex XML schema type 'trt:CreateProfileResponse': */
@@ -14960,7 +15050,7 @@ struct _trt__CreateProfileResponse {
 };
 #endif
 
-/* onvif.h:23038 */
+/* onvif.h:23068 */
 #ifndef SOAP_TYPE__trt__GetProfile
 #define SOAP_TYPE__trt__GetProfile (1706)
 /* complex XML schema type 'trt:GetProfile': */
@@ -14970,7 +15060,7 @@ struct _trt__GetProfile {
 };
 #endif
 
-/* onvif.h:23058 */
+/* onvif.h:23088 */
 #ifndef SOAP_TYPE__trt__GetProfileResponse
 #define SOAP_TYPE__trt__GetProfileResponse (1707)
 /* complex XML schema type 'trt:GetProfileResponse': */
@@ -14980,7 +15070,7 @@ struct _trt__GetProfileResponse {
 };
 #endif
 
-/* onvif.h:23078 */
+/* onvif.h:23108 */
 #ifndef SOAP_TYPE__trt__GetProfiles
 #define SOAP_TYPE__trt__GetProfiles (1708)
 /* complex XML schema type 'trt:GetProfiles': */
@@ -14991,7 +15081,7 @@ struct _trt__GetProfiles {
 };
 #endif
 
-/* onvif.h:23092 */
+/* onvif.h:23122 */
 #ifndef SOAP_TYPE__trt__GetProfilesResponse
 #define SOAP_TYPE__trt__GetProfilesResponse (1709)
 /* complex XML schema type 'trt:GetProfilesResponse': */
@@ -15002,7 +15092,7 @@ struct _trt__GetProfilesResponse {
 };
 #endif
 
-/* onvif.h:23114 */
+/* onvif.h:23144 */
 #ifndef SOAP_TYPE__trt__AddVideoEncoderConfiguration
 #define SOAP_TYPE__trt__AddVideoEncoderConfiguration (1710)
 /* complex XML schema type 'trt:AddVideoEncoderConfiguration': */
@@ -15014,7 +15104,7 @@ struct _trt__AddVideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:23140 */
+/* onvif.h:23170 */
 #ifndef SOAP_TYPE__trt__AddVideoEncoderConfigurationResponse
 #define SOAP_TYPE__trt__AddVideoEncoderConfigurationResponse (1711)
 /* complex XML schema type 'trt:AddVideoEncoderConfigurationResponse': */
@@ -15025,7 +15115,7 @@ struct _trt__AddVideoEncoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23154 */
+/* onvif.h:23184 */
 #ifndef SOAP_TYPE__trt__RemoveVideoEncoderConfiguration
 #define SOAP_TYPE__trt__RemoveVideoEncoderConfiguration (1712)
 /* complex XML schema type 'trt:RemoveVideoEncoderConfiguration': */
@@ -15035,7 +15125,7 @@ struct _trt__RemoveVideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:23175 */
+/* onvif.h:23205 */
 #ifndef SOAP_TYPE__trt__RemoveVideoEncoderConfigurationResponse
 #define SOAP_TYPE__trt__RemoveVideoEncoderConfigurationResponse (1713)
 /* complex XML schema type 'trt:RemoveVideoEncoderConfigurationResponse': */
@@ -15046,7 +15136,7 @@ struct _trt__RemoveVideoEncoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23189 */
+/* onvif.h:23219 */
 #ifndef SOAP_TYPE__trt__AddVideoSourceConfiguration
 #define SOAP_TYPE__trt__AddVideoSourceConfiguration (1714)
 /* complex XML schema type 'trt:AddVideoSourceConfiguration': */
@@ -15058,7 +15148,7 @@ struct _trt__AddVideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:23215 */
+/* onvif.h:23245 */
 #ifndef SOAP_TYPE__trt__AddVideoSourceConfigurationResponse
 #define SOAP_TYPE__trt__AddVideoSourceConfigurationResponse (1715)
 /* complex XML schema type 'trt:AddVideoSourceConfigurationResponse': */
@@ -15069,7 +15159,7 @@ struct _trt__AddVideoSourceConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23229 */
+/* onvif.h:23259 */
 #ifndef SOAP_TYPE__trt__RemoveVideoSourceConfiguration
 #define SOAP_TYPE__trt__RemoveVideoSourceConfiguration (1716)
 /* complex XML schema type 'trt:RemoveVideoSourceConfiguration': */
@@ -15079,7 +15169,7 @@ struct _trt__RemoveVideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:23250 */
+/* onvif.h:23280 */
 #ifndef SOAP_TYPE__trt__RemoveVideoSourceConfigurationResponse
 #define SOAP_TYPE__trt__RemoveVideoSourceConfigurationResponse (1717)
 /* complex XML schema type 'trt:RemoveVideoSourceConfigurationResponse': */
@@ -15090,7 +15180,7 @@ struct _trt__RemoveVideoSourceConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23264 */
+/* onvif.h:23294 */
 #ifndef SOAP_TYPE__trt__AddAudioEncoderConfiguration
 #define SOAP_TYPE__trt__AddAudioEncoderConfiguration (1718)
 /* complex XML schema type 'trt:AddAudioEncoderConfiguration': */
@@ -15102,7 +15192,7 @@ struct _trt__AddAudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:23290 */
+/* onvif.h:23320 */
 #ifndef SOAP_TYPE__trt__AddAudioEncoderConfigurationResponse
 #define SOAP_TYPE__trt__AddAudioEncoderConfigurationResponse (1719)
 /* complex XML schema type 'trt:AddAudioEncoderConfigurationResponse': */
@@ -15113,7 +15203,7 @@ struct _trt__AddAudioEncoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23304 */
+/* onvif.h:23334 */
 #ifndef SOAP_TYPE__trt__RemoveAudioEncoderConfiguration
 #define SOAP_TYPE__trt__RemoveAudioEncoderConfiguration (1720)
 /* complex XML schema type 'trt:RemoveAudioEncoderConfiguration': */
@@ -15123,7 +15213,7 @@ struct _trt__RemoveAudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:23325 */
+/* onvif.h:23355 */
 #ifndef SOAP_TYPE__trt__RemoveAudioEncoderConfigurationResponse
 #define SOAP_TYPE__trt__RemoveAudioEncoderConfigurationResponse (1721)
 /* complex XML schema type 'trt:RemoveAudioEncoderConfigurationResponse': */
@@ -15134,7 +15224,7 @@ struct _trt__RemoveAudioEncoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23339 */
+/* onvif.h:23369 */
 #ifndef SOAP_TYPE__trt__AddAudioSourceConfiguration
 #define SOAP_TYPE__trt__AddAudioSourceConfiguration (1722)
 /* complex XML schema type 'trt:AddAudioSourceConfiguration': */
@@ -15146,7 +15236,7 @@ struct _trt__AddAudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:23365 */
+/* onvif.h:23395 */
 #ifndef SOAP_TYPE__trt__AddAudioSourceConfigurationResponse
 #define SOAP_TYPE__trt__AddAudioSourceConfigurationResponse (1723)
 /* complex XML schema type 'trt:AddAudioSourceConfigurationResponse': */
@@ -15157,7 +15247,7 @@ struct _trt__AddAudioSourceConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23379 */
+/* onvif.h:23409 */
 #ifndef SOAP_TYPE__trt__RemoveAudioSourceConfiguration
 #define SOAP_TYPE__trt__RemoveAudioSourceConfiguration (1724)
 /* complex XML schema type 'trt:RemoveAudioSourceConfiguration': */
@@ -15167,7 +15257,7 @@ struct _trt__RemoveAudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:23400 */
+/* onvif.h:23430 */
 #ifndef SOAP_TYPE__trt__RemoveAudioSourceConfigurationResponse
 #define SOAP_TYPE__trt__RemoveAudioSourceConfigurationResponse (1725)
 /* complex XML schema type 'trt:RemoveAudioSourceConfigurationResponse': */
@@ -15178,7 +15268,7 @@ struct _trt__RemoveAudioSourceConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23414 */
+/* onvif.h:23444 */
 #ifndef SOAP_TYPE__trt__AddPTZConfiguration
 #define SOAP_TYPE__trt__AddPTZConfiguration (1726)
 /* complex XML schema type 'trt:AddPTZConfiguration': */
@@ -15190,7 +15280,7 @@ struct _trt__AddPTZConfiguration {
 };
 #endif
 
-/* onvif.h:23440 */
+/* onvif.h:23470 */
 #ifndef SOAP_TYPE__trt__AddPTZConfigurationResponse
 #define SOAP_TYPE__trt__AddPTZConfigurationResponse (1727)
 /* complex XML schema type 'trt:AddPTZConfigurationResponse': */
@@ -15201,7 +15291,7 @@ struct _trt__AddPTZConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23454 */
+/* onvif.h:23484 */
 #ifndef SOAP_TYPE__trt__RemovePTZConfiguration
 #define SOAP_TYPE__trt__RemovePTZConfiguration (1728)
 /* complex XML schema type 'trt:RemovePTZConfiguration': */
@@ -15211,7 +15301,7 @@ struct _trt__RemovePTZConfiguration {
 };
 #endif
 
-/* onvif.h:23475 */
+/* onvif.h:23505 */
 #ifndef SOAP_TYPE__trt__RemovePTZConfigurationResponse
 #define SOAP_TYPE__trt__RemovePTZConfigurationResponse (1729)
 /* complex XML schema type 'trt:RemovePTZConfigurationResponse': */
@@ -15222,7 +15312,7 @@ struct _trt__RemovePTZConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23489 */
+/* onvif.h:23519 */
 #ifndef SOAP_TYPE__trt__AddVideoAnalyticsConfiguration
 #define SOAP_TYPE__trt__AddVideoAnalyticsConfiguration (1730)
 /* complex XML schema type 'trt:AddVideoAnalyticsConfiguration': */
@@ -15234,7 +15324,7 @@ struct _trt__AddVideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:23515 */
+/* onvif.h:23545 */
 #ifndef SOAP_TYPE__trt__AddVideoAnalyticsConfigurationResponse
 #define SOAP_TYPE__trt__AddVideoAnalyticsConfigurationResponse (1731)
 /* complex XML schema type 'trt:AddVideoAnalyticsConfigurationResponse': */
@@ -15245,7 +15335,7 @@ struct _trt__AddVideoAnalyticsConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23529 */
+/* onvif.h:23559 */
 #ifndef SOAP_TYPE__trt__RemoveVideoAnalyticsConfiguration
 #define SOAP_TYPE__trt__RemoveVideoAnalyticsConfiguration (1732)
 /* complex XML schema type 'trt:RemoveVideoAnalyticsConfiguration': */
@@ -15255,7 +15345,7 @@ struct _trt__RemoveVideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:23550 */
+/* onvif.h:23580 */
 #ifndef SOAP_TYPE__trt__RemoveVideoAnalyticsConfigurationResponse
 #define SOAP_TYPE__trt__RemoveVideoAnalyticsConfigurationResponse (1733)
 /* complex XML schema type 'trt:RemoveVideoAnalyticsConfigurationResponse': */
@@ -15266,7 +15356,7 @@ struct _trt__RemoveVideoAnalyticsConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23564 */
+/* onvif.h:23594 */
 #ifndef SOAP_TYPE__trt__AddMetadataConfiguration
 #define SOAP_TYPE__trt__AddMetadataConfiguration (1734)
 /* complex XML schema type 'trt:AddMetadataConfiguration': */
@@ -15278,7 +15368,7 @@ struct _trt__AddMetadataConfiguration {
 };
 #endif
 
-/* onvif.h:23590 */
+/* onvif.h:23620 */
 #ifndef SOAP_TYPE__trt__AddMetadataConfigurationResponse
 #define SOAP_TYPE__trt__AddMetadataConfigurationResponse (1735)
 /* complex XML schema type 'trt:AddMetadataConfigurationResponse': */
@@ -15289,7 +15379,7 @@ struct _trt__AddMetadataConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23604 */
+/* onvif.h:23634 */
 #ifndef SOAP_TYPE__trt__RemoveMetadataConfiguration
 #define SOAP_TYPE__trt__RemoveMetadataConfiguration (1736)
 /* complex XML schema type 'trt:RemoveMetadataConfiguration': */
@@ -15299,7 +15389,7 @@ struct _trt__RemoveMetadataConfiguration {
 };
 #endif
 
-/* onvif.h:23625 */
+/* onvif.h:23655 */
 #ifndef SOAP_TYPE__trt__RemoveMetadataConfigurationResponse
 #define SOAP_TYPE__trt__RemoveMetadataConfigurationResponse (1737)
 /* complex XML schema type 'trt:RemoveMetadataConfigurationResponse': */
@@ -15310,7 +15400,7 @@ struct _trt__RemoveMetadataConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23639 */
+/* onvif.h:23669 */
 #ifndef SOAP_TYPE__trt__AddAudioOutputConfiguration
 #define SOAP_TYPE__trt__AddAudioOutputConfiguration (1738)
 /* complex XML schema type 'trt:AddAudioOutputConfiguration': */
@@ -15322,7 +15412,7 @@ struct _trt__AddAudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:23665 */
+/* onvif.h:23695 */
 #ifndef SOAP_TYPE__trt__AddAudioOutputConfigurationResponse
 #define SOAP_TYPE__trt__AddAudioOutputConfigurationResponse (1739)
 /* complex XML schema type 'trt:AddAudioOutputConfigurationResponse': */
@@ -15333,7 +15423,7 @@ struct _trt__AddAudioOutputConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23679 */
+/* onvif.h:23709 */
 #ifndef SOAP_TYPE__trt__RemoveAudioOutputConfiguration
 #define SOAP_TYPE__trt__RemoveAudioOutputConfiguration (1740)
 /* complex XML schema type 'trt:RemoveAudioOutputConfiguration': */
@@ -15343,7 +15433,7 @@ struct _trt__RemoveAudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:23700 */
+/* onvif.h:23730 */
 #ifndef SOAP_TYPE__trt__RemoveAudioOutputConfigurationResponse
 #define SOAP_TYPE__trt__RemoveAudioOutputConfigurationResponse (1741)
 /* complex XML schema type 'trt:RemoveAudioOutputConfigurationResponse': */
@@ -15354,7 +15444,7 @@ struct _trt__RemoveAudioOutputConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23714 */
+/* onvif.h:23744 */
 #ifndef SOAP_TYPE__trt__AddAudioDecoderConfiguration
 #define SOAP_TYPE__trt__AddAudioDecoderConfiguration (1742)
 /* complex XML schema type 'trt:AddAudioDecoderConfiguration': */
@@ -15366,7 +15456,7 @@ struct _trt__AddAudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:23740 */
+/* onvif.h:23770 */
 #ifndef SOAP_TYPE__trt__AddAudioDecoderConfigurationResponse
 #define SOAP_TYPE__trt__AddAudioDecoderConfigurationResponse (1743)
 /* complex XML schema type 'trt:AddAudioDecoderConfigurationResponse': */
@@ -15377,7 +15467,7 @@ struct _trt__AddAudioDecoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23754 */
+/* onvif.h:23784 */
 #ifndef SOAP_TYPE__trt__RemoveAudioDecoderConfiguration
 #define SOAP_TYPE__trt__RemoveAudioDecoderConfiguration (1744)
 /* complex XML schema type 'trt:RemoveAudioDecoderConfiguration': */
@@ -15387,7 +15477,7 @@ struct _trt__RemoveAudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:23774 */
+/* onvif.h:23804 */
 #ifndef SOAP_TYPE__trt__RemoveAudioDecoderConfigurationResponse
 #define SOAP_TYPE__trt__RemoveAudioDecoderConfigurationResponse (1745)
 /* complex XML schema type 'trt:RemoveAudioDecoderConfigurationResponse': */
@@ -15398,7 +15488,7 @@ struct _trt__RemoveAudioDecoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:23788 */
+/* onvif.h:23818 */
 #ifndef SOAP_TYPE__trt__DeleteProfile
 #define SOAP_TYPE__trt__DeleteProfile (1746)
 /* complex XML schema type 'trt:DeleteProfile': */
@@ -15408,7 +15498,7 @@ struct _trt__DeleteProfile {
 };
 #endif
 
-/* onvif.h:23808 */
+/* onvif.h:23838 */
 #ifndef SOAP_TYPE__trt__DeleteProfileResponse
 #define SOAP_TYPE__trt__DeleteProfileResponse (1747)
 /* complex XML schema type 'trt:DeleteProfileResponse': */
@@ -15419,7 +15509,7 @@ struct _trt__DeleteProfileResponse {
 };
 #endif
 
-/* onvif.h:23822 */
+/* onvif.h:23852 */
 #ifndef SOAP_TYPE__trt__GetVideoEncoderConfigurations
 #define SOAP_TYPE__trt__GetVideoEncoderConfigurations (1748)
 /* complex XML schema type 'trt:GetVideoEncoderConfigurations': */
@@ -15430,7 +15520,7 @@ struct _trt__GetVideoEncoderConfigurations {
 };
 #endif
 
-/* onvif.h:23836 */
+/* onvif.h:23866 */
 #ifndef SOAP_TYPE__trt__GetVideoEncoderConfigurationsResponse
 #define SOAP_TYPE__trt__GetVideoEncoderConfigurationsResponse (1749)
 /* complex XML schema type 'trt:GetVideoEncoderConfigurationsResponse': */
@@ -15441,7 +15531,7 @@ struct _trt__GetVideoEncoderConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:23858 */
+/* onvif.h:23888 */
 #ifndef SOAP_TYPE__trt__GetVideoSourceConfigurations
 #define SOAP_TYPE__trt__GetVideoSourceConfigurations (1750)
 /* complex XML schema type 'trt:GetVideoSourceConfigurations': */
@@ -15452,7 +15542,7 @@ struct _trt__GetVideoSourceConfigurations {
 };
 #endif
 
-/* onvif.h:23872 */
+/* onvif.h:23902 */
 #ifndef SOAP_TYPE__trt__GetVideoSourceConfigurationsResponse
 #define SOAP_TYPE__trt__GetVideoSourceConfigurationsResponse (1751)
 /* complex XML schema type 'trt:GetVideoSourceConfigurationsResponse': */
@@ -15463,7 +15553,7 @@ struct _trt__GetVideoSourceConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:23894 */
+/* onvif.h:23924 */
 #ifndef SOAP_TYPE__trt__GetAudioEncoderConfigurations
 #define SOAP_TYPE__trt__GetAudioEncoderConfigurations (1752)
 /* complex XML schema type 'trt:GetAudioEncoderConfigurations': */
@@ -15474,7 +15564,7 @@ struct _trt__GetAudioEncoderConfigurations {
 };
 #endif
 
-/* onvif.h:23908 */
+/* onvif.h:23938 */
 #ifndef SOAP_TYPE__trt__GetAudioEncoderConfigurationsResponse
 #define SOAP_TYPE__trt__GetAudioEncoderConfigurationsResponse (1753)
 /* complex XML schema type 'trt:GetAudioEncoderConfigurationsResponse': */
@@ -15485,7 +15575,7 @@ struct _trt__GetAudioEncoderConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:23930 */
+/* onvif.h:23960 */
 #ifndef SOAP_TYPE__trt__GetAudioSourceConfigurations
 #define SOAP_TYPE__trt__GetAudioSourceConfigurations (1754)
 /* complex XML schema type 'trt:GetAudioSourceConfigurations': */
@@ -15496,7 +15586,7 @@ struct _trt__GetAudioSourceConfigurations {
 };
 #endif
 
-/* onvif.h:23944 */
+/* onvif.h:23974 */
 #ifndef SOAP_TYPE__trt__GetAudioSourceConfigurationsResponse
 #define SOAP_TYPE__trt__GetAudioSourceConfigurationsResponse (1755)
 /* complex XML schema type 'trt:GetAudioSourceConfigurationsResponse': */
@@ -15507,7 +15597,7 @@ struct _trt__GetAudioSourceConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:23966 */
+/* onvif.h:23996 */
 #ifndef SOAP_TYPE__trt__GetVideoAnalyticsConfigurations
 #define SOAP_TYPE__trt__GetVideoAnalyticsConfigurations (1756)
 /* complex XML schema type 'trt:GetVideoAnalyticsConfigurations': */
@@ -15518,7 +15608,7 @@ struct _trt__GetVideoAnalyticsConfigurations {
 };
 #endif
 
-/* onvif.h:23980 */
+/* onvif.h:24010 */
 #ifndef SOAP_TYPE__trt__GetVideoAnalyticsConfigurationsResponse
 #define SOAP_TYPE__trt__GetVideoAnalyticsConfigurationsResponse (1757)
 /* complex XML schema type 'trt:GetVideoAnalyticsConfigurationsResponse': */
@@ -15529,7 +15619,7 @@ struct _trt__GetVideoAnalyticsConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24002 */
+/* onvif.h:24032 */
 #ifndef SOAP_TYPE__trt__GetMetadataConfigurations
 #define SOAP_TYPE__trt__GetMetadataConfigurations (1758)
 /* complex XML schema type 'trt:GetMetadataConfigurations': */
@@ -15540,7 +15630,7 @@ struct _trt__GetMetadataConfigurations {
 };
 #endif
 
-/* onvif.h:24016 */
+/* onvif.h:24046 */
 #ifndef SOAP_TYPE__trt__GetMetadataConfigurationsResponse
 #define SOAP_TYPE__trt__GetMetadataConfigurationsResponse (1759)
 /* complex XML schema type 'trt:GetMetadataConfigurationsResponse': */
@@ -15551,7 +15641,7 @@ struct _trt__GetMetadataConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24038 */
+/* onvif.h:24068 */
 #ifndef SOAP_TYPE__trt__GetAudioOutputConfigurations
 #define SOAP_TYPE__trt__GetAudioOutputConfigurations (1760)
 /* complex XML schema type 'trt:GetAudioOutputConfigurations': */
@@ -15562,7 +15652,7 @@ struct _trt__GetAudioOutputConfigurations {
 };
 #endif
 
-/* onvif.h:24052 */
+/* onvif.h:24082 */
 #ifndef SOAP_TYPE__trt__GetAudioOutputConfigurationsResponse
 #define SOAP_TYPE__trt__GetAudioOutputConfigurationsResponse (1761)
 /* complex XML schema type 'trt:GetAudioOutputConfigurationsResponse': */
@@ -15573,7 +15663,7 @@ struct _trt__GetAudioOutputConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24074 */
+/* onvif.h:24104 */
 #ifndef SOAP_TYPE__trt__GetAudioDecoderConfigurations
 #define SOAP_TYPE__trt__GetAudioDecoderConfigurations (1762)
 /* complex XML schema type 'trt:GetAudioDecoderConfigurations': */
@@ -15584,7 +15674,7 @@ struct _trt__GetAudioDecoderConfigurations {
 };
 #endif
 
-/* onvif.h:24088 */
+/* onvif.h:24118 */
 #ifndef SOAP_TYPE__trt__GetAudioDecoderConfigurationsResponse
 #define SOAP_TYPE__trt__GetAudioDecoderConfigurationsResponse (1763)
 /* complex XML schema type 'trt:GetAudioDecoderConfigurationsResponse': */
@@ -15595,7 +15685,7 @@ struct _trt__GetAudioDecoderConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24110 */
+/* onvif.h:24140 */
 #ifndef SOAP_TYPE__trt__GetVideoSourceConfiguration
 #define SOAP_TYPE__trt__GetVideoSourceConfiguration (1764)
 /* complex XML schema type 'trt:GetVideoSourceConfiguration': */
@@ -15605,7 +15695,7 @@ struct _trt__GetVideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:24130 */
+/* onvif.h:24160 */
 #ifndef SOAP_TYPE__trt__GetVideoSourceConfigurationResponse
 #define SOAP_TYPE__trt__GetVideoSourceConfigurationResponse (1765)
 /* complex XML schema type 'trt:GetVideoSourceConfigurationResponse': */
@@ -15615,7 +15705,7 @@ struct _trt__GetVideoSourceConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24150 */
+/* onvif.h:24180 */
 #ifndef SOAP_TYPE__trt__GetVideoEncoderConfiguration
 #define SOAP_TYPE__trt__GetVideoEncoderConfiguration (1766)
 /* complex XML schema type 'trt:GetVideoEncoderConfiguration': */
@@ -15625,7 +15715,7 @@ struct _trt__GetVideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:24170 */
+/* onvif.h:24200 */
 #ifndef SOAP_TYPE__trt__GetVideoEncoderConfigurationResponse
 #define SOAP_TYPE__trt__GetVideoEncoderConfigurationResponse (1767)
 /* complex XML schema type 'trt:GetVideoEncoderConfigurationResponse': */
@@ -15635,7 +15725,7 @@ struct _trt__GetVideoEncoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24190 */
+/* onvif.h:24220 */
 #ifndef SOAP_TYPE__trt__GetAudioSourceConfiguration
 #define SOAP_TYPE__trt__GetAudioSourceConfiguration (1768)
 /* complex XML schema type 'trt:GetAudioSourceConfiguration': */
@@ -15645,7 +15735,7 @@ struct _trt__GetAudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:24210 */
+/* onvif.h:24240 */
 #ifndef SOAP_TYPE__trt__GetAudioSourceConfigurationResponse
 #define SOAP_TYPE__trt__GetAudioSourceConfigurationResponse (1769)
 /* complex XML schema type 'trt:GetAudioSourceConfigurationResponse': */
@@ -15655,7 +15745,7 @@ struct _trt__GetAudioSourceConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24230 */
+/* onvif.h:24260 */
 #ifndef SOAP_TYPE__trt__GetAudioEncoderConfiguration
 #define SOAP_TYPE__trt__GetAudioEncoderConfiguration (1770)
 /* complex XML schema type 'trt:GetAudioEncoderConfiguration': */
@@ -15665,7 +15755,7 @@ struct _trt__GetAudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:24250 */
+/* onvif.h:24280 */
 #ifndef SOAP_TYPE__trt__GetAudioEncoderConfigurationResponse
 #define SOAP_TYPE__trt__GetAudioEncoderConfigurationResponse (1771)
 /* complex XML schema type 'trt:GetAudioEncoderConfigurationResponse': */
@@ -15675,7 +15765,7 @@ struct _trt__GetAudioEncoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24270 */
+/* onvif.h:24300 */
 #ifndef SOAP_TYPE__trt__GetVideoAnalyticsConfiguration
 #define SOAP_TYPE__trt__GetVideoAnalyticsConfiguration (1772)
 /* complex XML schema type 'trt:GetVideoAnalyticsConfiguration': */
@@ -15685,7 +15775,7 @@ struct _trt__GetVideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:24290 */
+/* onvif.h:24320 */
 #ifndef SOAP_TYPE__trt__GetVideoAnalyticsConfigurationResponse
 #define SOAP_TYPE__trt__GetVideoAnalyticsConfigurationResponse (1773)
 /* complex XML schema type 'trt:GetVideoAnalyticsConfigurationResponse': */
@@ -15695,7 +15785,7 @@ struct _trt__GetVideoAnalyticsConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24310 */
+/* onvif.h:24340 */
 #ifndef SOAP_TYPE__trt__GetMetadataConfiguration
 #define SOAP_TYPE__trt__GetMetadataConfiguration (1774)
 /* complex XML schema type 'trt:GetMetadataConfiguration': */
@@ -15705,7 +15795,7 @@ struct _trt__GetMetadataConfiguration {
 };
 #endif
 
-/* onvif.h:24330 */
+/* onvif.h:24360 */
 #ifndef SOAP_TYPE__trt__GetMetadataConfigurationResponse
 #define SOAP_TYPE__trt__GetMetadataConfigurationResponse (1775)
 /* complex XML schema type 'trt:GetMetadataConfigurationResponse': */
@@ -15715,7 +15805,7 @@ struct _trt__GetMetadataConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24350 */
+/* onvif.h:24380 */
 #ifndef SOAP_TYPE__trt__GetAudioOutputConfiguration
 #define SOAP_TYPE__trt__GetAudioOutputConfiguration (1776)
 /* complex XML schema type 'trt:GetAudioOutputConfiguration': */
@@ -15725,7 +15815,7 @@ struct _trt__GetAudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:24370 */
+/* onvif.h:24400 */
 #ifndef SOAP_TYPE__trt__GetAudioOutputConfigurationResponse
 #define SOAP_TYPE__trt__GetAudioOutputConfigurationResponse (1777)
 /* complex XML schema type 'trt:GetAudioOutputConfigurationResponse': */
@@ -15735,7 +15825,7 @@ struct _trt__GetAudioOutputConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24390 */
+/* onvif.h:24420 */
 #ifndef SOAP_TYPE__trt__GetAudioDecoderConfiguration
 #define SOAP_TYPE__trt__GetAudioDecoderConfiguration (1778)
 /* complex XML schema type 'trt:GetAudioDecoderConfiguration': */
@@ -15745,7 +15835,7 @@ struct _trt__GetAudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:24410 */
+/* onvif.h:24440 */
 #ifndef SOAP_TYPE__trt__GetAudioDecoderConfigurationResponse
 #define SOAP_TYPE__trt__GetAudioDecoderConfigurationResponse (1779)
 /* complex XML schema type 'trt:GetAudioDecoderConfigurationResponse': */
@@ -15755,7 +15845,7 @@ struct _trt__GetAudioDecoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24430 */
+/* onvif.h:24460 */
 #ifndef SOAP_TYPE__trt__GetCompatibleVideoEncoderConfigurations
 #define SOAP_TYPE__trt__GetCompatibleVideoEncoderConfigurations (1780)
 /* complex XML schema type 'trt:GetCompatibleVideoEncoderConfigurations': */
@@ -15765,7 +15855,7 @@ struct _trt__GetCompatibleVideoEncoderConfigurations {
 };
 #endif
 
-/* onvif.h:24450 */
+/* onvif.h:24480 */
 #ifndef SOAP_TYPE__trt__GetCompatibleVideoEncoderConfigurationsResponse
 #define SOAP_TYPE__trt__GetCompatibleVideoEncoderConfigurationsResponse (1781)
 /* complex XML schema type 'trt:GetCompatibleVideoEncoderConfigurationsResponse': */
@@ -15776,7 +15866,7 @@ struct _trt__GetCompatibleVideoEncoderConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24472 */
+/* onvif.h:24502 */
 #ifndef SOAP_TYPE__trt__GetCompatibleVideoSourceConfigurations
 #define SOAP_TYPE__trt__GetCompatibleVideoSourceConfigurations (1782)
 /* complex XML schema type 'trt:GetCompatibleVideoSourceConfigurations': */
@@ -15786,7 +15876,7 @@ struct _trt__GetCompatibleVideoSourceConfigurations {
 };
 #endif
 
-/* onvif.h:24492 */
+/* onvif.h:24522 */
 #ifndef SOAP_TYPE__trt__GetCompatibleVideoSourceConfigurationsResponse
 #define SOAP_TYPE__trt__GetCompatibleVideoSourceConfigurationsResponse (1783)
 /* complex XML schema type 'trt:GetCompatibleVideoSourceConfigurationsResponse': */
@@ -15797,7 +15887,7 @@ struct _trt__GetCompatibleVideoSourceConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24514 */
+/* onvif.h:24544 */
 #ifndef SOAP_TYPE__trt__GetCompatibleAudioEncoderConfigurations
 #define SOAP_TYPE__trt__GetCompatibleAudioEncoderConfigurations (1784)
 /* complex XML schema type 'trt:GetCompatibleAudioEncoderConfigurations': */
@@ -15807,7 +15897,7 @@ struct _trt__GetCompatibleAudioEncoderConfigurations {
 };
 #endif
 
-/* onvif.h:24534 */
+/* onvif.h:24564 */
 #ifndef SOAP_TYPE__trt__GetCompatibleAudioEncoderConfigurationsResponse
 #define SOAP_TYPE__trt__GetCompatibleAudioEncoderConfigurationsResponse (1785)
 /* complex XML schema type 'trt:GetCompatibleAudioEncoderConfigurationsResponse': */
@@ -15818,7 +15908,7 @@ struct _trt__GetCompatibleAudioEncoderConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24556 */
+/* onvif.h:24586 */
 #ifndef SOAP_TYPE__trt__GetCompatibleAudioSourceConfigurations
 #define SOAP_TYPE__trt__GetCompatibleAudioSourceConfigurations (1786)
 /* complex XML schema type 'trt:GetCompatibleAudioSourceConfigurations': */
@@ -15828,7 +15918,7 @@ struct _trt__GetCompatibleAudioSourceConfigurations {
 };
 #endif
 
-/* onvif.h:24576 */
+/* onvif.h:24606 */
 #ifndef SOAP_TYPE__trt__GetCompatibleAudioSourceConfigurationsResponse
 #define SOAP_TYPE__trt__GetCompatibleAudioSourceConfigurationsResponse (1787)
 /* complex XML schema type 'trt:GetCompatibleAudioSourceConfigurationsResponse': */
@@ -15839,7 +15929,7 @@ struct _trt__GetCompatibleAudioSourceConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24598 */
+/* onvif.h:24628 */
 #ifndef SOAP_TYPE__trt__GetCompatibleVideoAnalyticsConfigurations
 #define SOAP_TYPE__trt__GetCompatibleVideoAnalyticsConfigurations (1788)
 /* complex XML schema type 'trt:GetCompatibleVideoAnalyticsConfigurations': */
@@ -15849,7 +15939,7 @@ struct _trt__GetCompatibleVideoAnalyticsConfigurations {
 };
 #endif
 
-/* onvif.h:24618 */
+/* onvif.h:24648 */
 #ifndef SOAP_TYPE__trt__GetCompatibleVideoAnalyticsConfigurationsResponse
 #define SOAP_TYPE__trt__GetCompatibleVideoAnalyticsConfigurationsResponse (1789)
 /* complex XML schema type 'trt:GetCompatibleVideoAnalyticsConfigurationsResponse': */
@@ -15860,7 +15950,7 @@ struct _trt__GetCompatibleVideoAnalyticsConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24640 */
+/* onvif.h:24670 */
 #ifndef SOAP_TYPE__trt__GetCompatibleMetadataConfigurations
 #define SOAP_TYPE__trt__GetCompatibleMetadataConfigurations (1790)
 /* complex XML schema type 'trt:GetCompatibleMetadataConfigurations': */
@@ -15870,7 +15960,7 @@ struct _trt__GetCompatibleMetadataConfigurations {
 };
 #endif
 
-/* onvif.h:24660 */
+/* onvif.h:24690 */
 #ifndef SOAP_TYPE__trt__GetCompatibleMetadataConfigurationsResponse
 #define SOAP_TYPE__trt__GetCompatibleMetadataConfigurationsResponse (1791)
 /* complex XML schema type 'trt:GetCompatibleMetadataConfigurationsResponse': */
@@ -15881,7 +15971,7 @@ struct _trt__GetCompatibleMetadataConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24682 */
+/* onvif.h:24712 */
 #ifndef SOAP_TYPE__trt__GetCompatibleAudioOutputConfigurations
 #define SOAP_TYPE__trt__GetCompatibleAudioOutputConfigurations (1792)
 /* complex XML schema type 'trt:GetCompatibleAudioOutputConfigurations': */
@@ -15891,7 +15981,7 @@ struct _trt__GetCompatibleAudioOutputConfigurations {
 };
 #endif
 
-/* onvif.h:24702 */
+/* onvif.h:24732 */
 #ifndef SOAP_TYPE__trt__GetCompatibleAudioOutputConfigurationsResponse
 #define SOAP_TYPE__trt__GetCompatibleAudioOutputConfigurationsResponse (1793)
 /* complex XML schema type 'trt:GetCompatibleAudioOutputConfigurationsResponse': */
@@ -15902,7 +15992,7 @@ struct _trt__GetCompatibleAudioOutputConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24724 */
+/* onvif.h:24754 */
 #ifndef SOAP_TYPE__trt__GetCompatibleAudioDecoderConfigurations
 #define SOAP_TYPE__trt__GetCompatibleAudioDecoderConfigurations (1794)
 /* complex XML schema type 'trt:GetCompatibleAudioDecoderConfigurations': */
@@ -15912,7 +16002,7 @@ struct _trt__GetCompatibleAudioDecoderConfigurations {
 };
 #endif
 
-/* onvif.h:24744 */
+/* onvif.h:24774 */
 #ifndef SOAP_TYPE__trt__GetCompatibleAudioDecoderConfigurationsResponse
 #define SOAP_TYPE__trt__GetCompatibleAudioDecoderConfigurationsResponse (1795)
 /* complex XML schema type 'trt:GetCompatibleAudioDecoderConfigurationsResponse': */
@@ -15923,7 +16013,7 @@ struct _trt__GetCompatibleAudioDecoderConfigurationsResponse {
 };
 #endif
 
-/* onvif.h:24766 */
+/* onvif.h:24796 */
 #ifndef SOAP_TYPE__trt__SetVideoEncoderConfiguration
 #define SOAP_TYPE__trt__SetVideoEncoderConfiguration (1796)
 /* complex XML schema type 'trt:SetVideoEncoderConfiguration': */
@@ -15935,7 +16025,7 @@ struct _trt__SetVideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:24792 */
+/* onvif.h:24822 */
 #ifndef SOAP_TYPE__trt__SetVideoEncoderConfigurationResponse
 #define SOAP_TYPE__trt__SetVideoEncoderConfigurationResponse (1797)
 /* complex XML schema type 'trt:SetVideoEncoderConfigurationResponse': */
@@ -15946,7 +16036,7 @@ struct _trt__SetVideoEncoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24806 */
+/* onvif.h:24836 */
 #ifndef SOAP_TYPE__trt__SetVideoSourceConfiguration
 #define SOAP_TYPE__trt__SetVideoSourceConfiguration (1798)
 /* complex XML schema type 'trt:SetVideoSourceConfiguration': */
@@ -15958,7 +16048,7 @@ struct _trt__SetVideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:24832 */
+/* onvif.h:24862 */
 #ifndef SOAP_TYPE__trt__SetVideoSourceConfigurationResponse
 #define SOAP_TYPE__trt__SetVideoSourceConfigurationResponse (1799)
 /* complex XML schema type 'trt:SetVideoSourceConfigurationResponse': */
@@ -15969,7 +16059,7 @@ struct _trt__SetVideoSourceConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24846 */
+/* onvif.h:24876 */
 #ifndef SOAP_TYPE__trt__SetAudioEncoderConfiguration
 #define SOAP_TYPE__trt__SetAudioEncoderConfiguration (1800)
 /* complex XML schema type 'trt:SetAudioEncoderConfiguration': */
@@ -15981,7 +16071,7 @@ struct _trt__SetAudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:24872 */
+/* onvif.h:24902 */
 #ifndef SOAP_TYPE__trt__SetAudioEncoderConfigurationResponse
 #define SOAP_TYPE__trt__SetAudioEncoderConfigurationResponse (1801)
 /* complex XML schema type 'trt:SetAudioEncoderConfigurationResponse': */
@@ -15992,7 +16082,7 @@ struct _trt__SetAudioEncoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24886 */
+/* onvif.h:24916 */
 #ifndef SOAP_TYPE__trt__SetAudioSourceConfiguration
 #define SOAP_TYPE__trt__SetAudioSourceConfiguration (1802)
 /* complex XML schema type 'trt:SetAudioSourceConfiguration': */
@@ -16004,7 +16094,7 @@ struct _trt__SetAudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:24912 */
+/* onvif.h:24942 */
 #ifndef SOAP_TYPE__trt__SetAudioSourceConfigurationResponse
 #define SOAP_TYPE__trt__SetAudioSourceConfigurationResponse (1803)
 /* complex XML schema type 'trt:SetAudioSourceConfigurationResponse': */
@@ -16015,7 +16105,7 @@ struct _trt__SetAudioSourceConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24926 */
+/* onvif.h:24956 */
 #ifndef SOAP_TYPE__trt__SetVideoAnalyticsConfiguration
 #define SOAP_TYPE__trt__SetVideoAnalyticsConfiguration (1804)
 /* complex XML schema type 'trt:SetVideoAnalyticsConfiguration': */
@@ -16027,7 +16117,7 @@ struct _trt__SetVideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:24952 */
+/* onvif.h:24982 */
 #ifndef SOAP_TYPE__trt__SetVideoAnalyticsConfigurationResponse
 #define SOAP_TYPE__trt__SetVideoAnalyticsConfigurationResponse (1805)
 /* complex XML schema type 'trt:SetVideoAnalyticsConfigurationResponse': */
@@ -16038,7 +16128,7 @@ struct _trt__SetVideoAnalyticsConfigurationResponse {
 };
 #endif
 
-/* onvif.h:24966 */
+/* onvif.h:24996 */
 #ifndef SOAP_TYPE__trt__SetMetadataConfiguration
 #define SOAP_TYPE__trt__SetMetadataConfiguration (1806)
 /* complex XML schema type 'trt:SetMetadataConfiguration': */
@@ -16050,7 +16140,7 @@ struct _trt__SetMetadataConfiguration {
 };
 #endif
 
-/* onvif.h:24992 */
+/* onvif.h:25022 */
 #ifndef SOAP_TYPE__trt__SetMetadataConfigurationResponse
 #define SOAP_TYPE__trt__SetMetadataConfigurationResponse (1807)
 /* complex XML schema type 'trt:SetMetadataConfigurationResponse': */
@@ -16061,7 +16151,7 @@ struct _trt__SetMetadataConfigurationResponse {
 };
 #endif
 
-/* onvif.h:25006 */
+/* onvif.h:25036 */
 #ifndef SOAP_TYPE__trt__SetAudioOutputConfiguration
 #define SOAP_TYPE__trt__SetAudioOutputConfiguration (1808)
 /* complex XML schema type 'trt:SetAudioOutputConfiguration': */
@@ -16073,7 +16163,7 @@ struct _trt__SetAudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:25032 */
+/* onvif.h:25062 */
 #ifndef SOAP_TYPE__trt__SetAudioOutputConfigurationResponse
 #define SOAP_TYPE__trt__SetAudioOutputConfigurationResponse (1809)
 /* complex XML schema type 'trt:SetAudioOutputConfigurationResponse': */
@@ -16084,7 +16174,7 @@ struct _trt__SetAudioOutputConfigurationResponse {
 };
 #endif
 
-/* onvif.h:25046 */
+/* onvif.h:25076 */
 #ifndef SOAP_TYPE__trt__SetAudioDecoderConfiguration
 #define SOAP_TYPE__trt__SetAudioDecoderConfiguration (1810)
 /* complex XML schema type 'trt:SetAudioDecoderConfiguration': */
@@ -16096,7 +16186,7 @@ struct _trt__SetAudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:25072 */
+/* onvif.h:25102 */
 #ifndef SOAP_TYPE__trt__SetAudioDecoderConfigurationResponse
 #define SOAP_TYPE__trt__SetAudioDecoderConfigurationResponse (1811)
 /* complex XML schema type 'trt:SetAudioDecoderConfigurationResponse': */
@@ -16107,7 +16197,7 @@ struct _trt__SetAudioDecoderConfigurationResponse {
 };
 #endif
 
-/* onvif.h:25086 */
+/* onvif.h:25116 */
 #ifndef SOAP_TYPE__trt__GetVideoSourceConfigurationOptions
 #define SOAP_TYPE__trt__GetVideoSourceConfigurationOptions (1812)
 /* complex XML schema type 'trt:GetVideoSourceConfigurationOptions': */
@@ -16119,7 +16209,7 @@ struct _trt__GetVideoSourceConfigurationOptions {
 };
 #endif
 
-/* onvif.h:25112 */
+/* onvif.h:25142 */
 #ifndef SOAP_TYPE__trt__GetVideoSourceConfigurationOptionsResponse
 #define SOAP_TYPE__trt__GetVideoSourceConfigurationOptionsResponse (1813)
 /* complex XML schema type 'trt:GetVideoSourceConfigurationOptionsResponse': */
@@ -16129,7 +16219,7 @@ struct _trt__GetVideoSourceConfigurationOptionsResponse {
 };
 #endif
 
-/* onvif.h:25132 */
+/* onvif.h:25162 */
 #ifndef SOAP_TYPE__trt__GetVideoEncoderConfigurationOptions
 #define SOAP_TYPE__trt__GetVideoEncoderConfigurationOptions (1815)
 /* complex XML schema type 'trt:GetVideoEncoderConfigurationOptions': */
@@ -16141,7 +16231,7 @@ struct _trt__GetVideoEncoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:25158 */
+/* onvif.h:25188 */
 #ifndef SOAP_TYPE__trt__GetVideoEncoderConfigurationOptionsResponse
 #define SOAP_TYPE__trt__GetVideoEncoderConfigurationOptionsResponse (1816)
 /* complex XML schema type 'trt:GetVideoEncoderConfigurationOptionsResponse': */
@@ -16151,7 +16241,7 @@ struct _trt__GetVideoEncoderConfigurationOptionsResponse {
 };
 #endif
 
-/* onvif.h:25174 */
+/* onvif.h:25204 */
 #ifndef SOAP_TYPE__trt__GetAudioSourceConfigurationOptions
 #define SOAP_TYPE__trt__GetAudioSourceConfigurationOptions (1818)
 /* complex XML schema type 'trt:GetAudioSourceConfigurationOptions': */
@@ -16163,7 +16253,7 @@ struct _trt__GetAudioSourceConfigurationOptions {
 };
 #endif
 
-/* onvif.h:25200 */
+/* onvif.h:25230 */
 #ifndef SOAP_TYPE__trt__GetAudioSourceConfigurationOptionsResponse
 #define SOAP_TYPE__trt__GetAudioSourceConfigurationOptionsResponse (1819)
 /* complex XML schema type 'trt:GetAudioSourceConfigurationOptionsResponse': */
@@ -16173,7 +16263,7 @@ struct _trt__GetAudioSourceConfigurationOptionsResponse {
 };
 #endif
 
-/* onvif.h:25220 */
+/* onvif.h:25250 */
 #ifndef SOAP_TYPE__trt__GetAudioEncoderConfigurationOptions
 #define SOAP_TYPE__trt__GetAudioEncoderConfigurationOptions (1821)
 /* complex XML schema type 'trt:GetAudioEncoderConfigurationOptions': */
@@ -16185,7 +16275,7 @@ struct _trt__GetAudioEncoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:25246 */
+/* onvif.h:25276 */
 #ifndef SOAP_TYPE__trt__GetAudioEncoderConfigurationOptionsResponse
 #define SOAP_TYPE__trt__GetAudioEncoderConfigurationOptionsResponse (1822)
 /* complex XML schema type 'trt:GetAudioEncoderConfigurationOptionsResponse': */
@@ -16195,7 +16285,7 @@ struct _trt__GetAudioEncoderConfigurationOptionsResponse {
 };
 #endif
 
-/* onvif.h:25266 */
+/* onvif.h:25296 */
 #ifndef SOAP_TYPE__trt__GetMetadataConfigurationOptions
 #define SOAP_TYPE__trt__GetMetadataConfigurationOptions (1823)
 /* complex XML schema type 'trt:GetMetadataConfigurationOptions': */
@@ -16207,7 +16297,7 @@ struct _trt__GetMetadataConfigurationOptions {
 };
 #endif
 
-/* onvif.h:25292 */
+/* onvif.h:25322 */
 #ifndef SOAP_TYPE__trt__GetMetadataConfigurationOptionsResponse
 #define SOAP_TYPE__trt__GetMetadataConfigurationOptionsResponse (1824)
 /* complex XML schema type 'trt:GetMetadataConfigurationOptionsResponse': */
@@ -16217,7 +16307,7 @@ struct _trt__GetMetadataConfigurationOptionsResponse {
 };
 #endif
 
-/* onvif.h:25312 */
+/* onvif.h:25342 */
 #ifndef SOAP_TYPE__trt__GetAudioOutputConfigurationOptions
 #define SOAP_TYPE__trt__GetAudioOutputConfigurationOptions (1826)
 /* complex XML schema type 'trt:GetAudioOutputConfigurationOptions': */
@@ -16229,7 +16319,7 @@ struct _trt__GetAudioOutputConfigurationOptions {
 };
 #endif
 
-/* onvif.h:25338 */
+/* onvif.h:25368 */
 #ifndef SOAP_TYPE__trt__GetAudioOutputConfigurationOptionsResponse
 #define SOAP_TYPE__trt__GetAudioOutputConfigurationOptionsResponse (1827)
 /* complex XML schema type 'trt:GetAudioOutputConfigurationOptionsResponse': */
@@ -16239,7 +16329,7 @@ struct _trt__GetAudioOutputConfigurationOptionsResponse {
 };
 #endif
 
-/* onvif.h:25358 */
+/* onvif.h:25388 */
 #ifndef SOAP_TYPE__trt__GetAudioDecoderConfigurationOptions
 #define SOAP_TYPE__trt__GetAudioDecoderConfigurationOptions (1829)
 /* complex XML schema type 'trt:GetAudioDecoderConfigurationOptions': */
@@ -16251,7 +16341,7 @@ struct _trt__GetAudioDecoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:25384 */
+/* onvif.h:25414 */
 #ifndef SOAP_TYPE__trt__GetAudioDecoderConfigurationOptionsResponse
 #define SOAP_TYPE__trt__GetAudioDecoderConfigurationOptionsResponse (1830)
 /* complex XML schema type 'trt:GetAudioDecoderConfigurationOptionsResponse': */
@@ -16261,7 +16351,7 @@ struct _trt__GetAudioDecoderConfigurationOptionsResponse {
 };
 #endif
 
-/* onvif.h:25404 */
+/* onvif.h:25434 */
 #ifndef SOAP_TYPE__trt__GetGuaranteedNumberOfVideoEncoderInstances
 #define SOAP_TYPE__trt__GetGuaranteedNumberOfVideoEncoderInstances (1831)
 /* complex XML schema type 'trt:GetGuaranteedNumberOfVideoEncoderInstances': */
@@ -16271,7 +16361,7 @@ struct _trt__GetGuaranteedNumberOfVideoEncoderInstances {
 };
 #endif
 
-/* onvif.h:25424 */
+/* onvif.h:25454 */
 #ifndef SOAP_TYPE__trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse
 #define SOAP_TYPE__trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse (1832)
 /* complex XML schema type 'trt:GetGuaranteedNumberOfVideoEncoderInstancesResponse': */
@@ -16287,7 +16377,7 @@ struct _trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse {
 };
 #endif
 
-/* onvif.h:25462 */
+/* onvif.h:25492 */
 #ifndef SOAP_TYPE__trt__GetStreamUri
 #define SOAP_TYPE__trt__GetStreamUri (1833)
 /* complex XML schema type 'trt:GetStreamUri': */
@@ -16299,7 +16389,7 @@ struct _trt__GetStreamUri {
 };
 #endif
 
-/* onvif.h:25488 */
+/* onvif.h:25518 */
 #ifndef SOAP_TYPE__trt__GetStreamUriResponse
 #define SOAP_TYPE__trt__GetStreamUriResponse (1834)
 /* complex XML schema type 'trt:GetStreamUriResponse': */
@@ -16309,7 +16399,7 @@ struct _trt__GetStreamUriResponse {
 };
 #endif
 
-/* onvif.h:25507 */
+/* onvif.h:25537 */
 #ifndef SOAP_TYPE__trt__StartMulticastStreaming
 #define SOAP_TYPE__trt__StartMulticastStreaming (1836)
 /* complex XML schema type 'trt:StartMulticastStreaming': */
@@ -16319,7 +16409,7 @@ struct _trt__StartMulticastStreaming {
 };
 #endif
 
-/* onvif.h:25527 */
+/* onvif.h:25557 */
 #ifndef SOAP_TYPE__trt__StartMulticastStreamingResponse
 #define SOAP_TYPE__trt__StartMulticastStreamingResponse (1837)
 /* complex XML schema type 'trt:StartMulticastStreamingResponse': */
@@ -16330,7 +16420,7 @@ struct _trt__StartMulticastStreamingResponse {
 };
 #endif
 
-/* onvif.h:25541 */
+/* onvif.h:25571 */
 #ifndef SOAP_TYPE__trt__StopMulticastStreaming
 #define SOAP_TYPE__trt__StopMulticastStreaming (1838)
 /* complex XML schema type 'trt:StopMulticastStreaming': */
@@ -16340,7 +16430,7 @@ struct _trt__StopMulticastStreaming {
 };
 #endif
 
-/* onvif.h:25561 */
+/* onvif.h:25591 */
 #ifndef SOAP_TYPE__trt__StopMulticastStreamingResponse
 #define SOAP_TYPE__trt__StopMulticastStreamingResponse (1839)
 /* complex XML schema type 'trt:StopMulticastStreamingResponse': */
@@ -16351,7 +16441,7 @@ struct _trt__StopMulticastStreamingResponse {
 };
 #endif
 
-/* onvif.h:25575 */
+/* onvif.h:25605 */
 #ifndef SOAP_TYPE__trt__SetSynchronizationPoint
 #define SOAP_TYPE__trt__SetSynchronizationPoint (1840)
 /* complex XML schema type 'trt:SetSynchronizationPoint': */
@@ -16361,7 +16451,7 @@ struct _trt__SetSynchronizationPoint {
 };
 #endif
 
-/* onvif.h:25595 */
+/* onvif.h:25625 */
 #ifndef SOAP_TYPE__trt__SetSynchronizationPointResponse
 #define SOAP_TYPE__trt__SetSynchronizationPointResponse (1841)
 /* complex XML schema type 'trt:SetSynchronizationPointResponse': */
@@ -16372,7 +16462,7 @@ struct _trt__SetSynchronizationPointResponse {
 };
 #endif
 
-/* onvif.h:25609 */
+/* onvif.h:25639 */
 #ifndef SOAP_TYPE__trt__GetSnapshotUri
 #define SOAP_TYPE__trt__GetSnapshotUri (1842)
 /* complex XML schema type 'trt:GetSnapshotUri': */
@@ -16382,7 +16472,7 @@ struct _trt__GetSnapshotUri {
 };
 #endif
 
-/* onvif.h:25629 */
+/* onvif.h:25659 */
 #ifndef SOAP_TYPE__trt__GetSnapshotUriResponse
 #define SOAP_TYPE__trt__GetSnapshotUriResponse (1843)
 /* complex XML schema type 'trt:GetSnapshotUriResponse': */
@@ -16392,7 +16482,7 @@ struct _trt__GetSnapshotUriResponse {
 };
 #endif
 
-/* onvif.h:25648 */
+/* onvif.h:25678 */
 #ifndef SOAP_TYPE__trt__GetVideoSourceModes
 #define SOAP_TYPE__trt__GetVideoSourceModes (1844)
 /* complex XML schema type 'trt:GetVideoSourceModes': */
@@ -16402,7 +16492,7 @@ struct _trt__GetVideoSourceModes {
 };
 #endif
 
-/* onvif.h:25668 */
+/* onvif.h:25698 */
 #ifndef SOAP_TYPE__trt__GetVideoSourceModesResponse
 #define SOAP_TYPE__trt__GetVideoSourceModesResponse (1845)
 /* complex XML schema type 'trt:GetVideoSourceModesResponse': */
@@ -16413,7 +16503,7 @@ struct _trt__GetVideoSourceModesResponse {
 };
 #endif
 
-/* onvif.h:25690 */
+/* onvif.h:25720 */
 #ifndef SOAP_TYPE__trt__SetVideoSourceMode
 #define SOAP_TYPE__trt__SetVideoSourceMode (1847)
 /* complex XML schema type 'trt:SetVideoSourceMode': */
@@ -16425,7 +16515,7 @@ struct _trt__SetVideoSourceMode {
 };
 #endif
 
-/* onvif.h:25716 */
+/* onvif.h:25746 */
 #ifndef SOAP_TYPE__trt__SetVideoSourceModeResponse
 #define SOAP_TYPE__trt__SetVideoSourceModeResponse (1848)
 /* complex XML schema type 'trt:SetVideoSourceModeResponse': */
@@ -16435,7 +16525,7 @@ struct _trt__SetVideoSourceModeResponse {
 };
 #endif
 
-/* onvif.h:25736 */
+/* onvif.h:25766 */
 #ifndef SOAP_TYPE__trt__GetOSDs
 #define SOAP_TYPE__trt__GetOSDs (1849)
 /* complex XML schema type 'trt:GetOSDs': */
@@ -16445,7 +16535,7 @@ struct _trt__GetOSDs {
 };
 #endif
 
-/* onvif.h:25756 */
+/* onvif.h:25786 */
 #ifndef SOAP_TYPE__trt__GetOSDsResponse
 #define SOAP_TYPE__trt__GetOSDsResponse (1850)
 /* complex XML schema type 'trt:GetOSDsResponse': */
@@ -16456,7 +16546,7 @@ struct _trt__GetOSDsResponse {
 };
 #endif
 
-/* onvif.h:25778 */
+/* onvif.h:25808 */
 #ifndef SOAP_TYPE__trt__GetOSD
 #define SOAP_TYPE__trt__GetOSD (1853)
 /* complex XML schema type 'trt:GetOSD': */
@@ -16469,7 +16559,7 @@ struct _trt__GetOSD {
 };
 #endif
 
-/* onvif.h:25807 */
+/* onvif.h:25837 */
 #ifndef SOAP_TYPE__trt__GetOSDResponse
 #define SOAP_TYPE__trt__GetOSDResponse (1854)
 /* complex XML schema type 'trt:GetOSDResponse': */
@@ -16482,7 +16572,7 @@ struct _trt__GetOSDResponse {
 };
 #endif
 
-/* onvif.h:25836 */
+/* onvif.h:25866 */
 #ifndef SOAP_TYPE__trt__SetOSD
 #define SOAP_TYPE__trt__SetOSD (1855)
 /* complex XML schema type 'trt:SetOSD': */
@@ -16495,7 +16585,7 @@ struct _trt__SetOSD {
 };
 #endif
 
-/* onvif.h:25865 */
+/* onvif.h:25895 */
 #ifndef SOAP_TYPE__trt__SetOSDResponse
 #define SOAP_TYPE__trt__SetOSDResponse (1856)
 /* complex XML schema type 'trt:SetOSDResponse': */
@@ -16506,7 +16596,7 @@ struct _trt__SetOSDResponse {
 };
 #endif
 
-/* onvif.h:25888 */
+/* onvif.h:25918 */
 #ifndef SOAP_TYPE__trt__GetOSDOptions
 #define SOAP_TYPE__trt__GetOSDOptions (1857)
 /* complex XML schema type 'trt:GetOSDOptions': */
@@ -16519,7 +16609,7 @@ struct _trt__GetOSDOptions {
 };
 #endif
 
-/* onvif.h:25917 */
+/* onvif.h:25947 */
 #ifndef SOAP_TYPE__trt__GetOSDOptionsResponse
 #define SOAP_TYPE__trt__GetOSDOptionsResponse (1858)
 /* complex XML schema type 'trt:GetOSDOptionsResponse': */
@@ -16532,7 +16622,7 @@ struct _trt__GetOSDOptionsResponse {
 };
 #endif
 
-/* onvif.h:25945 */
+/* onvif.h:25975 */
 #ifndef SOAP_TYPE__trt__CreateOSD
 #define SOAP_TYPE__trt__CreateOSD (1860)
 /* complex XML schema type 'trt:CreateOSD': */
@@ -16545,7 +16635,7 @@ struct _trt__CreateOSD {
 };
 #endif
 
-/* onvif.h:25974 */
+/* onvif.h:26004 */
 #ifndef SOAP_TYPE__trt__CreateOSDResponse
 #define SOAP_TYPE__trt__CreateOSDResponse (1861)
 /* complex XML schema type 'trt:CreateOSDResponse': */
@@ -16558,7 +16648,7 @@ struct _trt__CreateOSDResponse {
 };
 #endif
 
-/* onvif.h:26003 */
+/* onvif.h:26033 */
 #ifndef SOAP_TYPE__trt__DeleteOSD
 #define SOAP_TYPE__trt__DeleteOSD (1862)
 /* complex XML schema type 'trt:DeleteOSD': */
@@ -16571,7 +16661,7 @@ struct _trt__DeleteOSD {
 };
 #endif
 
-/* onvif.h:26032 */
+/* onvif.h:26062 */
 #ifndef SOAP_TYPE__trt__DeleteOSDResponse
 #define SOAP_TYPE__trt__DeleteOSDResponse (1863)
 /* complex XML schema type 'trt:DeleteOSDResponse': */
@@ -16582,7 +16672,708 @@ struct _trt__DeleteOSDResponse {
 };
 #endif
 
-/* onvif.h:5509 */
+/* onvif.h:26092 */
+#ifndef SOAP_TYPE_tptz__Capabilities
+#define SOAP_TYPE_tptz__Capabilities (1864)
+/* complex XML schema type 'tptz:Capabilities': */
+struct tptz__Capabilities {
+        /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
+        int __size;
+        char **__any;
+        /** Optional attribute 'EFlip' of XML schema type 'xsd:boolean' */
+        enum xsd__boolean *EFlip;
+        /** Optional attribute 'Reverse' of XML schema type 'xsd:boolean' */
+        enum xsd__boolean *Reverse;
+        /** Optional attribute 'GetCompatibleConfigurations' of XML schema type 'xsd:boolean' */
+        enum xsd__boolean *GetCompatibleConfigurations;
+        /** Optional attribute 'MoveStatus' of XML schema type 'xsd:boolean' */
+        enum xsd__boolean *MoveStatus;
+        /** Optional attribute 'StatusPosition' of XML schema type 'xsd:boolean' */
+        enum xsd__boolean *StatusPosition;
+        /** Optional attribute 'MoveAndTrack' of XML schema type 'tt:StringList' */
+        char *MoveAndTrack;
+        /** Optional attribute '-anyAttribute' of XML schema type 'xsd:anyType' */
+        char *__anyAttribute;
+};
+#endif
+
+/* onvif.h:26157 */
+#ifndef SOAP_TYPE__tptz__GetServiceCapabilities
+#define SOAP_TYPE__tptz__GetServiceCapabilities (1865)
+/* complex XML schema type 'tptz:GetServiceCapabilities': */
+struct _tptz__GetServiceCapabilities {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26171 */
+#ifndef SOAP_TYPE__tptz__GetServiceCapabilitiesResponse
+#define SOAP_TYPE__tptz__GetServiceCapabilitiesResponse (1866)
+/* complex XML schema type 'tptz:GetServiceCapabilitiesResponse': */
+struct _tptz__GetServiceCapabilitiesResponse {
+        /** Required element 'tptz:Capabilities' of XML schema type 'tptz:Capabilities' */
+        struct tptz__Capabilities *Capabilities;
+};
+#endif
+
+/* onvif.h:26191 */
+#ifndef SOAP_TYPE__tptz__GetNodes
+#define SOAP_TYPE__tptz__GetNodes (1868)
+/* complex XML schema type 'tptz:GetNodes': */
+struct _tptz__GetNodes {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26205 */
+#ifndef SOAP_TYPE__tptz__GetNodesResponse
+#define SOAP_TYPE__tptz__GetNodesResponse (1869)
+/* complex XML schema type 'tptz:GetNodesResponse': */
+struct _tptz__GetNodesResponse {
+        /** Sequence of elements 'tptz:PTZNode' of XML schema type 'tt:PTZNode' stored in dynamic array PTZNode of length __sizePTZNode */
+        int __sizePTZNode;
+        struct tt__PTZNode *PTZNode;
+};
+#endif
+
+/* onvif.h:26227 */
+#ifndef SOAP_TYPE__tptz__GetNode
+#define SOAP_TYPE__tptz__GetNode (1872)
+/* complex XML schema type 'tptz:GetNode': */
+struct _tptz__GetNode {
+        /** Required element 'tptz:NodeToken' of XML schema type 'tt:ReferenceToken' */
+        char *NodeToken;
+};
+#endif
+
+/* onvif.h:26247 */
+#ifndef SOAP_TYPE__tptz__GetNodeResponse
+#define SOAP_TYPE__tptz__GetNodeResponse (1873)
+/* complex XML schema type 'tptz:GetNodeResponse': */
+struct _tptz__GetNodeResponse {
+        /** Required element 'tptz:PTZNode' of XML schema type 'tt:PTZNode' */
+        struct tt__PTZNode *PTZNode;
+};
+#endif
+
+/* onvif.h:26267 */
+#ifndef SOAP_TYPE__tptz__GetConfigurations
+#define SOAP_TYPE__tptz__GetConfigurations (1874)
+/* complex XML schema type 'tptz:GetConfigurations': */
+struct _tptz__GetConfigurations {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26281 */
+#ifndef SOAP_TYPE__tptz__GetConfigurationsResponse
+#define SOAP_TYPE__tptz__GetConfigurationsResponse (1875)
+/* complex XML schema type 'tptz:GetConfigurationsResponse': */
+struct _tptz__GetConfigurationsResponse {
+        /** Sequence of elements 'tptz:PTZConfiguration' of XML schema type 'tt:PTZConfiguration' stored in dynamic array PTZConfiguration of length __sizePTZConfiguration */
+        int __sizePTZConfiguration;
+        struct tt__PTZConfiguration *PTZConfiguration;
+};
+#endif
+
+/* onvif.h:26303 */
+#ifndef SOAP_TYPE__tptz__GetConfiguration
+#define SOAP_TYPE__tptz__GetConfiguration (1876)
+/* complex XML schema type 'tptz:GetConfiguration': */
+struct _tptz__GetConfiguration {
+        /** Required element 'tptz:PTZConfigurationToken' of XML schema type 'tt:ReferenceToken' */
+        char *PTZConfigurationToken;
+};
+#endif
+
+/* onvif.h:26323 */
+#ifndef SOAP_TYPE__tptz__GetConfigurationResponse
+#define SOAP_TYPE__tptz__GetConfigurationResponse (1877)
+/* complex XML schema type 'tptz:GetConfigurationResponse': */
+struct _tptz__GetConfigurationResponse {
+        /** Required element 'tptz:PTZConfiguration' of XML schema type 'tt:PTZConfiguration' */
+        struct tt__PTZConfiguration *PTZConfiguration;
+};
+#endif
+
+/* onvif.h:26343 */
+#ifndef SOAP_TYPE__tptz__SetConfiguration
+#define SOAP_TYPE__tptz__SetConfiguration (1878)
+/* complex XML schema type 'tptz:SetConfiguration': */
+struct _tptz__SetConfiguration {
+        /** Required element 'tptz:PTZConfiguration' of XML schema type 'tt:PTZConfiguration' */
+        struct tt__PTZConfiguration *PTZConfiguration;
+        /** Required element 'tptz:ForcePersistence' of XML schema type 'xsd:boolean' */
+        enum xsd__boolean ForcePersistence;
+};
+#endif
+
+/* onvif.h:26371 */
+#ifndef SOAP_TYPE___tptz__SetConfigurationResponse_sequence
+#define SOAP_TYPE___tptz__SetConfigurationResponse_sequence (1880)
+/* Wrapper: */
+struct __tptz__SetConfigurationResponse_sequence {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26368 */
+#ifndef SOAP_TYPE__tptz__SetConfigurationResponse
+#define SOAP_TYPE__tptz__SetConfigurationResponse (1879)
+/* complex XML schema type 'tptz:SetConfigurationResponse': */
+struct _tptz__SetConfigurationResponse {
+        struct __tptz__SetConfigurationResponse_sequence *__SetConfigurationResponse_sequence;
+};
+#endif
+
+/* onvif.h:26387 */
+#ifndef SOAP_TYPE__tptz__GetConfigurationOptions
+#define SOAP_TYPE__tptz__GetConfigurationOptions (1882)
+/* complex XML schema type 'tptz:GetConfigurationOptions': */
+struct _tptz__GetConfigurationOptions {
+        /** Required element 'tptz:ConfigurationToken' of XML schema type 'tt:ReferenceToken' */
+        char *ConfigurationToken;
+};
+#endif
+
+/* onvif.h:26407 */
+#ifndef SOAP_TYPE__tptz__GetConfigurationOptionsResponse
+#define SOAP_TYPE__tptz__GetConfigurationOptionsResponse (1883)
+/* complex XML schema type 'tptz:GetConfigurationOptionsResponse': */
+struct _tptz__GetConfigurationOptionsResponse {
+        /** Required element 'tptz:PTZConfigurationOptions' of XML schema type 'tt:PTZConfigurationOptions' */
+        struct tt__PTZConfigurationOptions *PTZConfigurationOptions;
+};
+#endif
+
+/* onvif.h:26427 */
+#ifndef SOAP_TYPE__tptz__SendAuxiliaryCommand
+#define SOAP_TYPE__tptz__SendAuxiliaryCommand (1885)
+/* complex XML schema type 'tptz:SendAuxiliaryCommand': */
+struct _tptz__SendAuxiliaryCommand {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:AuxiliaryData' of XML schema type 'tt:AuxiliaryData' */
+        char *AuxiliaryData;
+};
+#endif
+
+/* onvif.h:26453 */
+#ifndef SOAP_TYPE__tptz__SendAuxiliaryCommandResponse
+#define SOAP_TYPE__tptz__SendAuxiliaryCommandResponse (1886)
+/* complex XML schema type 'tptz:SendAuxiliaryCommandResponse': */
+struct _tptz__SendAuxiliaryCommandResponse {
+        /** Required element 'tptz:AuxiliaryResponse' of XML schema type 'tt:AuxiliaryData' */
+        char *AuxiliaryResponse;
+};
+#endif
+
+/* onvif.h:26473 */
+#ifndef SOAP_TYPE__tptz__GetPresets
+#define SOAP_TYPE__tptz__GetPresets (1887)
+/* complex XML schema type 'tptz:GetPresets': */
+struct _tptz__GetPresets {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+};
+#endif
+
+/* onvif.h:26493 */
+#ifndef SOAP_TYPE__tptz__GetPresetsResponse
+#define SOAP_TYPE__tptz__GetPresetsResponse (1888)
+/* complex XML schema type 'tptz:GetPresetsResponse': */
+struct _tptz__GetPresetsResponse {
+        /** Sequence of elements 'tptz:Preset' of XML schema type 'tt:PTZPreset' stored in dynamic array Preset of length __sizePreset */
+        int __sizePreset;
+        struct tt__PTZPreset *Preset;
+};
+#endif
+
+/* onvif.h:26515 */
+#ifndef SOAP_TYPE__tptz__SetPreset
+#define SOAP_TYPE__tptz__SetPreset (1890)
+/* complex XML schema type 'tptz:SetPreset': */
+struct _tptz__SetPreset {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Optional element 'tptz:PresetName' of XML schema type 'xsd:string' */
+        char *PresetName;
+        /** Optional element 'tptz:PresetToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetToken;
+};
+#endif
+
+/* onvif.h:26547 */
+#ifndef SOAP_TYPE__tptz__SetPresetResponse
+#define SOAP_TYPE__tptz__SetPresetResponse (1891)
+/* complex XML schema type 'tptz:SetPresetResponse': */
+struct _tptz__SetPresetResponse {
+        /** Required element 'tptz:PresetToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetToken;
+};
+#endif
+
+/* onvif.h:26567 */
+#ifndef SOAP_TYPE__tptz__RemovePreset
+#define SOAP_TYPE__tptz__RemovePreset (1892)
+/* complex XML schema type 'tptz:RemovePreset': */
+struct _tptz__RemovePreset {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:PresetToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetToken;
+};
+#endif
+
+/* onvif.h:26593 */
+#ifndef SOAP_TYPE__tptz__RemovePresetResponse
+#define SOAP_TYPE__tptz__RemovePresetResponse (1893)
+/* complex XML schema type 'tptz:RemovePresetResponse': */
+struct _tptz__RemovePresetResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26607 */
+#ifndef SOAP_TYPE__tptz__GotoPreset
+#define SOAP_TYPE__tptz__GotoPreset (1894)
+/* complex XML schema type 'tptz:GotoPreset': */
+struct _tptz__GotoPreset {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:PresetToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetToken;
+        /** Optional element 'tptz:Speed' of XML schema type 'tt:PTZSpeed' */
+        struct tt__PTZSpeed *Speed;
+};
+#endif
+
+/* onvif.h:26639 */
+#ifndef SOAP_TYPE__tptz__GotoPresetResponse
+#define SOAP_TYPE__tptz__GotoPresetResponse (1895)
+/* complex XML schema type 'tptz:GotoPresetResponse': */
+struct _tptz__GotoPresetResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26653 */
+#ifndef SOAP_TYPE__tptz__GetStatus
+#define SOAP_TYPE__tptz__GetStatus (1896)
+/* complex XML schema type 'tptz:GetStatus': */
+struct _tptz__GetStatus {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+};
+#endif
+
+/* onvif.h:26673 */
+#ifndef SOAP_TYPE__tptz__GetStatusResponse
+#define SOAP_TYPE__tptz__GetStatusResponse (1897)
+/* complex XML schema type 'tptz:GetStatusResponse': */
+struct _tptz__GetStatusResponse {
+        /** Required element 'tptz:PTZStatus' of XML schema type 'tt:PTZStatus' */
+        struct tt__PTZStatus *PTZStatus;
+};
+#endif
+
+/* onvif.h:26693 */
+#ifndef SOAP_TYPE__tptz__GotoHomePosition
+#define SOAP_TYPE__tptz__GotoHomePosition (1899)
+/* complex XML schema type 'tptz:GotoHomePosition': */
+struct _tptz__GotoHomePosition {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Optional element 'tptz:Speed' of XML schema type 'tt:PTZSpeed' */
+        struct tt__PTZSpeed *Speed;
+};
+#endif
+
+/* onvif.h:26719 */
+#ifndef SOAP_TYPE__tptz__GotoHomePositionResponse
+#define SOAP_TYPE__tptz__GotoHomePositionResponse (1900)
+/* complex XML schema type 'tptz:GotoHomePositionResponse': */
+struct _tptz__GotoHomePositionResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26733 */
+#ifndef SOAP_TYPE__tptz__SetHomePosition
+#define SOAP_TYPE__tptz__SetHomePosition (1901)
+/* complex XML schema type 'tptz:SetHomePosition': */
+struct _tptz__SetHomePosition {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+};
+#endif
+
+/* onvif.h:26753 */
+#ifndef SOAP_TYPE__tptz__SetHomePositionResponse
+#define SOAP_TYPE__tptz__SetHomePositionResponse (1902)
+/* complex XML schema type 'tptz:SetHomePositionResponse': */
+struct _tptz__SetHomePositionResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26767 */
+#ifndef SOAP_TYPE__tptz__ContinuousMove
+#define SOAP_TYPE__tptz__ContinuousMove (1903)
+/* complex XML schema type 'tptz:ContinuousMove': */
+struct _tptz__ContinuousMove {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:Velocity' of XML schema type 'tt:PTZSpeed' */
+        struct tt__PTZSpeed *Velocity;
+        /** Optional element 'tptz:Timeout' of XML schema type 'xsd:duration' */
+        LONG64 *Timeout;
+};
+#endif
+
+/* onvif.h:26799 */
+#ifndef SOAP_TYPE__tptz__ContinuousMoveResponse
+#define SOAP_TYPE__tptz__ContinuousMoveResponse (1904)
+/* complex XML schema type 'tptz:ContinuousMoveResponse': */
+struct _tptz__ContinuousMoveResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26813 */
+#ifndef SOAP_TYPE__tptz__RelativeMove
+#define SOAP_TYPE__tptz__RelativeMove (1905)
+/* complex XML schema type 'tptz:RelativeMove': */
+struct _tptz__RelativeMove {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:Translation' of XML schema type 'tt:PTZVector' */
+        struct tt__PTZVector *Translation;
+        /** Optional element 'tptz:Speed' of XML schema type 'tt:PTZSpeed' */
+        struct tt__PTZSpeed *Speed;
+};
+#endif
+
+/* onvif.h:26845 */
+#ifndef SOAP_TYPE__tptz__RelativeMoveResponse
+#define SOAP_TYPE__tptz__RelativeMoveResponse (1906)
+/* complex XML schema type 'tptz:RelativeMoveResponse': */
+struct _tptz__RelativeMoveResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26859 */
+#ifndef SOAP_TYPE__tptz__AbsoluteMove
+#define SOAP_TYPE__tptz__AbsoluteMove (1907)
+/* complex XML schema type 'tptz:AbsoluteMove': */
+struct _tptz__AbsoluteMove {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:Position' of XML schema type 'tt:PTZVector' */
+        struct tt__PTZVector *Position;
+        /** Optional element 'tptz:Speed' of XML schema type 'tt:PTZSpeed' */
+        struct tt__PTZSpeed *Speed;
+};
+#endif
+
+/* onvif.h:26891 */
+#ifndef SOAP_TYPE__tptz__AbsoluteMoveResponse
+#define SOAP_TYPE__tptz__AbsoluteMoveResponse (1908)
+/* complex XML schema type 'tptz:AbsoluteMoveResponse': */
+struct _tptz__AbsoluteMoveResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26905 */
+#ifndef SOAP_TYPE__tptz__GeoMove
+#define SOAP_TYPE__tptz__GeoMove (1909)
+/* complex XML schema type 'tptz:GeoMove': */
+struct _tptz__GeoMove {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:Target' of XML schema type 'tt:GeoLocation' */
+        struct tt__GeoLocation *Target;
+        /** Optional element 'tptz:Speed' of XML schema type 'tt:PTZSpeed' */
+        struct tt__PTZSpeed *Speed;
+        /** Optional element 'tptz:AreaHeight' of XML schema type 'xsd:float' */
+        float *AreaHeight;
+        /** Optional element 'tptz:AreaWidth' of XML schema type 'xsd:float' */
+        float *AreaWidth;
+};
+#endif
+
+/* onvif.h:26949 */
+#ifndef SOAP_TYPE__tptz__GeoMoveResponse
+#define SOAP_TYPE__tptz__GeoMoveResponse (1910)
+/* complex XML schema type 'tptz:GeoMoveResponse': */
+struct _tptz__GeoMoveResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:26963 */
+#ifndef SOAP_TYPE__tptz__Stop
+#define SOAP_TYPE__tptz__Stop (1911)
+/* complex XML schema type 'tptz:Stop': */
+struct _tptz__Stop {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Optional element 'tptz:PanTilt' of XML schema type 'xsd:boolean' */
+        enum xsd__boolean *PanTilt;
+        /** Optional element 'tptz:Zoom' of XML schema type 'xsd:boolean' */
+        enum xsd__boolean *Zoom;
+};
+#endif
+
+/* onvif.h:26995 */
+#ifndef SOAP_TYPE__tptz__StopResponse
+#define SOAP_TYPE__tptz__StopResponse (1912)
+/* complex XML schema type 'tptz:StopResponse': */
+struct _tptz__StopResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:27009 */
+#ifndef SOAP_TYPE__tptz__GetPresetTours
+#define SOAP_TYPE__tptz__GetPresetTours (1913)
+/* complex XML schema type 'tptz:GetPresetTours': */
+struct _tptz__GetPresetTours {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+};
+#endif
+
+/* onvif.h:27025 */
+#ifndef SOAP_TYPE__tptz__GetPresetToursResponse
+#define SOAP_TYPE__tptz__GetPresetToursResponse (1914)
+/* complex XML schema type 'tptz:GetPresetToursResponse': */
+struct _tptz__GetPresetToursResponse {
+        /** Sequence of elements 'tptz:PresetTour' of XML schema type 'tt:PresetTour' stored in dynamic array PresetTour of length __sizePresetTour */
+        int __sizePresetTour;
+        struct tt__PresetTour *PresetTour;
+};
+#endif
+
+/* onvif.h:27043 */
+#ifndef SOAP_TYPE__tptz__GetPresetTour
+#define SOAP_TYPE__tptz__GetPresetTour (1916)
+/* complex XML schema type 'tptz:GetPresetTour': */
+struct _tptz__GetPresetTour {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:PresetTourToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetTourToken;
+};
+#endif
+
+/* onvif.h:27061 */
+#ifndef SOAP_TYPE__tptz__GetPresetTourResponse
+#define SOAP_TYPE__tptz__GetPresetTourResponse (1917)
+/* complex XML schema type 'tptz:GetPresetTourResponse': */
+struct _tptz__GetPresetTourResponse {
+        /** Required element 'tptz:PresetTour' of XML schema type 'tt:PresetTour' */
+        struct tt__PresetTour *PresetTour;
+};
+#endif
+
+/* onvif.h:27077 */
+#ifndef SOAP_TYPE__tptz__GetPresetTourOptions
+#define SOAP_TYPE__tptz__GetPresetTourOptions (1918)
+/* complex XML schema type 'tptz:GetPresetTourOptions': */
+struct _tptz__GetPresetTourOptions {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Optional element 'tptz:PresetTourToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetTourToken;
+};
+#endif
+
+/* onvif.h:27095 */
+#ifndef SOAP_TYPE__tptz__GetPresetTourOptionsResponse
+#define SOAP_TYPE__tptz__GetPresetTourOptionsResponse (1919)
+/* complex XML schema type 'tptz:GetPresetTourOptionsResponse': */
+struct _tptz__GetPresetTourOptionsResponse {
+        /** Required element 'tptz:Options' of XML schema type 'tt:PTZPresetTourOptions' */
+        struct tt__PTZPresetTourOptions *Options;
+};
+#endif
+
+/* onvif.h:27111 */
+#ifndef SOAP_TYPE__tptz__CreatePresetTour
+#define SOAP_TYPE__tptz__CreatePresetTour (1921)
+/* complex XML schema type 'tptz:CreatePresetTour': */
+struct _tptz__CreatePresetTour {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+};
+#endif
+
+/* onvif.h:27127 */
+#ifndef SOAP_TYPE__tptz__CreatePresetTourResponse
+#define SOAP_TYPE__tptz__CreatePresetTourResponse (1922)
+/* complex XML schema type 'tptz:CreatePresetTourResponse': */
+struct _tptz__CreatePresetTourResponse {
+        /** Required element 'tptz:PresetTourToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetTourToken;
+};
+#endif
+
+/* onvif.h:27143 */
+#ifndef SOAP_TYPE__tptz__ModifyPresetTour
+#define SOAP_TYPE__tptz__ModifyPresetTour (1923)
+/* complex XML schema type 'tptz:ModifyPresetTour': */
+struct _tptz__ModifyPresetTour {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:PresetTour' of XML schema type 'tt:PresetTour' */
+        struct tt__PresetTour *PresetTour;
+};
+#endif
+
+/* onvif.h:27161 */
+#ifndef SOAP_TYPE__tptz__ModifyPresetTourResponse
+#define SOAP_TYPE__tptz__ModifyPresetTourResponse (1924)
+/* complex XML schema type 'tptz:ModifyPresetTourResponse': */
+struct _tptz__ModifyPresetTourResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:27175 */
+#ifndef SOAP_TYPE__tptz__OperatePresetTour
+#define SOAP_TYPE__tptz__OperatePresetTour (1925)
+/* complex XML schema type 'tptz:OperatePresetTour': */
+struct _tptz__OperatePresetTour {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:PresetTourToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetTourToken;
+        /** Required element 'tptz:Operation' of XML schema type 'tt:PTZPresetTourOperation' */
+        enum tt__PTZPresetTourOperation Operation;
+};
+#endif
+
+/* onvif.h:27195 */
+#ifndef SOAP_TYPE__tptz__OperatePresetTourResponse
+#define SOAP_TYPE__tptz__OperatePresetTourResponse (1926)
+/* complex XML schema type 'tptz:OperatePresetTourResponse': */
+struct _tptz__OperatePresetTourResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:27209 */
+#ifndef SOAP_TYPE__tptz__RemovePresetTour
+#define SOAP_TYPE__tptz__RemovePresetTour (1927)
+/* complex XML schema type 'tptz:RemovePresetTour': */
+struct _tptz__RemovePresetTour {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Required element 'tptz:PresetTourToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetTourToken;
+};
+#endif
+
+/* onvif.h:27227 */
+#ifndef SOAP_TYPE__tptz__RemovePresetTourResponse
+#define SOAP_TYPE__tptz__RemovePresetTourResponse (1928)
+/* complex XML schema type 'tptz:RemovePresetTourResponse': */
+struct _tptz__RemovePresetTourResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:27241 */
+#ifndef SOAP_TYPE__tptz__GetCompatibleConfigurations
+#define SOAP_TYPE__tptz__GetCompatibleConfigurations (1929)
+/* complex XML schema type 'tptz:GetCompatibleConfigurations': */
+struct _tptz__GetCompatibleConfigurations {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+};
+#endif
+
+/* onvif.h:27261 */
+#ifndef SOAP_TYPE__tptz__GetCompatibleConfigurationsResponse
+#define SOAP_TYPE__tptz__GetCompatibleConfigurationsResponse (1930)
+/* complex XML schema type 'tptz:GetCompatibleConfigurationsResponse': */
+struct _tptz__GetCompatibleConfigurationsResponse {
+        /** Sequence of elements 'tptz:PTZConfiguration' of XML schema type 'tt:PTZConfiguration' stored in dynamic array PTZConfiguration of length __sizePTZConfiguration */
+        int __sizePTZConfiguration;
+        struct tt__PTZConfiguration *PTZConfiguration;
+};
+#endif
+
+/* onvif.h:27283 */
+#ifndef SOAP_TYPE__tptz__MoveAndStartTracking
+#define SOAP_TYPE__tptz__MoveAndStartTracking (1931)
+/* complex XML schema type 'tptz:MoveAndStartTracking': */
+struct _tptz__MoveAndStartTracking {
+        /** Required element 'tptz:ProfileToken' of XML schema type 'tt:ReferenceToken' */
+        char *ProfileToken;
+        /** Optional element 'tptz:PresetToken' of XML schema type 'tt:ReferenceToken' */
+        char *PresetToken;
+        /** Optional element 'tptz:GeoLocation' of XML schema type 'tt:GeoLocation' */
+        struct tt__GeoLocation *GeoLocation;
+        /** Optional element 'tptz:TargetPosition' of XML schema type 'tt:PTZVector' */
+        struct tt__PTZVector *TargetPosition;
+        /** Optional element 'tptz:Speed' of XML schema type 'tt:PTZSpeed' */
+        struct tt__PTZSpeed *Speed;
+        /** Optional element 'tptz:ObjectID' of XML schema type 'xsd:integer' */
+        char *ObjectID;
+        /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
+        int __size;
+        char **__any;
+};
+#endif
+
+/* onvif.h:27342 */
+#ifndef SOAP_TYPE__tptz__MoveAndStartTrackingResponse
+#define SOAP_TYPE__tptz__MoveAndStartTrackingResponse (1932)
+/* complex XML schema type 'tptz:MoveAndStartTrackingResponse': */
+struct _tptz__MoveAndStartTrackingResponse {
+#ifdef WITH_NOEMPTYSTRUCT
+	char dummy;	/* empty struct is a GNU extension */
+#endif
+};
+#endif
+
+/* onvif.h:5539 */
 #ifndef SOAP_TYPE_tds__StorageConfiguration
 #define SOAP_TYPE_tds__StorageConfiguration (810)
 /* complex XML schema type 'tds:StorageConfiguration': */
@@ -16594,7 +17385,7 @@ struct tds__StorageConfiguration {
 };
 #endif
 
-/* onvif.h:22906 */
+/* onvif.h:22936 */
 #ifndef SOAP_TYPE_tt__VideoSource
 #define SOAP_TYPE_tt__VideoSource (1693)
 /* complex XML schema type 'tt:VideoSource': */
@@ -16614,7 +17405,7 @@ struct tt__VideoSource {
 };
 #endif
 
-/* onvif.h:22942 */
+/* onvif.h:22972 */
 #ifndef SOAP_TYPE_tt__AudioSource
 #define SOAP_TYPE_tt__AudioSource (1697)
 /* complex XML schema type 'tt:AudioSource': */
@@ -16631,7 +17422,7 @@ struct tt__AudioSource {
 };
 #endif
 
-/* onvif.h:6034 */
+/* onvif.h:6064 */
 #ifndef SOAP_TYPE_tt__VideoSourceConfiguration
 #define SOAP_TYPE_tt__VideoSourceConfiguration (845)
 /* complex XML schema type 'tt:VideoSourceConfiguration': */
@@ -16658,7 +17449,7 @@ struct tt__VideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:6046 */
+/* onvif.h:6076 */
 #ifndef SOAP_TYPE_tt__VideoEncoderConfiguration
 #define SOAP_TYPE_tt__VideoEncoderConfiguration (849)
 /* complex XML schema type 'tt:VideoEncoderConfiguration': */
@@ -16695,7 +17486,7 @@ struct tt__VideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:6833 */
+/* onvif.h:6863 */
 #ifndef SOAP_TYPE_tt__JpegOptions2
 #define SOAP_TYPE_tt__JpegOptions2 (909)
 /* complex XML schema type 'tt:JpegOptions2': */
@@ -16717,7 +17508,7 @@ struct tt__JpegOptions2 {
 };
 #endif
 
-/* onvif.h:6839 */
+/* onvif.h:6869 */
 #ifndef SOAP_TYPE_tt__Mpeg4Options2
 #define SOAP_TYPE_tt__Mpeg4Options2 (911)
 /* complex XML schema type 'tt:Mpeg4Options2': */
@@ -16744,7 +17535,7 @@ struct tt__Mpeg4Options2 {
 };
 #endif
 
-/* onvif.h:6845 */
+/* onvif.h:6875 */
 #ifndef SOAP_TYPE_tt__H264Options2
 #define SOAP_TYPE_tt__H264Options2 (913)
 /* complex XML schema type 'tt:H264Options2': */
@@ -16771,9 +17562,9 @@ struct tt__H264Options2 {
 };
 #endif
 
-/* onvif.h:26542 */
+/* onvif.h:27843 */
 #ifndef SOAP_TYPE_tt__VideoEncoder2Configuration
-#define SOAP_TYPE_tt__VideoEncoder2Configuration (1872)
+#define SOAP_TYPE_tt__VideoEncoder2Configuration (1941)
 /* complex XML schema type 'tt:VideoEncoder2Configuration': */
 struct tt__VideoEncoder2Configuration {
         /** Required element 'tt:Name' of XML schema type 'tt:Name' */
@@ -16806,7 +17597,7 @@ struct tt__VideoEncoder2Configuration {
 };
 #endif
 
-/* onvif.h:6040 */
+/* onvif.h:6070 */
 #ifndef SOAP_TYPE_tt__AudioSourceConfiguration
 #define SOAP_TYPE_tt__AudioSourceConfiguration (847)
 /* complex XML schema type 'tt:AudioSourceConfiguration': */
@@ -16827,7 +17618,7 @@ struct tt__AudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:6052 */
+/* onvif.h:6082 */
 #ifndef SOAP_TYPE_tt__AudioEncoderConfiguration
 #define SOAP_TYPE_tt__AudioEncoderConfiguration (851)
 /* complex XML schema type 'tt:AudioEncoderConfiguration': */
@@ -16856,9 +17647,9 @@ struct tt__AudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:26772 */
+/* onvif.h:28073 */
 #ifndef SOAP_TYPE_tt__AudioEncoder2Configuration
-#define SOAP_TYPE_tt__AudioEncoder2Configuration (1874)
+#define SOAP_TYPE_tt__AudioEncoder2Configuration (1943)
 /* complex XML schema type 'tt:AudioEncoder2Configuration': */
 struct tt__AudioEncoder2Configuration {
         /** Required element 'tt:Name' of XML schema type 'tt:Name' */
@@ -16883,7 +17674,7 @@ struct tt__AudioEncoder2Configuration {
 };
 #endif
 
-/* onvif.h:6058 */
+/* onvif.h:6088 */
 #ifndef SOAP_TYPE_tt__VideoAnalyticsConfiguration
 #define SOAP_TYPE_tt__VideoAnalyticsConfiguration (853)
 /* complex XML schema type 'tt:VideoAnalyticsConfiguration': */
@@ -16906,7 +17697,7 @@ struct tt__VideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:6070 */
+/* onvif.h:6100 */
 #ifndef SOAP_TYPE_tt__MetadataConfiguration
 #define SOAP_TYPE_tt__MetadataConfiguration (857)
 /* complex XML schema type 'tt:MetadataConfiguration': */
@@ -16945,9 +17736,9 @@ struct tt__MetadataConfiguration {
 };
 #endif
 
-/* onvif.h:27009 */
+/* onvif.h:28310 */
 #ifndef SOAP_TYPE_tt__VideoOutput
-#define SOAP_TYPE_tt__VideoOutput (1880)
+#define SOAP_TYPE_tt__VideoOutput (1949)
 /* complex XML schema type 'tt:VideoOutput': */
 struct tt__VideoOutput {
         /** Required attribute 'token' of XML schema type 'tt:ReferenceToken' */
@@ -16967,9 +17758,9 @@ struct tt__VideoOutput {
 };
 #endif
 
-/* onvif.h:27058 */
+/* onvif.h:28359 */
 #ifndef SOAP_TYPE_tt__VideoOutputConfiguration
-#define SOAP_TYPE_tt__VideoOutputConfiguration (1883)
+#define SOAP_TYPE_tt__VideoOutputConfiguration (1952)
 /* complex XML schema type 'tt:VideoOutputConfiguration': */
 struct tt__VideoOutputConfiguration {
         /** Required element 'tt:Name' of XML schema type 'tt:Name' */
@@ -16988,7 +17779,7 @@ struct tt__VideoOutputConfiguration {
 };
 #endif
 
-/* onvif.h:22978 */
+/* onvif.h:23008 */
 #ifndef SOAP_TYPE_tt__AudioOutput
 #define SOAP_TYPE_tt__AudioOutput (1701)
 /* complex XML schema type 'tt:AudioOutput': */
@@ -17003,7 +17794,7 @@ struct tt__AudioOutput {
 };
 #endif
 
-/* onvif.h:6122 */
+/* onvif.h:6152 */
 #ifndef SOAP_TYPE_tt__AudioOutputConfiguration
 #define SOAP_TYPE_tt__AudioOutputConfiguration (861)
 /* complex XML schema type 'tt:AudioOutputConfiguration': */
@@ -17028,7 +17819,7 @@ struct tt__AudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:6128 */
+/* onvif.h:6158 */
 #ifndef SOAP_TYPE_tt__AudioDecoderConfiguration
 #define SOAP_TYPE_tt__AudioDecoderConfiguration (863)
 /* complex XML schema type 'tt:AudioDecoderConfiguration': */
@@ -17047,7 +17838,7 @@ struct tt__AudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:3992 */
+/* onvif.h:4022 */
 #ifndef SOAP_TYPE_tt__NetworkInterface
 #define SOAP_TYPE_tt__NetworkInterface (681)
 /* complex XML schema type 'tt:NetworkInterface': */
@@ -17071,7 +17862,7 @@ struct tt__NetworkInterface {
 };
 #endif
 
-/* onvif.h:11685 */
+/* onvif.h:11715 */
 #ifndef SOAP_TYPE_tt__CertificateUsage
 #define SOAP_TYPE_tt__CertificateUsage (1117)
 /* simple XML schema type 'tt:CertificateUsage': */
@@ -17083,7 +17874,7 @@ struct tt__CertificateUsage {
 };
 #endif
 
-/* onvif.h:5123 */
+/* onvif.h:5153 */
 #ifndef SOAP_TYPE_tt__RelayOutput
 #define SOAP_TYPE_tt__RelayOutput (774)
 /* complex XML schema type 'tt:RelayOutput': */
@@ -17100,9 +17891,9 @@ struct tt__RelayOutput {
 };
 #endif
 
-/* onvif.h:27403 */
+/* onvif.h:28704 */
 #ifndef SOAP_TYPE_tt__DigitalInput
-#define SOAP_TYPE_tt__DigitalInput (1889)
+#define SOAP_TYPE_tt__DigitalInput (1958)
 /* complex XML schema type 'tt:DigitalInput': */
 struct tt__DigitalInput {
         /** Required attribute 'token' of XML schema type 'tt:ReferenceToken' */
@@ -17117,9 +17908,9 @@ struct tt__DigitalInput {
 };
 #endif
 
-/* onvif.h:27445 */
+/* onvif.h:26213 */
 #ifndef SOAP_TYPE_tt__PTZNode
-#define SOAP_TYPE_tt__PTZNode (1891)
+#define SOAP_TYPE_tt__PTZNode (1870)
 /* complex XML schema type 'tt:PTZNode': */
 struct tt__PTZNode {
         /** Required attribute 'token' of XML schema type 'tt:ReferenceToken' */
@@ -17146,7 +17937,7 @@ struct tt__PTZNode {
 };
 #endif
 
-/* onvif.h:6064 */
+/* onvif.h:6094 */
 #ifndef SOAP_TYPE_tt__PTZConfiguration
 #define SOAP_TYPE_tt__PTZConfiguration (855)
 /* complex XML schema type 'tt:PTZConfiguration': */
@@ -17192,9 +17983,9 @@ struct tt__PTZConfiguration {
 };
 #endif
 
-/* onvif.h:27646 */
+/* onvif.h:28947 */
 #ifndef SOAP_TYPE_tt__EventFilter
-#define SOAP_TYPE_tt__EventFilter (1896)
+#define SOAP_TYPE_tt__EventFilter (1964)
 /* complex XML schema type 'tt:EventFilter': */
 struct tt__EventFilter {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17205,9 +17996,9 @@ struct tt__EventFilter {
 };
 #endif
 
-/* onvif.h:27676 */
+/* onvif.h:28977 */
 #ifndef SOAP_TYPE_tt__AnalyticsEngine
-#define SOAP_TYPE_tt__AnalyticsEngine (1897)
+#define SOAP_TYPE_tt__AnalyticsEngine (1965)
 /* complex XML schema type 'tt:AnalyticsEngine': */
 struct tt__AnalyticsEngine {
         /** Required element 'tt:Name' of XML schema type 'tt:Name' */
@@ -17226,9 +18017,9 @@ struct tt__AnalyticsEngine {
 };
 #endif
 
-/* onvif.h:27726 */
+/* onvif.h:29027 */
 #ifndef SOAP_TYPE_tt__AnalyticsEngineInput
-#define SOAP_TYPE_tt__AnalyticsEngineInput (1899)
+#define SOAP_TYPE_tt__AnalyticsEngineInput (1967)
 /* complex XML schema type 'tt:AnalyticsEngineInput': */
 struct tt__AnalyticsEngineInput {
         /** Required element 'tt:Name' of XML schema type 'tt:Name' */
@@ -17251,9 +18042,9 @@ struct tt__AnalyticsEngineInput {
 };
 #endif
 
-/* onvif.h:27780 */
+/* onvif.h:29081 */
 #ifndef SOAP_TYPE_tt__AnalyticsEngineControl
-#define SOAP_TYPE_tt__AnalyticsEngineControl (1902)
+#define SOAP_TYPE_tt__AnalyticsEngineControl (1970)
 /* complex XML schema type 'tt:AnalyticsEngineControl': */
 struct tt__AnalyticsEngineControl {
         /** Required element 'tt:Name' of XML schema type 'tt:Name' */
@@ -17286,7 +18077,7 @@ struct tt__AnalyticsEngineControl {
 };
 #endif
 
-/* onvif.h:25764 */
+/* onvif.h:25794 */
 #ifndef SOAP_TYPE_tt__OSDConfiguration
 #define SOAP_TYPE_tt__OSDConfiguration (1851)
 /* complex XML schema type 'tt:OSDConfiguration': */
@@ -17310,9 +18101,9 @@ struct tt__OSDConfiguration {
 };
 #endif
 
-/* onvif.h:27944 */
+/* onvif.h:29245 */
 #ifndef SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_ErrorCode (1910)
+#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_ErrorCode (1978)
 /* complex XML schema type 'wsnt:SubscribeCreationFailedFaultType-ErrorCode': */
 struct _wsnt__SubscribeCreationFailedFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17321,9 +18112,9 @@ struct _wsnt__SubscribeCreationFailedFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:27963 */
+/* onvif.h:29264 */
 #ifndef SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_Description
-#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_Description (1912)
+#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_Description (1980)
 /* simple XML schema type 'wsnt:SubscribeCreationFailedFaultType-Description': */
 struct _wsnt__SubscribeCreationFailedFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17333,18 +18124,18 @@ struct _wsnt__SubscribeCreationFailedFaultType_Description {
 };
 #endif
 
-/* onvif.h:27977 */
+/* onvif.h:29278 */
 #ifndef SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_FaultCause (1914)
+#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_FaultCause (1982)
 /* complex XML schema type 'wsnt:SubscribeCreationFailedFaultType-FaultCause': */
 struct _wsnt__SubscribeCreationFailedFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:27921 */
+/* onvif.h:29222 */
 #ifndef SOAP_TYPE_wsnt__SubscribeCreationFailedFaultType
-#define SOAP_TYPE_wsnt__SubscribeCreationFailedFaultType (1909)
+#define SOAP_TYPE_wsnt__SubscribeCreationFailedFaultType (1977)
 /* complex XML schema type 'wsnt:SubscribeCreationFailedFaultType': */
 struct wsnt__SubscribeCreationFailedFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17366,9 +18157,9 @@ struct wsnt__SubscribeCreationFailedFaultType {
 };
 #endif
 
-/* onvif.h:28028 */
+/* onvif.h:29329 */
 #ifndef SOAP_TYPE__wsnt__InvalidFilterFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__InvalidFilterFaultType_ErrorCode (1917)
+#define SOAP_TYPE__wsnt__InvalidFilterFaultType_ErrorCode (1985)
 /* complex XML schema type 'wsnt:InvalidFilterFaultType-ErrorCode': */
 struct _wsnt__InvalidFilterFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17377,9 +18168,9 @@ struct _wsnt__InvalidFilterFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28047 */
+/* onvif.h:29348 */
 #ifndef SOAP_TYPE__wsnt__InvalidFilterFaultType_Description
-#define SOAP_TYPE__wsnt__InvalidFilterFaultType_Description (1919)
+#define SOAP_TYPE__wsnt__InvalidFilterFaultType_Description (1987)
 /* simple XML schema type 'wsnt:InvalidFilterFaultType-Description': */
 struct _wsnt__InvalidFilterFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17389,18 +18180,18 @@ struct _wsnt__InvalidFilterFaultType_Description {
 };
 #endif
 
-/* onvif.h:28061 */
+/* onvif.h:29362 */
 #ifndef SOAP_TYPE__wsnt__InvalidFilterFaultType_FaultCause
-#define SOAP_TYPE__wsnt__InvalidFilterFaultType_FaultCause (1921)
+#define SOAP_TYPE__wsnt__InvalidFilterFaultType_FaultCause (1989)
 /* complex XML schema type 'wsnt:InvalidFilterFaultType-FaultCause': */
 struct _wsnt__InvalidFilterFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28005 */
+/* onvif.h:29306 */
 #ifndef SOAP_TYPE_wsnt__InvalidFilterFaultType
-#define SOAP_TYPE_wsnt__InvalidFilterFaultType (1916)
+#define SOAP_TYPE_wsnt__InvalidFilterFaultType (1984)
 /* complex XML schema type 'wsnt:InvalidFilterFaultType': */
 struct wsnt__InvalidFilterFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17425,9 +18216,9 @@ struct wsnt__InvalidFilterFaultType {
 };
 #endif
 
-/* onvif.h:28116 */
+/* onvif.h:29417 */
 #ifndef SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode (1924)
+#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode (1992)
 /* complex XML schema type 'wsnt:TopicExpressionDialectUnknownFaultType-ErrorCode': */
 struct _wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17436,9 +18227,9 @@ struct _wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28135 */
+/* onvif.h:29436 */
 #ifndef SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_Description
-#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_Description (1926)
+#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_Description (1994)
 /* simple XML schema type 'wsnt:TopicExpressionDialectUnknownFaultType-Description': */
 struct _wsnt__TopicExpressionDialectUnknownFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17448,18 +18239,18 @@ struct _wsnt__TopicExpressionDialectUnknownFaultType_Description {
 };
 #endif
 
-/* onvif.h:28149 */
+/* onvif.h:29450 */
 #ifndef SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_FaultCause
-#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_FaultCause (1928)
+#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_FaultCause (1996)
 /* complex XML schema type 'wsnt:TopicExpressionDialectUnknownFaultType-FaultCause': */
 struct _wsnt__TopicExpressionDialectUnknownFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28093 */
+/* onvif.h:29394 */
 #ifndef SOAP_TYPE_wsnt__TopicExpressionDialectUnknownFaultType
-#define SOAP_TYPE_wsnt__TopicExpressionDialectUnknownFaultType (1923)
+#define SOAP_TYPE_wsnt__TopicExpressionDialectUnknownFaultType (1991)
 /* complex XML schema type 'wsnt:TopicExpressionDialectUnknownFaultType': */
 struct wsnt__TopicExpressionDialectUnknownFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17481,9 +18272,9 @@ struct wsnt__TopicExpressionDialectUnknownFaultType {
 };
 #endif
 
-/* onvif.h:28200 */
+/* onvif.h:29501 */
 #ifndef SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_ErrorCode (1931)
+#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_ErrorCode (1999)
 /* complex XML schema type 'wsnt:InvalidTopicExpressionFaultType-ErrorCode': */
 struct _wsnt__InvalidTopicExpressionFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17492,9 +18283,9 @@ struct _wsnt__InvalidTopicExpressionFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28219 */
+/* onvif.h:29520 */
 #ifndef SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_Description
-#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_Description (1933)
+#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_Description (2001)
 /* simple XML schema type 'wsnt:InvalidTopicExpressionFaultType-Description': */
 struct _wsnt__InvalidTopicExpressionFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17504,18 +18295,18 @@ struct _wsnt__InvalidTopicExpressionFaultType_Description {
 };
 #endif
 
-/* onvif.h:28233 */
+/* onvif.h:29534 */
 #ifndef SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_FaultCause
-#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_FaultCause (1935)
+#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_FaultCause (2003)
 /* complex XML schema type 'wsnt:InvalidTopicExpressionFaultType-FaultCause': */
 struct _wsnt__InvalidTopicExpressionFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28177 */
+/* onvif.h:29478 */
 #ifndef SOAP_TYPE_wsnt__InvalidTopicExpressionFaultType
-#define SOAP_TYPE_wsnt__InvalidTopicExpressionFaultType (1930)
+#define SOAP_TYPE_wsnt__InvalidTopicExpressionFaultType (1998)
 /* complex XML schema type 'wsnt:InvalidTopicExpressionFaultType': */
 struct wsnt__InvalidTopicExpressionFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17537,9 +18328,9 @@ struct wsnt__InvalidTopicExpressionFaultType {
 };
 #endif
 
-/* onvif.h:28284 */
+/* onvif.h:29585 */
 #ifndef SOAP_TYPE__wsnt__TopicNotSupportedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_ErrorCode (1938)
+#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_ErrorCode (2006)
 /* complex XML schema type 'wsnt:TopicNotSupportedFaultType-ErrorCode': */
 struct _wsnt__TopicNotSupportedFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17548,9 +18339,9 @@ struct _wsnt__TopicNotSupportedFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28303 */
+/* onvif.h:29604 */
 #ifndef SOAP_TYPE__wsnt__TopicNotSupportedFaultType_Description
-#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_Description (1940)
+#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_Description (2008)
 /* simple XML schema type 'wsnt:TopicNotSupportedFaultType-Description': */
 struct _wsnt__TopicNotSupportedFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17560,18 +18351,18 @@ struct _wsnt__TopicNotSupportedFaultType_Description {
 };
 #endif
 
-/* onvif.h:28317 */
+/* onvif.h:29618 */
 #ifndef SOAP_TYPE__wsnt__TopicNotSupportedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_FaultCause (1942)
+#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_FaultCause (2010)
 /* complex XML schema type 'wsnt:TopicNotSupportedFaultType-FaultCause': */
 struct _wsnt__TopicNotSupportedFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28261 */
+/* onvif.h:29562 */
 #ifndef SOAP_TYPE_wsnt__TopicNotSupportedFaultType
-#define SOAP_TYPE_wsnt__TopicNotSupportedFaultType (1937)
+#define SOAP_TYPE_wsnt__TopicNotSupportedFaultType (2005)
 /* complex XML schema type 'wsnt:TopicNotSupportedFaultType': */
 struct wsnt__TopicNotSupportedFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17593,9 +18384,9 @@ struct wsnt__TopicNotSupportedFaultType {
 };
 #endif
 
-/* onvif.h:28368 */
+/* onvif.h:29669 */
 #ifndef SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode (1945)
+#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode (2013)
 /* complex XML schema type 'wsnt:MultipleTopicsSpecifiedFaultType-ErrorCode': */
 struct _wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17604,9 +18395,9 @@ struct _wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28387 */
+/* onvif.h:29688 */
 #ifndef SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_Description
-#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_Description (1947)
+#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_Description (2015)
 /* simple XML schema type 'wsnt:MultipleTopicsSpecifiedFaultType-Description': */
 struct _wsnt__MultipleTopicsSpecifiedFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17616,18 +18407,18 @@ struct _wsnt__MultipleTopicsSpecifiedFaultType_Description {
 };
 #endif
 
-/* onvif.h:28401 */
+/* onvif.h:29702 */
 #ifndef SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_FaultCause (1949)
+#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_FaultCause (2017)
 /* complex XML schema type 'wsnt:MultipleTopicsSpecifiedFaultType-FaultCause': */
 struct _wsnt__MultipleTopicsSpecifiedFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28345 */
+/* onvif.h:29646 */
 #ifndef SOAP_TYPE_wsnt__MultipleTopicsSpecifiedFaultType
-#define SOAP_TYPE_wsnt__MultipleTopicsSpecifiedFaultType (1944)
+#define SOAP_TYPE_wsnt__MultipleTopicsSpecifiedFaultType (2012)
 /* complex XML schema type 'wsnt:MultipleTopicsSpecifiedFaultType': */
 struct wsnt__MultipleTopicsSpecifiedFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17649,9 +18440,9 @@ struct wsnt__MultipleTopicsSpecifiedFaultType {
 };
 #endif
 
-/* onvif.h:28452 */
+/* onvif.h:29753 */
 #ifndef SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode (1952)
+#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode (2020)
 /* complex XML schema type 'wsnt:InvalidProducerPropertiesExpressionFaultType-ErrorCode': */
 struct _wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17660,9 +18451,9 @@ struct _wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28471 */
+/* onvif.h:29772 */
 #ifndef SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_Description
-#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_Description (1954)
+#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_Description (2022)
 /* simple XML schema type 'wsnt:InvalidProducerPropertiesExpressionFaultType-Description': */
 struct _wsnt__InvalidProducerPropertiesExpressionFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17672,18 +18463,18 @@ struct _wsnt__InvalidProducerPropertiesExpressionFaultType_Description {
 };
 #endif
 
-/* onvif.h:28485 */
+/* onvif.h:29786 */
 #ifndef SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause
-#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause (1956)
+#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause (2024)
 /* complex XML schema type 'wsnt:InvalidProducerPropertiesExpressionFaultType-FaultCause': */
 struct _wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28429 */
+/* onvif.h:29730 */
 #ifndef SOAP_TYPE_wsnt__InvalidProducerPropertiesExpressionFaultType
-#define SOAP_TYPE_wsnt__InvalidProducerPropertiesExpressionFaultType (1951)
+#define SOAP_TYPE_wsnt__InvalidProducerPropertiesExpressionFaultType (2019)
 /* complex XML schema type 'wsnt:InvalidProducerPropertiesExpressionFaultType': */
 struct wsnt__InvalidProducerPropertiesExpressionFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17705,9 +18496,9 @@ struct wsnt__InvalidProducerPropertiesExpressionFaultType {
 };
 #endif
 
-/* onvif.h:28536 */
+/* onvif.h:29837 */
 #ifndef SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_ErrorCode (1959)
+#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_ErrorCode (2027)
 /* complex XML schema type 'wsnt:InvalidMessageContentExpressionFaultType-ErrorCode': */
 struct _wsnt__InvalidMessageContentExpressionFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17716,9 +18507,9 @@ struct _wsnt__InvalidMessageContentExpressionFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28555 */
+/* onvif.h:29856 */
 #ifndef SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_Description
-#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_Description (1961)
+#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_Description (2029)
 /* simple XML schema type 'wsnt:InvalidMessageContentExpressionFaultType-Description': */
 struct _wsnt__InvalidMessageContentExpressionFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17728,18 +18519,18 @@ struct _wsnt__InvalidMessageContentExpressionFaultType_Description {
 };
 #endif
 
-/* onvif.h:28569 */
+/* onvif.h:29870 */
 #ifndef SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_FaultCause
-#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_FaultCause (1963)
+#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_FaultCause (2031)
 /* complex XML schema type 'wsnt:InvalidMessageContentExpressionFaultType-FaultCause': */
 struct _wsnt__InvalidMessageContentExpressionFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28513 */
+/* onvif.h:29814 */
 #ifndef SOAP_TYPE_wsnt__InvalidMessageContentExpressionFaultType
-#define SOAP_TYPE_wsnt__InvalidMessageContentExpressionFaultType (1958)
+#define SOAP_TYPE_wsnt__InvalidMessageContentExpressionFaultType (2026)
 /* complex XML schema type 'wsnt:InvalidMessageContentExpressionFaultType': */
 struct wsnt__InvalidMessageContentExpressionFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17761,9 +18552,9 @@ struct wsnt__InvalidMessageContentExpressionFaultType {
 };
 #endif
 
-/* onvif.h:28620 */
+/* onvif.h:29921 */
 #ifndef SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode (1966)
+#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode (2034)
 /* complex XML schema type 'wsnt:UnrecognizedPolicyRequestFaultType-ErrorCode': */
 struct _wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17772,9 +18563,9 @@ struct _wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28639 */
+/* onvif.h:29940 */
 #ifndef SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_Description
-#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_Description (1968)
+#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_Description (2036)
 /* simple XML schema type 'wsnt:UnrecognizedPolicyRequestFaultType-Description': */
 struct _wsnt__UnrecognizedPolicyRequestFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17784,18 +18575,18 @@ struct _wsnt__UnrecognizedPolicyRequestFaultType_Description {
 };
 #endif
 
-/* onvif.h:28653 */
+/* onvif.h:29954 */
 #ifndef SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_FaultCause (1970)
+#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_FaultCause (2038)
 /* complex XML schema type 'wsnt:UnrecognizedPolicyRequestFaultType-FaultCause': */
 struct _wsnt__UnrecognizedPolicyRequestFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28597 */
+/* onvif.h:29898 */
 #ifndef SOAP_TYPE_wsnt__UnrecognizedPolicyRequestFaultType
-#define SOAP_TYPE_wsnt__UnrecognizedPolicyRequestFaultType (1965)
+#define SOAP_TYPE_wsnt__UnrecognizedPolicyRequestFaultType (2033)
 /* complex XML schema type 'wsnt:UnrecognizedPolicyRequestFaultType': */
 struct wsnt__UnrecognizedPolicyRequestFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17820,9 +18611,9 @@ struct wsnt__UnrecognizedPolicyRequestFaultType {
 };
 #endif
 
-/* onvif.h:28708 */
+/* onvif.h:30009 */
 #ifndef SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_ErrorCode (1973)
+#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_ErrorCode (2041)
 /* complex XML schema type 'wsnt:UnsupportedPolicyRequestFaultType-ErrorCode': */
 struct _wsnt__UnsupportedPolicyRequestFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17831,9 +18622,9 @@ struct _wsnt__UnsupportedPolicyRequestFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28727 */
+/* onvif.h:30028 */
 #ifndef SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_Description
-#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_Description (1975)
+#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_Description (2043)
 /* simple XML schema type 'wsnt:UnsupportedPolicyRequestFaultType-Description': */
 struct _wsnt__UnsupportedPolicyRequestFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17843,18 +18634,18 @@ struct _wsnt__UnsupportedPolicyRequestFaultType_Description {
 };
 #endif
 
-/* onvif.h:28741 */
+/* onvif.h:30042 */
 #ifndef SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_FaultCause (1977)
+#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_FaultCause (2045)
 /* complex XML schema type 'wsnt:UnsupportedPolicyRequestFaultType-FaultCause': */
 struct _wsnt__UnsupportedPolicyRequestFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28685 */
+/* onvif.h:29986 */
 #ifndef SOAP_TYPE_wsnt__UnsupportedPolicyRequestFaultType
-#define SOAP_TYPE_wsnt__UnsupportedPolicyRequestFaultType (1972)
+#define SOAP_TYPE_wsnt__UnsupportedPolicyRequestFaultType (2040)
 /* complex XML schema type 'wsnt:UnsupportedPolicyRequestFaultType': */
 struct wsnt__UnsupportedPolicyRequestFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17879,9 +18670,9 @@ struct wsnt__UnsupportedPolicyRequestFaultType {
 };
 #endif
 
-/* onvif.h:28796 */
+/* onvif.h:30097 */
 #ifndef SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_ErrorCode (1980)
+#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_ErrorCode (2048)
 /* complex XML schema type 'wsnt:NotifyMessageNotSupportedFaultType-ErrorCode': */
 struct _wsnt__NotifyMessageNotSupportedFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17890,9 +18681,9 @@ struct _wsnt__NotifyMessageNotSupportedFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28815 */
+/* onvif.h:30116 */
 #ifndef SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_Description
-#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_Description (1982)
+#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_Description (2050)
 /* simple XML schema type 'wsnt:NotifyMessageNotSupportedFaultType-Description': */
 struct _wsnt__NotifyMessageNotSupportedFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17902,18 +18693,18 @@ struct _wsnt__NotifyMessageNotSupportedFaultType_Description {
 };
 #endif
 
-/* onvif.h:28829 */
+/* onvif.h:30130 */
 #ifndef SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_FaultCause (1984)
+#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_FaultCause (2052)
 /* complex XML schema type 'wsnt:NotifyMessageNotSupportedFaultType-FaultCause': */
 struct _wsnt__NotifyMessageNotSupportedFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28773 */
+/* onvif.h:30074 */
 #ifndef SOAP_TYPE_wsnt__NotifyMessageNotSupportedFaultType
-#define SOAP_TYPE_wsnt__NotifyMessageNotSupportedFaultType (1979)
+#define SOAP_TYPE_wsnt__NotifyMessageNotSupportedFaultType (2047)
 /* complex XML schema type 'wsnt:NotifyMessageNotSupportedFaultType': */
 struct wsnt__NotifyMessageNotSupportedFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17935,9 +18726,9 @@ struct wsnt__NotifyMessageNotSupportedFaultType {
 };
 #endif
 
-/* onvif.h:28880 */
+/* onvif.h:30181 */
 #ifndef SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode (1987)
+#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode (2055)
 /* complex XML schema type 'wsnt:UnacceptableInitialTerminationTimeFaultType-ErrorCode': */
 struct _wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -17946,9 +18737,9 @@ struct _wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28899 */
+/* onvif.h:30200 */
 #ifndef SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_Description
-#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_Description (1989)
+#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_Description (2057)
 /* simple XML schema type 'wsnt:UnacceptableInitialTerminationTimeFaultType-Description': */
 struct _wsnt__UnacceptableInitialTerminationTimeFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -17958,18 +18749,18 @@ struct _wsnt__UnacceptableInitialTerminationTimeFaultType_Description {
 };
 #endif
 
-/* onvif.h:28913 */
+/* onvif.h:30214 */
 #ifndef SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause (1991)
+#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause (2059)
 /* complex XML schema type 'wsnt:UnacceptableInitialTerminationTimeFaultType-FaultCause': */
 struct _wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28857 */
+/* onvif.h:30158 */
 #ifndef SOAP_TYPE_wsnt__UnacceptableInitialTerminationTimeFaultType
-#define SOAP_TYPE_wsnt__UnacceptableInitialTerminationTimeFaultType (1986)
+#define SOAP_TYPE_wsnt__UnacceptableInitialTerminationTimeFaultType (2054)
 /* complex XML schema type 'wsnt:UnacceptableInitialTerminationTimeFaultType': */
 struct wsnt__UnacceptableInitialTerminationTimeFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -17995,9 +18786,9 @@ struct wsnt__UnacceptableInitialTerminationTimeFaultType {
 };
 #endif
 
-/* onvif.h:28968 */
+/* onvif.h:30269 */
 #ifndef SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode (1994)
+#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode (2062)
 /* complex XML schema type 'wsnt:NoCurrentMessageOnTopicFaultType-ErrorCode': */
 struct _wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18006,9 +18797,9 @@ struct _wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:28987 */
+/* onvif.h:30288 */
 #ifndef SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_Description
-#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_Description (1996)
+#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_Description (2064)
 /* simple XML schema type 'wsnt:NoCurrentMessageOnTopicFaultType-Description': */
 struct _wsnt__NoCurrentMessageOnTopicFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18018,18 +18809,18 @@ struct _wsnt__NoCurrentMessageOnTopicFaultType_Description {
 };
 #endif
 
-/* onvif.h:29001 */
+/* onvif.h:30302 */
 #ifndef SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_FaultCause
-#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_FaultCause (1998)
+#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_FaultCause (2066)
 /* complex XML schema type 'wsnt:NoCurrentMessageOnTopicFaultType-FaultCause': */
 struct _wsnt__NoCurrentMessageOnTopicFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:28945 */
+/* onvif.h:30246 */
 #ifndef SOAP_TYPE_wsnt__NoCurrentMessageOnTopicFaultType
-#define SOAP_TYPE_wsnt__NoCurrentMessageOnTopicFaultType (1993)
+#define SOAP_TYPE_wsnt__NoCurrentMessageOnTopicFaultType (2061)
 /* complex XML schema type 'wsnt:NoCurrentMessageOnTopicFaultType': */
 struct wsnt__NoCurrentMessageOnTopicFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18051,9 +18842,9 @@ struct wsnt__NoCurrentMessageOnTopicFaultType {
 };
 #endif
 
-/* onvif.h:29052 */
+/* onvif.h:30353 */
 #ifndef SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_ErrorCode (2001)
+#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_ErrorCode (2069)
 /* complex XML schema type 'wsnt:UnableToGetMessagesFaultType-ErrorCode': */
 struct _wsnt__UnableToGetMessagesFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18062,9 +18853,9 @@ struct _wsnt__UnableToGetMessagesFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29071 */
+/* onvif.h:30372 */
 #ifndef SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_Description
-#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_Description (2003)
+#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_Description (2071)
 /* simple XML schema type 'wsnt:UnableToGetMessagesFaultType-Description': */
 struct _wsnt__UnableToGetMessagesFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18074,18 +18865,18 @@ struct _wsnt__UnableToGetMessagesFaultType_Description {
 };
 #endif
 
-/* onvif.h:29085 */
+/* onvif.h:30386 */
 #ifndef SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_FaultCause (2005)
+#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_FaultCause (2073)
 /* complex XML schema type 'wsnt:UnableToGetMessagesFaultType-FaultCause': */
 struct _wsnt__UnableToGetMessagesFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29029 */
+/* onvif.h:30330 */
 #ifndef SOAP_TYPE_wsnt__UnableToGetMessagesFaultType
-#define SOAP_TYPE_wsnt__UnableToGetMessagesFaultType (2000)
+#define SOAP_TYPE_wsnt__UnableToGetMessagesFaultType (2068)
 /* complex XML schema type 'wsnt:UnableToGetMessagesFaultType': */
 struct wsnt__UnableToGetMessagesFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18107,9 +18898,9 @@ struct wsnt__UnableToGetMessagesFaultType {
 };
 #endif
 
-/* onvif.h:29136 */
+/* onvif.h:30437 */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_ErrorCode (2008)
+#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_ErrorCode (2076)
 /* complex XML schema type 'wsnt:UnableToDestroyPullPointFaultType-ErrorCode': */
 struct _wsnt__UnableToDestroyPullPointFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18118,9 +18909,9 @@ struct _wsnt__UnableToDestroyPullPointFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29155 */
+/* onvif.h:30456 */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_Description
-#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_Description (2010)
+#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_Description (2078)
 /* simple XML schema type 'wsnt:UnableToDestroyPullPointFaultType-Description': */
 struct _wsnt__UnableToDestroyPullPointFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18130,18 +18921,18 @@ struct _wsnt__UnableToDestroyPullPointFaultType_Description {
 };
 #endif
 
-/* onvif.h:29169 */
+/* onvif.h:30470 */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_FaultCause (2012)
+#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_FaultCause (2080)
 /* complex XML schema type 'wsnt:UnableToDestroyPullPointFaultType-FaultCause': */
 struct _wsnt__UnableToDestroyPullPointFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29113 */
+/* onvif.h:30414 */
 #ifndef SOAP_TYPE_wsnt__UnableToDestroyPullPointFaultType
-#define SOAP_TYPE_wsnt__UnableToDestroyPullPointFaultType (2007)
+#define SOAP_TYPE_wsnt__UnableToDestroyPullPointFaultType (2075)
 /* complex XML schema type 'wsnt:UnableToDestroyPullPointFaultType': */
 struct wsnt__UnableToDestroyPullPointFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18163,9 +18954,9 @@ struct wsnt__UnableToDestroyPullPointFaultType {
 };
 #endif
 
-/* onvif.h:29220 */
+/* onvif.h:30521 */
 #ifndef SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_ErrorCode (2015)
+#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_ErrorCode (2083)
 /* complex XML schema type 'wsnt:UnableToCreatePullPointFaultType-ErrorCode': */
 struct _wsnt__UnableToCreatePullPointFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18174,9 +18965,9 @@ struct _wsnt__UnableToCreatePullPointFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29239 */
+/* onvif.h:30540 */
 #ifndef SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_Description
-#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_Description (2017)
+#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_Description (2085)
 /* simple XML schema type 'wsnt:UnableToCreatePullPointFaultType-Description': */
 struct _wsnt__UnableToCreatePullPointFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18186,18 +18977,18 @@ struct _wsnt__UnableToCreatePullPointFaultType_Description {
 };
 #endif
 
-/* onvif.h:29253 */
+/* onvif.h:30554 */
 #ifndef SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_FaultCause (2019)
+#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_FaultCause (2087)
 /* complex XML schema type 'wsnt:UnableToCreatePullPointFaultType-FaultCause': */
 struct _wsnt__UnableToCreatePullPointFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29197 */
+/* onvif.h:30498 */
 #ifndef SOAP_TYPE_wsnt__UnableToCreatePullPointFaultType
-#define SOAP_TYPE_wsnt__UnableToCreatePullPointFaultType (2014)
+#define SOAP_TYPE_wsnt__UnableToCreatePullPointFaultType (2082)
 /* complex XML schema type 'wsnt:UnableToCreatePullPointFaultType': */
 struct wsnt__UnableToCreatePullPointFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18219,9 +19010,9 @@ struct wsnt__UnableToCreatePullPointFaultType {
 };
 #endif
 
-/* onvif.h:29304 */
+/* onvif.h:30605 */
 #ifndef SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_ErrorCode (2022)
+#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_ErrorCode (2090)
 /* complex XML schema type 'wsnt:UnacceptableTerminationTimeFaultType-ErrorCode': */
 struct _wsnt__UnacceptableTerminationTimeFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18230,9 +19021,9 @@ struct _wsnt__UnacceptableTerminationTimeFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29323 */
+/* onvif.h:30624 */
 #ifndef SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_Description
-#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_Description (2024)
+#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_Description (2092)
 /* simple XML schema type 'wsnt:UnacceptableTerminationTimeFaultType-Description': */
 struct _wsnt__UnacceptableTerminationTimeFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18242,18 +19033,18 @@ struct _wsnt__UnacceptableTerminationTimeFaultType_Description {
 };
 #endif
 
-/* onvif.h:29337 */
+/* onvif.h:30638 */
 #ifndef SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_FaultCause (2026)
+#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_FaultCause (2094)
 /* complex XML schema type 'wsnt:UnacceptableTerminationTimeFaultType-FaultCause': */
 struct _wsnt__UnacceptableTerminationTimeFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29281 */
+/* onvif.h:30582 */
 #ifndef SOAP_TYPE_wsnt__UnacceptableTerminationTimeFaultType
-#define SOAP_TYPE_wsnt__UnacceptableTerminationTimeFaultType (2021)
+#define SOAP_TYPE_wsnt__UnacceptableTerminationTimeFaultType (2089)
 /* complex XML schema type 'wsnt:UnacceptableTerminationTimeFaultType': */
 struct wsnt__UnacceptableTerminationTimeFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18279,9 +19070,9 @@ struct wsnt__UnacceptableTerminationTimeFaultType {
 };
 #endif
 
-/* onvif.h:29392 */
+/* onvif.h:30693 */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_ErrorCode (2029)
+#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_ErrorCode (2097)
 /* complex XML schema type 'wsnt:UnableToDestroySubscriptionFaultType-ErrorCode': */
 struct _wsnt__UnableToDestroySubscriptionFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18290,9 +19081,9 @@ struct _wsnt__UnableToDestroySubscriptionFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29411 */
+/* onvif.h:30712 */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_Description
-#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_Description (2031)
+#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_Description (2099)
 /* simple XML schema type 'wsnt:UnableToDestroySubscriptionFaultType-Description': */
 struct _wsnt__UnableToDestroySubscriptionFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18302,18 +19093,18 @@ struct _wsnt__UnableToDestroySubscriptionFaultType_Description {
 };
 #endif
 
-/* onvif.h:29425 */
+/* onvif.h:30726 */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_FaultCause (2033)
+#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_FaultCause (2101)
 /* complex XML schema type 'wsnt:UnableToDestroySubscriptionFaultType-FaultCause': */
 struct _wsnt__UnableToDestroySubscriptionFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29369 */
+/* onvif.h:30670 */
 #ifndef SOAP_TYPE_wsnt__UnableToDestroySubscriptionFaultType
-#define SOAP_TYPE_wsnt__UnableToDestroySubscriptionFaultType (2028)
+#define SOAP_TYPE_wsnt__UnableToDestroySubscriptionFaultType (2096)
 /* complex XML schema type 'wsnt:UnableToDestroySubscriptionFaultType': */
 struct wsnt__UnableToDestroySubscriptionFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18335,9 +19126,9 @@ struct wsnt__UnableToDestroySubscriptionFaultType {
 };
 #endif
 
-/* onvif.h:29476 */
+/* onvif.h:30777 */
 #ifndef SOAP_TYPE__wsnt__PauseFailedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__PauseFailedFaultType_ErrorCode (2036)
+#define SOAP_TYPE__wsnt__PauseFailedFaultType_ErrorCode (2104)
 /* complex XML schema type 'wsnt:PauseFailedFaultType-ErrorCode': */
 struct _wsnt__PauseFailedFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18346,9 +19137,9 @@ struct _wsnt__PauseFailedFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29495 */
+/* onvif.h:30796 */
 #ifndef SOAP_TYPE__wsnt__PauseFailedFaultType_Description
-#define SOAP_TYPE__wsnt__PauseFailedFaultType_Description (2038)
+#define SOAP_TYPE__wsnt__PauseFailedFaultType_Description (2106)
 /* simple XML schema type 'wsnt:PauseFailedFaultType-Description': */
 struct _wsnt__PauseFailedFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18358,18 +19149,18 @@ struct _wsnt__PauseFailedFaultType_Description {
 };
 #endif
 
-/* onvif.h:29509 */
+/* onvif.h:30810 */
 #ifndef SOAP_TYPE__wsnt__PauseFailedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__PauseFailedFaultType_FaultCause (2040)
+#define SOAP_TYPE__wsnt__PauseFailedFaultType_FaultCause (2108)
 /* complex XML schema type 'wsnt:PauseFailedFaultType-FaultCause': */
 struct _wsnt__PauseFailedFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29453 */
+/* onvif.h:30754 */
 #ifndef SOAP_TYPE_wsnt__PauseFailedFaultType
-#define SOAP_TYPE_wsnt__PauseFailedFaultType (2035)
+#define SOAP_TYPE_wsnt__PauseFailedFaultType (2103)
 /* complex XML schema type 'wsnt:PauseFailedFaultType': */
 struct wsnt__PauseFailedFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18391,9 +19182,9 @@ struct wsnt__PauseFailedFaultType {
 };
 #endif
 
-/* onvif.h:29560 */
+/* onvif.h:30861 */
 #ifndef SOAP_TYPE__wsnt__ResumeFailedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__ResumeFailedFaultType_ErrorCode (2043)
+#define SOAP_TYPE__wsnt__ResumeFailedFaultType_ErrorCode (2111)
 /* complex XML schema type 'wsnt:ResumeFailedFaultType-ErrorCode': */
 struct _wsnt__ResumeFailedFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18402,9 +19193,9 @@ struct _wsnt__ResumeFailedFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29579 */
+/* onvif.h:30880 */
 #ifndef SOAP_TYPE__wsnt__ResumeFailedFaultType_Description
-#define SOAP_TYPE__wsnt__ResumeFailedFaultType_Description (2045)
+#define SOAP_TYPE__wsnt__ResumeFailedFaultType_Description (2113)
 /* simple XML schema type 'wsnt:ResumeFailedFaultType-Description': */
 struct _wsnt__ResumeFailedFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18414,18 +19205,18 @@ struct _wsnt__ResumeFailedFaultType_Description {
 };
 #endif
 
-/* onvif.h:29593 */
+/* onvif.h:30894 */
 #ifndef SOAP_TYPE__wsnt__ResumeFailedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__ResumeFailedFaultType_FaultCause (2047)
+#define SOAP_TYPE__wsnt__ResumeFailedFaultType_FaultCause (2115)
 /* complex XML schema type 'wsnt:ResumeFailedFaultType-FaultCause': */
 struct _wsnt__ResumeFailedFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29537 */
+/* onvif.h:30838 */
 #ifndef SOAP_TYPE_wsnt__ResumeFailedFaultType
-#define SOAP_TYPE_wsnt__ResumeFailedFaultType (2042)
+#define SOAP_TYPE_wsnt__ResumeFailedFaultType (2110)
 /* complex XML schema type 'wsnt:ResumeFailedFaultType': */
 struct wsnt__ResumeFailedFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18447,9 +19238,9 @@ struct wsnt__ResumeFailedFaultType {
 };
 #endif
 
-/* onvif.h:29642 */
+/* onvif.h:30943 */
 #ifndef SOAP_TYPE__wstop__TopicNamespaceType_Topic
-#define SOAP_TYPE__wstop__TopicNamespaceType_Topic (2050)
+#define SOAP_TYPE__wstop__TopicNamespaceType_Topic (2118)
 /* complex XML schema type 'wstop:TopicNamespaceType-Topic': */
 struct _wstop__TopicNamespaceType_Topic {
         /** Optional element 'wstop:documentation' of XML schema type 'wstop:Documentation' */
@@ -18475,9 +19266,9 @@ struct _wstop__TopicNamespaceType_Topic {
 };
 #endif
 
-/* onvif.h:29621 */
+/* onvif.h:30922 */
 #ifndef SOAP_TYPE_wstop__TopicNamespaceType
-#define SOAP_TYPE_wstop__TopicNamespaceType (2049)
+#define SOAP_TYPE_wstop__TopicNamespaceType (2117)
 /* complex XML schema type 'wstop:TopicNamespaceType': */
 struct wstop__TopicNamespaceType {
         /** Optional element 'wstop:documentation' of XML schema type 'wstop:Documentation' */
@@ -18499,9 +19290,9 @@ struct wstop__TopicNamespaceType {
 };
 #endif
 
-/* onvif.h:29659 */
+/* onvif.h:30960 */
 #ifndef SOAP_TYPE_wstop__TopicType
-#define SOAP_TYPE_wstop__TopicType (2052)
+#define SOAP_TYPE_wstop__TopicType (2120)
 /* Type wstop__TopicType is a recursive data type, (in)directly referencing itself through its (base or derived class) members */
 /* complex XML schema type 'wstop:TopicType': */
 struct wstop__TopicType {
@@ -18526,7 +19317,7 @@ struct wstop__TopicType {
 };
 #endif
 
-/* onvif.h:21102 */
+/* onvif.h:21132 */
 #ifndef SOAP_TYPE_wstop__TopicSetType
 #define SOAP_TYPE_wstop__TopicSetType (1618)
 /* complex XML schema type 'wstop:TopicSetType': */
@@ -18541,9 +19332,9 @@ struct wstop__TopicSetType {
 };
 #endif
 
-/* onvif.h:29807 */
+/* onvif.h:31108 */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnknownFaultType_ErrorCode
-#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_ErrorCode (2056)
+#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_ErrorCode (2124)
 /* complex XML schema type 'wsrfr:ResourceUnknownFaultType-ErrorCode': */
 struct _wsrfr__ResourceUnknownFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18552,9 +19343,9 @@ struct _wsrfr__ResourceUnknownFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29826 */
+/* onvif.h:31127 */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnknownFaultType_Description
-#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_Description (2058)
+#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_Description (2126)
 /* simple XML schema type 'wsrfr:ResourceUnknownFaultType-Description': */
 struct _wsrfr__ResourceUnknownFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18564,18 +19355,18 @@ struct _wsrfr__ResourceUnknownFaultType_Description {
 };
 #endif
 
-/* onvif.h:29840 */
+/* onvif.h:31141 */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnknownFaultType_FaultCause
-#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_FaultCause (2060)
+#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_FaultCause (2128)
 /* complex XML schema type 'wsrfr:ResourceUnknownFaultType-FaultCause': */
 struct _wsrfr__ResourceUnknownFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29784 */
+/* onvif.h:31085 */
 #ifndef SOAP_TYPE_wsrfr__ResourceUnknownFaultType
-#define SOAP_TYPE_wsrfr__ResourceUnknownFaultType (2055)
+#define SOAP_TYPE_wsrfr__ResourceUnknownFaultType (2123)
 /* complex XML schema type 'wsrfr:ResourceUnknownFaultType': */
 struct wsrfr__ResourceUnknownFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18597,9 +19388,9 @@ struct wsrfr__ResourceUnknownFaultType {
 };
 #endif
 
-/* onvif.h:29891 */
+/* onvif.h:31192 */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_ErrorCode
-#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_ErrorCode (2063)
+#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_ErrorCode (2131)
 /* complex XML schema type 'wsrfr:ResourceUnavailableFaultType-ErrorCode': */
 struct _wsrfr__ResourceUnavailableFaultType_ErrorCode {
         /** Required attribute 'dialect' of XML schema type 'xsd:anyURI' */
@@ -18608,9 +19399,9 @@ struct _wsrfr__ResourceUnavailableFaultType_ErrorCode {
 };
 #endif
 
-/* onvif.h:29910 */
+/* onvif.h:31211 */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_Description
-#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_Description (2065)
+#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_Description (2133)
 /* simple XML schema type 'wsrfr:ResourceUnavailableFaultType-Description': */
 struct _wsrfr__ResourceUnavailableFaultType_Description {
         /** Simple content of XML schema type 'xsd:string' wrapped by this struct */
@@ -18620,18 +19411,18 @@ struct _wsrfr__ResourceUnavailableFaultType_Description {
 };
 #endif
 
-/* onvif.h:29924 */
+/* onvif.h:31225 */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_FaultCause
-#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_FaultCause (2067)
+#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_FaultCause (2135)
 /* complex XML schema type 'wsrfr:ResourceUnavailableFaultType-FaultCause': */
 struct _wsrfr__ResourceUnavailableFaultType_FaultCause {
         char *__any;
 };
 #endif
 
-/* onvif.h:29868 */
+/* onvif.h:31169 */
 #ifndef SOAP_TYPE_wsrfr__ResourceUnavailableFaultType
-#define SOAP_TYPE_wsrfr__ResourceUnavailableFaultType (2062)
+#define SOAP_TYPE_wsrfr__ResourceUnavailableFaultType (2130)
 /* complex XML schema type 'wsrfr:ResourceUnavailableFaultType': */
 struct wsrfr__ResourceUnavailableFaultType {
         /** Sequence of elements '-any' of XML schema type 'xsd:anyType' stored in dynamic array __any of length __size */
@@ -18653,9 +19444,9 @@ struct wsrfr__ResourceUnavailableFaultType {
 };
 #endif
 
-/* onvif.h:27876 */
+/* onvif.h:29177 */
 #ifndef SOAP_TYPE_tt__OSDReference
-#define SOAP_TYPE_tt__OSDReference (1903)
+#define SOAP_TYPE_tt__OSDReference (1971)
 /* simple XML schema type 'tt:OSDReference': */
 struct tt__OSDReference {
         /** Simple content of XML schema type 'tt:ReferenceToken' wrapped by this struct */
@@ -18724,9 +19515,9 @@ struct SOAP_ENV__Detail {
 #endif
 #endif
 
-/* onvif.h:30986 */
+/* onvif.h:32382 */
 #ifndef SOAP_TYPE___tdn__Hello
-#define SOAP_TYPE___tdn__Hello (2093)
+#define SOAP_TYPE___tdn__Hello (2161)
 /* Wrapper: */
 struct __tdn__Hello {
         /** Required element 'tdn:Hello' of XML schema type 'wsdd:HelloType' */
@@ -18734,9 +19525,9 @@ struct __tdn__Hello {
 };
 #endif
 
-/* onvif.h:31041 */
+/* onvif.h:32437 */
 #ifndef SOAP_TYPE___tdn__Bye
-#define SOAP_TYPE___tdn__Bye (2095)
+#define SOAP_TYPE___tdn__Bye (2163)
 /* Wrapper: */
 struct __tdn__Bye {
         /** Required element 'tdn:Bye' of XML schema type 'wsdd:ByeType' */
@@ -18744,9 +19535,9 @@ struct __tdn__Bye {
 };
 #endif
 
-/* onvif.h:31096 */
+/* onvif.h:32492 */
 #ifndef SOAP_TYPE___tdn__Probe
-#define SOAP_TYPE___tdn__Probe (2097)
+#define SOAP_TYPE___tdn__Probe (2165)
 /* Wrapper: */
 struct __tdn__Probe {
         /** Required element 'tdn:Probe' of XML schema type 'wsdd:ProbeType' */
@@ -18754,9 +19545,9 @@ struct __tdn__Probe {
 };
 #endif
 
-/* onvif.h:31168 */
+/* onvif.h:32564 */
 #ifndef SOAP_TYPE___tds__GetServices
-#define SOAP_TYPE___tds__GetServices (2101)
+#define SOAP_TYPE___tds__GetServices (2169)
 /* Wrapper: */
 struct __tds__GetServices {
         /** Optional element 'tds:GetServices' of XML schema type 'tds:GetServices' */
@@ -18764,9 +19555,9 @@ struct __tds__GetServices {
 };
 #endif
 
-/* onvif.h:31225 */
+/* onvif.h:32621 */
 #ifndef SOAP_TYPE___tds__GetServiceCapabilities
-#define SOAP_TYPE___tds__GetServiceCapabilities (2105)
+#define SOAP_TYPE___tds__GetServiceCapabilities (2173)
 /* Wrapper: */
 struct __tds__GetServiceCapabilities {
         /** Optional element 'tds:GetServiceCapabilities' of XML schema type 'tds:GetServiceCapabilities' */
@@ -18774,9 +19565,9 @@ struct __tds__GetServiceCapabilities {
 };
 #endif
 
-/* onvif.h:31281 */
+/* onvif.h:32677 */
 #ifndef SOAP_TYPE___tds__GetDeviceInformation
-#define SOAP_TYPE___tds__GetDeviceInformation (2109)
+#define SOAP_TYPE___tds__GetDeviceInformation (2177)
 /* Wrapper: */
 struct __tds__GetDeviceInformation {
         /** Optional element 'tds:GetDeviceInformation' of XML schema type 'tds:GetDeviceInformation' */
@@ -18784,9 +19575,9 @@ struct __tds__GetDeviceInformation {
 };
 #endif
 
-/* onvif.h:31351 */
+/* onvif.h:32747 */
 #ifndef SOAP_TYPE___tds__SetSystemDateAndTime
-#define SOAP_TYPE___tds__SetSystemDateAndTime (2113)
+#define SOAP_TYPE___tds__SetSystemDateAndTime (2181)
 /* Wrapper: */
 struct __tds__SetSystemDateAndTime {
         /** Optional element 'tds:SetSystemDateAndTime' of XML schema type 'tds:SetSystemDateAndTime' */
@@ -18794,9 +19585,9 @@ struct __tds__SetSystemDateAndTime {
 };
 #endif
 
-/* onvif.h:31413 */
+/* onvif.h:32809 */
 #ifndef SOAP_TYPE___tds__GetSystemDateAndTime
-#define SOAP_TYPE___tds__GetSystemDateAndTime (2117)
+#define SOAP_TYPE___tds__GetSystemDateAndTime (2185)
 /* Wrapper: */
 struct __tds__GetSystemDateAndTime {
         /** Optional element 'tds:GetSystemDateAndTime' of XML schema type 'tds:GetSystemDateAndTime' */
@@ -18804,9 +19595,9 @@ struct __tds__GetSystemDateAndTime {
 };
 #endif
 
-/* onvif.h:31469 */
+/* onvif.h:32865 */
 #ifndef SOAP_TYPE___tds__SetSystemFactoryDefault
-#define SOAP_TYPE___tds__SetSystemFactoryDefault (2121)
+#define SOAP_TYPE___tds__SetSystemFactoryDefault (2189)
 /* Wrapper: */
 struct __tds__SetSystemFactoryDefault {
         /** Optional element 'tds:SetSystemFactoryDefault' of XML schema type 'tds:SetSystemFactoryDefault' */
@@ -18814,9 +19605,9 @@ struct __tds__SetSystemFactoryDefault {
 };
 #endif
 
-/* onvif.h:31531 */
+/* onvif.h:32927 */
 #ifndef SOAP_TYPE___tds__UpgradeSystemFirmware
-#define SOAP_TYPE___tds__UpgradeSystemFirmware (2125)
+#define SOAP_TYPE___tds__UpgradeSystemFirmware (2193)
 /* Wrapper: */
 struct __tds__UpgradeSystemFirmware {
         /** Optional element 'tds:UpgradeSystemFirmware' of XML schema type 'tds:UpgradeSystemFirmware' */
@@ -18824,9 +19615,9 @@ struct __tds__UpgradeSystemFirmware {
 };
 #endif
 
-/* onvif.h:31587 */
+/* onvif.h:32983 */
 #ifndef SOAP_TYPE___tds__SystemReboot
-#define SOAP_TYPE___tds__SystemReboot (2129)
+#define SOAP_TYPE___tds__SystemReboot (2197)
 /* Wrapper: */
 struct __tds__SystemReboot {
         /** Optional element 'tds:SystemReboot' of XML schema type 'tds:SystemReboot' */
@@ -18834,9 +19625,9 @@ struct __tds__SystemReboot {
 };
 #endif
 
-/* onvif.h:31651 */
+/* onvif.h:33047 */
 #ifndef SOAP_TYPE___tds__RestoreSystem
-#define SOAP_TYPE___tds__RestoreSystem (2133)
+#define SOAP_TYPE___tds__RestoreSystem (2201)
 /* Wrapper: */
 struct __tds__RestoreSystem {
         /** Optional element 'tds:RestoreSystem' of XML schema type 'tds:RestoreSystem' */
@@ -18844,9 +19635,9 @@ struct __tds__RestoreSystem {
 };
 #endif
 
-/* onvif.h:31714 */
+/* onvif.h:33110 */
 #ifndef SOAP_TYPE___tds__GetSystemBackup
-#define SOAP_TYPE___tds__GetSystemBackup (2137)
+#define SOAP_TYPE___tds__GetSystemBackup (2205)
 /* Wrapper: */
 struct __tds__GetSystemBackup {
         /** Optional element 'tds:GetSystemBackup' of XML schema type 'tds:GetSystemBackup' */
@@ -18854,9 +19645,9 @@ struct __tds__GetSystemBackup {
 };
 #endif
 
-/* onvif.h:31771 */
+/* onvif.h:33167 */
 #ifndef SOAP_TYPE___tds__GetSystemLog
-#define SOAP_TYPE___tds__GetSystemLog (2141)
+#define SOAP_TYPE___tds__GetSystemLog (2209)
 /* Wrapper: */
 struct __tds__GetSystemLog {
         /** Optional element 'tds:GetSystemLog' of XML schema type 'tds:GetSystemLog' */
@@ -18864,9 +19655,9 @@ struct __tds__GetSystemLog {
 };
 #endif
 
-/* onvif.h:31827 */
+/* onvif.h:33223 */
 #ifndef SOAP_TYPE___tds__GetSystemSupportInformation
-#define SOAP_TYPE___tds__GetSystemSupportInformation (2145)
+#define SOAP_TYPE___tds__GetSystemSupportInformation (2213)
 /* Wrapper: */
 struct __tds__GetSystemSupportInformation {
         /** Optional element 'tds:GetSystemSupportInformation' of XML schema type 'tds:GetSystemSupportInformation' */
@@ -18874,9 +19665,9 @@ struct __tds__GetSystemSupportInformation {
 };
 #endif
 
-/* onvif.h:31898 */
+/* onvif.h:33294 */
 #ifndef SOAP_TYPE___tds__GetScopes
-#define SOAP_TYPE___tds__GetScopes (2149)
+#define SOAP_TYPE___tds__GetScopes (2217)
 /* Wrapper: */
 struct __tds__GetScopes {
         /** Optional element 'tds:GetScopes' of XML schema type 'tds:GetScopes' */
@@ -18884,9 +19675,9 @@ struct __tds__GetScopes {
 };
 #endif
 
-/* onvif.h:31962 */
+/* onvif.h:33358 */
 #ifndef SOAP_TYPE___tds__SetScopes
-#define SOAP_TYPE___tds__SetScopes (2153)
+#define SOAP_TYPE___tds__SetScopes (2221)
 /* Wrapper: */
 struct __tds__SetScopes {
         /** Optional element 'tds:SetScopes' of XML schema type 'tds:SetScopes' */
@@ -18894,9 +19685,9 @@ struct __tds__SetScopes {
 };
 #endif
 
-/* onvif.h:32022 */
+/* onvif.h:33418 */
 #ifndef SOAP_TYPE___tds__AddScopes
-#define SOAP_TYPE___tds__AddScopes (2157)
+#define SOAP_TYPE___tds__AddScopes (2225)
 /* Wrapper: */
 struct __tds__AddScopes {
         /** Optional element 'tds:AddScopes' of XML schema type 'tds:AddScopes' */
@@ -18904,9 +19695,9 @@ struct __tds__AddScopes {
 };
 #endif
 
-/* onvif.h:32084 */
+/* onvif.h:33480 */
 #ifndef SOAP_TYPE___tds__RemoveScopes
-#define SOAP_TYPE___tds__RemoveScopes (2161)
+#define SOAP_TYPE___tds__RemoveScopes (2229)
 /* Wrapper: */
 struct __tds__RemoveScopes {
         /** Optional element 'tds:RemoveScopes' of XML schema type 'tds:RemoveScopes' */
@@ -18914,9 +19705,9 @@ struct __tds__RemoveScopes {
 };
 #endif
 
-/* onvif.h:32144 */
+/* onvif.h:33540 */
 #ifndef SOAP_TYPE___tds__GetDiscoveryMode
-#define SOAP_TYPE___tds__GetDiscoveryMode (2165)
+#define SOAP_TYPE___tds__GetDiscoveryMode (2233)
 /* Wrapper: */
 struct __tds__GetDiscoveryMode {
         /** Optional element 'tds:GetDiscoveryMode' of XML schema type 'tds:GetDiscoveryMode' */
@@ -18924,9 +19715,9 @@ struct __tds__GetDiscoveryMode {
 };
 #endif
 
-/* onvif.h:32205 */
+/* onvif.h:33601 */
 #ifndef SOAP_TYPE___tds__SetDiscoveryMode
-#define SOAP_TYPE___tds__SetDiscoveryMode (2169)
+#define SOAP_TYPE___tds__SetDiscoveryMode (2237)
 /* Wrapper: */
 struct __tds__SetDiscoveryMode {
         /** Optional element 'tds:SetDiscoveryMode' of XML schema type 'tds:SetDiscoveryMode' */
@@ -18934,9 +19725,9 @@ struct __tds__SetDiscoveryMode {
 };
 #endif
 
-/* onvif.h:32267 */
+/* onvif.h:33663 */
 #ifndef SOAP_TYPE___tds__GetRemoteDiscoveryMode
-#define SOAP_TYPE___tds__GetRemoteDiscoveryMode (2173)
+#define SOAP_TYPE___tds__GetRemoteDiscoveryMode (2241)
 /* Wrapper: */
 struct __tds__GetRemoteDiscoveryMode {
         /** Optional element 'tds:GetRemoteDiscoveryMode' of XML schema type 'tds:GetRemoteDiscoveryMode' */
@@ -18944,9 +19735,9 @@ struct __tds__GetRemoteDiscoveryMode {
 };
 #endif
 
-/* onvif.h:32329 */
+/* onvif.h:33725 */
 #ifndef SOAP_TYPE___tds__SetRemoteDiscoveryMode
-#define SOAP_TYPE___tds__SetRemoteDiscoveryMode (2177)
+#define SOAP_TYPE___tds__SetRemoteDiscoveryMode (2245)
 /* Wrapper: */
 struct __tds__SetRemoteDiscoveryMode {
         /** Optional element 'tds:SetRemoteDiscoveryMode' of XML schema type 'tds:SetRemoteDiscoveryMode' */
@@ -18954,9 +19745,9 @@ struct __tds__SetRemoteDiscoveryMode {
 };
 #endif
 
-/* onvif.h:32389 */
+/* onvif.h:33785 */
 #ifndef SOAP_TYPE___tds__GetDPAddresses
-#define SOAP_TYPE___tds__GetDPAddresses (2181)
+#define SOAP_TYPE___tds__GetDPAddresses (2249)
 /* Wrapper: */
 struct __tds__GetDPAddresses {
         /** Optional element 'tds:GetDPAddresses' of XML schema type 'tds:GetDPAddresses' */
@@ -18964,9 +19755,9 @@ struct __tds__GetDPAddresses {
 };
 #endif
 
-/* onvif.h:32451 */
+/* onvif.h:33847 */
 #ifndef SOAP_TYPE___tds__GetEndpointReference
-#define SOAP_TYPE___tds__GetEndpointReference (2185)
+#define SOAP_TYPE___tds__GetEndpointReference (2253)
 /* Wrapper: */
 struct __tds__GetEndpointReference {
         /** Optional element 'tds:GetEndpointReference' of XML schema type 'tds:GetEndpointReference' */
@@ -18974,9 +19765,9 @@ struct __tds__GetEndpointReference {
 };
 #endif
 
-/* onvif.h:32513 */
+/* onvif.h:33909 */
 #ifndef SOAP_TYPE___tds__GetRemoteUser
-#define SOAP_TYPE___tds__GetRemoteUser (2189)
+#define SOAP_TYPE___tds__GetRemoteUser (2257)
 /* Wrapper: */
 struct __tds__GetRemoteUser {
         /** Optional element 'tds:GetRemoteUser' of XML schema type 'tds:GetRemoteUser' */
@@ -18984,9 +19775,9 @@ struct __tds__GetRemoteUser {
 };
 #endif
 
-/* onvif.h:32580 */
+/* onvif.h:33976 */
 #ifndef SOAP_TYPE___tds__SetRemoteUser
-#define SOAP_TYPE___tds__SetRemoteUser (2193)
+#define SOAP_TYPE___tds__SetRemoteUser (2261)
 /* Wrapper: */
 struct __tds__SetRemoteUser {
         /** Optional element 'tds:SetRemoteUser' of XML schema type 'tds:SetRemoteUser' */
@@ -18994,9 +19785,9 @@ struct __tds__SetRemoteUser {
 };
 #endif
 
-/* onvif.h:32640 */
+/* onvif.h:34036 */
 #ifndef SOAP_TYPE___tds__GetUsers
-#define SOAP_TYPE___tds__GetUsers (2197)
+#define SOAP_TYPE___tds__GetUsers (2265)
 /* Wrapper: */
 struct __tds__GetUsers {
         /** Optional element 'tds:GetUsers' of XML schema type 'tds:GetUsers' */
@@ -19004,9 +19795,9 @@ struct __tds__GetUsers {
 };
 #endif
 
-/* onvif.h:32708 */
+/* onvif.h:34104 */
 #ifndef SOAP_TYPE___tds__CreateUsers
-#define SOAP_TYPE___tds__CreateUsers (2201)
+#define SOAP_TYPE___tds__CreateUsers (2269)
 /* Wrapper: */
 struct __tds__CreateUsers {
         /** Optional element 'tds:CreateUsers' of XML schema type 'tds:CreateUsers' */
@@ -19014,9 +19805,9 @@ struct __tds__CreateUsers {
 };
 #endif
 
-/* onvif.h:32771 */
+/* onvif.h:34167 */
 #ifndef SOAP_TYPE___tds__DeleteUsers
-#define SOAP_TYPE___tds__DeleteUsers (2205)
+#define SOAP_TYPE___tds__DeleteUsers (2273)
 /* Wrapper: */
 struct __tds__DeleteUsers {
         /** Optional element 'tds:DeleteUsers' of XML schema type 'tds:DeleteUsers' */
@@ -19024,9 +19815,9 @@ struct __tds__DeleteUsers {
 };
 #endif
 
-/* onvif.h:32832 */
+/* onvif.h:34228 */
 #ifndef SOAP_TYPE___tds__SetUser
-#define SOAP_TYPE___tds__SetUser (2209)
+#define SOAP_TYPE___tds__SetUser (2277)
 /* Wrapper: */
 struct __tds__SetUser {
         /** Optional element 'tds:SetUser' of XML schema type 'tds:SetUser' */
@@ -19034,9 +19825,9 @@ struct __tds__SetUser {
 };
 #endif
 
-/* onvif.h:32889 */
+/* onvif.h:34285 */
 #ifndef SOAP_TYPE___tds__GetWsdlUrl
-#define SOAP_TYPE___tds__GetWsdlUrl (2213)
+#define SOAP_TYPE___tds__GetWsdlUrl (2281)
 /* Wrapper: */
 struct __tds__GetWsdlUrl {
         /** Optional element 'tds:GetWsdlUrl' of XML schema type 'tds:GetWsdlUrl' */
@@ -19044,9 +19835,9 @@ struct __tds__GetWsdlUrl {
 };
 #endif
 
-/* onvif.h:32946 */
+/* onvif.h:34342 */
 #ifndef SOAP_TYPE___tds__GetPasswordComplexityOptions
-#define SOAP_TYPE___tds__GetPasswordComplexityOptions (2217)
+#define SOAP_TYPE___tds__GetPasswordComplexityOptions (2285)
 /* Wrapper: */
 struct __tds__GetPasswordComplexityOptions {
         /** Optional element 'tds:GetPasswordComplexityOptions' of XML schema type 'tds:GetPasswordComplexityOptions' */
@@ -19054,9 +19845,9 @@ struct __tds__GetPasswordComplexityOptions {
 };
 #endif
 
-/* onvif.h:33002 */
+/* onvif.h:34398 */
 #ifndef SOAP_TYPE___tds__GetPasswordComplexityConfiguration
-#define SOAP_TYPE___tds__GetPasswordComplexityConfiguration (2221)
+#define SOAP_TYPE___tds__GetPasswordComplexityConfiguration (2289)
 /* Wrapper: */
 struct __tds__GetPasswordComplexityConfiguration {
         /** Optional element 'tds:GetPasswordComplexityConfiguration' of XML schema type 'tds:GetPasswordComplexityConfiguration' */
@@ -19064,9 +19855,9 @@ struct __tds__GetPasswordComplexityConfiguration {
 };
 #endif
 
-/* onvif.h:33058 */
+/* onvif.h:34454 */
 #ifndef SOAP_TYPE___tds__SetPasswordComplexityConfiguration
-#define SOAP_TYPE___tds__SetPasswordComplexityConfiguration (2225)
+#define SOAP_TYPE___tds__SetPasswordComplexityConfiguration (2293)
 /* Wrapper: */
 struct __tds__SetPasswordComplexityConfiguration {
         /** Optional element 'tds:SetPasswordComplexityConfiguration' of XML schema type 'tds:SetPasswordComplexityConfiguration' */
@@ -19074,9 +19865,9 @@ struct __tds__SetPasswordComplexityConfiguration {
 };
 #endif
 
-/* onvif.h:33114 */
+/* onvif.h:34510 */
 #ifndef SOAP_TYPE___tds__GetPasswordHistoryConfiguration
-#define SOAP_TYPE___tds__GetPasswordHistoryConfiguration (2229)
+#define SOAP_TYPE___tds__GetPasswordHistoryConfiguration (2297)
 /* Wrapper: */
 struct __tds__GetPasswordHistoryConfiguration {
         /** Optional element 'tds:GetPasswordHistoryConfiguration' of XML schema type 'tds:GetPasswordHistoryConfiguration' */
@@ -19084,9 +19875,9 @@ struct __tds__GetPasswordHistoryConfiguration {
 };
 #endif
 
-/* onvif.h:33170 */
+/* onvif.h:34566 */
 #ifndef SOAP_TYPE___tds__SetPasswordHistoryConfiguration
-#define SOAP_TYPE___tds__SetPasswordHistoryConfiguration (2233)
+#define SOAP_TYPE___tds__SetPasswordHistoryConfiguration (2301)
 /* Wrapper: */
 struct __tds__SetPasswordHistoryConfiguration {
         /** Optional element 'tds:SetPasswordHistoryConfiguration' of XML schema type 'tds:SetPasswordHistoryConfiguration' */
@@ -19094,9 +19885,9 @@ struct __tds__SetPasswordHistoryConfiguration {
 };
 #endif
 
-/* onvif.h:33227 */
+/* onvif.h:34623 */
 #ifndef SOAP_TYPE___tds__GetAuthFailureWarningOptions
-#define SOAP_TYPE___tds__GetAuthFailureWarningOptions (2237)
+#define SOAP_TYPE___tds__GetAuthFailureWarningOptions (2305)
 /* Wrapper: */
 struct __tds__GetAuthFailureWarningOptions {
         /** Optional element 'tds:GetAuthFailureWarningOptions' of XML schema type 'tds:GetAuthFailureWarningOptions' */
@@ -19104,9 +19895,9 @@ struct __tds__GetAuthFailureWarningOptions {
 };
 #endif
 
-/* onvif.h:33284 */
+/* onvif.h:34680 */
 #ifndef SOAP_TYPE___tds__GetAuthFailureWarningConfiguration
-#define SOAP_TYPE___tds__GetAuthFailureWarningConfiguration (2241)
+#define SOAP_TYPE___tds__GetAuthFailureWarningConfiguration (2309)
 /* Wrapper: */
 struct __tds__GetAuthFailureWarningConfiguration {
         /** Optional element 'tds:GetAuthFailureWarningConfiguration' of XML schema type 'tds:GetAuthFailureWarningConfiguration' */
@@ -19114,9 +19905,9 @@ struct __tds__GetAuthFailureWarningConfiguration {
 };
 #endif
 
-/* onvif.h:33340 */
+/* onvif.h:34736 */
 #ifndef SOAP_TYPE___tds__SetAuthFailureWarningConfiguration
-#define SOAP_TYPE___tds__SetAuthFailureWarningConfiguration (2245)
+#define SOAP_TYPE___tds__SetAuthFailureWarningConfiguration (2313)
 /* Wrapper: */
 struct __tds__SetAuthFailureWarningConfiguration {
         /** Optional element 'tds:SetAuthFailureWarningConfiguration' of XML schema type 'tds:SetAuthFailureWarningConfiguration' */
@@ -19124,9 +19915,9 @@ struct __tds__SetAuthFailureWarningConfiguration {
 };
 #endif
 
-/* onvif.h:33398 */
+/* onvif.h:34794 */
 #ifndef SOAP_TYPE___tds__GetCapabilities
-#define SOAP_TYPE___tds__GetCapabilities (2249)
+#define SOAP_TYPE___tds__GetCapabilities (2317)
 /* Wrapper: */
 struct __tds__GetCapabilities {
         /** Optional element 'tds:GetCapabilities' of XML schema type 'tds:GetCapabilities' */
@@ -19134,9 +19925,9 @@ struct __tds__GetCapabilities {
 };
 #endif
 
-/* onvif.h:33459 */
+/* onvif.h:34855 */
 #ifndef SOAP_TYPE___tds__SetDPAddresses
-#define SOAP_TYPE___tds__SetDPAddresses (2253)
+#define SOAP_TYPE___tds__SetDPAddresses (2321)
 /* Wrapper: */
 struct __tds__SetDPAddresses {
         /** Optional element 'tds:SetDPAddresses' of XML schema type 'tds:SetDPAddresses' */
@@ -19144,9 +19935,9 @@ struct __tds__SetDPAddresses {
 };
 #endif
 
-/* onvif.h:33518 */
+/* onvif.h:34914 */
 #ifndef SOAP_TYPE___tds__GetHostname
-#define SOAP_TYPE___tds__GetHostname (2257)
+#define SOAP_TYPE___tds__GetHostname (2325)
 /* Wrapper: */
 struct __tds__GetHostname {
         /** Optional element 'tds:GetHostname' of XML schema type 'tds:GetHostname' */
@@ -19154,9 +19945,9 @@ struct __tds__GetHostname {
 };
 #endif
 
-/* onvif.h:33581 */
+/* onvif.h:34977 */
 #ifndef SOAP_TYPE___tds__SetHostname
-#define SOAP_TYPE___tds__SetHostname (2261)
+#define SOAP_TYPE___tds__SetHostname (2329)
 /* Wrapper: */
 struct __tds__SetHostname {
         /** Optional element 'tds:SetHostname' of XML schema type 'tds:SetHostname' */
@@ -19164,9 +19955,9 @@ struct __tds__SetHostname {
 };
 #endif
 
-/* onvif.h:33637 */
+/* onvif.h:35033 */
 #ifndef SOAP_TYPE___tds__SetHostnameFromDHCP
-#define SOAP_TYPE___tds__SetHostnameFromDHCP (2265)
+#define SOAP_TYPE___tds__SetHostnameFromDHCP (2333)
 /* Wrapper: */
 struct __tds__SetHostnameFromDHCP {
         /** Optional element 'tds:SetHostnameFromDHCP' of XML schema type 'tds:SetHostnameFromDHCP' */
@@ -19174,9 +19965,9 @@ struct __tds__SetHostnameFromDHCP {
 };
 #endif
 
-/* onvif.h:33695 */
+/* onvif.h:35091 */
 #ifndef SOAP_TYPE___tds__GetDNS
-#define SOAP_TYPE___tds__GetDNS (2269)
+#define SOAP_TYPE___tds__GetDNS (2337)
 /* Wrapper: */
 struct __tds__GetDNS {
         /** Optional element 'tds:GetDNS' of XML schema type 'tds:GetDNS' */
@@ -19184,9 +19975,9 @@ struct __tds__GetDNS {
 };
 #endif
 
-/* onvif.h:33753 */
+/* onvif.h:35149 */
 #ifndef SOAP_TYPE___tds__SetDNS
-#define SOAP_TYPE___tds__SetDNS (2273)
+#define SOAP_TYPE___tds__SetDNS (2341)
 /* Wrapper: */
 struct __tds__SetDNS {
         /** Optional element 'tds:SetDNS' of XML schema type 'tds:SetDNS' */
@@ -19194,9 +19985,9 @@ struct __tds__SetDNS {
 };
 #endif
 
-/* onvif.h:33812 */
+/* onvif.h:35208 */
 #ifndef SOAP_TYPE___tds__GetNTP
-#define SOAP_TYPE___tds__GetNTP (2277)
+#define SOAP_TYPE___tds__GetNTP (2345)
 /* Wrapper: */
 struct __tds__GetNTP {
         /** Optional element 'tds:GetNTP' of XML schema type 'tds:GetNTP' */
@@ -19204,9 +19995,9 @@ struct __tds__GetNTP {
 };
 #endif
 
-/* onvif.h:33878 */
+/* onvif.h:35274 */
 #ifndef SOAP_TYPE___tds__SetNTP
-#define SOAP_TYPE___tds__SetNTP (2281)
+#define SOAP_TYPE___tds__SetNTP (2349)
 /* Wrapper: */
 struct __tds__SetNTP {
         /** Optional element 'tds:SetNTP' of XML schema type 'tds:SetNTP' */
@@ -19214,9 +20005,9 @@ struct __tds__SetNTP {
 };
 #endif
 
-/* onvif.h:33938 */
+/* onvif.h:35334 */
 #ifndef SOAP_TYPE___tds__GetDynamicDNS
-#define SOAP_TYPE___tds__GetDynamicDNS (2285)
+#define SOAP_TYPE___tds__GetDynamicDNS (2353)
 /* Wrapper: */
 struct __tds__GetDynamicDNS {
         /** Optional element 'tds:GetDynamicDNS' of XML schema type 'tds:GetDynamicDNS' */
@@ -19224,9 +20015,9 @@ struct __tds__GetDynamicDNS {
 };
 #endif
 
-/* onvif.h:33998 */
+/* onvif.h:35394 */
 #ifndef SOAP_TYPE___tds__SetDynamicDNS
-#define SOAP_TYPE___tds__SetDynamicDNS (2289)
+#define SOAP_TYPE___tds__SetDynamicDNS (2357)
 /* Wrapper: */
 struct __tds__SetDynamicDNS {
         /** Optional element 'tds:SetDynamicDNS' of XML schema type 'tds:SetDynamicDNS' */
@@ -19234,9 +20025,9 @@ struct __tds__SetDynamicDNS {
 };
 #endif
 
-/* onvif.h:34058 */
+/* onvif.h:35454 */
 #ifndef SOAP_TYPE___tds__GetNetworkInterfaces
-#define SOAP_TYPE___tds__GetNetworkInterfaces (2293)
+#define SOAP_TYPE___tds__GetNetworkInterfaces (2361)
 /* Wrapper: */
 struct __tds__GetNetworkInterfaces {
         /** Optional element 'tds:GetNetworkInterfaces' of XML schema type 'tds:GetNetworkInterfaces' */
@@ -19244,9 +20035,9 @@ struct __tds__GetNetworkInterfaces {
 };
 #endif
 
-/* onvif.h:34123 */
+/* onvif.h:35519 */
 #ifndef SOAP_TYPE___tds__SetNetworkInterfaces
-#define SOAP_TYPE___tds__SetNetworkInterfaces (2297)
+#define SOAP_TYPE___tds__SetNetworkInterfaces (2365)
 /* Wrapper: */
 struct __tds__SetNetworkInterfaces {
         /** Optional element 'tds:SetNetworkInterfaces' of XML schema type 'tds:SetNetworkInterfaces' */
@@ -19254,9 +20045,9 @@ struct __tds__SetNetworkInterfaces {
 };
 #endif
 
-/* onvif.h:34182 */
+/* onvif.h:35578 */
 #ifndef SOAP_TYPE___tds__GetNetworkProtocols
-#define SOAP_TYPE___tds__GetNetworkProtocols (2301)
+#define SOAP_TYPE___tds__GetNetworkProtocols (2369)
 /* Wrapper: */
 struct __tds__GetNetworkProtocols {
         /** Optional element 'tds:GetNetworkProtocols' of XML schema type 'tds:GetNetworkProtocols' */
@@ -19264,9 +20055,9 @@ struct __tds__GetNetworkProtocols {
 };
 #endif
 
-/* onvif.h:34241 */
+/* onvif.h:35637 */
 #ifndef SOAP_TYPE___tds__SetNetworkProtocols
-#define SOAP_TYPE___tds__SetNetworkProtocols (2305)
+#define SOAP_TYPE___tds__SetNetworkProtocols (2373)
 /* Wrapper: */
 struct __tds__SetNetworkProtocols {
         /** Optional element 'tds:SetNetworkProtocols' of XML schema type 'tds:SetNetworkProtocols' */
@@ -19274,9 +20065,9 @@ struct __tds__SetNetworkProtocols {
 };
 #endif
 
-/* onvif.h:34300 */
+/* onvif.h:35696 */
 #ifndef SOAP_TYPE___tds__GetNetworkDefaultGateway
-#define SOAP_TYPE___tds__GetNetworkDefaultGateway (2309)
+#define SOAP_TYPE___tds__GetNetworkDefaultGateway (2377)
 /* Wrapper: */
 struct __tds__GetNetworkDefaultGateway {
         /** Optional element 'tds:GetNetworkDefaultGateway' of XML schema type 'tds:GetNetworkDefaultGateway' */
@@ -19284,9 +20075,9 @@ struct __tds__GetNetworkDefaultGateway {
 };
 #endif
 
-/* onvif.h:34358 */
+/* onvif.h:35754 */
 #ifndef SOAP_TYPE___tds__SetNetworkDefaultGateway
-#define SOAP_TYPE___tds__SetNetworkDefaultGateway (2313)
+#define SOAP_TYPE___tds__SetNetworkDefaultGateway (2381)
 /* Wrapper: */
 struct __tds__SetNetworkDefaultGateway {
         /** Optional element 'tds:SetNetworkDefaultGateway' of XML schema type 'tds:SetNetworkDefaultGateway' */
@@ -19294,9 +20085,9 @@ struct __tds__SetNetworkDefaultGateway {
 };
 #endif
 
-/* onvif.h:34421 */
+/* onvif.h:35817 */
 #ifndef SOAP_TYPE___tds__GetZeroConfiguration
-#define SOAP_TYPE___tds__GetZeroConfiguration (2317)
+#define SOAP_TYPE___tds__GetZeroConfiguration (2385)
 /* Wrapper: */
 struct __tds__GetZeroConfiguration {
         /** Optional element 'tds:GetZeroConfiguration' of XML schema type 'tds:GetZeroConfiguration' */
@@ -19304,9 +20095,9 @@ struct __tds__GetZeroConfiguration {
 };
 #endif
 
-/* onvif.h:34478 */
+/* onvif.h:35874 */
 #ifndef SOAP_TYPE___tds__SetZeroConfiguration
-#define SOAP_TYPE___tds__SetZeroConfiguration (2321)
+#define SOAP_TYPE___tds__SetZeroConfiguration (2389)
 /* Wrapper: */
 struct __tds__SetZeroConfiguration {
         /** Optional element 'tds:SetZeroConfiguration' of XML schema type 'tds:SetZeroConfiguration' */
@@ -19314,9 +20105,9 @@ struct __tds__SetZeroConfiguration {
 };
 #endif
 
-/* onvif.h:34538 */
+/* onvif.h:35934 */
 #ifndef SOAP_TYPE___tds__GetIPAddressFilter
-#define SOAP_TYPE___tds__GetIPAddressFilter (2325)
+#define SOAP_TYPE___tds__GetIPAddressFilter (2393)
 /* Wrapper: */
 struct __tds__GetIPAddressFilter {
         /** Optional element 'tds:GetIPAddressFilter' of XML schema type 'tds:GetIPAddressFilter' */
@@ -19324,9 +20115,9 @@ struct __tds__GetIPAddressFilter {
 };
 #endif
 
-/* onvif.h:34600 */
+/* onvif.h:35996 */
 #ifndef SOAP_TYPE___tds__SetIPAddressFilter
-#define SOAP_TYPE___tds__SetIPAddressFilter (2329)
+#define SOAP_TYPE___tds__SetIPAddressFilter (2397)
 /* Wrapper: */
 struct __tds__SetIPAddressFilter {
         /** Optional element 'tds:SetIPAddressFilter' of XML schema type 'tds:SetIPAddressFilter' */
@@ -19334,9 +20125,9 @@ struct __tds__SetIPAddressFilter {
 };
 #endif
 
-/* onvif.h:34661 */
+/* onvif.h:36057 */
 #ifndef SOAP_TYPE___tds__AddIPAddressFilter
-#define SOAP_TYPE___tds__AddIPAddressFilter (2333)
+#define SOAP_TYPE___tds__AddIPAddressFilter (2401)
 /* Wrapper: */
 struct __tds__AddIPAddressFilter {
         /** Optional element 'tds:AddIPAddressFilter' of XML schema type 'tds:AddIPAddressFilter' */
@@ -19344,9 +20135,9 @@ struct __tds__AddIPAddressFilter {
 };
 #endif
 
-/* onvif.h:34722 */
+/* onvif.h:36118 */
 #ifndef SOAP_TYPE___tds__RemoveIPAddressFilter
-#define SOAP_TYPE___tds__RemoveIPAddressFilter (2337)
+#define SOAP_TYPE___tds__RemoveIPAddressFilter (2405)
 /* Wrapper: */
 struct __tds__RemoveIPAddressFilter {
         /** Optional element 'tds:RemoveIPAddressFilter' of XML schema type 'tds:RemoveIPAddressFilter' */
@@ -19354,9 +20145,9 @@ struct __tds__RemoveIPAddressFilter {
 };
 #endif
 
-/* onvif.h:34792 */
+/* onvif.h:36188 */
 #ifndef SOAP_TYPE___tds__GetAccessPolicy
-#define SOAP_TYPE___tds__GetAccessPolicy (2341)
+#define SOAP_TYPE___tds__GetAccessPolicy (2409)
 /* Wrapper: */
 struct __tds__GetAccessPolicy {
         /** Optional element 'tds:GetAccessPolicy' of XML schema type 'tds:GetAccessPolicy' */
@@ -19364,9 +20155,9 @@ struct __tds__GetAccessPolicy {
 };
 #endif
 
-/* onvif.h:34853 */
+/* onvif.h:36249 */
 #ifndef SOAP_TYPE___tds__SetAccessPolicy
-#define SOAP_TYPE___tds__SetAccessPolicy (2345)
+#define SOAP_TYPE___tds__SetAccessPolicy (2413)
 /* Wrapper: */
 struct __tds__SetAccessPolicy {
         /** Optional element 'tds:SetAccessPolicy' of XML schema type 'tds:SetAccessPolicy' */
@@ -19374,9 +20165,9 @@ struct __tds__SetAccessPolicy {
 };
 #endif
 
-/* onvif.h:34908 */
+/* onvif.h:36304 */
 #ifndef SOAP_TYPE___tds__CreateCertificate
-#define SOAP_TYPE___tds__CreateCertificate (2349)
+#define SOAP_TYPE___tds__CreateCertificate (2417)
 /* Wrapper: */
 struct __tds__CreateCertificate {
         /** Optional element 'tds:CreateCertificate' of XML schema type 'tds:CreateCertificate' */
@@ -19384,9 +20175,9 @@ struct __tds__CreateCertificate {
 };
 #endif
 
-/* onvif.h:34963 */
+/* onvif.h:36359 */
 #ifndef SOAP_TYPE___tds__GetCertificates
-#define SOAP_TYPE___tds__GetCertificates (2353)
+#define SOAP_TYPE___tds__GetCertificates (2421)
 /* Wrapper: */
 struct __tds__GetCertificates {
         /** Optional element 'tds:GetCertificates' of XML schema type 'tds:GetCertificates' */
@@ -19394,9 +20185,9 @@ struct __tds__GetCertificates {
 };
 #endif
 
-/* onvif.h:35018 */
+/* onvif.h:36414 */
 #ifndef SOAP_TYPE___tds__GetCertificatesStatus
-#define SOAP_TYPE___tds__GetCertificatesStatus (2357)
+#define SOAP_TYPE___tds__GetCertificatesStatus (2425)
 /* Wrapper: */
 struct __tds__GetCertificatesStatus {
         /** Optional element 'tds:GetCertificatesStatus' of XML schema type 'tds:GetCertificatesStatus' */
@@ -19404,9 +20195,9 @@ struct __tds__GetCertificatesStatus {
 };
 #endif
 
-/* onvif.h:35073 */
+/* onvif.h:36469 */
 #ifndef SOAP_TYPE___tds__SetCertificatesStatus
-#define SOAP_TYPE___tds__SetCertificatesStatus (2361)
+#define SOAP_TYPE___tds__SetCertificatesStatus (2429)
 /* Wrapper: */
 struct __tds__SetCertificatesStatus {
         /** Optional element 'tds:SetCertificatesStatus' of XML schema type 'tds:SetCertificatesStatus' */
@@ -19414,9 +20205,9 @@ struct __tds__SetCertificatesStatus {
 };
 #endif
 
-/* onvif.h:35128 */
+/* onvif.h:36524 */
 #ifndef SOAP_TYPE___tds__DeleteCertificates
-#define SOAP_TYPE___tds__DeleteCertificates (2365)
+#define SOAP_TYPE___tds__DeleteCertificates (2433)
 /* Wrapper: */
 struct __tds__DeleteCertificates {
         /** Optional element 'tds:DeleteCertificates' of XML schema type 'tds:DeleteCertificates' */
@@ -19424,9 +20215,9 @@ struct __tds__DeleteCertificates {
 };
 #endif
 
-/* onvif.h:35183 */
+/* onvif.h:36579 */
 #ifndef SOAP_TYPE___tds__GetPkcs10Request
-#define SOAP_TYPE___tds__GetPkcs10Request (2369)
+#define SOAP_TYPE___tds__GetPkcs10Request (2437)
 /* Wrapper: */
 struct __tds__GetPkcs10Request {
         /** Optional element 'tds:GetPkcs10Request' of XML schema type 'tds:GetPkcs10Request' */
@@ -19434,9 +20225,9 @@ struct __tds__GetPkcs10Request {
 };
 #endif
 
-/* onvif.h:35238 */
+/* onvif.h:36634 */
 #ifndef SOAP_TYPE___tds__LoadCertificates
-#define SOAP_TYPE___tds__LoadCertificates (2373)
+#define SOAP_TYPE___tds__LoadCertificates (2441)
 /* Wrapper: */
 struct __tds__LoadCertificates {
         /** Optional element 'tds:LoadCertificates' of XML schema type 'tds:LoadCertificates' */
@@ -19444,9 +20235,9 @@ struct __tds__LoadCertificates {
 };
 #endif
 
-/* onvif.h:35293 */
+/* onvif.h:36689 */
 #ifndef SOAP_TYPE___tds__GetClientCertificateMode
-#define SOAP_TYPE___tds__GetClientCertificateMode (2377)
+#define SOAP_TYPE___tds__GetClientCertificateMode (2445)
 /* Wrapper: */
 struct __tds__GetClientCertificateMode {
         /** Optional element 'tds:GetClientCertificateMode' of XML schema type 'tds:GetClientCertificateMode' */
@@ -19454,9 +20245,9 @@ struct __tds__GetClientCertificateMode {
 };
 #endif
 
-/* onvif.h:35348 */
+/* onvif.h:36744 */
 #ifndef SOAP_TYPE___tds__SetClientCertificateMode
-#define SOAP_TYPE___tds__SetClientCertificateMode (2381)
+#define SOAP_TYPE___tds__SetClientCertificateMode (2449)
 /* Wrapper: */
 struct __tds__SetClientCertificateMode {
         /** Optional element 'tds:SetClientCertificateMode' of XML schema type 'tds:SetClientCertificateMode' */
@@ -19464,9 +20255,9 @@ struct __tds__SetClientCertificateMode {
 };
 #endif
 
-/* onvif.h:35406 */
+/* onvif.h:36802 */
 #ifndef SOAP_TYPE___tds__GetRelayOutputs
-#define SOAP_TYPE___tds__GetRelayOutputs (2385)
+#define SOAP_TYPE___tds__GetRelayOutputs (2453)
 /* Wrapper: */
 struct __tds__GetRelayOutputs {
         /** Optional element 'tds:GetRelayOutputs' of XML schema type 'tds:GetRelayOutputs' */
@@ -19474,9 +20265,9 @@ struct __tds__GetRelayOutputs {
 };
 #endif
 
-/* onvif.h:35464 */
+/* onvif.h:36860 */
 #ifndef SOAP_TYPE___tds__SetRelayOutputSettings
-#define SOAP_TYPE___tds__SetRelayOutputSettings (2389)
+#define SOAP_TYPE___tds__SetRelayOutputSettings (2457)
 /* Wrapper: */
 struct __tds__SetRelayOutputSettings {
         /** Optional element 'tds:SetRelayOutputSettings' of XML schema type 'tds:SetRelayOutputSettings' */
@@ -19484,9 +20275,9 @@ struct __tds__SetRelayOutputSettings {
 };
 #endif
 
-/* onvif.h:35522 */
+/* onvif.h:36918 */
 #ifndef SOAP_TYPE___tds__SetRelayOutputState
-#define SOAP_TYPE___tds__SetRelayOutputState (2393)
+#define SOAP_TYPE___tds__SetRelayOutputState (2461)
 /* Wrapper: */
 struct __tds__SetRelayOutputState {
         /** Optional element 'tds:SetRelayOutputState' of XML schema type 'tds:SetRelayOutputState' */
@@ -19494,9 +20285,9 @@ struct __tds__SetRelayOutputState {
 };
 #endif
 
-/* onvif.h:35609 */
+/* onvif.h:37005 */
 #ifndef SOAP_TYPE___tds__SendAuxiliaryCommand
-#define SOAP_TYPE___tds__SendAuxiliaryCommand (2397)
+#define SOAP_TYPE___tds__SendAuxiliaryCommand (2465)
 /* Wrapper: */
 struct __tds__SendAuxiliaryCommand {
         /** Optional element 'tds:SendAuxiliaryCommand' of XML schema type 'tds:SendAuxiliaryCommand' */
@@ -19504,9 +20295,9 @@ struct __tds__SendAuxiliaryCommand {
 };
 #endif
 
-/* onvif.h:35664 */
+/* onvif.h:37060 */
 #ifndef SOAP_TYPE___tds__GetCACertificates
-#define SOAP_TYPE___tds__GetCACertificates (2401)
+#define SOAP_TYPE___tds__GetCACertificates (2469)
 /* Wrapper: */
 struct __tds__GetCACertificates {
         /** Optional element 'tds:GetCACertificates' of XML schema type 'tds:GetCACertificates' */
@@ -19514,9 +20305,9 @@ struct __tds__GetCACertificates {
 };
 #endif
 
-/* onvif.h:35719 */
+/* onvif.h:37115 */
 #ifndef SOAP_TYPE___tds__LoadCertificateWithPrivateKey
-#define SOAP_TYPE___tds__LoadCertificateWithPrivateKey (2405)
+#define SOAP_TYPE___tds__LoadCertificateWithPrivateKey (2473)
 /* Wrapper: */
 struct __tds__LoadCertificateWithPrivateKey {
         /** Optional element 'tds:LoadCertificateWithPrivateKey' of XML schema type 'tds:LoadCertificateWithPrivateKey' */
@@ -19524,9 +20315,9 @@ struct __tds__LoadCertificateWithPrivateKey {
 };
 #endif
 
-/* onvif.h:35774 */
+/* onvif.h:37170 */
 #ifndef SOAP_TYPE___tds__GetCertificateInformation
-#define SOAP_TYPE___tds__GetCertificateInformation (2409)
+#define SOAP_TYPE___tds__GetCertificateInformation (2477)
 /* Wrapper: */
 struct __tds__GetCertificateInformation {
         /** Optional element 'tds:GetCertificateInformation' of XML schema type 'tds:GetCertificateInformation' */
@@ -19534,9 +20325,9 @@ struct __tds__GetCertificateInformation {
 };
 #endif
 
-/* onvif.h:35829 */
+/* onvif.h:37225 */
 #ifndef SOAP_TYPE___tds__LoadCACertificates
-#define SOAP_TYPE___tds__LoadCACertificates (2413)
+#define SOAP_TYPE___tds__LoadCACertificates (2481)
 /* Wrapper: */
 struct __tds__LoadCACertificates {
         /** Optional element 'tds:LoadCACertificates' of XML schema type 'tds:LoadCACertificates' */
@@ -19544,9 +20335,9 @@ struct __tds__LoadCACertificates {
 };
 #endif
 
-/* onvif.h:35884 */
+/* onvif.h:37280 */
 #ifndef SOAP_TYPE___tds__CreateDot1XConfiguration
-#define SOAP_TYPE___tds__CreateDot1XConfiguration (2417)
+#define SOAP_TYPE___tds__CreateDot1XConfiguration (2485)
 /* Wrapper: */
 struct __tds__CreateDot1XConfiguration {
         /** Optional element 'tds:CreateDot1XConfiguration' of XML schema type 'tds:CreateDot1XConfiguration' */
@@ -19554,9 +20345,9 @@ struct __tds__CreateDot1XConfiguration {
 };
 #endif
 
-/* onvif.h:35939 */
+/* onvif.h:37335 */
 #ifndef SOAP_TYPE___tds__SetDot1XConfiguration
-#define SOAP_TYPE___tds__SetDot1XConfiguration (2421)
+#define SOAP_TYPE___tds__SetDot1XConfiguration (2489)
 /* Wrapper: */
 struct __tds__SetDot1XConfiguration {
         /** Optional element 'tds:SetDot1XConfiguration' of XML schema type 'tds:SetDot1XConfiguration' */
@@ -19564,9 +20355,9 @@ struct __tds__SetDot1XConfiguration {
 };
 #endif
 
-/* onvif.h:35994 */
+/* onvif.h:37390 */
 #ifndef SOAP_TYPE___tds__GetDot1XConfiguration
-#define SOAP_TYPE___tds__GetDot1XConfiguration (2425)
+#define SOAP_TYPE___tds__GetDot1XConfiguration (2493)
 /* Wrapper: */
 struct __tds__GetDot1XConfiguration {
         /** Optional element 'tds:GetDot1XConfiguration' of XML schema type 'tds:GetDot1XConfiguration' */
@@ -19574,9 +20365,9 @@ struct __tds__GetDot1XConfiguration {
 };
 #endif
 
-/* onvif.h:36049 */
+/* onvif.h:37445 */
 #ifndef SOAP_TYPE___tds__GetDot1XConfigurations
-#define SOAP_TYPE___tds__GetDot1XConfigurations (2429)
+#define SOAP_TYPE___tds__GetDot1XConfigurations (2497)
 /* Wrapper: */
 struct __tds__GetDot1XConfigurations {
         /** Optional element 'tds:GetDot1XConfigurations' of XML schema type 'tds:GetDot1XConfigurations' */
@@ -19584,9 +20375,9 @@ struct __tds__GetDot1XConfigurations {
 };
 #endif
 
-/* onvif.h:36104 */
+/* onvif.h:37500 */
 #ifndef SOAP_TYPE___tds__DeleteDot1XConfiguration
-#define SOAP_TYPE___tds__DeleteDot1XConfiguration (2433)
+#define SOAP_TYPE___tds__DeleteDot1XConfiguration (2501)
 /* Wrapper: */
 struct __tds__DeleteDot1XConfiguration {
         /** Optional element 'tds:DeleteDot1XConfiguration' of XML schema type 'tds:DeleteDot1XConfiguration' */
@@ -19594,9 +20385,9 @@ struct __tds__DeleteDot1XConfiguration {
 };
 #endif
 
-/* onvif.h:36161 */
+/* onvif.h:37557 */
 #ifndef SOAP_TYPE___tds__GetDot11Capabilities
-#define SOAP_TYPE___tds__GetDot11Capabilities (2437)
+#define SOAP_TYPE___tds__GetDot11Capabilities (2505)
 /* Wrapper: */
 struct __tds__GetDot11Capabilities {
         /** Optional element 'tds:GetDot11Capabilities' of XML schema type 'tds:GetDot11Capabilities' */
@@ -19604,9 +20395,9 @@ struct __tds__GetDot11Capabilities {
 };
 #endif
 
-/* onvif.h:36219 */
+/* onvif.h:37615 */
 #ifndef SOAP_TYPE___tds__GetDot11Status
-#define SOAP_TYPE___tds__GetDot11Status (2441)
+#define SOAP_TYPE___tds__GetDot11Status (2509)
 /* Wrapper: */
 struct __tds__GetDot11Status {
         /** Optional element 'tds:GetDot11Status' of XML schema type 'tds:GetDot11Status' */
@@ -19614,9 +20405,9 @@ struct __tds__GetDot11Status {
 };
 #endif
 
-/* onvif.h:36277 */
+/* onvif.h:37673 */
 #ifndef SOAP_TYPE___tds__ScanAvailableDot11Networks
-#define SOAP_TYPE___tds__ScanAvailableDot11Networks (2445)
+#define SOAP_TYPE___tds__ScanAvailableDot11Networks (2513)
 /* Wrapper: */
 struct __tds__ScanAvailableDot11Networks {
         /** Optional element 'tds:ScanAvailableDot11Networks' of XML schema type 'tds:ScanAvailableDot11Networks' */
@@ -19624,9 +20415,9 @@ struct __tds__ScanAvailableDot11Networks {
 };
 #endif
 
-/* onvif.h:36352 */
+/* onvif.h:37748 */
 #ifndef SOAP_TYPE___tds__GetSystemUris
-#define SOAP_TYPE___tds__GetSystemUris (2449)
+#define SOAP_TYPE___tds__GetSystemUris (2517)
 /* Wrapper: */
 struct __tds__GetSystemUris {
         /** Optional element 'tds:GetSystemUris' of XML schema type 'tds:GetSystemUris' */
@@ -19634,9 +20425,9 @@ struct __tds__GetSystemUris {
 };
 #endif
 
-/* onvif.h:36436 */
+/* onvif.h:37832 */
 #ifndef SOAP_TYPE___tds__StartFirmwareUpgrade
-#define SOAP_TYPE___tds__StartFirmwareUpgrade (2453)
+#define SOAP_TYPE___tds__StartFirmwareUpgrade (2521)
 /* Wrapper: */
 struct __tds__StartFirmwareUpgrade {
         /** Optional element 'tds:StartFirmwareUpgrade' of XML schema type 'tds:StartFirmwareUpgrade' */
@@ -19644,9 +20435,9 @@ struct __tds__StartFirmwareUpgrade {
 };
 #endif
 
-/* onvif.h:36519 */
+/* onvif.h:37915 */
 #ifndef SOAP_TYPE___tds__StartSystemRestore
-#define SOAP_TYPE___tds__StartSystemRestore (2457)
+#define SOAP_TYPE___tds__StartSystemRestore (2525)
 /* Wrapper: */
 struct __tds__StartSystemRestore {
         /** Optional element 'tds:StartSystemRestore' of XML schema type 'tds:StartSystemRestore' */
@@ -19654,9 +20445,9 @@ struct __tds__StartSystemRestore {
 };
 #endif
 
-/* onvif.h:36577 */
+/* onvif.h:37973 */
 #ifndef SOAP_TYPE___tds__GetStorageConfigurations
-#define SOAP_TYPE___tds__GetStorageConfigurations (2461)
+#define SOAP_TYPE___tds__GetStorageConfigurations (2529)
 /* Wrapper: */
 struct __tds__GetStorageConfigurations {
         /** Optional element 'tds:GetStorageConfigurations' of XML schema type 'tds:GetStorageConfigurations' */
@@ -19664,9 +20455,9 @@ struct __tds__GetStorageConfigurations {
 };
 #endif
 
-/* onvif.h:36636 */
+/* onvif.h:38032 */
 #ifndef SOAP_TYPE___tds__CreateStorageConfiguration
-#define SOAP_TYPE___tds__CreateStorageConfiguration (2465)
+#define SOAP_TYPE___tds__CreateStorageConfiguration (2533)
 /* Wrapper: */
 struct __tds__CreateStorageConfiguration {
         /** Optional element 'tds:CreateStorageConfiguration' of XML schema type 'tds:CreateStorageConfiguration' */
@@ -19674,9 +20465,9 @@ struct __tds__CreateStorageConfiguration {
 };
 #endif
 
-/* onvif.h:36694 */
+/* onvif.h:38090 */
 #ifndef SOAP_TYPE___tds__GetStorageConfiguration
-#define SOAP_TYPE___tds__GetStorageConfiguration (2469)
+#define SOAP_TYPE___tds__GetStorageConfiguration (2537)
 /* Wrapper: */
 struct __tds__GetStorageConfiguration {
         /** Optional element 'tds:GetStorageConfiguration' of XML schema type 'tds:GetStorageConfiguration' */
@@ -19684,9 +20475,9 @@ struct __tds__GetStorageConfiguration {
 };
 #endif
 
-/* onvif.h:36751 */
+/* onvif.h:38147 */
 #ifndef SOAP_TYPE___tds__SetStorageConfiguration
-#define SOAP_TYPE___tds__SetStorageConfiguration (2473)
+#define SOAP_TYPE___tds__SetStorageConfiguration (2541)
 /* Wrapper: */
 struct __tds__SetStorageConfiguration {
         /** Optional element 'tds:SetStorageConfiguration' of XML schema type 'tds:SetStorageConfiguration' */
@@ -19694,9 +20485,9 @@ struct __tds__SetStorageConfiguration {
 };
 #endif
 
-/* onvif.h:36809 */
+/* onvif.h:38205 */
 #ifndef SOAP_TYPE___tds__DeleteStorageConfiguration
-#define SOAP_TYPE___tds__DeleteStorageConfiguration (2477)
+#define SOAP_TYPE___tds__DeleteStorageConfiguration (2545)
 /* Wrapper: */
 struct __tds__DeleteStorageConfiguration {
         /** Optional element 'tds:DeleteStorageConfiguration' of XML schema type 'tds:DeleteStorageConfiguration' */
@@ -19704,9 +20495,9 @@ struct __tds__DeleteStorageConfiguration {
 };
 #endif
 
-/* onvif.h:36867 */
+/* onvif.h:38263 */
 #ifndef SOAP_TYPE___tds__GetGeoLocation
-#define SOAP_TYPE___tds__GetGeoLocation (2481)
+#define SOAP_TYPE___tds__GetGeoLocation (2549)
 /* Wrapper: */
 struct __tds__GetGeoLocation {
         /** Optional element 'tds:GetGeoLocation' of XML schema type 'tds:GetGeoLocation' */
@@ -19714,9 +20505,9 @@ struct __tds__GetGeoLocation {
 };
 #endif
 
-/* onvif.h:36925 */
+/* onvif.h:38321 */
 #ifndef SOAP_TYPE___tds__SetGeoLocation
-#define SOAP_TYPE___tds__SetGeoLocation (2485)
+#define SOAP_TYPE___tds__SetGeoLocation (2553)
 /* Wrapper: */
 struct __tds__SetGeoLocation {
         /** Optional element 'tds:SetGeoLocation' of XML schema type 'tds:SetGeoLocation' */
@@ -19724,9 +20515,9 @@ struct __tds__SetGeoLocation {
 };
 #endif
 
-/* onvif.h:36982 */
+/* onvif.h:38378 */
 #ifndef SOAP_TYPE___tds__DeleteGeoLocation
-#define SOAP_TYPE___tds__DeleteGeoLocation (2489)
+#define SOAP_TYPE___tds__DeleteGeoLocation (2557)
 /* Wrapper: */
 struct __tds__DeleteGeoLocation {
         /** Optional element 'tds:DeleteGeoLocation' of XML schema type 'tds:DeleteGeoLocation' */
@@ -19734,9 +20525,9 @@ struct __tds__DeleteGeoLocation {
 };
 #endif
 
-/* onvif.h:37040 */
+/* onvif.h:38436 */
 #ifndef SOAP_TYPE___tds__SetHashingAlgorithm
-#define SOAP_TYPE___tds__SetHashingAlgorithm (2493)
+#define SOAP_TYPE___tds__SetHashingAlgorithm (2561)
 /* Wrapper: */
 struct __tds__SetHashingAlgorithm {
         /** Optional element 'tds:SetHashingAlgorithm' of XML schema type 'tds:SetHashingAlgorithm' */
@@ -19744,9 +20535,9 @@ struct __tds__SetHashingAlgorithm {
 };
 #endif
 
-/* onvif.h:37127 */
+/* onvif.h:38523 */
 #ifndef SOAP_TYPE___tev__PullMessages
-#define SOAP_TYPE___tev__PullMessages (2497)
+#define SOAP_TYPE___tev__PullMessages (2565)
 /* Wrapper: */
 struct __tev__PullMessages {
         /** Optional element 'tev:PullMessages' of XML schema type 'tev:PullMessages' */
@@ -19754,9 +20545,9 @@ struct __tev__PullMessages {
 };
 #endif
 
-/* onvif.h:37196 */
+/* onvif.h:38592 */
 #ifndef SOAP_TYPE___tev__Seek
-#define SOAP_TYPE___tev__Seek (2501)
+#define SOAP_TYPE___tev__Seek (2569)
 /* Wrapper: */
 struct __tev__Seek {
         /** Optional element 'tev:Seek' of XML schema type 'tev:Seek' */
@@ -19764,9 +20555,9 @@ struct __tev__Seek {
 };
 #endif
 
-/* onvif.h:37267 */
+/* onvif.h:38663 */
 #ifndef SOAP_TYPE___tev__SetSynchronizationPoint
-#define SOAP_TYPE___tev__SetSynchronizationPoint (2505)
+#define SOAP_TYPE___tev__SetSynchronizationPoint (2573)
 /* Wrapper: */
 struct __tev__SetSynchronizationPoint {
         /** Optional element 'tev:SetSynchronizationPoint' of XML schema type 'tev:SetSynchronizationPoint' */
@@ -19774,9 +20565,9 @@ struct __tev__SetSynchronizationPoint {
 };
 #endif
 
-/* onvif.h:37333 */
+/* onvif.h:38729 */
 #ifndef SOAP_TYPE___tev__Unsubscribe
-#define SOAP_TYPE___tev__Unsubscribe (2509)
+#define SOAP_TYPE___tev__Unsubscribe (2577)
 /* Wrapper: */
 struct __tev__Unsubscribe {
         /** Optional element 'wsnt:Unsubscribe' of XML schema type 'wsnt:Unsubscribe' */
@@ -19784,9 +20575,9 @@ struct __tev__Unsubscribe {
 };
 #endif
 
-/* onvif.h:37390 */
+/* onvif.h:38786 */
 #ifndef SOAP_TYPE___tev__GetServiceCapabilities
-#define SOAP_TYPE___tev__GetServiceCapabilities (2513)
+#define SOAP_TYPE___tev__GetServiceCapabilities (2581)
 /* Wrapper: */
 struct __tev__GetServiceCapabilities {
         /** Optional element 'tev:GetServiceCapabilities' of XML schema type 'tev:GetServiceCapabilities' */
@@ -19794,9 +20585,9 @@ struct __tev__GetServiceCapabilities {
 };
 #endif
 
-/* onvif.h:37488 */
+/* onvif.h:38884 */
 #ifndef SOAP_TYPE___tev__CreatePullPointSubscription
-#define SOAP_TYPE___tev__CreatePullPointSubscription (2517)
+#define SOAP_TYPE___tev__CreatePullPointSubscription (2585)
 /* Wrapper: */
 struct __tev__CreatePullPointSubscription {
         /** Optional element 'tev:CreatePullPointSubscription' of XML schema type 'tev:CreatePullPointSubscription' */
@@ -19804,9 +20595,9 @@ struct __tev__CreatePullPointSubscription {
 };
 #endif
 
-/* onvif.h:37551 */
+/* onvif.h:38947 */
 #ifndef SOAP_TYPE___tev__GetEventProperties
-#define SOAP_TYPE___tev__GetEventProperties (2521)
+#define SOAP_TYPE___tev__GetEventProperties (2589)
 /* Wrapper: */
 struct __tev__GetEventProperties {
         /** Optional element 'tev:GetEventProperties' of XML schema type 'tev:GetEventProperties' */
@@ -19814,9 +20605,9 @@ struct __tev__GetEventProperties {
 };
 #endif
 
-/* onvif.h:37610 */
+/* onvif.h:39006 */
 #ifndef SOAP_TYPE___tev__AddEventBroker
-#define SOAP_TYPE___tev__AddEventBroker (2525)
+#define SOAP_TYPE___tev__AddEventBroker (2593)
 /* Wrapper: */
 struct __tev__AddEventBroker {
         /** Optional element 'tev:AddEventBroker' of XML schema type 'tev:AddEventBroker' */
@@ -19824,9 +20615,9 @@ struct __tev__AddEventBroker {
 };
 #endif
 
-/* onvif.h:37667 */
+/* onvif.h:39063 */
 #ifndef SOAP_TYPE___tev__DeleteEventBroker
-#define SOAP_TYPE___tev__DeleteEventBroker (2529)
+#define SOAP_TYPE___tev__DeleteEventBroker (2597)
 /* Wrapper: */
 struct __tev__DeleteEventBroker {
         /** Optional element 'tev:DeleteEventBroker' of XML schema type 'tev:DeleteEventBroker' */
@@ -19834,9 +20625,9 @@ struct __tev__DeleteEventBroker {
 };
 #endif
 
-/* onvif.h:37724 */
+/* onvif.h:39120 */
 #ifndef SOAP_TYPE___tev__GetEventBrokers
-#define SOAP_TYPE___tev__GetEventBrokers (2533)
+#define SOAP_TYPE___tev__GetEventBrokers (2601)
 /* Wrapper: */
 struct __tev__GetEventBrokers {
         /** Optional element 'tev:GetEventBrokers' of XML schema type 'tev:GetEventBrokers' */
@@ -19844,9 +20635,9 @@ struct __tev__GetEventBrokers {
 };
 #endif
 
-/* onvif.h:37785 */
+/* onvif.h:39181 */
 #ifndef SOAP_TYPE___tev__Renew
-#define SOAP_TYPE___tev__Renew (2537)
+#define SOAP_TYPE___tev__Renew (2605)
 /* Wrapper: */
 struct __tev__Renew {
         /** Optional element 'wsnt:Renew' of XML schema type 'wsnt:Renew' */
@@ -19854,9 +20645,9 @@ struct __tev__Renew {
 };
 #endif
 
-/* onvif.h:37846 */
+/* onvif.h:39242 */
 #ifndef SOAP_TYPE___tev__Unsubscribe_
-#define SOAP_TYPE___tev__Unsubscribe_ (2539)
+#define SOAP_TYPE___tev__Unsubscribe_ (2607)
 /* Wrapper: */
 struct __tev__Unsubscribe_ {
         /** Optional element 'wsnt:Unsubscribe' of XML schema type 'wsnt:Unsubscribe' */
@@ -19864,9 +20655,9 @@ struct __tev__Unsubscribe_ {
 };
 #endif
 
-/* onvif.h:37937 */
+/* onvif.h:39333 */
 #ifndef SOAP_TYPE___tev__Subscribe
-#define SOAP_TYPE___tev__Subscribe (2543)
+#define SOAP_TYPE___tev__Subscribe (2611)
 /* Wrapper: */
 struct __tev__Subscribe {
         /** Optional element 'wsnt:Subscribe' of XML schema type 'wsnt:Subscribe' */
@@ -19874,9 +20665,9 @@ struct __tev__Subscribe {
 };
 #endif
 
-/* onvif.h:38010 */
+/* onvif.h:39406 */
 #ifndef SOAP_TYPE___tev__GetCurrentMessage
-#define SOAP_TYPE___tev__GetCurrentMessage (2547)
+#define SOAP_TYPE___tev__GetCurrentMessage (2615)
 /* Wrapper: */
 struct __tev__GetCurrentMessage {
         /** Optional element 'wsnt:GetCurrentMessage' of XML schema type 'wsnt:GetCurrentMessage' */
@@ -19884,9 +20675,9 @@ struct __tev__GetCurrentMessage {
 };
 #endif
 
-/* onvif.h:38061 */
+/* onvif.h:39457 */
 #ifndef SOAP_TYPE___tev__Notify
-#define SOAP_TYPE___tev__Notify (2550)
+#define SOAP_TYPE___tev__Notify (2618)
 /* Wrapper: */
 struct __tev__Notify {
         /** Optional element 'wsnt:Notify' of XML schema type 'wsnt:Notify' */
@@ -19894,9 +20685,9 @@ struct __tev__Notify {
 };
 #endif
 
-/* onvif.h:38122 */
+/* onvif.h:39518 */
 #ifndef SOAP_TYPE___tev__GetMessages
-#define SOAP_TYPE___tev__GetMessages (2554)
+#define SOAP_TYPE___tev__GetMessages (2622)
 /* Wrapper: */
 struct __tev__GetMessages {
         /** Optional element 'wsnt:GetMessages' of XML schema type 'wsnt:GetMessages' */
@@ -19904,9 +20695,9 @@ struct __tev__GetMessages {
 };
 #endif
 
-/* onvif.h:38183 */
+/* onvif.h:39579 */
 #ifndef SOAP_TYPE___tev__DestroyPullPoint
-#define SOAP_TYPE___tev__DestroyPullPoint (2558)
+#define SOAP_TYPE___tev__DestroyPullPoint (2626)
 /* Wrapper: */
 struct __tev__DestroyPullPoint {
         /** Optional element 'wsnt:DestroyPullPoint' of XML schema type 'wsnt:DestroyPullPoint' */
@@ -19914,9 +20705,9 @@ struct __tev__DestroyPullPoint {
 };
 #endif
 
-/* onvif.h:38234 */
+/* onvif.h:39630 */
 #ifndef SOAP_TYPE___tev__Notify_
-#define SOAP_TYPE___tev__Notify_ (2560)
+#define SOAP_TYPE___tev__Notify_ (2628)
 /* Wrapper: */
 struct __tev__Notify_ {
         /** Optional element 'wsnt:Notify' of XML schema type 'wsnt:Notify' */
@@ -19924,9 +20715,9 @@ struct __tev__Notify_ {
 };
 #endif
 
-/* onvif.h:38292 */
+/* onvif.h:39688 */
 #ifndef SOAP_TYPE___tev__CreatePullPoint
-#define SOAP_TYPE___tev__CreatePullPoint (2564)
+#define SOAP_TYPE___tev__CreatePullPoint (2632)
 /* Wrapper: */
 struct __tev__CreatePullPoint {
         /** Optional element 'wsnt:CreatePullPoint' of XML schema type 'wsnt:CreatePullPoint' */
@@ -19934,9 +20725,9 @@ struct __tev__CreatePullPoint {
 };
 #endif
 
-/* onvif.h:38353 */
+/* onvif.h:39749 */
 #ifndef SOAP_TYPE___tev__Renew_
-#define SOAP_TYPE___tev__Renew_ (2566)
+#define SOAP_TYPE___tev__Renew_ (2634)
 /* Wrapper: */
 struct __tev__Renew_ {
         /** Optional element 'wsnt:Renew' of XML schema type 'wsnt:Renew' */
@@ -19944,9 +20735,9 @@ struct __tev__Renew_ {
 };
 #endif
 
-/* onvif.h:38414 */
+/* onvif.h:39810 */
 #ifndef SOAP_TYPE___tev__Unsubscribe__
-#define SOAP_TYPE___tev__Unsubscribe__ (2568)
+#define SOAP_TYPE___tev__Unsubscribe__ (2636)
 /* Wrapper: */
 struct __tev__Unsubscribe__ {
         /** Optional element 'wsnt:Unsubscribe' of XML schema type 'wsnt:Unsubscribe' */
@@ -19954,9 +20745,9 @@ struct __tev__Unsubscribe__ {
 };
 #endif
 
-/* onvif.h:38475 */
+/* onvif.h:39871 */
 #ifndef SOAP_TYPE___tev__PauseSubscription
-#define SOAP_TYPE___tev__PauseSubscription (2572)
+#define SOAP_TYPE___tev__PauseSubscription (2640)
 /* Wrapper: */
 struct __tev__PauseSubscription {
         /** Optional element 'wsnt:PauseSubscription' of XML schema type 'wsnt:PauseSubscription' */
@@ -19964,9 +20755,9 @@ struct __tev__PauseSubscription {
 };
 #endif
 
-/* onvif.h:38536 */
+/* onvif.h:39932 */
 #ifndef SOAP_TYPE___tev__ResumeSubscription
-#define SOAP_TYPE___tev__ResumeSubscription (2576)
+#define SOAP_TYPE___tev__ResumeSubscription (2644)
 /* Wrapper: */
 struct __tev__ResumeSubscription {
         /** Optional element 'wsnt:ResumeSubscription' of XML schema type 'wsnt:ResumeSubscription' */
@@ -19974,9 +20765,299 @@ struct __tev__ResumeSubscription {
 };
 #endif
 
-/* onvif.h:38609 */
+/* onvif.h:40004 */
+#ifndef SOAP_TYPE___tptz__GetServiceCapabilities
+#define SOAP_TYPE___tptz__GetServiceCapabilities (2648)
+/* Wrapper: */
+struct __tptz__GetServiceCapabilities {
+        /** Optional element 'tptz:GetServiceCapabilities' of XML schema type 'tptz:GetServiceCapabilities' */
+        struct _tptz__GetServiceCapabilities *tptz__GetServiceCapabilities;
+};
+#endif
+
+/* onvif.h:40088 */
+#ifndef SOAP_TYPE___tptz__GetConfigurations
+#define SOAP_TYPE___tptz__GetConfigurations (2652)
+/* Wrapper: */
+struct __tptz__GetConfigurations {
+        /** Optional element 'tptz:GetConfigurations' of XML schema type 'tptz:GetConfigurations' */
+        struct _tptz__GetConfigurations *tptz__GetConfigurations;
+};
+#endif
+
+/* onvif.h:40146 */
+#ifndef SOAP_TYPE___tptz__GetPresets
+#define SOAP_TYPE___tptz__GetPresets (2656)
+/* Wrapper: */
+struct __tptz__GetPresets {
+        /** Optional element 'tptz:GetPresets' of XML schema type 'tptz:GetPresets' */
+        struct _tptz__GetPresets *tptz__GetPresets;
+};
+#endif
+
+/* onvif.h:40219 */
+#ifndef SOAP_TYPE___tptz__SetPreset
+#define SOAP_TYPE___tptz__SetPreset (2660)
+/* Wrapper: */
+struct __tptz__SetPreset {
+        /** Optional element 'tptz:SetPreset' of XML schema type 'tptz:SetPreset' */
+        struct _tptz__SetPreset *tptz__SetPreset;
+};
+#endif
+
+/* onvif.h:40281 */
+#ifndef SOAP_TYPE___tptz__RemovePreset
+#define SOAP_TYPE___tptz__RemovePreset (2664)
+/* Wrapper: */
+struct __tptz__RemovePreset {
+        /** Optional element 'tptz:RemovePreset' of XML schema type 'tptz:RemovePreset' */
+        struct _tptz__RemovePreset *tptz__RemovePreset;
+};
+#endif
+
+/* onvif.h:40339 */
+#ifndef SOAP_TYPE___tptz__GotoPreset
+#define SOAP_TYPE___tptz__GotoPreset (2668)
+/* Wrapper: */
+struct __tptz__GotoPreset {
+        /** Optional element 'tptz:GotoPreset' of XML schema type 'tptz:GotoPreset' */
+        struct _tptz__GotoPreset *tptz__GotoPreset;
+};
+#endif
+
+/* onvif.h:40397 */
+#ifndef SOAP_TYPE___tptz__GetStatus
+#define SOAP_TYPE___tptz__GetStatus (2672)
+/* Wrapper: */
+struct __tptz__GetStatus {
+        /** Optional element 'tptz:GetStatus' of XML schema type 'tptz:GetStatus' */
+        struct _tptz__GetStatus *tptz__GetStatus;
+};
+#endif
+
+/* onvif.h:40482 */
+#ifndef SOAP_TYPE___tptz__GetConfiguration
+#define SOAP_TYPE___tptz__GetConfiguration (2676)
+/* Wrapper: */
+struct __tptz__GetConfiguration {
+        /** Optional element 'tptz:GetConfiguration' of XML schema type 'tptz:GetConfiguration' */
+        struct _tptz__GetConfiguration *tptz__GetConfiguration;
+};
+#endif
+
+/* onvif.h:40548 */
+#ifndef SOAP_TYPE___tptz__GetNodes
+#define SOAP_TYPE___tptz__GetNodes (2680)
+/* Wrapper: */
+struct __tptz__GetNodes {
+        /** Optional element 'tptz:GetNodes' of XML schema type 'tptz:GetNodes' */
+        struct _tptz__GetNodes *tptz__GetNodes;
+};
+#endif
+
+/* onvif.h:40606 */
+#ifndef SOAP_TYPE___tptz__GetNode
+#define SOAP_TYPE___tptz__GetNode (2684)
+/* Wrapper: */
+struct __tptz__GetNode {
+        /** Optional element 'tptz:GetNode' of XML schema type 'tptz:GetNode' */
+        struct _tptz__GetNode *tptz__GetNode;
+};
+#endif
+
+/* onvif.h:40663 */
+#ifndef SOAP_TYPE___tptz__SetConfiguration
+#define SOAP_TYPE___tptz__SetConfiguration (2688)
+/* Wrapper: */
+struct __tptz__SetConfiguration {
+        /** Optional element 'tptz:SetConfiguration' of XML schema type 'tptz:SetConfiguration' */
+        struct _tptz__SetConfiguration *tptz__SetConfiguration;
+};
+#endif
+
+/* onvif.h:40730 */
+#ifndef SOAP_TYPE___tptz__GetConfigurationOptions
+#define SOAP_TYPE___tptz__GetConfigurationOptions (2692)
+/* Wrapper: */
+struct __tptz__GetConfigurationOptions {
+        /** Optional element 'tptz:GetConfigurationOptions' of XML schema type 'tptz:GetConfigurationOptions' */
+        struct _tptz__GetConfigurationOptions *tptz__GetConfigurationOptions;
+};
+#endif
+
+/* onvif.h:40787 */
+#ifndef SOAP_TYPE___tptz__GotoHomePosition
+#define SOAP_TYPE___tptz__GotoHomePosition (2696)
+/* Wrapper: */
+struct __tptz__GotoHomePosition {
+        /** Optional element 'tptz:GotoHomePosition' of XML schema type 'tptz:GotoHomePosition' */
+        struct _tptz__GotoHomePosition *tptz__GotoHomePosition;
+};
+#endif
+
+/* onvif.h:40848 */
+#ifndef SOAP_TYPE___tptz__SetHomePosition
+#define SOAP_TYPE___tptz__SetHomePosition (2700)
+/* Wrapper: */
+struct __tptz__SetHomePosition {
+        /** Optional element 'tptz:SetHomePosition' of XML schema type 'tptz:SetHomePosition' */
+        struct _tptz__SetHomePosition *tptz__SetHomePosition;
+};
+#endif
+
+/* onvif.h:40907 */
+#ifndef SOAP_TYPE___tptz__ContinuousMove
+#define SOAP_TYPE___tptz__ContinuousMove (2704)
+/* Wrapper: */
+struct __tptz__ContinuousMove {
+        /** Optional element 'tptz:ContinuousMove' of XML schema type 'tptz:ContinuousMove' */
+        struct _tptz__ContinuousMove *tptz__ContinuousMove;
+};
+#endif
+
+/* onvif.h:40971 */
+#ifndef SOAP_TYPE___tptz__RelativeMove
+#define SOAP_TYPE___tptz__RelativeMove (2708)
+/* Wrapper: */
+struct __tptz__RelativeMove {
+        /** Optional element 'tptz:RelativeMove' of XML schema type 'tptz:RelativeMove' */
+        struct _tptz__RelativeMove *tptz__RelativeMove;
+};
+#endif
+
+/* onvif.h:41031 */
+#ifndef SOAP_TYPE___tptz__SendAuxiliaryCommand
+#define SOAP_TYPE___tptz__SendAuxiliaryCommand (2712)
+/* Wrapper: */
+struct __tptz__SendAuxiliaryCommand {
+        /** Optional element 'tptz:SendAuxiliaryCommand' of XML schema type 'tptz:SendAuxiliaryCommand' */
+        struct _tptz__SendAuxiliaryCommand *tptz__SendAuxiliaryCommand;
+};
+#endif
+
+/* onvif.h:41094 */
+#ifndef SOAP_TYPE___tptz__AbsoluteMove
+#define SOAP_TYPE___tptz__AbsoluteMove (2716)
+/* Wrapper: */
+struct __tptz__AbsoluteMove {
+        /** Optional element 'tptz:AbsoluteMove' of XML schema type 'tptz:AbsoluteMove' */
+        struct _tptz__AbsoluteMove *tptz__AbsoluteMove;
+};
+#endif
+
+/* onvif.h:41162 */
+#ifndef SOAP_TYPE___tptz__GeoMove
+#define SOAP_TYPE___tptz__GeoMove (2720)
+/* Wrapper: */
+struct __tptz__GeoMove {
+        /** Optional element 'tptz:GeoMove' of XML schema type 'tptz:GeoMove' */
+        struct _tptz__GeoMove *tptz__GeoMove;
+};
+#endif
+
+/* onvif.h:41221 */
+#ifndef SOAP_TYPE___tptz__Stop
+#define SOAP_TYPE___tptz__Stop (2724)
+/* Wrapper: */
+struct __tptz__Stop {
+        /** Optional element 'tptz:Stop' of XML schema type 'tptz:Stop' */
+        struct _tptz__Stop *tptz__Stop;
+};
+#endif
+
+/* onvif.h:41277 */
+#ifndef SOAP_TYPE___tptz__GetPresetTours
+#define SOAP_TYPE___tptz__GetPresetTours (2728)
+/* Wrapper: */
+struct __tptz__GetPresetTours {
+        /** Optional element 'tptz:GetPresetTours' of XML schema type 'tptz:GetPresetTours' */
+        struct _tptz__GetPresetTours *tptz__GetPresetTours;
+};
+#endif
+
+/* onvif.h:41333 */
+#ifndef SOAP_TYPE___tptz__GetPresetTour
+#define SOAP_TYPE___tptz__GetPresetTour (2732)
+/* Wrapper: */
+struct __tptz__GetPresetTour {
+        /** Optional element 'tptz:GetPresetTour' of XML schema type 'tptz:GetPresetTour' */
+        struct _tptz__GetPresetTour *tptz__GetPresetTour;
+};
+#endif
+
+/* onvif.h:41389 */
+#ifndef SOAP_TYPE___tptz__GetPresetTourOptions
+#define SOAP_TYPE___tptz__GetPresetTourOptions (2736)
+/* Wrapper: */
+struct __tptz__GetPresetTourOptions {
+        /** Optional element 'tptz:GetPresetTourOptions' of XML schema type 'tptz:GetPresetTourOptions' */
+        struct _tptz__GetPresetTourOptions *tptz__GetPresetTourOptions;
+};
+#endif
+
+/* onvif.h:41445 */
+#ifndef SOAP_TYPE___tptz__CreatePresetTour
+#define SOAP_TYPE___tptz__CreatePresetTour (2740)
+/* Wrapper: */
+struct __tptz__CreatePresetTour {
+        /** Optional element 'tptz:CreatePresetTour' of XML schema type 'tptz:CreatePresetTour' */
+        struct _tptz__CreatePresetTour *tptz__CreatePresetTour;
+};
+#endif
+
+/* onvif.h:41501 */
+#ifndef SOAP_TYPE___tptz__ModifyPresetTour
+#define SOAP_TYPE___tptz__ModifyPresetTour (2744)
+/* Wrapper: */
+struct __tptz__ModifyPresetTour {
+        /** Optional element 'tptz:ModifyPresetTour' of XML schema type 'tptz:ModifyPresetTour' */
+        struct _tptz__ModifyPresetTour *tptz__ModifyPresetTour;
+};
+#endif
+
+/* onvif.h:41557 */
+#ifndef SOAP_TYPE___tptz__OperatePresetTour
+#define SOAP_TYPE___tptz__OperatePresetTour (2748)
+/* Wrapper: */
+struct __tptz__OperatePresetTour {
+        /** Optional element 'tptz:OperatePresetTour' of XML schema type 'tptz:OperatePresetTour' */
+        struct _tptz__OperatePresetTour *tptz__OperatePresetTour;
+};
+#endif
+
+/* onvif.h:41613 */
+#ifndef SOAP_TYPE___tptz__RemovePresetTour
+#define SOAP_TYPE___tptz__RemovePresetTour (2752)
+/* Wrapper: */
+struct __tptz__RemovePresetTour {
+        /** Optional element 'tptz:RemovePresetTour' of XML schema type 'tptz:RemovePresetTour' */
+        struct _tptz__RemovePresetTour *tptz__RemovePresetTour;
+};
+#endif
+
+/* onvif.h:41677 */
+#ifndef SOAP_TYPE___tptz__GetCompatibleConfigurations
+#define SOAP_TYPE___tptz__GetCompatibleConfigurations (2756)
+/* Wrapper: */
+struct __tptz__GetCompatibleConfigurations {
+        /** Optional element 'tptz:GetCompatibleConfigurations' of XML schema type 'tptz:GetCompatibleConfigurations' */
+        struct _tptz__GetCompatibleConfigurations *tptz__GetCompatibleConfigurations;
+};
+#endif
+
+/* onvif.h:41744 */
+#ifndef SOAP_TYPE___tptz__MoveAndStartTracking
+#define SOAP_TYPE___tptz__MoveAndStartTracking (2760)
+/* Wrapper: */
+struct __tptz__MoveAndStartTracking {
+        /** Optional element 'tptz:MoveAndStartTracking' of XML schema type 'tptz:MoveAndStartTracking' */
+        struct _tptz__MoveAndStartTracking *tptz__MoveAndStartTracking;
+};
+#endif
+
+/* onvif.h:41817 */
 #ifndef SOAP_TYPE___trt__GetServiceCapabilities
-#define SOAP_TYPE___trt__GetServiceCapabilities (2580)
+#define SOAP_TYPE___trt__GetServiceCapabilities (2764)
 /* Wrapper: */
 struct __trt__GetServiceCapabilities {
         /** Optional element 'trt:GetServiceCapabilities' of XML schema type 'trt:GetServiceCapabilities' */
@@ -19984,9 +21065,9 @@ struct __trt__GetServiceCapabilities {
 };
 #endif
 
-/* onvif.h:38665 */
+/* onvif.h:41873 */
 #ifndef SOAP_TYPE___trt__GetVideoSources
-#define SOAP_TYPE___trt__GetVideoSources (2584)
+#define SOAP_TYPE___trt__GetVideoSources (2768)
 /* Wrapper: */
 struct __trt__GetVideoSources {
         /** Optional element 'trt:GetVideoSources' of XML schema type 'trt:GetVideoSources' */
@@ -19994,9 +21075,9 @@ struct __trt__GetVideoSources {
 };
 #endif
 
-/* onvif.h:38721 */
+/* onvif.h:41929 */
 #ifndef SOAP_TYPE___trt__GetAudioSources
-#define SOAP_TYPE___trt__GetAudioSources (2588)
+#define SOAP_TYPE___trt__GetAudioSources (2772)
 /* Wrapper: */
 struct __trt__GetAudioSources {
         /** Optional element 'trt:GetAudioSources' of XML schema type 'trt:GetAudioSources' */
@@ -20004,9 +21085,9 @@ struct __trt__GetAudioSources {
 };
 #endif
 
-/* onvif.h:38777 */
+/* onvif.h:41985 */
 #ifndef SOAP_TYPE___trt__GetAudioOutputs
-#define SOAP_TYPE___trt__GetAudioOutputs (2592)
+#define SOAP_TYPE___trt__GetAudioOutputs (2776)
 /* Wrapper: */
 struct __trt__GetAudioOutputs {
         /** Optional element 'trt:GetAudioOutputs' of XML schema type 'trt:GetAudioOutputs' */
@@ -20014,9 +21095,9 @@ struct __trt__GetAudioOutputs {
 };
 #endif
 
-/* onvif.h:38837 */
+/* onvif.h:42045 */
 #ifndef SOAP_TYPE___trt__CreateProfile
-#define SOAP_TYPE___trt__CreateProfile (2596)
+#define SOAP_TYPE___trt__CreateProfile (2780)
 /* Wrapper: */
 struct __trt__CreateProfile {
         /** Optional element 'trt:CreateProfile' of XML schema type 'trt:CreateProfile' */
@@ -20024,9 +21105,9 @@ struct __trt__CreateProfile {
 };
 #endif
 
-/* onvif.h:38894 */
+/* onvif.h:42102 */
 #ifndef SOAP_TYPE___trt__GetProfile
-#define SOAP_TYPE___trt__GetProfile (2600)
+#define SOAP_TYPE___trt__GetProfile (2784)
 /* Wrapper: */
 struct __trt__GetProfile {
         /** Optional element 'trt:GetProfile' of XML schema type 'trt:GetProfile' */
@@ -20034,9 +21115,9 @@ struct __trt__GetProfile {
 };
 #endif
 
-/* onvif.h:38955 */
+/* onvif.h:42163 */
 #ifndef SOAP_TYPE___trt__GetProfiles
-#define SOAP_TYPE___trt__GetProfiles (2604)
+#define SOAP_TYPE___trt__GetProfiles (2788)
 /* Wrapper: */
 struct __trt__GetProfiles {
         /** Optional element 'trt:GetProfiles' of XML schema type 'trt:GetProfiles' */
@@ -20044,9 +21125,9 @@ struct __trt__GetProfiles {
 };
 #endif
 
-/* onvif.h:39018 */
+/* onvif.h:42226 */
 #ifndef SOAP_TYPE___trt__AddVideoEncoderConfiguration
-#define SOAP_TYPE___trt__AddVideoEncoderConfiguration (2608)
+#define SOAP_TYPE___trt__AddVideoEncoderConfiguration (2792)
 /* Wrapper: */
 struct __trt__AddVideoEncoderConfiguration {
         /** Optional element 'trt:AddVideoEncoderConfiguration' of XML schema type 'trt:AddVideoEncoderConfiguration' */
@@ -20054,9 +21135,9 @@ struct __trt__AddVideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:39077 */
+/* onvif.h:42285 */
 #ifndef SOAP_TYPE___trt__AddVideoSourceConfiguration
-#define SOAP_TYPE___trt__AddVideoSourceConfiguration (2612)
+#define SOAP_TYPE___trt__AddVideoSourceConfiguration (2796)
 /* Wrapper: */
 struct __trt__AddVideoSourceConfiguration {
         /** Optional element 'trt:AddVideoSourceConfiguration' of XML schema type 'trt:AddVideoSourceConfiguration' */
@@ -20064,9 +21145,9 @@ struct __trt__AddVideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:39140 */
+/* onvif.h:42348 */
 #ifndef SOAP_TYPE___trt__AddAudioEncoderConfiguration
-#define SOAP_TYPE___trt__AddAudioEncoderConfiguration (2616)
+#define SOAP_TYPE___trt__AddAudioEncoderConfiguration (2800)
 /* Wrapper: */
 struct __trt__AddAudioEncoderConfiguration {
         /** Optional element 'trt:AddAudioEncoderConfiguration' of XML schema type 'trt:AddAudioEncoderConfiguration' */
@@ -20074,9 +21155,9 @@ struct __trt__AddAudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:39199 */
+/* onvif.h:42407 */
 #ifndef SOAP_TYPE___trt__AddAudioSourceConfiguration
-#define SOAP_TYPE___trt__AddAudioSourceConfiguration (2620)
+#define SOAP_TYPE___trt__AddAudioSourceConfiguration (2804)
 /* Wrapper: */
 struct __trt__AddAudioSourceConfiguration {
         /** Optional element 'trt:AddAudioSourceConfiguration' of XML schema type 'trt:AddAudioSourceConfiguration' */
@@ -20084,9 +21165,9 @@ struct __trt__AddAudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:39262 */
+/* onvif.h:42470 */
 #ifndef SOAP_TYPE___trt__AddPTZConfiguration
-#define SOAP_TYPE___trt__AddPTZConfiguration (2624)
+#define SOAP_TYPE___trt__AddPTZConfiguration (2808)
 /* Wrapper: */
 struct __trt__AddPTZConfiguration {
         /** Optional element 'trt:AddPTZConfiguration' of XML schema type 'trt:AddPTZConfiguration' */
@@ -20094,9 +21175,9 @@ struct __trt__AddPTZConfiguration {
 };
 #endif
 
-/* onvif.h:39328 */
+/* onvif.h:42536 */
 #ifndef SOAP_TYPE___trt__AddVideoAnalyticsConfiguration
-#define SOAP_TYPE___trt__AddVideoAnalyticsConfiguration (2628)
+#define SOAP_TYPE___trt__AddVideoAnalyticsConfiguration (2812)
 /* Wrapper: */
 struct __trt__AddVideoAnalyticsConfiguration {
         /** Optional element 'trt:AddVideoAnalyticsConfiguration' of XML schema type 'trt:AddVideoAnalyticsConfiguration' */
@@ -20104,9 +21185,9 @@ struct __trt__AddVideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:39388 */
+/* onvif.h:42596 */
 #ifndef SOAP_TYPE___trt__AddMetadataConfiguration
-#define SOAP_TYPE___trt__AddMetadataConfiguration (2632)
+#define SOAP_TYPE___trt__AddMetadataConfiguration (2816)
 /* Wrapper: */
 struct __trt__AddMetadataConfiguration {
         /** Optional element 'trt:AddMetadataConfiguration' of XML schema type 'trt:AddMetadataConfiguration' */
@@ -20114,9 +21195,9 @@ struct __trt__AddMetadataConfiguration {
 };
 #endif
 
-/* onvif.h:39446 */
+/* onvif.h:42654 */
 #ifndef SOAP_TYPE___trt__AddAudioOutputConfiguration
-#define SOAP_TYPE___trt__AddAudioOutputConfiguration (2636)
+#define SOAP_TYPE___trt__AddAudioOutputConfiguration (2820)
 /* Wrapper: */
 struct __trt__AddAudioOutputConfiguration {
         /** Optional element 'trt:AddAudioOutputConfiguration' of XML schema type 'trt:AddAudioOutputConfiguration' */
@@ -20124,9 +21205,9 @@ struct __trt__AddAudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:39504 */
+/* onvif.h:42712 */
 #ifndef SOAP_TYPE___trt__AddAudioDecoderConfiguration
-#define SOAP_TYPE___trt__AddAudioDecoderConfiguration (2640)
+#define SOAP_TYPE___trt__AddAudioDecoderConfiguration (2824)
 /* Wrapper: */
 struct __trt__AddAudioDecoderConfiguration {
         /** Optional element 'trt:AddAudioDecoderConfiguration' of XML schema type 'trt:AddAudioDecoderConfiguration' */
@@ -20134,9 +21215,9 @@ struct __trt__AddAudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:39563 */
+/* onvif.h:42771 */
 #ifndef SOAP_TYPE___trt__RemoveVideoEncoderConfiguration
-#define SOAP_TYPE___trt__RemoveVideoEncoderConfiguration (2644)
+#define SOAP_TYPE___trt__RemoveVideoEncoderConfiguration (2828)
 /* Wrapper: */
 struct __trt__RemoveVideoEncoderConfiguration {
         /** Optional element 'trt:RemoveVideoEncoderConfiguration' of XML schema type 'trt:RemoveVideoEncoderConfiguration' */
@@ -20144,9 +21225,9 @@ struct __trt__RemoveVideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:39624 */
+/* onvif.h:42832 */
 #ifndef SOAP_TYPE___trt__RemoveVideoSourceConfiguration
-#define SOAP_TYPE___trt__RemoveVideoSourceConfiguration (2648)
+#define SOAP_TYPE___trt__RemoveVideoSourceConfiguration (2832)
 /* Wrapper: */
 struct __trt__RemoveVideoSourceConfiguration {
         /** Optional element 'trt:RemoveVideoSourceConfiguration' of XML schema type 'trt:RemoveVideoSourceConfiguration' */
@@ -20154,9 +21235,9 @@ struct __trt__RemoveVideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:39684 */
+/* onvif.h:42892 */
 #ifndef SOAP_TYPE___trt__RemoveAudioEncoderConfiguration
-#define SOAP_TYPE___trt__RemoveAudioEncoderConfiguration (2652)
+#define SOAP_TYPE___trt__RemoveAudioEncoderConfiguration (2836)
 /* Wrapper: */
 struct __trt__RemoveAudioEncoderConfiguration {
         /** Optional element 'trt:RemoveAudioEncoderConfiguration' of XML schema type 'trt:RemoveAudioEncoderConfiguration' */
@@ -20164,9 +21245,9 @@ struct __trt__RemoveAudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:39746 */
+/* onvif.h:42954 */
 #ifndef SOAP_TYPE___trt__RemoveAudioSourceConfiguration
-#define SOAP_TYPE___trt__RemoveAudioSourceConfiguration (2656)
+#define SOAP_TYPE___trt__RemoveAudioSourceConfiguration (2840)
 /* Wrapper: */
 struct __trt__RemoveAudioSourceConfiguration {
         /** Optional element 'trt:RemoveAudioSourceConfiguration' of XML schema type 'trt:RemoveAudioSourceConfiguration' */
@@ -20174,9 +21255,9 @@ struct __trt__RemoveAudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:39805 */
+/* onvif.h:43013 */
 #ifndef SOAP_TYPE___trt__RemovePTZConfiguration
-#define SOAP_TYPE___trt__RemovePTZConfiguration (2660)
+#define SOAP_TYPE___trt__RemovePTZConfiguration (2844)
 /* Wrapper: */
 struct __trt__RemovePTZConfiguration {
         /** Optional element 'trt:RemovePTZConfiguration' of XML schema type 'trt:RemovePTZConfiguration' */
@@ -20184,9 +21265,9 @@ struct __trt__RemovePTZConfiguration {
 };
 #endif
 
-/* onvif.h:39864 */
+/* onvif.h:43072 */
 #ifndef SOAP_TYPE___trt__RemoveVideoAnalyticsConfiguration
-#define SOAP_TYPE___trt__RemoveVideoAnalyticsConfiguration (2664)
+#define SOAP_TYPE___trt__RemoveVideoAnalyticsConfiguration (2848)
 /* Wrapper: */
 struct __trt__RemoveVideoAnalyticsConfiguration {
         /** Optional element 'trt:RemoveVideoAnalyticsConfiguration' of XML schema type 'trt:RemoveVideoAnalyticsConfiguration' */
@@ -20194,9 +21275,9 @@ struct __trt__RemoveVideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:39922 */
+/* onvif.h:43130 */
 #ifndef SOAP_TYPE___trt__RemoveMetadataConfiguration
-#define SOAP_TYPE___trt__RemoveMetadataConfiguration (2668)
+#define SOAP_TYPE___trt__RemoveMetadataConfiguration (2852)
 /* Wrapper: */
 struct __trt__RemoveMetadataConfiguration {
         /** Optional element 'trt:RemoveMetadataConfiguration' of XML schema type 'trt:RemoveMetadataConfiguration' */
@@ -20204,9 +21285,9 @@ struct __trt__RemoveMetadataConfiguration {
 };
 #endif
 
-/* onvif.h:39980 */
+/* onvif.h:43188 */
 #ifndef SOAP_TYPE___trt__RemoveAudioOutputConfiguration
-#define SOAP_TYPE___trt__RemoveAudioOutputConfiguration (2672)
+#define SOAP_TYPE___trt__RemoveAudioOutputConfiguration (2856)
 /* Wrapper: */
 struct __trt__RemoveAudioOutputConfiguration {
         /** Optional element 'trt:RemoveAudioOutputConfiguration' of XML schema type 'trt:RemoveAudioOutputConfiguration' */
@@ -20214,9 +21295,9 @@ struct __trt__RemoveAudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:40038 */
+/* onvif.h:43246 */
 #ifndef SOAP_TYPE___trt__RemoveAudioDecoderConfiguration
-#define SOAP_TYPE___trt__RemoveAudioDecoderConfiguration (2676)
+#define SOAP_TYPE___trt__RemoveAudioDecoderConfiguration (2860)
 /* Wrapper: */
 struct __trt__RemoveAudioDecoderConfiguration {
         /** Optional element 'trt:RemoveAudioDecoderConfiguration' of XML schema type 'trt:RemoveAudioDecoderConfiguration' */
@@ -20224,9 +21305,9 @@ struct __trt__RemoveAudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:40095 */
+/* onvif.h:43303 */
 #ifndef SOAP_TYPE___trt__DeleteProfile
-#define SOAP_TYPE___trt__DeleteProfile (2680)
+#define SOAP_TYPE___trt__DeleteProfile (2864)
 /* Wrapper: */
 struct __trt__DeleteProfile {
         /** Optional element 'trt:DeleteProfile' of XML schema type 'trt:DeleteProfile' */
@@ -20234,9 +21315,9 @@ struct __trt__DeleteProfile {
 };
 #endif
 
-/* onvif.h:40153 */
+/* onvif.h:43361 */
 #ifndef SOAP_TYPE___trt__GetVideoSourceConfigurations
-#define SOAP_TYPE___trt__GetVideoSourceConfigurations (2684)
+#define SOAP_TYPE___trt__GetVideoSourceConfigurations (2868)
 /* Wrapper: */
 struct __trt__GetVideoSourceConfigurations {
         /** Optional element 'trt:GetVideoSourceConfigurations' of XML schema type 'trt:GetVideoSourceConfigurations' */
@@ -20244,9 +21325,9 @@ struct __trt__GetVideoSourceConfigurations {
 };
 #endif
 
-/* onvif.h:40212 */
+/* onvif.h:43420 */
 #ifndef SOAP_TYPE___trt__GetVideoEncoderConfigurations
-#define SOAP_TYPE___trt__GetVideoEncoderConfigurations (2688)
+#define SOAP_TYPE___trt__GetVideoEncoderConfigurations (2872)
 /* Wrapper: */
 struct __trt__GetVideoEncoderConfigurations {
         /** Optional element 'trt:GetVideoEncoderConfigurations' of XML schema type 'trt:GetVideoEncoderConfigurations' */
@@ -20254,9 +21335,9 @@ struct __trt__GetVideoEncoderConfigurations {
 };
 #endif
 
-/* onvif.h:40271 */
+/* onvif.h:43479 */
 #ifndef SOAP_TYPE___trt__GetAudioSourceConfigurations
-#define SOAP_TYPE___trt__GetAudioSourceConfigurations (2692)
+#define SOAP_TYPE___trt__GetAudioSourceConfigurations (2876)
 /* Wrapper: */
 struct __trt__GetAudioSourceConfigurations {
         /** Optional element 'trt:GetAudioSourceConfigurations' of XML schema type 'trt:GetAudioSourceConfigurations' */
@@ -20264,9 +21345,9 @@ struct __trt__GetAudioSourceConfigurations {
 };
 #endif
 
-/* onvif.h:40329 */
+/* onvif.h:43537 */
 #ifndef SOAP_TYPE___trt__GetAudioEncoderConfigurations
-#define SOAP_TYPE___trt__GetAudioEncoderConfigurations (2696)
+#define SOAP_TYPE___trt__GetAudioEncoderConfigurations (2880)
 /* Wrapper: */
 struct __trt__GetAudioEncoderConfigurations {
         /** Optional element 'trt:GetAudioEncoderConfigurations' of XML schema type 'trt:GetAudioEncoderConfigurations' */
@@ -20274,9 +21355,9 @@ struct __trt__GetAudioEncoderConfigurations {
 };
 #endif
 
-/* onvif.h:40387 */
+/* onvif.h:43595 */
 #ifndef SOAP_TYPE___trt__GetVideoAnalyticsConfigurations
-#define SOAP_TYPE___trt__GetVideoAnalyticsConfigurations (2700)
+#define SOAP_TYPE___trt__GetVideoAnalyticsConfigurations (2884)
 /* Wrapper: */
 struct __trt__GetVideoAnalyticsConfigurations {
         /** Optional element 'trt:GetVideoAnalyticsConfigurations' of XML schema type 'trt:GetVideoAnalyticsConfigurations' */
@@ -20284,9 +21365,9 @@ struct __trt__GetVideoAnalyticsConfigurations {
 };
 #endif
 
-/* onvif.h:40444 */
+/* onvif.h:43652 */
 #ifndef SOAP_TYPE___trt__GetMetadataConfigurations
-#define SOAP_TYPE___trt__GetMetadataConfigurations (2704)
+#define SOAP_TYPE___trt__GetMetadataConfigurations (2888)
 /* Wrapper: */
 struct __trt__GetMetadataConfigurations {
         /** Optional element 'trt:GetMetadataConfigurations' of XML schema type 'trt:GetMetadataConfigurations' */
@@ -20294,9 +21375,9 @@ struct __trt__GetMetadataConfigurations {
 };
 #endif
 
-/* onvif.h:40501 */
+/* onvif.h:43709 */
 #ifndef SOAP_TYPE___trt__GetAudioOutputConfigurations
-#define SOAP_TYPE___trt__GetAudioOutputConfigurations (2708)
+#define SOAP_TYPE___trt__GetAudioOutputConfigurations (2892)
 /* Wrapper: */
 struct __trt__GetAudioOutputConfigurations {
         /** Optional element 'trt:GetAudioOutputConfigurations' of XML schema type 'trt:GetAudioOutputConfigurations' */
@@ -20304,9 +21385,9 @@ struct __trt__GetAudioOutputConfigurations {
 };
 #endif
 
-/* onvif.h:40560 */
+/* onvif.h:43768 */
 #ifndef SOAP_TYPE___trt__GetAudioDecoderConfigurations
-#define SOAP_TYPE___trt__GetAudioDecoderConfigurations (2712)
+#define SOAP_TYPE___trt__GetAudioDecoderConfigurations (2896)
 /* Wrapper: */
 struct __trt__GetAudioDecoderConfigurations {
         /** Optional element 'trt:GetAudioDecoderConfigurations' of XML schema type 'trt:GetAudioDecoderConfigurations' */
@@ -20314,9 +21395,9 @@ struct __trt__GetAudioDecoderConfigurations {
 };
 #endif
 
-/* onvif.h:40617 */
+/* onvif.h:43825 */
 #ifndef SOAP_TYPE___trt__GetVideoSourceConfiguration
-#define SOAP_TYPE___trt__GetVideoSourceConfiguration (2716)
+#define SOAP_TYPE___trt__GetVideoSourceConfiguration (2900)
 /* Wrapper: */
 struct __trt__GetVideoSourceConfiguration {
         /** Optional element 'trt:GetVideoSourceConfiguration' of XML schema type 'trt:GetVideoSourceConfiguration' */
@@ -20324,9 +21405,9 @@ struct __trt__GetVideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:40674 */
+/* onvif.h:43882 */
 #ifndef SOAP_TYPE___trt__GetVideoEncoderConfiguration
-#define SOAP_TYPE___trt__GetVideoEncoderConfiguration (2720)
+#define SOAP_TYPE___trt__GetVideoEncoderConfiguration (2904)
 /* Wrapper: */
 struct __trt__GetVideoEncoderConfiguration {
         /** Optional element 'trt:GetVideoEncoderConfiguration' of XML schema type 'trt:GetVideoEncoderConfiguration' */
@@ -20334,9 +21415,9 @@ struct __trt__GetVideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:40731 */
+/* onvif.h:43939 */
 #ifndef SOAP_TYPE___trt__GetAudioSourceConfiguration
-#define SOAP_TYPE___trt__GetAudioSourceConfiguration (2724)
+#define SOAP_TYPE___trt__GetAudioSourceConfiguration (2908)
 /* Wrapper: */
 struct __trt__GetAudioSourceConfiguration {
         /** Optional element 'trt:GetAudioSourceConfiguration' of XML schema type 'trt:GetAudioSourceConfiguration' */
@@ -20344,9 +21425,9 @@ struct __trt__GetAudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:40788 */
+/* onvif.h:43996 */
 #ifndef SOAP_TYPE___trt__GetAudioEncoderConfiguration
-#define SOAP_TYPE___trt__GetAudioEncoderConfiguration (2728)
+#define SOAP_TYPE___trt__GetAudioEncoderConfiguration (2912)
 /* Wrapper: */
 struct __trt__GetAudioEncoderConfiguration {
         /** Optional element 'trt:GetAudioEncoderConfiguration' of XML schema type 'trt:GetAudioEncoderConfiguration' */
@@ -20354,9 +21435,9 @@ struct __trt__GetAudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:40845 */
+/* onvif.h:44053 */
 #ifndef SOAP_TYPE___trt__GetVideoAnalyticsConfiguration
-#define SOAP_TYPE___trt__GetVideoAnalyticsConfiguration (2732)
+#define SOAP_TYPE___trt__GetVideoAnalyticsConfiguration (2916)
 /* Wrapper: */
 struct __trt__GetVideoAnalyticsConfiguration {
         /** Optional element 'trt:GetVideoAnalyticsConfiguration' of XML schema type 'trt:GetVideoAnalyticsConfiguration' */
@@ -20364,9 +21445,9 @@ struct __trt__GetVideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:40902 */
+/* onvif.h:44110 */
 #ifndef SOAP_TYPE___trt__GetMetadataConfiguration
-#define SOAP_TYPE___trt__GetMetadataConfiguration (2736)
+#define SOAP_TYPE___trt__GetMetadataConfiguration (2920)
 /* Wrapper: */
 struct __trt__GetMetadataConfiguration {
         /** Optional element 'trt:GetMetadataConfiguration' of XML schema type 'trt:GetMetadataConfiguration' */
@@ -20374,9 +21455,9 @@ struct __trt__GetMetadataConfiguration {
 };
 #endif
 
-/* onvif.h:40959 */
+/* onvif.h:44167 */
 #ifndef SOAP_TYPE___trt__GetAudioOutputConfiguration
-#define SOAP_TYPE___trt__GetAudioOutputConfiguration (2740)
+#define SOAP_TYPE___trt__GetAudioOutputConfiguration (2924)
 /* Wrapper: */
 struct __trt__GetAudioOutputConfiguration {
         /** Optional element 'trt:GetAudioOutputConfiguration' of XML schema type 'trt:GetAudioOutputConfiguration' */
@@ -20384,9 +21465,9 @@ struct __trt__GetAudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:41016 */
+/* onvif.h:44224 */
 #ifndef SOAP_TYPE___trt__GetAudioDecoderConfiguration
-#define SOAP_TYPE___trt__GetAudioDecoderConfiguration (2744)
+#define SOAP_TYPE___trt__GetAudioDecoderConfiguration (2928)
 /* Wrapper: */
 struct __trt__GetAudioDecoderConfiguration {
         /** Optional element 'trt:GetAudioDecoderConfiguration' of XML schema type 'trt:GetAudioDecoderConfiguration' */
@@ -20394,9 +21475,9 @@ struct __trt__GetAudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:41076 */
+/* onvif.h:44284 */
 #ifndef SOAP_TYPE___trt__GetCompatibleVideoEncoderConfigurations
-#define SOAP_TYPE___trt__GetCompatibleVideoEncoderConfigurations (2748)
+#define SOAP_TYPE___trt__GetCompatibleVideoEncoderConfigurations (2932)
 /* Wrapper: */
 struct __trt__GetCompatibleVideoEncoderConfigurations {
         /** Optional element 'trt:GetCompatibleVideoEncoderConfigurations' of XML schema type 'trt:GetCompatibleVideoEncoderConfigurations' */
@@ -20404,9 +21485,9 @@ struct __trt__GetCompatibleVideoEncoderConfigurations {
 };
 #endif
 
-/* onvif.h:41138 */
+/* onvif.h:44346 */
 #ifndef SOAP_TYPE___trt__GetCompatibleVideoSourceConfigurations
-#define SOAP_TYPE___trt__GetCompatibleVideoSourceConfigurations (2752)
+#define SOAP_TYPE___trt__GetCompatibleVideoSourceConfigurations (2936)
 /* Wrapper: */
 struct __trt__GetCompatibleVideoSourceConfigurations {
         /** Optional element 'trt:GetCompatibleVideoSourceConfigurations' of XML schema type 'trt:GetCompatibleVideoSourceConfigurations' */
@@ -20414,9 +21495,9 @@ struct __trt__GetCompatibleVideoSourceConfigurations {
 };
 #endif
 
-/* onvif.h:41198 */
+/* onvif.h:44406 */
 #ifndef SOAP_TYPE___trt__GetCompatibleAudioEncoderConfigurations
-#define SOAP_TYPE___trt__GetCompatibleAudioEncoderConfigurations (2756)
+#define SOAP_TYPE___trt__GetCompatibleAudioEncoderConfigurations (2940)
 /* Wrapper: */
 struct __trt__GetCompatibleAudioEncoderConfigurations {
         /** Optional element 'trt:GetCompatibleAudioEncoderConfigurations' of XML schema type 'trt:GetCompatibleAudioEncoderConfigurations' */
@@ -20424,9 +21505,9 @@ struct __trt__GetCompatibleAudioEncoderConfigurations {
 };
 #endif
 
-/* onvif.h:41258 */
+/* onvif.h:44466 */
 #ifndef SOAP_TYPE___trt__GetCompatibleAudioSourceConfigurations
-#define SOAP_TYPE___trt__GetCompatibleAudioSourceConfigurations (2760)
+#define SOAP_TYPE___trt__GetCompatibleAudioSourceConfigurations (2944)
 /* Wrapper: */
 struct __trt__GetCompatibleAudioSourceConfigurations {
         /** Optional element 'trt:GetCompatibleAudioSourceConfigurations' of XML schema type 'trt:GetCompatibleAudioSourceConfigurations' */
@@ -20434,9 +21515,9 @@ struct __trt__GetCompatibleAudioSourceConfigurations {
 };
 #endif
 
-/* onvif.h:41318 */
+/* onvif.h:44526 */
 #ifndef SOAP_TYPE___trt__GetCompatibleVideoAnalyticsConfigurations
-#define SOAP_TYPE___trt__GetCompatibleVideoAnalyticsConfigurations (2764)
+#define SOAP_TYPE___trt__GetCompatibleVideoAnalyticsConfigurations (2948)
 /* Wrapper: */
 struct __trt__GetCompatibleVideoAnalyticsConfigurations {
         /** Optional element 'trt:GetCompatibleVideoAnalyticsConfigurations' of XML schema type 'trt:GetCompatibleVideoAnalyticsConfigurations' */
@@ -20444,9 +21525,9 @@ struct __trt__GetCompatibleVideoAnalyticsConfigurations {
 };
 #endif
 
-/* onvif.h:41378 */
+/* onvif.h:44586 */
 #ifndef SOAP_TYPE___trt__GetCompatibleMetadataConfigurations
-#define SOAP_TYPE___trt__GetCompatibleMetadataConfigurations (2768)
+#define SOAP_TYPE___trt__GetCompatibleMetadataConfigurations (2952)
 /* Wrapper: */
 struct __trt__GetCompatibleMetadataConfigurations {
         /** Optional element 'trt:GetCompatibleMetadataConfigurations' of XML schema type 'trt:GetCompatibleMetadataConfigurations' */
@@ -20454,9 +21535,9 @@ struct __trt__GetCompatibleMetadataConfigurations {
 };
 #endif
 
-/* onvif.h:41437 */
+/* onvif.h:44645 */
 #ifndef SOAP_TYPE___trt__GetCompatibleAudioOutputConfigurations
-#define SOAP_TYPE___trt__GetCompatibleAudioOutputConfigurations (2772)
+#define SOAP_TYPE___trt__GetCompatibleAudioOutputConfigurations (2956)
 /* Wrapper: */
 struct __trt__GetCompatibleAudioOutputConfigurations {
         /** Optional element 'trt:GetCompatibleAudioOutputConfigurations' of XML schema type 'trt:GetCompatibleAudioOutputConfigurations' */
@@ -20464,9 +21545,9 @@ struct __trt__GetCompatibleAudioOutputConfigurations {
 };
 #endif
 
-/* onvif.h:41496 */
+/* onvif.h:44704 */
 #ifndef SOAP_TYPE___trt__GetCompatibleAudioDecoderConfigurations
-#define SOAP_TYPE___trt__GetCompatibleAudioDecoderConfigurations (2776)
+#define SOAP_TYPE___trt__GetCompatibleAudioDecoderConfigurations (2960)
 /* Wrapper: */
 struct __trt__GetCompatibleAudioDecoderConfigurations {
         /** Optional element 'trt:GetCompatibleAudioDecoderConfigurations' of XML schema type 'trt:GetCompatibleAudioDecoderConfigurations' */
@@ -20474,9 +21555,9 @@ struct __trt__GetCompatibleAudioDecoderConfigurations {
 };
 #endif
 
-/* onvif.h:41557 */
+/* onvif.h:44765 */
 #ifndef SOAP_TYPE___trt__SetVideoSourceConfiguration
-#define SOAP_TYPE___trt__SetVideoSourceConfiguration (2780)
+#define SOAP_TYPE___trt__SetVideoSourceConfiguration (2964)
 /* Wrapper: */
 struct __trt__SetVideoSourceConfiguration {
         /** Optional element 'trt:SetVideoSourceConfiguration' of XML schema type 'trt:SetVideoSourceConfiguration' */
@@ -20484,9 +21565,9 @@ struct __trt__SetVideoSourceConfiguration {
 };
 #endif
 
-/* onvif.h:41622 */
+/* onvif.h:44830 */
 #ifndef SOAP_TYPE___trt__SetVideoEncoderConfiguration
-#define SOAP_TYPE___trt__SetVideoEncoderConfiguration (2784)
+#define SOAP_TYPE___trt__SetVideoEncoderConfiguration (2968)
 /* Wrapper: */
 struct __trt__SetVideoEncoderConfiguration {
         /** Optional element 'trt:SetVideoEncoderConfiguration' of XML schema type 'trt:SetVideoEncoderConfiguration' */
@@ -20494,9 +21575,9 @@ struct __trt__SetVideoEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:41685 */
+/* onvif.h:44893 */
 #ifndef SOAP_TYPE___trt__SetAudioSourceConfiguration
-#define SOAP_TYPE___trt__SetAudioSourceConfiguration (2788)
+#define SOAP_TYPE___trt__SetAudioSourceConfiguration (2972)
 /* Wrapper: */
 struct __trt__SetAudioSourceConfiguration {
         /** Optional element 'trt:SetAudioSourceConfiguration' of XML schema type 'trt:SetAudioSourceConfiguration' */
@@ -20504,9 +21585,9 @@ struct __trt__SetAudioSourceConfiguration {
 };
 #endif
 
-/* onvif.h:41749 */
+/* onvif.h:44957 */
 #ifndef SOAP_TYPE___trt__SetAudioEncoderConfiguration
-#define SOAP_TYPE___trt__SetAudioEncoderConfiguration (2792)
+#define SOAP_TYPE___trt__SetAudioEncoderConfiguration (2976)
 /* Wrapper: */
 struct __trt__SetAudioEncoderConfiguration {
         /** Optional element 'trt:SetAudioEncoderConfiguration' of XML schema type 'trt:SetAudioEncoderConfiguration' */
@@ -20514,9 +21595,9 @@ struct __trt__SetAudioEncoderConfiguration {
 };
 #endif
 
-/* onvif.h:41815 */
+/* onvif.h:45023 */
 #ifndef SOAP_TYPE___trt__SetVideoAnalyticsConfiguration
-#define SOAP_TYPE___trt__SetVideoAnalyticsConfiguration (2796)
+#define SOAP_TYPE___trt__SetVideoAnalyticsConfiguration (2980)
 /* Wrapper: */
 struct __trt__SetVideoAnalyticsConfiguration {
         /** Optional element 'trt:SetVideoAnalyticsConfiguration' of XML schema type 'trt:SetVideoAnalyticsConfiguration' */
@@ -20524,9 +21605,9 @@ struct __trt__SetVideoAnalyticsConfiguration {
 };
 #endif
 
-/* onvif.h:41880 */
+/* onvif.h:45088 */
 #ifndef SOAP_TYPE___trt__SetMetadataConfiguration
-#define SOAP_TYPE___trt__SetMetadataConfiguration (2800)
+#define SOAP_TYPE___trt__SetMetadataConfiguration (2984)
 /* Wrapper: */
 struct __trt__SetMetadataConfiguration {
         /** Optional element 'trt:SetMetadataConfiguration' of XML schema type 'trt:SetMetadataConfiguration' */
@@ -20534,9 +21615,9 @@ struct __trt__SetMetadataConfiguration {
 };
 #endif
 
-/* onvif.h:41938 */
+/* onvif.h:45146 */
 #ifndef SOAP_TYPE___trt__SetAudioOutputConfiguration
-#define SOAP_TYPE___trt__SetAudioOutputConfiguration (2804)
+#define SOAP_TYPE___trt__SetAudioOutputConfiguration (2988)
 /* Wrapper: */
 struct __trt__SetAudioOutputConfiguration {
         /** Optional element 'trt:SetAudioOutputConfiguration' of XML schema type 'trt:SetAudioOutputConfiguration' */
@@ -20544,9 +21625,9 @@ struct __trt__SetAudioOutputConfiguration {
 };
 #endif
 
-/* onvif.h:41996 */
+/* onvif.h:45204 */
 #ifndef SOAP_TYPE___trt__SetAudioDecoderConfiguration
-#define SOAP_TYPE___trt__SetAudioDecoderConfiguration (2808)
+#define SOAP_TYPE___trt__SetAudioDecoderConfiguration (2992)
 /* Wrapper: */
 struct __trt__SetAudioDecoderConfiguration {
         /** Optional element 'trt:SetAudioDecoderConfiguration' of XML schema type 'trt:SetAudioDecoderConfiguration' */
@@ -20554,9 +21635,9 @@ struct __trt__SetAudioDecoderConfiguration {
 };
 #endif
 
-/* onvif.h:42058 */
+/* onvif.h:45266 */
 #ifndef SOAP_TYPE___trt__GetVideoSourceConfigurationOptions
-#define SOAP_TYPE___trt__GetVideoSourceConfigurationOptions (2812)
+#define SOAP_TYPE___trt__GetVideoSourceConfigurationOptions (2996)
 /* Wrapper: */
 struct __trt__GetVideoSourceConfigurationOptions {
         /** Optional element 'trt:GetVideoSourceConfigurationOptions' of XML schema type 'trt:GetVideoSourceConfigurationOptions' */
@@ -20564,9 +21645,9 @@ struct __trt__GetVideoSourceConfigurationOptions {
 };
 #endif
 
-/* onvif.h:42128 */
+/* onvif.h:45336 */
 #ifndef SOAP_TYPE___trt__GetVideoEncoderConfigurationOptions
-#define SOAP_TYPE___trt__GetVideoEncoderConfigurationOptions (2816)
+#define SOAP_TYPE___trt__GetVideoEncoderConfigurationOptions (3000)
 /* Wrapper: */
 struct __trt__GetVideoEncoderConfigurationOptions {
         /** Optional element 'trt:GetVideoEncoderConfigurationOptions' of XML schema type 'trt:GetVideoEncoderConfigurationOptions' */
@@ -20574,9 +21655,9 @@ struct __trt__GetVideoEncoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:42190 */
+/* onvif.h:45398 */
 #ifndef SOAP_TYPE___trt__GetAudioSourceConfigurationOptions
-#define SOAP_TYPE___trt__GetAudioSourceConfigurationOptions (2820)
+#define SOAP_TYPE___trt__GetAudioSourceConfigurationOptions (3004)
 /* Wrapper: */
 struct __trt__GetAudioSourceConfigurationOptions {
         /** Optional element 'trt:GetAudioSourceConfigurationOptions' of XML schema type 'trt:GetAudioSourceConfigurationOptions' */
@@ -20584,9 +21665,9 @@ struct __trt__GetAudioSourceConfigurationOptions {
 };
 #endif
 
-/* onvif.h:42248 */
+/* onvif.h:45456 */
 #ifndef SOAP_TYPE___trt__GetAudioEncoderConfigurationOptions
-#define SOAP_TYPE___trt__GetAudioEncoderConfigurationOptions (2824)
+#define SOAP_TYPE___trt__GetAudioEncoderConfigurationOptions (3008)
 /* Wrapper: */
 struct __trt__GetAudioEncoderConfigurationOptions {
         /** Optional element 'trt:GetAudioEncoderConfigurationOptions' of XML schema type 'trt:GetAudioEncoderConfigurationOptions' */
@@ -20594,9 +21675,9 @@ struct __trt__GetAudioEncoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:42305 */
+/* onvif.h:45513 */
 #ifndef SOAP_TYPE___trt__GetMetadataConfigurationOptions
-#define SOAP_TYPE___trt__GetMetadataConfigurationOptions (2828)
+#define SOAP_TYPE___trt__GetMetadataConfigurationOptions (3012)
 /* Wrapper: */
 struct __trt__GetMetadataConfigurationOptions {
         /** Optional element 'trt:GetMetadataConfigurationOptions' of XML schema type 'trt:GetMetadataConfigurationOptions' */
@@ -20604,9 +21685,9 @@ struct __trt__GetMetadataConfigurationOptions {
 };
 #endif
 
-/* onvif.h:42362 */
+/* onvif.h:45570 */
 #ifndef SOAP_TYPE___trt__GetAudioOutputConfigurationOptions
-#define SOAP_TYPE___trt__GetAudioOutputConfigurationOptions (2832)
+#define SOAP_TYPE___trt__GetAudioOutputConfigurationOptions (3016)
 /* Wrapper: */
 struct __trt__GetAudioOutputConfigurationOptions {
         /** Optional element 'trt:GetAudioOutputConfigurationOptions' of XML schema type 'trt:GetAudioOutputConfigurationOptions' */
@@ -20614,9 +21695,9 @@ struct __trt__GetAudioOutputConfigurationOptions {
 };
 #endif
 
-/* onvif.h:42420 */
+/* onvif.h:45628 */
 #ifndef SOAP_TYPE___trt__GetAudioDecoderConfigurationOptions
-#define SOAP_TYPE___trt__GetAudioDecoderConfigurationOptions (2836)
+#define SOAP_TYPE___trt__GetAudioDecoderConfigurationOptions (3020)
 /* Wrapper: */
 struct __trt__GetAudioDecoderConfigurationOptions {
         /** Optional element 'trt:GetAudioDecoderConfigurationOptions' of XML schema type 'trt:GetAudioDecoderConfigurationOptions' */
@@ -20624,9 +21705,9 @@ struct __trt__GetAudioDecoderConfigurationOptions {
 };
 #endif
 
-/* onvif.h:42478 */
+/* onvif.h:45686 */
 #ifndef SOAP_TYPE___trt__GetGuaranteedNumberOfVideoEncoderInstances
-#define SOAP_TYPE___trt__GetGuaranteedNumberOfVideoEncoderInstances (2840)
+#define SOAP_TYPE___trt__GetGuaranteedNumberOfVideoEncoderInstances (3024)
 /* Wrapper: */
 struct __trt__GetGuaranteedNumberOfVideoEncoderInstances {
         /** Optional element 'trt:GetGuaranteedNumberOfVideoEncoderInstances' of XML schema type 'trt:GetGuaranteedNumberOfVideoEncoderInstances' */
@@ -20634,9 +21715,9 @@ struct __trt__GetGuaranteedNumberOfVideoEncoderInstances {
 };
 #endif
 
-/* onvif.h:42557 */
+/* onvif.h:45765 */
 #ifndef SOAP_TYPE___trt__GetStreamUri
-#define SOAP_TYPE___trt__GetStreamUri (2844)
+#define SOAP_TYPE___trt__GetStreamUri (3028)
 /* Wrapper: */
 struct __trt__GetStreamUri {
         /** Optional element 'trt:GetStreamUri' of XML schema type 'trt:GetStreamUri' */
@@ -20644,9 +21725,9 @@ struct __trt__GetStreamUri {
 };
 #endif
 
-/* onvif.h:42620 */
+/* onvif.h:45828 */
 #ifndef SOAP_TYPE___trt__StartMulticastStreaming
-#define SOAP_TYPE___trt__StartMulticastStreaming (2848)
+#define SOAP_TYPE___trt__StartMulticastStreaming (3032)
 /* Wrapper: */
 struct __trt__StartMulticastStreaming {
         /** Optional element 'trt:StartMulticastStreaming' of XML schema type 'trt:StartMulticastStreaming' */
@@ -20654,9 +21735,9 @@ struct __trt__StartMulticastStreaming {
 };
 #endif
 
-/* onvif.h:42676 */
+/* onvif.h:45884 */
 #ifndef SOAP_TYPE___trt__StopMulticastStreaming
-#define SOAP_TYPE___trt__StopMulticastStreaming (2852)
+#define SOAP_TYPE___trt__StopMulticastStreaming (3036)
 /* Wrapper: */
 struct __trt__StopMulticastStreaming {
         /** Optional element 'trt:StopMulticastStreaming' of XML schema type 'trt:StopMulticastStreaming' */
@@ -20664,9 +21745,9 @@ struct __trt__StopMulticastStreaming {
 };
 #endif
 
-/* onvif.h:42749 */
+/* onvif.h:45957 */
 #ifndef SOAP_TYPE___trt__SetSynchronizationPoint
-#define SOAP_TYPE___trt__SetSynchronizationPoint (2856)
+#define SOAP_TYPE___trt__SetSynchronizationPoint (3040)
 /* Wrapper: */
 struct __trt__SetSynchronizationPoint {
         /** Optional element 'trt:SetSynchronizationPoint' of XML schema type 'trt:SetSynchronizationPoint' */
@@ -20674,9 +21755,9 @@ struct __trt__SetSynchronizationPoint {
 };
 #endif
 
-/* onvif.h:42815 */
+/* onvif.h:46023 */
 #ifndef SOAP_TYPE___trt__GetSnapshotUri
-#define SOAP_TYPE___trt__GetSnapshotUri (2860)
+#define SOAP_TYPE___trt__GetSnapshotUri (3044)
 /* Wrapper: */
 struct __trt__GetSnapshotUri {
         /** Optional element 'trt:GetSnapshotUri' of XML schema type 'trt:GetSnapshotUri' */
@@ -20684,9 +21765,9 @@ struct __trt__GetSnapshotUri {
 };
 #endif
 
-/* onvif.h:42873 */
+/* onvif.h:46081 */
 #ifndef SOAP_TYPE___trt__GetVideoSourceModes
-#define SOAP_TYPE___trt__GetVideoSourceModes (2864)
+#define SOAP_TYPE___trt__GetVideoSourceModes (3048)
 /* Wrapper: */
 struct __trt__GetVideoSourceModes {
         /** Optional element 'trt:GetVideoSourceModes' of XML schema type 'trt:GetVideoSourceModes' */
@@ -20694,9 +21775,9 @@ struct __trt__GetVideoSourceModes {
 };
 #endif
 
-/* onvif.h:42932 */
+/* onvif.h:46140 */
 #ifndef SOAP_TYPE___trt__SetVideoSourceMode
-#define SOAP_TYPE___trt__SetVideoSourceMode (2868)
+#define SOAP_TYPE___trt__SetVideoSourceMode (3052)
 /* Wrapper: */
 struct __trt__SetVideoSourceMode {
         /** Optional element 'trt:SetVideoSourceMode' of XML schema type 'trt:SetVideoSourceMode' */
@@ -20704,9 +21785,9 @@ struct __trt__SetVideoSourceMode {
 };
 #endif
 
-/* onvif.h:42988 */
+/* onvif.h:46196 */
 #ifndef SOAP_TYPE___trt__GetOSDs
-#define SOAP_TYPE___trt__GetOSDs (2872)
+#define SOAP_TYPE___trt__GetOSDs (3056)
 /* Wrapper: */
 struct __trt__GetOSDs {
         /** Optional element 'trt:GetOSDs' of XML schema type 'trt:GetOSDs' */
@@ -20714,9 +21795,9 @@ struct __trt__GetOSDs {
 };
 #endif
 
-/* onvif.h:43044 */
+/* onvif.h:46252 */
 #ifndef SOAP_TYPE___trt__GetOSD
-#define SOAP_TYPE___trt__GetOSD (2876)
+#define SOAP_TYPE___trt__GetOSD (3060)
 /* Wrapper: */
 struct __trt__GetOSD {
         /** Optional element 'trt:GetOSD' of XML schema type 'trt:GetOSD' */
@@ -20724,9 +21805,9 @@ struct __trt__GetOSD {
 };
 #endif
 
-/* onvif.h:43100 */
+/* onvif.h:46308 */
 #ifndef SOAP_TYPE___trt__GetOSDOptions
-#define SOAP_TYPE___trt__GetOSDOptions (2880)
+#define SOAP_TYPE___trt__GetOSDOptions (3064)
 /* Wrapper: */
 struct __trt__GetOSDOptions {
         /** Optional element 'trt:GetOSDOptions' of XML schema type 'trt:GetOSDOptions' */
@@ -20734,9 +21815,9 @@ struct __trt__GetOSDOptions {
 };
 #endif
 
-/* onvif.h:43156 */
+/* onvif.h:46364 */
 #ifndef SOAP_TYPE___trt__SetOSD
-#define SOAP_TYPE___trt__SetOSD (2884)
+#define SOAP_TYPE___trt__SetOSD (3068)
 /* Wrapper: */
 struct __trt__SetOSD {
         /** Optional element 'trt:SetOSD' of XML schema type 'trt:SetOSD' */
@@ -20744,9 +21825,9 @@ struct __trt__SetOSD {
 };
 #endif
 
-/* onvif.h:43212 */
+/* onvif.h:46420 */
 #ifndef SOAP_TYPE___trt__CreateOSD
-#define SOAP_TYPE___trt__CreateOSD (2888)
+#define SOAP_TYPE___trt__CreateOSD (3072)
 /* Wrapper: */
 struct __trt__CreateOSD {
         /** Optional element 'trt:CreateOSD' of XML schema type 'trt:CreateOSD' */
@@ -20754,9 +21835,9 @@ struct __trt__CreateOSD {
 };
 #endif
 
-/* onvif.h:43268 */
+/* onvif.h:46476 */
 #ifndef SOAP_TYPE___trt__DeleteOSD
-#define SOAP_TYPE___trt__DeleteOSD (2892)
+#define SOAP_TYPE___trt__DeleteOSD (3076)
 /* Wrapper: */
 struct __trt__DeleteOSD {
         /** Optional element 'trt:DeleteOSD' of XML schema type 'trt:DeleteOSD' */
@@ -21419,229 +22500,229 @@ typedef _XML _saml2__AttributeValue;
 typedef struct saml2__EncryptedElementType _saml2__EncryptedAttribute;
 #endif
 
-/* onvif.h:226 */
+/* onvif.h:232 */
 #ifndef SOAP_TYPE_xsd__NCName
 #define SOAP_TYPE_xsd__NCName (408)
 typedef char *xsd__NCName;
 #endif
 
-/* onvif.h:229 */
+/* onvif.h:235 */
 #ifndef SOAP_TYPE_xsd__anySimpleType
 #define SOAP_TYPE_xsd__anySimpleType (409)
 typedef char *xsd__anySimpleType;
 #endif
 
-/* onvif.h:232 */
+/* onvif.h:238 */
 #ifndef SOAP_TYPE_xsd__anyURI
 #define SOAP_TYPE_xsd__anyURI (410)
 typedef char *xsd__anyURI;
 #endif
 
-/* onvif.h:235 */
+/* onvif.h:241 */
 #ifndef SOAP_TYPE_xsd__integer
 #define SOAP_TYPE_xsd__integer (411)
 typedef char *xsd__integer;
 #endif
 
-/* onvif.h:238 */
+/* onvif.h:244 */
 #ifndef SOAP_TYPE_xsd__nonNegativeInteger
 #define SOAP_TYPE_xsd__nonNegativeInteger (412)
 typedef char *xsd__nonNegativeInteger;
 #endif
 
-/* onvif.h:241 */
+/* onvif.h:247 */
 #ifndef SOAP_TYPE_xsd__token
 #define SOAP_TYPE_xsd__token (413)
 typedef char *xsd__token;
 #endif
 
-/* onvif.h:246 */
+/* onvif.h:252 */
 #ifndef SOAP_TYPE__xml__lang
 #define SOAP_TYPE__xml__lang (414)
 typedef char *_xml__lang;
 #endif
 
-/* onvif.h:278 */
+/* onvif.h:284 */
 #ifndef SOAP_TYPE_tt__IntList
 #define SOAP_TYPE_tt__IntList (415)
 typedef char *tt__IntList;
 #endif
 
-/* onvif.h:282 */
+/* onvif.h:288 */
 #ifndef SOAP_TYPE_tt__FloatList
 #define SOAP_TYPE_tt__FloatList (416)
 typedef char *tt__FloatList;
 #endif
 
-/* onvif.h:286 */
+/* onvif.h:292 */
 #ifndef SOAP_TYPE_tt__StringAttrList
 #define SOAP_TYPE_tt__StringAttrList (417)
 typedef char *tt__StringAttrList;
 #endif
 
-/* onvif.h:290 */
+/* onvif.h:296 */
 #ifndef SOAP_TYPE_tt__StringList
 #define SOAP_TYPE_tt__StringList (418)
 typedef char *tt__StringList;
 #endif
 
-/* onvif.h:294 */
+/* onvif.h:300 */
 #ifndef SOAP_TYPE_tt__ReferenceTokenList
 #define SOAP_TYPE_tt__ReferenceTokenList (419)
 typedef char *tt__ReferenceTokenList;
 #endif
 
-/* onvif.h:305 */
+/* onvif.h:311 */
 #ifndef SOAP_TYPE_wsnt__AbsoluteOrRelativeTimeType
 #define SOAP_TYPE_wsnt__AbsoluteOrRelativeTimeType (420)
 typedef char *wsnt__AbsoluteOrRelativeTimeType;
 #endif
 
-/* onvif.h:427 */
+/* onvif.h:441 */
 #ifndef SOAP_TYPE_tt__Name
 #define SOAP_TYPE_tt__Name (423)
 typedef char *tt__Name;
 #endif
 
-/* onvif.h:668 */
+/* onvif.h:682 */
 #ifndef SOAP_TYPE_tt__NetworkInterfaceConfigPriority
 #define SOAP_TYPE_tt__NetworkInterfaceConfigPriority (440)
 typedef xsd__integer tt__NetworkInterfaceConfigPriority;
 #endif
 
-/* onvif.h:685 */
+/* onvif.h:699 */
 #ifndef SOAP_TYPE_tt__IANA_IfTypes
 #define SOAP_TYPE_tt__IANA_IfTypes (442)
 typedef int tt__IANA_IfTypes;
 #endif
 
-/* onvif.h:720 */
+/* onvif.h:734 */
 #ifndef SOAP_TYPE_tt__IPv4Address
 #define SOAP_TYPE_tt__IPv4Address (446)
 typedef xsd__token tt__IPv4Address;
 #endif
 
-/* onvif.h:724 */
+/* onvif.h:738 */
 #ifndef SOAP_TYPE_tt__IPv6Address
 #define SOAP_TYPE_tt__IPv6Address (447)
 typedef xsd__token tt__IPv6Address;
 #endif
 
-/* onvif.h:728 */
+/* onvif.h:742 */
 #ifndef SOAP_TYPE_tt__HwAddress
 #define SOAP_TYPE_tt__HwAddress (448)
 typedef xsd__token tt__HwAddress;
 #endif
 
-/* onvif.h:741 */
+/* onvif.h:755 */
 #ifndef SOAP_TYPE_tt__DNSName
 #define SOAP_TYPE_tt__DNSName (450)
 typedef xsd__token tt__DNSName;
 #endif
 
-/* onvif.h:745 */
+/* onvif.h:759 */
 #ifndef SOAP_TYPE_tt__Domain
 #define SOAP_TYPE_tt__Domain (451)
 typedef xsd__token tt__Domain;
 #endif
 
-/* onvif.h:769 */
+/* onvif.h:783 */
 #ifndef SOAP_TYPE_tt__Dot11SSIDType
 #define SOAP_TYPE_tt__Dot11SSIDType (454)
 typedef struct xsd__hexBinary tt__Dot11SSIDType;
 #endif
 
-/* onvif.h:807 */
+/* onvif.h:821 */
 #ifndef SOAP_TYPE_tt__Dot11PSK
 #define SOAP_TYPE_tt__Dot11PSK (458)
 typedef struct xsd__hexBinary tt__Dot11PSK;
 #endif
 
-/* onvif.h:812 */
+/* onvif.h:826 */
 #ifndef SOAP_TYPE_tt__Dot11PSKPassphrase
 #define SOAP_TYPE_tt__Dot11PSKPassphrase (459)
 typedef char *tt__Dot11PSKPassphrase;
 #endif
 
-/* onvif.h:983 */
+/* onvif.h:997 */
 #ifndef SOAP_TYPE_tt__AuxiliaryData
 #define SOAP_TYPE_tt__AuxiliaryData (473)
 typedef char *tt__AuxiliaryData;
 #endif
 
-/* onvif.h:1261 */
+/* onvif.h:1275 */
 #ifndef SOAP_TYPE_tt__Description
 #define SOAP_TYPE_tt__Description (496)
 typedef char *tt__Description;
 #endif
 
-/* onvif.h:1265 */
+/* onvif.h:1279 */
 #ifndef SOAP_TYPE_tt__XPathExpression
 #define SOAP_TYPE_tt__XPathExpression (497)
 typedef char *tt__XPathExpression;
 #endif
 
-/* onvif.h:1328 */
+/* onvif.h:1342 */
 #ifndef SOAP_TYPE_tt__RecordingJobMode
 #define SOAP_TYPE_tt__RecordingJobMode (501)
 typedef char *tt__RecordingJobMode;
 #endif
 
-/* onvif.h:1332 */
+/* onvif.h:1346 */
 #ifndef SOAP_TYPE_tt__RecordingJobState
 #define SOAP_TYPE_tt__RecordingJobState (502)
 typedef char *tt__RecordingJobState;
 #endif
 
-/* onvif.h:1384 */
+/* onvif.h:1398 */
 #ifndef SOAP_TYPE_tt__ReferenceToken
 #define SOAP_TYPE_tt__ReferenceToken (506)
 typedef char *tt__ReferenceToken;
 #endif
 
-/* onvif.h:1437 */
+/* onvif.h:1451 */
 #ifndef SOAP_TYPE_wstop__FullTopicExpression
 #define SOAP_TYPE_wstop__FullTopicExpression (509)
 typedef char *wstop__FullTopicExpression;
 #endif
 
-/* onvif.h:1447 */
+/* onvif.h:1461 */
 #ifndef SOAP_TYPE_wstop__ConcreteTopicExpression
 #define SOAP_TYPE_wstop__ConcreteTopicExpression (510)
 typedef char *wstop__ConcreteTopicExpression;
 #endif
 
-/* onvif.h:1456 */
+/* onvif.h:1470 */
 #ifndef SOAP_TYPE_wstop__SimpleTopicExpression
 #define SOAP_TYPE_wstop__SimpleTopicExpression (511)
 typedef _QName wstop__SimpleTopicExpression;
 #endif
 
-/* onvif.h:1521 */
+/* onvif.h:1543 */
 #ifndef SOAP_TYPE_tt__ReceiverReference
 #define SOAP_TYPE_tt__ReceiverReference (514)
 typedef tt__ReferenceToken tt__ReceiverReference;
 #endif
 
-/* onvif.h:1525 */
+/* onvif.h:1547 */
 #ifndef SOAP_TYPE_tt__RecordingReference
 #define SOAP_TYPE_tt__RecordingReference (515)
 typedef tt__ReferenceToken tt__RecordingReference;
 #endif
 
-/* onvif.h:1529 */
+/* onvif.h:1551 */
 #ifndef SOAP_TYPE_tt__TrackReference
 #define SOAP_TYPE_tt__TrackReference (516)
 typedef tt__ReferenceToken tt__TrackReference;
 #endif
 
-/* onvif.h:1533 */
+/* onvif.h:1555 */
 #ifndef SOAP_TYPE_tt__JobToken
 #define SOAP_TYPE_tt__JobToken (517)
 typedef tt__ReferenceToken tt__JobToken;
 #endif
 
-/* onvif.h:1537 */
+/* onvif.h:1559 */
 #ifndef SOAP_TYPE_tt__RecordingJobReference
 #define SOAP_TYPE_tt__RecordingJobReference (518)
 typedef tt__ReferenceToken tt__RecordingJobReference;
@@ -22146,512 +23227,807 @@ typedef tt__ReferenceToken tt__RecordingJobReference;
 
 /* struct _wsrfr__ResourceUnavailableFaultType_FaultCause has binding name '_wsrfr__ResourceUnavailableFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_FaultCause
-#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_FaultCause (2067)
+#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_FaultCause (2135)
 #endif
 
 /* struct _wsrfr__ResourceUnavailableFaultType_Description has binding name '_wsrfr__ResourceUnavailableFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_Description
-#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_Description (2065)
+#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_Description (2133)
 #endif
 
 /* struct _wsrfr__ResourceUnavailableFaultType_ErrorCode has binding name '_wsrfr__ResourceUnavailableFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_ErrorCode
-#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_ErrorCode (2063)
+#define SOAP_TYPE__wsrfr__ResourceUnavailableFaultType_ErrorCode (2131)
 #endif
 
 /* struct wsrfr__ResourceUnavailableFaultType has binding name 'wsrfr__ResourceUnavailableFaultType' for type 'wsrfr:ResourceUnavailableFaultType' */
 #ifndef SOAP_TYPE_wsrfr__ResourceUnavailableFaultType
-#define SOAP_TYPE_wsrfr__ResourceUnavailableFaultType (2062)
+#define SOAP_TYPE_wsrfr__ResourceUnavailableFaultType (2130)
 #endif
 
 /* struct _wsrfr__ResourceUnknownFaultType_FaultCause has binding name '_wsrfr__ResourceUnknownFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnknownFaultType_FaultCause
-#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_FaultCause (2060)
+#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_FaultCause (2128)
 #endif
 
 /* struct _wsrfr__ResourceUnknownFaultType_Description has binding name '_wsrfr__ResourceUnknownFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnknownFaultType_Description
-#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_Description (2058)
+#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_Description (2126)
 #endif
 
 /* struct _wsrfr__ResourceUnknownFaultType_ErrorCode has binding name '_wsrfr__ResourceUnknownFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsrfr__ResourceUnknownFaultType_ErrorCode
-#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_ErrorCode (2056)
+#define SOAP_TYPE__wsrfr__ResourceUnknownFaultType_ErrorCode (2124)
 #endif
 
 /* struct wsrfr__ResourceUnknownFaultType has binding name 'wsrfr__ResourceUnknownFaultType' for type 'wsrfr:ResourceUnknownFaultType' */
 #ifndef SOAP_TYPE_wsrfr__ResourceUnknownFaultType
-#define SOAP_TYPE_wsrfr__ResourceUnknownFaultType (2055)
+#define SOAP_TYPE_wsrfr__ResourceUnknownFaultType (2123)
 #endif
 
 /* struct wstop__TopicType has binding name 'wstop__TopicType' for type 'wstop:TopicType' */
 #ifndef SOAP_TYPE_wstop__TopicType
-#define SOAP_TYPE_wstop__TopicType (2052)
+#define SOAP_TYPE_wstop__TopicType (2120)
 #endif
 
 /* struct _wstop__TopicNamespaceType_Topic has binding name '_wstop__TopicNamespaceType_Topic' for type '' */
 #ifndef SOAP_TYPE__wstop__TopicNamespaceType_Topic
-#define SOAP_TYPE__wstop__TopicNamespaceType_Topic (2050)
+#define SOAP_TYPE__wstop__TopicNamespaceType_Topic (2118)
 #endif
 
 /* struct wstop__TopicNamespaceType has binding name 'wstop__TopicNamespaceType' for type 'wstop:TopicNamespaceType' */
 #ifndef SOAP_TYPE_wstop__TopicNamespaceType
-#define SOAP_TYPE_wstop__TopicNamespaceType (2049)
+#define SOAP_TYPE_wstop__TopicNamespaceType (2117)
 #endif
 
 /* struct _wsnt__ResumeFailedFaultType_FaultCause has binding name '_wsnt__ResumeFailedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__ResumeFailedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__ResumeFailedFaultType_FaultCause (2047)
+#define SOAP_TYPE__wsnt__ResumeFailedFaultType_FaultCause (2115)
 #endif
 
 /* struct _wsnt__ResumeFailedFaultType_Description has binding name '_wsnt__ResumeFailedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__ResumeFailedFaultType_Description
-#define SOAP_TYPE__wsnt__ResumeFailedFaultType_Description (2045)
+#define SOAP_TYPE__wsnt__ResumeFailedFaultType_Description (2113)
 #endif
 
 /* struct _wsnt__ResumeFailedFaultType_ErrorCode has binding name '_wsnt__ResumeFailedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__ResumeFailedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__ResumeFailedFaultType_ErrorCode (2043)
+#define SOAP_TYPE__wsnt__ResumeFailedFaultType_ErrorCode (2111)
 #endif
 
 /* struct wsnt__ResumeFailedFaultType has binding name 'wsnt__ResumeFailedFaultType' for type 'wsnt:ResumeFailedFaultType' */
 #ifndef SOAP_TYPE_wsnt__ResumeFailedFaultType
-#define SOAP_TYPE_wsnt__ResumeFailedFaultType (2042)
+#define SOAP_TYPE_wsnt__ResumeFailedFaultType (2110)
 #endif
 
 /* struct _wsnt__PauseFailedFaultType_FaultCause has binding name '_wsnt__PauseFailedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__PauseFailedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__PauseFailedFaultType_FaultCause (2040)
+#define SOAP_TYPE__wsnt__PauseFailedFaultType_FaultCause (2108)
 #endif
 
 /* struct _wsnt__PauseFailedFaultType_Description has binding name '_wsnt__PauseFailedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__PauseFailedFaultType_Description
-#define SOAP_TYPE__wsnt__PauseFailedFaultType_Description (2038)
+#define SOAP_TYPE__wsnt__PauseFailedFaultType_Description (2106)
 #endif
 
 /* struct _wsnt__PauseFailedFaultType_ErrorCode has binding name '_wsnt__PauseFailedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__PauseFailedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__PauseFailedFaultType_ErrorCode (2036)
+#define SOAP_TYPE__wsnt__PauseFailedFaultType_ErrorCode (2104)
 #endif
 
 /* struct wsnt__PauseFailedFaultType has binding name 'wsnt__PauseFailedFaultType' for type 'wsnt:PauseFailedFaultType' */
 #ifndef SOAP_TYPE_wsnt__PauseFailedFaultType
-#define SOAP_TYPE_wsnt__PauseFailedFaultType (2035)
+#define SOAP_TYPE_wsnt__PauseFailedFaultType (2103)
 #endif
 
 /* struct _wsnt__UnableToDestroySubscriptionFaultType_FaultCause has binding name '_wsnt__UnableToDestroySubscriptionFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_FaultCause (2033)
+#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_FaultCause (2101)
 #endif
 
 /* struct _wsnt__UnableToDestroySubscriptionFaultType_Description has binding name '_wsnt__UnableToDestroySubscriptionFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_Description
-#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_Description (2031)
+#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_Description (2099)
 #endif
 
 /* struct _wsnt__UnableToDestroySubscriptionFaultType_ErrorCode has binding name '_wsnt__UnableToDestroySubscriptionFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_ErrorCode (2029)
+#define SOAP_TYPE__wsnt__UnableToDestroySubscriptionFaultType_ErrorCode (2097)
 #endif
 
 /* struct wsnt__UnableToDestroySubscriptionFaultType has binding name 'wsnt__UnableToDestroySubscriptionFaultType' for type 'wsnt:UnableToDestroySubscriptionFaultType' */
 #ifndef SOAP_TYPE_wsnt__UnableToDestroySubscriptionFaultType
-#define SOAP_TYPE_wsnt__UnableToDestroySubscriptionFaultType (2028)
+#define SOAP_TYPE_wsnt__UnableToDestroySubscriptionFaultType (2096)
 #endif
 
 /* struct _wsnt__UnacceptableTerminationTimeFaultType_FaultCause has binding name '_wsnt__UnacceptableTerminationTimeFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_FaultCause (2026)
+#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_FaultCause (2094)
 #endif
 
 /* struct _wsnt__UnacceptableTerminationTimeFaultType_Description has binding name '_wsnt__UnacceptableTerminationTimeFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_Description
-#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_Description (2024)
+#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_Description (2092)
 #endif
 
 /* struct _wsnt__UnacceptableTerminationTimeFaultType_ErrorCode has binding name '_wsnt__UnacceptableTerminationTimeFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_ErrorCode (2022)
+#define SOAP_TYPE__wsnt__UnacceptableTerminationTimeFaultType_ErrorCode (2090)
 #endif
 
 /* struct wsnt__UnacceptableTerminationTimeFaultType has binding name 'wsnt__UnacceptableTerminationTimeFaultType' for type 'wsnt:UnacceptableTerminationTimeFaultType' */
 #ifndef SOAP_TYPE_wsnt__UnacceptableTerminationTimeFaultType
-#define SOAP_TYPE_wsnt__UnacceptableTerminationTimeFaultType (2021)
+#define SOAP_TYPE_wsnt__UnacceptableTerminationTimeFaultType (2089)
 #endif
 
 /* struct _wsnt__UnableToCreatePullPointFaultType_FaultCause has binding name '_wsnt__UnableToCreatePullPointFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_FaultCause (2019)
+#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_FaultCause (2087)
 #endif
 
 /* struct _wsnt__UnableToCreatePullPointFaultType_Description has binding name '_wsnt__UnableToCreatePullPointFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_Description
-#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_Description (2017)
+#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_Description (2085)
 #endif
 
 /* struct _wsnt__UnableToCreatePullPointFaultType_ErrorCode has binding name '_wsnt__UnableToCreatePullPointFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_ErrorCode (2015)
+#define SOAP_TYPE__wsnt__UnableToCreatePullPointFaultType_ErrorCode (2083)
 #endif
 
 /* struct wsnt__UnableToCreatePullPointFaultType has binding name 'wsnt__UnableToCreatePullPointFaultType' for type 'wsnt:UnableToCreatePullPointFaultType' */
 #ifndef SOAP_TYPE_wsnt__UnableToCreatePullPointFaultType
-#define SOAP_TYPE_wsnt__UnableToCreatePullPointFaultType (2014)
+#define SOAP_TYPE_wsnt__UnableToCreatePullPointFaultType (2082)
 #endif
 
 /* struct _wsnt__UnableToDestroyPullPointFaultType_FaultCause has binding name '_wsnt__UnableToDestroyPullPointFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_FaultCause (2012)
+#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_FaultCause (2080)
 #endif
 
 /* struct _wsnt__UnableToDestroyPullPointFaultType_Description has binding name '_wsnt__UnableToDestroyPullPointFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_Description
-#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_Description (2010)
+#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_Description (2078)
 #endif
 
 /* struct _wsnt__UnableToDestroyPullPointFaultType_ErrorCode has binding name '_wsnt__UnableToDestroyPullPointFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_ErrorCode (2008)
+#define SOAP_TYPE__wsnt__UnableToDestroyPullPointFaultType_ErrorCode (2076)
 #endif
 
 /* struct wsnt__UnableToDestroyPullPointFaultType has binding name 'wsnt__UnableToDestroyPullPointFaultType' for type 'wsnt:UnableToDestroyPullPointFaultType' */
 #ifndef SOAP_TYPE_wsnt__UnableToDestroyPullPointFaultType
-#define SOAP_TYPE_wsnt__UnableToDestroyPullPointFaultType (2007)
+#define SOAP_TYPE_wsnt__UnableToDestroyPullPointFaultType (2075)
 #endif
 
 /* struct _wsnt__UnableToGetMessagesFaultType_FaultCause has binding name '_wsnt__UnableToGetMessagesFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_FaultCause (2005)
+#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_FaultCause (2073)
 #endif
 
 /* struct _wsnt__UnableToGetMessagesFaultType_Description has binding name '_wsnt__UnableToGetMessagesFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_Description
-#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_Description (2003)
+#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_Description (2071)
 #endif
 
 /* struct _wsnt__UnableToGetMessagesFaultType_ErrorCode has binding name '_wsnt__UnableToGetMessagesFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_ErrorCode (2001)
+#define SOAP_TYPE__wsnt__UnableToGetMessagesFaultType_ErrorCode (2069)
 #endif
 
 /* struct wsnt__UnableToGetMessagesFaultType has binding name 'wsnt__UnableToGetMessagesFaultType' for type 'wsnt:UnableToGetMessagesFaultType' */
 #ifndef SOAP_TYPE_wsnt__UnableToGetMessagesFaultType
-#define SOAP_TYPE_wsnt__UnableToGetMessagesFaultType (2000)
+#define SOAP_TYPE_wsnt__UnableToGetMessagesFaultType (2068)
 #endif
 
 /* struct _wsnt__NoCurrentMessageOnTopicFaultType_FaultCause has binding name '_wsnt__NoCurrentMessageOnTopicFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_FaultCause
-#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_FaultCause (1998)
+#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_FaultCause (2066)
 #endif
 
 /* struct _wsnt__NoCurrentMessageOnTopicFaultType_Description has binding name '_wsnt__NoCurrentMessageOnTopicFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_Description
-#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_Description (1996)
+#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_Description (2064)
 #endif
 
 /* struct _wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode has binding name '_wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode (1994)
+#define SOAP_TYPE__wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode (2062)
 #endif
 
 /* struct wsnt__NoCurrentMessageOnTopicFaultType has binding name 'wsnt__NoCurrentMessageOnTopicFaultType' for type 'wsnt:NoCurrentMessageOnTopicFaultType' */
 #ifndef SOAP_TYPE_wsnt__NoCurrentMessageOnTopicFaultType
-#define SOAP_TYPE_wsnt__NoCurrentMessageOnTopicFaultType (1993)
+#define SOAP_TYPE_wsnt__NoCurrentMessageOnTopicFaultType (2061)
 #endif
 
 /* struct _wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause has binding name '_wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause (1991)
+#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause (2059)
 #endif
 
 /* struct _wsnt__UnacceptableInitialTerminationTimeFaultType_Description has binding name '_wsnt__UnacceptableInitialTerminationTimeFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_Description
-#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_Description (1989)
+#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_Description (2057)
 #endif
 
 /* struct _wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode has binding name '_wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode (1987)
+#define SOAP_TYPE__wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode (2055)
 #endif
 
 /* struct wsnt__UnacceptableInitialTerminationTimeFaultType has binding name 'wsnt__UnacceptableInitialTerminationTimeFaultType' for type 'wsnt:UnacceptableInitialTerminationTimeFaultType' */
 #ifndef SOAP_TYPE_wsnt__UnacceptableInitialTerminationTimeFaultType
-#define SOAP_TYPE_wsnt__UnacceptableInitialTerminationTimeFaultType (1986)
+#define SOAP_TYPE_wsnt__UnacceptableInitialTerminationTimeFaultType (2054)
 #endif
 
 /* struct _wsnt__NotifyMessageNotSupportedFaultType_FaultCause has binding name '_wsnt__NotifyMessageNotSupportedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_FaultCause (1984)
+#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_FaultCause (2052)
 #endif
 
 /* struct _wsnt__NotifyMessageNotSupportedFaultType_Description has binding name '_wsnt__NotifyMessageNotSupportedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_Description
-#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_Description (1982)
+#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_Description (2050)
 #endif
 
 /* struct _wsnt__NotifyMessageNotSupportedFaultType_ErrorCode has binding name '_wsnt__NotifyMessageNotSupportedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_ErrorCode (1980)
+#define SOAP_TYPE__wsnt__NotifyMessageNotSupportedFaultType_ErrorCode (2048)
 #endif
 
 /* struct wsnt__NotifyMessageNotSupportedFaultType has binding name 'wsnt__NotifyMessageNotSupportedFaultType' for type 'wsnt:NotifyMessageNotSupportedFaultType' */
 #ifndef SOAP_TYPE_wsnt__NotifyMessageNotSupportedFaultType
-#define SOAP_TYPE_wsnt__NotifyMessageNotSupportedFaultType (1979)
+#define SOAP_TYPE_wsnt__NotifyMessageNotSupportedFaultType (2047)
 #endif
 
 /* struct _wsnt__UnsupportedPolicyRequestFaultType_FaultCause has binding name '_wsnt__UnsupportedPolicyRequestFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_FaultCause (1977)
+#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_FaultCause (2045)
 #endif
 
 /* struct _wsnt__UnsupportedPolicyRequestFaultType_Description has binding name '_wsnt__UnsupportedPolicyRequestFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_Description
-#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_Description (1975)
+#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_Description (2043)
 #endif
 
 /* struct _wsnt__UnsupportedPolicyRequestFaultType_ErrorCode has binding name '_wsnt__UnsupportedPolicyRequestFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_ErrorCode (1973)
+#define SOAP_TYPE__wsnt__UnsupportedPolicyRequestFaultType_ErrorCode (2041)
 #endif
 
 /* struct wsnt__UnsupportedPolicyRequestFaultType has binding name 'wsnt__UnsupportedPolicyRequestFaultType' for type 'wsnt:UnsupportedPolicyRequestFaultType' */
 #ifndef SOAP_TYPE_wsnt__UnsupportedPolicyRequestFaultType
-#define SOAP_TYPE_wsnt__UnsupportedPolicyRequestFaultType (1972)
+#define SOAP_TYPE_wsnt__UnsupportedPolicyRequestFaultType (2040)
 #endif
 
 /* struct _wsnt__UnrecognizedPolicyRequestFaultType_FaultCause has binding name '_wsnt__UnrecognizedPolicyRequestFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_FaultCause
-#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_FaultCause (1970)
+#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_FaultCause (2038)
 #endif
 
 /* struct _wsnt__UnrecognizedPolicyRequestFaultType_Description has binding name '_wsnt__UnrecognizedPolicyRequestFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_Description
-#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_Description (1968)
+#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_Description (2036)
 #endif
 
 /* struct _wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode has binding name '_wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode (1966)
+#define SOAP_TYPE__wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode (2034)
 #endif
 
 /* struct wsnt__UnrecognizedPolicyRequestFaultType has binding name 'wsnt__UnrecognizedPolicyRequestFaultType' for type 'wsnt:UnrecognizedPolicyRequestFaultType' */
 #ifndef SOAP_TYPE_wsnt__UnrecognizedPolicyRequestFaultType
-#define SOAP_TYPE_wsnt__UnrecognizedPolicyRequestFaultType (1965)
+#define SOAP_TYPE_wsnt__UnrecognizedPolicyRequestFaultType (2033)
 #endif
 
 /* struct _wsnt__InvalidMessageContentExpressionFaultType_FaultCause has binding name '_wsnt__InvalidMessageContentExpressionFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_FaultCause
-#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_FaultCause (1963)
+#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_FaultCause (2031)
 #endif
 
 /* struct _wsnt__InvalidMessageContentExpressionFaultType_Description has binding name '_wsnt__InvalidMessageContentExpressionFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_Description
-#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_Description (1961)
+#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_Description (2029)
 #endif
 
 /* struct _wsnt__InvalidMessageContentExpressionFaultType_ErrorCode has binding name '_wsnt__InvalidMessageContentExpressionFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_ErrorCode (1959)
+#define SOAP_TYPE__wsnt__InvalidMessageContentExpressionFaultType_ErrorCode (2027)
 #endif
 
 /* struct wsnt__InvalidMessageContentExpressionFaultType has binding name 'wsnt__InvalidMessageContentExpressionFaultType' for type 'wsnt:InvalidMessageContentExpressionFaultType' */
 #ifndef SOAP_TYPE_wsnt__InvalidMessageContentExpressionFaultType
-#define SOAP_TYPE_wsnt__InvalidMessageContentExpressionFaultType (1958)
+#define SOAP_TYPE_wsnt__InvalidMessageContentExpressionFaultType (2026)
 #endif
 
 /* struct _wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause has binding name '_wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause
-#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause (1956)
+#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause (2024)
 #endif
 
 /* struct _wsnt__InvalidProducerPropertiesExpressionFaultType_Description has binding name '_wsnt__InvalidProducerPropertiesExpressionFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_Description
-#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_Description (1954)
+#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_Description (2022)
 #endif
 
 /* struct _wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode has binding name '_wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode (1952)
+#define SOAP_TYPE__wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode (2020)
 #endif
 
 /* struct wsnt__InvalidProducerPropertiesExpressionFaultType has binding name 'wsnt__InvalidProducerPropertiesExpressionFaultType' for type 'wsnt:InvalidProducerPropertiesExpressionFaultType' */
 #ifndef SOAP_TYPE_wsnt__InvalidProducerPropertiesExpressionFaultType
-#define SOAP_TYPE_wsnt__InvalidProducerPropertiesExpressionFaultType (1951)
+#define SOAP_TYPE_wsnt__InvalidProducerPropertiesExpressionFaultType (2019)
 #endif
 
 /* struct _wsnt__MultipleTopicsSpecifiedFaultType_FaultCause has binding name '_wsnt__MultipleTopicsSpecifiedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_FaultCause (1949)
+#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_FaultCause (2017)
 #endif
 
 /* struct _wsnt__MultipleTopicsSpecifiedFaultType_Description has binding name '_wsnt__MultipleTopicsSpecifiedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_Description
-#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_Description (1947)
+#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_Description (2015)
 #endif
 
 /* struct _wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode has binding name '_wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode (1945)
+#define SOAP_TYPE__wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode (2013)
 #endif
 
 /* struct wsnt__MultipleTopicsSpecifiedFaultType has binding name 'wsnt__MultipleTopicsSpecifiedFaultType' for type 'wsnt:MultipleTopicsSpecifiedFaultType' */
 #ifndef SOAP_TYPE_wsnt__MultipleTopicsSpecifiedFaultType
-#define SOAP_TYPE_wsnt__MultipleTopicsSpecifiedFaultType (1944)
+#define SOAP_TYPE_wsnt__MultipleTopicsSpecifiedFaultType (2012)
 #endif
 
 /* struct _wsnt__TopicNotSupportedFaultType_FaultCause has binding name '_wsnt__TopicNotSupportedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__TopicNotSupportedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_FaultCause (1942)
+#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_FaultCause (2010)
 #endif
 
 /* struct _wsnt__TopicNotSupportedFaultType_Description has binding name '_wsnt__TopicNotSupportedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__TopicNotSupportedFaultType_Description
-#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_Description (1940)
+#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_Description (2008)
 #endif
 
 /* struct _wsnt__TopicNotSupportedFaultType_ErrorCode has binding name '_wsnt__TopicNotSupportedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__TopicNotSupportedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_ErrorCode (1938)
+#define SOAP_TYPE__wsnt__TopicNotSupportedFaultType_ErrorCode (2006)
 #endif
 
 /* struct wsnt__TopicNotSupportedFaultType has binding name 'wsnt__TopicNotSupportedFaultType' for type 'wsnt:TopicNotSupportedFaultType' */
 #ifndef SOAP_TYPE_wsnt__TopicNotSupportedFaultType
-#define SOAP_TYPE_wsnt__TopicNotSupportedFaultType (1937)
+#define SOAP_TYPE_wsnt__TopicNotSupportedFaultType (2005)
 #endif
 
 /* struct _wsnt__InvalidTopicExpressionFaultType_FaultCause has binding name '_wsnt__InvalidTopicExpressionFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_FaultCause
-#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_FaultCause (1935)
+#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_FaultCause (2003)
 #endif
 
 /* struct _wsnt__InvalidTopicExpressionFaultType_Description has binding name '_wsnt__InvalidTopicExpressionFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_Description
-#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_Description (1933)
+#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_Description (2001)
 #endif
 
 /* struct _wsnt__InvalidTopicExpressionFaultType_ErrorCode has binding name '_wsnt__InvalidTopicExpressionFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_ErrorCode (1931)
+#define SOAP_TYPE__wsnt__InvalidTopicExpressionFaultType_ErrorCode (1999)
 #endif
 
 /* struct wsnt__InvalidTopicExpressionFaultType has binding name 'wsnt__InvalidTopicExpressionFaultType' for type 'wsnt:InvalidTopicExpressionFaultType' */
 #ifndef SOAP_TYPE_wsnt__InvalidTopicExpressionFaultType
-#define SOAP_TYPE_wsnt__InvalidTopicExpressionFaultType (1930)
+#define SOAP_TYPE_wsnt__InvalidTopicExpressionFaultType (1998)
 #endif
 
 /* struct _wsnt__TopicExpressionDialectUnknownFaultType_FaultCause has binding name '_wsnt__TopicExpressionDialectUnknownFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_FaultCause
-#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_FaultCause (1928)
+#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_FaultCause (1996)
 #endif
 
 /* struct _wsnt__TopicExpressionDialectUnknownFaultType_Description has binding name '_wsnt__TopicExpressionDialectUnknownFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_Description
-#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_Description (1926)
+#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_Description (1994)
 #endif
 
 /* struct _wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode has binding name '_wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode (1924)
+#define SOAP_TYPE__wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode (1992)
 #endif
 
 /* struct wsnt__TopicExpressionDialectUnknownFaultType has binding name 'wsnt__TopicExpressionDialectUnknownFaultType' for type 'wsnt:TopicExpressionDialectUnknownFaultType' */
 #ifndef SOAP_TYPE_wsnt__TopicExpressionDialectUnknownFaultType
-#define SOAP_TYPE_wsnt__TopicExpressionDialectUnknownFaultType (1923)
+#define SOAP_TYPE_wsnt__TopicExpressionDialectUnknownFaultType (1991)
 #endif
 
 /* struct _wsnt__InvalidFilterFaultType_FaultCause has binding name '_wsnt__InvalidFilterFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidFilterFaultType_FaultCause
-#define SOAP_TYPE__wsnt__InvalidFilterFaultType_FaultCause (1921)
+#define SOAP_TYPE__wsnt__InvalidFilterFaultType_FaultCause (1989)
 #endif
 
 /* struct _wsnt__InvalidFilterFaultType_Description has binding name '_wsnt__InvalidFilterFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidFilterFaultType_Description
-#define SOAP_TYPE__wsnt__InvalidFilterFaultType_Description (1919)
+#define SOAP_TYPE__wsnt__InvalidFilterFaultType_Description (1987)
 #endif
 
 /* struct _wsnt__InvalidFilterFaultType_ErrorCode has binding name '_wsnt__InvalidFilterFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__InvalidFilterFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__InvalidFilterFaultType_ErrorCode (1917)
+#define SOAP_TYPE__wsnt__InvalidFilterFaultType_ErrorCode (1985)
 #endif
 
 /* struct wsnt__InvalidFilterFaultType has binding name 'wsnt__InvalidFilterFaultType' for type 'wsnt:InvalidFilterFaultType' */
 #ifndef SOAP_TYPE_wsnt__InvalidFilterFaultType
-#define SOAP_TYPE_wsnt__InvalidFilterFaultType (1916)
+#define SOAP_TYPE_wsnt__InvalidFilterFaultType (1984)
 #endif
 
 /* struct _wsnt__SubscribeCreationFailedFaultType_FaultCause has binding name '_wsnt__SubscribeCreationFailedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_FaultCause
-#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_FaultCause (1914)
+#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_FaultCause (1982)
 #endif
 
 /* struct _wsnt__SubscribeCreationFailedFaultType_Description has binding name '_wsnt__SubscribeCreationFailedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_Description
-#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_Description (1912)
+#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_Description (1980)
 #endif
 
 /* struct _wsnt__SubscribeCreationFailedFaultType_ErrorCode has binding name '_wsnt__SubscribeCreationFailedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_ErrorCode
-#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_ErrorCode (1910)
+#define SOAP_TYPE__wsnt__SubscribeCreationFailedFaultType_ErrorCode (1978)
 #endif
 
 /* struct wsnt__SubscribeCreationFailedFaultType has binding name 'wsnt__SubscribeCreationFailedFaultType' for type 'wsnt:SubscribeCreationFailedFaultType' */
 #ifndef SOAP_TYPE_wsnt__SubscribeCreationFailedFaultType
-#define SOAP_TYPE_wsnt__SubscribeCreationFailedFaultType (1909)
+#define SOAP_TYPE_wsnt__SubscribeCreationFailedFaultType (1977)
 #endif
 
 /* struct tt__OSDReference has binding name 'tt__OSDReference' for type 'tt:OSDReference' */
 #ifndef SOAP_TYPE_tt__OSDReference
-#define SOAP_TYPE_tt__OSDReference (1903)
+#define SOAP_TYPE_tt__OSDReference (1971)
 #endif
 
 /* struct tt__AnalyticsEngineControl has binding name 'tt__AnalyticsEngineControl' for type 'tt:AnalyticsEngineControl' */
 #ifndef SOAP_TYPE_tt__AnalyticsEngineControl
-#define SOAP_TYPE_tt__AnalyticsEngineControl (1902)
+#define SOAP_TYPE_tt__AnalyticsEngineControl (1970)
 #endif
 
 /* struct tt__AnalyticsEngineInput has binding name 'tt__AnalyticsEngineInput' for type 'tt:AnalyticsEngineInput' */
 #ifndef SOAP_TYPE_tt__AnalyticsEngineInput
-#define SOAP_TYPE_tt__AnalyticsEngineInput (1899)
+#define SOAP_TYPE_tt__AnalyticsEngineInput (1967)
 #endif
 
 /* struct tt__AnalyticsEngine has binding name 'tt__AnalyticsEngine' for type 'tt:AnalyticsEngine' */
 #ifndef SOAP_TYPE_tt__AnalyticsEngine
-#define SOAP_TYPE_tt__AnalyticsEngine (1897)
+#define SOAP_TYPE_tt__AnalyticsEngine (1965)
 #endif
 
 /* struct tt__EventFilter has binding name 'tt__EventFilter' for type 'tt:EventFilter' */
 #ifndef SOAP_TYPE_tt__EventFilter
-#define SOAP_TYPE_tt__EventFilter (1896)
-#endif
-
-/* struct tt__PTZNode has binding name 'tt__PTZNode' for type 'tt:PTZNode' */
-#ifndef SOAP_TYPE_tt__PTZNode
-#define SOAP_TYPE_tt__PTZNode (1891)
+#define SOAP_TYPE_tt__EventFilter (1964)
 #endif
 
 /* struct tt__DigitalInput has binding name 'tt__DigitalInput' for type 'tt:DigitalInput' */
 #ifndef SOAP_TYPE_tt__DigitalInput
-#define SOAP_TYPE_tt__DigitalInput (1889)
+#define SOAP_TYPE_tt__DigitalInput (1958)
 #endif
 
 /* struct tt__VideoOutputConfiguration has binding name 'tt__VideoOutputConfiguration' for type 'tt:VideoOutputConfiguration' */
 #ifndef SOAP_TYPE_tt__VideoOutputConfiguration
-#define SOAP_TYPE_tt__VideoOutputConfiguration (1883)
+#define SOAP_TYPE_tt__VideoOutputConfiguration (1952)
 #endif
 
 /* struct tt__VideoOutput has binding name 'tt__VideoOutput' for type 'tt:VideoOutput' */
 #ifndef SOAP_TYPE_tt__VideoOutput
-#define SOAP_TYPE_tt__VideoOutput (1880)
+#define SOAP_TYPE_tt__VideoOutput (1949)
 #endif
 
 /* struct tt__AudioEncoder2Configuration has binding name 'tt__AudioEncoder2Configuration' for type 'tt:AudioEncoder2Configuration' */
 #ifndef SOAP_TYPE_tt__AudioEncoder2Configuration
-#define SOAP_TYPE_tt__AudioEncoder2Configuration (1874)
+#define SOAP_TYPE_tt__AudioEncoder2Configuration (1943)
 #endif
 
 /* struct tt__VideoEncoder2Configuration has binding name 'tt__VideoEncoder2Configuration' for type 'tt:VideoEncoder2Configuration' */
 #ifndef SOAP_TYPE_tt__VideoEncoder2Configuration
-#define SOAP_TYPE_tt__VideoEncoder2Configuration (1872)
+#define SOAP_TYPE_tt__VideoEncoder2Configuration (1941)
+#endif
+
+/* struct _tptz__MoveAndStartTrackingResponse has binding name '_tptz__MoveAndStartTrackingResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__MoveAndStartTrackingResponse
+#define SOAP_TYPE__tptz__MoveAndStartTrackingResponse (1932)
+#endif
+
+/* struct _tptz__MoveAndStartTracking has binding name '_tptz__MoveAndStartTracking' for type '' */
+#ifndef SOAP_TYPE__tptz__MoveAndStartTracking
+#define SOAP_TYPE__tptz__MoveAndStartTracking (1931)
+#endif
+
+/* struct _tptz__GetCompatibleConfigurationsResponse has binding name '_tptz__GetCompatibleConfigurationsResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetCompatibleConfigurationsResponse
+#define SOAP_TYPE__tptz__GetCompatibleConfigurationsResponse (1930)
+#endif
+
+/* struct _tptz__GetCompatibleConfigurations has binding name '_tptz__GetCompatibleConfigurations' for type '' */
+#ifndef SOAP_TYPE__tptz__GetCompatibleConfigurations
+#define SOAP_TYPE__tptz__GetCompatibleConfigurations (1929)
+#endif
+
+/* struct _tptz__RemovePresetTourResponse has binding name '_tptz__RemovePresetTourResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__RemovePresetTourResponse
+#define SOAP_TYPE__tptz__RemovePresetTourResponse (1928)
+#endif
+
+/* struct _tptz__RemovePresetTour has binding name '_tptz__RemovePresetTour' for type '' */
+#ifndef SOAP_TYPE__tptz__RemovePresetTour
+#define SOAP_TYPE__tptz__RemovePresetTour (1927)
+#endif
+
+/* struct _tptz__OperatePresetTourResponse has binding name '_tptz__OperatePresetTourResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__OperatePresetTourResponse
+#define SOAP_TYPE__tptz__OperatePresetTourResponse (1926)
+#endif
+
+/* struct _tptz__OperatePresetTour has binding name '_tptz__OperatePresetTour' for type '' */
+#ifndef SOAP_TYPE__tptz__OperatePresetTour
+#define SOAP_TYPE__tptz__OperatePresetTour (1925)
+#endif
+
+/* struct _tptz__ModifyPresetTourResponse has binding name '_tptz__ModifyPresetTourResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__ModifyPresetTourResponse
+#define SOAP_TYPE__tptz__ModifyPresetTourResponse (1924)
+#endif
+
+/* struct _tptz__ModifyPresetTour has binding name '_tptz__ModifyPresetTour' for type '' */
+#ifndef SOAP_TYPE__tptz__ModifyPresetTour
+#define SOAP_TYPE__tptz__ModifyPresetTour (1923)
+#endif
+
+/* struct _tptz__CreatePresetTourResponse has binding name '_tptz__CreatePresetTourResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__CreatePresetTourResponse
+#define SOAP_TYPE__tptz__CreatePresetTourResponse (1922)
+#endif
+
+/* struct _tptz__CreatePresetTour has binding name '_tptz__CreatePresetTour' for type '' */
+#ifndef SOAP_TYPE__tptz__CreatePresetTour
+#define SOAP_TYPE__tptz__CreatePresetTour (1921)
+#endif
+
+/* struct _tptz__GetPresetTourOptionsResponse has binding name '_tptz__GetPresetTourOptionsResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetPresetTourOptionsResponse
+#define SOAP_TYPE__tptz__GetPresetTourOptionsResponse (1919)
+#endif
+
+/* struct _tptz__GetPresetTourOptions has binding name '_tptz__GetPresetTourOptions' for type '' */
+#ifndef SOAP_TYPE__tptz__GetPresetTourOptions
+#define SOAP_TYPE__tptz__GetPresetTourOptions (1918)
+#endif
+
+/* struct _tptz__GetPresetTourResponse has binding name '_tptz__GetPresetTourResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetPresetTourResponse
+#define SOAP_TYPE__tptz__GetPresetTourResponse (1917)
+#endif
+
+/* struct _tptz__GetPresetTour has binding name '_tptz__GetPresetTour' for type '' */
+#ifndef SOAP_TYPE__tptz__GetPresetTour
+#define SOAP_TYPE__tptz__GetPresetTour (1916)
+#endif
+
+/* struct _tptz__GetPresetToursResponse has binding name '_tptz__GetPresetToursResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetPresetToursResponse
+#define SOAP_TYPE__tptz__GetPresetToursResponse (1914)
+#endif
+
+/* struct _tptz__GetPresetTours has binding name '_tptz__GetPresetTours' for type '' */
+#ifndef SOAP_TYPE__tptz__GetPresetTours
+#define SOAP_TYPE__tptz__GetPresetTours (1913)
+#endif
+
+/* struct _tptz__StopResponse has binding name '_tptz__StopResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__StopResponse
+#define SOAP_TYPE__tptz__StopResponse (1912)
+#endif
+
+/* struct _tptz__Stop has binding name '_tptz__Stop' for type '' */
+#ifndef SOAP_TYPE__tptz__Stop
+#define SOAP_TYPE__tptz__Stop (1911)
+#endif
+
+/* struct _tptz__GeoMoveResponse has binding name '_tptz__GeoMoveResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GeoMoveResponse
+#define SOAP_TYPE__tptz__GeoMoveResponse (1910)
+#endif
+
+/* struct _tptz__GeoMove has binding name '_tptz__GeoMove' for type '' */
+#ifndef SOAP_TYPE__tptz__GeoMove
+#define SOAP_TYPE__tptz__GeoMove (1909)
+#endif
+
+/* struct _tptz__AbsoluteMoveResponse has binding name '_tptz__AbsoluteMoveResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__AbsoluteMoveResponse
+#define SOAP_TYPE__tptz__AbsoluteMoveResponse (1908)
+#endif
+
+/* struct _tptz__AbsoluteMove has binding name '_tptz__AbsoluteMove' for type '' */
+#ifndef SOAP_TYPE__tptz__AbsoluteMove
+#define SOAP_TYPE__tptz__AbsoluteMove (1907)
+#endif
+
+/* struct _tptz__RelativeMoveResponse has binding name '_tptz__RelativeMoveResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__RelativeMoveResponse
+#define SOAP_TYPE__tptz__RelativeMoveResponse (1906)
+#endif
+
+/* struct _tptz__RelativeMove has binding name '_tptz__RelativeMove' for type '' */
+#ifndef SOAP_TYPE__tptz__RelativeMove
+#define SOAP_TYPE__tptz__RelativeMove (1905)
+#endif
+
+/* struct _tptz__ContinuousMoveResponse has binding name '_tptz__ContinuousMoveResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__ContinuousMoveResponse
+#define SOAP_TYPE__tptz__ContinuousMoveResponse (1904)
+#endif
+
+/* struct _tptz__ContinuousMove has binding name '_tptz__ContinuousMove' for type '' */
+#ifndef SOAP_TYPE__tptz__ContinuousMove
+#define SOAP_TYPE__tptz__ContinuousMove (1903)
+#endif
+
+/* struct _tptz__SetHomePositionResponse has binding name '_tptz__SetHomePositionResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__SetHomePositionResponse
+#define SOAP_TYPE__tptz__SetHomePositionResponse (1902)
+#endif
+
+/* struct _tptz__SetHomePosition has binding name '_tptz__SetHomePosition' for type '' */
+#ifndef SOAP_TYPE__tptz__SetHomePosition
+#define SOAP_TYPE__tptz__SetHomePosition (1901)
+#endif
+
+/* struct _tptz__GotoHomePositionResponse has binding name '_tptz__GotoHomePositionResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GotoHomePositionResponse
+#define SOAP_TYPE__tptz__GotoHomePositionResponse (1900)
+#endif
+
+/* struct _tptz__GotoHomePosition has binding name '_tptz__GotoHomePosition' for type '' */
+#ifndef SOAP_TYPE__tptz__GotoHomePosition
+#define SOAP_TYPE__tptz__GotoHomePosition (1899)
+#endif
+
+/* struct _tptz__GetStatusResponse has binding name '_tptz__GetStatusResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetStatusResponse
+#define SOAP_TYPE__tptz__GetStatusResponse (1897)
+#endif
+
+/* struct _tptz__GetStatus has binding name '_tptz__GetStatus' for type '' */
+#ifndef SOAP_TYPE__tptz__GetStatus
+#define SOAP_TYPE__tptz__GetStatus (1896)
+#endif
+
+/* struct _tptz__GotoPresetResponse has binding name '_tptz__GotoPresetResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GotoPresetResponse
+#define SOAP_TYPE__tptz__GotoPresetResponse (1895)
+#endif
+
+/* struct _tptz__GotoPreset has binding name '_tptz__GotoPreset' for type '' */
+#ifndef SOAP_TYPE__tptz__GotoPreset
+#define SOAP_TYPE__tptz__GotoPreset (1894)
+#endif
+
+/* struct _tptz__RemovePresetResponse has binding name '_tptz__RemovePresetResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__RemovePresetResponse
+#define SOAP_TYPE__tptz__RemovePresetResponse (1893)
+#endif
+
+/* struct _tptz__RemovePreset has binding name '_tptz__RemovePreset' for type '' */
+#ifndef SOAP_TYPE__tptz__RemovePreset
+#define SOAP_TYPE__tptz__RemovePreset (1892)
+#endif
+
+/* struct _tptz__SetPresetResponse has binding name '_tptz__SetPresetResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__SetPresetResponse
+#define SOAP_TYPE__tptz__SetPresetResponse (1891)
+#endif
+
+/* struct _tptz__SetPreset has binding name '_tptz__SetPreset' for type '' */
+#ifndef SOAP_TYPE__tptz__SetPreset
+#define SOAP_TYPE__tptz__SetPreset (1890)
+#endif
+
+/* struct _tptz__GetPresetsResponse has binding name '_tptz__GetPresetsResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetPresetsResponse
+#define SOAP_TYPE__tptz__GetPresetsResponse (1888)
+#endif
+
+/* struct _tptz__GetPresets has binding name '_tptz__GetPresets' for type '' */
+#ifndef SOAP_TYPE__tptz__GetPresets
+#define SOAP_TYPE__tptz__GetPresets (1887)
+#endif
+
+/* struct _tptz__SendAuxiliaryCommandResponse has binding name '_tptz__SendAuxiliaryCommandResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__SendAuxiliaryCommandResponse
+#define SOAP_TYPE__tptz__SendAuxiliaryCommandResponse (1886)
+#endif
+
+/* struct _tptz__SendAuxiliaryCommand has binding name '_tptz__SendAuxiliaryCommand' for type '' */
+#ifndef SOAP_TYPE__tptz__SendAuxiliaryCommand
+#define SOAP_TYPE__tptz__SendAuxiliaryCommand (1885)
+#endif
+
+/* struct _tptz__GetConfigurationOptionsResponse has binding name '_tptz__GetConfigurationOptionsResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetConfigurationOptionsResponse
+#define SOAP_TYPE__tptz__GetConfigurationOptionsResponse (1883)
+#endif
+
+/* struct _tptz__GetConfigurationOptions has binding name '_tptz__GetConfigurationOptions' for type '' */
+#ifndef SOAP_TYPE__tptz__GetConfigurationOptions
+#define SOAP_TYPE__tptz__GetConfigurationOptions (1882)
+#endif
+
+/* struct _tptz__SetConfigurationResponse has binding name '_tptz__SetConfigurationResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__SetConfigurationResponse
+#define SOAP_TYPE__tptz__SetConfigurationResponse (1879)
+#endif
+
+/* struct _tptz__SetConfiguration has binding name '_tptz__SetConfiguration' for type '' */
+#ifndef SOAP_TYPE__tptz__SetConfiguration
+#define SOAP_TYPE__tptz__SetConfiguration (1878)
+#endif
+
+/* struct _tptz__GetConfigurationResponse has binding name '_tptz__GetConfigurationResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetConfigurationResponse
+#define SOAP_TYPE__tptz__GetConfigurationResponse (1877)
+#endif
+
+/* struct _tptz__GetConfiguration has binding name '_tptz__GetConfiguration' for type '' */
+#ifndef SOAP_TYPE__tptz__GetConfiguration
+#define SOAP_TYPE__tptz__GetConfiguration (1876)
+#endif
+
+/* struct _tptz__GetConfigurationsResponse has binding name '_tptz__GetConfigurationsResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetConfigurationsResponse
+#define SOAP_TYPE__tptz__GetConfigurationsResponse (1875)
+#endif
+
+/* struct _tptz__GetConfigurations has binding name '_tptz__GetConfigurations' for type '' */
+#ifndef SOAP_TYPE__tptz__GetConfigurations
+#define SOAP_TYPE__tptz__GetConfigurations (1874)
+#endif
+
+/* struct _tptz__GetNodeResponse has binding name '_tptz__GetNodeResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetNodeResponse
+#define SOAP_TYPE__tptz__GetNodeResponse (1873)
+#endif
+
+/* struct _tptz__GetNode has binding name '_tptz__GetNode' for type '' */
+#ifndef SOAP_TYPE__tptz__GetNode
+#define SOAP_TYPE__tptz__GetNode (1872)
+#endif
+
+/* struct tt__PTZNode has binding name 'tt__PTZNode' for type 'tt:PTZNode' */
+#ifndef SOAP_TYPE_tt__PTZNode
+#define SOAP_TYPE_tt__PTZNode (1870)
+#endif
+
+/* struct _tptz__GetNodesResponse has binding name '_tptz__GetNodesResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetNodesResponse
+#define SOAP_TYPE__tptz__GetNodesResponse (1869)
+#endif
+
+/* struct _tptz__GetNodes has binding name '_tptz__GetNodes' for type '' */
+#ifndef SOAP_TYPE__tptz__GetNodes
+#define SOAP_TYPE__tptz__GetNodes (1868)
+#endif
+
+/* struct _tptz__GetServiceCapabilitiesResponse has binding name '_tptz__GetServiceCapabilitiesResponse' for type '' */
+#ifndef SOAP_TYPE__tptz__GetServiceCapabilitiesResponse
+#define SOAP_TYPE__tptz__GetServiceCapabilitiesResponse (1866)
+#endif
+
+/* struct _tptz__GetServiceCapabilities has binding name '_tptz__GetServiceCapabilities' for type '' */
+#ifndef SOAP_TYPE__tptz__GetServiceCapabilities
+#define SOAP_TYPE__tptz__GetServiceCapabilities (1865)
+#endif
+
+/* struct tptz__Capabilities has binding name 'tptz__Capabilities' for type 'tptz:Capabilities' */
+#ifndef SOAP_TYPE_tptz__Capabilities
+#define SOAP_TYPE_tptz__Capabilities (1864)
 #endif
 
 /* struct _trt__DeleteOSDResponse has binding name '_trt__DeleteOSDResponse' for type '' */
@@ -28091,2592 +29467,2922 @@ typedef tt__ReferenceToken tt__RecordingJobReference;
 
 /* struct _trt__DeleteOSDResponse * has binding name 'PointerTo_trt__DeleteOSDResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__DeleteOSDResponse
-#define SOAP_TYPE_PointerTo_trt__DeleteOSDResponse (2890)
+#define SOAP_TYPE_PointerTo_trt__DeleteOSDResponse (3074)
 #endif
 
 /* struct _trt__DeleteOSD * has binding name 'PointerTo_trt__DeleteOSD' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__DeleteOSD
-#define SOAP_TYPE_PointerTo_trt__DeleteOSD (2889)
+#define SOAP_TYPE_PointerTo_trt__DeleteOSD (3073)
 #endif
 
 /* struct _trt__CreateOSDResponse * has binding name 'PointerTo_trt__CreateOSDResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__CreateOSDResponse
-#define SOAP_TYPE_PointerTo_trt__CreateOSDResponse (2886)
+#define SOAP_TYPE_PointerTo_trt__CreateOSDResponse (3070)
 #endif
 
 /* struct _trt__CreateOSD * has binding name 'PointerTo_trt__CreateOSD' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__CreateOSD
-#define SOAP_TYPE_PointerTo_trt__CreateOSD (2885)
+#define SOAP_TYPE_PointerTo_trt__CreateOSD (3069)
 #endif
 
 /* struct _trt__SetOSDResponse * has binding name 'PointerTo_trt__SetOSDResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetOSDResponse
-#define SOAP_TYPE_PointerTo_trt__SetOSDResponse (2882)
+#define SOAP_TYPE_PointerTo_trt__SetOSDResponse (3066)
 #endif
 
 /* struct _trt__SetOSD * has binding name 'PointerTo_trt__SetOSD' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetOSD
-#define SOAP_TYPE_PointerTo_trt__SetOSD (2881)
+#define SOAP_TYPE_PointerTo_trt__SetOSD (3065)
 #endif
 
 /* struct _trt__GetOSDOptionsResponse * has binding name 'PointerTo_trt__GetOSDOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetOSDOptionsResponse
-#define SOAP_TYPE_PointerTo_trt__GetOSDOptionsResponse (2878)
+#define SOAP_TYPE_PointerTo_trt__GetOSDOptionsResponse (3062)
 #endif
 
 /* struct _trt__GetOSDOptions * has binding name 'PointerTo_trt__GetOSDOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetOSDOptions
-#define SOAP_TYPE_PointerTo_trt__GetOSDOptions (2877)
+#define SOAP_TYPE_PointerTo_trt__GetOSDOptions (3061)
 #endif
 
 /* struct _trt__GetOSDResponse * has binding name 'PointerTo_trt__GetOSDResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetOSDResponse
-#define SOAP_TYPE_PointerTo_trt__GetOSDResponse (2874)
+#define SOAP_TYPE_PointerTo_trt__GetOSDResponse (3058)
 #endif
 
 /* struct _trt__GetOSD * has binding name 'PointerTo_trt__GetOSD' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetOSD
-#define SOAP_TYPE_PointerTo_trt__GetOSD (2873)
+#define SOAP_TYPE_PointerTo_trt__GetOSD (3057)
 #endif
 
 /* struct _trt__GetOSDsResponse * has binding name 'PointerTo_trt__GetOSDsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetOSDsResponse
-#define SOAP_TYPE_PointerTo_trt__GetOSDsResponse (2870)
+#define SOAP_TYPE_PointerTo_trt__GetOSDsResponse (3054)
 #endif
 
 /* struct _trt__GetOSDs * has binding name 'PointerTo_trt__GetOSDs' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetOSDs
-#define SOAP_TYPE_PointerTo_trt__GetOSDs (2869)
+#define SOAP_TYPE_PointerTo_trt__GetOSDs (3053)
 #endif
 
 /* struct _trt__SetVideoSourceModeResponse * has binding name 'PointerTo_trt__SetVideoSourceModeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetVideoSourceModeResponse
-#define SOAP_TYPE_PointerTo_trt__SetVideoSourceModeResponse (2866)
+#define SOAP_TYPE_PointerTo_trt__SetVideoSourceModeResponse (3050)
 #endif
 
 /* struct _trt__SetVideoSourceMode * has binding name 'PointerTo_trt__SetVideoSourceMode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetVideoSourceMode
-#define SOAP_TYPE_PointerTo_trt__SetVideoSourceMode (2865)
+#define SOAP_TYPE_PointerTo_trt__SetVideoSourceMode (3049)
 #endif
 
 /* struct _trt__GetVideoSourceModesResponse * has binding name 'PointerTo_trt__GetVideoSourceModesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourceModesResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourceModesResponse (2862)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourceModesResponse (3046)
 #endif
 
 /* struct _trt__GetVideoSourceModes * has binding name 'PointerTo_trt__GetVideoSourceModes' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourceModes
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourceModes (2861)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourceModes (3045)
 #endif
 
 /* struct _trt__GetSnapshotUriResponse * has binding name 'PointerTo_trt__GetSnapshotUriResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetSnapshotUriResponse
-#define SOAP_TYPE_PointerTo_trt__GetSnapshotUriResponse (2858)
+#define SOAP_TYPE_PointerTo_trt__GetSnapshotUriResponse (3042)
 #endif
 
 /* struct _trt__GetSnapshotUri * has binding name 'PointerTo_trt__GetSnapshotUri' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetSnapshotUri
-#define SOAP_TYPE_PointerTo_trt__GetSnapshotUri (2857)
+#define SOAP_TYPE_PointerTo_trt__GetSnapshotUri (3041)
 #endif
 
 /* struct _trt__SetSynchronizationPointResponse * has binding name 'PointerTo_trt__SetSynchronizationPointResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetSynchronizationPointResponse
-#define SOAP_TYPE_PointerTo_trt__SetSynchronizationPointResponse (2854)
+#define SOAP_TYPE_PointerTo_trt__SetSynchronizationPointResponse (3038)
 #endif
 
 /* struct _trt__SetSynchronizationPoint * has binding name 'PointerTo_trt__SetSynchronizationPoint' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetSynchronizationPoint
-#define SOAP_TYPE_PointerTo_trt__SetSynchronizationPoint (2853)
+#define SOAP_TYPE_PointerTo_trt__SetSynchronizationPoint (3037)
 #endif
 
 /* struct _trt__StopMulticastStreamingResponse * has binding name 'PointerTo_trt__StopMulticastStreamingResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__StopMulticastStreamingResponse
-#define SOAP_TYPE_PointerTo_trt__StopMulticastStreamingResponse (2850)
+#define SOAP_TYPE_PointerTo_trt__StopMulticastStreamingResponse (3034)
 #endif
 
 /* struct _trt__StopMulticastStreaming * has binding name 'PointerTo_trt__StopMulticastStreaming' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__StopMulticastStreaming
-#define SOAP_TYPE_PointerTo_trt__StopMulticastStreaming (2849)
+#define SOAP_TYPE_PointerTo_trt__StopMulticastStreaming (3033)
 #endif
 
 /* struct _trt__StartMulticastStreamingResponse * has binding name 'PointerTo_trt__StartMulticastStreamingResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__StartMulticastStreamingResponse
-#define SOAP_TYPE_PointerTo_trt__StartMulticastStreamingResponse (2846)
+#define SOAP_TYPE_PointerTo_trt__StartMulticastStreamingResponse (3030)
 #endif
 
 /* struct _trt__StartMulticastStreaming * has binding name 'PointerTo_trt__StartMulticastStreaming' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__StartMulticastStreaming
-#define SOAP_TYPE_PointerTo_trt__StartMulticastStreaming (2845)
+#define SOAP_TYPE_PointerTo_trt__StartMulticastStreaming (3029)
 #endif
 
 /* struct _trt__GetStreamUriResponse * has binding name 'PointerTo_trt__GetStreamUriResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetStreamUriResponse
-#define SOAP_TYPE_PointerTo_trt__GetStreamUriResponse (2842)
+#define SOAP_TYPE_PointerTo_trt__GetStreamUriResponse (3026)
 #endif
 
 /* struct _trt__GetStreamUri * has binding name 'PointerTo_trt__GetStreamUri' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetStreamUri
-#define SOAP_TYPE_PointerTo_trt__GetStreamUri (2841)
+#define SOAP_TYPE_PointerTo_trt__GetStreamUri (3025)
 #endif
 
 /* struct _trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse * has binding name 'PointerTo_trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse
-#define SOAP_TYPE_PointerTo_trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse (2838)
+#define SOAP_TYPE_PointerTo_trt__GetGuaranteedNumberOfVideoEncoderInstancesResponse (3022)
 #endif
 
 /* struct _trt__GetGuaranteedNumberOfVideoEncoderInstances * has binding name 'PointerTo_trt__GetGuaranteedNumberOfVideoEncoderInstances' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetGuaranteedNumberOfVideoEncoderInstances
-#define SOAP_TYPE_PointerTo_trt__GetGuaranteedNumberOfVideoEncoderInstances (2837)
+#define SOAP_TYPE_PointerTo_trt__GetGuaranteedNumberOfVideoEncoderInstances (3021)
 #endif
 
 /* struct _trt__GetAudioDecoderConfigurationOptionsResponse * has binding name 'PointerTo_trt__GetAudioDecoderConfigurationOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationOptionsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationOptionsResponse (2834)
+#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationOptionsResponse (3018)
 #endif
 
 /* struct _trt__GetAudioDecoderConfigurationOptions * has binding name 'PointerTo_trt__GetAudioDecoderConfigurationOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationOptions
-#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationOptions (2833)
+#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationOptions (3017)
 #endif
 
 /* struct _trt__GetAudioOutputConfigurationOptionsResponse * has binding name 'PointerTo_trt__GetAudioOutputConfigurationOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationOptionsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationOptionsResponse (2830)
+#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationOptionsResponse (3014)
 #endif
 
 /* struct _trt__GetAudioOutputConfigurationOptions * has binding name 'PointerTo_trt__GetAudioOutputConfigurationOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationOptions
-#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationOptions (2829)
+#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationOptions (3013)
 #endif
 
 /* struct _trt__GetMetadataConfigurationOptionsResponse * has binding name 'PointerTo_trt__GetMetadataConfigurationOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationOptionsResponse
-#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationOptionsResponse (2826)
+#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationOptionsResponse (3010)
 #endif
 
 /* struct _trt__GetMetadataConfigurationOptions * has binding name 'PointerTo_trt__GetMetadataConfigurationOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationOptions
-#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationOptions (2825)
+#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationOptions (3009)
 #endif
 
 /* struct _trt__GetAudioEncoderConfigurationOptionsResponse * has binding name 'PointerTo_trt__GetAudioEncoderConfigurationOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationOptionsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationOptionsResponse (2822)
+#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationOptionsResponse (3006)
 #endif
 
 /* struct _trt__GetAudioEncoderConfigurationOptions * has binding name 'PointerTo_trt__GetAudioEncoderConfigurationOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationOptions
-#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationOptions (2821)
+#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationOptions (3005)
 #endif
 
 /* struct _trt__GetAudioSourceConfigurationOptionsResponse * has binding name 'PointerTo_trt__GetAudioSourceConfigurationOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationOptionsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationOptionsResponse (2818)
+#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationOptionsResponse (3002)
 #endif
 
 /* struct _trt__GetAudioSourceConfigurationOptions * has binding name 'PointerTo_trt__GetAudioSourceConfigurationOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationOptions
-#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationOptions (2817)
+#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationOptions (3001)
 #endif
 
 /* struct _trt__GetVideoEncoderConfigurationOptionsResponse * has binding name 'PointerTo_trt__GetVideoEncoderConfigurationOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationOptionsResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationOptionsResponse (2814)
+#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationOptionsResponse (2998)
 #endif
 
 /* struct _trt__GetVideoEncoderConfigurationOptions * has binding name 'PointerTo_trt__GetVideoEncoderConfigurationOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationOptions
-#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationOptions (2813)
+#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationOptions (2997)
 #endif
 
 /* struct _trt__GetVideoSourceConfigurationOptionsResponse * has binding name 'PointerTo_trt__GetVideoSourceConfigurationOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationOptionsResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationOptionsResponse (2810)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationOptionsResponse (2994)
 #endif
 
 /* struct _trt__GetVideoSourceConfigurationOptions * has binding name 'PointerTo_trt__GetVideoSourceConfigurationOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationOptions
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationOptions (2809)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationOptions (2993)
 #endif
 
 /* struct _trt__SetAudioDecoderConfigurationResponse * has binding name 'PointerTo_trt__SetAudioDecoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetAudioDecoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__SetAudioDecoderConfigurationResponse (2806)
+#define SOAP_TYPE_PointerTo_trt__SetAudioDecoderConfigurationResponse (2990)
 #endif
 
 /* struct _trt__SetAudioDecoderConfiguration * has binding name 'PointerTo_trt__SetAudioDecoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetAudioDecoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__SetAudioDecoderConfiguration (2805)
+#define SOAP_TYPE_PointerTo_trt__SetAudioDecoderConfiguration (2989)
 #endif
 
 /* struct _trt__SetAudioOutputConfigurationResponse * has binding name 'PointerTo_trt__SetAudioOutputConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetAudioOutputConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__SetAudioOutputConfigurationResponse (2802)
+#define SOAP_TYPE_PointerTo_trt__SetAudioOutputConfigurationResponse (2986)
 #endif
 
 /* struct _trt__SetAudioOutputConfiguration * has binding name 'PointerTo_trt__SetAudioOutputConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetAudioOutputConfiguration
-#define SOAP_TYPE_PointerTo_trt__SetAudioOutputConfiguration (2801)
+#define SOAP_TYPE_PointerTo_trt__SetAudioOutputConfiguration (2985)
 #endif
 
 /* struct _trt__SetMetadataConfigurationResponse * has binding name 'PointerTo_trt__SetMetadataConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetMetadataConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__SetMetadataConfigurationResponse (2798)
+#define SOAP_TYPE_PointerTo_trt__SetMetadataConfigurationResponse (2982)
 #endif
 
 /* struct _trt__SetMetadataConfiguration * has binding name 'PointerTo_trt__SetMetadataConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetMetadataConfiguration
-#define SOAP_TYPE_PointerTo_trt__SetMetadataConfiguration (2797)
+#define SOAP_TYPE_PointerTo_trt__SetMetadataConfiguration (2981)
 #endif
 
 /* struct _trt__SetVideoAnalyticsConfigurationResponse * has binding name 'PointerTo_trt__SetVideoAnalyticsConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetVideoAnalyticsConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__SetVideoAnalyticsConfigurationResponse (2794)
+#define SOAP_TYPE_PointerTo_trt__SetVideoAnalyticsConfigurationResponse (2978)
 #endif
 
 /* struct _trt__SetVideoAnalyticsConfiguration * has binding name 'PointerTo_trt__SetVideoAnalyticsConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetVideoAnalyticsConfiguration
-#define SOAP_TYPE_PointerTo_trt__SetVideoAnalyticsConfiguration (2793)
+#define SOAP_TYPE_PointerTo_trt__SetVideoAnalyticsConfiguration (2977)
 #endif
 
 /* struct _trt__SetAudioEncoderConfigurationResponse * has binding name 'PointerTo_trt__SetAudioEncoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetAudioEncoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__SetAudioEncoderConfigurationResponse (2790)
+#define SOAP_TYPE_PointerTo_trt__SetAudioEncoderConfigurationResponse (2974)
 #endif
 
 /* struct _trt__SetAudioEncoderConfiguration * has binding name 'PointerTo_trt__SetAudioEncoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetAudioEncoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__SetAudioEncoderConfiguration (2789)
+#define SOAP_TYPE_PointerTo_trt__SetAudioEncoderConfiguration (2973)
 #endif
 
 /* struct _trt__SetAudioSourceConfigurationResponse * has binding name 'PointerTo_trt__SetAudioSourceConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetAudioSourceConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__SetAudioSourceConfigurationResponse (2786)
+#define SOAP_TYPE_PointerTo_trt__SetAudioSourceConfigurationResponse (2970)
 #endif
 
 /* struct _trt__SetAudioSourceConfiguration * has binding name 'PointerTo_trt__SetAudioSourceConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetAudioSourceConfiguration
-#define SOAP_TYPE_PointerTo_trt__SetAudioSourceConfiguration (2785)
+#define SOAP_TYPE_PointerTo_trt__SetAudioSourceConfiguration (2969)
 #endif
 
 /* struct _trt__SetVideoEncoderConfigurationResponse * has binding name 'PointerTo_trt__SetVideoEncoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetVideoEncoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__SetVideoEncoderConfigurationResponse (2782)
+#define SOAP_TYPE_PointerTo_trt__SetVideoEncoderConfigurationResponse (2966)
 #endif
 
 /* struct _trt__SetVideoEncoderConfiguration * has binding name 'PointerTo_trt__SetVideoEncoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetVideoEncoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__SetVideoEncoderConfiguration (2781)
+#define SOAP_TYPE_PointerTo_trt__SetVideoEncoderConfiguration (2965)
 #endif
 
 /* struct _trt__SetVideoSourceConfigurationResponse * has binding name 'PointerTo_trt__SetVideoSourceConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetVideoSourceConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__SetVideoSourceConfigurationResponse (2778)
+#define SOAP_TYPE_PointerTo_trt__SetVideoSourceConfigurationResponse (2962)
 #endif
 
 /* struct _trt__SetVideoSourceConfiguration * has binding name 'PointerTo_trt__SetVideoSourceConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__SetVideoSourceConfiguration
-#define SOAP_TYPE_PointerTo_trt__SetVideoSourceConfiguration (2777)
+#define SOAP_TYPE_PointerTo_trt__SetVideoSourceConfiguration (2961)
 #endif
 
 /* struct _trt__GetCompatibleAudioDecoderConfigurationsResponse * has binding name 'PointerTo_trt__GetCompatibleAudioDecoderConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleAudioDecoderConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioDecoderConfigurationsResponse (2774)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioDecoderConfigurationsResponse (2958)
 #endif
 
 /* struct _trt__GetCompatibleAudioDecoderConfigurations * has binding name 'PointerTo_trt__GetCompatibleAudioDecoderConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleAudioDecoderConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioDecoderConfigurations (2773)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioDecoderConfigurations (2957)
 #endif
 
 /* struct _trt__GetCompatibleAudioOutputConfigurationsResponse * has binding name 'PointerTo_trt__GetCompatibleAudioOutputConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleAudioOutputConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioOutputConfigurationsResponse (2770)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioOutputConfigurationsResponse (2954)
 #endif
 
 /* struct _trt__GetCompatibleAudioOutputConfigurations * has binding name 'PointerTo_trt__GetCompatibleAudioOutputConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleAudioOutputConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioOutputConfigurations (2769)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioOutputConfigurations (2953)
 #endif
 
 /* struct _trt__GetCompatibleMetadataConfigurationsResponse * has binding name 'PointerTo_trt__GetCompatibleMetadataConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleMetadataConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleMetadataConfigurationsResponse (2766)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleMetadataConfigurationsResponse (2950)
 #endif
 
 /* struct _trt__GetCompatibleMetadataConfigurations * has binding name 'PointerTo_trt__GetCompatibleMetadataConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleMetadataConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleMetadataConfigurations (2765)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleMetadataConfigurations (2949)
 #endif
 
 /* struct _trt__GetCompatibleVideoAnalyticsConfigurationsResponse * has binding name 'PointerTo_trt__GetCompatibleVideoAnalyticsConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleVideoAnalyticsConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoAnalyticsConfigurationsResponse (2762)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoAnalyticsConfigurationsResponse (2946)
 #endif
 
 /* struct _trt__GetCompatibleVideoAnalyticsConfigurations * has binding name 'PointerTo_trt__GetCompatibleVideoAnalyticsConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleVideoAnalyticsConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoAnalyticsConfigurations (2761)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoAnalyticsConfigurations (2945)
 #endif
 
 /* struct _trt__GetCompatibleAudioSourceConfigurationsResponse * has binding name 'PointerTo_trt__GetCompatibleAudioSourceConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleAudioSourceConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioSourceConfigurationsResponse (2758)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioSourceConfigurationsResponse (2942)
 #endif
 
 /* struct _trt__GetCompatibleAudioSourceConfigurations * has binding name 'PointerTo_trt__GetCompatibleAudioSourceConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleAudioSourceConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioSourceConfigurations (2757)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioSourceConfigurations (2941)
 #endif
 
 /* struct _trt__GetCompatibleAudioEncoderConfigurationsResponse * has binding name 'PointerTo_trt__GetCompatibleAudioEncoderConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleAudioEncoderConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioEncoderConfigurationsResponse (2754)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioEncoderConfigurationsResponse (2938)
 #endif
 
 /* struct _trt__GetCompatibleAudioEncoderConfigurations * has binding name 'PointerTo_trt__GetCompatibleAudioEncoderConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleAudioEncoderConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioEncoderConfigurations (2753)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleAudioEncoderConfigurations (2937)
 #endif
 
 /* struct _trt__GetCompatibleVideoSourceConfigurationsResponse * has binding name 'PointerTo_trt__GetCompatibleVideoSourceConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleVideoSourceConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoSourceConfigurationsResponse (2750)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoSourceConfigurationsResponse (2934)
 #endif
 
 /* struct _trt__GetCompatibleVideoSourceConfigurations * has binding name 'PointerTo_trt__GetCompatibleVideoSourceConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleVideoSourceConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoSourceConfigurations (2749)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoSourceConfigurations (2933)
 #endif
 
 /* struct _trt__GetCompatibleVideoEncoderConfigurationsResponse * has binding name 'PointerTo_trt__GetCompatibleVideoEncoderConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleVideoEncoderConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoEncoderConfigurationsResponse (2746)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoEncoderConfigurationsResponse (2930)
 #endif
 
 /* struct _trt__GetCompatibleVideoEncoderConfigurations * has binding name 'PointerTo_trt__GetCompatibleVideoEncoderConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetCompatibleVideoEncoderConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoEncoderConfigurations (2745)
+#define SOAP_TYPE_PointerTo_trt__GetCompatibleVideoEncoderConfigurations (2929)
 #endif
 
 /* struct _trt__GetAudioDecoderConfigurationResponse * has binding name 'PointerTo_trt__GetAudioDecoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationResponse (2742)
+#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationResponse (2926)
 #endif
 
 /* struct _trt__GetAudioDecoderConfiguration * has binding name 'PointerTo_trt__GetAudioDecoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfiguration (2741)
+#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfiguration (2925)
 #endif
 
 /* struct _trt__GetAudioOutputConfigurationResponse * has binding name 'PointerTo_trt__GetAudioOutputConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationResponse (2738)
+#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationResponse (2922)
 #endif
 
 /* struct _trt__GetAudioOutputConfiguration * has binding name 'PointerTo_trt__GetAudioOutputConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioOutputConfiguration
-#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfiguration (2737)
+#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfiguration (2921)
 #endif
 
 /* struct _trt__GetMetadataConfigurationResponse * has binding name 'PointerTo_trt__GetMetadataConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationResponse (2734)
+#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationResponse (2918)
 #endif
 
 /* struct _trt__GetMetadataConfiguration * has binding name 'PointerTo_trt__GetMetadataConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetMetadataConfiguration
-#define SOAP_TYPE_PointerTo_trt__GetMetadataConfiguration (2733)
+#define SOAP_TYPE_PointerTo_trt__GetMetadataConfiguration (2917)
 #endif
 
 /* struct _trt__GetVideoAnalyticsConfigurationResponse * has binding name 'PointerTo_trt__GetVideoAnalyticsConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurationResponse (2730)
+#define SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurationResponse (2914)
 #endif
 
 /* struct _trt__GetVideoAnalyticsConfiguration * has binding name 'PointerTo_trt__GetVideoAnalyticsConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfiguration
-#define SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfiguration (2729)
+#define SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfiguration (2913)
 #endif
 
 /* struct _trt__GetAudioEncoderConfigurationResponse * has binding name 'PointerTo_trt__GetAudioEncoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationResponse (2726)
+#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationResponse (2910)
 #endif
 
 /* struct _trt__GetAudioEncoderConfiguration * has binding name 'PointerTo_trt__GetAudioEncoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfiguration (2725)
+#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfiguration (2909)
 #endif
 
 /* struct _trt__GetAudioSourceConfigurationResponse * has binding name 'PointerTo_trt__GetAudioSourceConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationResponse (2722)
+#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationResponse (2906)
 #endif
 
 /* struct _trt__GetAudioSourceConfiguration * has binding name 'PointerTo_trt__GetAudioSourceConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioSourceConfiguration
-#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfiguration (2721)
+#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfiguration (2905)
 #endif
 
 /* struct _trt__GetVideoEncoderConfigurationResponse * has binding name 'PointerTo_trt__GetVideoEncoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationResponse (2718)
+#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationResponse (2902)
 #endif
 
 /* struct _trt__GetVideoEncoderConfiguration * has binding name 'PointerTo_trt__GetVideoEncoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfiguration (2717)
+#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfiguration (2901)
 #endif
 
 /* struct _trt__GetVideoSourceConfigurationResponse * has binding name 'PointerTo_trt__GetVideoSourceConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationResponse (2714)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationResponse (2898)
 #endif
 
 /* struct _trt__GetVideoSourceConfiguration * has binding name 'PointerTo_trt__GetVideoSourceConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourceConfiguration
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfiguration (2713)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfiguration (2897)
 #endif
 
 /* struct _trt__GetAudioDecoderConfigurationsResponse * has binding name 'PointerTo_trt__GetAudioDecoderConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationsResponse (2710)
+#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurationsResponse (2894)
 #endif
 
 /* struct _trt__GetAudioDecoderConfigurations * has binding name 'PointerTo_trt__GetAudioDecoderConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurations (2709)
+#define SOAP_TYPE_PointerTo_trt__GetAudioDecoderConfigurations (2893)
 #endif
 
 /* struct _trt__GetAudioOutputConfigurationsResponse * has binding name 'PointerTo_trt__GetAudioOutputConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationsResponse (2706)
+#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurationsResponse (2890)
 #endif
 
 /* struct _trt__GetAudioOutputConfigurations * has binding name 'PointerTo_trt__GetAudioOutputConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurations (2705)
+#define SOAP_TYPE_PointerTo_trt__GetAudioOutputConfigurations (2889)
 #endif
 
 /* struct _trt__GetMetadataConfigurationsResponse * has binding name 'PointerTo_trt__GetMetadataConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationsResponse (2702)
+#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurationsResponse (2886)
 #endif
 
 /* struct _trt__GetMetadataConfigurations * has binding name 'PointerTo_trt__GetMetadataConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetMetadataConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurations (2701)
+#define SOAP_TYPE_PointerTo_trt__GetMetadataConfigurations (2885)
 #endif
 
 /* struct _trt__GetVideoAnalyticsConfigurationsResponse * has binding name 'PointerTo_trt__GetVideoAnalyticsConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurationsResponse (2698)
+#define SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurationsResponse (2882)
 #endif
 
 /* struct _trt__GetVideoAnalyticsConfigurations * has binding name 'PointerTo_trt__GetVideoAnalyticsConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurations (2697)
+#define SOAP_TYPE_PointerTo_trt__GetVideoAnalyticsConfigurations (2881)
 #endif
 
 /* struct _trt__GetAudioEncoderConfigurationsResponse * has binding name 'PointerTo_trt__GetAudioEncoderConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationsResponse (2694)
+#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurationsResponse (2878)
 #endif
 
 /* struct _trt__GetAudioEncoderConfigurations * has binding name 'PointerTo_trt__GetAudioEncoderConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurations (2693)
+#define SOAP_TYPE_PointerTo_trt__GetAudioEncoderConfigurations (2877)
 #endif
 
 /* struct _trt__GetAudioSourceConfigurationsResponse * has binding name 'PointerTo_trt__GetAudioSourceConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationsResponse (2690)
+#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurationsResponse (2874)
 #endif
 
 /* struct _trt__GetAudioSourceConfigurations * has binding name 'PointerTo_trt__GetAudioSourceConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurations (2689)
+#define SOAP_TYPE_PointerTo_trt__GetAudioSourceConfigurations (2873)
 #endif
 
 /* struct _trt__GetVideoEncoderConfigurationsResponse * has binding name 'PointerTo_trt__GetVideoEncoderConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationsResponse (2686)
+#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurationsResponse (2870)
 #endif
 
 /* struct _trt__GetVideoEncoderConfigurations * has binding name 'PointerTo_trt__GetVideoEncoderConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurations (2685)
+#define SOAP_TYPE_PointerTo_trt__GetVideoEncoderConfigurations (2869)
 #endif
 
 /* struct _trt__GetVideoSourceConfigurationsResponse * has binding name 'PointerTo_trt__GetVideoSourceConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationsResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationsResponse (2682)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurationsResponse (2866)
 #endif
 
 /* struct _trt__GetVideoSourceConfigurations * has binding name 'PointerTo_trt__GetVideoSourceConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurations
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurations (2681)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourceConfigurations (2865)
 #endif
 
 /* struct _trt__DeleteProfileResponse * has binding name 'PointerTo_trt__DeleteProfileResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__DeleteProfileResponse
-#define SOAP_TYPE_PointerTo_trt__DeleteProfileResponse (2678)
+#define SOAP_TYPE_PointerTo_trt__DeleteProfileResponse (2862)
 #endif
 
 /* struct _trt__DeleteProfile * has binding name 'PointerTo_trt__DeleteProfile' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__DeleteProfile
-#define SOAP_TYPE_PointerTo_trt__DeleteProfile (2677)
+#define SOAP_TYPE_PointerTo_trt__DeleteProfile (2861)
 #endif
 
 /* struct _trt__RemoveAudioDecoderConfigurationResponse * has binding name 'PointerTo_trt__RemoveAudioDecoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveAudioDecoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemoveAudioDecoderConfigurationResponse (2674)
+#define SOAP_TYPE_PointerTo_trt__RemoveAudioDecoderConfigurationResponse (2858)
 #endif
 
 /* struct _trt__RemoveAudioDecoderConfiguration * has binding name 'PointerTo_trt__RemoveAudioDecoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveAudioDecoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemoveAudioDecoderConfiguration (2673)
+#define SOAP_TYPE_PointerTo_trt__RemoveAudioDecoderConfiguration (2857)
 #endif
 
 /* struct _trt__RemoveAudioOutputConfigurationResponse * has binding name 'PointerTo_trt__RemoveAudioOutputConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveAudioOutputConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemoveAudioOutputConfigurationResponse (2670)
+#define SOAP_TYPE_PointerTo_trt__RemoveAudioOutputConfigurationResponse (2854)
 #endif
 
 /* struct _trt__RemoveAudioOutputConfiguration * has binding name 'PointerTo_trt__RemoveAudioOutputConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveAudioOutputConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemoveAudioOutputConfiguration (2669)
+#define SOAP_TYPE_PointerTo_trt__RemoveAudioOutputConfiguration (2853)
 #endif
 
 /* struct _trt__RemoveMetadataConfigurationResponse * has binding name 'PointerTo_trt__RemoveMetadataConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveMetadataConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemoveMetadataConfigurationResponse (2666)
+#define SOAP_TYPE_PointerTo_trt__RemoveMetadataConfigurationResponse (2850)
 #endif
 
 /* struct _trt__RemoveMetadataConfiguration * has binding name 'PointerTo_trt__RemoveMetadataConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveMetadataConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemoveMetadataConfiguration (2665)
+#define SOAP_TYPE_PointerTo_trt__RemoveMetadataConfiguration (2849)
 #endif
 
 /* struct _trt__RemoveVideoAnalyticsConfigurationResponse * has binding name 'PointerTo_trt__RemoveVideoAnalyticsConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveVideoAnalyticsConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemoveVideoAnalyticsConfigurationResponse (2662)
+#define SOAP_TYPE_PointerTo_trt__RemoveVideoAnalyticsConfigurationResponse (2846)
 #endif
 
 /* struct _trt__RemoveVideoAnalyticsConfiguration * has binding name 'PointerTo_trt__RemoveVideoAnalyticsConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveVideoAnalyticsConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemoveVideoAnalyticsConfiguration (2661)
+#define SOAP_TYPE_PointerTo_trt__RemoveVideoAnalyticsConfiguration (2845)
 #endif
 
 /* struct _trt__RemovePTZConfigurationResponse * has binding name 'PointerTo_trt__RemovePTZConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemovePTZConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemovePTZConfigurationResponse (2658)
+#define SOAP_TYPE_PointerTo_trt__RemovePTZConfigurationResponse (2842)
 #endif
 
 /* struct _trt__RemovePTZConfiguration * has binding name 'PointerTo_trt__RemovePTZConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemovePTZConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemovePTZConfiguration (2657)
+#define SOAP_TYPE_PointerTo_trt__RemovePTZConfiguration (2841)
 #endif
 
 /* struct _trt__RemoveAudioSourceConfigurationResponse * has binding name 'PointerTo_trt__RemoveAudioSourceConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveAudioSourceConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemoveAudioSourceConfigurationResponse (2654)
+#define SOAP_TYPE_PointerTo_trt__RemoveAudioSourceConfigurationResponse (2838)
 #endif
 
 /* struct _trt__RemoveAudioSourceConfiguration * has binding name 'PointerTo_trt__RemoveAudioSourceConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveAudioSourceConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemoveAudioSourceConfiguration (2653)
+#define SOAP_TYPE_PointerTo_trt__RemoveAudioSourceConfiguration (2837)
 #endif
 
 /* struct _trt__RemoveAudioEncoderConfigurationResponse * has binding name 'PointerTo_trt__RemoveAudioEncoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveAudioEncoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemoveAudioEncoderConfigurationResponse (2650)
+#define SOAP_TYPE_PointerTo_trt__RemoveAudioEncoderConfigurationResponse (2834)
 #endif
 
 /* struct _trt__RemoveAudioEncoderConfiguration * has binding name 'PointerTo_trt__RemoveAudioEncoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveAudioEncoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemoveAudioEncoderConfiguration (2649)
+#define SOAP_TYPE_PointerTo_trt__RemoveAudioEncoderConfiguration (2833)
 #endif
 
 /* struct _trt__RemoveVideoSourceConfigurationResponse * has binding name 'PointerTo_trt__RemoveVideoSourceConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveVideoSourceConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemoveVideoSourceConfigurationResponse (2646)
+#define SOAP_TYPE_PointerTo_trt__RemoveVideoSourceConfigurationResponse (2830)
 #endif
 
 /* struct _trt__RemoveVideoSourceConfiguration * has binding name 'PointerTo_trt__RemoveVideoSourceConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveVideoSourceConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemoveVideoSourceConfiguration (2645)
+#define SOAP_TYPE_PointerTo_trt__RemoveVideoSourceConfiguration (2829)
 #endif
 
 /* struct _trt__RemoveVideoEncoderConfigurationResponse * has binding name 'PointerTo_trt__RemoveVideoEncoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveVideoEncoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__RemoveVideoEncoderConfigurationResponse (2642)
+#define SOAP_TYPE_PointerTo_trt__RemoveVideoEncoderConfigurationResponse (2826)
 #endif
 
 /* struct _trt__RemoveVideoEncoderConfiguration * has binding name 'PointerTo_trt__RemoveVideoEncoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__RemoveVideoEncoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__RemoveVideoEncoderConfiguration (2641)
+#define SOAP_TYPE_PointerTo_trt__RemoveVideoEncoderConfiguration (2825)
 #endif
 
 /* struct _trt__AddAudioDecoderConfigurationResponse * has binding name 'PointerTo_trt__AddAudioDecoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddAudioDecoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddAudioDecoderConfigurationResponse (2638)
+#define SOAP_TYPE_PointerTo_trt__AddAudioDecoderConfigurationResponse (2822)
 #endif
 
 /* struct _trt__AddAudioDecoderConfiguration * has binding name 'PointerTo_trt__AddAudioDecoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddAudioDecoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddAudioDecoderConfiguration (2637)
+#define SOAP_TYPE_PointerTo_trt__AddAudioDecoderConfiguration (2821)
 #endif
 
 /* struct _trt__AddAudioOutputConfigurationResponse * has binding name 'PointerTo_trt__AddAudioOutputConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddAudioOutputConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddAudioOutputConfigurationResponse (2634)
+#define SOAP_TYPE_PointerTo_trt__AddAudioOutputConfigurationResponse (2818)
 #endif
 
 /* struct _trt__AddAudioOutputConfiguration * has binding name 'PointerTo_trt__AddAudioOutputConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddAudioOutputConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddAudioOutputConfiguration (2633)
+#define SOAP_TYPE_PointerTo_trt__AddAudioOutputConfiguration (2817)
 #endif
 
 /* struct _trt__AddMetadataConfigurationResponse * has binding name 'PointerTo_trt__AddMetadataConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddMetadataConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddMetadataConfigurationResponse (2630)
+#define SOAP_TYPE_PointerTo_trt__AddMetadataConfigurationResponse (2814)
 #endif
 
 /* struct _trt__AddMetadataConfiguration * has binding name 'PointerTo_trt__AddMetadataConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddMetadataConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddMetadataConfiguration (2629)
+#define SOAP_TYPE_PointerTo_trt__AddMetadataConfiguration (2813)
 #endif
 
 /* struct _trt__AddVideoAnalyticsConfigurationResponse * has binding name 'PointerTo_trt__AddVideoAnalyticsConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddVideoAnalyticsConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddVideoAnalyticsConfigurationResponse (2626)
+#define SOAP_TYPE_PointerTo_trt__AddVideoAnalyticsConfigurationResponse (2810)
 #endif
 
 /* struct _trt__AddVideoAnalyticsConfiguration * has binding name 'PointerTo_trt__AddVideoAnalyticsConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddVideoAnalyticsConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddVideoAnalyticsConfiguration (2625)
+#define SOAP_TYPE_PointerTo_trt__AddVideoAnalyticsConfiguration (2809)
 #endif
 
 /* struct _trt__AddPTZConfigurationResponse * has binding name 'PointerTo_trt__AddPTZConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddPTZConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddPTZConfigurationResponse (2622)
+#define SOAP_TYPE_PointerTo_trt__AddPTZConfigurationResponse (2806)
 #endif
 
 /* struct _trt__AddPTZConfiguration * has binding name 'PointerTo_trt__AddPTZConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddPTZConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddPTZConfiguration (2621)
+#define SOAP_TYPE_PointerTo_trt__AddPTZConfiguration (2805)
 #endif
 
 /* struct _trt__AddAudioSourceConfigurationResponse * has binding name 'PointerTo_trt__AddAudioSourceConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddAudioSourceConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddAudioSourceConfigurationResponse (2618)
+#define SOAP_TYPE_PointerTo_trt__AddAudioSourceConfigurationResponse (2802)
 #endif
 
 /* struct _trt__AddAudioSourceConfiguration * has binding name 'PointerTo_trt__AddAudioSourceConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddAudioSourceConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddAudioSourceConfiguration (2617)
+#define SOAP_TYPE_PointerTo_trt__AddAudioSourceConfiguration (2801)
 #endif
 
 /* struct _trt__AddAudioEncoderConfigurationResponse * has binding name 'PointerTo_trt__AddAudioEncoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddAudioEncoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddAudioEncoderConfigurationResponse (2614)
+#define SOAP_TYPE_PointerTo_trt__AddAudioEncoderConfigurationResponse (2798)
 #endif
 
 /* struct _trt__AddAudioEncoderConfiguration * has binding name 'PointerTo_trt__AddAudioEncoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddAudioEncoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddAudioEncoderConfiguration (2613)
+#define SOAP_TYPE_PointerTo_trt__AddAudioEncoderConfiguration (2797)
 #endif
 
 /* struct _trt__AddVideoSourceConfigurationResponse * has binding name 'PointerTo_trt__AddVideoSourceConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddVideoSourceConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddVideoSourceConfigurationResponse (2610)
+#define SOAP_TYPE_PointerTo_trt__AddVideoSourceConfigurationResponse (2794)
 #endif
 
 /* struct _trt__AddVideoSourceConfiguration * has binding name 'PointerTo_trt__AddVideoSourceConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddVideoSourceConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddVideoSourceConfiguration (2609)
+#define SOAP_TYPE_PointerTo_trt__AddVideoSourceConfiguration (2793)
 #endif
 
 /* struct _trt__AddVideoEncoderConfigurationResponse * has binding name 'PointerTo_trt__AddVideoEncoderConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddVideoEncoderConfigurationResponse
-#define SOAP_TYPE_PointerTo_trt__AddVideoEncoderConfigurationResponse (2606)
+#define SOAP_TYPE_PointerTo_trt__AddVideoEncoderConfigurationResponse (2790)
 #endif
 
 /* struct _trt__AddVideoEncoderConfiguration * has binding name 'PointerTo_trt__AddVideoEncoderConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__AddVideoEncoderConfiguration
-#define SOAP_TYPE_PointerTo_trt__AddVideoEncoderConfiguration (2605)
+#define SOAP_TYPE_PointerTo_trt__AddVideoEncoderConfiguration (2789)
 #endif
 
 /* struct _trt__GetProfilesResponse * has binding name 'PointerTo_trt__GetProfilesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetProfilesResponse
-#define SOAP_TYPE_PointerTo_trt__GetProfilesResponse (2602)
+#define SOAP_TYPE_PointerTo_trt__GetProfilesResponse (2786)
 #endif
 
 /* struct _trt__GetProfiles * has binding name 'PointerTo_trt__GetProfiles' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetProfiles
-#define SOAP_TYPE_PointerTo_trt__GetProfiles (2601)
+#define SOAP_TYPE_PointerTo_trt__GetProfiles (2785)
 #endif
 
 /* struct _trt__GetProfileResponse * has binding name 'PointerTo_trt__GetProfileResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetProfileResponse
-#define SOAP_TYPE_PointerTo_trt__GetProfileResponse (2598)
+#define SOAP_TYPE_PointerTo_trt__GetProfileResponse (2782)
 #endif
 
 /* struct _trt__GetProfile * has binding name 'PointerTo_trt__GetProfile' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetProfile
-#define SOAP_TYPE_PointerTo_trt__GetProfile (2597)
+#define SOAP_TYPE_PointerTo_trt__GetProfile (2781)
 #endif
 
 /* struct _trt__CreateProfileResponse * has binding name 'PointerTo_trt__CreateProfileResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__CreateProfileResponse
-#define SOAP_TYPE_PointerTo_trt__CreateProfileResponse (2594)
+#define SOAP_TYPE_PointerTo_trt__CreateProfileResponse (2778)
 #endif
 
 /* struct _trt__CreateProfile * has binding name 'PointerTo_trt__CreateProfile' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__CreateProfile
-#define SOAP_TYPE_PointerTo_trt__CreateProfile (2593)
+#define SOAP_TYPE_PointerTo_trt__CreateProfile (2777)
 #endif
 
 /* struct _trt__GetAudioOutputsResponse * has binding name 'PointerTo_trt__GetAudioOutputsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioOutputsResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioOutputsResponse (2590)
+#define SOAP_TYPE_PointerTo_trt__GetAudioOutputsResponse (2774)
 #endif
 
 /* struct _trt__GetAudioOutputs * has binding name 'PointerTo_trt__GetAudioOutputs' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioOutputs
-#define SOAP_TYPE_PointerTo_trt__GetAudioOutputs (2589)
+#define SOAP_TYPE_PointerTo_trt__GetAudioOutputs (2773)
 #endif
 
 /* struct _trt__GetAudioSourcesResponse * has binding name 'PointerTo_trt__GetAudioSourcesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioSourcesResponse
-#define SOAP_TYPE_PointerTo_trt__GetAudioSourcesResponse (2586)
+#define SOAP_TYPE_PointerTo_trt__GetAudioSourcesResponse (2770)
 #endif
 
 /* struct _trt__GetAudioSources * has binding name 'PointerTo_trt__GetAudioSources' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetAudioSources
-#define SOAP_TYPE_PointerTo_trt__GetAudioSources (2585)
+#define SOAP_TYPE_PointerTo_trt__GetAudioSources (2769)
 #endif
 
 /* struct _trt__GetVideoSourcesResponse * has binding name 'PointerTo_trt__GetVideoSourcesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSourcesResponse
-#define SOAP_TYPE_PointerTo_trt__GetVideoSourcesResponse (2582)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSourcesResponse (2766)
 #endif
 
 /* struct _trt__GetVideoSources * has binding name 'PointerTo_trt__GetVideoSources' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetVideoSources
-#define SOAP_TYPE_PointerTo_trt__GetVideoSources (2581)
+#define SOAP_TYPE_PointerTo_trt__GetVideoSources (2765)
 #endif
 
 /* struct _trt__GetServiceCapabilitiesResponse * has binding name 'PointerTo_trt__GetServiceCapabilitiesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetServiceCapabilitiesResponse
-#define SOAP_TYPE_PointerTo_trt__GetServiceCapabilitiesResponse (2578)
+#define SOAP_TYPE_PointerTo_trt__GetServiceCapabilitiesResponse (2762)
 #endif
 
 /* struct _trt__GetServiceCapabilities * has binding name 'PointerTo_trt__GetServiceCapabilities' for type '' */
 #ifndef SOAP_TYPE_PointerTo_trt__GetServiceCapabilities
-#define SOAP_TYPE_PointerTo_trt__GetServiceCapabilities (2577)
+#define SOAP_TYPE_PointerTo_trt__GetServiceCapabilities (2761)
+#endif
+
+/* struct _tptz__MoveAndStartTrackingResponse * has binding name 'PointerTo_tptz__MoveAndStartTrackingResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__MoveAndStartTrackingResponse
+#define SOAP_TYPE_PointerTo_tptz__MoveAndStartTrackingResponse (2758)
+#endif
+
+/* struct _tptz__MoveAndStartTracking * has binding name 'PointerTo_tptz__MoveAndStartTracking' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__MoveAndStartTracking
+#define SOAP_TYPE_PointerTo_tptz__MoveAndStartTracking (2757)
+#endif
+
+/* struct _tptz__GetCompatibleConfigurationsResponse * has binding name 'PointerTo_tptz__GetCompatibleConfigurationsResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetCompatibleConfigurationsResponse
+#define SOAP_TYPE_PointerTo_tptz__GetCompatibleConfigurationsResponse (2754)
+#endif
+
+/* struct _tptz__GetCompatibleConfigurations * has binding name 'PointerTo_tptz__GetCompatibleConfigurations' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetCompatibleConfigurations
+#define SOAP_TYPE_PointerTo_tptz__GetCompatibleConfigurations (2753)
+#endif
+
+/* struct _tptz__RemovePresetTourResponse * has binding name 'PointerTo_tptz__RemovePresetTourResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__RemovePresetTourResponse
+#define SOAP_TYPE_PointerTo_tptz__RemovePresetTourResponse (2750)
+#endif
+
+/* struct _tptz__RemovePresetTour * has binding name 'PointerTo_tptz__RemovePresetTour' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__RemovePresetTour
+#define SOAP_TYPE_PointerTo_tptz__RemovePresetTour (2749)
+#endif
+
+/* struct _tptz__OperatePresetTourResponse * has binding name 'PointerTo_tptz__OperatePresetTourResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__OperatePresetTourResponse
+#define SOAP_TYPE_PointerTo_tptz__OperatePresetTourResponse (2746)
+#endif
+
+/* struct _tptz__OperatePresetTour * has binding name 'PointerTo_tptz__OperatePresetTour' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__OperatePresetTour
+#define SOAP_TYPE_PointerTo_tptz__OperatePresetTour (2745)
+#endif
+
+/* struct _tptz__ModifyPresetTourResponse * has binding name 'PointerTo_tptz__ModifyPresetTourResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__ModifyPresetTourResponse
+#define SOAP_TYPE_PointerTo_tptz__ModifyPresetTourResponse (2742)
+#endif
+
+/* struct _tptz__ModifyPresetTour * has binding name 'PointerTo_tptz__ModifyPresetTour' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__ModifyPresetTour
+#define SOAP_TYPE_PointerTo_tptz__ModifyPresetTour (2741)
+#endif
+
+/* struct _tptz__CreatePresetTourResponse * has binding name 'PointerTo_tptz__CreatePresetTourResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__CreatePresetTourResponse
+#define SOAP_TYPE_PointerTo_tptz__CreatePresetTourResponse (2738)
+#endif
+
+/* struct _tptz__CreatePresetTour * has binding name 'PointerTo_tptz__CreatePresetTour' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__CreatePresetTour
+#define SOAP_TYPE_PointerTo_tptz__CreatePresetTour (2737)
+#endif
+
+/* struct _tptz__GetPresetTourOptionsResponse * has binding name 'PointerTo_tptz__GetPresetTourOptionsResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetPresetTourOptionsResponse
+#define SOAP_TYPE_PointerTo_tptz__GetPresetTourOptionsResponse (2734)
+#endif
+
+/* struct _tptz__GetPresetTourOptions * has binding name 'PointerTo_tptz__GetPresetTourOptions' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetPresetTourOptions
+#define SOAP_TYPE_PointerTo_tptz__GetPresetTourOptions (2733)
+#endif
+
+/* struct _tptz__GetPresetTourResponse * has binding name 'PointerTo_tptz__GetPresetTourResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetPresetTourResponse
+#define SOAP_TYPE_PointerTo_tptz__GetPresetTourResponse (2730)
+#endif
+
+/* struct _tptz__GetPresetTour * has binding name 'PointerTo_tptz__GetPresetTour' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetPresetTour
+#define SOAP_TYPE_PointerTo_tptz__GetPresetTour (2729)
+#endif
+
+/* struct _tptz__GetPresetToursResponse * has binding name 'PointerTo_tptz__GetPresetToursResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetPresetToursResponse
+#define SOAP_TYPE_PointerTo_tptz__GetPresetToursResponse (2726)
+#endif
+
+/* struct _tptz__GetPresetTours * has binding name 'PointerTo_tptz__GetPresetTours' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetPresetTours
+#define SOAP_TYPE_PointerTo_tptz__GetPresetTours (2725)
+#endif
+
+/* struct _tptz__StopResponse * has binding name 'PointerTo_tptz__StopResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__StopResponse
+#define SOAP_TYPE_PointerTo_tptz__StopResponse (2722)
+#endif
+
+/* struct _tptz__Stop * has binding name 'PointerTo_tptz__Stop' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__Stop
+#define SOAP_TYPE_PointerTo_tptz__Stop (2721)
+#endif
+
+/* struct _tptz__GeoMoveResponse * has binding name 'PointerTo_tptz__GeoMoveResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GeoMoveResponse
+#define SOAP_TYPE_PointerTo_tptz__GeoMoveResponse (2718)
+#endif
+
+/* struct _tptz__GeoMove * has binding name 'PointerTo_tptz__GeoMove' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GeoMove
+#define SOAP_TYPE_PointerTo_tptz__GeoMove (2717)
+#endif
+
+/* struct _tptz__AbsoluteMoveResponse * has binding name 'PointerTo_tptz__AbsoluteMoveResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__AbsoluteMoveResponse
+#define SOAP_TYPE_PointerTo_tptz__AbsoluteMoveResponse (2714)
+#endif
+
+/* struct _tptz__AbsoluteMove * has binding name 'PointerTo_tptz__AbsoluteMove' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__AbsoluteMove
+#define SOAP_TYPE_PointerTo_tptz__AbsoluteMove (2713)
+#endif
+
+/* struct _tptz__SendAuxiliaryCommandResponse * has binding name 'PointerTo_tptz__SendAuxiliaryCommandResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__SendAuxiliaryCommandResponse
+#define SOAP_TYPE_PointerTo_tptz__SendAuxiliaryCommandResponse (2710)
+#endif
+
+/* struct _tptz__SendAuxiliaryCommand * has binding name 'PointerTo_tptz__SendAuxiliaryCommand' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__SendAuxiliaryCommand
+#define SOAP_TYPE_PointerTo_tptz__SendAuxiliaryCommand (2709)
+#endif
+
+/* struct _tptz__RelativeMoveResponse * has binding name 'PointerTo_tptz__RelativeMoveResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__RelativeMoveResponse
+#define SOAP_TYPE_PointerTo_tptz__RelativeMoveResponse (2706)
+#endif
+
+/* struct _tptz__RelativeMove * has binding name 'PointerTo_tptz__RelativeMove' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__RelativeMove
+#define SOAP_TYPE_PointerTo_tptz__RelativeMove (2705)
+#endif
+
+/* struct _tptz__ContinuousMoveResponse * has binding name 'PointerTo_tptz__ContinuousMoveResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__ContinuousMoveResponse
+#define SOAP_TYPE_PointerTo_tptz__ContinuousMoveResponse (2702)
+#endif
+
+/* struct _tptz__ContinuousMove * has binding name 'PointerTo_tptz__ContinuousMove' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__ContinuousMove
+#define SOAP_TYPE_PointerTo_tptz__ContinuousMove (2701)
+#endif
+
+/* struct _tptz__SetHomePositionResponse * has binding name 'PointerTo_tptz__SetHomePositionResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__SetHomePositionResponse
+#define SOAP_TYPE_PointerTo_tptz__SetHomePositionResponse (2698)
+#endif
+
+/* struct _tptz__SetHomePosition * has binding name 'PointerTo_tptz__SetHomePosition' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__SetHomePosition
+#define SOAP_TYPE_PointerTo_tptz__SetHomePosition (2697)
+#endif
+
+/* struct _tptz__GotoHomePositionResponse * has binding name 'PointerTo_tptz__GotoHomePositionResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GotoHomePositionResponse
+#define SOAP_TYPE_PointerTo_tptz__GotoHomePositionResponse (2694)
+#endif
+
+/* struct _tptz__GotoHomePosition * has binding name 'PointerTo_tptz__GotoHomePosition' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GotoHomePosition
+#define SOAP_TYPE_PointerTo_tptz__GotoHomePosition (2693)
+#endif
+
+/* struct _tptz__GetConfigurationOptionsResponse * has binding name 'PointerTo_tptz__GetConfigurationOptionsResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetConfigurationOptionsResponse
+#define SOAP_TYPE_PointerTo_tptz__GetConfigurationOptionsResponse (2690)
+#endif
+
+/* struct _tptz__GetConfigurationOptions * has binding name 'PointerTo_tptz__GetConfigurationOptions' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetConfigurationOptions
+#define SOAP_TYPE_PointerTo_tptz__GetConfigurationOptions (2689)
+#endif
+
+/* struct _tptz__SetConfigurationResponse * has binding name 'PointerTo_tptz__SetConfigurationResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__SetConfigurationResponse
+#define SOAP_TYPE_PointerTo_tptz__SetConfigurationResponse (2686)
+#endif
+
+/* struct _tptz__SetConfiguration * has binding name 'PointerTo_tptz__SetConfiguration' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__SetConfiguration
+#define SOAP_TYPE_PointerTo_tptz__SetConfiguration (2685)
+#endif
+
+/* struct _tptz__GetNodeResponse * has binding name 'PointerTo_tptz__GetNodeResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetNodeResponse
+#define SOAP_TYPE_PointerTo_tptz__GetNodeResponse (2682)
+#endif
+
+/* struct _tptz__GetNode * has binding name 'PointerTo_tptz__GetNode' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetNode
+#define SOAP_TYPE_PointerTo_tptz__GetNode (2681)
+#endif
+
+/* struct _tptz__GetNodesResponse * has binding name 'PointerTo_tptz__GetNodesResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetNodesResponse
+#define SOAP_TYPE_PointerTo_tptz__GetNodesResponse (2678)
+#endif
+
+/* struct _tptz__GetNodes * has binding name 'PointerTo_tptz__GetNodes' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetNodes
+#define SOAP_TYPE_PointerTo_tptz__GetNodes (2677)
+#endif
+
+/* struct _tptz__GetConfigurationResponse * has binding name 'PointerTo_tptz__GetConfigurationResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetConfigurationResponse
+#define SOAP_TYPE_PointerTo_tptz__GetConfigurationResponse (2674)
+#endif
+
+/* struct _tptz__GetConfiguration * has binding name 'PointerTo_tptz__GetConfiguration' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetConfiguration
+#define SOAP_TYPE_PointerTo_tptz__GetConfiguration (2673)
+#endif
+
+/* struct _tptz__GetStatusResponse * has binding name 'PointerTo_tptz__GetStatusResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetStatusResponse
+#define SOAP_TYPE_PointerTo_tptz__GetStatusResponse (2670)
+#endif
+
+/* struct _tptz__GetStatus * has binding name 'PointerTo_tptz__GetStatus' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetStatus
+#define SOAP_TYPE_PointerTo_tptz__GetStatus (2669)
+#endif
+
+/* struct _tptz__GotoPresetResponse * has binding name 'PointerTo_tptz__GotoPresetResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GotoPresetResponse
+#define SOAP_TYPE_PointerTo_tptz__GotoPresetResponse (2666)
+#endif
+
+/* struct _tptz__GotoPreset * has binding name 'PointerTo_tptz__GotoPreset' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GotoPreset
+#define SOAP_TYPE_PointerTo_tptz__GotoPreset (2665)
+#endif
+
+/* struct _tptz__RemovePresetResponse * has binding name 'PointerTo_tptz__RemovePresetResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__RemovePresetResponse
+#define SOAP_TYPE_PointerTo_tptz__RemovePresetResponse (2662)
+#endif
+
+/* struct _tptz__RemovePreset * has binding name 'PointerTo_tptz__RemovePreset' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__RemovePreset
+#define SOAP_TYPE_PointerTo_tptz__RemovePreset (2661)
+#endif
+
+/* struct _tptz__SetPresetResponse * has binding name 'PointerTo_tptz__SetPresetResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__SetPresetResponse
+#define SOAP_TYPE_PointerTo_tptz__SetPresetResponse (2658)
+#endif
+
+/* struct _tptz__SetPreset * has binding name 'PointerTo_tptz__SetPreset' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__SetPreset
+#define SOAP_TYPE_PointerTo_tptz__SetPreset (2657)
+#endif
+
+/* struct _tptz__GetPresetsResponse * has binding name 'PointerTo_tptz__GetPresetsResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetPresetsResponse
+#define SOAP_TYPE_PointerTo_tptz__GetPresetsResponse (2654)
+#endif
+
+/* struct _tptz__GetPresets * has binding name 'PointerTo_tptz__GetPresets' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetPresets
+#define SOAP_TYPE_PointerTo_tptz__GetPresets (2653)
+#endif
+
+/* struct _tptz__GetConfigurationsResponse * has binding name 'PointerTo_tptz__GetConfigurationsResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetConfigurationsResponse
+#define SOAP_TYPE_PointerTo_tptz__GetConfigurationsResponse (2650)
+#endif
+
+/* struct _tptz__GetConfigurations * has binding name 'PointerTo_tptz__GetConfigurations' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetConfigurations
+#define SOAP_TYPE_PointerTo_tptz__GetConfigurations (2649)
+#endif
+
+/* struct _tptz__GetServiceCapabilitiesResponse * has binding name 'PointerTo_tptz__GetServiceCapabilitiesResponse' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetServiceCapabilitiesResponse
+#define SOAP_TYPE_PointerTo_tptz__GetServiceCapabilitiesResponse (2646)
+#endif
+
+/* struct _tptz__GetServiceCapabilities * has binding name 'PointerTo_tptz__GetServiceCapabilities' for type '' */
+#ifndef SOAP_TYPE_PointerTo_tptz__GetServiceCapabilities
+#define SOAP_TYPE_PointerTo_tptz__GetServiceCapabilities (2645)
 #endif
 
 /* struct _wsnt__ResumeSubscriptionResponse * has binding name 'PointerTo_wsnt__ResumeSubscriptionResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__ResumeSubscriptionResponse
-#define SOAP_TYPE_PointerTo_wsnt__ResumeSubscriptionResponse (2574)
+#define SOAP_TYPE_PointerTo_wsnt__ResumeSubscriptionResponse (2642)
 #endif
 
 /* struct _wsnt__ResumeSubscription * has binding name 'PointerTo_wsnt__ResumeSubscription' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__ResumeSubscription
-#define SOAP_TYPE_PointerTo_wsnt__ResumeSubscription (2573)
+#define SOAP_TYPE_PointerTo_wsnt__ResumeSubscription (2641)
 #endif
 
 /* struct _wsnt__PauseSubscriptionResponse * has binding name 'PointerTo_wsnt__PauseSubscriptionResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__PauseSubscriptionResponse
-#define SOAP_TYPE_PointerTo_wsnt__PauseSubscriptionResponse (2570)
+#define SOAP_TYPE_PointerTo_wsnt__PauseSubscriptionResponse (2638)
 #endif
 
 /* struct _wsnt__PauseSubscription * has binding name 'PointerTo_wsnt__PauseSubscription' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__PauseSubscription
-#define SOAP_TYPE_PointerTo_wsnt__PauseSubscription (2569)
+#define SOAP_TYPE_PointerTo_wsnt__PauseSubscription (2637)
 #endif
 
 /* struct _wsnt__CreatePullPointResponse * has binding name 'PointerTo_wsnt__CreatePullPointResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__CreatePullPointResponse
-#define SOAP_TYPE_PointerTo_wsnt__CreatePullPointResponse (2562)
+#define SOAP_TYPE_PointerTo_wsnt__CreatePullPointResponse (2630)
 #endif
 
 /* struct _wsnt__CreatePullPoint * has binding name 'PointerTo_wsnt__CreatePullPoint' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__CreatePullPoint
-#define SOAP_TYPE_PointerTo_wsnt__CreatePullPoint (2561)
+#define SOAP_TYPE_PointerTo_wsnt__CreatePullPoint (2629)
 #endif
 
 /* struct _wsnt__DestroyPullPointResponse * has binding name 'PointerTo_wsnt__DestroyPullPointResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__DestroyPullPointResponse
-#define SOAP_TYPE_PointerTo_wsnt__DestroyPullPointResponse (2556)
+#define SOAP_TYPE_PointerTo_wsnt__DestroyPullPointResponse (2624)
 #endif
 
 /* struct _wsnt__DestroyPullPoint * has binding name 'PointerTo_wsnt__DestroyPullPoint' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__DestroyPullPoint
-#define SOAP_TYPE_PointerTo_wsnt__DestroyPullPoint (2555)
+#define SOAP_TYPE_PointerTo_wsnt__DestroyPullPoint (2623)
 #endif
 
 /* struct _wsnt__GetMessagesResponse * has binding name 'PointerTo_wsnt__GetMessagesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__GetMessagesResponse
-#define SOAP_TYPE_PointerTo_wsnt__GetMessagesResponse (2552)
+#define SOAP_TYPE_PointerTo_wsnt__GetMessagesResponse (2620)
 #endif
 
 /* struct _wsnt__GetMessages * has binding name 'PointerTo_wsnt__GetMessages' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__GetMessages
-#define SOAP_TYPE_PointerTo_wsnt__GetMessages (2551)
+#define SOAP_TYPE_PointerTo_wsnt__GetMessages (2619)
 #endif
 
 /* struct _wsnt__Notify * has binding name 'PointerTo_wsnt__Notify' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__Notify
-#define SOAP_TYPE_PointerTo_wsnt__Notify (2548)
+#define SOAP_TYPE_PointerTo_wsnt__Notify (2616)
 #endif
 
 /* struct _wsnt__GetCurrentMessageResponse * has binding name 'PointerTo_wsnt__GetCurrentMessageResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__GetCurrentMessageResponse
-#define SOAP_TYPE_PointerTo_wsnt__GetCurrentMessageResponse (2545)
+#define SOAP_TYPE_PointerTo_wsnt__GetCurrentMessageResponse (2613)
 #endif
 
 /* struct _wsnt__GetCurrentMessage * has binding name 'PointerTo_wsnt__GetCurrentMessage' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__GetCurrentMessage
-#define SOAP_TYPE_PointerTo_wsnt__GetCurrentMessage (2544)
+#define SOAP_TYPE_PointerTo_wsnt__GetCurrentMessage (2612)
 #endif
 
 /* struct _wsnt__SubscribeResponse * has binding name 'PointerTo_wsnt__SubscribeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__SubscribeResponse
-#define SOAP_TYPE_PointerTo_wsnt__SubscribeResponse (2541)
+#define SOAP_TYPE_PointerTo_wsnt__SubscribeResponse (2609)
 #endif
 
 /* struct _wsnt__Subscribe * has binding name 'PointerTo_wsnt__Subscribe' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__Subscribe
-#define SOAP_TYPE_PointerTo_wsnt__Subscribe (2540)
+#define SOAP_TYPE_PointerTo_wsnt__Subscribe (2608)
 #endif
 
 /* struct _wsnt__RenewResponse * has binding name 'PointerTo_wsnt__RenewResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__RenewResponse
-#define SOAP_TYPE_PointerTo_wsnt__RenewResponse (2535)
+#define SOAP_TYPE_PointerTo_wsnt__RenewResponse (2603)
 #endif
 
 /* struct _wsnt__Renew * has binding name 'PointerTo_wsnt__Renew' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__Renew
-#define SOAP_TYPE_PointerTo_wsnt__Renew (2534)
+#define SOAP_TYPE_PointerTo_wsnt__Renew (2602)
 #endif
 
 /* struct _tev__GetEventBrokersResponse * has binding name 'PointerTo_tev__GetEventBrokersResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__GetEventBrokersResponse
-#define SOAP_TYPE_PointerTo_tev__GetEventBrokersResponse (2531)
+#define SOAP_TYPE_PointerTo_tev__GetEventBrokersResponse (2599)
 #endif
 
 /* struct _tev__GetEventBrokers * has binding name 'PointerTo_tev__GetEventBrokers' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__GetEventBrokers
-#define SOAP_TYPE_PointerTo_tev__GetEventBrokers (2530)
+#define SOAP_TYPE_PointerTo_tev__GetEventBrokers (2598)
 #endif
 
 /* struct _tev__DeleteEventBrokerResponse * has binding name 'PointerTo_tev__DeleteEventBrokerResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__DeleteEventBrokerResponse
-#define SOAP_TYPE_PointerTo_tev__DeleteEventBrokerResponse (2527)
+#define SOAP_TYPE_PointerTo_tev__DeleteEventBrokerResponse (2595)
 #endif
 
 /* struct _tev__DeleteEventBroker * has binding name 'PointerTo_tev__DeleteEventBroker' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__DeleteEventBroker
-#define SOAP_TYPE_PointerTo_tev__DeleteEventBroker (2526)
+#define SOAP_TYPE_PointerTo_tev__DeleteEventBroker (2594)
 #endif
 
 /* struct _tev__AddEventBrokerResponse * has binding name 'PointerTo_tev__AddEventBrokerResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__AddEventBrokerResponse
-#define SOAP_TYPE_PointerTo_tev__AddEventBrokerResponse (2523)
+#define SOAP_TYPE_PointerTo_tev__AddEventBrokerResponse (2591)
 #endif
 
 /* struct _tev__AddEventBroker * has binding name 'PointerTo_tev__AddEventBroker' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__AddEventBroker
-#define SOAP_TYPE_PointerTo_tev__AddEventBroker (2522)
+#define SOAP_TYPE_PointerTo_tev__AddEventBroker (2590)
 #endif
 
 /* struct _tev__GetEventPropertiesResponse * has binding name 'PointerTo_tev__GetEventPropertiesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__GetEventPropertiesResponse
-#define SOAP_TYPE_PointerTo_tev__GetEventPropertiesResponse (2519)
+#define SOAP_TYPE_PointerTo_tev__GetEventPropertiesResponse (2587)
 #endif
 
 /* struct _tev__GetEventProperties * has binding name 'PointerTo_tev__GetEventProperties' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__GetEventProperties
-#define SOAP_TYPE_PointerTo_tev__GetEventProperties (2518)
+#define SOAP_TYPE_PointerTo_tev__GetEventProperties (2586)
 #endif
 
 /* struct _tev__CreatePullPointSubscriptionResponse * has binding name 'PointerTo_tev__CreatePullPointSubscriptionResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__CreatePullPointSubscriptionResponse
-#define SOAP_TYPE_PointerTo_tev__CreatePullPointSubscriptionResponse (2515)
+#define SOAP_TYPE_PointerTo_tev__CreatePullPointSubscriptionResponse (2583)
 #endif
 
 /* struct _tev__CreatePullPointSubscription * has binding name 'PointerTo_tev__CreatePullPointSubscription' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__CreatePullPointSubscription
-#define SOAP_TYPE_PointerTo_tev__CreatePullPointSubscription (2514)
+#define SOAP_TYPE_PointerTo_tev__CreatePullPointSubscription (2582)
 #endif
 
 /* struct _tev__GetServiceCapabilitiesResponse * has binding name 'PointerTo_tev__GetServiceCapabilitiesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__GetServiceCapabilitiesResponse
-#define SOAP_TYPE_PointerTo_tev__GetServiceCapabilitiesResponse (2511)
+#define SOAP_TYPE_PointerTo_tev__GetServiceCapabilitiesResponse (2579)
 #endif
 
 /* struct _tev__GetServiceCapabilities * has binding name 'PointerTo_tev__GetServiceCapabilities' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__GetServiceCapabilities
-#define SOAP_TYPE_PointerTo_tev__GetServiceCapabilities (2510)
+#define SOAP_TYPE_PointerTo_tev__GetServiceCapabilities (2578)
 #endif
 
 /* struct _wsnt__UnsubscribeResponse * has binding name 'PointerTo_wsnt__UnsubscribeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnsubscribeResponse
-#define SOAP_TYPE_PointerTo_wsnt__UnsubscribeResponse (2507)
+#define SOAP_TYPE_PointerTo_wsnt__UnsubscribeResponse (2575)
 #endif
 
 /* struct _wsnt__Unsubscribe * has binding name 'PointerTo_wsnt__Unsubscribe' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__Unsubscribe
-#define SOAP_TYPE_PointerTo_wsnt__Unsubscribe (2506)
+#define SOAP_TYPE_PointerTo_wsnt__Unsubscribe (2574)
 #endif
 
 /* struct _tev__SetSynchronizationPointResponse * has binding name 'PointerTo_tev__SetSynchronizationPointResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__SetSynchronizationPointResponse
-#define SOAP_TYPE_PointerTo_tev__SetSynchronizationPointResponse (2503)
+#define SOAP_TYPE_PointerTo_tev__SetSynchronizationPointResponse (2571)
 #endif
 
 /* struct _tev__SetSynchronizationPoint * has binding name 'PointerTo_tev__SetSynchronizationPoint' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__SetSynchronizationPoint
-#define SOAP_TYPE_PointerTo_tev__SetSynchronizationPoint (2502)
+#define SOAP_TYPE_PointerTo_tev__SetSynchronizationPoint (2570)
 #endif
 
 /* struct _tev__SeekResponse * has binding name 'PointerTo_tev__SeekResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__SeekResponse
-#define SOAP_TYPE_PointerTo_tev__SeekResponse (2499)
+#define SOAP_TYPE_PointerTo_tev__SeekResponse (2567)
 #endif
 
 /* struct _tev__Seek * has binding name 'PointerTo_tev__Seek' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__Seek
-#define SOAP_TYPE_PointerTo_tev__Seek (2498)
+#define SOAP_TYPE_PointerTo_tev__Seek (2566)
 #endif
 
 /* struct _tev__PullMessagesResponse * has binding name 'PointerTo_tev__PullMessagesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__PullMessagesResponse
-#define SOAP_TYPE_PointerTo_tev__PullMessagesResponse (2495)
+#define SOAP_TYPE_PointerTo_tev__PullMessagesResponse (2563)
 #endif
 
 /* struct _tev__PullMessages * has binding name 'PointerTo_tev__PullMessages' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__PullMessages
-#define SOAP_TYPE_PointerTo_tev__PullMessages (2494)
+#define SOAP_TYPE_PointerTo_tev__PullMessages (2562)
 #endif
 
 /* struct _tds__SetHashingAlgorithmResponse * has binding name 'PointerTo_tds__SetHashingAlgorithmResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetHashingAlgorithmResponse
-#define SOAP_TYPE_PointerTo_tds__SetHashingAlgorithmResponse (2491)
+#define SOAP_TYPE_PointerTo_tds__SetHashingAlgorithmResponse (2559)
 #endif
 
 /* struct _tds__SetHashingAlgorithm * has binding name 'PointerTo_tds__SetHashingAlgorithm' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetHashingAlgorithm
-#define SOAP_TYPE_PointerTo_tds__SetHashingAlgorithm (2490)
+#define SOAP_TYPE_PointerTo_tds__SetHashingAlgorithm (2558)
 #endif
 
 /* struct _tds__DeleteGeoLocationResponse * has binding name 'PointerTo_tds__DeleteGeoLocationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteGeoLocationResponse
-#define SOAP_TYPE_PointerTo_tds__DeleteGeoLocationResponse (2487)
+#define SOAP_TYPE_PointerTo_tds__DeleteGeoLocationResponse (2555)
 #endif
 
 /* struct _tds__DeleteGeoLocation * has binding name 'PointerTo_tds__DeleteGeoLocation' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteGeoLocation
-#define SOAP_TYPE_PointerTo_tds__DeleteGeoLocation (2486)
+#define SOAP_TYPE_PointerTo_tds__DeleteGeoLocation (2554)
 #endif
 
 /* struct _tds__SetGeoLocationResponse * has binding name 'PointerTo_tds__SetGeoLocationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetGeoLocationResponse
-#define SOAP_TYPE_PointerTo_tds__SetGeoLocationResponse (2483)
+#define SOAP_TYPE_PointerTo_tds__SetGeoLocationResponse (2551)
 #endif
 
 /* struct _tds__SetGeoLocation * has binding name 'PointerTo_tds__SetGeoLocation' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetGeoLocation
-#define SOAP_TYPE_PointerTo_tds__SetGeoLocation (2482)
+#define SOAP_TYPE_PointerTo_tds__SetGeoLocation (2550)
 #endif
 
 /* struct _tds__GetGeoLocationResponse * has binding name 'PointerTo_tds__GetGeoLocationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetGeoLocationResponse
-#define SOAP_TYPE_PointerTo_tds__GetGeoLocationResponse (2479)
+#define SOAP_TYPE_PointerTo_tds__GetGeoLocationResponse (2547)
 #endif
 
 /* struct _tds__GetGeoLocation * has binding name 'PointerTo_tds__GetGeoLocation' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetGeoLocation
-#define SOAP_TYPE_PointerTo_tds__GetGeoLocation (2478)
+#define SOAP_TYPE_PointerTo_tds__GetGeoLocation (2546)
 #endif
 
 /* struct _tds__DeleteStorageConfigurationResponse * has binding name 'PointerTo_tds__DeleteStorageConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteStorageConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__DeleteStorageConfigurationResponse (2475)
+#define SOAP_TYPE_PointerTo_tds__DeleteStorageConfigurationResponse (2543)
 #endif
 
 /* struct _tds__DeleteStorageConfiguration * has binding name 'PointerTo_tds__DeleteStorageConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteStorageConfiguration
-#define SOAP_TYPE_PointerTo_tds__DeleteStorageConfiguration (2474)
+#define SOAP_TYPE_PointerTo_tds__DeleteStorageConfiguration (2542)
 #endif
 
 /* struct _tds__SetStorageConfigurationResponse * has binding name 'PointerTo_tds__SetStorageConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetStorageConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__SetStorageConfigurationResponse (2471)
+#define SOAP_TYPE_PointerTo_tds__SetStorageConfigurationResponse (2539)
 #endif
 
 /* struct _tds__SetStorageConfiguration * has binding name 'PointerTo_tds__SetStorageConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetStorageConfiguration
-#define SOAP_TYPE_PointerTo_tds__SetStorageConfiguration (2470)
+#define SOAP_TYPE_PointerTo_tds__SetStorageConfiguration (2538)
 #endif
 
 /* struct _tds__GetStorageConfigurationResponse * has binding name 'PointerTo_tds__GetStorageConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetStorageConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__GetStorageConfigurationResponse (2467)
+#define SOAP_TYPE_PointerTo_tds__GetStorageConfigurationResponse (2535)
 #endif
 
 /* struct _tds__GetStorageConfiguration * has binding name 'PointerTo_tds__GetStorageConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetStorageConfiguration
-#define SOAP_TYPE_PointerTo_tds__GetStorageConfiguration (2466)
+#define SOAP_TYPE_PointerTo_tds__GetStorageConfiguration (2534)
 #endif
 
 /* struct _tds__CreateStorageConfigurationResponse * has binding name 'PointerTo_tds__CreateStorageConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__CreateStorageConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__CreateStorageConfigurationResponse (2463)
+#define SOAP_TYPE_PointerTo_tds__CreateStorageConfigurationResponse (2531)
 #endif
 
 /* struct _tds__CreateStorageConfiguration * has binding name 'PointerTo_tds__CreateStorageConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__CreateStorageConfiguration
-#define SOAP_TYPE_PointerTo_tds__CreateStorageConfiguration (2462)
+#define SOAP_TYPE_PointerTo_tds__CreateStorageConfiguration (2530)
 #endif
 
 /* struct _tds__GetStorageConfigurationsResponse * has binding name 'PointerTo_tds__GetStorageConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetStorageConfigurationsResponse
-#define SOAP_TYPE_PointerTo_tds__GetStorageConfigurationsResponse (2459)
+#define SOAP_TYPE_PointerTo_tds__GetStorageConfigurationsResponse (2527)
 #endif
 
 /* struct _tds__GetStorageConfigurations * has binding name 'PointerTo_tds__GetStorageConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetStorageConfigurations
-#define SOAP_TYPE_PointerTo_tds__GetStorageConfigurations (2458)
+#define SOAP_TYPE_PointerTo_tds__GetStorageConfigurations (2526)
 #endif
 
 /* struct _tds__StartSystemRestoreResponse * has binding name 'PointerTo_tds__StartSystemRestoreResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__StartSystemRestoreResponse
-#define SOAP_TYPE_PointerTo_tds__StartSystemRestoreResponse (2455)
+#define SOAP_TYPE_PointerTo_tds__StartSystemRestoreResponse (2523)
 #endif
 
 /* struct _tds__StartSystemRestore * has binding name 'PointerTo_tds__StartSystemRestore' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__StartSystemRestore
-#define SOAP_TYPE_PointerTo_tds__StartSystemRestore (2454)
+#define SOAP_TYPE_PointerTo_tds__StartSystemRestore (2522)
 #endif
 
 /* struct _tds__StartFirmwareUpgradeResponse * has binding name 'PointerTo_tds__StartFirmwareUpgradeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__StartFirmwareUpgradeResponse
-#define SOAP_TYPE_PointerTo_tds__StartFirmwareUpgradeResponse (2451)
+#define SOAP_TYPE_PointerTo_tds__StartFirmwareUpgradeResponse (2519)
 #endif
 
 /* struct _tds__StartFirmwareUpgrade * has binding name 'PointerTo_tds__StartFirmwareUpgrade' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__StartFirmwareUpgrade
-#define SOAP_TYPE_PointerTo_tds__StartFirmwareUpgrade (2450)
+#define SOAP_TYPE_PointerTo_tds__StartFirmwareUpgrade (2518)
 #endif
 
 /* struct _tds__GetSystemUrisResponse * has binding name 'PointerTo_tds__GetSystemUrisResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemUrisResponse
-#define SOAP_TYPE_PointerTo_tds__GetSystemUrisResponse (2447)
+#define SOAP_TYPE_PointerTo_tds__GetSystemUrisResponse (2515)
 #endif
 
 /* struct _tds__GetSystemUris * has binding name 'PointerTo_tds__GetSystemUris' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemUris
-#define SOAP_TYPE_PointerTo_tds__GetSystemUris (2446)
+#define SOAP_TYPE_PointerTo_tds__GetSystemUris (2514)
 #endif
 
 /* struct _tds__ScanAvailableDot11NetworksResponse * has binding name 'PointerTo_tds__ScanAvailableDot11NetworksResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__ScanAvailableDot11NetworksResponse
-#define SOAP_TYPE_PointerTo_tds__ScanAvailableDot11NetworksResponse (2443)
+#define SOAP_TYPE_PointerTo_tds__ScanAvailableDot11NetworksResponse (2511)
 #endif
 
 /* struct _tds__ScanAvailableDot11Networks * has binding name 'PointerTo_tds__ScanAvailableDot11Networks' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__ScanAvailableDot11Networks
-#define SOAP_TYPE_PointerTo_tds__ScanAvailableDot11Networks (2442)
+#define SOAP_TYPE_PointerTo_tds__ScanAvailableDot11Networks (2510)
 #endif
 
 /* struct _tds__GetDot11StatusResponse * has binding name 'PointerTo_tds__GetDot11StatusResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDot11StatusResponse
-#define SOAP_TYPE_PointerTo_tds__GetDot11StatusResponse (2439)
+#define SOAP_TYPE_PointerTo_tds__GetDot11StatusResponse (2507)
 #endif
 
 /* struct _tds__GetDot11Status * has binding name 'PointerTo_tds__GetDot11Status' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDot11Status
-#define SOAP_TYPE_PointerTo_tds__GetDot11Status (2438)
+#define SOAP_TYPE_PointerTo_tds__GetDot11Status (2506)
 #endif
 
 /* struct _tds__GetDot11CapabilitiesResponse * has binding name 'PointerTo_tds__GetDot11CapabilitiesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDot11CapabilitiesResponse
-#define SOAP_TYPE_PointerTo_tds__GetDot11CapabilitiesResponse (2435)
+#define SOAP_TYPE_PointerTo_tds__GetDot11CapabilitiesResponse (2503)
 #endif
 
 /* struct _tds__GetDot11Capabilities * has binding name 'PointerTo_tds__GetDot11Capabilities' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDot11Capabilities
-#define SOAP_TYPE_PointerTo_tds__GetDot11Capabilities (2434)
+#define SOAP_TYPE_PointerTo_tds__GetDot11Capabilities (2502)
 #endif
 
 /* struct _tds__DeleteDot1XConfigurationResponse * has binding name 'PointerTo_tds__DeleteDot1XConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteDot1XConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__DeleteDot1XConfigurationResponse (2431)
+#define SOAP_TYPE_PointerTo_tds__DeleteDot1XConfigurationResponse (2499)
 #endif
 
 /* struct _tds__DeleteDot1XConfiguration * has binding name 'PointerTo_tds__DeleteDot1XConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteDot1XConfiguration
-#define SOAP_TYPE_PointerTo_tds__DeleteDot1XConfiguration (2430)
+#define SOAP_TYPE_PointerTo_tds__DeleteDot1XConfiguration (2498)
 #endif
 
 /* struct _tds__GetDot1XConfigurationsResponse * has binding name 'PointerTo_tds__GetDot1XConfigurationsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDot1XConfigurationsResponse
-#define SOAP_TYPE_PointerTo_tds__GetDot1XConfigurationsResponse (2427)
+#define SOAP_TYPE_PointerTo_tds__GetDot1XConfigurationsResponse (2495)
 #endif
 
 /* struct _tds__GetDot1XConfigurations * has binding name 'PointerTo_tds__GetDot1XConfigurations' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDot1XConfigurations
-#define SOAP_TYPE_PointerTo_tds__GetDot1XConfigurations (2426)
+#define SOAP_TYPE_PointerTo_tds__GetDot1XConfigurations (2494)
 #endif
 
 /* struct _tds__GetDot1XConfigurationResponse * has binding name 'PointerTo_tds__GetDot1XConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDot1XConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__GetDot1XConfigurationResponse (2423)
+#define SOAP_TYPE_PointerTo_tds__GetDot1XConfigurationResponse (2491)
 #endif
 
 /* struct _tds__GetDot1XConfiguration * has binding name 'PointerTo_tds__GetDot1XConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDot1XConfiguration
-#define SOAP_TYPE_PointerTo_tds__GetDot1XConfiguration (2422)
+#define SOAP_TYPE_PointerTo_tds__GetDot1XConfiguration (2490)
 #endif
 
 /* struct _tds__SetDot1XConfigurationResponse * has binding name 'PointerTo_tds__SetDot1XConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDot1XConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__SetDot1XConfigurationResponse (2419)
+#define SOAP_TYPE_PointerTo_tds__SetDot1XConfigurationResponse (2487)
 #endif
 
 /* struct _tds__SetDot1XConfiguration * has binding name 'PointerTo_tds__SetDot1XConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDot1XConfiguration
-#define SOAP_TYPE_PointerTo_tds__SetDot1XConfiguration (2418)
+#define SOAP_TYPE_PointerTo_tds__SetDot1XConfiguration (2486)
 #endif
 
 /* struct _tds__CreateDot1XConfigurationResponse * has binding name 'PointerTo_tds__CreateDot1XConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__CreateDot1XConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__CreateDot1XConfigurationResponse (2415)
+#define SOAP_TYPE_PointerTo_tds__CreateDot1XConfigurationResponse (2483)
 #endif
 
 /* struct _tds__CreateDot1XConfiguration * has binding name 'PointerTo_tds__CreateDot1XConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__CreateDot1XConfiguration
-#define SOAP_TYPE_PointerTo_tds__CreateDot1XConfiguration (2414)
+#define SOAP_TYPE_PointerTo_tds__CreateDot1XConfiguration (2482)
 #endif
 
 /* struct _tds__LoadCACertificatesResponse * has binding name 'PointerTo_tds__LoadCACertificatesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__LoadCACertificatesResponse
-#define SOAP_TYPE_PointerTo_tds__LoadCACertificatesResponse (2411)
+#define SOAP_TYPE_PointerTo_tds__LoadCACertificatesResponse (2479)
 #endif
 
 /* struct _tds__LoadCACertificates * has binding name 'PointerTo_tds__LoadCACertificates' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__LoadCACertificates
-#define SOAP_TYPE_PointerTo_tds__LoadCACertificates (2410)
+#define SOAP_TYPE_PointerTo_tds__LoadCACertificates (2478)
 #endif
 
 /* struct _tds__GetCertificateInformationResponse * has binding name 'PointerTo_tds__GetCertificateInformationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCertificateInformationResponse
-#define SOAP_TYPE_PointerTo_tds__GetCertificateInformationResponse (2407)
+#define SOAP_TYPE_PointerTo_tds__GetCertificateInformationResponse (2475)
 #endif
 
 /* struct _tds__GetCertificateInformation * has binding name 'PointerTo_tds__GetCertificateInformation' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCertificateInformation
-#define SOAP_TYPE_PointerTo_tds__GetCertificateInformation (2406)
+#define SOAP_TYPE_PointerTo_tds__GetCertificateInformation (2474)
 #endif
 
 /* struct _tds__LoadCertificateWithPrivateKeyResponse * has binding name 'PointerTo_tds__LoadCertificateWithPrivateKeyResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__LoadCertificateWithPrivateKeyResponse
-#define SOAP_TYPE_PointerTo_tds__LoadCertificateWithPrivateKeyResponse (2403)
+#define SOAP_TYPE_PointerTo_tds__LoadCertificateWithPrivateKeyResponse (2471)
 #endif
 
 /* struct _tds__LoadCertificateWithPrivateKey * has binding name 'PointerTo_tds__LoadCertificateWithPrivateKey' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__LoadCertificateWithPrivateKey
-#define SOAP_TYPE_PointerTo_tds__LoadCertificateWithPrivateKey (2402)
+#define SOAP_TYPE_PointerTo_tds__LoadCertificateWithPrivateKey (2470)
 #endif
 
 /* struct _tds__GetCACertificatesResponse * has binding name 'PointerTo_tds__GetCACertificatesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCACertificatesResponse
-#define SOAP_TYPE_PointerTo_tds__GetCACertificatesResponse (2399)
+#define SOAP_TYPE_PointerTo_tds__GetCACertificatesResponse (2467)
 #endif
 
 /* struct _tds__GetCACertificates * has binding name 'PointerTo_tds__GetCACertificates' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCACertificates
-#define SOAP_TYPE_PointerTo_tds__GetCACertificates (2398)
+#define SOAP_TYPE_PointerTo_tds__GetCACertificates (2466)
 #endif
 
 /* struct _tds__SendAuxiliaryCommandResponse * has binding name 'PointerTo_tds__SendAuxiliaryCommandResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SendAuxiliaryCommandResponse
-#define SOAP_TYPE_PointerTo_tds__SendAuxiliaryCommandResponse (2395)
+#define SOAP_TYPE_PointerTo_tds__SendAuxiliaryCommandResponse (2463)
 #endif
 
 /* struct _tds__SendAuxiliaryCommand * has binding name 'PointerTo_tds__SendAuxiliaryCommand' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SendAuxiliaryCommand
-#define SOAP_TYPE_PointerTo_tds__SendAuxiliaryCommand (2394)
+#define SOAP_TYPE_PointerTo_tds__SendAuxiliaryCommand (2462)
 #endif
 
 /* struct _tds__SetRelayOutputStateResponse * has binding name 'PointerTo_tds__SetRelayOutputStateResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetRelayOutputStateResponse
-#define SOAP_TYPE_PointerTo_tds__SetRelayOutputStateResponse (2391)
+#define SOAP_TYPE_PointerTo_tds__SetRelayOutputStateResponse (2459)
 #endif
 
 /* struct _tds__SetRelayOutputState * has binding name 'PointerTo_tds__SetRelayOutputState' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetRelayOutputState
-#define SOAP_TYPE_PointerTo_tds__SetRelayOutputState (2390)
+#define SOAP_TYPE_PointerTo_tds__SetRelayOutputState (2458)
 #endif
 
 /* struct _tds__SetRelayOutputSettingsResponse * has binding name 'PointerTo_tds__SetRelayOutputSettingsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetRelayOutputSettingsResponse
-#define SOAP_TYPE_PointerTo_tds__SetRelayOutputSettingsResponse (2387)
+#define SOAP_TYPE_PointerTo_tds__SetRelayOutputSettingsResponse (2455)
 #endif
 
 /* struct _tds__SetRelayOutputSettings * has binding name 'PointerTo_tds__SetRelayOutputSettings' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetRelayOutputSettings
-#define SOAP_TYPE_PointerTo_tds__SetRelayOutputSettings (2386)
+#define SOAP_TYPE_PointerTo_tds__SetRelayOutputSettings (2454)
 #endif
 
 /* struct _tds__GetRelayOutputsResponse * has binding name 'PointerTo_tds__GetRelayOutputsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetRelayOutputsResponse
-#define SOAP_TYPE_PointerTo_tds__GetRelayOutputsResponse (2383)
+#define SOAP_TYPE_PointerTo_tds__GetRelayOutputsResponse (2451)
 #endif
 
 /* struct _tds__GetRelayOutputs * has binding name 'PointerTo_tds__GetRelayOutputs' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetRelayOutputs
-#define SOAP_TYPE_PointerTo_tds__GetRelayOutputs (2382)
+#define SOAP_TYPE_PointerTo_tds__GetRelayOutputs (2450)
 #endif
 
 /* struct _tds__SetClientCertificateModeResponse * has binding name 'PointerTo_tds__SetClientCertificateModeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetClientCertificateModeResponse
-#define SOAP_TYPE_PointerTo_tds__SetClientCertificateModeResponse (2379)
+#define SOAP_TYPE_PointerTo_tds__SetClientCertificateModeResponse (2447)
 #endif
 
 /* struct _tds__SetClientCertificateMode * has binding name 'PointerTo_tds__SetClientCertificateMode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetClientCertificateMode
-#define SOAP_TYPE_PointerTo_tds__SetClientCertificateMode (2378)
+#define SOAP_TYPE_PointerTo_tds__SetClientCertificateMode (2446)
 #endif
 
 /* struct _tds__GetClientCertificateModeResponse * has binding name 'PointerTo_tds__GetClientCertificateModeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetClientCertificateModeResponse
-#define SOAP_TYPE_PointerTo_tds__GetClientCertificateModeResponse (2375)
+#define SOAP_TYPE_PointerTo_tds__GetClientCertificateModeResponse (2443)
 #endif
 
 /* struct _tds__GetClientCertificateMode * has binding name 'PointerTo_tds__GetClientCertificateMode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetClientCertificateMode
-#define SOAP_TYPE_PointerTo_tds__GetClientCertificateMode (2374)
+#define SOAP_TYPE_PointerTo_tds__GetClientCertificateMode (2442)
 #endif
 
 /* struct _tds__LoadCertificatesResponse * has binding name 'PointerTo_tds__LoadCertificatesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__LoadCertificatesResponse
-#define SOAP_TYPE_PointerTo_tds__LoadCertificatesResponse (2371)
+#define SOAP_TYPE_PointerTo_tds__LoadCertificatesResponse (2439)
 #endif
 
 /* struct _tds__LoadCertificates * has binding name 'PointerTo_tds__LoadCertificates' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__LoadCertificates
-#define SOAP_TYPE_PointerTo_tds__LoadCertificates (2370)
+#define SOAP_TYPE_PointerTo_tds__LoadCertificates (2438)
 #endif
 
 /* struct _tds__GetPkcs10RequestResponse * has binding name 'PointerTo_tds__GetPkcs10RequestResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetPkcs10RequestResponse
-#define SOAP_TYPE_PointerTo_tds__GetPkcs10RequestResponse (2367)
+#define SOAP_TYPE_PointerTo_tds__GetPkcs10RequestResponse (2435)
 #endif
 
 /* struct _tds__GetPkcs10Request * has binding name 'PointerTo_tds__GetPkcs10Request' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetPkcs10Request
-#define SOAP_TYPE_PointerTo_tds__GetPkcs10Request (2366)
+#define SOAP_TYPE_PointerTo_tds__GetPkcs10Request (2434)
 #endif
 
 /* struct _tds__DeleteCertificatesResponse * has binding name 'PointerTo_tds__DeleteCertificatesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteCertificatesResponse
-#define SOAP_TYPE_PointerTo_tds__DeleteCertificatesResponse (2363)
+#define SOAP_TYPE_PointerTo_tds__DeleteCertificatesResponse (2431)
 #endif
 
 /* struct _tds__DeleteCertificates * has binding name 'PointerTo_tds__DeleteCertificates' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteCertificates
-#define SOAP_TYPE_PointerTo_tds__DeleteCertificates (2362)
+#define SOAP_TYPE_PointerTo_tds__DeleteCertificates (2430)
 #endif
 
 /* struct _tds__SetCertificatesStatusResponse * has binding name 'PointerTo_tds__SetCertificatesStatusResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetCertificatesStatusResponse
-#define SOAP_TYPE_PointerTo_tds__SetCertificatesStatusResponse (2359)
+#define SOAP_TYPE_PointerTo_tds__SetCertificatesStatusResponse (2427)
 #endif
 
 /* struct _tds__SetCertificatesStatus * has binding name 'PointerTo_tds__SetCertificatesStatus' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetCertificatesStatus
-#define SOAP_TYPE_PointerTo_tds__SetCertificatesStatus (2358)
+#define SOAP_TYPE_PointerTo_tds__SetCertificatesStatus (2426)
 #endif
 
 /* struct _tds__GetCertificatesStatusResponse * has binding name 'PointerTo_tds__GetCertificatesStatusResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCertificatesStatusResponse
-#define SOAP_TYPE_PointerTo_tds__GetCertificatesStatusResponse (2355)
+#define SOAP_TYPE_PointerTo_tds__GetCertificatesStatusResponse (2423)
 #endif
 
 /* struct _tds__GetCertificatesStatus * has binding name 'PointerTo_tds__GetCertificatesStatus' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCertificatesStatus
-#define SOAP_TYPE_PointerTo_tds__GetCertificatesStatus (2354)
+#define SOAP_TYPE_PointerTo_tds__GetCertificatesStatus (2422)
 #endif
 
 /* struct _tds__GetCertificatesResponse * has binding name 'PointerTo_tds__GetCertificatesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCertificatesResponse
-#define SOAP_TYPE_PointerTo_tds__GetCertificatesResponse (2351)
+#define SOAP_TYPE_PointerTo_tds__GetCertificatesResponse (2419)
 #endif
 
 /* struct _tds__GetCertificates * has binding name 'PointerTo_tds__GetCertificates' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCertificates
-#define SOAP_TYPE_PointerTo_tds__GetCertificates (2350)
+#define SOAP_TYPE_PointerTo_tds__GetCertificates (2418)
 #endif
 
 /* struct _tds__CreateCertificateResponse * has binding name 'PointerTo_tds__CreateCertificateResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__CreateCertificateResponse
-#define SOAP_TYPE_PointerTo_tds__CreateCertificateResponse (2347)
+#define SOAP_TYPE_PointerTo_tds__CreateCertificateResponse (2415)
 #endif
 
 /* struct _tds__CreateCertificate * has binding name 'PointerTo_tds__CreateCertificate' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__CreateCertificate
-#define SOAP_TYPE_PointerTo_tds__CreateCertificate (2346)
+#define SOAP_TYPE_PointerTo_tds__CreateCertificate (2414)
 #endif
 
 /* struct _tds__SetAccessPolicyResponse * has binding name 'PointerTo_tds__SetAccessPolicyResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetAccessPolicyResponse
-#define SOAP_TYPE_PointerTo_tds__SetAccessPolicyResponse (2343)
+#define SOAP_TYPE_PointerTo_tds__SetAccessPolicyResponse (2411)
 #endif
 
 /* struct _tds__SetAccessPolicy * has binding name 'PointerTo_tds__SetAccessPolicy' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetAccessPolicy
-#define SOAP_TYPE_PointerTo_tds__SetAccessPolicy (2342)
+#define SOAP_TYPE_PointerTo_tds__SetAccessPolicy (2410)
 #endif
 
 /* struct _tds__GetAccessPolicyResponse * has binding name 'PointerTo_tds__GetAccessPolicyResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetAccessPolicyResponse
-#define SOAP_TYPE_PointerTo_tds__GetAccessPolicyResponse (2339)
+#define SOAP_TYPE_PointerTo_tds__GetAccessPolicyResponse (2407)
 #endif
 
 /* struct _tds__GetAccessPolicy * has binding name 'PointerTo_tds__GetAccessPolicy' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetAccessPolicy
-#define SOAP_TYPE_PointerTo_tds__GetAccessPolicy (2338)
+#define SOAP_TYPE_PointerTo_tds__GetAccessPolicy (2406)
 #endif
 
 /* struct _tds__RemoveIPAddressFilterResponse * has binding name 'PointerTo_tds__RemoveIPAddressFilterResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__RemoveIPAddressFilterResponse
-#define SOAP_TYPE_PointerTo_tds__RemoveIPAddressFilterResponse (2335)
+#define SOAP_TYPE_PointerTo_tds__RemoveIPAddressFilterResponse (2403)
 #endif
 
 /* struct _tds__RemoveIPAddressFilter * has binding name 'PointerTo_tds__RemoveIPAddressFilter' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__RemoveIPAddressFilter
-#define SOAP_TYPE_PointerTo_tds__RemoveIPAddressFilter (2334)
+#define SOAP_TYPE_PointerTo_tds__RemoveIPAddressFilter (2402)
 #endif
 
 /* struct _tds__AddIPAddressFilterResponse * has binding name 'PointerTo_tds__AddIPAddressFilterResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__AddIPAddressFilterResponse
-#define SOAP_TYPE_PointerTo_tds__AddIPAddressFilterResponse (2331)
+#define SOAP_TYPE_PointerTo_tds__AddIPAddressFilterResponse (2399)
 #endif
 
 /* struct _tds__AddIPAddressFilter * has binding name 'PointerTo_tds__AddIPAddressFilter' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__AddIPAddressFilter
-#define SOAP_TYPE_PointerTo_tds__AddIPAddressFilter (2330)
+#define SOAP_TYPE_PointerTo_tds__AddIPAddressFilter (2398)
 #endif
 
 /* struct _tds__SetIPAddressFilterResponse * has binding name 'PointerTo_tds__SetIPAddressFilterResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetIPAddressFilterResponse
-#define SOAP_TYPE_PointerTo_tds__SetIPAddressFilterResponse (2327)
+#define SOAP_TYPE_PointerTo_tds__SetIPAddressFilterResponse (2395)
 #endif
 
 /* struct _tds__SetIPAddressFilter * has binding name 'PointerTo_tds__SetIPAddressFilter' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetIPAddressFilter
-#define SOAP_TYPE_PointerTo_tds__SetIPAddressFilter (2326)
+#define SOAP_TYPE_PointerTo_tds__SetIPAddressFilter (2394)
 #endif
 
 /* struct _tds__GetIPAddressFilterResponse * has binding name 'PointerTo_tds__GetIPAddressFilterResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetIPAddressFilterResponse
-#define SOAP_TYPE_PointerTo_tds__GetIPAddressFilterResponse (2323)
+#define SOAP_TYPE_PointerTo_tds__GetIPAddressFilterResponse (2391)
 #endif
 
 /* struct _tds__GetIPAddressFilter * has binding name 'PointerTo_tds__GetIPAddressFilter' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetIPAddressFilter
-#define SOAP_TYPE_PointerTo_tds__GetIPAddressFilter (2322)
+#define SOAP_TYPE_PointerTo_tds__GetIPAddressFilter (2390)
 #endif
 
 /* struct _tds__SetZeroConfigurationResponse * has binding name 'PointerTo_tds__SetZeroConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetZeroConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__SetZeroConfigurationResponse (2319)
+#define SOAP_TYPE_PointerTo_tds__SetZeroConfigurationResponse (2387)
 #endif
 
 /* struct _tds__SetZeroConfiguration * has binding name 'PointerTo_tds__SetZeroConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetZeroConfiguration
-#define SOAP_TYPE_PointerTo_tds__SetZeroConfiguration (2318)
+#define SOAP_TYPE_PointerTo_tds__SetZeroConfiguration (2386)
 #endif
 
 /* struct _tds__GetZeroConfigurationResponse * has binding name 'PointerTo_tds__GetZeroConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetZeroConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__GetZeroConfigurationResponse (2315)
+#define SOAP_TYPE_PointerTo_tds__GetZeroConfigurationResponse (2383)
 #endif
 
 /* struct _tds__GetZeroConfiguration * has binding name 'PointerTo_tds__GetZeroConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetZeroConfiguration
-#define SOAP_TYPE_PointerTo_tds__GetZeroConfiguration (2314)
+#define SOAP_TYPE_PointerTo_tds__GetZeroConfiguration (2382)
 #endif
 
 /* struct _tds__SetNetworkDefaultGatewayResponse * has binding name 'PointerTo_tds__SetNetworkDefaultGatewayResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetNetworkDefaultGatewayResponse
-#define SOAP_TYPE_PointerTo_tds__SetNetworkDefaultGatewayResponse (2311)
+#define SOAP_TYPE_PointerTo_tds__SetNetworkDefaultGatewayResponse (2379)
 #endif
 
 /* struct _tds__SetNetworkDefaultGateway * has binding name 'PointerTo_tds__SetNetworkDefaultGateway' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetNetworkDefaultGateway
-#define SOAP_TYPE_PointerTo_tds__SetNetworkDefaultGateway (2310)
+#define SOAP_TYPE_PointerTo_tds__SetNetworkDefaultGateway (2378)
 #endif
 
 /* struct _tds__GetNetworkDefaultGatewayResponse * has binding name 'PointerTo_tds__GetNetworkDefaultGatewayResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetNetworkDefaultGatewayResponse
-#define SOAP_TYPE_PointerTo_tds__GetNetworkDefaultGatewayResponse (2307)
+#define SOAP_TYPE_PointerTo_tds__GetNetworkDefaultGatewayResponse (2375)
 #endif
 
 /* struct _tds__GetNetworkDefaultGateway * has binding name 'PointerTo_tds__GetNetworkDefaultGateway' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetNetworkDefaultGateway
-#define SOAP_TYPE_PointerTo_tds__GetNetworkDefaultGateway (2306)
+#define SOAP_TYPE_PointerTo_tds__GetNetworkDefaultGateway (2374)
 #endif
 
 /* struct _tds__SetNetworkProtocolsResponse * has binding name 'PointerTo_tds__SetNetworkProtocolsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetNetworkProtocolsResponse
-#define SOAP_TYPE_PointerTo_tds__SetNetworkProtocolsResponse (2303)
+#define SOAP_TYPE_PointerTo_tds__SetNetworkProtocolsResponse (2371)
 #endif
 
 /* struct _tds__SetNetworkProtocols * has binding name 'PointerTo_tds__SetNetworkProtocols' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetNetworkProtocols
-#define SOAP_TYPE_PointerTo_tds__SetNetworkProtocols (2302)
+#define SOAP_TYPE_PointerTo_tds__SetNetworkProtocols (2370)
 #endif
 
 /* struct _tds__GetNetworkProtocolsResponse * has binding name 'PointerTo_tds__GetNetworkProtocolsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetNetworkProtocolsResponse
-#define SOAP_TYPE_PointerTo_tds__GetNetworkProtocolsResponse (2299)
+#define SOAP_TYPE_PointerTo_tds__GetNetworkProtocolsResponse (2367)
 #endif
 
 /* struct _tds__GetNetworkProtocols * has binding name 'PointerTo_tds__GetNetworkProtocols' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetNetworkProtocols
-#define SOAP_TYPE_PointerTo_tds__GetNetworkProtocols (2298)
+#define SOAP_TYPE_PointerTo_tds__GetNetworkProtocols (2366)
 #endif
 
 /* struct _tds__SetNetworkInterfacesResponse * has binding name 'PointerTo_tds__SetNetworkInterfacesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetNetworkInterfacesResponse
-#define SOAP_TYPE_PointerTo_tds__SetNetworkInterfacesResponse (2295)
+#define SOAP_TYPE_PointerTo_tds__SetNetworkInterfacesResponse (2363)
 #endif
 
 /* struct _tds__SetNetworkInterfaces * has binding name 'PointerTo_tds__SetNetworkInterfaces' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetNetworkInterfaces
-#define SOAP_TYPE_PointerTo_tds__SetNetworkInterfaces (2294)
+#define SOAP_TYPE_PointerTo_tds__SetNetworkInterfaces (2362)
 #endif
 
 /* struct _tds__GetNetworkInterfacesResponse * has binding name 'PointerTo_tds__GetNetworkInterfacesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetNetworkInterfacesResponse
-#define SOAP_TYPE_PointerTo_tds__GetNetworkInterfacesResponse (2291)
+#define SOAP_TYPE_PointerTo_tds__GetNetworkInterfacesResponse (2359)
 #endif
 
 /* struct _tds__GetNetworkInterfaces * has binding name 'PointerTo_tds__GetNetworkInterfaces' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetNetworkInterfaces
-#define SOAP_TYPE_PointerTo_tds__GetNetworkInterfaces (2290)
+#define SOAP_TYPE_PointerTo_tds__GetNetworkInterfaces (2358)
 #endif
 
 /* struct _tds__SetDynamicDNSResponse * has binding name 'PointerTo_tds__SetDynamicDNSResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDynamicDNSResponse
-#define SOAP_TYPE_PointerTo_tds__SetDynamicDNSResponse (2287)
+#define SOAP_TYPE_PointerTo_tds__SetDynamicDNSResponse (2355)
 #endif
 
 /* struct _tds__SetDynamicDNS * has binding name 'PointerTo_tds__SetDynamicDNS' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDynamicDNS
-#define SOAP_TYPE_PointerTo_tds__SetDynamicDNS (2286)
+#define SOAP_TYPE_PointerTo_tds__SetDynamicDNS (2354)
 #endif
 
 /* struct _tds__GetDynamicDNSResponse * has binding name 'PointerTo_tds__GetDynamicDNSResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDynamicDNSResponse
-#define SOAP_TYPE_PointerTo_tds__GetDynamicDNSResponse (2283)
+#define SOAP_TYPE_PointerTo_tds__GetDynamicDNSResponse (2351)
 #endif
 
 /* struct _tds__GetDynamicDNS * has binding name 'PointerTo_tds__GetDynamicDNS' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDynamicDNS
-#define SOAP_TYPE_PointerTo_tds__GetDynamicDNS (2282)
+#define SOAP_TYPE_PointerTo_tds__GetDynamicDNS (2350)
 #endif
 
 /* struct _tds__SetNTPResponse * has binding name 'PointerTo_tds__SetNTPResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetNTPResponse
-#define SOAP_TYPE_PointerTo_tds__SetNTPResponse (2279)
+#define SOAP_TYPE_PointerTo_tds__SetNTPResponse (2347)
 #endif
 
 /* struct _tds__SetNTP * has binding name 'PointerTo_tds__SetNTP' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetNTP
-#define SOAP_TYPE_PointerTo_tds__SetNTP (2278)
+#define SOAP_TYPE_PointerTo_tds__SetNTP (2346)
 #endif
 
 /* struct _tds__GetNTPResponse * has binding name 'PointerTo_tds__GetNTPResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetNTPResponse
-#define SOAP_TYPE_PointerTo_tds__GetNTPResponse (2275)
+#define SOAP_TYPE_PointerTo_tds__GetNTPResponse (2343)
 #endif
 
 /* struct _tds__GetNTP * has binding name 'PointerTo_tds__GetNTP' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetNTP
-#define SOAP_TYPE_PointerTo_tds__GetNTP (2274)
+#define SOAP_TYPE_PointerTo_tds__GetNTP (2342)
 #endif
 
 /* struct _tds__SetDNSResponse * has binding name 'PointerTo_tds__SetDNSResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDNSResponse
-#define SOAP_TYPE_PointerTo_tds__SetDNSResponse (2271)
+#define SOAP_TYPE_PointerTo_tds__SetDNSResponse (2339)
 #endif
 
 /* struct _tds__SetDNS * has binding name 'PointerTo_tds__SetDNS' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDNS
-#define SOAP_TYPE_PointerTo_tds__SetDNS (2270)
+#define SOAP_TYPE_PointerTo_tds__SetDNS (2338)
 #endif
 
 /* struct _tds__GetDNSResponse * has binding name 'PointerTo_tds__GetDNSResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDNSResponse
-#define SOAP_TYPE_PointerTo_tds__GetDNSResponse (2267)
+#define SOAP_TYPE_PointerTo_tds__GetDNSResponse (2335)
 #endif
 
 /* struct _tds__GetDNS * has binding name 'PointerTo_tds__GetDNS' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDNS
-#define SOAP_TYPE_PointerTo_tds__GetDNS (2266)
+#define SOAP_TYPE_PointerTo_tds__GetDNS (2334)
 #endif
 
 /* struct _tds__SetHostnameFromDHCPResponse * has binding name 'PointerTo_tds__SetHostnameFromDHCPResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetHostnameFromDHCPResponse
-#define SOAP_TYPE_PointerTo_tds__SetHostnameFromDHCPResponse (2263)
+#define SOAP_TYPE_PointerTo_tds__SetHostnameFromDHCPResponse (2331)
 #endif
 
 /* struct _tds__SetHostnameFromDHCP * has binding name 'PointerTo_tds__SetHostnameFromDHCP' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetHostnameFromDHCP
-#define SOAP_TYPE_PointerTo_tds__SetHostnameFromDHCP (2262)
+#define SOAP_TYPE_PointerTo_tds__SetHostnameFromDHCP (2330)
 #endif
 
 /* struct _tds__SetHostnameResponse * has binding name 'PointerTo_tds__SetHostnameResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetHostnameResponse
-#define SOAP_TYPE_PointerTo_tds__SetHostnameResponse (2259)
+#define SOAP_TYPE_PointerTo_tds__SetHostnameResponse (2327)
 #endif
 
 /* struct _tds__SetHostname * has binding name 'PointerTo_tds__SetHostname' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetHostname
-#define SOAP_TYPE_PointerTo_tds__SetHostname (2258)
+#define SOAP_TYPE_PointerTo_tds__SetHostname (2326)
 #endif
 
 /* struct _tds__GetHostnameResponse * has binding name 'PointerTo_tds__GetHostnameResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetHostnameResponse
-#define SOAP_TYPE_PointerTo_tds__GetHostnameResponse (2255)
+#define SOAP_TYPE_PointerTo_tds__GetHostnameResponse (2323)
 #endif
 
 /* struct _tds__GetHostname * has binding name 'PointerTo_tds__GetHostname' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetHostname
-#define SOAP_TYPE_PointerTo_tds__GetHostname (2254)
+#define SOAP_TYPE_PointerTo_tds__GetHostname (2322)
 #endif
 
 /* struct _tds__SetDPAddressesResponse * has binding name 'PointerTo_tds__SetDPAddressesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDPAddressesResponse
-#define SOAP_TYPE_PointerTo_tds__SetDPAddressesResponse (2251)
+#define SOAP_TYPE_PointerTo_tds__SetDPAddressesResponse (2319)
 #endif
 
 /* struct _tds__SetDPAddresses * has binding name 'PointerTo_tds__SetDPAddresses' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDPAddresses
-#define SOAP_TYPE_PointerTo_tds__SetDPAddresses (2250)
+#define SOAP_TYPE_PointerTo_tds__SetDPAddresses (2318)
 #endif
 
 /* struct _tds__GetCapabilitiesResponse * has binding name 'PointerTo_tds__GetCapabilitiesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCapabilitiesResponse
-#define SOAP_TYPE_PointerTo_tds__GetCapabilitiesResponse (2247)
+#define SOAP_TYPE_PointerTo_tds__GetCapabilitiesResponse (2315)
 #endif
 
 /* struct _tds__GetCapabilities * has binding name 'PointerTo_tds__GetCapabilities' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetCapabilities
-#define SOAP_TYPE_PointerTo_tds__GetCapabilities (2246)
+#define SOAP_TYPE_PointerTo_tds__GetCapabilities (2314)
 #endif
 
 /* struct _tds__SetAuthFailureWarningConfigurationResponse * has binding name 'PointerTo_tds__SetAuthFailureWarningConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetAuthFailureWarningConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__SetAuthFailureWarningConfigurationResponse (2243)
+#define SOAP_TYPE_PointerTo_tds__SetAuthFailureWarningConfigurationResponse (2311)
 #endif
 
 /* struct _tds__SetAuthFailureWarningConfiguration * has binding name 'PointerTo_tds__SetAuthFailureWarningConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetAuthFailureWarningConfiguration
-#define SOAP_TYPE_PointerTo_tds__SetAuthFailureWarningConfiguration (2242)
+#define SOAP_TYPE_PointerTo_tds__SetAuthFailureWarningConfiguration (2310)
 #endif
 
 /* struct _tds__GetAuthFailureWarningConfigurationResponse * has binding name 'PointerTo_tds__GetAuthFailureWarningConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningConfigurationResponse (2239)
+#define SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningConfigurationResponse (2307)
 #endif
 
 /* struct _tds__GetAuthFailureWarningConfiguration * has binding name 'PointerTo_tds__GetAuthFailureWarningConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningConfiguration
-#define SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningConfiguration (2238)
+#define SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningConfiguration (2306)
 #endif
 
 /* struct _tds__GetAuthFailureWarningOptionsResponse * has binding name 'PointerTo_tds__GetAuthFailureWarningOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningOptionsResponse
-#define SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningOptionsResponse (2235)
+#define SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningOptionsResponse (2303)
 #endif
 
 /* struct _tds__GetAuthFailureWarningOptions * has binding name 'PointerTo_tds__GetAuthFailureWarningOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningOptions
-#define SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningOptions (2234)
+#define SOAP_TYPE_PointerTo_tds__GetAuthFailureWarningOptions (2302)
 #endif
 
 /* struct _tds__SetPasswordHistoryConfigurationResponse * has binding name 'PointerTo_tds__SetPasswordHistoryConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetPasswordHistoryConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__SetPasswordHistoryConfigurationResponse (2231)
+#define SOAP_TYPE_PointerTo_tds__SetPasswordHistoryConfigurationResponse (2299)
 #endif
 
 /* struct _tds__SetPasswordHistoryConfiguration * has binding name 'PointerTo_tds__SetPasswordHistoryConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetPasswordHistoryConfiguration
-#define SOAP_TYPE_PointerTo_tds__SetPasswordHistoryConfiguration (2230)
+#define SOAP_TYPE_PointerTo_tds__SetPasswordHistoryConfiguration (2298)
 #endif
 
 /* struct _tds__GetPasswordHistoryConfigurationResponse * has binding name 'PointerTo_tds__GetPasswordHistoryConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetPasswordHistoryConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__GetPasswordHistoryConfigurationResponse (2227)
+#define SOAP_TYPE_PointerTo_tds__GetPasswordHistoryConfigurationResponse (2295)
 #endif
 
 /* struct _tds__GetPasswordHistoryConfiguration * has binding name 'PointerTo_tds__GetPasswordHistoryConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetPasswordHistoryConfiguration
-#define SOAP_TYPE_PointerTo_tds__GetPasswordHistoryConfiguration (2226)
+#define SOAP_TYPE_PointerTo_tds__GetPasswordHistoryConfiguration (2294)
 #endif
 
 /* struct _tds__SetPasswordComplexityConfigurationResponse * has binding name 'PointerTo_tds__SetPasswordComplexityConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetPasswordComplexityConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__SetPasswordComplexityConfigurationResponse (2223)
+#define SOAP_TYPE_PointerTo_tds__SetPasswordComplexityConfigurationResponse (2291)
 #endif
 
 /* struct _tds__SetPasswordComplexityConfiguration * has binding name 'PointerTo_tds__SetPasswordComplexityConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetPasswordComplexityConfiguration
-#define SOAP_TYPE_PointerTo_tds__SetPasswordComplexityConfiguration (2222)
+#define SOAP_TYPE_PointerTo_tds__SetPasswordComplexityConfiguration (2290)
 #endif
 
 /* struct _tds__GetPasswordComplexityConfigurationResponse * has binding name 'PointerTo_tds__GetPasswordComplexityConfigurationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetPasswordComplexityConfigurationResponse
-#define SOAP_TYPE_PointerTo_tds__GetPasswordComplexityConfigurationResponse (2219)
+#define SOAP_TYPE_PointerTo_tds__GetPasswordComplexityConfigurationResponse (2287)
 #endif
 
 /* struct _tds__GetPasswordComplexityConfiguration * has binding name 'PointerTo_tds__GetPasswordComplexityConfiguration' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetPasswordComplexityConfiguration
-#define SOAP_TYPE_PointerTo_tds__GetPasswordComplexityConfiguration (2218)
+#define SOAP_TYPE_PointerTo_tds__GetPasswordComplexityConfiguration (2286)
 #endif
 
 /* struct _tds__GetPasswordComplexityOptionsResponse * has binding name 'PointerTo_tds__GetPasswordComplexityOptionsResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetPasswordComplexityOptionsResponse
-#define SOAP_TYPE_PointerTo_tds__GetPasswordComplexityOptionsResponse (2215)
+#define SOAP_TYPE_PointerTo_tds__GetPasswordComplexityOptionsResponse (2283)
 #endif
 
 /* struct _tds__GetPasswordComplexityOptions * has binding name 'PointerTo_tds__GetPasswordComplexityOptions' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetPasswordComplexityOptions
-#define SOAP_TYPE_PointerTo_tds__GetPasswordComplexityOptions (2214)
+#define SOAP_TYPE_PointerTo_tds__GetPasswordComplexityOptions (2282)
 #endif
 
 /* struct _tds__GetWsdlUrlResponse * has binding name 'PointerTo_tds__GetWsdlUrlResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetWsdlUrlResponse
-#define SOAP_TYPE_PointerTo_tds__GetWsdlUrlResponse (2211)
+#define SOAP_TYPE_PointerTo_tds__GetWsdlUrlResponse (2279)
 #endif
 
 /* struct _tds__GetWsdlUrl * has binding name 'PointerTo_tds__GetWsdlUrl' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetWsdlUrl
-#define SOAP_TYPE_PointerTo_tds__GetWsdlUrl (2210)
+#define SOAP_TYPE_PointerTo_tds__GetWsdlUrl (2278)
 #endif
 
 /* struct _tds__SetUserResponse * has binding name 'PointerTo_tds__SetUserResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetUserResponse
-#define SOAP_TYPE_PointerTo_tds__SetUserResponse (2207)
+#define SOAP_TYPE_PointerTo_tds__SetUserResponse (2275)
 #endif
 
 /* struct _tds__SetUser * has binding name 'PointerTo_tds__SetUser' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetUser
-#define SOAP_TYPE_PointerTo_tds__SetUser (2206)
+#define SOAP_TYPE_PointerTo_tds__SetUser (2274)
 #endif
 
 /* struct _tds__DeleteUsersResponse * has binding name 'PointerTo_tds__DeleteUsersResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteUsersResponse
-#define SOAP_TYPE_PointerTo_tds__DeleteUsersResponse (2203)
+#define SOAP_TYPE_PointerTo_tds__DeleteUsersResponse (2271)
 #endif
 
 /* struct _tds__DeleteUsers * has binding name 'PointerTo_tds__DeleteUsers' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__DeleteUsers
-#define SOAP_TYPE_PointerTo_tds__DeleteUsers (2202)
+#define SOAP_TYPE_PointerTo_tds__DeleteUsers (2270)
 #endif
 
 /* struct _tds__CreateUsersResponse * has binding name 'PointerTo_tds__CreateUsersResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__CreateUsersResponse
-#define SOAP_TYPE_PointerTo_tds__CreateUsersResponse (2199)
+#define SOAP_TYPE_PointerTo_tds__CreateUsersResponse (2267)
 #endif
 
 /* struct _tds__CreateUsers * has binding name 'PointerTo_tds__CreateUsers' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__CreateUsers
-#define SOAP_TYPE_PointerTo_tds__CreateUsers (2198)
+#define SOAP_TYPE_PointerTo_tds__CreateUsers (2266)
 #endif
 
 /* struct _tds__GetUsersResponse * has binding name 'PointerTo_tds__GetUsersResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetUsersResponse
-#define SOAP_TYPE_PointerTo_tds__GetUsersResponse (2195)
+#define SOAP_TYPE_PointerTo_tds__GetUsersResponse (2263)
 #endif
 
 /* struct _tds__GetUsers * has binding name 'PointerTo_tds__GetUsers' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetUsers
-#define SOAP_TYPE_PointerTo_tds__GetUsers (2194)
+#define SOAP_TYPE_PointerTo_tds__GetUsers (2262)
 #endif
 
 /* struct _tds__SetRemoteUserResponse * has binding name 'PointerTo_tds__SetRemoteUserResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetRemoteUserResponse
-#define SOAP_TYPE_PointerTo_tds__SetRemoteUserResponse (2191)
+#define SOAP_TYPE_PointerTo_tds__SetRemoteUserResponse (2259)
 #endif
 
 /* struct _tds__SetRemoteUser * has binding name 'PointerTo_tds__SetRemoteUser' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetRemoteUser
-#define SOAP_TYPE_PointerTo_tds__SetRemoteUser (2190)
+#define SOAP_TYPE_PointerTo_tds__SetRemoteUser (2258)
 #endif
 
 /* struct _tds__GetRemoteUserResponse * has binding name 'PointerTo_tds__GetRemoteUserResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetRemoteUserResponse
-#define SOAP_TYPE_PointerTo_tds__GetRemoteUserResponse (2187)
+#define SOAP_TYPE_PointerTo_tds__GetRemoteUserResponse (2255)
 #endif
 
 /* struct _tds__GetRemoteUser * has binding name 'PointerTo_tds__GetRemoteUser' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetRemoteUser
-#define SOAP_TYPE_PointerTo_tds__GetRemoteUser (2186)
+#define SOAP_TYPE_PointerTo_tds__GetRemoteUser (2254)
 #endif
 
 /* struct _tds__GetEndpointReferenceResponse * has binding name 'PointerTo_tds__GetEndpointReferenceResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetEndpointReferenceResponse
-#define SOAP_TYPE_PointerTo_tds__GetEndpointReferenceResponse (2183)
+#define SOAP_TYPE_PointerTo_tds__GetEndpointReferenceResponse (2251)
 #endif
 
 /* struct _tds__GetEndpointReference * has binding name 'PointerTo_tds__GetEndpointReference' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetEndpointReference
-#define SOAP_TYPE_PointerTo_tds__GetEndpointReference (2182)
+#define SOAP_TYPE_PointerTo_tds__GetEndpointReference (2250)
 #endif
 
 /* struct _tds__GetDPAddressesResponse * has binding name 'PointerTo_tds__GetDPAddressesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDPAddressesResponse
-#define SOAP_TYPE_PointerTo_tds__GetDPAddressesResponse (2179)
+#define SOAP_TYPE_PointerTo_tds__GetDPAddressesResponse (2247)
 #endif
 
 /* struct _tds__GetDPAddresses * has binding name 'PointerTo_tds__GetDPAddresses' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDPAddresses
-#define SOAP_TYPE_PointerTo_tds__GetDPAddresses (2178)
+#define SOAP_TYPE_PointerTo_tds__GetDPAddresses (2246)
 #endif
 
 /* struct _tds__SetRemoteDiscoveryModeResponse * has binding name 'PointerTo_tds__SetRemoteDiscoveryModeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetRemoteDiscoveryModeResponse
-#define SOAP_TYPE_PointerTo_tds__SetRemoteDiscoveryModeResponse (2175)
+#define SOAP_TYPE_PointerTo_tds__SetRemoteDiscoveryModeResponse (2243)
 #endif
 
 /* struct _tds__SetRemoteDiscoveryMode * has binding name 'PointerTo_tds__SetRemoteDiscoveryMode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetRemoteDiscoveryMode
-#define SOAP_TYPE_PointerTo_tds__SetRemoteDiscoveryMode (2174)
+#define SOAP_TYPE_PointerTo_tds__SetRemoteDiscoveryMode (2242)
 #endif
 
 /* struct _tds__GetRemoteDiscoveryModeResponse * has binding name 'PointerTo_tds__GetRemoteDiscoveryModeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetRemoteDiscoveryModeResponse
-#define SOAP_TYPE_PointerTo_tds__GetRemoteDiscoveryModeResponse (2171)
+#define SOAP_TYPE_PointerTo_tds__GetRemoteDiscoveryModeResponse (2239)
 #endif
 
 /* struct _tds__GetRemoteDiscoveryMode * has binding name 'PointerTo_tds__GetRemoteDiscoveryMode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetRemoteDiscoveryMode
-#define SOAP_TYPE_PointerTo_tds__GetRemoteDiscoveryMode (2170)
+#define SOAP_TYPE_PointerTo_tds__GetRemoteDiscoveryMode (2238)
 #endif
 
 /* struct _tds__SetDiscoveryModeResponse * has binding name 'PointerTo_tds__SetDiscoveryModeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDiscoveryModeResponse
-#define SOAP_TYPE_PointerTo_tds__SetDiscoveryModeResponse (2167)
+#define SOAP_TYPE_PointerTo_tds__SetDiscoveryModeResponse (2235)
 #endif
 
 /* struct _tds__SetDiscoveryMode * has binding name 'PointerTo_tds__SetDiscoveryMode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetDiscoveryMode
-#define SOAP_TYPE_PointerTo_tds__SetDiscoveryMode (2166)
+#define SOAP_TYPE_PointerTo_tds__SetDiscoveryMode (2234)
 #endif
 
 /* struct _tds__GetDiscoveryModeResponse * has binding name 'PointerTo_tds__GetDiscoveryModeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDiscoveryModeResponse
-#define SOAP_TYPE_PointerTo_tds__GetDiscoveryModeResponse (2163)
+#define SOAP_TYPE_PointerTo_tds__GetDiscoveryModeResponse (2231)
 #endif
 
 /* struct _tds__GetDiscoveryMode * has binding name 'PointerTo_tds__GetDiscoveryMode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDiscoveryMode
-#define SOAP_TYPE_PointerTo_tds__GetDiscoveryMode (2162)
+#define SOAP_TYPE_PointerTo_tds__GetDiscoveryMode (2230)
 #endif
 
 /* struct _tds__RemoveScopesResponse * has binding name 'PointerTo_tds__RemoveScopesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__RemoveScopesResponse
-#define SOAP_TYPE_PointerTo_tds__RemoveScopesResponse (2159)
+#define SOAP_TYPE_PointerTo_tds__RemoveScopesResponse (2227)
 #endif
 
 /* struct _tds__RemoveScopes * has binding name 'PointerTo_tds__RemoveScopes' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__RemoveScopes
-#define SOAP_TYPE_PointerTo_tds__RemoveScopes (2158)
+#define SOAP_TYPE_PointerTo_tds__RemoveScopes (2226)
 #endif
 
 /* struct _tds__AddScopesResponse * has binding name 'PointerTo_tds__AddScopesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__AddScopesResponse
-#define SOAP_TYPE_PointerTo_tds__AddScopesResponse (2155)
+#define SOAP_TYPE_PointerTo_tds__AddScopesResponse (2223)
 #endif
 
 /* struct _tds__AddScopes * has binding name 'PointerTo_tds__AddScopes' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__AddScopes
-#define SOAP_TYPE_PointerTo_tds__AddScopes (2154)
+#define SOAP_TYPE_PointerTo_tds__AddScopes (2222)
 #endif
 
 /* struct _tds__SetScopesResponse * has binding name 'PointerTo_tds__SetScopesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetScopesResponse
-#define SOAP_TYPE_PointerTo_tds__SetScopesResponse (2151)
+#define SOAP_TYPE_PointerTo_tds__SetScopesResponse (2219)
 #endif
 
 /* struct _tds__SetScopes * has binding name 'PointerTo_tds__SetScopes' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetScopes
-#define SOAP_TYPE_PointerTo_tds__SetScopes (2150)
+#define SOAP_TYPE_PointerTo_tds__SetScopes (2218)
 #endif
 
 /* struct _tds__GetScopesResponse * has binding name 'PointerTo_tds__GetScopesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetScopesResponse
-#define SOAP_TYPE_PointerTo_tds__GetScopesResponse (2147)
+#define SOAP_TYPE_PointerTo_tds__GetScopesResponse (2215)
 #endif
 
 /* struct _tds__GetScopes * has binding name 'PointerTo_tds__GetScopes' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetScopes
-#define SOAP_TYPE_PointerTo_tds__GetScopes (2146)
+#define SOAP_TYPE_PointerTo_tds__GetScopes (2214)
 #endif
 
 /* struct _tds__GetSystemSupportInformationResponse * has binding name 'PointerTo_tds__GetSystemSupportInformationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemSupportInformationResponse
-#define SOAP_TYPE_PointerTo_tds__GetSystemSupportInformationResponse (2143)
+#define SOAP_TYPE_PointerTo_tds__GetSystemSupportInformationResponse (2211)
 #endif
 
 /* struct _tds__GetSystemSupportInformation * has binding name 'PointerTo_tds__GetSystemSupportInformation' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemSupportInformation
-#define SOAP_TYPE_PointerTo_tds__GetSystemSupportInformation (2142)
+#define SOAP_TYPE_PointerTo_tds__GetSystemSupportInformation (2210)
 #endif
 
 /* struct _tds__GetSystemLogResponse * has binding name 'PointerTo_tds__GetSystemLogResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemLogResponse
-#define SOAP_TYPE_PointerTo_tds__GetSystemLogResponse (2139)
+#define SOAP_TYPE_PointerTo_tds__GetSystemLogResponse (2207)
 #endif
 
 /* struct _tds__GetSystemLog * has binding name 'PointerTo_tds__GetSystemLog' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemLog
-#define SOAP_TYPE_PointerTo_tds__GetSystemLog (2138)
+#define SOAP_TYPE_PointerTo_tds__GetSystemLog (2206)
 #endif
 
 /* struct _tds__GetSystemBackupResponse * has binding name 'PointerTo_tds__GetSystemBackupResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemBackupResponse
-#define SOAP_TYPE_PointerTo_tds__GetSystemBackupResponse (2135)
+#define SOAP_TYPE_PointerTo_tds__GetSystemBackupResponse (2203)
 #endif
 
 /* struct _tds__GetSystemBackup * has binding name 'PointerTo_tds__GetSystemBackup' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemBackup
-#define SOAP_TYPE_PointerTo_tds__GetSystemBackup (2134)
+#define SOAP_TYPE_PointerTo_tds__GetSystemBackup (2202)
 #endif
 
 /* struct _tds__RestoreSystemResponse * has binding name 'PointerTo_tds__RestoreSystemResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__RestoreSystemResponse
-#define SOAP_TYPE_PointerTo_tds__RestoreSystemResponse (2131)
+#define SOAP_TYPE_PointerTo_tds__RestoreSystemResponse (2199)
 #endif
 
 /* struct _tds__RestoreSystem * has binding name 'PointerTo_tds__RestoreSystem' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__RestoreSystem
-#define SOAP_TYPE_PointerTo_tds__RestoreSystem (2130)
+#define SOAP_TYPE_PointerTo_tds__RestoreSystem (2198)
 #endif
 
 /* struct _tds__SystemRebootResponse * has binding name 'PointerTo_tds__SystemRebootResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SystemRebootResponse
-#define SOAP_TYPE_PointerTo_tds__SystemRebootResponse (2127)
+#define SOAP_TYPE_PointerTo_tds__SystemRebootResponse (2195)
 #endif
 
 /* struct _tds__SystemReboot * has binding name 'PointerTo_tds__SystemReboot' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SystemReboot
-#define SOAP_TYPE_PointerTo_tds__SystemReboot (2126)
+#define SOAP_TYPE_PointerTo_tds__SystemReboot (2194)
 #endif
 
 /* struct _tds__UpgradeSystemFirmwareResponse * has binding name 'PointerTo_tds__UpgradeSystemFirmwareResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__UpgradeSystemFirmwareResponse
-#define SOAP_TYPE_PointerTo_tds__UpgradeSystemFirmwareResponse (2123)
+#define SOAP_TYPE_PointerTo_tds__UpgradeSystemFirmwareResponse (2191)
 #endif
 
 /* struct _tds__UpgradeSystemFirmware * has binding name 'PointerTo_tds__UpgradeSystemFirmware' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__UpgradeSystemFirmware
-#define SOAP_TYPE_PointerTo_tds__UpgradeSystemFirmware (2122)
+#define SOAP_TYPE_PointerTo_tds__UpgradeSystemFirmware (2190)
 #endif
 
 /* struct _tds__SetSystemFactoryDefaultResponse * has binding name 'PointerTo_tds__SetSystemFactoryDefaultResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetSystemFactoryDefaultResponse
-#define SOAP_TYPE_PointerTo_tds__SetSystemFactoryDefaultResponse (2119)
+#define SOAP_TYPE_PointerTo_tds__SetSystemFactoryDefaultResponse (2187)
 #endif
 
 /* struct _tds__SetSystemFactoryDefault * has binding name 'PointerTo_tds__SetSystemFactoryDefault' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetSystemFactoryDefault
-#define SOAP_TYPE_PointerTo_tds__SetSystemFactoryDefault (2118)
+#define SOAP_TYPE_PointerTo_tds__SetSystemFactoryDefault (2186)
 #endif
 
 /* struct _tds__GetSystemDateAndTimeResponse * has binding name 'PointerTo_tds__GetSystemDateAndTimeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemDateAndTimeResponse
-#define SOAP_TYPE_PointerTo_tds__GetSystemDateAndTimeResponse (2115)
+#define SOAP_TYPE_PointerTo_tds__GetSystemDateAndTimeResponse (2183)
 #endif
 
 /* struct _tds__GetSystemDateAndTime * has binding name 'PointerTo_tds__GetSystemDateAndTime' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetSystemDateAndTime
-#define SOAP_TYPE_PointerTo_tds__GetSystemDateAndTime (2114)
+#define SOAP_TYPE_PointerTo_tds__GetSystemDateAndTime (2182)
 #endif
 
 /* struct _tds__SetSystemDateAndTimeResponse * has binding name 'PointerTo_tds__SetSystemDateAndTimeResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetSystemDateAndTimeResponse
-#define SOAP_TYPE_PointerTo_tds__SetSystemDateAndTimeResponse (2111)
+#define SOAP_TYPE_PointerTo_tds__SetSystemDateAndTimeResponse (2179)
 #endif
 
 /* struct _tds__SetSystemDateAndTime * has binding name 'PointerTo_tds__SetSystemDateAndTime' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__SetSystemDateAndTime
-#define SOAP_TYPE_PointerTo_tds__SetSystemDateAndTime (2110)
+#define SOAP_TYPE_PointerTo_tds__SetSystemDateAndTime (2178)
 #endif
 
 /* struct _tds__GetDeviceInformationResponse * has binding name 'PointerTo_tds__GetDeviceInformationResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDeviceInformationResponse
-#define SOAP_TYPE_PointerTo_tds__GetDeviceInformationResponse (2107)
+#define SOAP_TYPE_PointerTo_tds__GetDeviceInformationResponse (2175)
 #endif
 
 /* struct _tds__GetDeviceInformation * has binding name 'PointerTo_tds__GetDeviceInformation' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetDeviceInformation
-#define SOAP_TYPE_PointerTo_tds__GetDeviceInformation (2106)
+#define SOAP_TYPE_PointerTo_tds__GetDeviceInformation (2174)
 #endif
 
 /* struct _tds__GetServiceCapabilitiesResponse * has binding name 'PointerTo_tds__GetServiceCapabilitiesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetServiceCapabilitiesResponse
-#define SOAP_TYPE_PointerTo_tds__GetServiceCapabilitiesResponse (2103)
+#define SOAP_TYPE_PointerTo_tds__GetServiceCapabilitiesResponse (2171)
 #endif
 
 /* struct _tds__GetServiceCapabilities * has binding name 'PointerTo_tds__GetServiceCapabilities' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetServiceCapabilities
-#define SOAP_TYPE_PointerTo_tds__GetServiceCapabilities (2102)
+#define SOAP_TYPE_PointerTo_tds__GetServiceCapabilities (2170)
 #endif
 
 /* struct _tds__GetServicesResponse * has binding name 'PointerTo_tds__GetServicesResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetServicesResponse
-#define SOAP_TYPE_PointerTo_tds__GetServicesResponse (2099)
+#define SOAP_TYPE_PointerTo_tds__GetServicesResponse (2167)
 #endif
 
 /* struct _tds__GetServices * has binding name 'PointerTo_tds__GetServices' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tds__GetServices
-#define SOAP_TYPE_PointerTo_tds__GetServices (2098)
+#define SOAP_TYPE_PointerTo_tds__GetServices (2166)
 #endif
 
 /* struct wsnt__UnsupportedPolicyRequestFaultType * has binding name 'PointerTowsnt__UnsupportedPolicyRequestFaultType' for type 'wsnt:UnsupportedPolicyRequestFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__UnsupportedPolicyRequestFaultType
-#define SOAP_TYPE_PointerTowsnt__UnsupportedPolicyRequestFaultType (2090)
+#define SOAP_TYPE_PointerTowsnt__UnsupportedPolicyRequestFaultType (2158)
 #endif
 
 /* struct wsnt__UnrecognizedPolicyRequestFaultType * has binding name 'PointerTowsnt__UnrecognizedPolicyRequestFaultType' for type 'wsnt:UnrecognizedPolicyRequestFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__UnrecognizedPolicyRequestFaultType
-#define SOAP_TYPE_PointerTowsnt__UnrecognizedPolicyRequestFaultType (2089)
+#define SOAP_TYPE_PointerTowsnt__UnrecognizedPolicyRequestFaultType (2157)
 #endif
 
 /* struct wsnt__UnacceptableTerminationTimeFaultType * has binding name 'PointerTowsnt__UnacceptableTerminationTimeFaultType' for type 'wsnt:UnacceptableTerminationTimeFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__UnacceptableTerminationTimeFaultType
-#define SOAP_TYPE_PointerTowsnt__UnacceptableTerminationTimeFaultType (2088)
+#define SOAP_TYPE_PointerTowsnt__UnacceptableTerminationTimeFaultType (2156)
 #endif
 
 /* struct wsnt__UnacceptableInitialTerminationTimeFaultType * has binding name 'PointerTowsnt__UnacceptableInitialTerminationTimeFaultType' for type 'wsnt:UnacceptableInitialTerminationTimeFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__UnacceptableInitialTerminationTimeFaultType
-#define SOAP_TYPE_PointerTowsnt__UnacceptableInitialTerminationTimeFaultType (2087)
+#define SOAP_TYPE_PointerTowsnt__UnacceptableInitialTerminationTimeFaultType (2155)
 #endif
 
 /* struct wsnt__UnableToGetMessagesFaultType * has binding name 'PointerTowsnt__UnableToGetMessagesFaultType' for type 'wsnt:UnableToGetMessagesFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__UnableToGetMessagesFaultType
-#define SOAP_TYPE_PointerTowsnt__UnableToGetMessagesFaultType (2086)
+#define SOAP_TYPE_PointerTowsnt__UnableToGetMessagesFaultType (2154)
 #endif
 
 /* struct wsnt__UnableToDestroySubscriptionFaultType * has binding name 'PointerTowsnt__UnableToDestroySubscriptionFaultType' for type 'wsnt:UnableToDestroySubscriptionFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__UnableToDestroySubscriptionFaultType
-#define SOAP_TYPE_PointerTowsnt__UnableToDestroySubscriptionFaultType (2085)
+#define SOAP_TYPE_PointerTowsnt__UnableToDestroySubscriptionFaultType (2153)
 #endif
 
 /* struct wsnt__UnableToDestroyPullPointFaultType * has binding name 'PointerTowsnt__UnableToDestroyPullPointFaultType' for type 'wsnt:UnableToDestroyPullPointFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__UnableToDestroyPullPointFaultType
-#define SOAP_TYPE_PointerTowsnt__UnableToDestroyPullPointFaultType (2084)
+#define SOAP_TYPE_PointerTowsnt__UnableToDestroyPullPointFaultType (2152)
 #endif
 
 /* struct wsnt__UnableToCreatePullPointFaultType * has binding name 'PointerTowsnt__UnableToCreatePullPointFaultType' for type 'wsnt:UnableToCreatePullPointFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__UnableToCreatePullPointFaultType
-#define SOAP_TYPE_PointerTowsnt__UnableToCreatePullPointFaultType (2083)
+#define SOAP_TYPE_PointerTowsnt__UnableToCreatePullPointFaultType (2151)
 #endif
 
 /* struct wsnt__TopicNotSupportedFaultType * has binding name 'PointerTowsnt__TopicNotSupportedFaultType' for type 'wsnt:TopicNotSupportedFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__TopicNotSupportedFaultType
-#define SOAP_TYPE_PointerTowsnt__TopicNotSupportedFaultType (2082)
+#define SOAP_TYPE_PointerTowsnt__TopicNotSupportedFaultType (2150)
 #endif
 
 /* struct wsnt__TopicExpressionDialectUnknownFaultType * has binding name 'PointerTowsnt__TopicExpressionDialectUnknownFaultType' for type 'wsnt:TopicExpressionDialectUnknownFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__TopicExpressionDialectUnknownFaultType
-#define SOAP_TYPE_PointerTowsnt__TopicExpressionDialectUnknownFaultType (2081)
+#define SOAP_TYPE_PointerTowsnt__TopicExpressionDialectUnknownFaultType (2149)
 #endif
 
 /* struct wsnt__SubscribeCreationFailedFaultType * has binding name 'PointerTowsnt__SubscribeCreationFailedFaultType' for type 'wsnt:SubscribeCreationFailedFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__SubscribeCreationFailedFaultType
-#define SOAP_TYPE_PointerTowsnt__SubscribeCreationFailedFaultType (2080)
+#define SOAP_TYPE_PointerTowsnt__SubscribeCreationFailedFaultType (2148)
 #endif
 
 /* struct wsnt__ResumeFailedFaultType * has binding name 'PointerTowsnt__ResumeFailedFaultType' for type 'wsnt:ResumeFailedFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__ResumeFailedFaultType
-#define SOAP_TYPE_PointerTowsnt__ResumeFailedFaultType (2079)
+#define SOAP_TYPE_PointerTowsnt__ResumeFailedFaultType (2147)
 #endif
 
 /* struct wsrfr__ResourceUnknownFaultType * has binding name 'PointerTowsrfr__ResourceUnknownFaultType' for type 'wsrfr:ResourceUnknownFaultType' */
 #ifndef SOAP_TYPE_PointerTowsrfr__ResourceUnknownFaultType
-#define SOAP_TYPE_PointerTowsrfr__ResourceUnknownFaultType (2078)
+#define SOAP_TYPE_PointerTowsrfr__ResourceUnknownFaultType (2146)
 #endif
 
 /* struct _tev__PullMessagesFaultResponse * has binding name 'PointerTo_tev__PullMessagesFaultResponse' for type '' */
 #ifndef SOAP_TYPE_PointerTo_tev__PullMessagesFaultResponse
-#define SOAP_TYPE_PointerTo_tev__PullMessagesFaultResponse (2077)
+#define SOAP_TYPE_PointerTo_tev__PullMessagesFaultResponse (2145)
 #endif
 
 /* struct wsnt__PauseFailedFaultType * has binding name 'PointerTowsnt__PauseFailedFaultType' for type 'wsnt:PauseFailedFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__PauseFailedFaultType
-#define SOAP_TYPE_PointerTowsnt__PauseFailedFaultType (2076)
+#define SOAP_TYPE_PointerTowsnt__PauseFailedFaultType (2144)
 #endif
 
 /* struct wsnt__NotifyMessageNotSupportedFaultType * has binding name 'PointerTowsnt__NotifyMessageNotSupportedFaultType' for type 'wsnt:NotifyMessageNotSupportedFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__NotifyMessageNotSupportedFaultType
-#define SOAP_TYPE_PointerTowsnt__NotifyMessageNotSupportedFaultType (2075)
+#define SOAP_TYPE_PointerTowsnt__NotifyMessageNotSupportedFaultType (2143)
 #endif
 
 /* struct wsnt__NoCurrentMessageOnTopicFaultType * has binding name 'PointerTowsnt__NoCurrentMessageOnTopicFaultType' for type 'wsnt:NoCurrentMessageOnTopicFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__NoCurrentMessageOnTopicFaultType
-#define SOAP_TYPE_PointerTowsnt__NoCurrentMessageOnTopicFaultType (2074)
+#define SOAP_TYPE_PointerTowsnt__NoCurrentMessageOnTopicFaultType (2142)
 #endif
 
 /* struct wsnt__MultipleTopicsSpecifiedFaultType * has binding name 'PointerTowsnt__MultipleTopicsSpecifiedFaultType' for type 'wsnt:MultipleTopicsSpecifiedFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__MultipleTopicsSpecifiedFaultType
-#define SOAP_TYPE_PointerTowsnt__MultipleTopicsSpecifiedFaultType (2073)
+#define SOAP_TYPE_PointerTowsnt__MultipleTopicsSpecifiedFaultType (2141)
 #endif
 
 /* struct wsnt__InvalidTopicExpressionFaultType * has binding name 'PointerTowsnt__InvalidTopicExpressionFaultType' for type 'wsnt:InvalidTopicExpressionFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__InvalidTopicExpressionFaultType
-#define SOAP_TYPE_PointerTowsnt__InvalidTopicExpressionFaultType (2072)
+#define SOAP_TYPE_PointerTowsnt__InvalidTopicExpressionFaultType (2140)
 #endif
 
 /* struct wsnt__InvalidProducerPropertiesExpressionFaultType * has binding name 'PointerTowsnt__InvalidProducerPropertiesExpressionFaultType' for type 'wsnt:InvalidProducerPropertiesExpressionFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__InvalidProducerPropertiesExpressionFaultType
-#define SOAP_TYPE_PointerTowsnt__InvalidProducerPropertiesExpressionFaultType (2071)
+#define SOAP_TYPE_PointerTowsnt__InvalidProducerPropertiesExpressionFaultType (2139)
 #endif
 
 /* struct wsnt__InvalidMessageContentExpressionFaultType * has binding name 'PointerTowsnt__InvalidMessageContentExpressionFaultType' for type 'wsnt:InvalidMessageContentExpressionFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__InvalidMessageContentExpressionFaultType
-#define SOAP_TYPE_PointerTowsnt__InvalidMessageContentExpressionFaultType (2070)
+#define SOAP_TYPE_PointerTowsnt__InvalidMessageContentExpressionFaultType (2138)
 #endif
 
 /* struct wsnt__InvalidFilterFaultType * has binding name 'PointerTowsnt__InvalidFilterFaultType' for type 'wsnt:InvalidFilterFaultType' */
 #ifndef SOAP_TYPE_PointerTowsnt__InvalidFilterFaultType
-#define SOAP_TYPE_PointerTowsnt__InvalidFilterFaultType (2069)
+#define SOAP_TYPE_PointerTowsnt__InvalidFilterFaultType (2137)
 #endif
 
 /* struct _wsrfr__ResourceUnavailableFaultType_FaultCause * has binding name 'PointerTo_wsrfr__ResourceUnavailableFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_FaultCause (2068)
+#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_FaultCause (2136)
 #endif
 
 /* struct _wsrfr__ResourceUnavailableFaultType_Description * has binding name 'PointerTo_wsrfr__ResourceUnavailableFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_Description
-#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_Description (2066)
+#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_Description (2134)
 #endif
 
 /* struct _wsrfr__ResourceUnavailableFaultType_ErrorCode * has binding name 'PointerTo_wsrfr__ResourceUnavailableFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_ErrorCode (2064)
+#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnavailableFaultType_ErrorCode (2132)
 #endif
 
 /* struct _wsrfr__ResourceUnknownFaultType_FaultCause * has binding name 'PointerTo_wsrfr__ResourceUnknownFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_FaultCause (2061)
+#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_FaultCause (2129)
 #endif
 
 /* struct _wsrfr__ResourceUnknownFaultType_Description * has binding name 'PointerTo_wsrfr__ResourceUnknownFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_Description
-#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_Description (2059)
+#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_Description (2127)
 #endif
 
 /* struct _wsrfr__ResourceUnknownFaultType_ErrorCode * has binding name 'PointerTo_wsrfr__ResourceUnknownFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_ErrorCode (2057)
+#define SOAP_TYPE_PointerTo_wsrfr__ResourceUnknownFaultType_ErrorCode (2125)
 #endif
 
 /* struct _wstop__TopicNamespaceType_Topic * has binding name 'PointerTo_wstop__TopicNamespaceType_Topic' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wstop__TopicNamespaceType_Topic
-#define SOAP_TYPE_PointerTo_wstop__TopicNamespaceType_Topic (2054)
+#define SOAP_TYPE_PointerTo_wstop__TopicNamespaceType_Topic (2122)
 #endif
 
 /* struct wstop__TopicType * has binding name 'PointerTowstop__TopicType' for type 'wstop:TopicType' */
 #ifndef SOAP_TYPE_PointerTowstop__TopicType
-#define SOAP_TYPE_PointerTowstop__TopicType (2053)
+#define SOAP_TYPE_PointerTowstop__TopicType (2121)
 #endif
 
 /* struct wstop__QueryExpressionType * has binding name 'PointerTowstop__QueryExpressionType' for type 'wstop:QueryExpressionType' */
 #ifndef SOAP_TYPE_PointerTowstop__QueryExpressionType
-#define SOAP_TYPE_PointerTowstop__QueryExpressionType (2051)
+#define SOAP_TYPE_PointerTowstop__QueryExpressionType (2119)
 #endif
 
 /* struct _wsnt__ResumeFailedFaultType_FaultCause * has binding name 'PointerTo_wsnt__ResumeFailedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_FaultCause (2048)
+#define SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_FaultCause (2116)
 #endif
 
 /* struct _wsnt__ResumeFailedFaultType_Description * has binding name 'PointerTo_wsnt__ResumeFailedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_Description (2046)
+#define SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_Description (2114)
 #endif
 
 /* struct _wsnt__ResumeFailedFaultType_ErrorCode * has binding name 'PointerTo_wsnt__ResumeFailedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_ErrorCode (2044)
+#define SOAP_TYPE_PointerTo_wsnt__ResumeFailedFaultType_ErrorCode (2112)
 #endif
 
 /* struct _wsnt__PauseFailedFaultType_FaultCause * has binding name 'PointerTo_wsnt__PauseFailedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_FaultCause (2041)
+#define SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_FaultCause (2109)
 #endif
 
 /* struct _wsnt__PauseFailedFaultType_Description * has binding name 'PointerTo_wsnt__PauseFailedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_Description (2039)
+#define SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_Description (2107)
 #endif
 
 /* struct _wsnt__PauseFailedFaultType_ErrorCode * has binding name 'PointerTo_wsnt__PauseFailedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_ErrorCode (2037)
+#define SOAP_TYPE_PointerTo_wsnt__PauseFailedFaultType_ErrorCode (2105)
 #endif
 
 /* struct _wsnt__UnableToDestroySubscriptionFaultType_FaultCause * has binding name 'PointerTo_wsnt__UnableToDestroySubscriptionFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_FaultCause (2034)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_FaultCause (2102)
 #endif
 
 /* struct _wsnt__UnableToDestroySubscriptionFaultType_Description * has binding name 'PointerTo_wsnt__UnableToDestroySubscriptionFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_Description (2032)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_Description (2100)
 #endif
 
 /* struct _wsnt__UnableToDestroySubscriptionFaultType_ErrorCode * has binding name 'PointerTo_wsnt__UnableToDestroySubscriptionFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_ErrorCode (2030)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroySubscriptionFaultType_ErrorCode (2098)
 #endif
 
 /* struct _wsnt__UnacceptableTerminationTimeFaultType_FaultCause * has binding name 'PointerTo_wsnt__UnacceptableTerminationTimeFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_FaultCause (2027)
+#define SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_FaultCause (2095)
 #endif
 
 /* struct _wsnt__UnacceptableTerminationTimeFaultType_Description * has binding name 'PointerTo_wsnt__UnacceptableTerminationTimeFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_Description (2025)
+#define SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_Description (2093)
 #endif
 
 /* struct _wsnt__UnacceptableTerminationTimeFaultType_ErrorCode * has binding name 'PointerTo_wsnt__UnacceptableTerminationTimeFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_ErrorCode (2023)
+#define SOAP_TYPE_PointerTo_wsnt__UnacceptableTerminationTimeFaultType_ErrorCode (2091)
 #endif
 
 /* struct _wsnt__UnableToCreatePullPointFaultType_FaultCause * has binding name 'PointerTo_wsnt__UnableToCreatePullPointFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_FaultCause (2020)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_FaultCause (2088)
 #endif
 
 /* struct _wsnt__UnableToCreatePullPointFaultType_Description * has binding name 'PointerTo_wsnt__UnableToCreatePullPointFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_Description (2018)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_Description (2086)
 #endif
 
 /* struct _wsnt__UnableToCreatePullPointFaultType_ErrorCode * has binding name 'PointerTo_wsnt__UnableToCreatePullPointFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_ErrorCode (2016)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToCreatePullPointFaultType_ErrorCode (2084)
 #endif
 
 /* struct _wsnt__UnableToDestroyPullPointFaultType_FaultCause * has binding name 'PointerTo_wsnt__UnableToDestroyPullPointFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_FaultCause (2013)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_FaultCause (2081)
 #endif
 
 /* struct _wsnt__UnableToDestroyPullPointFaultType_Description * has binding name 'PointerTo_wsnt__UnableToDestroyPullPointFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_Description (2011)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_Description (2079)
 #endif
 
 /* struct _wsnt__UnableToDestroyPullPointFaultType_ErrorCode * has binding name 'PointerTo_wsnt__UnableToDestroyPullPointFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_ErrorCode (2009)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToDestroyPullPointFaultType_ErrorCode (2077)
 #endif
 
 /* struct _wsnt__UnableToGetMessagesFaultType_FaultCause * has binding name 'PointerTo_wsnt__UnableToGetMessagesFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_FaultCause (2006)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_FaultCause (2074)
 #endif
 
 /* struct _wsnt__UnableToGetMessagesFaultType_Description * has binding name 'PointerTo_wsnt__UnableToGetMessagesFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_Description (2004)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_Description (2072)
 #endif
 
 /* struct _wsnt__UnableToGetMessagesFaultType_ErrorCode * has binding name 'PointerTo_wsnt__UnableToGetMessagesFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_ErrorCode (2002)
+#define SOAP_TYPE_PointerTo_wsnt__UnableToGetMessagesFaultType_ErrorCode (2070)
 #endif
 
 /* struct _wsnt__NoCurrentMessageOnTopicFaultType_FaultCause * has binding name 'PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_FaultCause (1999)
+#define SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_FaultCause (2067)
 #endif
 
 /* struct _wsnt__NoCurrentMessageOnTopicFaultType_Description * has binding name 'PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_Description (1997)
+#define SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_Description (2065)
 #endif
 
 /* struct _wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode * has binding name 'PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode (1995)
+#define SOAP_TYPE_PointerTo_wsnt__NoCurrentMessageOnTopicFaultType_ErrorCode (2063)
 #endif
 
 /* struct _wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause * has binding name 'PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause (1992)
+#define SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_FaultCause (2060)
 #endif
 
 /* struct _wsnt__UnacceptableInitialTerminationTimeFaultType_Description * has binding name 'PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_Description (1990)
+#define SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_Description (2058)
 #endif
 
 /* struct _wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode * has binding name 'PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode (1988)
+#define SOAP_TYPE_PointerTo_wsnt__UnacceptableInitialTerminationTimeFaultType_ErrorCode (2056)
 #endif
 
 /* struct _wsnt__NotifyMessageNotSupportedFaultType_FaultCause * has binding name 'PointerTo_wsnt__NotifyMessageNotSupportedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_FaultCause (1985)
+#define SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_FaultCause (2053)
 #endif
 
 /* struct _wsnt__NotifyMessageNotSupportedFaultType_Description * has binding name 'PointerTo_wsnt__NotifyMessageNotSupportedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_Description (1983)
+#define SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_Description (2051)
 #endif
 
 /* struct _wsnt__NotifyMessageNotSupportedFaultType_ErrorCode * has binding name 'PointerTo_wsnt__NotifyMessageNotSupportedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_ErrorCode (1981)
+#define SOAP_TYPE_PointerTo_wsnt__NotifyMessageNotSupportedFaultType_ErrorCode (2049)
 #endif
 
 /* struct _wsnt__UnsupportedPolicyRequestFaultType_FaultCause * has binding name 'PointerTo_wsnt__UnsupportedPolicyRequestFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_FaultCause (1978)
+#define SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_FaultCause (2046)
 #endif
 
 /* struct _wsnt__UnsupportedPolicyRequestFaultType_Description * has binding name 'PointerTo_wsnt__UnsupportedPolicyRequestFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_Description (1976)
+#define SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_Description (2044)
 #endif
 
 /* struct _wsnt__UnsupportedPolicyRequestFaultType_ErrorCode * has binding name 'PointerTo_wsnt__UnsupportedPolicyRequestFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_ErrorCode (1974)
+#define SOAP_TYPE_PointerTo_wsnt__UnsupportedPolicyRequestFaultType_ErrorCode (2042)
 #endif
 
 /* struct _wsnt__UnrecognizedPolicyRequestFaultType_FaultCause * has binding name 'PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_FaultCause (1971)
+#define SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_FaultCause (2039)
 #endif
 
 /* struct _wsnt__UnrecognizedPolicyRequestFaultType_Description * has binding name 'PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_Description (1969)
+#define SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_Description (2037)
 #endif
 
 /* struct _wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode * has binding name 'PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode (1967)
+#define SOAP_TYPE_PointerTo_wsnt__UnrecognizedPolicyRequestFaultType_ErrorCode (2035)
 #endif
 
 /* struct _wsnt__InvalidMessageContentExpressionFaultType_FaultCause * has binding name 'PointerTo_wsnt__InvalidMessageContentExpressionFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_FaultCause (1964)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_FaultCause (2032)
 #endif
 
 /* struct _wsnt__InvalidMessageContentExpressionFaultType_Description * has binding name 'PointerTo_wsnt__InvalidMessageContentExpressionFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_Description (1962)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_Description (2030)
 #endif
 
 /* struct _wsnt__InvalidMessageContentExpressionFaultType_ErrorCode * has binding name 'PointerTo_wsnt__InvalidMessageContentExpressionFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_ErrorCode (1960)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidMessageContentExpressionFaultType_ErrorCode (2028)
 #endif
 
 /* struct _wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause * has binding name 'PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause (1957)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_FaultCause (2025)
 #endif
 
 /* struct _wsnt__InvalidProducerPropertiesExpressionFaultType_Description * has binding name 'PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_Description (1955)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_Description (2023)
 #endif
 
 /* struct _wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode * has binding name 'PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode (1953)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidProducerPropertiesExpressionFaultType_ErrorCode (2021)
 #endif
 
 /* struct _wsnt__MultipleTopicsSpecifiedFaultType_FaultCause * has binding name 'PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_FaultCause (1950)
+#define SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_FaultCause (2018)
 #endif
 
 /* struct _wsnt__MultipleTopicsSpecifiedFaultType_Description * has binding name 'PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_Description (1948)
+#define SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_Description (2016)
 #endif
 
 /* struct _wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode * has binding name 'PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode (1946)
+#define SOAP_TYPE_PointerTo_wsnt__MultipleTopicsSpecifiedFaultType_ErrorCode (2014)
 #endif
 
 /* struct _wsnt__TopicNotSupportedFaultType_FaultCause * has binding name 'PointerTo_wsnt__TopicNotSupportedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_FaultCause (1943)
+#define SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_FaultCause (2011)
 #endif
 
 /* struct _wsnt__TopicNotSupportedFaultType_Description * has binding name 'PointerTo_wsnt__TopicNotSupportedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_Description (1941)
+#define SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_Description (2009)
 #endif
 
 /* struct _wsnt__TopicNotSupportedFaultType_ErrorCode * has binding name 'PointerTo_wsnt__TopicNotSupportedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_ErrorCode (1939)
+#define SOAP_TYPE_PointerTo_wsnt__TopicNotSupportedFaultType_ErrorCode (2007)
 #endif
 
 /* struct _wsnt__InvalidTopicExpressionFaultType_FaultCause * has binding name 'PointerTo_wsnt__InvalidTopicExpressionFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_FaultCause (1936)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_FaultCause (2004)
 #endif
 
 /* struct _wsnt__InvalidTopicExpressionFaultType_Description * has binding name 'PointerTo_wsnt__InvalidTopicExpressionFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_Description (1934)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_Description (2002)
 #endif
 
 /* struct _wsnt__InvalidTopicExpressionFaultType_ErrorCode * has binding name 'PointerTo_wsnt__InvalidTopicExpressionFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_ErrorCode (1932)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidTopicExpressionFaultType_ErrorCode (2000)
 #endif
 
 /* struct _wsnt__TopicExpressionDialectUnknownFaultType_FaultCause * has binding name 'PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_FaultCause (1929)
+#define SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_FaultCause (1997)
 #endif
 
 /* struct _wsnt__TopicExpressionDialectUnknownFaultType_Description * has binding name 'PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_Description (1927)
+#define SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_Description (1995)
 #endif
 
 /* struct _wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode * has binding name 'PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode (1925)
+#define SOAP_TYPE_PointerTo_wsnt__TopicExpressionDialectUnknownFaultType_ErrorCode (1993)
 #endif
 
 /* struct _wsnt__InvalidFilterFaultType_FaultCause * has binding name 'PointerTo_wsnt__InvalidFilterFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_FaultCause (1922)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_FaultCause (1990)
 #endif
 
 /* struct _wsnt__InvalidFilterFaultType_Description * has binding name 'PointerTo_wsnt__InvalidFilterFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_Description (1920)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_Description (1988)
 #endif
 
 /* struct _wsnt__InvalidFilterFaultType_ErrorCode * has binding name 'PointerTo_wsnt__InvalidFilterFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_ErrorCode (1918)
+#define SOAP_TYPE_PointerTo_wsnt__InvalidFilterFaultType_ErrorCode (1986)
 #endif
 
 /* struct _wsnt__SubscribeCreationFailedFaultType_FaultCause * has binding name 'PointerTo_wsnt__SubscribeCreationFailedFaultType_FaultCause' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_FaultCause
-#define SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_FaultCause (1915)
+#define SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_FaultCause (1983)
 #endif
 
 /* struct _wsnt__SubscribeCreationFailedFaultType_Description * has binding name 'PointerTo_wsnt__SubscribeCreationFailedFaultType_Description' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_Description
-#define SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_Description (1913)
+#define SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_Description (1981)
 #endif
 
 /* struct _wsnt__SubscribeCreationFailedFaultType_ErrorCode * has binding name 'PointerTo_wsnt__SubscribeCreationFailedFaultType_ErrorCode' for type '' */
 #ifndef SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_ErrorCode
-#define SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_ErrorCode (1911)
+#define SOAP_TYPE_PointerTo_wsnt__SubscribeCreationFailedFaultType_ErrorCode (1979)
 #endif
 
 /* struct tt__OSDConfigurationExtension * has binding name 'PointerTott__OSDConfigurationExtension' for type 'tt:OSDConfigurationExtension' */
 #ifndef SOAP_TYPE_PointerTott__OSDConfigurationExtension
-#define SOAP_TYPE_PointerTott__OSDConfigurationExtension (1908)
+#define SOAP_TYPE_PointerTott__OSDConfigurationExtension (1976)
 #endif
 
 /* struct tt__OSDImgConfiguration * has binding name 'PointerTott__OSDImgConfiguration' for type 'tt:OSDImgConfiguration' */
 #ifndef SOAP_TYPE_PointerTott__OSDImgConfiguration
-#define SOAP_TYPE_PointerTott__OSDImgConfiguration (1907)
+#define SOAP_TYPE_PointerTott__OSDImgConfiguration (1975)
 #endif
 
 /* struct tt__OSDTextConfiguration * has binding name 'PointerTott__OSDTextConfiguration' for type 'tt:OSDTextConfiguration' */
 #ifndef SOAP_TYPE_PointerTott__OSDTextConfiguration
-#define SOAP_TYPE_PointerTott__OSDTextConfiguration (1906)
+#define SOAP_TYPE_PointerTott__OSDTextConfiguration (1974)
 #endif
 
 /* struct tt__OSDPosConfiguration * has binding name 'PointerTott__OSDPosConfiguration' for type 'tt:OSDPosConfiguration' */
 #ifndef SOAP_TYPE_PointerTott__OSDPosConfiguration
-#define SOAP_TYPE_PointerTott__OSDPosConfiguration (1905)
+#define SOAP_TYPE_PointerTott__OSDPosConfiguration (1973)
 #endif
 
 /* struct tt__OSDReference * has binding name 'PointerTott__OSDReference' for type 'tt:OSDReference' */
 #ifndef SOAP_TYPE_PointerTott__OSDReference
-#define SOAP_TYPE_PointerTott__OSDReference (1904)
+#define SOAP_TYPE_PointerTott__OSDReference (1972)
 #endif
 
 /* struct tt__MetadataInput * has binding name 'PointerTott__MetadataInput' for type 'tt:MetadataInput' */
 #ifndef SOAP_TYPE_PointerTott__MetadataInput
-#define SOAP_TYPE_PointerTott__MetadataInput (1901)
+#define SOAP_TYPE_PointerTott__MetadataInput (1969)
 #endif
 
 /* struct tt__SourceIdentification * has binding name 'PointerTott__SourceIdentification' for type 'tt:SourceIdentification' */
 #ifndef SOAP_TYPE_PointerTott__SourceIdentification
-#define SOAP_TYPE_PointerTott__SourceIdentification (1900)
+#define SOAP_TYPE_PointerTott__SourceIdentification (1968)
 #endif
 
 /* struct tt__AnalyticsDeviceEngineConfiguration * has binding name 'PointerTott__AnalyticsDeviceEngineConfiguration' for type 'tt:AnalyticsDeviceEngineConfiguration' */
 #ifndef SOAP_TYPE_PointerTott__AnalyticsDeviceEngineConfiguration
-#define SOAP_TYPE_PointerTott__AnalyticsDeviceEngineConfiguration (1898)
+#define SOAP_TYPE_PointerTott__AnalyticsDeviceEngineConfiguration (1966)
 #endif
 
 /* struct tt__PTZConfigurationExtension * has binding name 'PointerTott__PTZConfigurationExtension' for type 'tt:PTZConfigurationExtension' */
 #ifndef SOAP_TYPE_PointerTott__PTZConfigurationExtension
-#define SOAP_TYPE_PointerTott__PTZConfigurationExtension (1895)
+#define SOAP_TYPE_PointerTott__PTZConfigurationExtension (1963)
 #endif
 
 /* struct tt__ZoomLimits * has binding name 'PointerTott__ZoomLimits' for type 'tt:ZoomLimits' */
 #ifndef SOAP_TYPE_PointerTott__ZoomLimits
-#define SOAP_TYPE_PointerTott__ZoomLimits (1894)
+#define SOAP_TYPE_PointerTott__ZoomLimits (1962)
 #endif
 
 /* struct tt__PanTiltLimits * has binding name 'PointerTott__PanTiltLimits' for type 'tt:PanTiltLimits' */
 #ifndef SOAP_TYPE_PointerTott__PanTiltLimits
-#define SOAP_TYPE_PointerTott__PanTiltLimits (1893)
+#define SOAP_TYPE_PointerTott__PanTiltLimits (1961)
 #endif
 
 /* struct tt__PTZNodeExtension * has binding name 'PointerTott__PTZNodeExtension' for type 'tt:PTZNodeExtension' */
 #ifndef SOAP_TYPE_PointerTott__PTZNodeExtension
-#define SOAP_TYPE_PointerTott__PTZNodeExtension (1892)
+#define SOAP_TYPE_PointerTott__PTZNodeExtension (1960)
 #endif
 
 /* enum tt__DigitalIdleState * has binding name 'PointerTott__DigitalIdleState' for type 'tt:DigitalIdleState' */
 #ifndef SOAP_TYPE_PointerTott__DigitalIdleState
-#define SOAP_TYPE_PointerTott__DigitalIdleState (1890)
+#define SOAP_TYPE_PointerTott__DigitalIdleState (1959)
 #endif
 
 /* struct tt__NetworkInterfaceExtension * has binding name 'PointerTott__NetworkInterfaceExtension' for type 'tt:NetworkInterfaceExtension' */
 #ifndef SOAP_TYPE_PointerTott__NetworkInterfaceExtension
-#define SOAP_TYPE_PointerTott__NetworkInterfaceExtension (1888)
+#define SOAP_TYPE_PointerTott__NetworkInterfaceExtension (1957)
 #endif
 
 /* struct tt__IPv6NetworkInterface * has binding name 'PointerTott__IPv6NetworkInterface' for type 'tt:IPv6NetworkInterface' */
 #ifndef SOAP_TYPE_PointerTott__IPv6NetworkInterface
-#define SOAP_TYPE_PointerTott__IPv6NetworkInterface (1887)
+#define SOAP_TYPE_PointerTott__IPv6NetworkInterface (1956)
 #endif
 
 /* struct tt__IPv4NetworkInterface * has binding name 'PointerTott__IPv4NetworkInterface' for type 'tt:IPv4NetworkInterface' */
 #ifndef SOAP_TYPE_PointerTott__IPv4NetworkInterface
-#define SOAP_TYPE_PointerTott__IPv4NetworkInterface (1886)
+#define SOAP_TYPE_PointerTott__IPv4NetworkInterface (1955)
 #endif
 
 /* struct tt__NetworkInterfaceLink * has binding name 'PointerTott__NetworkInterfaceLink' for type 'tt:NetworkInterfaceLink' */
 #ifndef SOAP_TYPE_PointerTott__NetworkInterfaceLink
-#define SOAP_TYPE_PointerTott__NetworkInterfaceLink (1885)
+#define SOAP_TYPE_PointerTott__NetworkInterfaceLink (1954)
 #endif
 
 /* struct tt__NetworkInterfaceInfo * has binding name 'PointerTott__NetworkInterfaceInfo' for type 'tt:NetworkInterfaceInfo' */
 #ifndef SOAP_TYPE_PointerTott__NetworkInterfaceInfo
-#define SOAP_TYPE_PointerTott__NetworkInterfaceInfo (1884)
+#define SOAP_TYPE_PointerTott__NetworkInterfaceInfo (1953)
 #endif
 
 /* struct tt__VideoOutputExtension * has binding name 'PointerTott__VideoOutputExtension' for type 'tt:VideoOutputExtension' */
 #ifndef SOAP_TYPE_PointerTott__VideoOutputExtension
-#define SOAP_TYPE_PointerTott__VideoOutputExtension (1882)
+#define SOAP_TYPE_PointerTott__VideoOutputExtension (1951)
 #endif
 
 /* struct tt__Layout * has binding name 'PointerTott__Layout' for type 'tt:Layout' */
 #ifndef SOAP_TYPE_PointerTott__Layout
-#define SOAP_TYPE_PointerTott__Layout (1881)
+#define SOAP_TYPE_PointerTott__Layout (1950)
 #endif
 
 /* struct tt__MetadataConfigurationExtension * has binding name 'PointerTott__MetadataConfigurationExtension' for type 'tt:MetadataConfigurationExtension' */
 #ifndef SOAP_TYPE_PointerTott__MetadataConfigurationExtension
-#define SOAP_TYPE_PointerTott__MetadataConfigurationExtension (1879)
+#define SOAP_TYPE_PointerTott__MetadataConfigurationExtension (1948)
 #endif
 
 /* struct tt__EventSubscription * has binding name 'PointerTott__EventSubscription' for type 'tt:EventSubscription' */
 #ifndef SOAP_TYPE_PointerTott__EventSubscription
-#define SOAP_TYPE_PointerTott__EventSubscription (1878)
+#define SOAP_TYPE_PointerTott__EventSubscription (1947)
 #endif
 
 /* struct tt__PTZFilter * has binding name 'PointerTott__PTZFilter' for type 'tt:PTZFilter' */
 #ifndef SOAP_TYPE_PointerTott__PTZFilter
-#define SOAP_TYPE_PointerTott__PTZFilter (1877)
+#define SOAP_TYPE_PointerTott__PTZFilter (1946)
 #endif
 
 /* struct tt__RuleEngineConfiguration * has binding name 'PointerTott__RuleEngineConfiguration' for type 'tt:RuleEngineConfiguration' */
 #ifndef SOAP_TYPE_PointerTott__RuleEngineConfiguration
-#define SOAP_TYPE_PointerTott__RuleEngineConfiguration (1876)
+#define SOAP_TYPE_PointerTott__RuleEngineConfiguration (1945)
 #endif
 
 /* struct tt__AnalyticsEngineConfiguration * has binding name 'PointerTott__AnalyticsEngineConfiguration' for type 'tt:AnalyticsEngineConfiguration' */
 #ifndef SOAP_TYPE_PointerTott__AnalyticsEngineConfiguration
-#define SOAP_TYPE_PointerTott__AnalyticsEngineConfiguration (1875)
+#define SOAP_TYPE_PointerTott__AnalyticsEngineConfiguration (1944)
 #endif
 
 /* struct tt__VideoRateControl2 * has binding name 'PointerTott__VideoRateControl2' for type 'tt:VideoRateControl2' */
 #ifndef SOAP_TYPE_PointerTott__VideoRateControl2
-#define SOAP_TYPE_PointerTott__VideoRateControl2 (1873)
+#define SOAP_TYPE_PointerTott__VideoRateControl2 (1942)
 #endif
 
 /* struct tt__MulticastConfiguration * has binding name 'PointerTott__MulticastConfiguration' for type 'tt:MulticastConfiguration' */
 #ifndef SOAP_TYPE_PointerTott__MulticastConfiguration
-#define SOAP_TYPE_PointerTott__MulticastConfiguration (1871)
+#define SOAP_TYPE_PointerTott__MulticastConfiguration (1940)
 #endif
 
 /* struct tt__H264Configuration * has binding name 'PointerTott__H264Configuration' for type 'tt:H264Configuration' */
 #ifndef SOAP_TYPE_PointerTott__H264Configuration
-#define SOAP_TYPE_PointerTott__H264Configuration (1870)
+#define SOAP_TYPE_PointerTott__H264Configuration (1939)
 #endif
 
 /* struct tt__Mpeg4Configuration * has binding name 'PointerTott__Mpeg4Configuration' for type 'tt:Mpeg4Configuration' */
 #ifndef SOAP_TYPE_PointerTott__Mpeg4Configuration
-#define SOAP_TYPE_PointerTott__Mpeg4Configuration (1869)
+#define SOAP_TYPE_PointerTott__Mpeg4Configuration (1938)
 #endif
 
 /* struct tt__VideoRateControl * has binding name 'PointerTott__VideoRateControl' for type 'tt:VideoRateControl' */
 #ifndef SOAP_TYPE_PointerTott__VideoRateControl
-#define SOAP_TYPE_PointerTott__VideoRateControl (1868)
+#define SOAP_TYPE_PointerTott__VideoRateControl (1937)
 #endif
 
 /* struct tt__VideoSourceConfigurationExtension * has binding name 'PointerTott__VideoSourceConfigurationExtension' for type 'tt:VideoSourceConfigurationExtension' */
 #ifndef SOAP_TYPE_PointerTott__VideoSourceConfigurationExtension
-#define SOAP_TYPE_PointerTott__VideoSourceConfigurationExtension (1867)
+#define SOAP_TYPE_PointerTott__VideoSourceConfigurationExtension (1936)
 #endif
 
 /* struct tt__IntRectangle * has binding name 'PointerTott__IntRectangle' for type 'tt:IntRectangle' */
 #ifndef SOAP_TYPE_PointerTott__IntRectangle
-#define SOAP_TYPE_PointerTott__IntRectangle (1866)
+#define SOAP_TYPE_PointerTott__IntRectangle (1935)
 #endif
 
 /* struct tt__VideoSourceExtension * has binding name 'PointerTott__VideoSourceExtension' for type 'tt:VideoSourceExtension' */
 #ifndef SOAP_TYPE_PointerTott__VideoSourceExtension
-#define SOAP_TYPE_PointerTott__VideoSourceExtension (1865)
+#define SOAP_TYPE_PointerTott__VideoSourceExtension (1934)
 #endif
 
 /* struct tt__ImagingSettings * has binding name 'PointerTott__ImagingSettings' for type 'tt:ImagingSettings' */
 #ifndef SOAP_TYPE_PointerTott__ImagingSettings
-#define SOAP_TYPE_PointerTott__ImagingSettings (1864)
+#define SOAP_TYPE_PointerTott__ImagingSettings (1933)
+#endif
+
+/* struct tt__PTZPresetTourOptions * has binding name 'PointerTott__PTZPresetTourOptions' for type 'tt:PTZPresetTourOptions' */
+#ifndef SOAP_TYPE_PointerTott__PTZPresetTourOptions
+#define SOAP_TYPE_PointerTott__PTZPresetTourOptions (1920)
+#endif
+
+/* struct tt__PresetTour * has binding name 'PointerTott__PresetTour' for type 'tt:PresetTour' */
+#ifndef SOAP_TYPE_PointerTott__PresetTour
+#define SOAP_TYPE_PointerTott__PresetTour (1915)
+#endif
+
+/* struct tt__PTZStatus * has binding name 'PointerTott__PTZStatus' for type 'tt:PTZStatus' */
+#ifndef SOAP_TYPE_PointerTott__PTZStatus
+#define SOAP_TYPE_PointerTott__PTZStatus (1898)
+#endif
+
+/* struct tt__PTZPreset * has binding name 'PointerTott__PTZPreset' for type 'tt:PTZPreset' */
+#ifndef SOAP_TYPE_PointerTott__PTZPreset
+#define SOAP_TYPE_PointerTott__PTZPreset (1889)
+#endif
+
+/* struct tt__PTZConfigurationOptions * has binding name 'PointerTott__PTZConfigurationOptions' for type 'tt:PTZConfigurationOptions' */
+#ifndef SOAP_TYPE_PointerTott__PTZConfigurationOptions
+#define SOAP_TYPE_PointerTott__PTZConfigurationOptions (1884)
+#endif
+
+/* struct __tptz__SetConfigurationResponse_sequence * has binding name 'PointerTo__tptz__SetConfigurationResponse_sequence' for type '-tptz:SetConfigurationResponse-sequence' */
+#ifndef SOAP_TYPE_PointerTo__tptz__SetConfigurationResponse_sequence
+#define SOAP_TYPE_PointerTo__tptz__SetConfigurationResponse_sequence (1881)
+#endif
+
+/* struct tt__PTZNode * has binding name 'PointerTott__PTZNode' for type 'tt:PTZNode' */
+#ifndef SOAP_TYPE_PointerTott__PTZNode
+#define SOAP_TYPE_PointerTott__PTZNode (1871)
+#endif
+
+/* struct tptz__Capabilities * has binding name 'PointerTotptz__Capabilities' for type 'tptz:Capabilities' */
+#ifndef SOAP_TYPE_PointerTotptz__Capabilities
+#define SOAP_TYPE_PointerTotptz__Capabilities (1867)
 #endif
 
 /* struct tt__OSDConfigurationOptions * has binding name 'PointerTott__OSDConfigurationOptions' for type 'tt:OSDConfigurationOptions' */
@@ -34823,6 +36529,209 @@ typedef tt__ReferenceToken tt__RecordingJobReference;
     SOAP_FMAC5 int SOAP_FMAC6 soap_send___tev__ResumeSubscription(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _wsnt__ResumeSubscription *wsnt__ResumeSubscription);
     /** Web service asynchronous operation 'soap_recv___tev__ResumeSubscription' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
     SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tev__ResumeSubscription(struct soap *soap, struct _wsnt__ResumeSubscriptionResponse *wsnt__ResumeSubscriptionResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetServiceCapabilities' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetServiceCapabilities(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetServiceCapabilities *tptz__GetServiceCapabilities, struct _tptz__GetServiceCapabilitiesResponse *tptz__GetServiceCapabilitiesResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetServiceCapabilities' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetServiceCapabilities(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetServiceCapabilities *tptz__GetServiceCapabilities);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetServiceCapabilities' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetServiceCapabilities(struct soap *soap, struct _tptz__GetServiceCapabilitiesResponse *tptz__GetServiceCapabilitiesResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetConfigurations' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetConfigurations(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetConfigurations *tptz__GetConfigurations, struct _tptz__GetConfigurationsResponse *tptz__GetConfigurationsResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetConfigurations' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetConfigurations(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetConfigurations *tptz__GetConfigurations);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetConfigurations' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetConfigurations(struct soap *soap, struct _tptz__GetConfigurationsResponse *tptz__GetConfigurationsResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetPresets' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetPresets(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetPresets *tptz__GetPresets, struct _tptz__GetPresetsResponse *tptz__GetPresetsResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetPresets' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetPresets(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetPresets *tptz__GetPresets);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetPresets' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetPresets(struct soap *soap, struct _tptz__GetPresetsResponse *tptz__GetPresetsResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__SetPreset' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__SetPreset(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__SetPreset *tptz__SetPreset, struct _tptz__SetPresetResponse *tptz__SetPresetResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__SetPreset' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__SetPreset(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__SetPreset *tptz__SetPreset);
+    /** Web service asynchronous operation 'soap_recv___tptz__SetPreset' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__SetPreset(struct soap *soap, struct _tptz__SetPresetResponse *tptz__SetPresetResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__RemovePreset' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__RemovePreset(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__RemovePreset *tptz__RemovePreset, struct _tptz__RemovePresetResponse *tptz__RemovePresetResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__RemovePreset' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__RemovePreset(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__RemovePreset *tptz__RemovePreset);
+    /** Web service asynchronous operation 'soap_recv___tptz__RemovePreset' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__RemovePreset(struct soap *soap, struct _tptz__RemovePresetResponse *tptz__RemovePresetResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GotoPreset' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GotoPreset(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GotoPreset *tptz__GotoPreset, struct _tptz__GotoPresetResponse *tptz__GotoPresetResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GotoPreset' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GotoPreset(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GotoPreset *tptz__GotoPreset);
+    /** Web service asynchronous operation 'soap_recv___tptz__GotoPreset' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GotoPreset(struct soap *soap, struct _tptz__GotoPresetResponse *tptz__GotoPresetResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetStatus' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetStatus(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetStatus *tptz__GetStatus, struct _tptz__GetStatusResponse *tptz__GetStatusResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetStatus' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetStatus(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetStatus *tptz__GetStatus);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetStatus' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetStatus(struct soap *soap, struct _tptz__GetStatusResponse *tptz__GetStatusResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetConfiguration' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetConfiguration(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetConfiguration *tptz__GetConfiguration, struct _tptz__GetConfigurationResponse *tptz__GetConfigurationResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetConfiguration' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetConfiguration(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetConfiguration *tptz__GetConfiguration);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetConfiguration' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetConfiguration(struct soap *soap, struct _tptz__GetConfigurationResponse *tptz__GetConfigurationResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetNodes' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetNodes(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetNodes *tptz__GetNodes, struct _tptz__GetNodesResponse *tptz__GetNodesResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetNodes' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetNodes(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetNodes *tptz__GetNodes);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetNodes' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetNodes(struct soap *soap, struct _tptz__GetNodesResponse *tptz__GetNodesResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetNode' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetNode(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetNode *tptz__GetNode, struct _tptz__GetNodeResponse *tptz__GetNodeResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetNode' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetNode(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetNode *tptz__GetNode);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetNode' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetNode(struct soap *soap, struct _tptz__GetNodeResponse *tptz__GetNodeResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__SetConfiguration' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__SetConfiguration(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__SetConfiguration *tptz__SetConfiguration, struct _tptz__SetConfigurationResponse *tptz__SetConfigurationResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__SetConfiguration' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__SetConfiguration(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__SetConfiguration *tptz__SetConfiguration);
+    /** Web service asynchronous operation 'soap_recv___tptz__SetConfiguration' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__SetConfiguration(struct soap *soap, struct _tptz__SetConfigurationResponse *tptz__SetConfigurationResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetConfigurationOptions' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetConfigurationOptions(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetConfigurationOptions *tptz__GetConfigurationOptions, struct _tptz__GetConfigurationOptionsResponse *tptz__GetConfigurationOptionsResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetConfigurationOptions' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetConfigurationOptions(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetConfigurationOptions *tptz__GetConfigurationOptions);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetConfigurationOptions' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetConfigurationOptions(struct soap *soap, struct _tptz__GetConfigurationOptionsResponse *tptz__GetConfigurationOptionsResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GotoHomePosition' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GotoHomePosition(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GotoHomePosition *tptz__GotoHomePosition, struct _tptz__GotoHomePositionResponse *tptz__GotoHomePositionResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GotoHomePosition' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GotoHomePosition(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GotoHomePosition *tptz__GotoHomePosition);
+    /** Web service asynchronous operation 'soap_recv___tptz__GotoHomePosition' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GotoHomePosition(struct soap *soap, struct _tptz__GotoHomePositionResponse *tptz__GotoHomePositionResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__SetHomePosition' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__SetHomePosition(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__SetHomePosition *tptz__SetHomePosition, struct _tptz__SetHomePositionResponse *tptz__SetHomePositionResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__SetHomePosition' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__SetHomePosition(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__SetHomePosition *tptz__SetHomePosition);
+    /** Web service asynchronous operation 'soap_recv___tptz__SetHomePosition' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__SetHomePosition(struct soap *soap, struct _tptz__SetHomePositionResponse *tptz__SetHomePositionResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__ContinuousMove' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__ContinuousMove(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__ContinuousMove *tptz__ContinuousMove, struct _tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__ContinuousMove' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__ContinuousMove(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__ContinuousMove *tptz__ContinuousMove);
+    /** Web service asynchronous operation 'soap_recv___tptz__ContinuousMove' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__ContinuousMove(struct soap *soap, struct _tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__RelativeMove' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__RelativeMove(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__RelativeMove *tptz__RelativeMove, struct _tptz__RelativeMoveResponse *tptz__RelativeMoveResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__RelativeMove' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__RelativeMove(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__RelativeMove *tptz__RelativeMove);
+    /** Web service asynchronous operation 'soap_recv___tptz__RelativeMove' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__RelativeMove(struct soap *soap, struct _tptz__RelativeMoveResponse *tptz__RelativeMoveResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__SendAuxiliaryCommand' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__SendAuxiliaryCommand(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__SendAuxiliaryCommand *tptz__SendAuxiliaryCommand, struct _tptz__SendAuxiliaryCommandResponse *tptz__SendAuxiliaryCommandResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__SendAuxiliaryCommand' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__SendAuxiliaryCommand(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__SendAuxiliaryCommand *tptz__SendAuxiliaryCommand);
+    /** Web service asynchronous operation 'soap_recv___tptz__SendAuxiliaryCommand' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__SendAuxiliaryCommand(struct soap *soap, struct _tptz__SendAuxiliaryCommandResponse *tptz__SendAuxiliaryCommandResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__AbsoluteMove' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__AbsoluteMove(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__AbsoluteMove *tptz__AbsoluteMove, struct _tptz__AbsoluteMoveResponse *tptz__AbsoluteMoveResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__AbsoluteMove' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__AbsoluteMove(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__AbsoluteMove *tptz__AbsoluteMove);
+    /** Web service asynchronous operation 'soap_recv___tptz__AbsoluteMove' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__AbsoluteMove(struct soap *soap, struct _tptz__AbsoluteMoveResponse *tptz__AbsoluteMoveResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GeoMove' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GeoMove(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GeoMove *tptz__GeoMove, struct _tptz__GeoMoveResponse *tptz__GeoMoveResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GeoMove' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GeoMove(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GeoMove *tptz__GeoMove);
+    /** Web service asynchronous operation 'soap_recv___tptz__GeoMove' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GeoMove(struct soap *soap, struct _tptz__GeoMoveResponse *tptz__GeoMoveResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__Stop' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__Stop(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__Stop *tptz__Stop, struct _tptz__StopResponse *tptz__StopResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__Stop' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__Stop(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__Stop *tptz__Stop);
+    /** Web service asynchronous operation 'soap_recv___tptz__Stop' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__Stop(struct soap *soap, struct _tptz__StopResponse *tptz__StopResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetPresetTours' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetPresetTours(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetPresetTours *tptz__GetPresetTours, struct _tptz__GetPresetToursResponse *tptz__GetPresetToursResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetPresetTours' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetPresetTours(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetPresetTours *tptz__GetPresetTours);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetPresetTours' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetPresetTours(struct soap *soap, struct _tptz__GetPresetToursResponse *tptz__GetPresetToursResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetPresetTour' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetPresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetPresetTour *tptz__GetPresetTour, struct _tptz__GetPresetTourResponse *tptz__GetPresetTourResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetPresetTour' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetPresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetPresetTour *tptz__GetPresetTour);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetPresetTour' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetPresetTour(struct soap *soap, struct _tptz__GetPresetTourResponse *tptz__GetPresetTourResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetPresetTourOptions' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetPresetTourOptions(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetPresetTourOptions *tptz__GetPresetTourOptions, struct _tptz__GetPresetTourOptionsResponse *tptz__GetPresetTourOptionsResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetPresetTourOptions' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetPresetTourOptions(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetPresetTourOptions *tptz__GetPresetTourOptions);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetPresetTourOptions' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetPresetTourOptions(struct soap *soap, struct _tptz__GetPresetTourOptionsResponse *tptz__GetPresetTourOptionsResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__CreatePresetTour' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__CreatePresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__CreatePresetTour *tptz__CreatePresetTour, struct _tptz__CreatePresetTourResponse *tptz__CreatePresetTourResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__CreatePresetTour' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__CreatePresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__CreatePresetTour *tptz__CreatePresetTour);
+    /** Web service asynchronous operation 'soap_recv___tptz__CreatePresetTour' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__CreatePresetTour(struct soap *soap, struct _tptz__CreatePresetTourResponse *tptz__CreatePresetTourResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__ModifyPresetTour' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__ModifyPresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__ModifyPresetTour *tptz__ModifyPresetTour, struct _tptz__ModifyPresetTourResponse *tptz__ModifyPresetTourResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__ModifyPresetTour' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__ModifyPresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__ModifyPresetTour *tptz__ModifyPresetTour);
+    /** Web service asynchronous operation 'soap_recv___tptz__ModifyPresetTour' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__ModifyPresetTour(struct soap *soap, struct _tptz__ModifyPresetTourResponse *tptz__ModifyPresetTourResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__OperatePresetTour' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__OperatePresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__OperatePresetTour *tptz__OperatePresetTour, struct _tptz__OperatePresetTourResponse *tptz__OperatePresetTourResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__OperatePresetTour' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__OperatePresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__OperatePresetTour *tptz__OperatePresetTour);
+    /** Web service asynchronous operation 'soap_recv___tptz__OperatePresetTour' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__OperatePresetTour(struct soap *soap, struct _tptz__OperatePresetTourResponse *tptz__OperatePresetTourResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__RemovePresetTour' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__RemovePresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__RemovePresetTour *tptz__RemovePresetTour, struct _tptz__RemovePresetTourResponse *tptz__RemovePresetTourResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__RemovePresetTour' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__RemovePresetTour(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__RemovePresetTour *tptz__RemovePresetTour);
+    /** Web service asynchronous operation 'soap_recv___tptz__RemovePresetTour' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__RemovePresetTour(struct soap *soap, struct _tptz__RemovePresetTourResponse *tptz__RemovePresetTourResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__GetCompatibleConfigurations' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__GetCompatibleConfigurations(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetCompatibleConfigurations *tptz__GetCompatibleConfigurations, struct _tptz__GetCompatibleConfigurationsResponse *tptz__GetCompatibleConfigurationsResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__GetCompatibleConfigurations' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__GetCompatibleConfigurations(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__GetCompatibleConfigurations *tptz__GetCompatibleConfigurations);
+    /** Web service asynchronous operation 'soap_recv___tptz__GetCompatibleConfigurations' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__GetCompatibleConfigurations(struct soap *soap, struct _tptz__GetCompatibleConfigurationsResponse *tptz__GetCompatibleConfigurationsResponse);
+    
+    /** Web service synchronous operation 'soap_call___tptz__MoveAndStartTracking' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___tptz__MoveAndStartTracking(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__MoveAndStartTracking *tptz__MoveAndStartTracking, struct _tptz__MoveAndStartTrackingResponse *tptz__MoveAndStartTrackingResponse);
+    /** Web service asynchronous operation 'soap_send___tptz__MoveAndStartTracking' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_send___tptz__MoveAndStartTracking(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _tptz__MoveAndStartTracking *tptz__MoveAndStartTracking);
+    /** Web service asynchronous operation 'soap_recv___tptz__MoveAndStartTracking' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv___tptz__MoveAndStartTracking(struct soap *soap, struct _tptz__MoveAndStartTrackingResponse *tptz__MoveAndStartTrackingResponse);
     
     /** Web service synchronous operation 'soap_call___trt__GetServiceCapabilities' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
     SOAP_FMAC5 int SOAP_FMAC6 soap_call___trt__GetServiceCapabilities(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _trt__GetServiceCapabilities *trt__GetServiceCapabilities, struct _trt__GetServiceCapabilitiesResponse *trt__GetServiceCapabilitiesResponse);

@@ -16,7 +16,8 @@ extern int discovery(struct soap *soap);
 
 extern int get_device_info(struct soap *soap, const char *username, const char *password, char *xAddr);
 
-extern int get_capabilities(struct soap *soap, const char *username, const char *password, char *xAddr, char *mediaAddr);
+extern int
+get_capabilities(struct soap *soap, const char *username, const char *password, char *xAddr, char *mediaAddr);
 
 extern int
 get_profiles(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr);
@@ -26,5 +27,9 @@ get_rtsp_uri(struct soap *soap, const char *username, const char *password, char
 
 extern int
 get_snapshot(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr);
+
+extern int
+ptz(struct soap *soap, const char *username, const char *password, int direction, float speed, char *profileToken,
+    char *xAddr);
 
 #endif //ONVIF_CGO_CLIENT_H

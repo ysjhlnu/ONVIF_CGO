@@ -3,6 +3,7 @@
 //
 
 #include <string.h>
+#include <unistd.h>
 #include "soap/soapStub.h"
 #include "soap/wsdd.nsmap"
 #include "soap/soapH.h"
@@ -187,16 +188,20 @@ int get_profiles(struct soap *soap, const char *username, const char *password, 
         return soap->error;
     }
 
-    if (profilesResponse.Profiles != NULL) {
-        if (profilesResponse.Profiles->Name != NULL) {
-            printf("func:%s,line:%d.Profiles Name:%s\n", __FUNCTION__, __LINE__, profilesResponse.Profiles->Name);
+    if (profilesResponse.__sizeProfiles <= 0) {
+        printf("func:%s,line:%d.Profiles Get Error\n", __FUNCTION__, __LINE__);
+        return res;
+    }
+
+    for (int i = 0; i < profilesResponse.__sizeProfiles; i++) {
+        if (profilesResponse.Profiles[i].token != NULL) {
+            printf("func:%s,line:%d.Profiles token:%s\n", __FUNCTION__, __LINE__, profilesResponse.Profiles->Name);
+
+            //默认我们取第一个即可，可以优化使用字符串数组存储多个
+            if (i == 0) {
+                strcpy(profileToken, profilesResponse.Profiles[i].token);
+            }
         }
-        if (profilesResponse.Profiles->token != NULL) {
-            printf("func:%s,line:%d.Profiles Taken:%s\n", __FUNCTION__, __LINE__, profilesResponse.Profiles->token);
-            strcpy(profileToken, profilesResponse.Profiles->token);
-        }
-    } else {
-        printf("func:%s,line:%d.Profiles Get inner Error\n", __FUNCTION__, __LINE__);
     }
     return res;
 }
@@ -241,6 +246,73 @@ int get_snapshot(struct soap *soap, const char *username, const char *password, 
     return res;
 }
 
+int ptz(struct soap *soap, const char *username, const char *password, int direction, float speed, char *profileToken,
+        char *xAddr) {
+    struct _tptz__ContinuousMove continuousMove;
+    struct _tptz__ContinuousMoveResponse continuousMoveResponse;
+    struct _tptz__Stop tptzStop;
+    struct _tptz__StopResponse stopResponse;
+    int res;
+
+    set_auth_info(soap, username, password);
+    continuousMove.ProfileToken = profileToken;
+    continuousMove.Velocity = (struct tt__PTZSpeed *)soap_malloc(soap, sizeof(struct tt__PTZSpeed));
+    continuousMove.Velocity->PanTilt = (struct tt__Vector2D *)soap_malloc(soap, sizeof(struct tt__Vector2D));
+    switch (direction) {
+        case 1:
+            continuousMove.Velocity->PanTilt->x = 0;
+            continuousMove.Velocity->PanTilt->y = speed;
+            break;
+        case 2:
+            continuousMove.Velocity->PanTilt->x = 0;
+            continuousMove.Velocity->PanTilt->y = -speed;
+            break;
+        case 3:
+            continuousMove.Velocity->PanTilt->x = -speed;
+            continuousMove.Velocity->PanTilt->y = 0;
+            break;
+        case 4:
+            continuousMove.Velocity->PanTilt->x = speed;
+            continuousMove.Velocity->PanTilt->y = 0;
+            break;
+        case 5:
+            continuousMove.Velocity->PanTilt->x = -speed;
+            continuousMove.Velocity->PanTilt->y = speed;
+            break;
+        case 6:
+            continuousMove.Velocity->PanTilt->x = -speed;
+            continuousMove.Velocity->PanTilt->y = -speed;
+            break;
+        case 7:
+            continuousMove.Velocity->PanTilt->x = speed;
+            continuousMove.Velocity->PanTilt->y = speed;
+            break;
+        case 8:
+            continuousMove.Velocity->PanTilt->x = speed;
+            continuousMove.Velocity->PanTilt->y = -speed;
+            break;
+        case 9:
+            tptzStop.ProfileToken = profileToken;
+            res = soap_call___tptz__Stop(soap, xAddr, NULL, &tptzStop, &stopResponse);
+            if (soap->error) {
+                printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error, *soap_faultcode(soap),
+                       *soap_faultstring(soap));
+                return soap->error;
+            }
+            return res;
+        default:
+            printf("func:%s,line:%d.Ptz direction unknown.\n", __FUNCTION__, __LINE__);
+            return -1;
+    }
+    res = soap_call___tptz__ContinuousMove(soap, xAddr, NULL, &continuousMove, &continuousMoveResponse);
+    if (soap->error) {
+        printf("func:%s,line:%d.soap error: %d, %s, %s\n", __FUNCTION__, __LINE__, soap->error, *soap_faultcode(soap),
+               *soap_faultstring(soap));
+        return soap->error;
+    }
+    return res;
+}
+
 /*
 int main() {
     struct soap *soap = NULL;
@@ -262,6 +334,13 @@ int main() {
     get_rtsp_uri(soap, username, password, profileToken, mediaAddr);
 
     get_snapshot(soap, username, password, profileToken, mediaAddr);
+
+    int res = -1;
+    while(res != 0) {
+        printf("请输入数字进行ptz,1-9分别代表上、下、左、右、左上、左下、右上、右下、停止;退出请输入0：");
+        scanf("%d",&res);
+        ptz(soap, username, password, res, 0.5f, profileToken, mediaAddr);
+    }
 
     del_soap(soap);
 }
