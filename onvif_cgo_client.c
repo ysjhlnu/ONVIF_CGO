@@ -7,7 +7,7 @@
 #include "soap/wsdd.nsmap"
 #include "soap/soapH.h"
 #include "soap/wsseapi.h"
-#include "client.h"
+#include "onvif_cgo_client.h"
 
 struct soap *new_soap(struct soap *soap) {
     //soap初始化，申请空间
@@ -290,6 +290,8 @@ int ptz(struct soap *soap, const char *username, const char *password, int direc
     continuousMove.ProfileToken = profileToken;
     continuousMove.Velocity = (struct tt__PTZSpeed *) soap_malloc(soap, sizeof(struct tt__PTZSpeed));
     continuousMove.Velocity->PanTilt = (struct tt__Vector2D *) soap_malloc(soap, sizeof(struct tt__Vector2D));
+    continuousMove.Timeout = NULL;
+    continuousMove.Velocity->Zoom = NULL;
 
     switch (direction) {
         case 1:
@@ -468,70 +470,71 @@ int preset(struct soap *soap, const char *username, const char *password, int pr
     return res;
 }
 
-//int main(int argc, void *argv[]) {
-//    struct soap *soap = NULL;
-//    soap = new_soap(soap);
-//    const char username[] = "admin";
-//    const char password[] = "@";
-//    char serviceAddr[] = "http://40.40.40.101:80/onvif/device_service";
-//
-//    discovery(soap);
-//
-//    get_device_info(soap, username, password, serviceAddr);
-//
-//    char mediaAddr[200] = {'\0'};
-//    get_capabilities(soap, username, password, serviceAddr, mediaAddr);
-//
-//    char profileToken[200] = {'\0'};
-//    get_profiles(soap, username, password, profileToken, mediaAddr);
-//
-//    char rtspUri[200] = {'\0'};
-//    get_rtsp_uri(soap, username, password, profileToken, mediaAddr, rtspUri);
-//
-//    char snapshotUri[200] = {'\0'};
-//    get_snapshot(soap, username, password, profileToken, mediaAddr, snapshotUri);
-//
-//    char videoSourceToken[200] = {'\0'};
-//    get_video_source(soap, username, password, videoSourceToken, mediaAddr);
-//
-//    int direction = -1;
-//    while (direction != 0) {
-//        printf("请输入数字进行ptz,1-14分别代表上、下、左、右、左上、左下、右上、右下、停止、缩、放、调焦加、调焦减、调焦停止;退出请输入0：");
-//        scanf("%d", &direction);
-//        if ((direction >= 1) && (direction <= 11)) {
-//            ptz(soap, username, password, direction, 0.5f, profileToken, mediaAddr);
-//        } else if (direction >= 12 && direction <= 14) {
-//            focus(soap, username, password, direction, 0.5f, videoSourceToken, mediaAddr);
-//        }
-//    }
-//
-//    int presetAction = -1;
-//    while (presetAction != 0) {
-//        printf("请输入数字进行preset,1-4分别代表查询、设置、跳转、删除预置点；退出输入0:\n");
-//        scanf("%d", &presetAction);
-//        if (1 == presetAction) {
-//            preset(soap, username, password, presetAction, NULL, NULL, profileToken, mediaAddr);
-//        } else if (2 == presetAction) {
-//            printf("请输入要设置的预置点token信息：\n");
-//            char presentToken[10];
-//            scanf("%s", presentToken);
-//            printf("请输入要设置的预置点name信息()长度不超过200：\n");
-//            char presentName[201];
-//            scanf("%s", presentName);
-//            preset(soap, username, password, presetAction, presentToken, presentName, profileToken, mediaAddr);
-//        } else if (3 == presetAction) {
-//            printf("请输入要跳转的预置点token信息：\n");
-//            char presentToken[10];
-//            scanf("%s", presentToken);
-//            preset(soap, username, password, presetAction, presentToken, NULL, profileToken, mediaAddr);
-//        } else if (4 == presetAction) {
-//            printf("请输入要删除的预置点token信息：\n");
-//            char presentToken[10];
-//            scanf("%s", presentToken);
-//            preset(soap, username, password, presetAction, presentToken, NULL, profileToken, mediaAddr);
-//        }
-//    }
-//
-//    del_soap(soap);
-//}
+/*
+int main(int argc, void *argv[]) {
+    struct soap *soap = NULL;
+    soap = new_soap(soap);
+    const char username[] = "admin";
+    const char password[] = "@";
+    char serviceAddr[] = "http://1.1.1.1:80/onvif/device_service";
 
+    discovery(soap);
+
+    get_device_info(soap, username, password, serviceAddr);
+
+    char mediaAddr[200] = {'\0'};
+    get_capabilities(soap, username, password, serviceAddr, mediaAddr);
+
+    char profileToken[200] = {'\0'};
+    get_profiles(soap, username, password, profileToken, mediaAddr);
+
+    char rtspUri[200] = {'\0'};
+    get_rtsp_uri(soap, username, password, profileToken, mediaAddr, rtspUri);
+
+    char snapshotUri[200] = {'\0'};
+    get_snapshot(soap, username, password, profileToken, mediaAddr, snapshotUri);
+
+    char videoSourceToken[200] = {'\0'};
+    get_video_source(soap, username, password, videoSourceToken, mediaAddr);
+
+    int direction = -1;
+    while (direction != 0) {
+        printf("请输入数字进行ptz,1-14分别代表上、下、左、右、左上、左下、右上、右下、停止、缩、放、调焦加、调焦减、调焦停止;退出请输入0：\n");
+        scanf("%d", &direction);
+        if ((direction >= 1) && (direction <= 11)) {
+            ptz(soap, username, password, direction, 0.5, profileToken, mediaAddr);
+        } else if (direction >= 12 && direction <= 14) {
+            focus(soap, username, password, direction, 0.5, videoSourceToken, mediaAddr);
+        }
+    }
+
+    int presetAction = -1;
+    while (presetAction != 0) {
+        printf("请输入数字进行preset,1-4分别代表查询、设置、跳转、删除预置点；退出输入0:\n");
+        scanf("%d", &presetAction);
+        if (1 == presetAction) {
+            preset(soap, username, password, presetAction, NULL, NULL, profileToken, mediaAddr);
+        } else if (2 == presetAction) {
+            printf("请输入要设置的预置点token信息：\n");
+            char presentToken[10];
+            scanf("%s", presentToken);
+            printf("请输入要设置的预置点name信息()长度不超过200：\n");
+            char presentName[201];
+            scanf("%s", presentName);
+            preset(soap, username, password, presetAction, presentToken, presentName, profileToken, mediaAddr);
+        } else if (3 == presetAction) {
+            printf("请输入要跳转的预置点token信息：\n");
+            char presentToken[10];
+            scanf("%s", presentToken);
+            preset(soap, username, password, presetAction, presentToken, NULL, profileToken, mediaAddr);
+        } else if (4 == presetAction) {
+            printf("请输入要删除的预置点token信息：\n");
+            char presentToken[10];
+            scanf("%s", presentToken);
+            preset(soap, username, password, presetAction, presentToken, NULL, profileToken, mediaAddr);
+        }
+    }
+
+    del_soap(soap);
+}
+*/
