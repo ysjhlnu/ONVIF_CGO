@@ -23,10 +23,9 @@ extern int
 get_profiles(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr);
 
 extern int
-get_rtsp_uri(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr);
+get_rtsp_uri(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr, char *rtsp_uri);
 
-extern int
-get_snapshot(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr);
+extern int get_snapshot(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr, char *snapshot_uri);
 
 extern int
 ptz(struct soap *soap, const char *username, const char *password, int direction, float speed, char *profileToken,

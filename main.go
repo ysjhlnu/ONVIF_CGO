@@ -1,5 +1,6 @@
 package main
 
+
 /*
 #cgo CFLAGS: -I ./ -I /usr/local/
 #cgo LDFLAGS: -L ./build -lc_onvif_static -lpthread -ldl -lssl -lcrypto
@@ -29,10 +30,10 @@ func main() {
 
     profileToken := [200]C.char{}
     C.get_profiles(soap, username, password, &profileToken[0], &mediaAddr[0])
-
-    C.get_rtsp_uri(soap, username, password, &profileToken[0], &mediaAddr[0])
-
-    C.get_snapshot(soap, username, password, &profileToken[0], &mediaAddr[0])
+    rtspUrl := [200]C.char{}
+    C.get_rtsp_uri(soap, username, password, &profileToken[0], &mediaAddr[0], &rtspUrl[0])
+    snapshot_uri := [200]C.char{}
+    C.get_snapshot(soap, username, password, &profileToken[0], &mediaAddr[0], &snapshot_uri[0])
 
     videoSourceToken := [200]C.char{}
     C.get_video_source(soap, username, password, &videoSourceToken[0], &mediaAddr[0])

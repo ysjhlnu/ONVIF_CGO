@@ -207,7 +207,7 @@ int get_profiles(struct soap *soap, const char *username, const char *password, 
     return res;
 }
 
-int get_rtsp_uri(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr) {
+int get_rtsp_uri(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr, char *rtsp_uri) {
     struct _trt__GetStreamUri streamUri;
     struct _trt__GetStreamUriResponse streamUriResponse;
     streamUri.StreamSetup = (struct tt__StreamSetup *) soap_malloc(soap, sizeof(struct tt__StreamSetup));
@@ -227,10 +227,11 @@ int get_rtsp_uri(struct soap *soap, const char *username, const char *password, 
         return soap->error;
     }
     printf("func:%s,line:%d.RTSP uri is :%s \n", __FUNCTION__, __LINE__, streamUriResponse.MediaUri->Uri);
+    strcpy(rtsp_uri, streamUriResponse.MediaUri->Uri);
     return res;
 }
 
-int get_snapshot(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr) {
+int get_snapshot(struct soap *soap, const char *username, const char *password, char *profileToken, char *xAddr, char *snapshot_uri) {
     struct _trt__GetSnapshotUri snapshotUri;
     struct _trt__GetSnapshotUriResponse snapshotUriResponse;
 
@@ -244,6 +245,7 @@ int get_snapshot(struct soap *soap, const char *username, const char *password, 
     }
     printf("func:%s,line:%d.Snapshot uri is :%s \n", __FUNCTION__, __LINE__,
            snapshotUriResponse.MediaUri->Uri);
+    strcpy(snapshot_uri, snapshotUriResponse.MediaUri->Uri);
     return res;
 }
 
@@ -466,12 +468,12 @@ int preset(struct soap *soap, const char *username, const char *password, int pr
     return res;
 }
 
-//int main() {
+//int main(int argc, void *argv[]) {
 //    struct soap *soap = NULL;
 //    soap = new_soap(soap);
-//    const char username[] = "ts";
-//    const char password[] = "ts";
-//    char serviceAddr[] = "http://192.168.2.19:80/onvif/device_service";
+//    const char username[] = "admin";
+//    const char password[] = "@";
+//    char serviceAddr[] = "http://40.40.40.101:80/onvif/device_service";
 //
 //    discovery(soap);
 //
@@ -483,9 +485,11 @@ int preset(struct soap *soap, const char *username, const char *password, int pr
 //    char profileToken[200] = {'\0'};
 //    get_profiles(soap, username, password, profileToken, mediaAddr);
 //
-//    get_rtsp_uri(soap, username, password, profileToken, mediaAddr);
+//    char rtspUri[200] = {'\0'};
+//    get_rtsp_uri(soap, username, password, profileToken, mediaAddr, rtspUri);
 //
-//    get_snapshot(soap, username, password, profileToken, mediaAddr);
+//    char snapshotUri[200] = {'\0'};
+//    get_snapshot(soap, username, password, profileToken, mediaAddr, snapshotUri);
 //
 //    char videoSourceToken[200] = {'\0'};
 //    get_video_source(soap, username, password, videoSourceToken, mediaAddr);
@@ -530,3 +534,4 @@ int preset(struct soap *soap, const char *username, const char *password, int pr
 //
 //    del_soap(soap);
 //}
+
